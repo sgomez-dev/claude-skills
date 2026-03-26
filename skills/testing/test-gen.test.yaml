@@ -1,0 +1,32 @@
+skill: test-gen
+category: testing
+description: Validates the test generation skill produces meaningful tests
+
+tests:
+  - name: "generates tests with AAA pattern"
+    trigger_prompts:
+      - "generate tests for this file"
+      - "write unit tests"
+      - "create tests"
+    assertions:
+      - has_steps: true
+      - output_contains: "describe"
+      - output_contains: "expect"
+      - no_destructive_commands: true
+
+  - name: "detects test framework from project"
+    precondition: "project uses vitest"
+    assertions:
+      - output_contains: "vitest"
+      - does_not_contain: "jest"
+
+  - name: "covers edge cases"
+    assertions:
+      - output_contains_pattern: "(null|undefined|empty|boundary|edge)"
+      - generates_multiple_test_cases: true
+
+  - name: "handles file with no exportable functions"
+    input: "config.ts"
+    precondition: "file contains only constants"
+    assertions:
+      - handles_gracefully: true

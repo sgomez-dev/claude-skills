@@ -1,0 +1,41 @@
+# ============================================================================
+#  Pipeline: Pre-Deploy
+#  Everything that should pass before deploying to production
+# ============================================================================
+name: Pre-Deploy
+description: Full pre-deployment verification checklist
+trigger: /pipeline--pre-deploy
+
+steps:
+  - name: Deploy Checklist
+    skill: devops--deploy-check
+    description: Run pre-deployment checklist against actual code
+    gate:
+      condition: no_blockers
+    on_failure: abort
+
+  - name: Security Scan
+    skill: security--secrets-scan
+    description: Ensure no secrets in code before deploy
+    gate:
+      max_severity: critical
+    on_failure: abort
+
+  - name: Dependency Audit
+    skill: security--dependency-vuln
+    description: Check for critical vulnerabilities
+    gate:
+      max_severity: critical
+    on_failure: abort
+
+  - name: Performance Audit
+    skill: performance--perf-audit
+    description: Check for performance regressions
+    gate:
+      max_severity: critical
+    on_failure: warn
+
+  - name: Test Coverage
+    skill: testing--test-coverage
+    description: Verify test coverage for changed code
+    on_failure: warn

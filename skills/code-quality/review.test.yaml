@@ -1,0 +1,28 @@
+skill: review
+category: code-quality
+description: Validates the code review skill provides comprehensive analysis
+
+tests:
+  - name: "reviews for all quality dimensions"
+    trigger_prompts:
+      - "review this code"
+      - "code review"
+      - "check my code"
+    assertions:
+      - has_steps: true
+      - output_contains: "Correctness"
+      - output_contains: "Security"
+      - output_contains: "Performance"
+      - no_destructive_commands: true
+
+  - name: "provides severity-rated findings"
+    assertions:
+      - output_contains_pattern: "(Critical|Warning|Suggestion|Nit)"
+      - output_contains: "file"
+      - output_contains: "fix"
+
+  - name: "handles clean code"
+    precondition: "well-written code with no issues"
+    assertions:
+      - handles_gracefully: true
+      - acknowledges_quality: true

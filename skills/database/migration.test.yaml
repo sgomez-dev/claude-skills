@@ -1,0 +1,26 @@
+skill: migration
+category: database
+description: Validates the migration skill generates safe, reversible migrations
+
+tests:
+  - name: "generates reversible migration"
+    trigger_prompts:
+      - "create a migration"
+      - "add column to users table"
+      - "generate database migration"
+    assertions:
+      - has_steps: true
+      - output_contains: "up"
+      - output_contains: "down"
+      - no_destructive_commands: true
+
+  - name: "handles NOT NULL on existing table"
+    input: "add required email column to users"
+    assertions:
+      - output_contains: "default"
+      - warns_about_existing_data: true
+
+  - name: "detects ORM from project"
+    precondition: "project uses Prisma"
+    assertions:
+      - output_contains: "prisma"

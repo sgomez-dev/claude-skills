@@ -1,0 +1,45 @@
+# ============================================================================
+#  Pipeline: Feature Complete
+#  Full quality gate from code review to merged PR
+# ============================================================================
+name: Feature Complete
+description: Review, audit, test, document, commit, and create PR
+trigger: /pipeline--feature-complete
+
+steps:
+  - name: Code Review
+    skill: code-quality--review
+    description: Review all changed files for correctness, security, performance
+    gate:
+      max_severity: critical  # Abort if critical issues found
+    on_failure: abort
+
+  - name: Security Audit
+    skill: security--security-audit
+    description: Scan changes for OWASP Top 10 vulnerabilities
+    input: "Focus on changed files only"
+    gate:
+      max_severity: critical
+    on_failure: abort
+
+  - name: Generate Tests
+    skill: testing--test-gen
+    description: Generate tests for changed code
+    input: "Generate tests for all modified files"
+    gate:
+      condition: tests_generated
+    on_failure: warn
+
+  - name: Commit Changes
+    skill: git--commit
+    description: Create conventional commit from staged changes
+    gate:
+      condition: commit_created
+    on_failure: abort
+
+  - name: Create PR
+    skill: git--pr-create
+    description: Create pull request with review findings summary
+    gate:
+      condition: pr_created
+    on_failure: abort

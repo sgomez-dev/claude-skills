@@ -1,0 +1,29 @@
+skill: commit
+category: git
+description: Validates the git commit skill generates proper conventional commits
+
+tests:
+  - name: "generates conventional commit from staged changes"
+    trigger_prompts:
+      - "commit my staged changes"
+      - "create a commit"
+      - "smart commit"
+      - "generate commit message"
+    assertions:
+      - has_steps: true
+      - output_contains_pattern: "^(feat|fix|refactor|chore|docs|test|perf|ci|build|style)(\\(.+\\))?: .+"
+      - no_destructive_commands: true
+      - reads_git_diff: true
+
+  - name: "handles empty staging area"
+    input: ""
+    precondition: "no staged changes"
+    assertions:
+      - handles_gracefully: true
+      - does_not_create_empty_commit: true
+
+  - name: "detects breaking changes"
+    precondition: "staged changes include API signature modification"
+    assertions:
+      - output_contains: "BREAKING CHANGE"
+      - asks_for_confirmation: true

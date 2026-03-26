@@ -1,0 +1,58 @@
+# ============================================================================
+#  Pipeline: Security Hardening
+#  Complete security review and hardening of the codebase
+# ============================================================================
+name: Security Hardening
+description: Full security audit, secrets scan, auth review, and hardening
+trigger: /pipeline--security-hardening
+
+steps:
+  - name: Secrets Scan
+    skill: security--secrets-scan
+    description: Find any leaked credentials, API keys, or tokens
+    gate:
+      max_severity: critical
+    on_failure: abort  # Stop everything if real secrets are found
+
+  - name: Dependency Vulnerabilities
+    skill: security--dependency-vuln
+    description: Check all dependencies for known CVEs
+    gate:
+      max_severity: high
+    on_failure: warn
+
+  - name: OWASP Audit
+    skill: security--security-audit
+    description: Full OWASP Top 10 vulnerability scan
+    gate:
+      max_severity: critical
+    on_failure: warn
+
+  - name: Auth Review
+    skill: security--auth-review
+    description: Review authentication and authorization implementation
+    gate:
+      condition: no_critical_findings
+    on_failure: warn
+
+  - name: Input Sanitization
+    skill: security--sanitize
+    description: Find unsanitized user inputs
+    gate:
+      condition: no_critical_findings
+    on_failure: warn
+
+  - name: Environment Hardening
+    skill: security--env-hardening
+    description: Review env config and HTTP security headers
+    on_failure: warn
+
+  - name: CORS Review
+    skill: security--cors-review
+    description: Verify CORS configuration per environment
+    on_failure: warn
+
+  - name: CSP Generation
+    skill: security--csp-gen
+    description: Generate Content Security Policy if applicable
+    on_failure: skip  # Only relevant for web frontends

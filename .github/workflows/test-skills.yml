@@ -1,0 +1,46 @@
+name: Test Skills
+
+on:
+  push:
+    branches: [main]
+    paths: ['skills/**', 'scripts/**']
+  pull_request:
+    branches: [main]
+    paths: ['skills/**', 'scripts/**']
+
+jobs:
+  validate:
+    name: Validate Skills
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run structure & safety tests
+        run: |
+          chmod +x scripts/test-runner.sh
+          ./scripts/test-runner.sh
+
+      - name: Run permission linter
+        run: |
+          chmod +x scripts/lint-permissions.sh
+          ./scripts/lint-permissions.sh
+
+      - name: Check skill count
+        run: |
+          count=$(find skills/ -name "*.md" | wc -l)
+          echo "Total skills: $count"
+          if [ "$count" -lt 90 ]; then
+            echo "::warning::Skill count dropped below 90 (found $count)"
+          fi
+
+      - name: Validate YAML test files
+        run: |
+          test_count=$(find skills/ -name "*.test.yaml" 2>/dev/null | wc -l)
+          echo "Test files: $test_count"
+          # Validate YAML syntax
+          for f in $(find skills/ -name "*.test.yaml" 2>/dev/null); do
+            python3 -c "import yaml; yaml.safe_load(open('$f'))" 2>/dev/null || {
+              echo "::error::Invalid YAML in $f"
+              exit 1
+            }
+          done

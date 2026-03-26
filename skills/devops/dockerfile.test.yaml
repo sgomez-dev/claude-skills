@@ -1,0 +1,33 @@
+skill: dockerfile
+category: devops
+description: Validates the Dockerfile generation skill produces optimized images
+
+tests:
+  - name: "generates multi-stage build"
+    trigger_prompts:
+      - "create a Dockerfile"
+      - "generate Dockerfile"
+      - "dockerize this project"
+    assertions:
+      - has_steps: true
+      - output_contains: "FROM"
+      - output_contains: "AS"
+      - output_contains: "COPY"
+      - no_destructive_commands: true
+
+  - name: "follows security best practices"
+    assertions:
+      - output_contains_pattern: "(USER|non-root|nonroot)"
+      - does_not_contain: "latest"
+      - output_contains: ".dockerignore"
+
+  - name: "optimizes layer caching"
+    assertions:
+      - copies_dependency_files_first: true
+      - source_code_copied_after_dependencies: true
+
+  - name: "adapts to project language"
+    precondition: "Python project with requirements.txt"
+    assertions:
+      - output_contains: "python"
+      - output_contains: "requirements.txt"

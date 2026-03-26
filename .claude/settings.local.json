@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api:*)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); [print\\(i[''''path'''']\\) for i in d.get\\(''''tree'''',[]\\)]\")"
+    ]
+  }
+}

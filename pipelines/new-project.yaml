@@ -1,0 +1,55 @@
+# ============================================================================
+#  Pipeline: New Project Setup
+#  Bootstrap a project with all essential configs and tooling
+# ============================================================================
+name: New Project Setup
+description: Set up a new project with linting, testing, CI, Docker, and docs
+trigger: /pipeline--new-project
+
+steps:
+  - name: Detect Stack
+    skill: meta--skills-init
+    description: Detect project tech stack and configure skills
+    gate:
+      condition: config_generated
+    on_failure: abort
+
+  - name: Generate .gitignore
+    skill: utils--gitignore
+    description: Create comprehensive .gitignore for detected technologies
+    on_failure: warn
+
+  - name: TypeScript Config
+    skill: utils--tsconfig
+    description: Generate optimized tsconfig.json (if TypeScript detected)
+    on_failure: skip
+
+  - name: ESLint Config
+    skill: utils--eslint-config
+    description: Generate ESLint configuration with project-specific rules
+    on_failure: skip
+
+  - name: Environment Setup
+    skill: utils--env-setup
+    description: Set up .env.example with validation
+    on_failure: warn
+
+  - name: Dockerfile
+    skill: devops--dockerfile
+    description: Generate optimized multi-stage Dockerfile
+    on_failure: skip
+
+  - name: CI Pipeline
+    skill: devops--github-actions
+    description: Generate GitHub Actions CI workflow
+    on_failure: warn
+
+  - name: Generate README
+    skill: docs--readme-gen
+    description: Generate professional README.md
+    on_failure: warn
+
+  - name: Contributing Guide
+    skill: docs--contributing
+    description: Generate CONTRIBUTING.md
+    on_failure: skip

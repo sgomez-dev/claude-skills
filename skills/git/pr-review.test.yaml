@@ -1,0 +1,26 @@
+skill: pr-review
+category: git
+description: Validates the PR review skill provides thorough code review
+
+tests:
+  - name: "reviews all quality dimensions"
+    trigger_prompts:
+      - "review PR 42"
+      - "review this pull request"
+      - "code review PR"
+    assertions:
+      - has_steps: true
+      - output_contains: "Correctness"
+      - output_contains: "Security"
+      - output_contains: "Performance"
+
+  - name: "provides actionable feedback"
+    assertions:
+      - output_contains: "file"
+      - output_contains: "line"
+      - output_contains_pattern: "(critical|warning|suggestion|nit)"
+      - provides_fix_suggestions: true
+
+  - name: "gives overall assessment"
+    assertions:
+      - output_contains_pattern: "(approve|request changes|comment)"

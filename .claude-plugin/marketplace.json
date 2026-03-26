@@ -1,0 +1,198 @@
+{
+  "name": "claude-skills-collection",
+  "owner": {
+    "name": "claude-skills"
+  },
+  "metadata": {
+    "description": "90 battle-tested slash commands for Claude Code — git, security, testing, devops, performance, and more.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "git-skills",
+      "description": "10 git & version control skills — smart commits, PRs, releases, blame, stash, undo",
+      "source": "skills/git",
+      "strict": false,
+      "skills": [
+        "skills/git/commit.md",
+        "skills/git/changelog.md",
+        "skills/git/release.md",
+        "skills/git/branch.md",
+        "skills/git/undo.md",
+        "skills/git/blame-detective.md",
+        "skills/git/stash-manager.md",
+        "skills/git/cherry-pick-pr.md",
+        "skills/git/pr-create.md",
+        "skills/git/pr-review.md"
+      ]
+    },
+    {
+      "name": "code-quality-skills",
+      "description": "10 code quality skills — review, refactor, dead code, complexity, DRY, code smells, naming",
+      "source": "skills/code-quality",
+      "strict": false,
+      "skills": [
+        "skills/code-quality/review.md",
+        "skills/code-quality/refactor.md",
+        "skills/code-quality/dead-code.md",
+        "skills/code-quality/complexity.md",
+        "skills/code-quality/dry.md",
+        "skills/code-quality/code-smells.md",
+        "skills/code-quality/naming.md",
+        "skills/code-quality/type-check.md",
+        "skills/code-quality/error-handling.md",
+        "skills/code-quality/dependency-audit.md"
+      ]
+    },
+    {
+      "name": "testing-skills",
+      "description": "8 testing skills — unit tests, edge cases, integration, e2e, coverage, mocks",
+      "source": "skills/testing",
+      "strict": false,
+      "skills": [
+        "skills/testing/test-gen.md",
+        "skills/testing/test-edge-cases.md",
+        "skills/testing/test-integration.md",
+        "skills/testing/test-fix.md",
+        "skills/testing/test-coverage.md",
+        "skills/testing/test-e2e.md",
+        "skills/testing/test-mock.md",
+        "skills/testing/snapshot-update.md"
+      ]
+    },
+    {
+      "name": "docs-skills",
+      "description": "7 documentation skills — API docs, READMEs, diagrams, ADRs, OpenAPI specs",
+      "source": "skills/docs",
+      "strict": false,
+      "skills": [
+        "skills/docs/doc-gen.md",
+        "skills/docs/readme-gen.md",
+        "skills/docs/diagram.md",
+        "skills/docs/adr.md",
+        "skills/docs/api-doc.md",
+        "skills/docs/openapi-gen.md",
+        "skills/docs/contributing.md"
+      ]
+    },
+    {
+      "name": "security-skills",
+      "description": "8 security skills — OWASP audit, secrets scan, auth review, CORS, CSP, input sanitization",
+      "source": "skills/security",
+      "strict": false,
+      "skills": [
+        "skills/security/security-audit.md",
+        "skills/security/secrets-scan.md",
+        "skills/security/auth-review.md",
+        "skills/security/sanitize.md",
+        "skills/security/cors-review.md",
+        "skills/security/csp-gen.md",
+        "skills/security/dependency-vuln.md",
+        "skills/security/env-hardening.md"
+      ]
+    },
+    {
+      "name": "devops-skills",
+      "description": "8 devops & infrastructure skills — Docker, CI/CD, K8s, Terraform, Nginx, GitHub Actions",
+      "source": "skills/devops",
+      "strict": false,
+      "skills": [
+        "skills/devops/dockerfile.md",
+        "skills/devops/docker-compose.md",
+        "skills/devops/ci.md",
+        "skills/devops/github-actions.md",
+        "skills/devops/k8s.md",
+        "skills/devops/terraform.md",
+        "skills/devops/nginx.md",
+        "skills/devops/deploy-check.md"
+      ]
+    },
+    {
+      "name": "database-skills",
+      "description": "6 database skills — migrations, query optimization, schema design, ERD, Prisma",
+      "source": "skills/database",
+      "strict": false,
+      "skills": [
+        "skills/database/migration.md",
+        "skills/database/query-optimize.md",
+        "skills/database/schema.md",
+        "skills/database/seed.md",
+        "skills/database/erd.md",
+        "skills/database/prisma-gen.md"
+      ]
+    },
+    {
+      "name": "api-skills",
+      "description": "4 API development skills — endpoints, GraphQL, REST clients, mock servers",
+      "source": "skills/api",
+      "strict": false,
+      "skills": [
+        "skills/api/endpoint.md",
+        "skills/api/graphql-schema.md",
+        "skills/api/rest-client.md",
+        "skills/api/mock-api.md"
+      ]
+    },
+    {
+      "name": "performance-skills",
+      "description": "5 performance skills — audits, bundle analysis, caching, lazy loading, memory leaks",
+      "source": "skills/performance",
+      "strict": false,
+      "skills": [
+        "skills/performance/perf-audit.md",
+        "skills/performance/bundle-analyze.md",
+        "skills/performance/cache.md",
+        "skills/performance/lazy-load.md",
+        "skills/performance/memory-leak.md"
+      ]
+    },
+    {
+      "name": "scaffold-skills",
+      "description": "6 scaffolding skills — project setup, full-stack features, components, hooks, middleware",
+      "source": "skills/scaffold",
+      "strict": false,
+      "skills": [
+        "skills/scaffold/scaffold.md",
+        "skills/scaffold/fullstack.md",
+        "skills/scaffold/component.md",
+        "skills/scaffold/hook.md",
+        "skills/scaffold/middleware.md",
+        "skills/scaffold/model.md"
+      ]
+    },
+    {
+      "name": "ai-skills",
+      "description": "3 AI/LLM skills — prompt engineering, API integration, vector embeddings",
+      "source": "skills/ai",
+      "strict": false,
+      "skills": [
+        "skills/ai/prompt-engineer.md",
+        "skills/ai/ai-integration.md",
+        "skills/ai/embeddings.md"
+      ]
+    },
+    {
+      "name": "utility-skills",
+      "description": "15 utility skills — explain, translate, regex, configs, env setup, accessibility, i18n",
+      "source": "skills",
+      "strict": false,
+      "skills": [
+        "skills/utils/explain.md",
+        "skills/utils/translate.md",
+        "skills/utils/regex.md",
+        "skills/utils/gitignore.md",
+        "skills/utils/convert.md",
+        "skills/utils/dep-update.md",
+        "skills/utils/env-setup.md",
+        "skills/utils/cron-explain.md",
+        "skills/utils/tsconfig.md",
+        "skills/utils/eslint-config.md",
+        "skills/utils/package-json.md",
+        "skills/utils/monorepo.md",
+        "skills/accessibility/a11y-audit.md",
+        "skills/accessibility/a11y-fix.md",
+        "skills/i18n/i18n-setup.md"
+      ]
+    }
+  ]
+}

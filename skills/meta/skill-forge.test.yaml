@@ -1,0 +1,31 @@
+skill: skill-forge
+category: meta
+description: Validates the skill forge generates proper skills with tests and permissions
+
+tests:
+  - name: "generates skill with correct structure"
+    trigger_prompts:
+      - "create a new skill"
+      - "forge a skill for X"
+      - "generate a custom skill"
+    assertions:
+      - has_steps: true
+      - output_contains: "description"
+      - output_contains: "permissions"
+      - output_contains: "$ARGUMENTS"
+
+  - name: "generates companion test file"
+    assertions:
+      - generates_test_yaml: true
+      - test_has_trigger_prompts: true
+      - test_has_assertions: true
+
+  - name: "generates permission manifest"
+    assertions:
+      - output_contains: "reads"
+      - output_contains: "writes"
+      - output_contains: "destructive"
+
+  - name: "asks for confirmation before saving"
+    assertions:
+      - asks_for_confirmation: true

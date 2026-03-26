@@ -1,0 +1,25 @@
+skill: perf-audit
+category: performance
+description: Validates the performance audit skill identifies real bottlenecks
+
+tests:
+  - name: "checks backend performance"
+    trigger_prompts:
+      - "performance audit"
+      - "find performance issues"
+      - "optimize this code"
+    assertions:
+      - has_steps: true
+      - output_contains: "N+1"
+      - output_contains: "index"
+      - no_destructive_commands: true
+
+  - name: "checks frontend performance"
+    precondition: "React frontend project"
+    assertions:
+      - output_contains_pattern: "(re-render|bundle|lazy)"
+
+  - name: "provides specific fixes"
+    assertions:
+      - output_contains: "file"
+      - provides_code_suggestions: true

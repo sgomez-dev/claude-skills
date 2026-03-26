@@ -1,0 +1,29 @@
+skill: security-audit
+category: security
+description: Validates the security audit skill catches OWASP Top 10 vulnerabilities
+
+tests:
+  - name: "scans for all OWASP Top 10 categories"
+    trigger_prompts:
+      - "run a security audit"
+      - "check for vulnerabilities"
+      - "security scan"
+      - "OWASP check"
+    assertions:
+      - has_steps: true
+      - output_contains: "A01"
+      - output_contains: "A03"
+      - output_contains: "injection"
+      - no_destructive_commands: true
+
+  - name: "provides severity ratings"
+    assertions:
+      - output_contains_pattern: "(Critical|High|Medium|Low)"
+      - output_contains: "file"
+      - output_contains: "fix"
+
+  - name: "handles clean codebase"
+    precondition: "no security issues present"
+    assertions:
+      - handles_gracefully: true
+      - does_not_hallucinate_vulnerabilities: true

@@ -1,0 +1,42 @@
+# ============================================================================
+#  Pipeline: Code Cleanup
+#  Comprehensive code quality improvement pass
+# ============================================================================
+name: Code Cleanup
+description: Dead code removal, DRY fixes, naming improvements, complexity reduction
+trigger: /pipeline--code-cleanup
+
+steps:
+  - name: Dead Code Removal
+    skill: code-quality--dead-code
+    description: Find and remove unused code, imports, and files
+    on_failure: warn
+
+  - name: DRY Analysis
+    skill: code-quality--dry
+    description: Find duplicated code and suggest abstractions
+    gate:
+      condition: reviewed_by_user
+    on_failure: warn
+
+  - name: Complexity Reduction
+    skill: code-quality--complexity
+    description: Identify and simplify overly complex functions
+    gate:
+      condition: reviewed_by_user
+    on_failure: warn
+
+  - name: Code Smells
+    skill: code-quality--code-smells
+    description: Detect and fix anti-patterns
+    on_failure: warn
+
+  - name: Naming Review
+    skill: code-quality--naming
+    description: Improve variable and function naming
+    on_failure: warn
+
+  - name: Error Handling
+    skill: code-quality--error-handling
+    description: Audit and improve error handling patterns
+    on_failure: warn
