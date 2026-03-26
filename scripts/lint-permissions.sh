@@ -76,10 +76,11 @@ for skill_file in "$SKILLS_DIR"/**/*.md; do
     fi
 
     # Check for network operations
-    if echo "$content" | grep -qi 'curl \|wget \|fetch(\|api call\|network request\|http://\|https://\|npm publish\|docker push'; then
+    # Only match actual executable commands, not descriptive references like "API calls" in text
+    if echo "$content" | grep -qi '`curl \|`wget \|`fetch(\|npm publish\|docker push\|requests\.get\|requests\.post\|axios\.\|urllib'; then
         if $has_perms && ! $declares_network; then
             echo -e "  ${RED}MISMATCH${NC} $rel_path"
-            echo -e "           References network operations but permissions.network != true"
+            echo -e "           Contains network commands but permissions.network != true"
             ISSUES=$((ISSUES + 1))
         fi
     fi

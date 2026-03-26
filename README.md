@@ -70,7 +70,7 @@ You know **exactly** what each skill can do before you install it. No other coll
 ### Plugin Marketplace (Recommended)
 
 ```
-/plugin marketplace add YOUR_USERNAME/claude-skills
+/plugin marketplace add sgomez-dev/claude-skills
 /plugin install git-skills@claude-skills-collection
 /plugin install security-skills@claude-skills-collection
 /plugin install testing-skills@claude-skills-collection
@@ -81,14 +81,14 @@ Install individual bundles or all at once. See [all available plugins](#plugin-m
 ### One-liner (macOS / Linux / Git Bash)
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/claude-skills.git
+git clone https://github.com/sgomez-dev/claude-skills.git
 cd claude-skills && ./install.sh
 ```
 
 ### Windows PowerShell
 
 ```powershell
-git clone https://github.com/YOUR_USERNAME/claude-skills.git
+git clone https://github.com/sgomez-dev/claude-skills.git
 cd claude-skills; .\install.ps1
 ```
 
@@ -318,7 +318,7 @@ Install skill bundles directly in Claude Code:
 
 ```bash
 # Add the repository
-/plugin marketplace add YOUR_USERNAME/claude-skills
+/plugin marketplace add sgomez-dev/claude-skills
 
 # Install specific bundles
 /plugin install git-skills@claude-skills-collection
