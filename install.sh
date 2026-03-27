@@ -4,18 +4,18 @@ set -euo pipefail
 # ============================================================================
 #  Claude Skills Installer
 #  Installs 95 custom slash commands for Claude Code
+#
+#  Wrapping in main() ensures the entire script is downloaded before
+#  execution when running via: curl -fsSL ... | bash
 # ============================================================================
 
-# Detect if running via pipe (curl | bash)
-PIPED=false
-if [ ! -t 0 ]; then
-    PIPED=true
-fi
+main() {
 
-# When piped, clone the repo to a temp directory
-if $PIPED; then
+# When piped (curl | bash), clone the repo to a temp directory
+if [ ! -t 0 ]; then
     TMPDIR="$(mktemp -d)"
     trap 'rm -rf "$TMPDIR"' EXIT
+    echo "   Downloading claude-skills..."
     git clone --depth 1 --quiet https://github.com/sgomez-dev/claude-skills.git "$TMPDIR/claude-skills"
     REPO_DIR="$TMPDIR/claude-skills"
 else
@@ -193,3 +193,7 @@ echo -e "\n${CYAN}━━━━━━━━━━━━━━━━━━━━�
 echo -e "   ${BOLD}Usage:${NC} Type ${CYAN}/${NC} in Claude Code to see all available commands"
 echo -e "   ${BOLD}Example:${NC} ${CYAN}/git--commit${NC}, ${CYAN}/security--audit${NC}, ${CYAN}/test--gen${NC}"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}\n"
+
+} # end main
+
+main "$@"
