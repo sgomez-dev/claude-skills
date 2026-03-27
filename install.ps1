@@ -4,8 +4,19 @@
 # ============================================================================
 
 $ErrorActionPreference = "Stop"
-$RepoDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$SkillsDir = Join-Path $RepoDir "skills"
+
+# Support both: irm ... | iex  AND  .\install.ps1 (local clone)
+$IsRemote = ($MyInvocation.MyCommand.Path -eq $null -or $MyInvocation.MyCommand.Path -eq "")
+
+if ($IsRemote) {
+    # Running via irm | iex — download skills directly from GitHub
+    $GithubBase = "https://raw.githubusercontent.com/sgomez-dev/claude-skills/main/skills"
+    $RepoDir = $null
+    $SkillsDir = $null
+} else {
+    $RepoDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+    $SkillsDir = Join-Path $RepoDir "skills"
+}
 
 function Write-Banner {
     Write-Host ""
@@ -18,49 +29,74 @@ function Write-Banner {
     Write-Host ""
 }
 
+# Skills manifest for remote installs
+$RemoteSkills = @{
+    "git"          = @("commit","changelog","release","branch","undo","blame-detective","stash-manager","cherry-pick-pr","pr-create","pr-review")
+    "code-quality" = @("review","refactor","dead-code","complexity","dry","code-smells","naming","type-check","error-handling","dependency-audit")
+    "testing"      = @("test-gen","test-edge-cases","test-integration","test-fix","test-coverage","test-e2e","test-mock","snapshot-update")
+    "docs"         = @("doc-gen","readme-gen","diagram","adr","api-doc","openapi-gen","contributing")
+    "security"     = @("security-audit","secrets-scan","auth-review","sanitize","cors-review","csp-gen","dependency-vuln","env-hardening")
+    "devops"       = @("dockerfile","docker-compose","ci","github-actions","k8s","terraform","nginx","deploy-check")
+    "database"     = @("migration","query-optimize","schema","seed","erd","prisma-gen")
+    "api"          = @("endpoint","graphql-schema","rest-client","mock-api")
+    "performance"  = @("perf-audit","bundle-analyze","cache","lazy-load","memory-leak")
+    "scaffold"     = @("scaffold","fullstack","component","hook","middleware","model")
+    "ai"           = @("prompt-engineer","ai-integration","embeddings")
+    "web"          = @("landing-page","spa-scaffold","animations","design-system","ui-components-pro","conversion-optimizer")
+    "utils"        = @("explain","translate","regex","gitignore","convert","dep-update","env-setup","cron-explain","tsconfig","eslint-config","package-json","monorepo")
+    "accessibility"= @("a11y-audit","a11y-fix")
+    "i18n"         = @("i18n-setup")
+    "meta"         = @("skills-init","pipeline-run","skill-forge","health-check")
+}
+
+function Install-ToTarget {
+    param([string]$target)
+    New-Item -ItemType Directory -Force -Path $target | Out-Null
+    $script:installCount = 0
+
+    if ($IsRemote) {
+        foreach ($category in $RemoteSkills.Keys) {
+            $catCount = 0
+            foreach ($skill in $RemoteSkills[$category]) {
+                $url = "$GithubBase/$category/$skill.md"
+                $dest = Join-Path $target "${category}--${skill}.md"
+                try {
+                    Invoke-WebRequest -Uri $url -OutFile $dest -UseBasicParsing
+                    $script:installCount++; $catCount++
+                } catch {
+                    Write-Host "   ! Failed: $category/$skill" -ForegroundColor Yellow
+                }
+            }
+            Write-Host "   + $category ($catCount skills)" -ForegroundColor Green
+        }
+    } else {
+        foreach ($categoryDir in Get-ChildItem -Path $SkillsDir -Directory) {
+            $category = $categoryDir.Name
+            $catCount = 0
+            foreach ($skillFile in Get-ChildItem -Path $categoryDir.FullName -Filter "*.md") {
+                $skillName = [System.IO.Path]::GetFileNameWithoutExtension($skillFile.Name)
+                $destName = "${category}--${skillName}.md"
+                Copy-Item $skillFile.FullName (Join-Path $target $destName)
+                $script:installCount++; $catCount++
+            }
+            Write-Host "   + $category ($catCount skills)" -ForegroundColor Green
+        }
+    }
+}
+
 function Install-Global {
     $target = Join-Path $env:USERPROFILE ".claude\commands"
     Write-Host "`n[Global Install] Installing to $target`n" -ForegroundColor Blue
-    New-Item -ItemType Directory -Force -Path $target | Out-Null
-
-    $count = 0
-    foreach ($categoryDir in Get-ChildItem -Path $SkillsDir -Directory) {
-        $category = $categoryDir.Name
-        $catCount = 0
-        foreach ($skillFile in Get-ChildItem -Path $categoryDir.FullName -Filter "*.md") {
-            $skillName = [System.IO.Path]::GetFileNameWithoutExtension($skillFile.Name)
-            $destName = "${category}--${skillName}.md"
-            Copy-Item $skillFile.FullName (Join-Path $target $destName)
-            $count++
-            $catCount++
-        }
-        Write-Host "   + $category ($catCount skills)" -ForegroundColor Green
-    }
-
-    Write-Host "`n   $count skills installed globally!" -ForegroundColor Green
+    Install-ToTarget -target $target
+    Write-Host "`n   $script:installCount skills installed globally!" -ForegroundColor Green
     Write-Host "   Available in ALL your projects as /category--skill" -ForegroundColor Cyan
 }
 
 function Install-Project {
     $target = Join-Path (Get-Location) ".claude\commands"
     Write-Host "`n[Project Install] Installing to $target`n" -ForegroundColor Blue
-    New-Item -ItemType Directory -Force -Path $target | Out-Null
-
-    $count = 0
-    foreach ($categoryDir in Get-ChildItem -Path $SkillsDir -Directory) {
-        $category = $categoryDir.Name
-        $catCount = 0
-        foreach ($skillFile in Get-ChildItem -Path $categoryDir.FullName -Filter "*.md") {
-            $skillName = [System.IO.Path]::GetFileNameWithoutExtension($skillFile.Name)
-            $destName = "${category}--${skillName}.md"
-            Copy-Item $skillFile.FullName (Join-Path $target $destName)
-            $count++
-            $catCount++
-        }
-        Write-Host "   + $category ($catCount skills)" -ForegroundColor Green
-    }
-
-    Write-Host "`n   $count skills installed to project!" -ForegroundColor Green
+    Install-ToTarget -target $target
+    Write-Host "`n   $script:installCount skills installed to project!" -ForegroundColor Green
 }
 
 function Uninstall-Skills {
