@@ -6,7 +6,21 @@ set -euo pipefail
 #  Installs 95 custom slash commands for Claude Code
 # ============================================================================
 
-REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
+# Detect if running via pipe (curl | bash)
+PIPED=false
+if [ ! -t 0 ]; then
+    PIPED=true
+fi
+
+# When piped, clone the repo to a temp directory
+if $PIPED; then
+    TMPDIR="$(mktemp -d)"
+    trap 'rm -rf "$TMPDIR"' EXIT
+    git clone --depth 1 --quiet https://github.com/sgomez-dev/claude-skills.git "$TMPDIR/claude-skills"
+    REPO_DIR="$TMPDIR/claude-skills"
+else
+    REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
+fi
 SKILLS_DIR="$REPO_DIR/skills"
 
 # Colors
@@ -104,7 +118,7 @@ install_selective() {
 
     echo -e "\n   Enter numbers separated by spaces (e.g., 1 3 5 7):"
     echo -e "   Or ${BOLD}'all'${NC} to install everything\n"
-    read -rp "   > " selection
+    read -rp "   > " selection </dev/tty
 
     if [[ "$selection" == "all" ]]; then
         install_global
@@ -165,7 +179,7 @@ echo -e "   ${BOLD}2)${NC} Project    - Only in current project directory"
 echo -e "   ${BOLD}3)${NC} Selective  - Choose specific categories"
 echo -e "   ${BOLD}4)${NC} Uninstall  - Remove installed skills"
 echo ""
-read -rp "   Choose [1-4]: " choice
+read -rp "   Choose [1-4]: " choice </dev/tty
 
 case $choice in
     1) install_global ;;
