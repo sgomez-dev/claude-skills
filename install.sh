@@ -92,9 +92,9 @@ install_project() {
 }
 
 ask_scope() {
-    echo -e "\n   Install to:"
-    echo -e "   ${BOLD}1)${NC} Global  - ~/.claude/commands (all projects)"
-    echo -e "   ${BOLD}2)${NC} Project - .claude/commands (this project only)\n"
+    echo -e "\n   Install to:" >&2
+    echo -e "   ${BOLD}1)${NC} Global  - ~/.claude/commands (all projects)" >&2
+    echo -e "   ${BOLD}2)${NC} Project - .claude/commands (this project only)\n" >&2
     read -rp "   Choose [1-2]: " scope </dev/tty
 
     if [[ "$scope" == "2" ]]; then
