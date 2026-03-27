@@ -4,7 +4,7 @@
     "name": "sgomez-dev"
   },
   "metadata": {
-    "description": "94 battle-tested slash commands for Claude Code — git, security, testing, devops, web, performance, and more.",
+    "description": "95 battle-tested slash commands for Claude Code — git, security, testing, devops, web, performance, and more.",
     "version": "1.0.0"
   },
   "plugins": [
@@ -80,7 +80,7 @@
     },
     {
       "name": "api-skills",
-      "description": "4 API development skills — endpoints, GraphQL, REST clients, mock servers",
+      "description": "5 API development skills — endpoints, GraphQL, REST clients, mock servers, messaging bridge",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/sgomez-dev/claude-skills.git",
