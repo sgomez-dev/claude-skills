@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Skills-94-blue?style=for-the-badge" alt="94 Skills" />
+  <img src="https://img.shields.io/badge/Skills-95-blue?style=for-the-badge" alt="95 Skills" />
   <img src="https://img.shields.io/badge/Tested-CI_Validated-brightgreen?style=for-the-badge" alt="CI Tested" />
   <img src="https://img.shields.io/badge/Permissions-100%25_Declared-brightgreen?style=for-the-badge" alt="Permissions" />
   <img src="https://img.shields.io/badge/Pipelines-5-purple?style=for-the-badge" alt="5 Pipelines" />
@@ -17,13 +17,13 @@
 
 <p align="center">
   <strong>The only skills collection where every skill is tested, permission-scoped, and composable.</strong><br/>
-  94 skills. 5 pipelines. Full CI validation. Zero trust assumptions.
+  95 skills. 5 pipelines. Full CI validation. Zero trust assumptions.
 </p>
 
 <p align="center">
   <a href="#quick-install">Quick Install</a> &bull;
   <a href="#what-makes-this-different">Why This One</a> &bull;
-  <a href="#all-94-skills">Browse Skills</a> &bull;
+  <a href="#all-95-skills">Browse Skills</a> &bull;
   <a href="#web--ui-6----landing-pages-spas-animations-design-systems">Web & UI</a> &bull;
   <a href="#pipelines">Pipelines</a> &bull;
   <a href="#plugin-marketplace">Marketplace</a> &bull;
@@ -121,7 +121,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 
 ---
 
-## All 94 Skills
+## All 95 Skills
 
 ### Web & UI (6) — *Landing pages, SPAs, animations, design systems*
 
@@ -254,7 +254,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 </details>
 
 <details>
-<summary><strong>API Development (4)</strong></summary>
+<summary><strong>API Development (5)</strong></summary>
 
 | Command | What It Does |
 |---------|-------------|
@@ -262,6 +262,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 | `api--graphql-schema` | GraphQL types, queries, mutations, resolvers with DataLoader |
 | `api--rest-client` | Type-safe API client with retry, timeout, cancellation |
 | `api--mock-api` | Mock API server with realistic data, latency, stateful CRUD |
+| `api--messaging-bridge` | Multi-platform messaging bridge (Telegram, WhatsApp, Instagram, Messenger) to Claude API with session management |
 
 </details>
 
@@ -403,8 +404,8 @@ The skill format (markdown with numbered steps) is intentionally portable. No ve
 ```
 
 Options:
-1. **Global** — All 93 skills in every project
-2. **Project** — All 93 skills in current project only
+1. **Global** — All 95 skills in every project
+2. **Project** — All 95 skills in current project only
 3. **Selective** — Pick categories to install
 4. **Uninstall** — Remove all installed skills
 
@@ -499,11 +500,11 @@ Every skill is validated by CI on every push:
   ║       CLAUDE SKILLS TEST RUNNER         ║
   ╚═════════════════════════════════════════╝
 
-  [1/5] Structure Validation     94/94 PASS
-  [2/5] Permission Manifests     94/94 declared
-  [3/5] Safety Lint              94/94 safe
-  [4/5] Trigger Quality          94/94 OK
-  [5/5] Test File Coverage       10/94 (11%)
+  [1/5] Structure Validation     95/95 PASS
+  [2/5] Permission Manifests     95/95 declared
+  [3/5] Safety Lint              95/95 safe
+  [4/5] Trigger Quality          95/95 OK
+  [5/5] Test File Coverage       10/95 (11%)
 ```
 
 ### What Gets Checked
@@ -552,7 +553,7 @@ Use the [template](template/SKILL.md) and follow the [contributing guide](CONTRI
 <details>
 <summary><strong>Do skills slow down Claude Code?</strong></summary>
 
-No. Skills are only loaded when you invoke them. Having 93 skills installed has zero impact on performance.
+No. Skills are only loaded when you invoke them. Having 95 skills installed has zero impact on performance.
 
 </details>
 
@@ -576,7 +577,7 @@ Start with global. If you want to share specific skills with your team (e.g., en
 
 ```
 claude-skills/
-├── skills/                     # 94 skills organized by category
+├── skills/                     # 95 skills organized by category
 │   ├── meta/                   # 4 meta-skills (router, pipelines, forge, health)
 │   ├── git/                    # 10 git & version control skills
 │   ├── code-quality/           # 10 code review & refactoring skills
@@ -587,7 +588,7 @@ claude-skills/
 │   ├── database/               # 6 database & ORM skills
 │   ├── scaffold/               # 6 project scaffolding skills
 │   ├── performance/            # 5 performance optimization skills
-│   ├── api/                    # 4 API development skills
+│   ├── api/                    # 5 API development skills
 │   ├── ai/                     # 3 AI/LLM integration skills
 │   ├── web/                    # 6 web & UI skills (landing pages, SPA, animations, design systems)
 │   ├── accessibility/          # 2 WCAG compliance skills
