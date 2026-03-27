@@ -3,7 +3,7 @@ set -euo pipefail
 
 # ============================================================================
 #  Claude Skills Installer
-#  Installs 93 custom slash commands for Claude Code
+#  Installs 94 custom slash commands for Claude Code
 # ============================================================================
 
 REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -24,7 +24,7 @@ print_banner() {
     echo "   ╔═══════════════════════════════════════════════════════╗"
     echo "   ║                                                       ║"
     echo "   ║            CLAUDE SKILLS INSTALLER                    ║"
-    echo "   ║            93 Slash Commands for Claude Code          ║"
+    echo "   ║            94 Slash Commands for Claude Code          ║"
     echo "   ║                                                       ║"
     echo "   ╚═══════════════════════════════════════════════════════╝"
     echo -e "${NC}"
