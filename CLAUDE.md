@@ -1,11 +1,11 @@
 # Claude Skills Collection
 
-This repository contains 92 custom slash commands (skills) for Claude Code organized in `skills/` by category.
+This repository contains 93 custom slash commands (skills) for Claude Code organized in `skills/` by category.
 
 ## Project Structure
 
 ```
-skills/                  # All 92 skills organized by category
+skills/                  # All 93 skills organized by category
 ├── git/                 # 10 git & version control skills
 ├── code-quality/        # 10 code quality & review skills
 ├── testing/             # 8 testing skills
@@ -15,7 +15,7 @@ skills/                  # All 92 skills organized by category
 ├── database/            # 6 database skills
 ├── api/                 # 4 API development skills
 ├── performance/         # 5 performance skills
-├── scaffold/            # 7 scaffolding skills
+├── scaffold/            # 8 scaffolding skills
 ├── ai/                  # 3 AI/LLM skills
 ├── accessibility/       # 2 accessibility skills
 ├── i18n/                # 1 internationalization skill

@@ -403,8 +403,8 @@ The skill format (markdown with numbered steps) is intentionally portable. No ve
 ```
 
 Options:
-1. **Global** — All 90 skills in every project
-2. **Project** — All 90 skills in current project only
+1. **Global** — All 93 skills in every project
+2. **Project** — All 93 skills in current project only
 3. **Selective** — Pick categories to install
 4. **Uninstall** — Remove all installed skills
 
@@ -552,7 +552,7 @@ Use the [template](template/SKILL.md) and follow the [contributing guide](CONTRI
 <details>
 <summary><strong>Do skills slow down Claude Code?</strong></summary>
 
-No. Skills are only loaded when you invoke them. Having 90 skills installed has zero impact on performance.
+No. Skills are only loaded when you invoke them. Having 93 skills installed has zero impact on performance.
 
 </details>
 
