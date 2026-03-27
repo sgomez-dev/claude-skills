@@ -172,6 +172,20 @@
       ]
     },
     {
+      "name": "web-skills",
+      "description": "6 web & UI skills — world-class landing pages, SPA scaffold, animations, design system, UI components, conversion optimization",
+      "source": "skills/web",
+      "strict": false,
+      "skills": [
+        "skills/web/landing-page.md",
+        "skills/web/spa-scaffold.md",
+        "skills/web/animations.md",
+        "skills/web/design-system.md",
+        "skills/web/ui-components-pro.md",
+        "skills/web/conversion-optimizer.md"
+      ]
+    },
+    {
       "name": "utility-skills",
       "description": "15 utility skills — explain, translate, regex, configs, env setup, accessibility, i18n",
       "source": "skills",

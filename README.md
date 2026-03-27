@@ -24,6 +24,7 @@
   <a href="#quick-install">Quick Install</a> &bull;
   <a href="#what-makes-this-different">Why This One</a> &bull;
   <a href="#all-94-skills">Browse Skills</a> &bull;
+  <a href="#web--ui-6----landing-pages-spas-animations-design-systems">Web & UI</a> &bull;
   <a href="#pipelines">Pipelines</a> &bull;
   <a href="#plugin-marketplace">Marketplace</a> &bull;
   <a href="#cross-platform">Cross-Platform</a>
@@ -78,14 +79,34 @@ You know **exactly** what each skill can do before you install it. No other coll
 
 Install individual bundles or all at once. See [all available plugins](#plugin-marketplace).
 
-### One-liner (macOS / Linux / Git Bash)
+### One-liner — no clone needed (macOS / Linux / Git Bash)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/sgomez-dev/claude-skills/main/install.sh | bash
+```
+
+### One-liner — no clone needed (Windows PowerShell)
+
+```powershell
+irm https://raw.githubusercontent.com/sgomez-dev/claude-skills/main/install.ps1 | iex
+```
+
+### Install a single skill (no clone, no installer)
+
+```bash
+# Example: just the animations skill
+curl -fsSL https://raw.githubusercontent.com/sgomez-dev/claude-skills/main/skills/web/animations.md \
+  -o ~/.claude/commands/web--animations.md
+```
+
+### Clone + install (if you want to customize)
 
 ```bash
 git clone https://github.com/sgomez-dev/claude-skills.git
 cd claude-skills && ./install.sh
 ```
 
-### Windows PowerShell
+### Windows PowerShell (clone)
 
 ```powershell
 git clone https://github.com/sgomez-dev/claude-skills.git
@@ -101,6 +122,17 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 ---
 
 ## All 94 Skills
+
+### Web & UI (6) — *Landing pages, SPAs, animations, design systems*
+
+| Command | What It Does |
+|---------|-------------|
+| `web--landing-page` | Generates a world-class landing page — unique layout strategy, crafted copy, Framer Motion animations, never AI-looking |
+| `web--spa-scaffold` | Production-grade SPA with elite architecture, design system, state management, skeleton states, accessibility |
+| `web--animations` | Full animation catalog: scroll-driven, 3D models (R3F), horizontal scroll, WebGL shaders, particles, custom cursor, text effects |
+| `web--design-system` | Complete design system with semantic tokens, typography scale, dark mode, component library, Storybook |
+| `web--ui-components-pro` | Elite UI components with physics-based animations, compound patterns, magnetic hover, 3D tilt, every edge case handled |
+| `web--conversion-optimizer` | CRO audit: clarity, friction, trust, copy — diagnoses with exact code fixes and A/B test roadmap |
 
 ### Meta Skills (4) — *No other repo has these*
 
@@ -321,6 +353,7 @@ Install skill bundles directly in Claude Code:
 /plugin marketplace add sgomez-dev/claude-skills
 
 # Install specific bundles
+/plugin install web-skills@claude-skills-collection
 /plugin install git-skills@claude-skills-collection
 /plugin install code-quality-skills@claude-skills-collection
 /plugin install testing-skills@claude-skills-collection
@@ -556,6 +589,7 @@ claude-skills/
 │   ├── performance/            # 5 performance optimization skills
 │   ├── api/                    # 4 API development skills
 │   ├── ai/                     # 3 AI/LLM integration skills
+│   ├── web/                    # 6 web & UI skills (landing pages, SPA, animations, design systems)
 │   ├── accessibility/          # 2 WCAG compliance skills
 │   ├── i18n/                   # 1 internationalization skill
 │   ├── utils/                  # 12 utility skills
