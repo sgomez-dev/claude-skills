@@ -1,6 +1,6 @@
 # ============================================================================
 #  Claude Skills Installer (Windows PowerShell)
-#  Installs 90 custom slash commands for Claude Code
+#  Installs 93 custom slash commands for Claude Code
 # ============================================================================
 
 $ErrorActionPreference = "Stop"
@@ -23,7 +23,7 @@ function Write-Banner {
     Write-Host "   ╔═══════════════════════════════════════════════════════╗" -ForegroundColor Cyan
     Write-Host "   ║                                                       ║" -ForegroundColor Cyan
     Write-Host "   ║            CLAUDE SKILLS INSTALLER                    ║" -ForegroundColor Cyan
-    Write-Host "   ║            90 Slash Commands for Claude Code          ║" -ForegroundColor Cyan
+    Write-Host "   ║            93 Slash Commands for Claude Code          ║" -ForegroundColor Cyan
     Write-Host "   ║                                                       ║" -ForegroundColor Cyan
     Write-Host "   ╚═══════════════════════════════════════════════════════╝" -ForegroundColor Cyan
     Write-Host ""
