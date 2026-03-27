@@ -100,7 +100,12 @@ function Install-Project {
 }
 
 function Install-Selective {
-    $target = Join-Path $env:USERPROFILE ".claude\commands"
+    Write-Host "`n   Install selected categories to:"
+    Write-Host "   1) Global  - ~/.claude/commands (all projects)"
+    Write-Host "   2) Project - .claude/commands (this project only)`n"
+    $scope = Read-Host "   Choose [1-2]"
+    $target = if ($scope -eq "2") { Join-Path (Get-Location) ".claude\commands" } else { Join-Path $env:USERPROFILE ".claude\commands" }
+
     $categories = $RemoteSkills.Keys | Sort-Object
 
     Write-Host "`n[Selective Install] Choose categories to install:`n" -ForegroundColor Blue
