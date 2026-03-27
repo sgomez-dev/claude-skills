@@ -54,9 +54,10 @@ print_category() {
 #  INSTALLATION MODES
 # ============================================================================
 
-install_global() {
-    local target="$HOME/.claude/commands"
-    echo -e "\n${BLUE}[Global Install]${NC} Installing to ${BOLD}$target${NC}\n"
+install_to_target() {
+    local target="$1"
+    local label="$2"
+    echo -e "\n${BLUE}[$label]${NC} Installing to ${BOLD}$target${NC}\n"
     mkdir -p "$target"
 
     local count=0
@@ -74,36 +75,41 @@ install_global() {
         print_category "$category" "$cat_count"
     done
 
-    echo -e "\n${GREEN}${BOLD}   $count skills installed globally!${NC}"
-    echo -e "   Available in ALL your projects as ${CYAN}/category--skill${NC}"
+    echo -e "\n${GREEN}${BOLD}   $count skills installed!${NC}"
+    if [[ "$label" == "Global Install" ]]; then
+        echo -e "   Available in ALL your projects as ${CYAN}/category--skill${NC}"
+    else
+        echo -e "   Available in this project as ${CYAN}/project:category--skill${NC}"
+    fi
+}
+
+install_global() {
+    install_to_target "$HOME/.claude/commands" "Global Install"
 }
 
 install_project() {
-    local project_dir="${1:-.}"
-    local target="$project_dir/.claude/commands"
-    echo -e "\n${BLUE}[Project Install]${NC} Installing to ${BOLD}$target${NC}\n"
-    mkdir -p "$target"
+    install_to_target "./.claude/commands" "Project Install"
+}
 
-    local count=0
-    for category_dir in "$SKILLS_DIR"/*/; do
-        local category=$(basename "$category_dir")
-        local cat_count=0
-        for skill_file in "$category_dir"*.md; do
-            [ -f "$skill_file" ] || continue
-            local skill_name=$(basename "$skill_file" .md)
-            local dest_name="${category}--${skill_name}.md"
-            cp "$skill_file" "$target/$dest_name"
-            count=$((count + 1))
-            cat_count=$((cat_count + 1))
-        done
-        print_category "$category" "$cat_count"
-    done
+ask_scope() {
+    echo -e "\n   Install to:"
+    echo -e "   ${BOLD}1)${NC} Global  - ~/.claude/commands (all projects)"
+    echo -e "   ${BOLD}2)${NC} Project - .claude/commands (this project only)\n"
+    read -rp "   Choose [1-2]: " scope </dev/tty
 
-    echo -e "\n${GREEN}${BOLD}   $count skills installed to project!${NC}"
-    echo -e "   Available in this project as ${CYAN}/project:category--skill${NC}"
+    if [[ "$scope" == "2" ]]; then
+        echo "./.claude/commands"
+    else
+        echo "$HOME/.claude/commands"
+    fi
 }
 
 install_selective() {
+    local target
+    target=$(ask_scope)
+    local scope_label="Global Install"
+    [[ "$target" == "./.claude/commands" ]] && scope_label="Project Install"
+
     echo -e "\n${BLUE}[Selective Install]${NC} Choose categories to install:\n"
 
     local categories=()
@@ -121,11 +127,10 @@ install_selective() {
     read -rp "   > " selection </dev/tty
 
     if [[ "$selection" == "all" ]]; then
-        install_global
+        install_to_target "$target" "$scope_label"
         return
     fi
 
-    local target="$HOME/.claude/commands"
     mkdir -p "$target"
     local count=0
 
