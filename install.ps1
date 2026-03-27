@@ -99,6 +99,65 @@ function Install-Project {
     Write-Host "`n   $script:installCount skills installed to project!" -ForegroundColor Green
 }
 
+function Install-Selective {
+    $target = Join-Path $env:USERPROFILE ".claude\commands"
+    $categories = $RemoteSkills.Keys | Sort-Object
+
+    Write-Host "`n[Selective Install] Choose categories to install:`n" -ForegroundColor Blue
+
+    $i = 1
+    $indexedCategories = @{}
+    foreach ($cat in $categories) {
+        $skillCount = $RemoteSkills[$cat].Count
+        Write-Host "   $i) $cat ($skillCount skills)"
+        $indexedCategories[$i] = $cat
+        $i++
+    }
+
+    Write-Host "`n   Enter numbers separated by spaces (e.g., 1 3 5)"
+    Write-Host "   Or 'all' to install everything`n"
+    $selection = Read-Host "   > "
+
+    if ($selection -eq "all") {
+        Install-Global
+        return
+    }
+
+    New-Item -ItemType Directory -Force -Path $target | Out-Null
+    $script:installCount = 0
+
+    foreach ($numStr in $selection -split '\s+') {
+        $num = [int]$numStr
+        if ($indexedCategories.ContainsKey($num)) {
+            $category = $indexedCategories[$num]
+            $catCount = 0
+            if ($IsRemote) {
+                foreach ($skill in $RemoteSkills[$category]) {
+                    $url = "$GithubBase/$category/$skill.md"
+                    $dest = Join-Path $target "${category}--${skill}.md"
+                    try {
+                        Invoke-WebRequest -Uri $url -OutFile $dest -UseBasicParsing
+                        $script:installCount++; $catCount++
+                    } catch {
+                        Write-Host "   ! Failed: $category/$skill" -ForegroundColor Yellow
+                    }
+                }
+            } else {
+                $categoryDir = Join-Path $SkillsDir $category
+                foreach ($skillFile in Get-ChildItem -Path $categoryDir -Filter "*.md" -ErrorAction SilentlyContinue) {
+                    $skillName = [System.IO.Path]::GetFileNameWithoutExtension($skillFile.Name)
+                    Copy-Item $skillFile.FullName (Join-Path $target "${category}--${skillName}.md")
+                    $script:installCount++; $catCount++
+                }
+            }
+            Write-Host "   + Installed $category ($catCount skills)" -ForegroundColor Green
+        }
+    }
+
+    Write-Host "`n   $script:installCount skills installed!" -ForegroundColor Green
+    Write-Host "   Available as /category--skill" -ForegroundColor Cyan
+}
+
 function Uninstall-Skills {
     Write-Host "`n[Uninstall] Removing claude-skills commands...`n" -ForegroundColor Yellow
     $count = 0
@@ -130,15 +189,17 @@ Write-Host "   How would you like to install?`n"
 Write-Host "   1) Global     - Available in ALL projects      " -NoNewline
 Write-Host "(recommended)" -ForegroundColor Cyan
 Write-Host "   2) Project    - Only in current project directory"
-Write-Host "   3) Uninstall  - Remove installed skills"
+Write-Host "   3) Selective  - Choose specific categories"
+Write-Host "   4) Uninstall  - Remove installed skills"
 Write-Host ""
 
-$choice = Read-Host "   Choose [1-3]"
+$choice = Read-Host "   Choose [1-4]"
 
 switch ($choice) {
     "1" { Install-Global }
     "2" { Install-Project }
-    "3" { Uninstall-Skills }
+    "3" { Install-Selective }
+    "4" { Uninstall-Skills }
     default { Write-Host "`n   Invalid choice." -ForegroundColor Red; exit 1 }
 }
 
