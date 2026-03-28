@@ -1,6 +1,6 @@
 # ============================================================================
 #  Claude Skills Installer (Windows PowerShell)
-#  Installs 96 custom slash commands for Claude Code
+#  Installs 102 custom slash commands for Claude Code
 # ============================================================================
 
 $ErrorActionPreference = "Stop"
@@ -23,7 +23,7 @@ function Write-Banner {
     Write-Host "   ╔═══════════════════════════════════════════════════════╗" -ForegroundColor Cyan
     Write-Host "   ║                                                       ║" -ForegroundColor Cyan
     Write-Host "   ║            CLAUDE SKILLS INSTALLER                    ║" -ForegroundColor Cyan
-    Write-Host "   ║            96 Slash Commands for Claude Code          ║" -ForegroundColor Cyan
+    Write-Host "   ║            102 Slash Commands for Claude Code          ║" -ForegroundColor Cyan
     Write-Host "   ║                                                       ║" -ForegroundColor Cyan
     Write-Host "   ╚═══════════════════════════════════════════════════════╝" -ForegroundColor Cyan
     Write-Host ""
@@ -33,17 +33,17 @@ function Write-Banner {
 $RemoteSkills = @{
     "git"          = @("commit","changelog","release","branch","undo","blame-detective","stash-manager","cherry-pick-pr","pr-create","pr-review")
     "code-quality" = @("review","refactor","dead-code","complexity","dry","code-smells","naming","type-check","error-handling","dependency-audit")
-    "testing"      = @("test-gen","test-edge-cases","test-integration","test-fix","test-coverage","test-e2e","test-mock","snapshot-update")
-    "docs"         = @("doc-gen","readme-gen","diagram","adr","api-doc","openapi-gen","contributing")
+    "testing"      = @("test-gen","test-edge-cases","test-integration","test-fix","test-coverage","test-e2e","test-mock","snapshot-update","playwright-mcp")
+    "docs"         = @("doc-gen","readme-gen","diagram","adr","api-doc","openapi-gen","contributing","video-spec")
     "security"     = @("security-audit","secrets-scan","auth-review","sanitize","cors-review","csp-gen","dependency-vuln","env-hardening")
     "devops"       = @("dockerfile","docker-compose","ci","github-actions","k8s","terraform","nginx","deploy-check")
     "database"     = @("migration","query-optimize","schema","seed","erd","prisma-gen")
     "api"          = @("endpoint","graphql-schema","rest-client","mock-api","messaging-bridge")
     "performance"  = @("perf-audit","bundle-analyze","cache","lazy-load","memory-leak")
-    "scaffold"     = @("scaffold","fullstack","component","hook","middleware","model","startup-generator","component-3d")
+    "scaffold"     = @("scaffold","fullstack","component","hook","middleware","model","startup-generator","component-3d","remotion")
     "ai"           = @("prompt-engineer","ai-integration","embeddings")
-    "web"          = @("landing-page","spa-scaffold","animations","design-engineering","design-system","ui-components-pro","conversion-optimizer")
-    "utils"        = @("explain","translate","regex","gitignore","convert","dep-update","env-setup","cron-explain","tsconfig","eslint-config","package-json","monorepo")
+    "web"          = @("landing-page","spa-scaffold","animations","awwwards-animations","animated-components","design-engineering","design-system","ui-components-pro","conversion-optimizer")
+    "utils"        = @("explain","translate","regex","gitignore","convert","dep-update","env-setup","cron-explain","tsconfig","eslint-config","package-json","monorepo","ffmpeg")
     "accessibility"= @("a11y-audit","a11y-fix")
     "i18n"         = @("i18n-setup")
     "marketing"    = @("marketing-audit")
