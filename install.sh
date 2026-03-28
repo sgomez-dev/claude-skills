@@ -3,7 +3,7 @@ set -euo pipefail
 
 # ============================================================================
 #  Claude Skills Installer
-#  Installs 95 custom slash commands for Claude Code
+#  Installs 96 custom slash commands for Claude Code
 #
 #  Wrapping in main() ensures the entire script is downloaded before
 #  execution when running via: curl -fsSL ... | bash
@@ -38,7 +38,7 @@ print_banner() {
     echo "   ╔═══════════════════════════════════════════════════════╗"
     echo "   ║                                                       ║"
     echo "   ║            CLAUDE SKILLS INSTALLER                    ║"
-    echo "   ║            95 Slash Commands for Claude Code          ║"
+    echo "   ║            96 Slash Commands for Claude Code          ║"
     echo "   ║                                                       ║"
     echo "   ╚═══════════════════════════════════════════════════════╝"
     echo -e "${NC}"

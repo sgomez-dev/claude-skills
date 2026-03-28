@@ -1,6 +1,6 @@
 # ============================================================================
 #  Claude Skills Installer (Windows PowerShell)
-#  Installs 95 custom slash commands for Claude Code
+#  Installs 96 custom slash commands for Claude Code
 # ============================================================================
 
 $ErrorActionPreference = "Stop"
@@ -23,7 +23,7 @@ function Write-Banner {
     Write-Host "   ╔═══════════════════════════════════════════════════════╗" -ForegroundColor Cyan
     Write-Host "   ║                                                       ║" -ForegroundColor Cyan
     Write-Host "   ║            CLAUDE SKILLS INSTALLER                    ║" -ForegroundColor Cyan
-    Write-Host "   ║            95 Slash Commands for Claude Code          ║" -ForegroundColor Cyan
+    Write-Host "   ║            96 Slash Commands for Claude Code          ║" -ForegroundColor Cyan
     Write-Host "   ║                                                       ║" -ForegroundColor Cyan
     Write-Host "   ╚═══════════════════════════════════════════════════════╝" -ForegroundColor Cyan
     Write-Host ""
@@ -42,7 +42,7 @@ $RemoteSkills = @{
     "performance"  = @("perf-audit","bundle-analyze","cache","lazy-load","memory-leak")
     "scaffold"     = @("scaffold","fullstack","component","hook","middleware","model","startup-generator","component-3d")
     "ai"           = @("prompt-engineer","ai-integration","embeddings")
-    "web"          = @("landing-page","spa-scaffold","animations","design-system","ui-components-pro","conversion-optimizer")
+    "web"          = @("landing-page","spa-scaffold","animations","design-engineering","design-system","ui-components-pro","conversion-optimizer")
     "utils"        = @("explain","translate","regex","gitignore","convert","dep-update","env-setup","cron-explain","tsconfig","eslint-config","package-json","monorepo")
     "accessibility"= @("a11y-audit","a11y-fix")
     "i18n"         = @("i18n-setup")
