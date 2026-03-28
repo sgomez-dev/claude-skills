@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Skills-95-blue?style=for-the-badge" alt="95 Skills" />
+  <img src="https://img.shields.io/badge/Skills-96-blue?style=for-the-badge" alt="95 Skills" />
   <img src="https://img.shields.io/badge/Tested-CI_Validated-brightgreen?style=for-the-badge" alt="CI Tested" />
   <img src="https://img.shields.io/badge/Permissions-100%25_Declared-brightgreen?style=for-the-badge" alt="Permissions" />
   <img src="https://img.shields.io/badge/Pipelines-5-purple?style=for-the-badge" alt="5 Pipelines" />
@@ -17,13 +17,13 @@
 
 <p align="center">
   <strong>The only skills collection where every skill is tested, permission-scoped, and composable.</strong><br/>
-  95 skills. 5 pipelines. Full CI validation. Zero trust assumptions.
+  96 skills. 5 pipelines. Full CI validation. Zero trust assumptions.
 </p>
 
 <p align="center">
   <a href="#quick-install">Quick Install</a> &bull;
   <a href="#what-makes-this-different">Why This One</a> &bull;
-  <a href="#all-95-skills">Browse Skills</a> &bull;
+  <a href="#all-96-skills">Browse Skills</a> &bull;
   <a href="#web--ui-6----landing-pages-spas-animations-design-systems">Web & UI</a> &bull;
   <a href="#pipelines">Pipelines</a> &bull;
   <a href="#plugin-marketplace">Marketplace</a> &bull;
@@ -121,15 +121,16 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 
 ---
 
-## All 95 Skills
+## All 96 Skills
 
-### Web & UI (6) — *Landing pages, SPAs, animations, design systems*
+### Web & UI (7) — *Landing pages, SPAs, animations, design systems, UI polish*
 
 | Command | What It Does |
 |---------|-------------|
 | `web--landing-page` | Generates a world-class landing page — unique layout strategy, crafted copy, Framer Motion animations, never AI-looking |
 | `web--spa-scaffold` | Production-grade SPA with elite architecture, design system, state management, skeleton states, accessibility |
 | `web--animations` | Full animation catalog: scroll-driven, 3D models (R3F), horizontal scroll, WebGL shaders, particles, custom cursor, text effects |
+| `web--design-engineering` | UI polish and animation decisions — easing, springs, component patterns, performance, accessibility (Emil Kowalski) |
 | `web--design-system` | Complete design system with semantic tokens, typography scale, dark mode, component library, Storybook |
 | `web--ui-components-pro` | Elite UI components with physics-based animations, compound patterns, magnetic hover, 3D tilt, every edge case handled |
 | `web--conversion-optimizer` | CRO audit: clarity, friction, trust, copy — diagnoses with exact code fixes and A/B test roadmap |
@@ -404,8 +405,8 @@ The skill format (markdown with numbered steps) is intentionally portable. No ve
 ```
 
 Options:
-1. **Global** — All 95 skills in every project
-2. **Project** — All 95 skills in current project only
+1. **Global** — All 96 skills in every project
+2. **Project** — All 96 skills in current project only
 3. **Selective** — Pick categories to install
 4. **Uninstall** — Remove all installed skills
 
@@ -500,11 +501,11 @@ Every skill is validated by CI on every push:
   ║       CLAUDE SKILLS TEST RUNNER         ║
   ╚═════════════════════════════════════════╝
 
-  [1/5] Structure Validation     95/95 PASS
-  [2/5] Permission Manifests     95/95 declared
-  [3/5] Safety Lint              95/95 safe
-  [4/5] Trigger Quality          95/95 OK
-  [5/5] Test File Coverage       10/95 (11%)
+  [1/5] Structure Validation     96/96 PASS
+  [2/5] Permission Manifests     96/96 declared
+  [3/5] Safety Lint              96/96 safe
+  [4/5] Trigger Quality          96/96 OK
+  [5/5] Test File Coverage       10/96 (11%)
 ```
 
 ### What Gets Checked
@@ -553,7 +554,7 @@ Use the [template](template/SKILL.md) and follow the [contributing guide](CONTRI
 <details>
 <summary><strong>Do skills slow down Claude Code?</strong></summary>
 
-No. Skills are only loaded when you invoke them. Having 95 skills installed has zero impact on performance.
+No. Skills are only loaded when you invoke them. Having 96 skills installed has zero impact on performance.
 
 </details>
 
@@ -577,7 +578,7 @@ Start with global. If you want to share specific skills with your team (e.g., en
 
 ```
 claude-skills/
-├── skills/                     # 95 skills organized by category
+├── skills/                     # 96 skills organized by category
 │   ├── meta/                   # 4 meta-skills (router, pipelines, forge, health)
 │   ├── git/                    # 10 git & version control skills
 │   ├── code-quality/           # 10 code review & refactoring skills
@@ -590,7 +591,7 @@ claude-skills/
 │   ├── performance/            # 5 performance optimization skills
 │   ├── api/                    # 5 API development skills
 │   ├── ai/                     # 3 AI/LLM integration skills
-│   ├── web/                    # 6 web & UI skills (landing pages, SPA, animations, design systems)
+│   ├── web/                    # 7 web & UI skills (landing pages, SPA, animations, design systems)
 │   ├── accessibility/          # 2 WCAG compliance skills
 │   ├── i18n/                   # 1 internationalization skill
 │   ├── utils/                  # 12 utility skills
