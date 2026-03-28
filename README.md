@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Skills-96-blue?style=for-the-badge" alt="95 Skills" />
+  <img src="https://img.shields.io/badge/Skills-102-blue?style=for-the-badge" alt="95 Skills" />
   <img src="https://img.shields.io/badge/Tested-CI_Validated-brightgreen?style=for-the-badge" alt="CI Tested" />
   <img src="https://img.shields.io/badge/Permissions-100%25_Declared-brightgreen?style=for-the-badge" alt="Permissions" />
   <img src="https://img.shields.io/badge/Pipelines-5-purple?style=for-the-badge" alt="5 Pipelines" />
@@ -17,13 +17,13 @@
 
 <p align="center">
   <strong>The only skills collection where every skill is tested, permission-scoped, and composable.</strong><br/>
-  96 skills. 5 pipelines. Full CI validation. Zero trust assumptions.
+  102 skills. 5 pipelines. Full CI validation. Zero trust assumptions.
 </p>
 
 <p align="center">
   <a href="#quick-install">Quick Install</a> &bull;
   <a href="#what-makes-this-different">Why This One</a> &bull;
-  <a href="#all-96-skills">Browse Skills</a> &bull;
+  <a href="#all-102-skills">Browse Skills</a> &bull;
   <a href="#web--ui-6----landing-pages-spas-animations-design-systems">Web & UI</a> &bull;
   <a href="#pipelines">Pipelines</a> &bull;
   <a href="#plugin-marketplace">Marketplace</a> &bull;
@@ -121,9 +121,9 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 
 ---
 
-## All 96 Skills
+## All 102 Skills
 
-### Web & UI (7) — *Landing pages, SPAs, animations, design systems, UI polish*
+### Web & UI (9) — *Landing pages, SPAs, animations, design systems, UI polish*
 
 | Command | What It Does |
 |---------|-------------|
@@ -133,6 +133,8 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 | `web--design-engineering` | UI polish and animation decisions — easing, springs, component patterns, performance, accessibility (Emil Kowalski) |
 | `web--design-system` | Complete design system with semantic tokens, typography scale, dark mode, component library, Storybook |
 | `web--ui-components-pro` | Elite UI components with physics-based animations, compound patterns, magnetic hover, 3D tilt, every edge case handled |
+| `web--awwwards-animations` | Awwwards-level React animations — GSAP, Motion, Anime.js, Lenis smooth scroll, ScrollTrigger |
+| `web--animated-components` | Pre-built animated React components — Magic UI (150+ shadcn/Tailwind) and React Bits (90+ effects) |
 | `web--conversion-optimizer` | CRO audit: clarity, friction, trust, copy — diagnoses with exact code fixes and A/B test roadmap |
 
 ### Meta Skills (4) — *No other repo has these*
@@ -178,7 +180,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 </details>
 
 <details>
-<summary><strong>Testing (8)</strong></summary>
+<summary><strong>Testing (9)</strong></summary>
 
 | Command | What It Does |
 |---------|-------------|
@@ -190,6 +192,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 | `testing--test-coverage` | Finds coverage gaps, generates tests for highest-risk areas |
 | `testing--test-mock` | Generates mocks, stubs, spies, fakes, fixture factories |
 | `testing--snapshot-update` | Reviews snapshot changes — intentional, bug, or flaky? |
+| `testing--playwright-mcp` | Playwright MCP browser automation — navigate, click, fill forms, debug, screenshots |
 
 </details>
 
@@ -226,7 +229,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 </details>
 
 <details>
-<summary><strong>Documentation (7)</strong></summary>
+<summary><strong>Documentation (8)</strong></summary>
 
 | Command | What It Does |
 |---------|-------------|
@@ -237,6 +240,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 | `docs--api-doc` | API documentation from route handlers with examples and status codes |
 | `docs--openapi-gen` | Generates OpenAPI 3.0 YAML from codebase endpoints |
 | `docs--contributing` | CONTRIBUTING.md tailored to actual project tooling |
+| `docs--video-spec` | Motion design video specs — scene breakdowns, timing, audio strategy, animation principles |
 
 </details>
 
@@ -281,7 +285,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 </details>
 
 <details>
-<summary><strong>Scaffolding (6)</strong></summary>
+<summary><strong>Scaffolding (7)</strong></summary>
 
 | Command | What It Does |
 |---------|-------------|
@@ -291,6 +295,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 | `scaffold--hook` | Custom React hook with types, cleanup, tests |
 | `scaffold--middleware` | Auth, validation, logging, rate limiting middleware |
 | `scaffold--model` | Data model with validation, relations, methods, factory |
+| `scaffold--remotion` | Remotion video creation in React — compositions, animations, audio, transitions |
 
 </details>
 
@@ -325,7 +330,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 </details>
 
 <details>
-<summary><strong>Utilities (12)</strong></summary>
+<summary><strong>Utilities (13)</strong></summary>
 
 | Command | What It Does |
 |---------|-------------|
@@ -341,6 +346,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 | `utils--eslint-config` | ESLint config with framework-specific rules, import ordering |
 | `utils--package-json` | Cleans up package.json: scripts, deps, metadata, security |
 | `utils--monorepo` | Sets up monorepo: workspaces, shared configs, build pipeline |
+| `utils--ffmpeg` | FFmpeg video/audio processing — convert, resize, compress, trim, concatenate, platform export |
 
 </details>
 
@@ -405,8 +411,8 @@ The skill format (markdown with numbered steps) is intentionally portable. No ve
 ```
 
 Options:
-1. **Global** — All 96 skills in every project
-2. **Project** — All 96 skills in current project only
+1. **Global** — All 102 skills in every project
+2. **Project** — All 102 skills in current project only
 3. **Selective** — Pick categories to install
 4. **Uninstall** — Remove all installed skills
 
@@ -501,11 +507,11 @@ Every skill is validated by CI on every push:
   ║       CLAUDE SKILLS TEST RUNNER         ║
   ╚═════════════════════════════════════════╝
 
-  [1/5] Structure Validation     96/96 PASS
-  [2/5] Permission Manifests     96/96 declared
-  [3/5] Safety Lint              96/96 safe
-  [4/5] Trigger Quality          96/96 OK
-  [5/5] Test File Coverage       10/96 (11%)
+  [1/5] Structure Validation     102/102 PASS
+  [2/5] Permission Manifests     102/102 declared
+  [3/5] Safety Lint              102/102 safe
+  [4/5] Trigger Quality          102/102 OK
+  [5/5] Test File Coverage       10/102 (11%)
 ```
 
 ### What Gets Checked
@@ -554,7 +560,7 @@ Use the [template](template/SKILL.md) and follow the [contributing guide](CONTRI
 <details>
 <summary><strong>Do skills slow down Claude Code?</strong></summary>
 
-No. Skills are only loaded when you invoke them. Having 96 skills installed has zero impact on performance.
+No. Skills are only loaded when you invoke them. Having 102 skills installed has zero impact on performance.
 
 </details>
 
@@ -578,23 +584,23 @@ Start with global. If you want to share specific skills with your team (e.g., en
 
 ```
 claude-skills/
-├── skills/                     # 96 skills organized by category
+├── skills/                     # 102 skills organized by category
 │   ├── meta/                   # 4 meta-skills (router, pipelines, forge, health)
 │   ├── git/                    # 10 git & version control skills
 │   ├── code-quality/           # 10 code review & refactoring skills
-│   ├── testing/                # 8 test generation & management skills
+│   ├── testing/                # 9 test generation & management skills
 │   ├── security/               # 8 security audit & hardening skills
 │   ├── devops/                 # 8 infrastructure & deployment skills
-│   ├── docs/                   # 7 documentation generation skills
+│   ├── docs/                   # 8 documentation generation skills
 │   ├── database/               # 6 database & ORM skills
-│   ├── scaffold/               # 6 project scaffolding skills
+│   ├── scaffold/               # 7 project scaffolding skills
 │   ├── performance/            # 5 performance optimization skills
 │   ├── api/                    # 5 API development skills
 │   ├── ai/                     # 3 AI/LLM integration skills
-│   ├── web/                    # 7 web & UI skills (landing pages, SPA, animations, design systems)
+│   ├── web/                    # 9 web & UI skills (landing pages, SPA, animations, design systems)
 │   ├── accessibility/          # 2 WCAG compliance skills
 │   ├── i18n/                   # 1 internationalization skill
-│   ├── utils/                  # 12 utility skills
+│   ├── utils/                  # 13 utility skills
 │   └── **/*.test.yaml          # Test files for skill validation
 ├── pipelines/                  # 5 composable multi-skill workflows
 │   ├── feature-complete.yaml
