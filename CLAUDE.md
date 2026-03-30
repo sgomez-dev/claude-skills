@@ -1,6 +1,6 @@
 # Claude Skills Collection
 
-This repository contains 102 custom slash commands (skills) for Claude Code organized in `skills/` by category.
+This repository contains 103 custom slash commands (skills) for Claude Code organized in `skills/` by category.
 
 ## Project Structure
 
@@ -20,6 +20,7 @@ skills/                  # All 102 skills organized by category
 ├── accessibility/       # 2 accessibility skills
 ├── i18n/                # 1 internationalization skill
 ├── marketing/           # 1 marketing skill
+├── design/              # 1 graphic design skill
 └── utils/               # 12 utility skills
 install.sh               # Interactive installer (macOS/Linux/Git Bash)
 install.ps1              # Windows PowerShell installer
