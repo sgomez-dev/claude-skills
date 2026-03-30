@@ -1,14 +1,15 @@
 # Claude Skills Collection
 
-This repository contains 102 custom slash commands (skills) for Claude Code organized in `skills/` by category.
+This repository contains 117 custom slash commands (skills) for Claude Code organized in `skills/` by category.
 
 ## Project Structure
 
 ```
-skills/                  # All 102 skills organized by category
+skills/                  # All 117 skills organized by category
 ├── git/                 # 10 git & version control skills
 ├── code-quality/        # 10 code quality & review skills
 ├── testing/             # 8 testing skills
+├── debugging/           # 15 debugging & troubleshooting skills
 ├── docs/                # 7 documentation skills
 ├── security/            # 8 security skills
 ├── devops/              # 8 devops & infrastructure skills
