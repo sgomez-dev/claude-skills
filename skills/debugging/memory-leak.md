@@ -22,7 +22,7 @@ Steps:
    - Global variable accumulation (maps, arrays, caches without eviction)
    - Event listeners added in loops or repeated calls without removeListener
    - Closures capturing large scopes unnecessarily
-   - Unreleased Buffers or streams not destroyed
+   - Unreleased Buffers or streams not properly closed
    - setInterval/setTimeout without clearInterval/clearTimeout
    - Detached DOM nodes still referenced in JS
 
