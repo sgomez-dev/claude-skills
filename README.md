@@ -385,7 +385,7 @@ These skills work across multiple AI coding assistants:
 | Platform | Install Method | Guide |
 |----------|---------------|-------|
 | **Claude Code** | `./install.sh` or plugin marketplace | [This README](#quick-install) |
-| **Cursor** | Copy to `.cursor/rules/` as `.mdc` files | [Cursor Guide](platforms/cursor.md) |
+| **Cursor** | Copy to `.cursor/rules/` as `.mdc` (requires frontmatter conversion) | [Cursor Guide](platforms/cursor.md) |
 | **Windsurf** | Copy to `.windsurf/rules/` | [Windsurf Guide](platforms/windsurf.md) |
 | **Codex** | Concatenate into `AGENTS.md` | [Codex Guide](platforms/codex.md) |
 
