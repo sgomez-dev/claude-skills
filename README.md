@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Skills-102-blue?style=for-the-badge" alt="95 Skills" />
+  <img src="https://img.shields.io/badge/Skills-325-blue?style=for-the-badge" alt="325 Skills" />
   <img src="https://img.shields.io/badge/Tested-CI_Validated-brightgreen?style=for-the-badge" alt="CI Tested" />
   <img src="https://img.shields.io/badge/Permissions-100%25_Declared-brightgreen?style=for-the-badge" alt="Permissions" />
-  <img src="https://img.shields.io/badge/Pipelines-5-purple?style=for-the-badge" alt="5 Pipelines" />
+  <img src="https://img.shields.io/badge/Pipelines-7-purple?style=for-the-badge" alt="7 Pipelines" />
   <img src="https://img.shields.io/github/license/santiago-gomez/claude-skills?style=for-the-badge" alt="License" />
 </p>
 
@@ -17,13 +17,13 @@
 
 <p align="center">
   <strong>The only skills collection where every skill is tested, permission-scoped, and composable.</strong><br/>
-  102 skills. 5 pipelines. Full CI validation. Zero trust assumptions.
+  325 skills across 32 categories. 7 pipelines. Full CI validation. Zero trust assumptions.
 </p>
 
 <p align="center">
   <a href="#quick-install">Quick Install</a> &bull;
   <a href="#what-makes-this-different">Why This One</a> &bull;
-  <a href="#all-102-skills">Browse Skills</a> &bull;
+  <a href="#all-325-skills">Browse Skills</a> &bull;
   <a href="#web--ui-6----landing-pages-spas-animations-design-systems">Web & UI</a> &bull;
   <a href="#pipelines">Pipelines</a> &bull;
   <a href="#plugin-marketplace">Marketplace</a> &bull;
@@ -43,7 +43,7 @@
 | **Permission manifests** | None declare what skills can do | Every skill declares reads, writes, commands, network, destructive |
 | **Test harness** | No testing, no validation | CI pipeline validates structure, safety, and trigger quality |
 | **Safety linting** | No scanning for dangerous patterns | Automated detection of `rm -rf`, `curl\|bash`, `chmod 777`, credential leaks |
-| **Pipelines** | Skills are isolated, one-shot | 5 pre-built pipelines chain skills into end-to-end workflows |
+| **Pipelines** | Skills are isolated, one-shot | 7 pre-built pipelines chain skills into end-to-end workflows |
 | **Smart Router** | Install 100 skills, all active always | `/meta--skills-init` detects your stack, activates only relevant skills |
 | **Skill Forge** | Write skills from scratch | `/meta--skill-forge` generates tested, permissioned skills from description |
 | **Project-aware** | Generic prompts for any project | Skills detect your language, framework, ORM, test runner automatically |
@@ -121,126 +121,186 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 
 ---
 
-## All 102 Skills
+## All 325 Skills
 
-### Web & UI (9) — *Landing pages, SPAs, animations, design systems, UI polish*
+325 skills across 32 categories. Click any group to expand its command table.
+
+### Engineering & Data
+
+<details>
+<summary><strong>Web & UI (18)</strong></summary>
 
 | Command | What It Does |
 |---------|-------------|
-| `web--landing-page` | Generates a world-class landing page — unique layout strategy, crafted copy, Framer Motion animations, never AI-looking |
-| `web--spa-scaffold` | Production-grade SPA with elite architecture, design system, state management, skeleton states, accessibility |
-| `web--animations` | Full animation catalog: scroll-driven, 3D models (R3F), horizontal scroll, WebGL shaders, particles, custom cursor, text effects |
-| `web--design-engineering` | UI polish and animation decisions — easing, springs, component patterns, performance, accessibility (Emil Kowalski) |
-| `web--design-system` | Complete design system with semantic tokens, typography scale, dark mode, component library, Storybook |
-| `web--ui-components-pro` | Elite UI components with physics-based animations, compound patterns, magnetic hover, 3D tilt, every edge case handled |
-| `web--awwwards-animations` | Awwwards-level React animations — GSAP, Motion, Anime.js, Lenis smooth scroll, ScrollTrigger |
 | `web--animated-components` | Pre-built animated React components — Magic UI (150+ shadcn/Tailwind) and React Bits (90+ effects) |
-| `web--conversion-optimizer` | CRO audit: clarity, friction, trust, copy — diagnoses with exact code fixes and A/B test roadmap |
+| `web--animations` | Build cinematic, world-class web animations — 3D models, horizontal scroll, WebGL, particles, shaders, and more |
+| `web--awwwards-animations` | Awwwards-level React animations — GSAP, Motion, Anime.js, Lenis smooth scroll, ScrollTrigger, magnetic effects |
+| `web--conversion-optimizer` | Audit and optimize a landing page or web app for conversions — copy, layout, UX, and trust |
+| `web--design-engineering` | Design engineering — UI polish, animation decisions, and invisible details that make interfaces feel great (Emil Kowalski) |
+| `web--design-system` | Create a complete, opinionated design system with tokens, typography, color, and components |
+| `web--graphic-design` | AI Design Studio — generate production-quality mockups, social graphics, brand kits, pitch decks, infographics, and more from natural language prompts |
+| `web--gsap-creative-gallery` | GSAP creative galleries — infinite scroll, masonry animations, lightbox transitions, FLIP layouts, and interactive image showcases |
+| `web--gsap-hero-cinematic` | GSAP cinematic hero sections — layered reveals, 3D parallax, animated typography, video backgrounds, and immersive landing experiences |
+| `web--gsap-micro-interactions` | Premium micro-interactions — GSAP custom cursors, magnetic buttons, tilt cards, spotlight effects, button animations, scroll indicators |
+| `web--gsap-page-transitions` | GSAP page transitions — route animations, shared element transitions, overlay wipes, and seamless navigation effects |
+| `web--gsap-preloader` | GSAP preloaders — progress bars, animated logos, skeleton screens, number counters, and cinematic loading sequences |
+| `web--gsap-scroll-experience` | GSAP ScrollTrigger scroll-driven animations — parallax, pinning, horizontal scroll, scrub timelines, scroll velocity effects |
+| `web--gsap-svg-morphing` | SVG morphing & shape animations — GSAP path drawing, shape morphing, animated icons, blob shapes, wave dividers, motion paths |
+| `web--gsap-text-fx` | Advanced kinetic typography — GSAP text split, scramble, liquid, glitch, 3D rotation, gradient sweep, curved path text |
+| `web--landing-page` | Generate a world-class landing page — unique, crafted, high-converting, never AI-looking |
+| `web--spa-scaffold` | Scaffold a production-grade SPA with elite architecture, stunning UI, and real-world patterns |
+| `web--ui-components-pro` | Build elite UI components with animations, compound patterns, and zero AI-looking aesthetics |
 
-### Meta Skills (4) — *No other repo has these*
+</details>
+
+<details>
+<summary><strong>Meta Skills (4)</strong></summary>
 
 | Command | What It Does |
 |---------|-------------|
-| `meta--skills-init` | Scans project, detects stack, activates only relevant skills, generates config |
-| `meta--pipeline-run` | Runs multi-skill pipelines with quality gates and shared context |
-| `meta--skill-forge` | Generates new tested, permissioned skills from natural language description |
-| `meta--health-check` | Validates all installed skills for structure, permissions, and safety |
+| `meta--health-check` | Run a health check on all installed skills - validate structure, permissions, and safety |
+| `meta--pipeline-run` | Run a multi-skill pipeline - chain skills together for end-to-end workflows |
+| `meta--skill-forge` | Generate a new tested skill with permission manifest from a natural language description |
+| `meta--skills-init` | Scan your project and activate only the relevant skills with project-specific config |
 
-### Git & Version Control (10)
+</details>
+
+<details>
+<summary><strong>Git & Version Control (12)</strong></summary>
 
 | Command | What It Does |
 |---------|-------------|
-| `git--commit` | Analyzes staged diff, generates conventional commit with type/scope/body |
-| `git--pr-create` | Creates PR with smart title, description from all commits, labels |
-| `git--pr-review` | Reviews PR for correctness, security, performance, testing gaps |
-| `git--changelog` | Generates CHANGELOG from conventional commits grouped by version |
-| `git--release` | Determines semver bump from commits, tags, creates GitHub release |
-| `git--branch` | Creates branch with proper naming conventions and ticket numbers |
-| `git--undo` | Safely reverses last git operation with explanation before executing |
-| `git--blame-detective` | Deep history investigation — who, when, why, which PR |
-| `git--stash-manager` | Lists stashes with previews, apply/drop/branch operations |
-| `git--cherry-pick-pr` | Cherry-picks specific commits from PRs with conflict resolution |
+| `git--blame-detective` | Deep investigation of who changed what and why using git blame and log |
+| `git--branch` | Create a well-named git branch following team conventions |
+| `git--changelog` | Generate a CHANGELOG from git history using conventional commits |
+| `git--cherry-pick-pr` | Cherry-pick specific commits from a PR or branch into current branch |
+| `git--commit` | Generate a smart conventional commit message analyzing staged changes |
+| `git--git-hooks` | Set up git hooks - pre-commit, husky, lint-staged, commit-msg validation |
+| `git--monorepo-git` | Monorepo git strategies - sparse checkout, CODEOWNERS, selective CI triggers |
+| `git--pr-create` | Create a comprehensive pull request with smart title, description, and labels |
+| `git--pr-review` | Perform a thorough code review on a pull request |
+| `git--release` | Create a semantic version release with tag, changelog, and GitHub release |
+| `git--stash-manager` | Interactive git stash management - list, apply, drop, and organize stashes |
+| `git--undo` | Safely undo the last git operation with explanation |
+
+</details>
 
 <details>
 <summary><strong>Code Quality (10)</strong></summary>
 
 | Command | What It Does |
 |---------|-------------|
-| `code-quality--review` | Full code review: correctness, security, performance, maintainability |
-| `code-quality--refactor` | Refactors code preserving behavior — extract, simplify, rename |
-| `code-quality--dead-code` | Finds unused imports, functions, files, dependencies across project |
-| `code-quality--complexity` | Calculates cyclomatic/cognitive complexity, flags high-risk functions |
-| `code-quality--dry` | Detects duplicated code patterns, suggests abstractions |
-| `code-quality--code-smells` | Finds bloaters, couplers, dispensables with fix suggestions |
-| `code-quality--naming` | Reviews naming clarity, consistency, conventions — table of suggestions |
-| `code-quality--type-check` | Adds TypeScript/Python type annotations, replaces `any` |
-| `code-quality--error-handling` | Audits try/catch, finds swallowed errors, missing handlers |
-| `code-quality--dependency-audit` | Checks deps for CVEs, maintenance status, bundle size, alternatives |
+| `code-quality--code-smells` | Detect code smells and anti-patterns with actionable fixes |
+| `code-quality--complexity` | Analyze code complexity and suggest simplifications |
+| `code-quality--dead-code` | Find and remove dead code - unused functions, imports, variables, and files |
+| `code-quality--dependency-audit` | Audit project dependencies for security, size, maintenance status, and alternatives |
+| `code-quality--dry` | Find DRY violations - duplicated code patterns that should be abstracted |
+| `code-quality--error-handling` | Audit and improve error handling patterns across the codebase |
+| `code-quality--naming` | Improve variable, function, and class naming for clarity and consistency |
+| `code-quality--refactor` | Intelligently refactor code while preserving behavior |
+| `code-quality--review` | Comprehensive code review of changed or specified files |
+| `code-quality--type-check` | Add or fix TypeScript/Python type annotations for better type safety |
 
 </details>
 
 <details>
-<summary><strong>Testing (9)</strong></summary>
+<summary><strong>Testing (13)</strong></summary>
 
 | Command | What It Does |
 |---------|-------------|
-| `testing--test-gen` | Generates unit tests with happy path, edge cases, error cases |
-| `testing--test-edge-cases` | Adversarial tests: boundaries, unicode, concurrency, state |
-| `testing--test-integration` | Integration tests for real service interactions |
-| `testing--test-e2e` | End-to-end tests for complete user workflows |
-| `testing--test-fix` | Diagnoses failing tests — is it the test or the code? |
-| `testing--test-coverage` | Finds coverage gaps, generates tests for highest-risk areas |
-| `testing--test-mock` | Generates mocks, stubs, spies, fakes, fixture factories |
-| `testing--snapshot-update` | Reviews snapshot changes — intentional, bug, or flaky? |
-| `testing--playwright-mcp` | Playwright MCP browser automation — navigate, click, fill forms, debug, screenshots |
+| `testing--contract-testing` | Add consumer-driven contract tests (Pact-style) between services |
+| `testing--load-testing` | Load-test setup — choose k6/Locust/Artillery, scenarios, thresholds, CI gate |
+| `testing--mutation-testing` | Set up mutation testing, interpret surviving mutants, and harden weak tests |
+| `testing--playwright-mcp` | Playwright MCP browser automation — navigate, click, fill forms, debug, take screenshots |
+| `testing--snapshot-update` | Review and update test snapshots intelligently |
+| `testing--test-coverage` | Analyze test coverage gaps and generate tests to fill them |
+| `testing--test-e2e` | Generate end-to-end tests for user workflows |
+| `testing--test-edge-cases` | Generate edge case and boundary tests that catch the bugs others miss |
+| `testing--test-fix` | Diagnose and fix failing tests |
+| `testing--test-gen` | Generate comprehensive unit tests for the specified code |
+| `testing--test-integration` | Generate integration tests that verify components work together correctly |
+| `testing--test-mock` | Generate mocks, stubs, and fixtures for testing |
+| `testing--visual-regression` | Set up visual regression tests with baselines, CI integration, and flake control |
 
 </details>
 
 <details>
-<summary><strong>Security (8)</strong></summary>
+<summary><strong>Debugging (15)</strong></summary>
 
 | Command | What It Does |
 |---------|-------------|
-| `security--security-audit` | Full OWASP Top 10 scan with severity ratings and fix code |
-| `security--secrets-scan` | Finds API keys, tokens, passwords, private keys in code + history |
-| `security--auth-review` | Reviews entire auth flow: hashing, sessions, JWT, CSRF, IDOR |
-| `security--sanitize` | Traces user inputs to usage — finds injection, XSS, SSRF paths |
-| `security--cors-review` | Reviews CORS config per environment, fixes overly permissive rules |
-| `security--csp-gen` | Generates Content Security Policy from actual resource usage |
-| `security--dependency-vuln` | Checks all deps for known CVEs with remediation plan |
-| `security--env-hardening` | Audits env config, HTTP security headers, server exposure |
+| `debugging--async-debug` | Debug async/await, promise chains, and concurrency bugs |
+| `debugging--breakpoint-guide` | Generate a strategic breakpoint plan for debugging a specific issue |
+| `debugging--chaos-debug` | Stress-test code with fault injection, edge cases, and chaos scenarios to find hidden bugs |
+| `debugging--console-debug` | Add strategic debug logging to trace a bug through the code |
+| `debugging--core-dump` | Analyze crash dumps, segfaults, panics, and fatal process terminations |
+| `debugging--distributed-trace` | Debug failures across microservices using distributed tracing and request correlation |
+| `debugging--error-decode` | Decode cryptic error codes and messages into actionable explanations |
+| `debugging--memory-leak` | Hunt down memory leaks by analyzing allocation patterns and retention paths |
+| `debugging--network-debug` | Debug HTTP, WebSocket, gRPC, and network connectivity issues |
+| `debugging--perf-flamegraph` | Profile and debug performance bottlenecks using flamegraph analysis and CPU/IO profiling |
+| `debugging--production-debug` | Debug production-only issues using logs, metrics, and traces without direct access |
+| `debugging--race-condition` | Detect and fix race conditions, data races, and TOCTOU bugs |
+| `debugging--stack-trace` | Analyze a stack trace or error message and pinpoint the root cause |
+| `debugging--state-debug` | Debug complex application state issues (Redux, databases, caches, sessions) |
+| `debugging--variable-inspect` | Trace a variable's lifecycle to find where it gets corrupted or goes wrong |
 
 </details>
 
 <details>
-<summary><strong>DevOps & Infrastructure (8)</strong></summary>
+<summary><strong>Documentation (10)</strong></summary>
 
 | Command | What It Does |
 |---------|-------------|
-| `devops--dockerfile` | Generates multi-stage Dockerfile optimized for caching, security, size |
-| `devops--docker-compose` | Full compose setup with health checks, volumes, networks, depends |
-| `devops--ci` | Generates CI/CD pipeline: lint, test, build, deploy with caching |
-| `devops--github-actions` | GitHub Actions workflows: CI, CD, auto-label, dependabot merge |
-| `devops--k8s` | Kubernetes manifests: Deployment, Service, Ingress, HPA, PVC |
-| `devops--terraform` | Terraform configs with modules, remote state, proper IAM |
-| `devops--nginx` | Nginx config: reverse proxy, SSL, gzip, rate limit, security headers |
-| `devops--deploy-check` | Pre-deployment checklist verified against actual code state |
-
-</details>
-
-<details>
-<summary><strong>Documentation (8)</strong></summary>
-
-| Command | What It Does |
-|---------|-------------|
-| `docs--doc-gen` | Generates documentation: overview, usage examples, API reference |
-| `docs--readme-gen` | Professional README with badges, quick start, API, FAQ |
-| `docs--diagram` | Generates Mermaid diagrams from code analysis (flow, sequence, ER, C4) |
-| `docs--adr` | Creates Architecture Decision Records with context and alternatives |
-| `docs--api-doc` | API documentation from route handlers with examples and status codes |
-| `docs--openapi-gen` | Generates OpenAPI 3.0 YAML from codebase endpoints |
-| `docs--contributing` | CONTRIBUTING.md tailored to actual project tooling |
+| `docs--adr` | Create an Architecture Decision Record (ADR) for important technical decisions |
+| `docs--api-changelog` | API changelog - detect breaking changes between versions with migration notes |
+| `docs--api-doc` | Generate API documentation from route handlers and controllers |
+| `docs--contributing` | Generate a CONTRIBUTING.md guide for open source projects |
+| `docs--diagram` | Generate architecture diagrams using Mermaid from code analysis |
+| `docs--doc-gen` | Generate comprehensive documentation for code, APIs, or entire modules |
+| `docs--onboarding-guide` | Generate a developer onboarding guide from the actual repo setup |
+| `docs--openapi-gen` | Generate or update OpenAPI/Swagger specification from code |
+| `docs--readme-gen` | Generate a professional README.md for the project |
 | `docs--video-spec` | Motion design video specs — scene breakdowns, timing, audio strategy, animation principles |
+
+</details>
+
+<details>
+<summary><strong>Security (11)</strong></summary>
+
+| Command | What It Does |
+|---------|-------------|
+| `security--auth-review` | Review authentication and authorization implementation for vulnerabilities |
+| `security--cors-review` | Review and fix CORS configuration for security |
+| `security--csp-gen` | Generate and validate Content Security Policy headers |
+| `security--dependency-vuln` | Check dependencies for known security vulnerabilities |
+| `security--env-hardening` | Review and harden environment configuration and HTTP security headers |
+| `security--pentest-prep` | Defensive pre-pentest hardening: scope doc, quick fixes, evidence collection |
+| `security--rate-limiting` | Design rate limiting: algorithms, per-route budgets, headers, distributed state |
+| `security--sanitize` | Find unsanitized inputs and add proper validation/sanitization |
+| `security--secrets-scan` | Scan codebase for leaked secrets, API keys, tokens, and credentials |
+| `security--security-audit` | Comprehensive security audit scanning for OWASP Top 10 and common vulnerabilities |
+| `security--threat-model` | Threat model with STRIDE: assets, trust boundaries, attack surface, mitigations |
+
+</details>
+
+<details>
+<summary><strong>DevOps & Infrastructure (12)</strong></summary>
+
+| Command | What It Does |
+|---------|-------------|
+| `devops--ansible` | Write Ansible playbooks with roles, idempotency, vault-encrypted secrets, inventories |
+| `devops--ci` | Generate CI/CD pipeline configuration (GitHub Actions, GitLab CI, etc.) |
+| `devops--deploy-check` | Pre-deployment checklist - verify everything before shipping |
+| `devops--docker-compose` | Generate docker-compose.yml for local development or production |
+| `devops--dockerfile` | Generate or optimize a production-ready Dockerfile |
+| `devops--github-actions` | Generate GitHub Actions workflows for CI, CD, auto-labeling, and automation |
+| `devops--gitops` | Set up GitOps with ArgoCD or Flux — repo structure, sync policies, safe rollbacks |
+| `devops--helm-chart` | Build a Helm chart with clean templates, values, dependencies, lint, release strategy |
+| `devops--k8s` | Generate Kubernetes manifests for deploying the application |
+| `devops--nginx` | Generate optimized Nginx configuration |
+| `devops--secrets-management` | Audit hardcoded secrets, migrate to a vault/secret manager, plan rotation |
+| `devops--terraform` | Generate Terraform infrastructure-as-code configurations |
 
 </details>
 
@@ -249,12 +309,12 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 
 | Command | What It Does |
 |---------|-------------|
-| `database--migration` | Generates reversible migration for any ORM with safety checks |
-| `database--query-optimize` | Finds N+1, missing indexes, full scans, suggests EXPLAIN analysis |
-| `database--schema` | Designs normalized schema with proper types, constraints, indexes |
-| `database--seed` | Generates realistic seed data respecting all constraints |
-| `database--erd` | Generates Mermaid ER diagram from models/migrations |
-| `database--prisma-gen` | Generates or updates Prisma schema with best practices |
+| `database--erd` | Generate Entity Relationship Diagram from database schema or ORM models |
+| `database--migration` | Generate database migration files for schema changes |
+| `database--prisma-gen` | Generate or update Prisma schema from requirements or existing database |
+| `database--query-optimize` | Analyze and optimize slow SQL queries or ORM queries |
+| `database--schema` | Design or review database schema with proper normalization and indexing |
+| `database--seed` | Generate realistic seed data for development and testing |
 
 </details>
 
@@ -263,50 +323,221 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 
 | Command | What It Does |
 |---------|-------------|
-| `api--endpoint` | Scaffolds endpoint: route, validation, auth, handler, types, tests |
-| `api--graphql-schema` | GraphQL types, queries, mutations, resolvers with DataLoader |
-| `api--rest-client` | Type-safe API client with retry, timeout, cancellation |
-| `api--mock-api` | Mock API server with realistic data, latency, stateful CRUD |
-| `api--messaging-bridge` | Multi-platform messaging bridge (Telegram, WhatsApp, Instagram, Messenger) to Claude API with session management |
+| `api--endpoint` | Scaffold a complete API endpoint with validation, auth, and error handling |
+| `api--graphql-schema` | Generate GraphQL schema with types, queries, mutations, and resolvers |
+| `api--messaging-bridge` | Genera un servicio puente entre plataformas de mensajería (Telegram, WhatsApp, Instagram, Messenger) y Claude API |
+| `api--mock-api` | Create a mock API server for frontend development or testing |
+| `api--rest-client` | Generate a type-safe API client SDK from endpoint definitions |
 
 </details>
 
 <details>
-<summary><strong>Performance (5)</strong></summary>
+<summary><strong>Performance (7)</strong></summary>
 
 | Command | What It Does |
 |---------|-------------|
-| `performance--perf-audit` | Finds N+1 queries, re-renders, bundle bloat, memory leaks |
-| `performance--bundle-analyze` | Identifies heavy deps, missing code splitting, tree shaking issues |
-| `performance--cache` | Designs caching strategy: HTTP, Redis, in-memory, CDN |
-| `performance--lazy-load` | Implements route/component/image lazy loading with loading states |
-| `performance--memory-leak` | Finds leaked listeners, unclosed connections, growing collections |
+| `performance--bundle-analyze` | Analyze JavaScript bundle size and suggest optimizations |
+| `performance--cache` | Implement caching strategy for API responses, database queries, or computations |
+| `performance--db-performance` | Diagnose database performance: slow query logs, indexing, pooling, hot paths |
+| `performance--lazy-load` | Implement lazy loading for routes, components, images, and modules |
+| `performance--memory-leak` | Find and fix memory leaks in the application |
+| `performance--perf-audit` | Comprehensive performance audit - identify bottlenecks and optimize |
+| `performance--web-vitals` | Core Web Vitals - measure LCP/INP/CLS, diagnose causes, fix with code changes |
 
 </details>
 
 <details>
-<summary><strong>Scaffolding (7)</strong></summary>
+<summary><strong>Networking & Cloudflare (19)</strong></summary>
 
 | Command | What It Does |
 |---------|-------------|
-| `scaffold--scaffold` | Scaffolds complete project: structure, config, tooling, CI |
-| `scaffold--fullstack` | Full-stack feature: migration + API + frontend + tests |
-| `scaffold--component` | UI component with types, styles, tests, stories |
-| `scaffold--hook` | Custom React hook with types, cleanup, tests |
-| `scaffold--middleware` | Auth, validation, logging, rate limiting middleware |
-| `scaffold--model` | Data model with validation, relations, methods, factory |
-| `scaffold--remotion` | Remotion video creation in React — compositions, animations, audio, transitions |
+| `networking--api-gateway` | Design API gateway configuration with rate limiting, auth, and routing |
+| `networking--cdn-strategy` | Design CDN caching strategy and cache rules for web applications |
+| `networking--cloudflare-d1` | Set up Cloudflare D1 serverless SQLite database |
+| `networking--cloudflare-dns` | Configure and audit Cloudflare DNS records and settings |
+| `networking--cloudflare-kv` | Implement Cloudflare Workers KV for edge key-value storage |
+| `networking--cloudflare-pages` | Configure Cloudflare Pages for static site and JAMstack deployments |
+| `networking--cloudflare-r2` | Set up Cloudflare R2 object storage with S3-compatible access |
+| `networking--cloudflare-tunnel` | Configure Cloudflare Tunnel to expose local services securely |
+| `networking--cloudflare-waf` | Configure Cloudflare WAF rules and firewall policies |
+| `networking--cloudflare-workers` | Scaffold and deploy Cloudflare Workers for edge computing |
+| `networking--dns-debug` | Diagnose and troubleshoot DNS resolution and propagation issues |
+| `networking--durable-objects` | Implement Cloudflare Durable Objects for stateful edge computing |
+| `networking--edge-functions` | Build edge functions for request/response manipulation and routing |
+| `networking--load-balancer` | Configure load balancing with health checks and failover policies |
+| `networking--network-debug` | Diagnose network connectivity, latency, and routing issues |
+| `networking--reverse-proxy` | Configure reverse proxy setups with Cloudflare, Nginx, or Caddy |
+| `networking--ssl-tls` | Audit and configure SSL/TLS certificates and HTTPS settings |
+| `networking--webhook-endpoint` | Build secure webhook receivers with signature verification and retry handling |
+| `networking--zero-trust` | Set up Cloudflare Zero Trust access policies and identity-aware proxy |
 
 </details>
 
 <details>
-<summary><strong>AI & LLM (3)</strong></summary>
+<summary><strong>Scaffolding (10)</strong></summary>
 
 | Command | What It Does |
 |---------|-------------|
-| `ai--prompt-engineer` | Optimizes system prompts, user prompts, tool definitions |
-| `ai--ai-integration` | Integrates Claude/OpenAI APIs with streaming, retry, caching |
-| `ai--embeddings` | Implements RAG pipeline: chunk, embed, store, search, rank |
+| `scaffold--component` | Generate a complete React/Vue/Svelte component with types, tests, and stories |
+| `scaffold--component-3d` | Generate a 3D component (React Three Fiber, Three.js, Babylon.js) with types, animations, and controls |
+| `scaffold--create-video` | Bootstrap a NEW video project from scratch with npx create-video — picks the right Remotion template, scaffolds, and customizes it ready to preview |
+| `scaffold--fullstack` | Scaffold a complete full-stack feature across frontend, backend, and database |
+| `scaffold--hook` | Generate a custom React hook with proper types and tests |
+| `scaffold--middleware` | Generate middleware for authentication, logging, validation, etc. |
+| `scaffold--model` | Generate a data model with validation, serialization, and database integration |
+| `scaffold--remotion` | Remotion video creation in React — compositions, animations, audio, transitions, text effects |
+| `scaffold--scaffold` | Scaffold a complete project structure from scratch |
+| `scaffold--startup-generator` | Generador completo de startup/SaaS — 10 agentes especializados en paralelo + PowerPoint con plan de negocio |
+
+</details>
+
+<details>
+<summary><strong>Full-Stack Features (12)</strong></summary>
+
+| Command | What It Does |
+|---------|-------------|
+| `fullstack--admin-panel` | Admin panel - CRUD for core models, impersonation, audit log, role gates |
+| `fullstack--auth-flow` | Implement full auth - OAuth and email flows, sessions/JWT, RBAC, password reset |
+| `fullstack--background-jobs` | Background job system - queue choice for the stack, workers, retries, cron, monitoring |
+| `fullstack--feature-flags` | Feature flags - provider vs homegrown choice, targeting, kill switches, cleanup |
+| `fullstack--file-upload` | File uploads - presigned direct-to-S3/R2 flow, validation, progress, thumbnails |
+| `fullstack--multi-tenancy` | Add multi-tenancy: isolation model choice (row/schema/db), scoping, migrations |
+| `fullstack--notification-system` | Multi-channel notifications - in-app, email, push with preferences and digests |
+| `fullstack--onboarding-flow` | Build user onboarding: signup-to-activation flow, checklists, empty states, metrics |
+| `fullstack--payments-integration` | Integrate payments - checkout, subscriptions, signed webhooks, customer portal |
+| `fullstack--realtime-feature` | Add realtime - WebSocket/SSE choice, presence, optimistic UI, reconnection |
+| `fullstack--saas-starter` | Scaffold a production SaaS starter - auth, orgs/teams, billing stubs, settings, emails |
+| `fullstack--search-feature` | Add search: engine choice (Postgres FTS/Meilisearch/Elastic), indexing, ranking, UI |
+
+</details>
+
+<details>
+<summary><strong>Cloud Architecture (10)</strong></summary>
+
+| Command | What It Does |
+|---------|-------------|
+| `cloud--autoscaling-strategy` | Design autoscaling: metrics, policies, warm pools, load-testing validation |
+| `cloud--aws-architect` | Design an AWS architecture for this app — service choices, diagram, IaC starter |
+| `cloud--azure-architect` | Design an Azure architecture for this app — service choices, diagram, IaC starter |
+| `cloud--cloud-cost-audit` | Audit cloud costs from billing exports and IaC — find waste, rightsize, plan savings |
+| `cloud--cloud-migration` | Plan a migration to the cloud — assessment, 6 Rs strategy, phased plan, rollback |
+| `cloud--disaster-recovery` | Build a DR plan — RTO/RPO targets, backup strategy, failover runbook, test schedule |
+| `cloud--gcp-architect` | Design a GCP architecture for this app — service choices, diagram, IaC starter |
+| `cloud--iam-least-privilege` | Audit IAM policies and generate least-privilege replacements you review and apply |
+| `cloud--infra-diagram` | Generate infrastructure diagrams (Mermaid) from IaC and config files |
+| `cloud--serverless-api` | Build a serverless API — functions, routing, cold-start mitigation, local dev setup |
+
+</details>
+
+<details>
+<summary><strong>Observability & SRE (8)</strong></summary>
+
+| Command | What It Does |
+|---------|-------------|
+| `observability--alerting-rules` | Design symptom-based alerting with thresholds, severity, routing, and dedup |
+| `observability--incident-response` | Set up an incident response process with severity matrix, roles, and comms |
+| `observability--logging-strategy` | Design structured logging: levels, correlation IDs, PII redaction, retention |
+| `observability--metrics-setup` | Instrument app metrics with RED/USE method via Prometheus or OpenTelemetry |
+| `observability--postmortem` | Write a blameless postmortem with timeline, contributing factors, and actions |
+| `observability--runbook-gen` | Generate operational runbooks covering symptoms, diagnosis, and remediation |
+| `observability--slo-sli` | Define SLIs/SLOs from user journeys with error budgets and burn-rate alerts |
+| `observability--tracing-setup` | Instrument distributed tracing with OpenTelemetry spans and context propagation |
+
+</details>
+
+<details>
+<summary><strong>AI & LLM (18)</strong></summary>
+
+| Command | What It Does |
+|---------|-------------|
+| `ai--agent-builder` | Build an AI agent - loop design, tool surface, memory, stop conditions, evals |
+| `ai--ai-integration` | Integrate AI/LLM APIs (Claude, OpenAI) into the application with best practices |
+| `ai--chatbot-scaffold` | Scaffold a production chatbot - streaming UI, history, RAG hookup, feedback loop |
+| `ai--context-engineering` | Context engineering: what goes in the window, retrieval vs stuffing, compaction |
+| `ai--embeddings` | Implement vector embeddings for semantic search, RAG, or similarity matching |
+| `ai--fine-tuning` | Fine-tune an LLM - decide vs prompting, prep dataset, train, eval before/after |
+| `ai--guardrails` | LLM guardrails - input/output filters, injection defense, PII, jailbreak tests |
+| `ai--llm-cost-optimizer` | Cut LLM costs: model routing, caching, prompt compression, batching without quality loss |
+| `ai--llm-eval` | LLM output evals - rubrics, LLM-as-judge with bias controls, CI integration |
+| `ai--llm-observability` | Instrument LLM calls - tracing, token/cost tracking, quality dashboards, alerts |
+| `ai--mcp-server` | Build an MCP server - tools, resources, prompts, transport, auth, testing |
+| `ai--multi-agent` | Design multi-agent systems: orchestrator patterns, handoffs, shared state, failure modes |
+| `ai--prompt-engineer` | Optimize AI/LLM prompts for better results - system prompts, user prompts, tool definitions |
+| `ai--rag-eval` | Evaluate a RAG pipeline - retrieval metrics, groundedness, golden set, regression |
+| `ai--semantic-cache` | Add semantic caching to LLM calls - embedding keys, thresholds, invalidation |
+| `ai--structured-output` | Reliable structured output - schemas, native modes, validation, repair loops |
+| `ai--tool-calling` | Robust LLM tool calling - schema design, parallel calls, errors, eval harness |
+| `ai--voice-agent` | Build a voice agent: STT/TTS choice, latency budget, interruptions, conversation design |
+
+</details>
+
+<details>
+<summary><strong>Machine Learning (8)</strong></summary>
+
+| Command | What It Does |
+|---------|-------------|
+| `ml--dataset-prep` | Prepare a dataset for ML — cleaning, splits, leakage checks, balance, versioning |
+| `ml--feature-engineering` | Engineer features with leakage-safe pipelines — encodings, scaling, interactions |
+| `ml--mlops-pipeline` | Set up MLOps — experiment tracking, model registry, CI for models, reproducibility |
+| `ml--model-deployment` | Deploy an ML model: serving pattern (batch/online), API, monitoring, drift detection |
+| `ml--model-evaluation` | Evaluate a model properly — right metrics, calibration, slices, error analysis |
+| `ml--model-training` | Train a model — baseline first, framework choice, cross-validation, tuning |
+| `ml--recommender-system` | Build a recommender: collaborative/content/hybrid choice, cold start, evaluation |
+| `ml--time-series-forecast` | Forecast time series — naive baselines, seasonality, backtesting, intervals |
+
+</details>
+
+<details>
+<summary><strong>Data & Analytics (12)</strong></summary>
+
+| Command | What It Does |
+|---------|-------------|
+| `data--analytics-sql` | Turn a plain-language question into optimized analytical SQL for your schema |
+| `data--cohort-analysis` | Build a cohort retention analysis: runnable SQL plus an interpretation guide |
+| `data--csv-wrangler` | Clean, transform, dedupe, and reshape CSV/Excel files with a repeatable script |
+| `data--dashboard-spec` | Spec a dashboard: audience, key questions, metrics, chart types, and layout |
+| `data--data-contracts` | Define data contracts between producers and consumers: schema, SLAs, versioning |
+| `data--data-quality-audit` | Audit a dataset or pipeline for nulls, duplicates, drift, and broken references |
+| `data--dbt-model` | Generate dbt models with staging/marts layers, tests, and documentation |
+| `data--etl-pipeline` | Scaffold an idempotent ETL/ELT pipeline for your stack with error handling |
+| `data--event-tracking-plan` | Design a product analytics tracking plan with events, properties, and naming rules |
+| `data--funnel-analysis` | Build a conversion funnel: step definitions, drop-off SQL, insights template |
+| `data--metric-definition` | Define a business metric precisely: formula, grain, filters, edge cases, owner |
+| `data--warehouse-schema` | Design a star/snowflake warehouse schema with fact and dimension tables |
+
+</details>
+
+<details>
+<summary><strong>Mobile Development (10)</strong></summary>
+
+| Command | What It Does |
+|---------|-------------|
+| `mobile--app-store-listing` | Craft App Store/Play listings: title, keywords/ASO, descriptions, screenshot plan |
+| `mobile--biometric-auth` | Add biometric auth: Face/Touch ID, secure token storage, safe fallbacks |
+| `mobile--deep-linking` | Set up universal/app links: config, in-app routing, deferred links, QA matrix |
+| `mobile--flutter-scaffold` | Scaffold a production Flutter app: routing, state management, theming, flavors |
+| `mobile--mobile-navigation` | Design mobile navigation: stacks/tabs/modals, auth gating, state restoration |
+| `mobile--mobile-performance` | Audit mobile performance: startup time, jank, bundle/APK size, memory, images |
+| `mobile--mobile-release` | Set up mobile releases: versioning, signing, beta tracks, staged rollout, submission |
+| `mobile--offline-sync` | Make the app offline-first: local store, sync strategy, conflicts, mutation queue |
+| `mobile--push-notifications` | Implement push notifications: FCM/APNs setup, token lifecycle, permission UX |
+| `mobile--react-native-scaffold` | Scaffold a production React Native/Expo app: navigation, state, theming, CI |
+
+</details>
+
+<details>
+<summary><strong>Automation & Integration (8)</strong></summary>
+
+| Command | What It Does |
+|---------|-------------|
+| `automation--browser-automation` | Automate a browser task — login flows, form filling, downloads, scheduled runs |
+| `automation--email-automation` | Build email automations — parse inbound mail, templated sending, sequences, unsubscribe |
+| `automation--pdf-processing` | Build PDF workflows — extract text/tables, fill forms, merge/split, OCR fallback |
+| `automation--report-automation` | Automate a recurring report — data pull, template, schedule, delivery channel |
+| `automation--scheduled-tasks` | Schedule tasks reliably: cron vs queues, retries, monitoring, timezone traps |
+| `automation--spreadsheet-automation` | Automate spreadsheets: formulas, Apps Script/openpyxl, imports, validation |
+| `automation--web-scraper` | Build a polite web scraper — robots.txt, rate limits, selectors, pagination, storage |
+| `automation--workflow-automation` | Design automations for n8n, Zapier, or Make — triggers, steps, error paths, export |
 
 </details>
 
@@ -315,8 +546,8 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 
 | Command | What It Does |
 |---------|-------------|
-| `accessibility--a11y-audit` | WCAG 2.1 audit: perceivable, operable, understandable, robust |
-| `accessibility--a11y-fix` | Fixes semantic HTML, keyboard nav, ARIA, focus management |
+| `accessibility--a11y-audit` | Audit UI components for accessibility (WCAG 2.1 compliance) |
+| `accessibility--a11y-fix` | Fix accessibility issues - add ARIA, keyboard nav, focus management, semantic HTML |
 
 </details>
 
@@ -325,28 +556,159 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 
 | Command | What It Does |
 |---------|-------------|
-| `i18n--i18n-setup` | Full i18n setup: library, locale detection, string extraction, RTL |
+| `i18n--i18n-setup` | Set up internationalization (i18n) with translation extraction and management |
 
 </details>
 
 <details>
-<summary><strong>Utilities (13)</strong></summary>
+<summary><strong>Utilities (15)</strong></summary>
 
 | Command | What It Does |
 |---------|-------------|
-| `utils--explain` | Layered code explanation: TL;DR, purpose, flow, concepts, gotchas |
-| `utils--translate` | Translates code between languages preserving idioms |
-| `utils--regex` | Generates, explains, tests regex with ReDoS warnings |
-| `utils--gitignore` | Generates .gitignore from detected technologies |
-| `utils--convert` | Converts JSON/YAML/TOML/XML/CSV/ENV + generates Zod schemas |
-| `utils--dep-update` | Updates deps safely: patches first, then minors, majors one-by-one |
-| `utils--env-setup` | Finds all env vars in code, generates .env.example + validation |
-| `utils--cron-explain` | Generates/explains cron expressions with next 5 run times |
-| `utils--tsconfig` | Optimized tsconfig for project type (Node, React, library, monorepo) |
-| `utils--eslint-config` | ESLint config with framework-specific rules, import ordering |
-| `utils--package-json` | Cleans up package.json: scripts, deps, metadata, security |
-| `utils--monorepo` | Sets up monorepo: workspaces, shared configs, build pipeline |
+| `utils--benchmark` | Benchmark code correctly: harness, warmup, statistics, regression gates |
+| `utils--convert` | Convert between data formats - JSON, YAML, TOML, XML, CSV, ENV |
+| `utils--cron-explain` | Generate and explain cron expressions with next run times |
+| `utils--dep-update` | Safely update project dependencies with breaking change detection |
+| `utils--env-setup` | Set up environment variables with .env files and validation |
+| `utils--eslint-config` | Generate or optimize ESLint configuration with sensible defaults |
+| `utils--explain` | Explain code in detail - what it does, how it works, and why |
 | `utils--ffmpeg` | FFmpeg video/audio processing — convert, resize, compress, trim, concatenate, platform export |
+| `utils--gitignore` | Generate a comprehensive .gitignore tailored to the project |
+| `utils--json-tools` | JSON utilities: validate, diff, query with jq, flatten, infer schema |
+| `utils--monorepo` | Set up or optimize monorepo with workspaces, shared configs, and build pipeline |
+| `utils--package-json` | Optimize and clean up package.json - scripts, dependencies, metadata |
+| `utils--regex` | Generate, explain, and test regular expressions |
+| `utils--translate` | Translate code between programming languages while preserving logic and idioms |
+| `utils--tsconfig` | Generate or optimize tsconfig.json for the project |
+
+</details>
+
+### Business & Operations
+
+*Skills that go beyond code — the work of actually running a software business.*
+
+<details>
+<summary><strong>Sales & Growth (21)</strong></summary>
+
+| Command | What It Does |
+|---------|-------------|
+| `sales--account-plan` | Build a strategic account plan with org map, pains, initiatives, entry plays |
+| `sales--call-notes-to-crm` | Turn messy sales call notes into structured CRM fields, tasks, and follow-ups |
+| `sales--case-study-generator` | Turn project notes and metrics into a customer case study (problem-solution-results) |
+| `sales--cold-outreach` | Write multi-touch cold email and LinkedIn sequences personalized per lead |
+| `sales--competitor-intel` | Competitive intel report covering positioning, pricing, feature matrix, gaps |
+| `sales--deal-risk-analyzer` | Analyze deal or pipeline notes for risk signals using MEDDIC gap analysis |
+| `sales--discovery-prep` | Pre-call research brief with company intel, attendees, hypotheses, questions |
+| `sales--email-assistant` | Draft or reply to sales emails matched to deal stage, tone, and intent |
+| `sales--follow-up-sequencer` | Design follow-up cadences per deal stage with timing and exit triggers |
+| `sales--icp-builder` | Build an ICP from your customers, product, or website, plus lead-finder queries |
+| `sales--intent-radar` | Detect buying signals for target accounts - hiring, funding, tech changes, news |
+| `sales--lead-enrichment` | Enrich a lead list with public data - tech stack, size, funding, hiring, news |
+| `sales--lead-finder` | Find and score leads matching your ICP via web search, or prioritize an existing list |
+| `sales--lead-qualifier` | Qualify and tier leads with BANT, MEDDIC, or CHAMP scoring plus next actions |
+| `sales--objection-handler` | Build an objection playbook with reframes, proof points, and next steps |
+| `sales--pricing-strategy` | Design pricing and packaging - tiers, anchoring, and willingness-to-pay logic |
+| `sales--proposal-generator` | Generate a commercial proposal or SOW from discovery notes, with pricing options |
+| `sales--rfp-responder` | Draft RFP/RFI responses from a requirements matrix with compliance tracking |
+| `sales--sales-battlecard` | Build a battlecard vs a competitor with traps, counters, proofs, landmines |
+| `sales--social-selling` | Audit a LinkedIn presence and build a social selling content plan for a niche |
+| `sales--territory-planner` | Segment a market into territories and tiers with balanced coverage per rep |
+
+</details>
+
+<details>
+<summary><strong>Product Management (12)</strong></summary>
+
+| Command | What It Does |
+|---------|-------------|
+| `product--ab-test-design` | Design an A/B test — hypothesis, metrics, sample size, guardrails, analysis |
+| `product--competitive-teardown` | Deep teardown of a competitor product — onboarding, features, pricing, UX |
+| `product--feature-spec` | Detailed feature spec — user flows, edge cases, acceptance criteria, open questions |
+| `product--launch-plan` | Build a product launch plan — phases, channels, assets, owners, checklist |
+| `product--okr-builder` | Draft objectives and measurable key results from strategy and goals |
+| `product--prd` | Write a full PRD from a feature idea — problem, goals, scope, success metrics |
+| `product--pr-faq` | Write an Amazon working-backwards PR/FAQ for a product idea |
+| `product--rice-prioritization` | Score a backlog with RICE and return a ranked, tiered priority list |
+| `product--roadmap` | Build a now/next/later product roadmap from goals, backlog, and constraints |
+| `product--user-interview-guide` | Create a discovery interview script — screener, non-leading questions, probes |
+| `product--user-research-synthesis` | Synthesize interview notes and feedback into themes, insights, opportunities |
+| `product--user-stories` | Break an epic or feature into INVEST user stories with acceptance criteria |
+
+</details>
+
+<details>
+<summary><strong>Finance & SaaS Metrics (10)</strong></summary>
+
+| Command | What It Does |
+|---------|-------------|
+| `finance--budget-planner` | Departmental/project budget with categories, assumptions, variance tracking |
+| `finance--burn-runway` | Burn rate and runway from expenses/revenue, with best/base/worst scenarios |
+| `finance--cap-table` | Model a cap table: rounds, dilution, option pools, exit waterfall scenarios |
+| `finance--financial-model` | Build a 3-year financial model skeleton (spreadsheet formulas) from inputs |
+| `finance--fundraising-deck` | Structure a fundraising deck: narrative, slide-by-slide content, data room |
+| `finance--invoice-generator` | Generate professional HTML/PDF-ready invoices from line items and client data |
+| `finance--pricing-model` | Design pricing models: tiers, value metrics, packaging, price localization |
+| `finance--revenue-forecast` | Forecast revenue from pipeline and historicals: bottoms-up build with scenarios |
+| `finance--saas-metrics` | Compute SaaS metrics from revenue data: MRR, ARR, churn, NRR, LTV, CAC |
+| `finance--unit-economics` | Unit economics: contribution margin, CAC payback, LTV:CAC with sensitivity |
+
+</details>
+
+<details>
+<summary><strong>Legal & Compliance (8)</strong></summary>
+
+| Command | What It Does |
+|---------|-------------|
+| `legal--contract-review` | Review a contract draft - flag risky clauses, missing terms, one-sided duties |
+| `legal--cookie-policy` | Generate a cookie policy from the cookies and trackers actually set in code |
+| `legal--dpa-gen` | Draft a DPA skeleton with a subprocessor list built from your actual stack |
+| `legal--gdpr-audit` | Audit the codebase for GDPR gaps - consent, retention, data subject rights |
+| `legal--oss-license-check` | Scan dependencies for license compatibility, obligations, and copyleft risk |
+| `legal--privacy-policy` | Draft a privacy policy from the data practices actually found in your codebase |
+| `legal--sla-gen` | Draft an SLA with uptime tiers, response times, service credits, exclusions |
+| `legal--terms-of-service` | Draft Terms of Service tailored to the product's actual business model |
+
+</details>
+
+<details>
+<summary><strong>Content & Copywriting (8)</strong></summary>
+
+| Command | What It Does |
+|---------|-------------|
+| `content--blog-post` | Write a technical or business blog post with a real angle and human prose |
+| `content--content-calendar` | Build a content calendar — pillars, cadence, formats mapped to funnel stages |
+| `content--docs-site` | Scaffold a documentation site — tool choice, information architecture, templates |
+| `content--newsletter` | Newsletter issue: curation, structure, A/B subject lines, plain-text friendly |
+| `content--seo-content` | SEO brief + article: keyword intent, SERP analysis, headings, internal links |
+| `content--social-posts` | Repurpose one piece of content into native LinkedIn, X, and Instagram posts |
+| `content--technical-writing` | Turn engineering work into a technical article with narrative, diagrams, and code |
+| `content--video-script` | Video script: hook, retention structure, B-roll notes, CTA — short or long form |
+
+</details>
+
+<details>
+<summary><strong>E-commerce (8)</strong></summary>
+
+| Command | What It Does |
+|---------|-------------|
+| `ecommerce--abandoned-cart` | Build abandoned cart recovery — detection, email sequence, incentive logic |
+| `ecommerce--checkout-flow` | Build or audit an optimized checkout — guest flow, payment UX, error recovery |
+| `ecommerce--inventory-management` | Implement inventory — stock tracking, reservations, low-stock alerts, multi-location |
+| `ecommerce--payment-methods` | Add payment methods: cards, wallets, BNPL, and local methods per market |
+| `ecommerce--product-catalog` | Model a product catalog — variants, options, categories, attributes, media |
+| `ecommerce--product-descriptions` | Write conversion-focused product descriptions at scale from specs or a CSV |
+| `ecommerce--shipping-setup` | Set up shipping — zones, rates, carrier integration, tracking notifications |
+| `ecommerce--store-scaffold` | Scaffold an e-commerce store — platform choice, catalog, cart, and checkout shell |
+
+</details>
+
+<details>
+<summary><strong>Marketing (2)</strong></summary>
+
+| Command | What It Does |
+|---------|-------------|
+| `marketing--ads-campaign` | Gestión completa de campañas publicitarias con 8 agentes especializados en paralelo + PowerPoint |
+| `marketing--marketing-audit` | Auditoría de marketing digital completa con 8 agentes especializados en paralelo + PowerPoint |
 
 </details>
 
@@ -374,6 +736,27 @@ Install skill bundles directly in Claude Code:
 /plugin install scaffold-skills@claude-skills-collection
 /plugin install ai-skills@claude-skills-collection
 /plugin install utility-skills@claude-skills-collection
+
+# Business & operations bundles
+/plugin install sales-skills@claude-skills-collection
+/plugin install product-skills@claude-skills-collection
+/plugin install finance-skills@claude-skills-collection
+/plugin install legal-skills@claude-skills-collection
+/plugin install content-skills@claude-skills-collection
+/plugin install ecommerce-skills@claude-skills-collection
+/plugin install marketing-skills@claude-skills-collection
+
+# Engineering & data bundles
+/plugin install data-skills@claude-skills-collection
+/plugin install ml-skills@claude-skills-collection
+/plugin install fullstack-skills@claude-skills-collection
+/plugin install mobile-skills@claude-skills-collection
+/plugin install cloud-skills@claude-skills-collection
+/plugin install observability-skills@claude-skills-collection
+/plugin install automation-skills@claude-skills-collection
+/plugin install debugging-skills@claude-skills-collection
+/plugin install networking-skills@claude-skills-collection
+/plugin install meta-skills@claude-skills-collection
 ```
 
 ---
@@ -411,8 +794,8 @@ The skill format (markdown with numbered steps) is intentionally portable. No ve
 ```
 
 Options:
-1. **Global** — All 102 skills in every project
-2. **Project** — All 102 skills in current project only
+1. **Global** — All 325 skills in every project
+2. **Project** — All 325 skills in current project only
 3. **Selective** — Pick categories to install
 4. **Uninstall** — Remove all installed skills
 
@@ -464,6 +847,8 @@ Pipelines chain multiple skills together into end-to-end workflows with quality 
 | `new-project` | detect stack → gitignore → tsconfig → eslint → env → docker → CI → README | Bootstrap a project with all configs |
 | `pre-deploy` | checklist → secrets → deps → performance → coverage | Everything that should pass before production |
 | `code-cleanup` | dead code → DRY → complexity → smells → naming → errors | Comprehensive code quality pass |
+| `sales-outbound` | ICP builder → lead finder → lead qualifier → cold outreach | ICP to ready-to-send outreach sequences |
+| `llm-app` | chatbot scaffold → embeddings → RAG eval → guardrails | Scaffold, ground, evaluate, and guard an LLM feature |
 
 ### How Pipelines Work
 
@@ -507,11 +892,11 @@ Every skill is validated by CI on every push:
   ║       CLAUDE SKILLS TEST RUNNER         ║
   ╚═════════════════════════════════════════╝
 
-  [1/5] Structure Validation     102/102 PASS
-  [2/5] Permission Manifests     102/102 declared
-  [3/5] Safety Lint              102/102 safe
-  [4/5] Trigger Quality          102/102 OK
-  [5/5] Test File Coverage       10/102 (11%)
+  [1/5] Structure Validation     325/325 PASS
+  [2/5] Permission Manifests     325/325 declared
+  [3/5] Safety Lint              325/325 safe
+  [4/5] Trigger Quality          325/325 OK
+  [5/5] Test File Coverage       12/325 (4%)
 ```
 
 ### What Gets Checked
@@ -560,7 +945,7 @@ Use the [template](template/SKILL.md) and follow the [contributing guide](CONTRI
 <details>
 <summary><strong>Do skills slow down Claude Code?</strong></summary>
 
-No. Skills are only loaded when you invoke them. Having 102 skills installed has zero impact on performance.
+No. Skills are only loaded when you invoke them. Having 325 skills installed has zero impact on performance.
 
 </details>
 
@@ -584,30 +969,48 @@ Start with global. If you want to share specific skills with your team (e.g., en
 
 ```
 claude-skills/
-├── skills/                     # 102 skills organized by category
-│   ├── meta/                   # 4 meta-skills (router, pipelines, forge, health)
-│   ├── git/                    # 10 git & version control skills
-│   ├── code-quality/           # 10 code review & refactoring skills
-│   ├── testing/                # 9 test generation & management skills
-│   ├── security/               # 8 security audit & hardening skills
-│   ├── devops/                 # 8 infrastructure & deployment skills
-│   ├── docs/                   # 8 documentation generation skills
-│   ├── database/               # 6 database & ORM skills
-│   ├── scaffold/               # 7 project scaffolding skills
-│   ├── performance/            # 5 performance optimization skills
-│   ├── api/                    # 5 API development skills
-│   ├── ai/                     # 3 AI/LLM integration skills
-│   ├── web/                    # 9 web & UI skills (landing pages, SPA, animations, design systems)
-│   ├── accessibility/          # 2 WCAG compliance skills
-│   ├── i18n/                   # 1 internationalization skill
-│   ├── utils/                  # 13 utility skills
+├── skills/                     # 325 skills across 32 categories
+│   ├── meta/                   # 4  · router, pipelines, forge, health
+│   ├── git/                    # 12 · version control
+│   ├── code-quality/           # 10 · review & refactoring
+│   ├── testing/                # 13 · test generation & QA
+│   ├── debugging/              # 15 · troubleshooting
+│   ├── security/               # 11 · audit & hardening
+│   ├── devops/                 # 12 · infrastructure & deployment
+│   ├── cloud/                  # 10 · AWS / GCP / Azure architecture
+│   ├── observability/          # 8  · logging, metrics, tracing, SRE
+│   ├── networking/             # 19 · networking & Cloudflare
+│   ├── docs/                   # 10 · documentation
+│   ├── database/               # 6  · database & ORM
+│   ├── data/                   # 12 · analytics, dbt, warehousing
+│   ├── api/                    # 5  · API development
+│   ├── performance/            # 7  · performance optimization
+│   ├── scaffold/               # 10 · project scaffolding
+│   ├── fullstack/              # 12 · full-stack features
+│   ├── mobile/                 # 10 · React Native / Flutter / native
+│   ├── ai/                     # 18 · LLM apps, agents, RAG, evals
+│   ├── ml/                     # 8  · classical machine learning
+│   ├── automation/             # 8  · scraping & workflow automation
+│   ├── web/                    # 18 · web & UI
+│   ├── accessibility/          # 2  · WCAG compliance
+│   ├── i18n/                   # 1  · internationalization
+│   ├── utils/                  # 15 · general utilities
+│   ├── sales/                  # 21 · lead gen, outreach, deals
+│   ├── product/                # 12 · PRDs, roadmaps, research
+│   ├── finance/                # 10 · SaaS metrics, pricing, modeling
+│   ├── legal/                  # 8  · privacy, ToS, GDPR, contracts
+│   ├── content/                # 8  · blog, SEO, scripts
+│   ├── ecommerce/              # 8  · storefronts, checkout, catalog
+│   ├── marketing/              # 2  · audits & ad campaigns
 │   └── **/*.test.yaml          # Test files for skill validation
-├── pipelines/                  # 5 composable multi-skill workflows
+├── pipelines/                  # 7 composable multi-skill workflows
 │   ├── feature-complete.yaml
 │   ├── security-hardening.yaml
 │   ├── new-project.yaml
 │   ├── pre-deploy.yaml
-│   └── code-cleanup.yaml
+│   ├── code-cleanup.yaml
+│   ├── sales-outbound.yaml
+│   └── llm-app.yaml
 ├── scripts/                    # Validation & tooling
 │   ├── test-runner.sh          # CI test harness (structure, safety, triggers)
 │   ├── lint-permissions.sh     # Permission manifest cross-reference linter
@@ -615,7 +1018,7 @@ claude-skills/
 ├── .github/workflows/
 │   └── test-skills.yml         # GitHub Actions CI pipeline
 ├── .claude-plugin/
-│   └── marketplace.json        # Plugin marketplace (12 bundles)
+│   └── marketplace.json        # Plugin marketplace (32 bundles)
 ├── platforms/                  # Cross-platform guides (Cursor, Windsurf, Codex)
 ├── template/SKILL.md           # Template for creating new skills
 ├── install.sh                  # Interactive installer (macOS/Linux/Git Bash)

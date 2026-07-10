@@ -4,13 +4,13 @@
     "name": "sgomez-dev"
   },
   "metadata": {
-    "description": "102 battle-tested slash commands for Claude Code — git, security, testing, devops, web, performance, and more.",
-    "version": "1.0.0"
+    "description": "325 battle-tested slash commands for Claude Code — sales, product, data, finance, ai, git, security, testing, devops, web, and more.",
+    "version": "2.0.0"
   },
   "plugins": [
     {
       "name": "git-skills",
-      "description": "10 git & version control skills — smart commits, PRs, releases, blame, stash, undo",
+      "description": "12 git & version control skills — smart commits, PRs, releases, blame, stash, undo, hooks, monorepo",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/sgomez-dev/claude-skills.git",
@@ -30,7 +30,7 @@
     },
     {
       "name": "testing-skills",
-      "description": "9 testing skills — unit tests, edge cases, integration, e2e, coverage, mocks",
+      "description": "13 testing skills — unit, edge cases, integration, e2e, coverage, load, contract, mutation, visual regression",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/sgomez-dev/claude-skills.git",
@@ -40,7 +40,7 @@
     },
     {
       "name": "docs-skills",
-      "description": "8 documentation skills — API docs, READMEs, diagrams, ADRs, OpenAPI specs",
+      "description": "10 documentation skills — API docs, READMEs, diagrams, ADRs, OpenAPI specs, onboarding guides, API changelogs",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/sgomez-dev/claude-skills.git",
@@ -50,7 +50,7 @@
     },
     {
       "name": "security-skills",
-      "description": "8 security skills — OWASP audit, secrets scan, auth review, CORS, CSP, input sanitization",
+      "description": "11 security skills — OWASP audit, secrets scan, auth review, CORS, CSP, threat modeling, rate limiting, pentest prep",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/sgomez-dev/claude-skills.git",
@@ -60,7 +60,7 @@
     },
     {
       "name": "devops-skills",
-      "description": "8 devops & infrastructure skills — Docker, CI/CD, K8s, Terraform, Nginx, GitHub Actions",
+      "description": "12 devops & infrastructure skills — Docker, CI/CD, K8s, Terraform, Nginx, Ansible, Helm, GitOps, secrets management",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/sgomez-dev/claude-skills.git",
@@ -90,7 +90,7 @@
     },
     {
       "name": "performance-skills",
-      "description": "5 performance skills — audits, bundle analysis, caching, lazy loading, memory leaks",
+      "description": "7 performance skills — audits, bundle analysis, caching, lazy loading, memory leaks, Core Web Vitals, DB performance",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/sgomez-dev/claude-skills.git",
@@ -100,7 +100,7 @@
     },
     {
       "name": "scaffold-skills",
-      "description": "7 scaffolding skills — project setup, full-stack features, components, hooks, middleware",
+      "description": "10 scaffolding skills — project setup, full-stack features, components, hooks, middleware, models",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/sgomez-dev/claude-skills.git",
@@ -110,7 +110,7 @@
     },
     {
       "name": "ai-skills",
-      "description": "3 AI/LLM skills — prompt engineering, API integration, vector embeddings",
+      "description": "18 AI/LLM skills — agents, MCP servers, RAG & LLM evals, guardrails, structured output, observability, cost optimization",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/sgomez-dev/claude-skills.git",
@@ -130,7 +130,7 @@
     },
     {
       "name": "utility-skills",
-      "description": "13 utility skills — explain, translate, regex, configs, env setup",
+      "description": "15 utility skills — explain, translate, regex, configs, env setup, JSON tools, benchmarking",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/sgomez-dev/claude-skills.git",
@@ -155,6 +155,176 @@
         "source": "git-subdir",
         "url": "https://github.com/sgomez-dev/claude-skills.git",
         "path": "skills/i18n"
+      },
+      "commands": "."
+    },
+    {
+      "name": "debugging-skills",
+      "description": "15 debugging skills — stack traces, memory leaks, race conditions, distributed tracing, production & chaos debugging",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/sgomez-dev/claude-skills.git",
+        "path": "skills/debugging"
+      },
+      "commands": "."
+    },
+    {
+      "name": "networking-skills",
+      "description": "19 networking & Cloudflare skills — Workers, Pages, R2, KV, D1, DNS, WAF, tunnels, zero trust, load balancing",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/sgomez-dev/claude-skills.git",
+        "path": "skills/networking"
+      },
+      "commands": "."
+    },
+    {
+      "name": "meta-skills",
+      "description": "4 meta-skills — stack-aware router, pipeline runner, skill forge, health check",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/sgomez-dev/claude-skills.git",
+        "path": "skills/meta"
+      },
+      "commands": "."
+    },
+    {
+      "name": "sales-skills",
+      "description": "21 sales & growth skills — lead finder, ICP builder, intent radar, outreach, qualification, deal risk, proposals",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/sgomez-dev/claude-skills.git",
+        "path": "skills/sales"
+      },
+      "commands": "."
+    },
+    {
+      "name": "product-skills",
+      "description": "12 product management skills — PRDs, feature specs, user stories, RICE, roadmaps, OKRs, PR/FAQ, A/B tests",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/sgomez-dev/claude-skills.git",
+        "path": "skills/product"
+      },
+      "commands": "."
+    },
+    {
+      "name": "data-skills",
+      "description": "12 data & analytics skills — analytics SQL, dbt, tracking plans, dashboards, cohorts, funnels, data quality",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/sgomez-dev/claude-skills.git",
+        "path": "skills/data"
+      },
+      "commands": "."
+    },
+    {
+      "name": "finance-skills",
+      "description": "10 finance & SaaS metrics skills — MRR/ARR/churn/LTV/CAC, pricing, financial models, unit economics, runway",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/sgomez-dev/claude-skills.git",
+        "path": "skills/finance"
+      },
+      "commands": "."
+    },
+    {
+      "name": "legal-skills",
+      "description": "8 legal & compliance skills — privacy policy, ToS, GDPR audit, contract review, licenses, DPA, cookies, SLA",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/sgomez-dev/claude-skills.git",
+        "path": "skills/legal"
+      },
+      "commands": "."
+    },
+    {
+      "name": "fullstack-skills",
+      "description": "12 full-stack feature skills — SaaS starter, auth, payments, realtime, uploads, jobs, notifications, search, multi-tenancy",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/sgomez-dev/claude-skills.git",
+        "path": "skills/fullstack"
+      },
+      "commands": "."
+    },
+    {
+      "name": "mobile-skills",
+      "description": "10 mobile skills — React Native & Flutter scaffolds, push, deep links, offline sync, ASO, releases, biometrics",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/sgomez-dev/claude-skills.git",
+        "path": "skills/mobile"
+      },
+      "commands": "."
+    },
+    {
+      "name": "cloud-skills",
+      "description": "10 cloud architecture skills — AWS/GCP/Azure design, serverless, cost audit, IAM, migration, DR, autoscaling",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/sgomez-dev/claude-skills.git",
+        "path": "skills/cloud"
+      },
+      "commands": "."
+    },
+    {
+      "name": "observability-skills",
+      "description": "8 observability & SRE skills — logging, metrics, tracing, alerting, SLO/SLI, incident response, runbooks, postmortems",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/sgomez-dev/claude-skills.git",
+        "path": "skills/observability"
+      },
+      "commands": "."
+    },
+    {
+      "name": "content-skills",
+      "description": "8 content & copywriting skills — blog posts, SEO, newsletters, social posts, video scripts, docs sites",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/sgomez-dev/claude-skills.git",
+        "path": "skills/content"
+      },
+      "commands": "."
+    },
+    {
+      "name": "ecommerce-skills",
+      "description": "8 e-commerce skills — store scaffold, checkout, catalog, inventory, shipping, abandoned cart, payments",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/sgomez-dev/claude-skills.git",
+        "path": "skills/ecommerce"
+      },
+      "commands": "."
+    },
+    {
+      "name": "automation-skills",
+      "description": "8 automation skills — web scraping, browser & workflow automation, email, reports, PDF, spreadsheets, scheduling",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/sgomez-dev/claude-skills.git",
+        "path": "skills/automation"
+      },
+      "commands": "."
+    },
+    {
+      "name": "ml-skills",
+      "description": "8 machine learning skills — dataset prep, feature engineering, training, evaluation, MLOps, forecasting, recommenders",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/sgomez-dev/claude-skills.git",
+        "path": "skills/ml"
+      },
+      "commands": "."
+    },
+    {
+      "name": "marketing-skills",
+      "description": "2 marketing skills — full marketing audit and ad campaign strategy with parallel specialist agents",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/sgomez-dev/claude-skills.git",
+        "path": "skills/marketing"
       },
       "commands": "."
     }

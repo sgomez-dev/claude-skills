@@ -1,0 +1,35 @@
+# ============================================================================
+#  Pipeline: LLM App
+#  From chatbot scaffold to evaluated, guarded production LLM feature
+# ============================================================================
+name: LLM App
+description: Scaffold a chatbot, wire RAG, evaluate quality, add guardrails
+trigger: /pipeline--llm-app
+
+steps:
+  - name: Scaffold Chatbot
+    skill: ai--chatbot-scaffold
+    description: Production chatbot skeleton with streaming and history
+    gate:
+      condition: scaffold_created
+    on_failure: abort
+
+  - name: RAG Pipeline
+    skill: ai--embeddings
+    description: Chunk, embed, store and retrieve the knowledge base
+    input: "Wire retrieval into the chatbot created in the previous step"
+    on_failure: warn  # Chatbot without RAG is still shippable
+
+  - name: Evaluate Quality
+    skill: ai--rag-eval
+    description: Build a golden set and measure retrieval + groundedness
+    gate:
+      max_severity: critical  # Abort if answers are ungrounded
+    on_failure: abort
+
+  - name: Add Guardrails
+    skill: ai--guardrails
+    description: Input/output filters, prompt-injection defense, PII handling
+    gate:
+      condition: guardrails_tested
+    on_failure: abort
