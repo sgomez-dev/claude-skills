@@ -1,0 +1,37 @@
+# ============================================================================
+#  Pipeline: Sales Outbound
+#  From ideal customer profile to ready-to-send outreach sequences
+# ============================================================================
+name: Sales Outbound
+description: Build ICP, find and qualify leads, generate personalized outreach
+trigger: /pipeline--sales-outbound
+
+steps:
+  - name: Build ICP
+    skill: sales--icp-builder
+    description: Define the Ideal Customer Profile and search queries
+    gate:
+      condition: icp_confirmed_by_user  # User must approve ICP before searching
+    on_failure: abort
+
+  - name: Find Leads
+    skill: sales--lead-finder
+    description: Discover and score leads matching the ICP via web search
+    input: "Use the ICP and search queries from the previous step"
+    gate:
+      condition: leads_found  # At least a handful of tier A/B leads
+    on_failure: abort
+
+  - name: Qualify Leads
+    skill: sales--lead-qualifier
+    description: Qualify and tier the found leads with the fitting framework
+    input: "Qualify the lead list produced by the previous step"
+    on_failure: warn  # Thin data is fine — proceed with what we have
+
+  - name: Generate Outreach
+    skill: sales--cold-outreach
+    description: Create personalized multi-touch sequences for tier A leads
+    input: "Focus on tier A leads; use each lead's suggested_angle"
+    gate:
+      condition: sequences_generated
+    on_failure: abort

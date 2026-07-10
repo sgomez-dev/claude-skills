@@ -1,0 +1,34 @@
+skill: lead-finder
+category: sales
+description: Validates the lead finder discovers, scores and delivers evidence-backed leads
+
+tests:
+  - name: "discovers leads from an ICP"
+    trigger_prompts:
+      - "find leads for my company"
+      - "find potential customers for this product"
+      - "generate a lead list"
+    assertions:
+      - has_steps: true
+      - output_contains: "ICP"
+      - output_contains: "fit_score"
+      - output_contains: "source_url"
+      - no_destructive_commands: true
+
+  - name: "scores and tiers every lead with evidence"
+    assertions:
+      - output_contains_pattern: "(tier|Tier) (A|B|C)"
+      - output_contains: "reason"
+      - output_contains: "suggested_angle"
+
+  - name: "never fabricates contact data"
+    precondition: "lead with no publicly verifiable email"
+    assertions:
+      - handles_gracefully: true
+      - output_contains: "research needed"
+
+  - name: "enrich mode preserves original columns"
+    precondition: "user provides an existing CSV of companies"
+    assertions:
+      - handles_gracefully: true
+      - output_contains: "enrich"
