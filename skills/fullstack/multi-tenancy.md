@@ -1,5 +1,5 @@
 ---
-description: "Add multi-tenancy: isolation model choice (row/schema/db), scoping, migrations"
+description: Add multi-tenancy: isolation model choice (row/schema/db), scoping, migrations
 permissions:
   reads: ["**/*"]
   writes: ["src/**", "app/**", "apps/**", "lib/**", "server/**", "config/**", "db/**", "database/**", "migrations/**", "prisma/**", "tests/**", "test/**", "spec/**", "package.json", "requirements.txt", "pyproject.toml", "Gemfile", "composer.json", ".env.example"]

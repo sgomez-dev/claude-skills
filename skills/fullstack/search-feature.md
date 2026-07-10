@@ -1,5 +1,5 @@
 ---
-description: "Add search: engine choice (Postgres FTS/Meilisearch/Elastic), indexing, ranking, UI"
+description: Add search: engine choice (Postgres FTS/Meilisearch/Elastic), indexing, ranking, UI
 permissions:
   reads: ["**/*"]
   writes: ["src/**", "app/**", "apps/**", "lib/**", "server/**", "config/**", "db/**", "database/**", "migrations/**", "prisma/**", "docker-compose*.yml", "tests/**", "test/**", "spec/**", "package.json", "requirements.txt", "pyproject.toml", "Gemfile", "composer.json", ".env.example"]

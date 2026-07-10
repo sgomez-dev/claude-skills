@@ -1,5 +1,5 @@
 ---
-description: "Departmental/project budget with categories, assumptions, variance tracking"
+description: Departmental/project budget with categories, assumptions, variance tracking
 permissions:
   reads: ["*.csv", "*.json", "*.md"]
   writes: ["budget_*.csv", "budget_*.md"]

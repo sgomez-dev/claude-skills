@@ -1,5 +1,5 @@
 ---
-description: "Craft App Store/Play listings: title, keywords/ASO, descriptions, screenshot plan"
+description: Craft App Store/Play listings: title, keywords/ASO, descriptions, screenshot plan
 permissions:
   reads: ["**/*"]
   writes: ["store/**", "fastlane/metadata/**", "*.md"]

@@ -1,5 +1,5 @@
 ---
-description: "Generate professional HTML/PDF-ready invoices from line items and client data"
+description: Generate professional HTML/PDF-ready invoices from line items and client data
 permissions:
   reads: ["*.csv", "*.json", "*.md", "*.html"]
   writes: ["invoice_*.html", "invoice_*.md"]

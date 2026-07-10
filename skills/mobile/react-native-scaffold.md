@@ -1,5 +1,5 @@
 ---
-description: "Scaffold a production React Native/Expo app: navigation, state, theming, CI"
+description: Scaffold a production React Native/Expo app: navigation, state, theming, CI
 permissions:
   reads: ["**/*"]
   writes: ["**/*"]

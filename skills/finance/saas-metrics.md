@@ -1,5 +1,5 @@
 ---
-description: "Compute SaaS metrics from revenue data: MRR, ARR, churn, NRR, LTV, CAC"
+description: Compute SaaS metrics from revenue data: MRR, ARR, churn, NRR, LTV, CAC
 permissions:
   reads: ["*.csv", "*.json", "*.md"]
   writes: ["saas_metrics_*.md", "saas_metrics_*.csv"]

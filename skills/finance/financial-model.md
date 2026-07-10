@@ -1,5 +1,5 @@
 ---
-description: "Build a 3-year financial model skeleton (spreadsheet formulas) from inputs"
+description: Build a 3-year financial model skeleton (spreadsheet formulas) from inputs
 permissions:
   reads: ["*.csv", "*.json", "*.md"]
   writes: ["financial_model_*.csv", "financial_model_*.md"]

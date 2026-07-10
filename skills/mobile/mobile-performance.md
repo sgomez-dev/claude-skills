@@ -1,5 +1,5 @@
 ---
-description: "Audit mobile performance: startup time, jank, bundle/APK size, memory, images"
+description: Audit mobile performance: startup time, jank, bundle/APK size, memory, images
 permissions:
   reads: ["**/*"]
   writes: ["**/*"]

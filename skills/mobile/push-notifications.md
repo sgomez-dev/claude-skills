@@ -1,5 +1,5 @@
 ---
-description: "Implement push notifications: FCM/APNs setup, token lifecycle, permission UX"
+description: Implement push notifications: FCM/APNs setup, token lifecycle, permission UX
 permissions:
   reads: ["**/*"]
   writes: ["**/*"]

@@ -20,10 +20,24 @@ Place your skill in the appropriate `skills/<category>/` directory:
 | `api/` | Endpoints, GraphQL, REST clients |
 | `performance/` | Audits, bundle size, caching, memory |
 | `scaffold/` | Project setup, components, models |
-| `ai/` | LLM integration, prompts, embeddings |
+| `fullstack/` | Full-stack features (auth, payments, realtime, search) |
+| `ai/` | LLM integration, agents, RAG, evals, guardrails, MCP |
+| `ml/` | Classical machine learning (training, eval, MLOps) |
+| `mobile/` | Mobile development (React Native, Flutter, native) |
+| `cloud/` | Cloud architecture (AWS, GCP, Azure, serverless) |
+| `observability/` | Logging, metrics, tracing, SLOs, incidents |
+| `data/` | Analytics, dbt, warehousing, tracking plans |
 | `accessibility/` | WCAG, ARIA, keyboard navigation |
 | `i18n/` | Internationalization, translations |
 | `utils/` | General utilities, conversions, configs |
+| `sales/` | Lead gen, outreach, qualification, deals, proposals |
+| `product/` | PRDs, specs, roadmaps, prioritization, research |
+| `finance/` | SaaS metrics, pricing, modeling, forecasting |
+| `legal/` | Privacy, ToS, GDPR, contracts, compliance |
+| `content/` | Blog, SEO, newsletters, scripts, docs sites |
+| `ecommerce/` | Storefronts, checkout, catalog, payments |
+| `automation/` | Scraping, browser/workflow/report automation |
+| `marketing/` | Marketing audits and ad campaigns |
 
 If none fit, propose a new category in your PR.
 

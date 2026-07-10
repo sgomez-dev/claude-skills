@@ -1,5 +1,5 @@
 ---
-description: "Set up universal/app links: config, in-app routing, deferred links, QA matrix"
+description: Set up universal/app links: config, in-app routing, deferred links, QA matrix
 permissions:
   reads: ["**/*"]
   writes: ["**/*"]

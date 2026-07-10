@@ -1,5 +1,5 @@
 ---
-description: "Unit economics: contribution margin, CAC payback, LTV:CAC with sensitivity"
+description: Unit economics: contribution margin, CAC payback, LTV:CAC with sensitivity
 permissions:
   reads: ["*.csv", "*.json", "*.md"]
   writes: ["unit_economics_*.md", "unit_economics_*.csv"]

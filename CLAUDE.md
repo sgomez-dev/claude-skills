@@ -1,28 +1,44 @@
 # Claude Skills Collection
 
-This repository contains 135 custom slash commands (skills) for Claude Code organized in `skills/` by category.
+This repository contains 325 custom slash commands (skills) for Claude Code organized in `skills/` by category.
 
 ## Project Structure
 
 ```
-skills/                  # All 135 skills organized by category
-├── git/                 # 10 git & version control skills
-├── code-quality/        # 10 code quality & review skills
-├── testing/             # 8 testing skills
-├── debugging/           # 15 debugging & troubleshooting skills
-├── docs/                # 7 documentation skills
-├── security/            # 8 security skills
-├── devops/              # 8 devops & infrastructure skills
-├── database/            # 6 database skills
+skills/                  # All 325 skills organized by category
+├── ai/                  # 18 AI/LLM skills (agents, RAG, evals, guardrails, MCP)
 ├── api/                 # 5 API development skills
-├── performance/         # 5 performance skills
-├── networking/          # 18 networking & Cloudflare skills
-├── scaffold/            # 8 scaffolding skills
-├── ai/                  # 3 AI/LLM skills
 ├── accessibility/       # 2 accessibility skills
+├── automation/          # 8 automation & integration skills
+├── cloud/               # 10 cloud architecture skills (AWS, GCP, Azure)
+├── code-quality/        # 10 code quality & review skills
+├── content/             # 8 content & copywriting skills
+├── data/                # 12 data & analytics skills
+├── database/            # 6 database skills
+├── debugging/           # 15 debugging & troubleshooting skills
+├── devops/              # 12 devops & infrastructure skills
+├── docs/                # 10 documentation skills
+├── ecommerce/           # 8 e-commerce skills
+├── finance/             # 10 finance & SaaS metrics skills
+├── fullstack/           # 12 full-stack feature skills
+├── git/                 # 12 git & version control skills
 ├── i18n/                # 1 internationalization skill
-├── marketing/           # 1 marketing skill
-└── utils/               # 12 utility skills
+├── legal/               # 8 legal & compliance skills
+├── marketing/           # 2 marketing skills
+├── meta/                # 4 meta-skills (router, pipelines, forge, health)
+├── ml/                  # 8 machine learning skills
+├── mobile/              # 10 mobile development skills
+├── networking/          # 19 networking & Cloudflare skills
+├── observability/       # 8 observability & SRE skills
+├── performance/         # 7 performance skills
+├── product/             # 12 product management skills
+├── sales/               # 21 sales & growth skills (lead gen, outreach, deals)
+├── scaffold/            # 10 scaffolding skills
+├── security/            # 11 security skills
+├── testing/             # 13 testing skills
+├── utils/               # 15 utility skills
+└── web/                 # 18 web & UI skills
+pipelines/               # Composable multi-skill workflows (*.yaml)
 install.sh               # Interactive installer (macOS/Linux/Git Bash)
 install.ps1              # Windows PowerShell installer
 ```

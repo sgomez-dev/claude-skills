@@ -1,5 +1,5 @@
 ---
-description: "Make the app offline-first: local store, sync strategy, conflicts, mutation queue"
+description: Make the app offline-first: local store, sync strategy, conflicts, mutation queue
 permissions:
   reads: ["**/*"]
   writes: ["**/*"]

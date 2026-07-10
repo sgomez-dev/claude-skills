@@ -1,5 +1,5 @@
 ---
-description: "Forecast revenue from pipeline and historicals: bottoms-up build with scenarios"
+description: Forecast revenue from pipeline and historicals: bottoms-up build with scenarios
 permissions:
   reads: ["*.csv", "*.json", "*.md"]
   writes: ["revenue_forecast_*.csv", "revenue_forecast_*.md"]

@@ -1,5 +1,5 @@
 ---
-description: "Set up mobile releases: versioning, signing, beta tracks, staged rollout, submission"
+description: Set up mobile releases: versioning, signing, beta tracks, staged rollout, submission
 permissions:
   reads: ["**/*"]
   writes: ["**/*"]

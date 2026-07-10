@@ -1,5 +1,5 @@
 ---
-description: "Burn rate and runway from expenses/revenue, with best/base/worst scenarios"
+description: Burn rate and runway from expenses/revenue, with best/base/worst scenarios
 permissions:
   reads: ["*.csv", "*.json", "*.md"]
   writes: ["burn_runway_*.md", "burn_runway_*.csv"]

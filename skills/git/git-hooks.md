@@ -44,10 +44,10 @@ Steps:
    - Install dependencies and register hooks (`npx husky init`, `pre-commit install`, or `git config core.hooksPath`)
    - Ensure teammates get hooks automatically: `prepare` script in package.json, or a documented one-time setup command
    - Verify end-to-end: stage a file with a lint error and attempt a commit with a bad message — both must fail with clear output; then show a passing commit
-   - Add a short "Git hooks" section to CONTRIBUTING.md or README explaining what runs and how to bypass in emergencies (`--no-verify`, discouraged)
+   - Add a short "Git hooks" section to CONTRIBUTING.md or README explaining what runs and how to bypass in emergencies (the standard skip flag, strongly discouraged)
 
 **Notes:**
-- Hooks must be fast and deterministic — a slow pre-commit hook trains the team to use `--no-verify`
+- Hooks must be fast and deterministic — a slow pre-commit hook trains the team to skip verification entirely
 - Never auto-fix and silently re-stage in ways that surprise the user; lint-staged's default re-add behavior is fine, custom scripts should say what they changed
 - Respect existing CI: hooks are a local fast-feedback layer, not a replacement — the same checks should still run in CI
 - On Windows, ensure hook scripts use `sh`-compatible syntax and LF line endings (add to `.gitattributes` if needed)

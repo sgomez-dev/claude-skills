@@ -1,5 +1,5 @@
 ---
-description: "Design pricing models: tiers, value metrics, packaging, price localization"
+description: Design pricing models: tiers, value metrics, packaging, price localization
 permissions:
   reads: ["*.csv", "*.json", "*.md"]
   writes: ["pricing_*.md", "pricing_*.csv"]

@@ -1,5 +1,5 @@
 ---
-description: "Model a cap table: rounds, dilution, option pools, exit waterfall scenarios"
+description: Model a cap table: rounds, dilution, option pools, exit waterfall scenarios
 permissions:
   reads: ["*.csv", "*.json", "*.md"]
   writes: ["cap_table_*.csv", "cap_table_*.md"]

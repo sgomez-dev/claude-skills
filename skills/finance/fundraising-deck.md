@@ -1,5 +1,5 @@
 ---
-description: "Structure a fundraising deck: narrative, slide-by-slide content, data room"
+description: Structure a fundraising deck: narrative, slide-by-slide content, data room
 permissions:
   reads: ["*.csv", "*.json", "*.md"]
   writes: ["fundraising_deck_*.md"]

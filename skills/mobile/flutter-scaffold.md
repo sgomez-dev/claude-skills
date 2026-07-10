@@ -1,5 +1,5 @@
 ---
-description: "Scaffold a production Flutter app: routing, state management, theming, flavors"
+description: Scaffold a production Flutter app: routing, state management, theming, flavors
 permissions:
   reads: ["**/*"]
   writes: ["**/*"]

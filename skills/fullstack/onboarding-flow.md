@@ -1,5 +1,5 @@
 ---
-description: "Build user onboarding: signup-to-activation flow, checklists, empty states, metrics"
+description: Build user onboarding: signup-to-activation flow, checklists, empty states, metrics
 permissions:
   reads: ["**/*"]
   writes: ["src/**", "app/**", "apps/**", "lib/**", "server/**", "config/**", "db/**", "database/**", "migrations/**", "prisma/**", "templates/**", "tests/**", "test/**", "spec/**", "package.json", "requirements.txt", "pyproject.toml", "Gemfile", "composer.json", ".env.example"]
