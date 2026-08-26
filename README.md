@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Skills-325-blue?style=for-the-badge" alt="325 Skills" />
+  <img src="https://img.shields.io/badge/Skills-326-blue?style=for-the-badge" alt="326 Skills" />
   <img src="https://img.shields.io/badge/Tested-CI_Validated-brightgreen?style=for-the-badge" alt="CI Tested" />
   <img src="https://img.shields.io/badge/Permissions-100%25_Declared-brightgreen?style=for-the-badge" alt="Permissions" />
   <img src="https://img.shields.io/badge/Pipelines-7-purple?style=for-the-badge" alt="7 Pipelines" />
@@ -17,13 +17,13 @@
 
 <p align="center">
   <strong>The only skills collection where every skill is tested, permission-scoped, and composable.</strong><br/>
-  325 skills across 32 categories. 7 pipelines. Full CI validation. Zero trust assumptions.
+  326 skills across 32 categories. 7 pipelines. Full CI validation. Zero trust assumptions.
 </p>
 
 <p align="center">
   <a href="#quick-install">Quick Install</a> &bull;
   <a href="#what-makes-this-different">Why This One</a> &bull;
-  <a href="#all-325-skills">Browse Skills</a> &bull;
+  <a href="#all-326-skills">Browse Skills</a> &bull;
   <a href="#web--ui-6----landing-pages-spas-animations-design-systems">Web & UI</a> &bull;
   <a href="#pipelines">Pipelines</a> &bull;
   <a href="#plugin-marketplace">Marketplace</a> &bull;
@@ -121,9 +121,9 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 
 ---
 
-## All 325 Skills
+## All 326 Skills
 
-325 skills across 32 categories. Click any group to expand its command table.
+326 skills across 32 categories. Click any group to expand its command table.
 
 ### Engineering & Data
 
@@ -526,7 +526,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 </details>
 
 <details>
-<summary><strong>Automation & Integration (8)</strong></summary>
+<summary><strong>Automation & Integration (9)</strong></summary>
 
 | Command | What It Does |
 |---------|-------------|
@@ -535,6 +535,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 | `automation--pdf-processing` | Build PDF workflows — extract text/tables, fill forms, merge/split, OCR fallback |
 | `automation--report-automation` | Automate a recurring report — data pull, template, schedule, delivery channel |
 | `automation--scheduled-tasks` | Schedule tasks reliably: cron vs queues, retries, monitoring, timezone traps |
+| `automation--scrapegraph-scraper` | Build an LLM-powered scraper with scrapegraph-ai — graph choice, Pydantic schemas, token cost |
 | `automation--spreadsheet-automation` | Automate spreadsheets: formulas, Apps Script/openpyxl, imports, validation |
 | `automation--web-scraper` | Build a polite web scraper — robots.txt, rate limits, selectors, pagination, storage |
 | `automation--workflow-automation` | Design automations for n8n, Zapier, or Make — triggers, steps, error paths, export |
@@ -761,6 +762,90 @@ Install skill bundles directly in Claude Code:
 
 ---
 
+## External Skills
+
+Not everything worth using was written here. `external/` vendors third-party skills
+from their upstream repos, kept current with a sync script.
+
+These use the **Agent Skill** format — a directory with `SKILL.md` plus
+`references/` and `workflows/` — rather than this repo's single-file slash-command
+format, so they install to `~/.claude/skills/` and are invoked as `/skill-name`
+(or trigger automatically from their description).
+
+**36 skills from 8 upstream repos.** Grouped by source:
+
+| Upstream | License | What you get |
+|----------|---------|--------------|
+| [kylezantos/design-motion-principles](https://github.com/kylezantos/design-motion-principles) | MIT | Motion design in two modes — build with purposeful motion, or audit existing animations for AI-slop patterns and emit an HTML report with looping demos |
+| [emilkowalski/skills](https://github.com/emilkowalski/skills) | MIT | 12 skills from the author of Sonner and Vaul — animation craft, Apple design, animation vocabulary, UI library selection, prototyping, Swift |
+| [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | MIT | 12 anti-slop frontend skills — taste, brutalist/minimalist/soft styles, redesigns, image-to-code, brand kits |
+| [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | MIT | 7 design skills — design systems, brand, banners, slides, UI styling |
+| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Apache-2.0 | Design-critique loop with browser automation and antipattern detection |
+| [AgriciDaniel/banana-claude](https://github.com/AgriciDaniel/banana-claude) | MIT | Gemini image generation — presets, batching, cost tracking |
+| [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Apache-2.0 | Driving a browser from an agent |
+| [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) | MIT | Outreach and contact discovery |
+
+`./install.sh` installs these alongside the slash commands — nothing extra to run.
+
+Some of them drive an external tool, and vendoring the prompt does not install
+that tool: `impeccable` needs Node, `agent-browser` needs its npm CLI,
+`agent-reach` needs its Python package, `banana` needs a Gemini API key. See
+[external/README.md](external/README.md#skills-that-need-something-installed).
+
+### Keeping them current
+
+Upstream repos keep moving. The sync script pulls vendored copies forward:
+
+```bash
+./scripts/sync-external.sh --check    # which sources are behind upstream?
+./scripts/sync-external.sh            # pull everything forward
+./scripts/sync-external.sh <name>     # pull one source forward
+./scripts/sync-external.sh --list     # manifest entries + pinned commits
+```
+
+Then review, commit, and reinstall:
+
+```bash
+git diff external/
+git add external/ && git commit -m "chore(external): sync upstream skills"
+./install.sh
+```
+
+Every vendored directory carries an `UPSTREAM.md` with the exact commit it came
+from, plus the upstream `LICENSE`.
+
+A scheduled workflow ([`external-skills.yml`](.github/workflows/external-skills.yml))
+runs the same check every Monday and files a single tracking issue when something
+has moved upstream, so stale copies surface without anyone remembering to look.
+The same workflow validates on every PR that the manifest and the vendored
+directories still agree.
+
+### Private skills
+
+Some third-party skills are worth using but not ours to republish — upstream
+ships no LICENSE, or a copyleft one incompatible with this repo's MIT. Those go
+in `external/sources.local.txt` and vendor into `external/.local/`, both
+gitignored. Same sync command, same installer, same `~/.claude/skills/` result —
+they just never enter the published repo. Private use is not distribution.
+
+### Adding one
+
+Append a line to `external/sources.txt` and sync it:
+
+```
+name|repo-url|ref|subpath
+```
+
+```bash
+./scripts/sync-external.sh name
+```
+
+`subpath` points at the directory containing `SKILL.md` (`.` if it's at the repo
+root). Read what you vendor before committing it — third-party prompt content runs
+with your permissions. Full workflow in [external/README.md](external/README.md).
+
+---
+
 ## Cross-Platform
 
 These skills work across multiple AI coding assistants:
@@ -794,8 +879,8 @@ The skill format (markdown with numbered steps) is intentionally portable. No ve
 ```
 
 Options:
-1. **Global** — All 325 skills in every project
-2. **Project** — All 325 skills in current project only
+1. **Global** — All 326 skills in every project
+2. **Project** — All 326 skills in current project only
 3. **Selective** — Pick categories to install
 4. **Uninstall** — Remove all installed skills
 
@@ -892,11 +977,11 @@ Every skill is validated by CI on every push:
   ║       CLAUDE SKILLS TEST RUNNER         ║
   ╚═════════════════════════════════════════╝
 
-  [1/5] Structure Validation     325/325 PASS
-  [2/5] Permission Manifests     325/325 declared
-  [3/5] Safety Lint              325/325 safe
-  [4/5] Trigger Quality          325/325 OK
-  [5/5] Test File Coverage       12/325 (4%)
+  [1/5] Structure Validation     326/326 PASS
+  [2/5] Permission Manifests     326/326 declared
+  [3/5] Safety Lint              326/326 safe
+  [4/5] Trigger Quality          326/326 OK
+  [5/5] Test File Coverage       11/326 (3%)
 ```
 
 ### What Gets Checked
@@ -945,7 +1030,7 @@ Use the [template](template/SKILL.md) and follow the [contributing guide](CONTRI
 <details>
 <summary><strong>Do skills slow down Claude Code?</strong></summary>
 
-No. Skills are only loaded when you invoke them. Having 325 skills installed has zero impact on performance.
+No. Skills are only loaded when you invoke them. Having 326 skills installed has zero impact on performance.
 
 </details>
 
@@ -969,7 +1054,7 @@ Start with global. If you want to share specific skills with your team (e.g., en
 
 ```
 claude-skills/
-├── skills/                     # 325 skills across 32 categories
+├── skills/                     # 326 skills across 32 categories
 │   ├── meta/                   # 4  · router, pipelines, forge, health
 │   ├── git/                    # 12 · version control
 │   ├── code-quality/           # 10 · review & refactoring
@@ -990,7 +1075,7 @@ claude-skills/
 │   ├── mobile/                 # 10 · React Native / Flutter / native
 │   ├── ai/                     # 18 · LLM apps, agents, RAG, evals
 │   ├── ml/                     # 8  · classical machine learning
-│   ├── automation/             # 8  · scraping & workflow automation
+│   ├── automation/             # 9  · scraping & workflow automation
 │   ├── web/                    # 18 · web & UI
 │   ├── accessibility/          # 2  · WCAG compliance
 │   ├── i18n/                   # 1  · internationalization
@@ -1011,12 +1096,18 @@ claude-skills/
 │   ├── code-cleanup.yaml
 │   ├── sales-outbound.yaml
 │   └── llm-app.yaml
+├── external/                   # Third-party Agent Skills (vendored from upstream)
+│   ├── sources.txt             # Upstream manifest (name|repo|ref|subpath)
+│   ├── README.md               # Vendoring & sync workflow
+│   └── design-motion-principles/  # SKILL.md + references/ + workflows/
 ├── scripts/                    # Validation & tooling
 │   ├── test-runner.sh          # CI test harness (structure, safety, triggers)
 │   ├── lint-permissions.sh     # Permission manifest cross-reference linter
+│   ├── sync-external.sh        # Pull external/ skills forward from upstream
 │   └── detect-project.sh      # Tech stack detection for smart routing
 ├── .github/workflows/
-│   └── test-skills.yml         # GitHub Actions CI pipeline
+│   ├── test-skills.yml         # GitHub Actions CI pipeline
+│   └── external-skills.yml     # Validates external/, weekly upstream check
 ├── .claude-plugin/
 │   └── marketplace.json        # Plugin marketplace (32 bundles)
 ├── platforms/                  # Cross-platform guides (Cursor, Windsurf, Codex)

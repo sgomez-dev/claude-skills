@@ -1,2 +1,8 @@
 .claude/worktrees/
 node_modules/
+
+# Private external skills — vendored third-party content we may use locally but
+# must not republish (no upstream LICENSE, or a copyleft one incompatible with
+# this repo's MIT). See external/README.md.
+external/.local/
+external/sources.local.txt

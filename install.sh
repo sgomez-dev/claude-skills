@@ -3,7 +3,7 @@ set -euo pipefail
 
 # ============================================================================
 #  Claude Skills Installer
-#  Installs 102 custom slash commands for Claude Code
+#  Installs every slash command in skills/ plus the agent skills in external/
 #
 #  Wrapping in main() ensures the entire script is downloaded before
 #  execution when running via: curl -fsSL ... | bash
@@ -22,6 +22,7 @@ else
     REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
 fi
 SKILLS_DIR="$REPO_DIR/skills"
+EXTERNAL_DIR="$REPO_DIR/external"
 
 # Colors
 RED='\033[0;31m'
@@ -33,12 +34,15 @@ BOLD='\033[1m'
 NC='\033[0m'
 
 print_banner() {
+    # Counted at runtime so the banner can't go stale as skills are added.
+    local n
+    n=$(find "$SKILLS_DIR" -name '*.md' 2>/dev/null | wc -l | tr -d ' ')
     echo ""
     echo -e "${CYAN}${BOLD}"
     echo "   ╔═══════════════════════════════════════════════════════╗"
     echo "   ║                                                       ║"
     echo "   ║            CLAUDE SKILLS INSTALLER                    ║"
-    echo "   ║            102 Slash Commands for Claude Code          ║"
+    printf "   ║            %-43s║\n" "$n Slash Commands for Claude Code"
     echo "   ║                                                       ║"
     echo "   ╚═══════════════════════════════════════════════════════╝"
     echo -e "${NC}"
@@ -48,6 +52,57 @@ print_category() {
     local name=$1
     local count=$2
     echo -e "   ${GREEN}+${NC} ${BOLD}$name${NC} ($count skills)"
+}
+
+# ============================================================================
+#  EXTERNAL AGENT SKILLS
+#
+#  Third-party skills vendored in external/ use the Agent Skill format
+#  (a directory with SKILL.md), so they install to .claude/skills/<name>/
+#  instead of .claude/commands/. See external/README.md.
+# ============================================================================
+
+# Prints "<name> <source-dir>" for every vendored external skill ready to
+# install, from both the committed manifest and the private one. The private
+# ones live under external/.local/ and are gitignored — see external/README.md.
+list_external_skills() {
+    local manifest name
+    for manifest in "$EXTERNAL_DIR/sources.txt:$EXTERNAL_DIR" \
+                    "$EXTERNAL_DIR/sources.local.txt:$EXTERNAL_DIR/.local"; do
+        local file="${manifest%%:*}" base="${manifest##*:}"
+        [ -f "$file" ] || continue
+        grep -v '^[[:space:]]*#' "$file" | grep -v '^[[:space:]]*$' | cut -d'|' -f1 |
+            while read -r name; do
+                [ -f "$base/$name/SKILL.md" ] && echo "$name $base/$name"
+            done
+    done
+}
+
+install_external_to_target() {
+    local target="$1"
+    local entries count=0 name src
+    entries="$(list_external_skills)"
+    [ -n "$entries" ] || return 0
+
+    mkdir -p "$target"
+    while read -r name src; do
+        [ -n "$name" ] || continue
+        rm -rf "$target/$name"
+        mkdir -p "$target/$name"
+        cp -R "$src/." "$target/$name/"
+        count=$((count + 1))
+        case "$src" in
+            */.local/*) echo -e "   ${GREEN}+${NC} ${BOLD}$name${NC} (external agent skill, ${YELLOW}private${NC})" ;;
+            *)          echo -e "   ${GREEN}+${NC} ${BOLD}$name${NC} (external agent skill)" ;;
+        esac
+    done <<< "$entries"
+
+    echo -e "   ${CYAN}$count agent skill(s) -> $target${NC}"
+}
+
+# Maps a commands dir (…/.claude/commands) to its sibling skills dir.
+skills_target_for() {
+    echo "${1%/commands}/skills"
 }
 
 # ============================================================================
@@ -80,6 +135,12 @@ install_to_target() {
         echo -e "   Available in ALL your projects as ${CYAN}/category--skill${NC}"
     else
         echo -e "   Available in this project as ${CYAN}/project:category--skill${NC}"
+    fi
+
+    if [ -n "$(list_external_skills)" ]; then
+        echo ""
+        install_external_to_target "$(skills_target_for "$target")"
+        echo -e "   Invoked as ${CYAN}/skill-name${NC}, or auto-triggered by description"
     fi
 }
 
@@ -122,6 +183,14 @@ install_selective() {
         i=$((i + 1))
     done
 
+    local ext_count
+    ext_count=$(list_external_skills | wc -l | tr -d ' ')
+    if [ "$ext_count" -gt 0 ]; then
+        echo -e "   ${BOLD}$i)${NC} external ($ext_count agent skills)"
+        categories+=("__external__")
+        i=$((i + 1))
+    fi
+
     echo -e "\n   Enter numbers separated by spaces (e.g., 1 3 5 7):"
     echo -e "   Or ${BOLD}'all'${NC} to install everything\n"
     read -rp "   > " selection </dev/tty
@@ -138,6 +207,12 @@ install_selective() {
         local idx=$((num - 1))
         if [[ $idx -ge 0 && $idx -lt ${#categories[@]} ]]; then
             local category="${categories[$idx]}"
+
+            if [[ "$category" == "__external__" ]]; then
+                install_external_to_target "$(skills_target_for "$target")"
+                continue
+            fi
+
             local category_dir="$SKILLS_DIR/$category"
             for skill_file in "$category_dir"/*.md; do
                 [ -f "$skill_file" ] || continue
@@ -170,6 +245,25 @@ uninstall() {
     done
 
     echo -e "   ${GREEN}Removed $count skill files.${NC}"
+
+    # External agent skills live in .claude/skills/<name>/ — only remove the
+    # directories this repo vendors, and only if they really are skill dirs.
+    local ext_names ext_count=0
+    ext_names="$(list_external_skills)"
+    if [ -n "$ext_names" ]; then
+        for dir in "$HOME/.claude/skills" ".claude/skills"; do
+            [ -d "$dir" ] || continue
+            while read -r name src; do
+                [ -n "$name" ] || continue
+                if [ -f "$dir/$name/SKILL.md" ]; then
+                    rm -rf "$dir/$name"
+                    ext_count=$((ext_count + 1))
+                    echo -e "   ${YELLOW}-${NC} $dir/$name"
+                fi
+            done <<< "$ext_names"
+        done
+        echo -e "   ${GREEN}Removed $ext_count external agent skill(s).${NC}"
+    fi
 }
 
 # ============================================================================

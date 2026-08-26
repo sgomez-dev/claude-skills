@@ -1,0 +1,129 @@
+name: External Skills
+
+on:
+  schedule:
+    # Mondays 09:00 UTC — check whether vendored copies have fallen behind.
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'external/**'
+      - 'scripts/sync-external.sh'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate vendored copies
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Manifest and vendored directories agree
+        run: |
+          fail=0
+
+          # Every manifest entry must have a synced directory with provenance.
+          while IFS='|' read -r name url ref subpath; do
+            [ -n "$name" ] || continue
+            if [ ! -f "external/$name/SKILL.md" ]; then
+              echo "::error::external/$name/SKILL.md is missing — run ./scripts/sync-external.sh $name"
+              fail=1
+            fi
+            if [ ! -f "external/$name/UPSTREAM.md" ]; then
+              echo "::error::external/$name/UPSTREAM.md is missing — the vendored commit is unrecorded"
+              fail=1
+            fi
+            # No LICENSE means no grant of rights, and this repo is public.
+            if [ ! -f "external/$name/LICENSE" ]; then
+              echo "::error::external/$name has no LICENSE — we have no right to redistribute it"
+              fail=1
+            fi
+            # Strong copyleft is incompatible with this repo's MIT license.
+            if grep -qiE 'GNU AFFERO GENERAL PUBLIC|GNU GENERAL PUBLIC LICENSE' "external/$name/LICENSE" 2>/dev/null; then
+              echo "::error::external/$name is (A)GPL — incompatible with this repo's MIT license"
+              fail=1
+            fi
+          done < <(grep -v '^[[:space:]]*#' external/sources.txt | grep -v '^[[:space:]]*$')
+
+          # And every vendored directory must be declared in the manifest.
+          for dir in external/*/; do
+            name="$(basename "$dir")"
+            if ! grep -q "^$name|" external/sources.txt; then
+              echo "::error::external/$name is vendored but absent from external/sources.txt"
+              fail=1
+            fi
+          done
+
+          exit $fail
+
+      - name: Agent skill frontmatter
+        run: |
+          fail=0
+          for skill in external/*/SKILL.md; do
+            [ -f "$skill" ] || continue
+            head -1 "$skill" | grep -q '^---' || { echo "::error::$skill has no frontmatter"; fail=1; }
+            grep -q '^name:' "$skill" || echo "::warning::$skill has no name: in frontmatter"
+            grep -q '^description:' "$skill" || { echo "::error::$skill has no description: — it will never trigger"; fail=1; }
+          done
+          exit $fail
+
+  check-upstream:
+    name: Check upstream for updates
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compare vendored commits against upstream
+        id: check
+        run: |
+          chmod +x scripts/sync-external.sh
+          if scripts/sync-external.sh --check > check.log 2>&1; then
+            echo "stale=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "stale=true" >> "$GITHUB_OUTPUT"
+          fi
+          cat check.log
+
+      - name: Open a tracking issue
+        if: steps.check.outputs.stale == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="External skills are behind upstream"
+
+          # One open issue at a time — the weekly run must not become a firehose.
+          existing="$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number // empty')"
+          if [ -n "$existing" ]; then
+            echo "Issue #$existing is already open — not filing another."
+            exit 0
+          fi
+
+          {
+            echo "The scheduled check found vendored skills in \`external/\` that have"
+            echo "moved upstream (or an upstream repo that could not be reached)."
+            echo ""
+            echo '```'
+            cat check.log
+            echo '```'
+            echo ""
+            echo "To pull them forward:"
+            echo ""
+            echo '```bash'
+            echo './scripts/sync-external.sh      # or: ./scripts/sync-external.sh <name>'
+            echo 'git diff external/              # review before committing'
+            echo './install.sh                   # push the update into ~/.claude/skills/'
+            echo '```'
+            echo ""
+            echo "Read the diff before committing — this is third-party prompt content"
+            echo "that runs with your permissions."
+            echo ""
+            echo "_Filed automatically by \`.github/workflows/external-skills.yml\`._"
+          } > body.md
+
+          gh issue create --title "$TITLE" --body-file body.md

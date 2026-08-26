@@ -1,6 +1,6 @@
 # ============================================================================
 #  Claude Skills Installer (Windows PowerShell)
-#  Installs 102 custom slash commands for Claude Code
+#  Installs every slash command in skills/ plus the agent skills in external/
 # ============================================================================
 
 $ErrorActionPreference = "Stop"
@@ -8,22 +8,34 @@ $ErrorActionPreference = "Stop"
 # Support both: irm ... | iex  AND  .\install.ps1 (local clone)
 $IsRemote = ($MyInvocation.MyCommand.Path -eq $null -or $MyInvocation.MyCommand.Path -eq "")
 
+$GithubRawBase = "https://raw.githubusercontent.com/sgomez-dev/claude-skills/main"
+$GithubApiBase = "https://api.github.com/repos/sgomez-dev/claude-skills"
+
 if ($IsRemote) {
     # Running via irm | iex — download skills directly from GitHub
-    $GithubBase = "https://raw.githubusercontent.com/sgomez-dev/claude-skills/main/skills"
+    $GithubBase = "$GithubRawBase/skills"
     $RepoDir = $null
     $SkillsDir = $null
+    $ExternalDir = $null
 } else {
     $RepoDir = Split-Path -Parent $MyInvocation.MyCommand.Path
     $SkillsDir = Join-Path $RepoDir "skills"
+    $ExternalDir = Join-Path $RepoDir "external"
 }
 
 function Write-Banner {
+    # Counted from disk on a local clone so the banner can't go stale.
+    $n = "326"
+    if (-not $IsRemote -and (Test-Path $SkillsDir)) {
+        $n = @(Get-ChildItem -Path $SkillsDir -Filter "*.md" -Recurse).Count
+    }
+    $line = "{0} Slash Commands for Claude Code" -f $n
+
     Write-Host ""
     Write-Host "   ╔═══════════════════════════════════════════════════════╗" -ForegroundColor Cyan
     Write-Host "   ║                                                       ║" -ForegroundColor Cyan
     Write-Host "   ║            CLAUDE SKILLS INSTALLER                    ║" -ForegroundColor Cyan
-    Write-Host "   ║            102 Slash Commands for Claude Code          ║" -ForegroundColor Cyan
+    Write-Host ("   ║            {0,-43}║" -f $line) -ForegroundColor Cyan
     Write-Host "   ║                                                       ║" -ForegroundColor Cyan
     Write-Host "   ╚═══════════════════════════════════════════════════════╝" -ForegroundColor Cyan
     Write-Host ""
@@ -48,6 +60,110 @@ $RemoteSkills = @{
     "i18n"         = @("i18n-setup")
     "marketing"    = @("marketing-audit")
     "meta"         = @("skills-init","pipeline-run","skill-forge","health-check")
+}
+
+# ============================================================================
+#  EXTERNAL AGENT SKILLS
+#
+#  Third-party skills vendored in external/ use the Agent Skill format
+#  (a directory with SKILL.md), so they install to .claude\skills\<name>\
+#  instead of .claude\commands\. See external/README.md.
+# ============================================================================
+
+function Get-ExternalSkillNames {
+    # Remote installs only ever see the committed manifest — the private one is
+    # gitignored and exists on the local machine only.
+    if ($IsRemote) {
+        try {
+            $txt = (Invoke-WebRequest -Uri "$GithubRawBase/external/sources.txt" -UseBasicParsing).Content
+        } catch {
+            return @()
+        }
+        return @($txt -split "`n" | ForEach-Object { $_.Trim() } |
+            Where-Object { $_ -and -not $_.StartsWith("#") } |
+            ForEach-Object { ($_ -split '\|')[0].Trim() })
+    }
+
+    # Local clone: the committed manifest plus the private one, whose skills are
+    # vendored under external/.local/. See external/README.md.
+    $found = @()
+    $pairs = @(
+        @{ Manifest = (Join-Path $ExternalDir "sources.txt");       Base = $ExternalDir },
+        @{ Manifest = (Join-Path $ExternalDir "sources.local.txt"); Base = (Join-Path $ExternalDir ".local") }
+    )
+    foreach ($pair in $pairs) {
+        if (-not (Test-Path $pair.Manifest)) { continue }
+        $found += @(Get-Content $pair.Manifest | ForEach-Object { $_.Trim() } |
+            Where-Object { $_ -and -not $_.StartsWith("#") } |
+            ForEach-Object { ($_ -split '\|')[0].Trim() } |
+            Where-Object { Test-Path (Join-Path (Join-Path $pair.Base $_) "SKILL.md") })
+    }
+    return @($found)
+}
+
+# Source directory for a vendored skill: the published tree, or the private one.
+function Get-ExternalSkillPath {
+    param([string]$name)
+    $pub = Join-Path $ExternalDir $name
+    if (Test-Path (Join-Path $pub "SKILL.md")) { return $pub }
+    return (Join-Path (Join-Path $ExternalDir ".local") $name)
+}
+
+function Install-ExternalSkills {
+    param([string]$target)
+
+    $names = Get-ExternalSkillNames
+    if ($names.Count -eq 0) { return 0 }
+
+    New-Item -ItemType Directory -Force -Path $target | Out-Null
+    $installed = 0
+
+    if ($IsRemote) {
+        try {
+            $tree = Invoke-RestMethod -Uri "$GithubApiBase/git/trees/main?recursive=1" -UseBasicParsing
+        } catch {
+            Write-Host "   ! Could not list external skills from GitHub" -ForegroundColor Yellow
+            return 0
+        }
+        foreach ($name in $names) {
+            $prefix = "external/$name/"
+            $blobs = @($tree.tree | Where-Object { $_.type -eq "blob" -and $_.path.StartsWith($prefix) })
+            if ($blobs.Count -eq 0) { continue }
+
+            $dest = Join-Path $target $name
+            if (Test-Path $dest) { Remove-Item $dest -Recurse -Force }
+            foreach ($blob in $blobs) {
+                $rel = $blob.path.Substring($prefix.Length) -replace '/', '\'
+                $outFile = Join-Path $dest $rel
+                New-Item -ItemType Directory -Force -Path (Split-Path -Parent $outFile) | Out-Null
+                Invoke-WebRequest -Uri "$GithubRawBase/$($blob.path)" -OutFile $outFile -UseBasicParsing
+            }
+            $installed++
+            Write-Host "   + $name (external agent skill)" -ForegroundColor Green
+        }
+    } else {
+        foreach ($name in $names) {
+            $dest = Join-Path $target $name
+            $src = Get-ExternalSkillPath -name $name
+            if (Test-Path $dest) { Remove-Item $dest -Recurse -Force }
+            Copy-Item $src $dest -Recurse -Force
+            $installed++
+            if ($src -like "*\.local\*") {
+                Write-Host "   + $name (external agent skill, private)" -ForegroundColor Green
+            } else {
+                Write-Host "   + $name (external agent skill)" -ForegroundColor Green
+            }
+        }
+    }
+
+    Write-Host "   $installed agent skill(s) -> $target" -ForegroundColor Cyan
+    return $installed
+}
+
+# Maps a commands dir (…\.claude\commands) to its sibling skills dir.
+function Get-SkillsTargetFor {
+    param([string]$commandsTarget)
+    return (Join-Path (Split-Path -Parent $commandsTarget) "skills")
 }
 
 function Install-ToTarget {
@@ -82,6 +198,11 @@ function Install-ToTarget {
             }
             Write-Host "   + $category ($catCount skills)" -ForegroundColor Green
         }
+    }
+
+    $ext = Install-ExternalSkills -target (Get-SkillsTargetFor $target)
+    if ($ext -gt 0) {
+        Write-Host "   Invoked as /skill-name, or auto-triggered by description" -ForegroundColor Cyan
     }
 }
 
@@ -120,6 +241,13 @@ function Install-Selective {
         $i++
     }
 
+    $extNames = Get-ExternalSkillNames
+    if ($extNames.Count -gt 0) {
+        Write-Host "   $i) external ($($extNames.Count) agent skills)"
+        $indexedCategories[$i] = "__external__"
+        $i++
+    }
+
     Write-Host "`n   Enter numbers separated by spaces (e.g., 1 3 5)"
     Write-Host "   Or 'all' to install everything`n"
     $selection = Read-Host "   > "
@@ -136,6 +264,12 @@ function Install-Selective {
         $num = [int]$numStr
         if ($indexedCategories.ContainsKey($num)) {
             $category = $indexedCategories[$num]
+
+            if ($category -eq "__external__") {
+                Install-ExternalSkills -target (Get-SkillsTargetFor $target) | Out-Null
+                continue
+            }
+
             $catCount = 0
             if ($IsRemote) {
                 foreach ($skill in $RemoteSkills[$category]) {
@@ -183,6 +317,29 @@ function Uninstall-Skills {
     }
 
     Write-Host "   Removed $count skill files." -ForegroundColor Green
+
+    # External agent skills live in .claude\skills\<name>\ — only remove the
+    # directories this repo vendors, and only if they really are skill dirs.
+    $extNames = Get-ExternalSkillNames
+    if ($extNames.Count -gt 0) {
+        $extCount = 0
+        $skillDirs = @(
+            (Join-Path $env:USERPROFILE ".claude\skills"),
+            (Join-Path (Get-Location) ".claude\skills")
+        )
+        foreach ($dir in $skillDirs) {
+            if (-not (Test-Path $dir)) { continue }
+            foreach ($name in $extNames) {
+                $candidate = Join-Path $dir $name
+                if (Test-Path (Join-Path $candidate "SKILL.md")) {
+                    Remove-Item $candidate -Recurse -Force
+                    $extCount++
+                    Write-Host "   - $candidate" -ForegroundColor Yellow
+                }
+            }
+        }
+        Write-Host "   Removed $extCount external agent skill(s)." -ForegroundColor Green
+    }
 }
 
 # ============================================================================
