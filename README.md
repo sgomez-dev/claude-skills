@@ -772,11 +772,25 @@ These use the **Agent Skill** format — a directory with `SKILL.md` plus
 format, so they install to `~/.claude/skills/` and are invoked as `/skill-name`
 (or trigger automatically from their description).
 
-| Skill | What it does | Upstream | License |
-|-------|--------------|----------|---------|
-| `design-motion-principles` | Motion & interaction design in two modes — build components with purposeful motion, or audit existing animations for AI-slop motion patterns and emit an HTML report with looping demos. Weights three designer lenses (Emil Kowalski, Jakub Krehel, Jhey Tompkins) by project context. | [kylezantos/design-motion-principles](https://github.com/kylezantos/design-motion-principles) | MIT |
+**36 skills from 8 upstream repos.** Grouped by source:
+
+| Upstream | License | What you get |
+|----------|---------|--------------|
+| [kylezantos/design-motion-principles](https://github.com/kylezantos/design-motion-principles) | MIT | Motion design in two modes — build with purposeful motion, or audit existing animations for AI-slop patterns and emit an HTML report with looping demos |
+| [emilkowalski/skills](https://github.com/emilkowalski/skills) | MIT | 12 skills from the author of Sonner and Vaul — animation craft, Apple design, animation vocabulary, UI library selection, prototyping, Swift |
+| [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | MIT | 12 anti-slop frontend skills — taste, brutalist/minimalist/soft styles, redesigns, image-to-code, brand kits |
+| [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | MIT | 7 design skills — design systems, brand, banners, slides, UI styling |
+| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Apache-2.0 | Design-critique loop with browser automation and antipattern detection |
+| [AgriciDaniel/banana-claude](https://github.com/AgriciDaniel/banana-claude) | MIT | Gemini image generation — presets, batching, cost tracking |
+| [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Apache-2.0 | Driving a browser from an agent |
+| [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) | MIT | Outreach and contact discovery |
 
 `./install.sh` installs these alongside the slash commands — nothing extra to run.
+
+Some of them drive an external tool, and vendoring the prompt does not install
+that tool: `impeccable` needs Node, `agent-browser` needs its npm CLI,
+`agent-reach` needs its Python package, `banana` needs a Gemini API key. See
+[external/README.md](external/README.md#skills-that-need-something-installed).
 
 ### Keeping them current
 

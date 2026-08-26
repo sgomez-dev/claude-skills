@@ -35,8 +35,15 @@ jobs:
               echo "::error::external/$name/UPSTREAM.md is missing — the vendored commit is unrecorded"
               fail=1
             fi
+            # No LICENSE means no grant of rights, and this repo is public.
             if [ ! -f "external/$name/LICENSE" ]; then
-              echo "::warning::external/$name has no LICENSE — check upstream's terms"
+              echo "::error::external/$name has no LICENSE — we have no right to redistribute it"
+              fail=1
+            fi
+            # Strong copyleft is incompatible with this repo's MIT license.
+            if grep -qiE 'GNU AFFERO GENERAL PUBLIC|GNU GENERAL PUBLIC LICENSE' "external/$name/LICENSE" 2>/dev/null; then
+              echo "::error::external/$name is (A)GPL — incompatible with this repo's MIT license"
+              fail=1
             fi
           done < <(grep -v '^[[:space:]]*#' external/sources.txt | grep -v '^[[:space:]]*$')
 

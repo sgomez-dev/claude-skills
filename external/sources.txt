@@ -11,7 +11,8 @@
 #     name|repo-url|ref|subpath
 #
 #     name     Local directory name under external/, and the installed skill
-#              name (invoked as /name in Claude Code).
+#              name (invoked as /name in Claude Code). Must be unique across
+#              the whole manifest — sync-external.sh refuses duplicates.
 #     repo-url Git URL to clone from.
 #     ref      Branch or tag to track.
 #     subpath  Path inside the repo to the directory containing SKILL.md.
@@ -20,6 +21,95 @@
 #  Add a line, then run:  ./scripts/sync-external.sh <name>
 #  Update everything:     ./scripts/sync-external.sh
 #  See what's behind:     ./scripts/sync-external.sh --check
+#
+#  Entries are grouped by upstream repo. A sync clones each repo once no matter
+#  how many skills it contributes, so grouping costs nothing but readability.
 # ============================================================================
 
+# ---------------------------------------------------------------------------
+#  kylezantos/design-motion-principles — MIT
+#  Motion design: build with purposeful motion, or audit for AI-slop motion.
+# ---------------------------------------------------------------------------
 design-motion-principles|https://github.com/kylezantos/design-motion-principles.git|main|skills/design-motion-principles
+
+# ---------------------------------------------------------------------------
+#  emilkowalski/skills — MIT
+#  From the author of Sonner/Vaul. Animation and design-engineering craft.
+# ---------------------------------------------------------------------------
+animate|https://github.com/emilkowalski/skills.git|main|skills/animate
+animate-expo|https://github.com/emilkowalski/skills.git|main|skills/animate-expo
+animation-vocabulary|https://github.com/emilkowalski/skills.git|main|skills/animation-vocabulary
+apple-design|https://github.com/emilkowalski/skills.git|main|skills/apple-design
+ask-sonner|https://github.com/emilkowalski/skills.git|main|skills/ask-sonner
+emil-design-eng|https://github.com/emilkowalski/skills.git|main|skills/emil-design-eng
+find-animation-opportunities|https://github.com/emilkowalski/skills.git|main|skills/find-animation-opportunities
+improve-animations|https://github.com/emilkowalski/skills.git|main|skills/improve-animations
+pick-ui-library|https://github.com/emilkowalski/skills.git|main|skills/pick-ui-library
+prototype|https://github.com/emilkowalski/skills.git|main|skills/prototype
+review-animations|https://github.com/emilkowalski/skills.git|main|skills/review-animations
+write-swift|https://github.com/emilkowalski/skills.git|main|skills/write-swift
+
+# ---------------------------------------------------------------------------
+#  Leonxlnx/taste-skill — MIT
+#  Anti-slop frontend taste: styles, redesigns, image-to-code, brand kits.
+#  skills/taste-skill-v1 is deliberately omitted — upstream keeps it only for
+#  projects pinned to the old behaviour; `taste-skill` is the current one.
+# ---------------------------------------------------------------------------
+brandkit|https://github.com/Leonxlnx/taste-skill.git|main|skills/brandkit
+brutalist-skill|https://github.com/Leonxlnx/taste-skill.git|main|skills/brutalist-skill
+gpt-tasteskill|https://github.com/Leonxlnx/taste-skill.git|main|skills/gpt-tasteskill
+image-to-code-skill|https://github.com/Leonxlnx/taste-skill.git|main|skills/image-to-code-skill
+imagegen-frontend-mobile|https://github.com/Leonxlnx/taste-skill.git|main|skills/imagegen-frontend-mobile
+imagegen-frontend-web|https://github.com/Leonxlnx/taste-skill.git|main|skills/imagegen-frontend-web
+minimalist-skill|https://github.com/Leonxlnx/taste-skill.git|main|skills/minimalist-skill
+output-skill|https://github.com/Leonxlnx/taste-skill.git|main|skills/output-skill
+redesign-skill|https://github.com/Leonxlnx/taste-skill.git|main|skills/redesign-skill
+soft-skill|https://github.com/Leonxlnx/taste-skill.git|main|skills/soft-skill
+stitch-skill|https://github.com/Leonxlnx/taste-skill.git|main|skills/stitch-skill
+taste-skill|https://github.com/Leonxlnx/taste-skill.git|main|skills/taste-skill
+
+# ---------------------------------------------------------------------------
+#  nextlevelbuilder/ui-ux-pro-max-skill — MIT
+#  Design/brand/slides suite. Vendored from .claude/skills/ — byte-identical
+#  to the repo's cli/assets/skills/ copies, so only one lineage is tracked.
+#  Ships large data assets (Google Fonts CSV, Phosphor icon JSON).
+# ---------------------------------------------------------------------------
+banner-design|https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git|main|.claude/skills/banner-design
+brand|https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git|main|.claude/skills/brand
+design|https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git|main|.claude/skills/design
+design-system|https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git|main|.claude/skills/design-system
+slides|https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git|main|.claude/skills/slides
+ui-styling|https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git|main|.claude/skills/ui-styling
+ui-ux-pro-max|https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git|main|.claude/skills/ui-ux-pro-max
+
+# ---------------------------------------------------------------------------
+#  pbakaus/impeccable — Apache-2.0
+#  Design-critique loop. Ships ~130 executable .mjs/.js files (browser
+#  automation, antipattern detectors, hooks) — this one runs real code, not
+#  just prompt text. Upstream duplicates it across 17 agent-specific
+#  directories; .claude/ and plugin/ are byte-identical, so .claude/ is used.
+# ---------------------------------------------------------------------------
+impeccable|https://github.com/pbakaus/impeccable.git|main|.claude/skills/impeccable
+
+# ---------------------------------------------------------------------------
+#  AgriciDaniel/banana-claude — MIT
+#  Gemini image generation ("nano banana"): presets, batching, cost tracking.
+#  Ships Python scripts and expects a Gemini API key.
+# ---------------------------------------------------------------------------
+banana|https://github.com/AgriciDaniel/banana-claude.git|main|skills/banana
+
+# ---------------------------------------------------------------------------
+#  vercel-labs/agent-browser — Apache-2.0
+#  Driving a browser from an agent. The skill is a thin front end for the
+#  agent-browser npm CLI — without that CLI installed it has nothing to call.
+#  Repo's skill-data/* dirs are internal to their own tooling, not vendored.
+# ---------------------------------------------------------------------------
+agent-browser|https://github.com/vercel-labs/agent-browser.git|main|skills/agent-browser
+
+# ---------------------------------------------------------------------------
+#  Panniantong/Agent-Reach — MIT
+#  Outreach/contact discovery. Upstream directory is literally named "skill";
+#  renamed here because /skill would be a useless command name. Wraps a Python
+#  package that must be installed separately.
+# ---------------------------------------------------------------------------
+agent-reach|https://github.com/Panniantong/Agent-Reach.git|main|agent_reach/skill

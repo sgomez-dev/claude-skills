@@ -63,8 +63,9 @@ $ARGUMENTS   ← replaced with user input
 ## External Skills (third-party)
 
 `external/` holds skills authored in *other* repos, in the **Agent Skill** format — a
-directory with `SKILL.md` plus optional `references/` and `workflows/`. They are a
-different thing from the slash commands in `skills/`:
+directory with `SKILL.md` plus optional `references/` and `workflows/`. Currently 36
+skills from 8 upstream repos (~15 MB). They are a different thing from the slash
+commands in `skills/`:
 
 | | `skills/` | `external/` |
 |---|---|---|
@@ -87,7 +88,10 @@ Rules when touching `external/`:
 - **Never hand-edit a vendored directory** — the next sync overwrites it. Fork upstream and repoint `external/sources.txt` instead.
 - Add new sources as a line in `external/sources.txt`, then sync; don't copy files in by hand.
 - Keep each vendored `LICENSE` and `UPSTREAM.md` (provenance + pinned commit).
-- `scripts/test-runner.sh` deliberately ignores `external/` — those files follow upstream's conventions, not this repo's.
+- **Don't vendor a repo with no LICENSE file.** No license means no grant of rights, and this repo is public — redistributing it is not ours to do. `sync-external.sh` warns; treat the warning as a stop.
+- **Check license compatibility.** MIT and Apache-2.0 are fine alongside this repo's MIT. Strong copyleft (AGPL/GPL) is not — flag it rather than vendoring it.
+- Installed names match upstream. Rename only for cause (e.g. a directory named `skill`), and record why in the manifest comment.
+- `scripts/test-runner.sh` deliberately ignores `external/` — those files follow upstream's conventions, not this repo's. `.github/workflows/external-skills.yml` validates it instead.
 
 See [external/README.md](external/README.md) for the full workflow.
 

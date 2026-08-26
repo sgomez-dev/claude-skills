@@ -53,6 +53,27 @@ read_manifest() {
     grep -v '^[[:space:]]*#' "$MANIFEST" | grep -v '^[[:space:]]*$' || true
 }
 
+# A duplicate name would make two entries fight over one external/<name>
+# directory — and one ~/.claude/skills/<name> after install — with the later
+# sync silently winning. Catch it before anything is written.
+validate_manifest() {
+    local dupes bad
+    dupes="$(read_manifest | cut -d'|' -f1 | sort | uniq -d)"
+    if [ -n "$dupes" ]; then
+        echo -e "${RED}error:${NC} duplicate names in $MANIFEST:" >&2
+        echo "$dupes" | sed 's/^/  /' >&2
+        echo "  Each name owns one external/<name> directory — rename one." >&2
+        exit 1
+    fi
+
+    bad="$(read_manifest | awk -F'|' 'NF!=4 || $1=="" || $2=="" || $3=="" || $4=="" {print NR": "$0}')"
+    if [ -n "$bad" ]; then
+        echo -e "${RED}error:${NC} malformed entries in $MANIFEST (want name|url|ref|subpath):" >&2
+        echo "$bad" | sed 's/^/  /' >&2
+        exit 1
+    fi
+}
+
 manifest_line_for() {
     local want="$1" line
     while IFS= read -r line; do
@@ -72,10 +93,50 @@ recorded_sha() {
     sed -n 's/^- Vendored commit: `\([0-9a-f]\{7,40\}\)`.*/\1/p' "$file" | head -1
 }
 
+# Many manifest entries share one upstream repo (a repo shipping N skills gets N
+# lines). Everything below is keyed and cached per (url, ref) so a sync clones —
+# and a check queries — each repo once per run, not once per skill.
+repo_key() {
+    printf '%s@%s' "$1" "$2" | tr -c 'A-Za-z0-9._@-' '_'
+}
+
 remote_sha() {
     local url="$1" ref="$2"
-    git ls-remote "$url" "refs/heads/$ref" "refs/tags/$ref" 2>/dev/null \
-        | head -1 | cut -f1
+    local cache="$TMPROOT/lsremote/$(repo_key "$url" "$ref")"
+
+    if [ ! -f "$cache" ]; then
+        mkdir -p "$TMPROOT/lsremote"
+        git ls-remote "$url" "refs/heads/$ref" "refs/tags/$ref" 2>/dev/null \
+            | head -1 | cut -f1 > "$cache"
+    fi
+    cat "$cache"
+}
+
+# Echoes the path to a clone of (url, ref), cloning on first request.
+# Returns 1 and echoes nothing if the clone failed (cached as a failure so a
+# dead repo is not retried once per skill it ships).
+ensure_clone() {
+    local url="$1" ref="$2"
+    local key dir
+    key="$(repo_key "$url" "$ref")"
+    dir="$TMPROOT/repos/$key"
+
+    if [ -f "$dir.failed" ]; then
+        return 1
+    fi
+    if [ -d "$dir" ]; then
+        printf '%s\n' "$dir"
+        return 0
+    fi
+
+    mkdir -p "$TMPROOT/repos"
+    if git clone --depth 1 --branch "$ref" --quiet "$url" "$dir" 2>/dev/null; then
+        printf '%s\n' "$dir"
+        return 0
+    fi
+    rm -rf "$dir"
+    : > "$dir.failed"
+    return 1
 }
 
 # ----------------------------------------------------------------------------
@@ -133,21 +194,24 @@ sync_one() {
         prev_synced="$(sed -n 's/^- Synced: //p' "$dest/UPSTREAM.md" | head -1)"
     fi
 
-    tmp="$TMPROOT/$name"
+    tmp="$TMPROOT/staging/$name"
     rm -rf "$tmp"
     mkdir -p "$tmp"
 
-    echo -e "\n${BLUE}[$name]${NC} cloning $url ${DIM}($ref)${NC}"
-    if ! git clone --depth 1 --branch "$ref" --quiet "$url" "$tmp/repo" 2>/dev/null; then
+    local repo cached=""
+    [ -d "$TMPROOT/repos/$(repo_key "$url" "$ref")" ] && cached=" ${DIM}(cached clone)${NC}"
+    echo -e "\n${BLUE}[$name]${NC} $url ${DIM}($ref)${NC}$cached"
+
+    if ! repo="$(ensure_clone "$url" "$ref")"; then
         echo -e "   ${RED}FAIL${NC} clone failed — leaving the existing copy untouched"
         return 1
     fi
 
-    after="$(git -C "$tmp/repo" rev-parse HEAD)"
+    after="$(git -C "$repo" rev-parse HEAD)"
     local commit_date
-    commit_date="$(git -C "$tmp/repo" log -1 --format='%cI')"
+    commit_date="$(git -C "$repo" log -1 --format='%cI')"
 
-    src="$tmp/repo/$subpath"
+    src="$repo/$subpath"
     [ -d "$src" ] || { echo -e "   ${RED}FAIL${NC} subpath not found in repo: $subpath"; return 1; }
     [ -f "$src/SKILL.md" ] || {
         echo -e "   ${RED}FAIL${NC} no SKILL.md at $subpath — one manifest entry must point at one skill directory"
@@ -163,11 +227,14 @@ sync_one() {
     # Carry the upstream license along for attribution if the skill dir has none.
     if [ ! -f "$staged/LICENSE" ]; then
         for candidate in LICENSE LICENSE.md LICENSE.txt COPYING; do
-            if [ -f "$tmp/repo/$candidate" ]; then
-                cp "$tmp/repo/$candidate" "$staged/LICENSE"
+            if [ -f "$repo/$candidate" ]; then
+                cp "$repo/$candidate" "$staged/LICENSE"
                 break
             fi
         done
+    fi
+    if [ ! -f "$staged/LICENSE" ]; then
+        echo -e "   ${YELLOW}WARN${NC} upstream ships no LICENSE — you are vendoring content with no grant of rights"
     fi
 
     # Re-syncing an unchanged commit keeps the original timestamp, so an
@@ -245,6 +312,8 @@ for arg in "$@"; do
         *)         TARGETS+=("$arg") ;;
     esac
 done
+
+validate_manifest
 
 if [ "$MODE" = "list" ]; then
     list_sources

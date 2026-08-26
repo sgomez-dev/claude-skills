@@ -28,12 +28,49 @@ Two formats, two install targets, two directories:
 
 ## Currently vendored
 
-| Skill | Upstream | License |
-|-------|----------|---------|
-| [`design-motion-principles`](design-motion-principles/) | [kylezantos/design-motion-principles](https://github.com/kylezantos/design-motion-principles) | MIT |
+36 skills from 8 upstream repos, ~15 MB. Grouped by source:
+
+| Upstream | License | Skills |
+|----------|---------|--------|
+| [kylezantos/design-motion-principles](https://github.com/kylezantos/design-motion-principles) | MIT | `design-motion-principles` |
+| [emilkowalski/skills](https://github.com/emilkowalski/skills) | MIT | `animate` `animate-expo` `animation-vocabulary` `apple-design` `ask-sonner` `emil-design-eng` `find-animation-opportunities` `improve-animations` `pick-ui-library` `prototype` `review-animations` `write-swift` |
+| [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | MIT | `brandkit` `brutalist-skill` `gpt-tasteskill` `image-to-code-skill` `imagegen-frontend-mobile` `imagegen-frontend-web` `minimalist-skill` `output-skill` `redesign-skill` `soft-skill` `stitch-skill` `taste-skill` |
+| [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | MIT | `banner-design` `brand` `design` `design-system` `slides` `ui-styling` `ui-ux-pro-max` |
+| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Apache-2.0 | `impeccable` |
+| [AgriciDaniel/banana-claude](https://github.com/AgriciDaniel/banana-claude) | MIT | `banana` |
+| [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Apache-2.0 | `agent-browser` |
+| [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) | MIT | `agent-reach` |
 
 Each directory carries an `UPSTREAM.md` recording the exact vendored commit, and
 the upstream `LICENSE`.
+
+### Skills that need something installed
+
+Vendoring the prompt does not install the tool it drives. These need setup before
+they do anything useful:
+
+| Skill | Needs |
+|-------|-------|
+| `impeccable` | Node — ships ~107 `.mjs`/`.js` files (browser automation, antipattern detectors, hooks). Talks to `https://impeccable.style/api`, overridable via `IMPECCABLE_API_URL` |
+| `agent-browser` | The `agent-browser` npm CLI — the skill is a thin front end for it |
+| `agent-reach` | Its Python package installed separately |
+| `banana` | A Gemini API key; ships Python scripts |
+| `ui-ux-pro-max`, `ui-styling`, `design`, `design-system` | Python for their helper scripts; ship large data assets (Google Fonts CSV, Phosphor icon JSON) |
+
+### Names are upstream's, not ours
+
+Installed names match upstream exactly, so `animate` installs as `/animate` and
+`design-system` as `/design-system` — generic, and they will sit next to your own
+`/web--design-system` slash command without colliding (different namespaces:
+`~/.claude/skills/` vs `~/.claude/commands/`).
+
+Two names were changed, both for cause:
+
+- `agent-reach` — upstream's directory is literally `skill`, which would install as `/skill`.
+- Nothing else. Renaming diverges from upstream's own docs, so it needs a reason.
+
+`sync-external.sh` refuses a manifest with duplicate names rather than letting a
+later entry silently overwrite an earlier one.
 
 ## Updating
 
