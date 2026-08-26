@@ -24,21 +24,10 @@ echo "  ║     PERMISSION MANIFEST LINTER          ║"
 echo "  ╚═════════════════════════════════════════╝"
 echo -e "${NC}"
 
-# Command patterns and what permission they require
-declare -A CMD_PERMISSIONS=(
-    ["git commit"]="commands_git"
-    ["git push"]="commands_git,destructive_push"
-    ["git reset --hard"]="destructive"
-    ["git force"]="destructive"
-    ["rm -rf"]="destructive"
-    ["npm publish"]="network,destructive"
-    ["docker"]="commands_docker"
-    ["kubectl"]="commands_k8s"
-    ["terraform"]="commands_terraform"
-    ["curl"]="network"
-    ["fetch"]="network"
-    ["wget"]="network"
-)
+# NOTE: the destructive/network patterns this linter actually enforces are the
+# greps below. An associative-array lookup table used to live here but was never
+# referenced, and `declare -A` aborts the whole script under bash 3.2 (macOS
+# system bash), so running this locally always failed. Extend the greps instead.
 
 for skill_file in "$SKILLS_DIR"/**/*.md; do
     [ -f "$skill_file" ] || continue
@@ -63,7 +52,10 @@ for skill_file in "$SKILLS_DIR"/**/*.md; do
     content=$(cat "$skill_file")
 
     # Check for destructive operations
-    if echo "$content" | grep -qi 'git reset --hard\|git push --force\|rm -rf\|drop table\|force.push\|--force\|DELETE FROM\|destroy\|terraform destroy'; then
+    # A bare "destroy" used to be listed here, but it matched English prose
+    # ("fake scarcity destroys trust"), flagging 4 skills that run nothing
+    # destructive. Destructive *commands* need a command prefix to match.
+    if echo "$content" | grep -qi 'git reset --hard\|git push --force\|rm -rf\|drop table\|force.push\|--force\|DELETE FROM\|terraform destroy'; then
         if $has_perms && ! $declares_destructive; then
             echo -e "  ${RED}MISMATCH${NC} $rel_path"
             echo -e "           Contains destructive operations but permissions.destructive != true"
