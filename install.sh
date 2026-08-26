@@ -62,31 +62,40 @@ print_category() {
 #  instead of .claude/commands/. See external/README.md.
 # ============================================================================
 
-# Prints the name of every vendored external skill that's ready to install.
+# Prints "<name> <source-dir>" for every vendored external skill ready to
+# install, from both the committed manifest and the private one. The private
+# ones live under external/.local/ and are gitignored — see external/README.md.
 list_external_skills() {
-    local manifest="$EXTERNAL_DIR/sources.txt"
-    [ -f "$manifest" ] || return 0
-    grep -v '^[[:space:]]*#' "$manifest" | grep -v '^[[:space:]]*$' | cut -d'|' -f1 |
-        while read -r name; do
-            [ -f "$EXTERNAL_DIR/$name/SKILL.md" ] && echo "$name"
-        done
+    local manifest name
+    for manifest in "$EXTERNAL_DIR/sources.txt:$EXTERNAL_DIR" \
+                    "$EXTERNAL_DIR/sources.local.txt:$EXTERNAL_DIR/.local"; do
+        local file="${manifest%%:*}" base="${manifest##*:}"
+        [ -f "$file" ] || continue
+        grep -v '^[[:space:]]*#' "$file" | grep -v '^[[:space:]]*$' | cut -d'|' -f1 |
+            while read -r name; do
+                [ -f "$base/$name/SKILL.md" ] && echo "$name $base/$name"
+            done
+    done
 }
 
 install_external_to_target() {
     local target="$1"
-    local names count=0
-    names="$(list_external_skills)"
-    [ -n "$names" ] || return 0
+    local entries count=0 name src
+    entries="$(list_external_skills)"
+    [ -n "$entries" ] || return 0
 
     mkdir -p "$target"
-    while read -r name; do
+    while read -r name src; do
         [ -n "$name" ] || continue
         rm -rf "$target/$name"
         mkdir -p "$target/$name"
-        cp -R "$EXTERNAL_DIR/$name/." "$target/$name/"
+        cp -R "$src/." "$target/$name/"
         count=$((count + 1))
-        echo -e "   ${GREEN}+${NC} ${BOLD}$name${NC} (external agent skill)"
-    done <<< "$names"
+        case "$src" in
+            */.local/*) echo -e "   ${GREEN}+${NC} ${BOLD}$name${NC} (external agent skill, ${YELLOW}private${NC})" ;;
+            *)          echo -e "   ${GREEN}+${NC} ${BOLD}$name${NC} (external agent skill)" ;;
+        esac
+    done <<< "$entries"
 
     echo -e "   ${CYAN}$count agent skill(s) -> $target${NC}"
 }
@@ -244,7 +253,7 @@ uninstall() {
     if [ -n "$ext_names" ]; then
         for dir in "$HOME/.claude/skills" ".claude/skills"; do
             [ -d "$dir" ] || continue
-            while read -r name; do
+            while read -r name src; do
                 [ -n "$name" ] || continue
                 if [ -f "$dir/$name/SKILL.md" ]; then
                     rm -rf "$dir/$name"

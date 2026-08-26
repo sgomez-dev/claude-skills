@@ -820,6 +820,14 @@ has moved upstream, so stale copies surface without anyone remembering to look.
 The same workflow validates on every PR that the manifest and the vendored
 directories still agree.
 
+### Private skills
+
+Some third-party skills are worth using but not ours to republish — upstream
+ships no LICENSE, or a copyleft one incompatible with this repo's MIT. Those go
+in `external/sources.local.txt` and vendor into `external/.local/`, both
+gitignored. Same sync command, same installer, same `~/.claude/skills/` result —
+they just never enter the published repo. Private use is not distribution.
+
 ### Adding one
 
 Append a line to `external/sources.txt` and sync it:

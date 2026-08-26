@@ -71,6 +71,8 @@ $RemoteSkills = @{
 # ============================================================================
 
 function Get-ExternalSkillNames {
+    # Remote installs only ever see the committed manifest — the private one is
+    # gitignored and exists on the local machine only.
     if ($IsRemote) {
         try {
             $txt = (Invoke-WebRequest -Uri "$GithubRawBase/external/sources.txt" -UseBasicParsing).Content
@@ -82,12 +84,29 @@ function Get-ExternalSkillNames {
             ForEach-Object { ($_ -split '\|')[0].Trim() })
     }
 
-    $manifest = Join-Path $ExternalDir "sources.txt"
-    if (-not (Test-Path $manifest)) { return @() }
-    return @(Get-Content $manifest | ForEach-Object { $_.Trim() } |
-        Where-Object { $_ -and -not $_.StartsWith("#") } |
-        ForEach-Object { ($_ -split '\|')[0].Trim() } |
-        Where-Object { Test-Path (Join-Path (Join-Path $ExternalDir $_) "SKILL.md") })
+    # Local clone: the committed manifest plus the private one, whose skills are
+    # vendored under external/.local/. See external/README.md.
+    $found = @()
+    $pairs = @(
+        @{ Manifest = (Join-Path $ExternalDir "sources.txt");       Base = $ExternalDir },
+        @{ Manifest = (Join-Path $ExternalDir "sources.local.txt"); Base = (Join-Path $ExternalDir ".local") }
+    )
+    foreach ($pair in $pairs) {
+        if (-not (Test-Path $pair.Manifest)) { continue }
+        $found += @(Get-Content $pair.Manifest | ForEach-Object { $_.Trim() } |
+            Where-Object { $_ -and -not $_.StartsWith("#") } |
+            ForEach-Object { ($_ -split '\|')[0].Trim() } |
+            Where-Object { Test-Path (Join-Path (Join-Path $pair.Base $_) "SKILL.md") })
+    }
+    return @($found)
+}
+
+# Source directory for a vendored skill: the published tree, or the private one.
+function Get-ExternalSkillPath {
+    param([string]$name)
+    $pub = Join-Path $ExternalDir $name
+    if (Test-Path (Join-Path $pub "SKILL.md")) { return $pub }
+    return (Join-Path (Join-Path $ExternalDir ".local") $name)
 }
 
 function Install-ExternalSkills {
@@ -125,10 +144,15 @@ function Install-ExternalSkills {
     } else {
         foreach ($name in $names) {
             $dest = Join-Path $target $name
+            $src = Get-ExternalSkillPath -name $name
             if (Test-Path $dest) { Remove-Item $dest -Recurse -Force }
-            Copy-Item (Join-Path $ExternalDir $name) $dest -Recurse -Force
+            Copy-Item $src $dest -Recurse -Force
             $installed++
-            Write-Host "   + $name (external agent skill)" -ForegroundColor Green
+            if ($src -like "*\.local\*") {
+                Write-Host "   + $name (external agent skill, private)" -ForegroundColor Green
+            } else {
+                Write-Host "   + $name (external agent skill)" -ForegroundColor Green
+            }
         }
     }
 

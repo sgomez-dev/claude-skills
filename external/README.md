@@ -72,6 +72,37 @@ Two names were changed, both for cause:
 `sync-external.sh` refuses a manifest with duplicate names rather than letting a
 later entry silently overwrite an earlier one.
 
+## Two manifests: published and private
+
+Some skills are worth using but not ours to republish — upstream ships no
+LICENSE (no grant of rights at all), or a copyleft license incompatible with
+this repo's MIT. Private use is not distribution, so those are tracked
+separately:
+
+| | `sources.txt` | `sources.local.txt` |
+|---|---|---|
+| Vendors into | `external/<name>/` | `external/.local/<name>/` |
+| In git | yes, published | **no** — both the manifest and the tree are gitignored |
+| Installs to | `~/.claude/skills/<name>/` | same |
+| Remote `curl \| bash` install | included | not visible (never leaves this machine) |
+| CI validation | enforced | not applicable |
+
+Both are synced by the same command and installed by the same installer; the
+only difference is what gets committed. `sync-external.sh` marks private entries
+`[local]` in its output and writes a "not redistributed" note into their
+`UPSTREAM.md`.
+
+Because `sources.local.txt` is gitignored it exists only on the machine that
+created it — **keep your own backup** if the selection matters to you.
+
+Currently 55 private skills from 4 repos: `vercel-labs/agent-skills` (9, no
+license), `AccessLint/skills` (5, no license), `bencium/bencium-marketplace`
+(16, no license), and a 25-skill selection from `calesthio/OpenMontage`
+(AGPL-3.0 — Three.js, Remotion, Motion, video and dataviz skills).
+
+**Moving an entry from `sources.local.txt` to `sources.txt` publishes it.** Only
+do that once upstream has a license that permits it.
+
 ## Updating
 
 Upstream repos keep moving, so vendored copies go stale. The sync script pulls
@@ -123,11 +154,16 @@ still agree (no undeclared directories, no missing `SKILL.md`/`UPSTREAM.md`).
    ./scripts/sync-external.sh name
    ```
 
-3. Read what you just vendored. This is third-party prompt content that will run
-   with your permissions — skim `SKILL.md` and anything under `workflows/` for
-   shell commands, network calls, or instructions you don't want.
+3. **Check the license first.** No `LICENSE` upstream, or an (A)GPL one? It goes
+   in `sources.local.txt`, not `sources.txt`. The sync warns and CI fails if a
+   published entry has no license.
 
-4. Commit the vendored copy, and add a row to the table above.
+4. Read what you just vendored. This is third-party prompt content that will run
+   with your permissions — skim `SKILL.md` and anything under `workflows/` for
+   shell commands, network calls, or instructions you don't want. Check for
+   shipped executables too: `find external/<name> -name '*.mjs' -o -name '*.py'`.
+
+5. Commit the vendored copy, and add a row to the table above.
 
 ## Rules
 

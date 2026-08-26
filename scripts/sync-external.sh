@@ -3,19 +3,29 @@ set -euo pipefail
 
 # ============================================================================
 #  sync-external.sh
-#  Vendors third-party Agent Skills from their upstream git repos into
-#  external/, driven by external/sources.txt.
+#  Vendors third-party Agent Skills from their upstream git repos, driven by
+#  external/sources.txt (committed) and external/sources.local.txt (private).
 #
 #  Usage:
 #    ./scripts/sync-external.sh                 Sync every source
 #    ./scripts/sync-external.sh <name> [name…]  Sync only the named source(s)
 #    ./scripts/sync-external.sh --check         Report what's behind upstream
 #    ./scripts/sync-external.sh --list          List manifest entries
+#
+#  Two manifests, two destinations:
+#    sources.txt        -> external/<name>/         committed and published
+#    sources.local.txt  -> external/.local/<name>/  gitignored, never published
+#
+#  The local manifest exists for skills we may use but must not redistribute:
+#  no upstream LICENSE, or a copyleft one incompatible with this repo's MIT.
+#  Private use is not distribution. Both install the same way.
 # ============================================================================
 
 REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 EXTERNAL_DIR="$REPO_DIR/external"
 MANIFEST="$EXTERNAL_DIR/sources.txt"
+MANIFEST_LOCAL="$EXTERNAL_DIR/sources.local.txt"
+LOCAL_DIR="$EXTERNAL_DIR/.local"
 
 # Colors only on a terminal — keeps piped output (CI logs, issue bodies) clean.
 if [ -t 1 ]; then
@@ -34,7 +44,7 @@ fi
 die() { echo -e "${RED}error:${NC} $*" >&2; exit 1; }
 
 usage() {
-    sed -n '5,13p' "$0" | sed -e 's/^#$//' -e 's/^#  \{0,1\}//'
+    sed -n '5,20p' "$0" | sed -e 's/^#$//' -e 's/^#  \{0,1\}//'
     exit 0
 }
 
@@ -48,28 +58,53 @@ trap 'rm -rf "$TMPROOT"' EXIT
 #  Manifest parsing
 # ----------------------------------------------------------------------------
 
-# Emits "name|url|ref|subpath" for each real entry (comments/blanks stripped).
-read_manifest() {
-    grep -v '^[[:space:]]*#' "$MANIFEST" | grep -v '^[[:space:]]*$' || true
+strip_comments() {
+    grep -v '^[[:space:]]*#' "$1" 2>/dev/null | grep -v '^[[:space:]]*$' || true
 }
 
-# A duplicate name would make two entries fight over one external/<name>
-# directory — and one ~/.claude/skills/<name> after install — with the later
-# sync silently winning. Catch it before anything is written.
+# Public entries as written: "name|url|ref|subpath".
+read_manifest() { strip_comments "$MANIFEST"; }
+
+# Local entries as written, or nothing if there is no local manifest.
+read_manifest_local() {
+    [ -f "$MANIFEST_LOCAL" ] || return 0
+    strip_comments "$MANIFEST_LOCAL"
+}
+
+# Every entry from both manifests as "name|url|ref|subpath|scope",
+# scope being "public" or "local".
+read_entries() {
+    read_manifest       | sed 's/$/|public/'
+    read_manifest_local | sed 's/$/|local/'
+}
+
+# Where a given entry's vendored copy lives.
+dest_for() {
+    local name="$1" scope="$2"
+    if [ "$scope" = "local" ]; then
+        printf '%s\n' "$LOCAL_DIR/$name"
+    else
+        printf '%s\n' "$EXTERNAL_DIR/$name"
+    fi
+}
+
+# A duplicate name would make two entries fight over one destination — and one
+# ~/.claude/skills/<name> after install — with the later sync silently winning.
+# Names must be unique across BOTH manifests, since both install side by side.
 validate_manifest() {
     local dupes bad
-    dupes="$(read_manifest | cut -d'|' -f1 | sort | uniq -d)"
+    dupes="$(read_entries | cut -d'|' -f1 | sort | uniq -d)"
     if [ -n "$dupes" ]; then
-        echo -e "${RED}error:${NC} duplicate names in $MANIFEST:" >&2
+        echo -e "${RED}error:${NC} duplicate names across the manifests:" >&2
         echo "$dupes" | sed 's/^/  /' >&2
-        echo "  Each name owns one external/<name> directory — rename one." >&2
+        echo "  Each name owns one directory and one installed skill — rename one." >&2
         exit 1
     fi
 
-    bad="$(read_manifest | awk -F'|' 'NF!=4 || $1=="" || $2=="" || $3=="" || $4=="" {print NR": "$0}')"
+    bad="$(read_entries | awk -F'|' 'NF!=5 || $1=="" || $2=="" || $3=="" || $4=="" {print $0}')"
     if [ -n "$bad" ]; then
-        echo -e "${RED}error:${NC} malformed entries in $MANIFEST (want name|url|ref|subpath):" >&2
-        echo "$bad" | sed 's/^/  /' >&2
+        echo -e "${RED}error:${NC} malformed entries (want name|url|ref|subpath):" >&2
+        echo "$bad" | sed 's/|public$//; s/|local$//; s/^/  /' >&2
         exit 1
     fi
 }
@@ -82,13 +117,13 @@ manifest_line_for() {
             printf '%s\n' "$line"
             return 0
         fi
-    done < <(read_manifest)
+    done < <(read_entries)
     return 1
 }
 
 # Commit SHA currently vendored, read back from the generated UPSTREAM.md.
 recorded_sha() {
-    local name="$1" file="$EXTERNAL_DIR/$name/UPSTREAM.md"
+    local file="$1/UPSTREAM.md"
     [ -f "$file" ] || return 0
     sed -n 's/^- Vendored commit: `\([0-9a-f]\{7,40\}\)`.*/\1/p' "$file" | head -1
 }
@@ -144,12 +179,20 @@ ensure_clone() {
 # ----------------------------------------------------------------------------
 
 list_sources() {
-    echo -e "\n${BOLD}External skill sources${NC} ${DIM}($MANIFEST)${NC}\n"
-    local name url ref subpath sha
-    while IFS='|' read -r name url ref subpath; do
+    echo -e "\n${BOLD}External skill sources${NC}"
+    echo -e "${DIM}  public: $MANIFEST${NC}"
+    if [ -f "$MANIFEST_LOCAL" ]; then
+        echo -e "${DIM}  local:  $MANIFEST_LOCAL (gitignored)${NC}"
+    fi
+    echo ""
+
+    local name url ref subpath scope sha tag
+    while IFS='|' read -r name url ref subpath scope; do
         [ -n "${name:-}" ] || continue
-        sha="$(recorded_sha "$name")"
-        echo -e "   ${CYAN}$name${NC}"
+        sha="$(recorded_sha "$(dest_for "$name" "$scope")")"
+        tag=""
+        [ "$scope" = "local" ] && tag=" ${YELLOW}[local]${NC}"
+        echo -e "   ${CYAN}$name${NC}$tag"
         echo -e "     repo:     $url ${DIM}($ref)${NC}"
         echo -e "     subpath:  ${subpath}"
         if [ -n "$sha" ]; then
@@ -158,38 +201,39 @@ list_sources() {
             echo -e "     vendored: ${YELLOW}not synced yet${NC}"
         fi
         echo ""
-    done < <(read_manifest)
+    done < <(read_entries)
 }
 
 check_one() {
-    local name="$1" url="$2" ref="$3"
-    local local_sha remote
+    local name="$1" url="$2" ref="$3" scope="$4"
+    local local_sha remote tag=""
 
-    local_sha="$(recorded_sha "$name")"
+    [ "$scope" = "local" ] && tag=" ${DIM}[local]${NC}"
+    local_sha="$(recorded_sha "$(dest_for "$name" "$scope")")"
     remote="$(remote_sha "$url" "$ref")"
 
     if [ -z "$remote" ]; then
-        echo -e "   ${RED}?${NC} ${BOLD}$name${NC} — could not reach $url ($ref)"
+        echo -e "   ${RED}?${NC} ${BOLD}$name${NC}$tag — could not reach $url ($ref)"
         return 1
     fi
     if [ -z "$local_sha" ]; then
-        echo -e "   ${YELLOW}+${NC} ${BOLD}$name${NC} — not vendored yet ${DIM}(upstream ${remote:0:7})${NC}"
+        echo -e "   ${YELLOW}+${NC} ${BOLD}$name${NC}$tag — not vendored yet ${DIM}(upstream ${remote:0:7})${NC}"
         return 2
     fi
     if [ "$local_sha" = "$remote" ]; then
-        echo -e "   ${GREEN}=${NC} ${BOLD}$name${NC} — up to date ${DIM}(${local_sha:0:7})${NC}"
+        echo -e "   ${GREEN}=${NC} ${BOLD}$name${NC}$tag — up to date ${DIM}(${local_sha:0:7})${NC}"
         return 0
     fi
-    echo -e "   ${YELLOW}^${NC} ${BOLD}$name${NC} — behind upstream ${DIM}(${local_sha:0:7} -> ${remote:0:7})${NC}"
+    echo -e "   ${YELLOW}^${NC} ${BOLD}$name${NC}$tag — behind upstream ${DIM}(${local_sha:0:7} -> ${remote:0:7})${NC}"
     return 2
 }
 
 sync_one() {
-    local name="$1" url="$2" ref="$3" subpath="$4"
-    local dest="$EXTERNAL_DIR/$name"
-    local before after tmp src staged prev_synced=""
+    local name="$1" url="$2" ref="$3" subpath="$4" scope="$5"
+    local dest before after tmp src staged prev_synced=""
 
-    before="$(recorded_sha "$name")"
+    dest="$(dest_for "$name" "$scope")"
+    before="$(recorded_sha "$dest")"
     if [ -f "$dest/UPSTREAM.md" ]; then
         prev_synced="$(sed -n 's/^- Synced: //p' "$dest/UPSTREAM.md" | head -1)"
     fi
@@ -198,9 +242,10 @@ sync_one() {
     rm -rf "$tmp"
     mkdir -p "$tmp"
 
-    local repo cached=""
+    local repo cached="" tag=""
     [ -d "$TMPROOT/repos/$(repo_key "$url" "$ref")" ] && cached=" ${DIM}(cached clone)${NC}"
-    echo -e "\n${BLUE}[$name]${NC} $url ${DIM}($ref)${NC}$cached"
+    [ "$scope" = "local" ] && tag=" ${YELLOW}[local]${NC}"
+    echo -e "\n${BLUE}[$name]${NC}$tag $url ${DIM}($ref)${NC}$cached"
 
     if ! repo="$(ensure_clone "$url" "$ref")"; then
         echo -e "   ${RED}FAIL${NC} clone failed — leaving the existing copy untouched"
@@ -233,8 +278,9 @@ sync_one() {
             fi
         done
     fi
-    if [ ! -f "$staged/LICENSE" ]; then
-        echo -e "   ${YELLOW}WARN${NC} upstream ships no LICENSE — you are vendoring content with no grant of rights"
+    if [ ! -f "$staged/LICENSE" ] && [ "$scope" != "local" ]; then
+        echo -e "   ${YELLOW}WARN${NC} upstream ships no LICENSE — you are publishing content with no grant of rights"
+        echo -e "        Move this entry to $MANIFEST_LOCAL to keep it private instead."
     fi
 
     # Re-syncing an unchanged commit keeps the original timestamp, so an
@@ -246,7 +292,7 @@ sync_one() {
         synced="$(date -u '+%Y-%m-%dT%H:%M:%SZ')"
     fi
 
-    write_upstream_md "$staged/UPSTREAM.md" "$name" "$url" "$ref" "$after" "$commit_date" "$subpath" "$synced"
+    write_upstream_md "$staged/UPSTREAM.md" "$name" "$url" "$ref" "$after" "$commit_date" "$subpath" "$synced" "$scope"
 
     rm -rf "$dest"
     mkdir -p "$(dirname "$dest")"
@@ -264,7 +310,7 @@ sync_one() {
 }
 
 write_upstream_md() {
-    local file="$1" name="$2" url="$3" ref="$4" sha="$5" commit_date="$6" subpath="$7" synced="$8"
+    local file="$1" name="$2" url="$3" ref="$4" sha="$5" commit_date="$6" subpath="$7" synced="$8" scope="$9"
     local browse_url="${url%.git}"
 
     cat > "$file" <<EOF
@@ -279,6 +325,22 @@ authored here.
 - Vendored commit: \`$sha\`
 - Commit date: $commit_date
 - Synced: $synced
+- Scope: $scope
+EOF
+
+    if [ "$scope" = "local" ]; then
+        cat >> "$file" <<EOF
+
+## Private copy — not redistributed
+
+This skill is tracked in \`external/sources.local.txt\` and vendored under
+\`external/.local/\`, which is gitignored. It is here for local use only,
+because upstream ships no license or one this repo cannot redistribute under.
+Do not commit it or copy it into \`external/\`.
+EOF
+    fi
+
+    cat >> "$file" <<EOF
 
 ## Do not edit by hand
 
@@ -289,10 +351,10 @@ Local changes are overwritten on the next sync. To pull upstream changes:
 \`\`\`
 
 If you need behaviour that differs from upstream, either open a PR upstream or
-fork the repo and point \`external/sources.txt\` at your fork.
+fork the repo and point the manifest at your fork.
 
-License: see \`LICENSE\` in this directory (the upstream project's terms apply
-to this copy).
+License: see \`LICENSE\` in this directory if present (the upstream project's
+terms apply to this copy).
 EOF
 }
 
@@ -324,23 +386,23 @@ fi
 ENTRIES=()
 if [ ${#TARGETS[@]} -gt 0 ]; then
     for t in "${TARGETS[@]}"; do
-        entry="$(manifest_line_for "$t")" || die "no such source in manifest: $t (try --list)"
+        entry="$(manifest_line_for "$t")" || die "no such source in either manifest: $t (try --list)"
         ENTRIES+=("$entry")
     done
 else
     while IFS= read -r line; do
         [ -n "$line" ] && ENTRIES+=("$line")
-    done < <(read_manifest)
+    done < <(read_entries)
 fi
 
-[ ${#ENTRIES[@]} -gt 0 ] || die "manifest has no entries"
+[ ${#ENTRIES[@]} -gt 0 ] || die "manifests have no entries"
 
 if [ "$MODE" = "check" ]; then
     echo -e "\n${BOLD}Checking external skills against upstream${NC}\n"
     stale=0
     for entry in "${ENTRIES[@]}"; do
-        IFS='|' read -r name url ref subpath <<< "$entry"
-        check_one "$name" "$url" "$ref" || stale=1
+        IFS='|' read -r name url ref subpath scope <<< "$entry"
+        check_one "$name" "$url" "$ref" "$scope" || stale=1
     done
     echo ""
     if [ "$stale" -eq 1 ]; then
@@ -353,8 +415,8 @@ fi
 
 FAILED=0
 for entry in "${ENTRIES[@]}"; do
-    IFS='|' read -r name url ref subpath <<< "$entry"
-    sync_one "$name" "$url" "$ref" "$subpath" || FAILED=$((FAILED + 1))
+    IFS='|' read -r name url ref subpath scope <<< "$entry"
+    sync_one "$name" "$url" "$ref" "$subpath" "$scope" || FAILED=$((FAILED + 1))
 done
 
 echo ""

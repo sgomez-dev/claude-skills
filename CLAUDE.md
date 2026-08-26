@@ -78,7 +78,7 @@ Vendored copies are kept in sync with `scripts/sync-external.sh`:
 
 ```bash
 ./scripts/sync-external.sh --check    # which sources are behind upstream
-./scripts/sync-external.sh            # pull all sources forward
+./scripts/sync-external.sh            # pull all sources forward (both manifests)
 ./scripts/sync-external.sh <name>     # pull one source forward
 ./scripts/sync-external.sh --list     # manifest entries + vendored commits
 ```
@@ -88,8 +88,11 @@ Rules when touching `external/`:
 - **Never hand-edit a vendored directory** — the next sync overwrites it. Fork upstream and repoint `external/sources.txt` instead.
 - Add new sources as a line in `external/sources.txt`, then sync; don't copy files in by hand.
 - Keep each vendored `LICENSE` and `UPSTREAM.md` (provenance + pinned commit).
-- **Don't vendor a repo with no LICENSE file.** No license means no grant of rights, and this repo is public — redistributing it is not ours to do. `sync-external.sh` warns; treat the warning as a stop.
-- **Check license compatibility.** MIT and Apache-2.0 are fine alongside this repo's MIT. Strong copyleft (AGPL/GPL) is not — flag it rather than vendoring it.
+- **Licensing decides which manifest an entry goes in**, not preference:
+  - MIT / Apache-2.0 → `external/sources.txt`, vendored to `external/<name>/`, committed and published.
+  - No LICENSE at all, or (A)GPL → `external/sources.local.txt`, vendored to `external/.local/<name>/`. Both are gitignored: usable locally, never republished. Private use is not distribution.
+  - Moving an entry from the local manifest to the public one publishes it. Only do that if upstream's license changes to permit it.
+  - `sync-external.sh` warns on a published entry with no license, and CI fails on it.
 - Installed names match upstream. Rename only for cause (e.g. a directory named `skill`), and record why in the manifest comment.
 - `scripts/test-runner.sh` deliberately ignores `external/` — those files follow upstream's conventions, not this repo's. `.github/workflows/external-skills.yml` validates it instead.
 
