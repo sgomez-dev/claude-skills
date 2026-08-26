@@ -39,6 +39,9 @@ skills/                  # All 325 skills organized by category
 ├── utils/               # 15 utility skills
 └── web/                 # 18 web & UI skills
 pipelines/               # Composable multi-skill workflows (*.yaml)
+external/                # Third-party Agent Skills vendored from upstream repos
+├── sources.txt          # Upstream manifest (name|repo|ref|subpath)
+└── <skill>/             # Vendored copy: SKILL.md + references/ + workflows/
 install.sh               # Interactive installer (macOS/Linux/Git Bash)
 install.ps1              # Windows PowerShell installer
 ```
@@ -57,9 +60,42 @@ Prompt instructions for Claude.
 $ARGUMENTS   ← replaced with user input
 ```
 
+## External Skills (third-party)
+
+`external/` holds skills authored in *other* repos, in the **Agent Skill** format — a
+directory with `SKILL.md` plus optional `references/` and `workflows/`. They are a
+different thing from the slash commands in `skills/`:
+
+| | `skills/` | `external/` |
+|---|---|---|
+| Format | one `.md` per skill, `$ARGUMENTS` | directory with `SKILL.md` |
+| Installs to | `~/.claude/commands/` | `~/.claude/skills/` |
+| Invoked as | `/category--name` | `/name`, or auto-triggered by description |
+| Authored | here | upstream |
+
+Vendored copies are kept in sync with `scripts/sync-external.sh`:
+
+```bash
+./scripts/sync-external.sh --check    # which sources are behind upstream
+./scripts/sync-external.sh            # pull all sources forward
+./scripts/sync-external.sh <name>     # pull one source forward
+./scripts/sync-external.sh --list     # manifest entries + vendored commits
+```
+
+Rules when touching `external/`:
+
+- **Never hand-edit a vendored directory** — the next sync overwrites it. Fork upstream and repoint `external/sources.txt` instead.
+- Add new sources as a line in `external/sources.txt`, then sync; don't copy files in by hand.
+- Keep each vendored `LICENSE` and `UPSTREAM.md` (provenance + pinned commit).
+- `scripts/test-runner.sh` deliberately ignores `external/` — those files follow upstream's conventions, not this repo's.
+
+See [external/README.md](external/README.md) for the full workflow.
+
 ## Installation
 
 Skills are installed by copying `.md` files into `~/.claude/commands/` (global) or `.claude/commands/` (project-level). The installer renames files to `category--skill-name.md` format for flat directory compatibility.
+
+External skills are installed alongside them as directories under `~/.claude/skills/` (global) or `.claude/skills/` (project-level), keeping their upstream name.
 
 ## When working on this repo
 

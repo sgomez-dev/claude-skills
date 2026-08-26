@@ -761,6 +761,68 @@ Install skill bundles directly in Claude Code:
 
 ---
 
+## External Skills
+
+Not everything worth using was written here. `external/` vendors third-party skills
+from their upstream repos, kept current with a sync script.
+
+These use the **Agent Skill** format — a directory with `SKILL.md` plus
+`references/` and `workflows/` — rather than this repo's single-file slash-command
+format, so they install to `~/.claude/skills/` and are invoked as `/skill-name`
+(or trigger automatically from their description).
+
+| Skill | What it does | Upstream | License |
+|-------|--------------|----------|---------|
+| `design-motion-principles` | Motion & interaction design in two modes — build components with purposeful motion, or audit existing animations for AI-slop motion patterns and emit an HTML report with looping demos. Weights three designer lenses (Emil Kowalski, Jakub Krehel, Jhey Tompkins) by project context. | [kylezantos/design-motion-principles](https://github.com/kylezantos/design-motion-principles) | MIT |
+
+`./install.sh` installs these alongside the slash commands — nothing extra to run.
+
+### Keeping them current
+
+Upstream repos keep moving. The sync script pulls vendored copies forward:
+
+```bash
+./scripts/sync-external.sh --check    # which sources are behind upstream?
+./scripts/sync-external.sh            # pull everything forward
+./scripts/sync-external.sh <name>     # pull one source forward
+./scripts/sync-external.sh --list     # manifest entries + pinned commits
+```
+
+Then review, commit, and reinstall:
+
+```bash
+git diff external/
+git add external/ && git commit -m "chore(external): sync upstream skills"
+./install.sh
+```
+
+Every vendored directory carries an `UPSTREAM.md` with the exact commit it came
+from, plus the upstream `LICENSE`.
+
+A scheduled workflow ([`external-skills.yml`](.github/workflows/external-skills.yml))
+runs the same check every Monday and files a single tracking issue when something
+has moved upstream, so stale copies surface without anyone remembering to look.
+The same workflow validates on every PR that the manifest and the vendored
+directories still agree.
+
+### Adding one
+
+Append a line to `external/sources.txt` and sync it:
+
+```
+name|repo-url|ref|subpath
+```
+
+```bash
+./scripts/sync-external.sh name
+```
+
+`subpath` points at the directory containing `SKILL.md` (`.` if it's at the repo
+root). Read what you vendor before committing it — third-party prompt content runs
+with your permissions. Full workflow in [external/README.md](external/README.md).
+
+---
+
 ## Cross-Platform
 
 These skills work across multiple AI coding assistants:
@@ -1011,12 +1073,18 @@ claude-skills/
 │   ├── code-cleanup.yaml
 │   ├── sales-outbound.yaml
 │   └── llm-app.yaml
+├── external/                   # Third-party Agent Skills (vendored from upstream)
+│   ├── sources.txt             # Upstream manifest (name|repo|ref|subpath)
+│   ├── README.md               # Vendoring & sync workflow
+│   └── design-motion-principles/  # SKILL.md + references/ + workflows/
 ├── scripts/                    # Validation & tooling
 │   ├── test-runner.sh          # CI test harness (structure, safety, triggers)
 │   ├── lint-permissions.sh     # Permission manifest cross-reference linter
+│   ├── sync-external.sh        # Pull external/ skills forward from upstream
 │   └── detect-project.sh      # Tech stack detection for smart routing
 ├── .github/workflows/
-│   └── test-skills.yml         # GitHub Actions CI pipeline
+│   ├── test-skills.yml         # GitHub Actions CI pipeline
+│   └── external-skills.yml     # Validates external/, weekly upstream check
 ├── .claude-plugin/
 │   └── marketplace.json        # Plugin marketplace (32 bundles)
 ├── platforms/                  # Cross-platform guides (Cursor, Windsurf, Codex)

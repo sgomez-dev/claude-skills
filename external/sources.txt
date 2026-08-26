@@ -1,0 +1,25 @@
+# ============================================================================
+#  External Agent Skills — upstream manifest
+#
+#  Third-party skills vendored into external/ from their upstream git repos.
+#  These use the Agent Skill format (a directory with SKILL.md, plus optional
+#  references/ and workflows/), NOT this repo's flat slash-command format, so
+#  they install to ~/.claude/skills/<name>/ instead of ~/.claude/commands/.
+#
+#  Format — one skill per line, pipe-delimited, no spaces around the pipes:
+#
+#     name|repo-url|ref|subpath
+#
+#     name     Local directory name under external/, and the installed skill
+#              name (invoked as /name in Claude Code).
+#     repo-url Git URL to clone from.
+#     ref      Branch or tag to track.
+#     subpath  Path inside the repo to the directory containing SKILL.md.
+#              Use "." if SKILL.md sits at the repo root.
+#
+#  Add a line, then run:  ./scripts/sync-external.sh <name>
+#  Update everything:     ./scripts/sync-external.sh
+#  See what's behind:     ./scripts/sync-external.sh --check
+# ============================================================================
+
+design-motion-principles|https://github.com/kylezantos/design-motion-principles.git|main|skills/design-motion-principles
