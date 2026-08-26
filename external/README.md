@@ -6,7 +6,7 @@ authored in this repo.
 
 ## Why they live outside `skills/`
 
-The 325 skills in `skills/` are **slash commands**: a single `.md` file with a
+The 326 skills in `skills/` are **slash commands**: a single `.md` file with a
 `description` in frontmatter and a `$ARGUMENTS` placeholder, installed to
 `~/.claude/commands/category--name.md` and invoked as `/category--name`.
 

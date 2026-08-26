@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Skills-325-blue?style=for-the-badge" alt="325 Skills" />
+  <img src="https://img.shields.io/badge/Skills-326-blue?style=for-the-badge" alt="326 Skills" />
   <img src="https://img.shields.io/badge/Tested-CI_Validated-brightgreen?style=for-the-badge" alt="CI Tested" />
   <img src="https://img.shields.io/badge/Permissions-100%25_Declared-brightgreen?style=for-the-badge" alt="Permissions" />
   <img src="https://img.shields.io/badge/Pipelines-7-purple?style=for-the-badge" alt="7 Pipelines" />
@@ -17,13 +17,13 @@
 
 <p align="center">
   <strong>The only skills collection where every skill is tested, permission-scoped, and composable.</strong><br/>
-  325 skills across 32 categories. 7 pipelines. Full CI validation. Zero trust assumptions.
+  326 skills across 32 categories. 7 pipelines. Full CI validation. Zero trust assumptions.
 </p>
 
 <p align="center">
   <a href="#quick-install">Quick Install</a> &bull;
   <a href="#what-makes-this-different">Why This One</a> &bull;
-  <a href="#all-325-skills">Browse Skills</a> &bull;
+  <a href="#all-326-skills">Browse Skills</a> &bull;
   <a href="#web--ui-6----landing-pages-spas-animations-design-systems">Web & UI</a> &bull;
   <a href="#pipelines">Pipelines</a> &bull;
   <a href="#plugin-marketplace">Marketplace</a> &bull;
@@ -121,9 +121,9 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 
 ---
 
-## All 325 Skills
+## All 326 Skills
 
-325 skills across 32 categories. Click any group to expand its command table.
+326 skills across 32 categories. Click any group to expand its command table.
 
 ### Engineering & Data
 
@@ -526,7 +526,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 </details>
 
 <details>
-<summary><strong>Automation & Integration (8)</strong></summary>
+<summary><strong>Automation & Integration (9)</strong></summary>
 
 | Command | What It Does |
 |---------|-------------|
@@ -535,6 +535,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 | `automation--pdf-processing` | Build PDF workflows — extract text/tables, fill forms, merge/split, OCR fallback |
 | `automation--report-automation` | Automate a recurring report — data pull, template, schedule, delivery channel |
 | `automation--scheduled-tasks` | Schedule tasks reliably: cron vs queues, retries, monitoring, timezone traps |
+| `automation--scrapegraph-scraper` | Build an LLM-powered scraper with scrapegraph-ai — graph choice, Pydantic schemas, token cost |
 | `automation--spreadsheet-automation` | Automate spreadsheets: formulas, Apps Script/openpyxl, imports, validation |
 | `automation--web-scraper` | Build a polite web scraper — robots.txt, rate limits, selectors, pagination, storage |
 | `automation--workflow-automation` | Design automations for n8n, Zapier, or Make — triggers, steps, error paths, export |
@@ -856,8 +857,8 @@ The skill format (markdown with numbered steps) is intentionally portable. No ve
 ```
 
 Options:
-1. **Global** — All 325 skills in every project
-2. **Project** — All 325 skills in current project only
+1. **Global** — All 326 skills in every project
+2. **Project** — All 326 skills in current project only
 3. **Selective** — Pick categories to install
 4. **Uninstall** — Remove all installed skills
 
@@ -954,11 +955,11 @@ Every skill is validated by CI on every push:
   ║       CLAUDE SKILLS TEST RUNNER         ║
   ╚═════════════════════════════════════════╝
 
-  [1/5] Structure Validation     325/325 PASS
-  [2/5] Permission Manifests     325/325 declared
-  [3/5] Safety Lint              325/325 safe
-  [4/5] Trigger Quality          325/325 OK
-  [5/5] Test File Coverage       12/325 (4%)
+  [1/5] Structure Validation     326/326 PASS
+  [2/5] Permission Manifests     326/326 declared
+  [3/5] Safety Lint              326/326 safe
+  [4/5] Trigger Quality          326/326 OK
+  [5/5] Test File Coverage       11/326 (3%)
 ```
 
 ### What Gets Checked
@@ -1007,7 +1008,7 @@ Use the [template](template/SKILL.md) and follow the [contributing guide](CONTRI
 <details>
 <summary><strong>Do skills slow down Claude Code?</strong></summary>
 
-No. Skills are only loaded when you invoke them. Having 325 skills installed has zero impact on performance.
+No. Skills are only loaded when you invoke them. Having 326 skills installed has zero impact on performance.
 
 </details>
 
@@ -1031,7 +1032,7 @@ Start with global. If you want to share specific skills with your team (e.g., en
 
 ```
 claude-skills/
-├── skills/                     # 325 skills across 32 categories
+├── skills/                     # 326 skills across 32 categories
 │   ├── meta/                   # 4  · router, pipelines, forge, health
 │   ├── git/                    # 12 · version control
 │   ├── code-quality/           # 10 · review & refactoring
@@ -1052,7 +1053,7 @@ claude-skills/
 │   ├── mobile/                 # 10 · React Native / Flutter / native
 │   ├── ai/                     # 18 · LLM apps, agents, RAG, evals
 │   ├── ml/                     # 8  · classical machine learning
-│   ├── automation/             # 8  · scraping & workflow automation
+│   ├── automation/             # 9  · scraping & workflow automation
 │   ├── web/                    # 18 · web & UI
 │   ├── accessibility/          # 2  · WCAG compliance
 │   ├── i18n/                   # 1  · internationalization

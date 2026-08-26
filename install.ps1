@@ -25,7 +25,7 @@ if ($IsRemote) {
 
 function Write-Banner {
     # Counted from disk on a local clone so the banner can't go stale.
-    $n = "325"
+    $n = "326"
     if (-not $IsRemote -and (Test-Path $SkillsDir)) {
         $n = @(Get-ChildItem -Path $SkillsDir -Filter "*.md" -Recurse).Count
     }
