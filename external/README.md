@@ -28,7 +28,7 @@ Two formats, two install targets, two directories:
 
 ## Currently vendored
 
-36 skills from 8 upstream repos, ~15 MB. Grouped by source:
+49 skills from 9 upstream repos, ~16 MB. Grouped by source:
 
 | Upstream | License | Skills |
 |----------|---------|--------|
@@ -40,6 +40,7 @@ Two formats, two install targets, two directories:
 | [AgriciDaniel/banana-claude](https://github.com/AgriciDaniel/banana-claude) | MIT | `banana` |
 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Apache-2.0 | `agent-browser` |
 | [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) | MIT | `agent-reach` |
+| [Jakeschincariol/instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill) | MIT | `ig-audit` `ig-caption` `ig-carousel` `ig-comment` `ig-dm` `ig-human` `ig-plan` `ig-profile` `ig-reel` `ig-reply` `ig-repurpose` `ig-story` `ig-viral` |
 
 Each directory carries an `UPSTREAM.md` recording the exact vendored commit, and
 the upstream `LICENSE`.
@@ -56,6 +57,8 @@ they do anything useful:
 | `agent-reach` | Its Python package installed separately |
 | `banana` | A Gemini API key; ships Python scripts |
 | `ui-ux-pro-max`, `ui-styling`, `design`, `design-system` | Python for their helper scripts; ship large data assets (Google Fonts CSV, Phosphor icon JSON) |
+| `ig-*` (all 13) | A voice profile at `~/.claude/instagram/voice.md` — every skill reads it, and it is not part of any skill directory, so it is not vendored. Copy [upstream's blank template](https://github.com/Jakeschincariol/instagram-agent-skill/blob/main/templates/voice.md) and fill it in |
+| `ig-reel`, `ig-human`, `ig-caption`, `ig-viral` | Python 3 for their five offline tools (hook scoring, beat sheets, slop detection, caption linting, swipe-file ranking). Standard library only — no packages, no network |
 
 ### Names are upstream's, not ours
 
