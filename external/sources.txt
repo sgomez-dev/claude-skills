@@ -113,3 +113,28 @@ agent-browser|https://github.com/vercel-labs/agent-browser.git|main|skills/agent
 #  package that must be installed separately.
 # ---------------------------------------------------------------------------
 agent-reach|https://github.com/Panniantong/Agent-Reach.git|main|agent_reach/skill
+
+# ---------------------------------------------------------------------------
+#  Jakeschincariol/instagram-agent-skill — MIT
+#  Runs an Instagram account end to end: reels, captions, carousels, stories,
+#  profile audit, weekly plan, comments/DMs, repurposing, post-mortems, plus a
+#  humanizer that strips AI slop before anything reaches a draft. Five of the
+#  thirteen ship offline Python tools (hook scoring, beat sheets, slop
+#  detection); no API key and nothing posts on its own.
+#  Every skill reads ~/.claude/instagram/voice.md — the voice profile is not
+#  part of any skill directory, so it is not vendored. Upstream's blank
+#  template lives at templates/voice.md in the source repo.
+# ---------------------------------------------------------------------------
+ig-audit|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-audit
+ig-caption|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-caption
+ig-carousel|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-carousel
+ig-comment|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-comment
+ig-dm|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-dm
+ig-human|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-human
+ig-plan|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-plan
+ig-profile|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-profile
+ig-reel|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-reel
+ig-reply|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-reply
+ig-repurpose|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-repurpose
+ig-story|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-story
+ig-viral|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-viral

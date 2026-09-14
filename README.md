@@ -772,7 +772,7 @@ These use the **Agent Skill** format — a directory with `SKILL.md` plus
 format, so they install to `~/.claude/skills/` and are invoked as `/skill-name`
 (or trigger automatically from their description).
 
-**36 skills from 8 upstream repos.** Grouped by source:
+**49 skills from 9 upstream repos.** Grouped by source:
 
 | Upstream | License | What you get |
 |----------|---------|--------------|
@@ -784,12 +784,14 @@ format, so they install to `~/.claude/skills/` and are invoked as `/skill-name`
 | [AgriciDaniel/banana-claude](https://github.com/AgriciDaniel/banana-claude) | MIT | Gemini image generation — presets, batching, cost tracking |
 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Apache-2.0 | Driving a browser from an agent |
 | [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) | MIT | Outreach and contact discovery |
+| [Jakeschincariol/instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill) | MIT | 13 skills that run an Instagram account — reels, captions, carousels, stories, profile audit, weekly plan, comments, DMs, repurposing, post-mortems, and a humanizer that strips AI slop |
 
 `./install.sh` installs these alongside the slash commands — nothing extra to run.
 
 Some of them drive an external tool, and vendoring the prompt does not install
 that tool: `impeccable` needs Node, `agent-browser` needs its npm CLI,
-`agent-reach` needs its Python package, `banana` needs a Gemini API key. See
+`agent-reach` needs its Python package, `banana` needs a Gemini API key, and the
+`ig-*` pack reads a voice profile you write once at `~/.claude/instagram/voice.md`. See
 [external/README.md](external/README.md#skills-that-need-something-installed).
 
 ### Keeping them current
