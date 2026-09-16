@@ -6,9 +6,9 @@ authored here.
 - Source repo: <https://github.com/Panniantong/Agent-Reach>
 - Tracked ref: `main`
 - Upstream path: `agent_reach/skill`
-- Vendored commit: `06c202b03400a7d31886bf4399213706da1a0324`
-- Commit date: 2026-08-25T13:36:15+08:00
-- Synced: 2026-08-26T20:40:09Z
+- Vendored commit: `a19a171fa980a0785849596492e0af4db800c82f`
+- Commit date: 2026-09-16T00:16:24+08:00
+- Synced: 2026-09-16T09:53:30Z
 - Scope: public
 
 ## Do not edit by hand
