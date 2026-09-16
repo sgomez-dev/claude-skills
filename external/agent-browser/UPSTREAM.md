@@ -6,9 +6,9 @@ authored here.
 - Source repo: <https://github.com/vercel-labs/agent-browser>
 - Tracked ref: `main`
 - Upstream path: `skills/agent-browser`
-- Vendored commit: `fbd046c23a2c1156891bda294aaaee715c23b3f1`
-- Commit date: 2026-08-26T15:25:48-05:00
-- Synced: 2026-08-26T20:40:08Z
+- Vendored commit: `0473bfdcf78ce8d10f294cb1ae07c98e6eb9d583`
+- Commit date: 2026-09-16T01:05:39-05:00
+- Synced: 2026-09-16T09:53:28Z
 - Scope: public
 
 ## Do not edit by hand

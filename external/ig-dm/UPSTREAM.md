@@ -8,7 +8,7 @@ authored here.
 - Upstream path: `skills/ig-dm`
 - Vendored commit: `d03c56bb598be770c60b201f94237e5d1a4268a6`
 - Commit date: 2026-09-13T07:10:29-07:00
-- Synced: 2026-09-13T22:18:16Z
+- Synced: 2026-09-16T10:08:01Z
 - Scope: public
 
 ## Do not edit by hand

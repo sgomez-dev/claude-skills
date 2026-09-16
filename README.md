@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Skills-326-blue?style=for-the-badge" alt="326 Skills" />
+  <img src="https://img.shields.io/badge/Skills-327-blue?style=for-the-badge" alt="327 Skills" />
   <img src="https://img.shields.io/badge/Tested-CI_Validated-brightgreen?style=for-the-badge" alt="CI Tested" />
   <img src="https://img.shields.io/badge/Permissions-100%25_Declared-brightgreen?style=for-the-badge" alt="Permissions" />
   <img src="https://img.shields.io/badge/Pipelines-7-purple?style=for-the-badge" alt="7 Pipelines" />
@@ -17,13 +17,13 @@
 
 <p align="center">
   <strong>The only skills collection where every skill is tested, permission-scoped, and composable.</strong><br/>
-  326 skills across 32 categories. 7 pipelines. Full CI validation. Zero trust assumptions.
+  327 skills across 32 categories. 7 pipelines. Full CI validation. Zero trust assumptions.
 </p>
 
 <p align="center">
   <a href="#quick-install">Quick Install</a> &bull;
   <a href="#what-makes-this-different">Why This One</a> &bull;
-  <a href="#all-326-skills">Browse Skills</a> &bull;
+  <a href="#all-327-skills">Browse Skills</a> &bull;
   <a href="#web--ui-6----landing-pages-spas-animations-design-systems">Web & UI</a> &bull;
   <a href="#pipelines">Pipelines</a> &bull;
   <a href="#plugin-marketplace">Marketplace</a> &bull;
@@ -121,9 +121,9 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 
 ---
 
-## All 326 Skills
+## All 327 Skills
 
-326 skills across 32 categories. Click any group to expand its command table.
+327 skills across 32 categories. Click any group to expand its command table.
 
 ### Engineering & Data
 
@@ -526,7 +526,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 </details>
 
 <details>
-<summary><strong>Automation & Integration (9)</strong></summary>
+<summary><strong>Automation & Integration (10)</strong></summary>
 
 | Command | What It Does |
 |---------|-------------|
@@ -535,6 +535,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 | `automation--pdf-processing` | Build PDF workflows — extract text/tables, fill forms, merge/split, OCR fallback |
 | `automation--report-automation` | Automate a recurring report — data pull, template, schedule, delivery channel |
 | `automation--scheduled-tasks` | Schedule tasks reliably: cron vs queues, retries, monitoring, timezone traps |
+| `automation--scrape-it-now` | Run a site-wide markdown crawl with scrape-it-now — job config, local vs Azure, indexing |
 | `automation--scrapegraph-scraper` | Build an LLM-powered scraper with scrapegraph-ai — graph choice, Pydantic schemas, token cost |
 | `automation--spreadsheet-automation` | Automate spreadsheets: formulas, Apps Script/openpyxl, imports, validation |
 | `automation--web-scraper` | Build a polite web scraper — robots.txt, rate limits, selectors, pagination, storage |
@@ -772,7 +773,7 @@ These use the **Agent Skill** format — a directory with `SKILL.md` plus
 format, so they install to `~/.claude/skills/` and are invoked as `/skill-name`
 (or trigger automatically from their description).
 
-**49 skills from 9 upstream repos.** Grouped by source:
+**107 skills from 13 upstream repos.** Grouped by source:
 
 | Upstream | License | What you get |
 |----------|---------|--------------|
@@ -784,13 +785,19 @@ format, so they install to `~/.claude/skills/` and are invoked as `/skill-name`
 | [AgriciDaniel/banana-claude](https://github.com/AgriciDaniel/banana-claude) | MIT | Gemini image generation — presets, batching, cost tracking |
 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Apache-2.0 | Driving a browser from an agent |
 | [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) | MIT | Outreach and contact discovery |
+| [higgsfield-ai/skills](https://github.com/higgsfield-ai/skills) | MIT | 8 skills from Higgsfield — image and video generation, brand kits, product photoshoots, Soul ID characters, marketplace cards, sites, thumbnails |
+| [AgriciDaniel/claude-ads](https://github.com/AgriciDaniel/claude-ads) | MIT | 34 paid-media skills — a conductor plus per-platform audits (Google, Meta, TikTok, LinkedIn, Amazon…), budget and attribution math, creative production, reporting |
 | [Jakeschincariol/instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill) | MIT | 13 skills that run an Instagram account — reels, captions, carousels, stories, profile audit, weekly plan, comments, DMs, repurposing, post-mortems, and a humanizer that strips AI slop |
+| [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | Apache-2.0 | 15 programmatic-video skills — the hyperframes engine (core, animation, audio, keyframes, registry, CLI) plus captions, motion graphics, music videos, faceless explainers |
+| [oso95/scroll-world](https://github.com/oso95/scroll-world) | MIT | Scroll-scrubbed "fly through the world" landing pages — one continuous camera flight, no cuts |
 
 `./install.sh` installs these alongside the slash commands — nothing extra to run.
 
 Some of them drive an external tool, and vendoring the prompt does not install
-that tool: `impeccable` needs Node, `agent-browser` needs its npm CLI,
-`agent-reach` needs its Python package, `banana` needs a Gemini API key, and the
+that tool: `impeccable` ships a packaged Node CLI, `agent-browser` needs its npm
+CLI, `agent-reach` needs its Python package, `banana` needs a Gemini API key,
+the `higgsfield-*` skills need a Higgsfield API key, the `ads-*` skills need
+per-platform ad credentials, `media-use` drives the `heygen` CLI, and the
 `ig-*` pack reads a voice profile you write once at `~/.claude/instagram/voice.md`. See
 [external/README.md](external/README.md#skills-that-need-something-installed).
 
@@ -881,8 +888,8 @@ The skill format (markdown with numbered steps) is intentionally portable. No ve
 ```
 
 Options:
-1. **Global** — All 326 skills in every project
-2. **Project** — All 326 skills in current project only
+1. **Global** — All 327 skills in every project
+2. **Project** — All 327 skills in current project only
 3. **Selective** — Pick categories to install
 4. **Uninstall** — Remove all installed skills
 
@@ -979,11 +986,11 @@ Every skill is validated by CI on every push:
   ║       CLAUDE SKILLS TEST RUNNER         ║
   ╚═════════════════════════════════════════╝
 
-  [1/5] Structure Validation     326/326 PASS
-  [2/5] Permission Manifests     326/326 declared
-  [3/5] Safety Lint              326/326 safe
-  [4/5] Trigger Quality          326/326 OK
-  [5/5] Test File Coverage       11/326 (3%)
+  [1/5] Structure Validation     327/327 PASS
+  [2/5] Permission Manifests     327/327 declared
+  [3/5] Safety Lint              327/327 safe
+  [4/5] Trigger Quality          327/327 OK
+  [5/5] Test File Coverage       11/327 (3%)
 ```
 
 ### What Gets Checked
@@ -1032,7 +1039,7 @@ Use the [template](template/SKILL.md) and follow the [contributing guide](CONTRI
 <details>
 <summary><strong>Do skills slow down Claude Code?</strong></summary>
 
-No. Skills are only loaded when you invoke them. Having 326 skills installed has zero impact on performance.
+No. Skills are only loaded when you invoke them. Having 327 skills installed has zero impact on performance.
 
 </details>
 
@@ -1056,7 +1063,7 @@ Start with global. If you want to share specific skills with your team (e.g., en
 
 ```
 claude-skills/
-├── skills/                     # 326 skills across 32 categories
+├── skills/                     # 327 skills across 32 categories
 │   ├── meta/                   # 4  · router, pipelines, forge, health
 │   ├── git/                    # 12 · version control
 │   ├── code-quality/           # 10 · review & refactoring

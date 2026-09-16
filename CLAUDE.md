@@ -1,15 +1,15 @@
 # Claude Skills Collection
 
-This repository contains 326 custom slash commands (skills) for Claude Code organized in `skills/` by category.
+This repository contains 327 custom slash commands (skills) for Claude Code organized in `skills/` by category.
 
 ## Project Structure
 
 ```
-skills/                  # All 326 skills organized by category
+skills/                  # All 327 skills organized by category
 ├── ai/                  # 18 AI/LLM skills (agents, RAG, evals, guardrails, MCP)
 ├── api/                 # 5 API development skills
 ├── accessibility/       # 2 accessibility skills
-├── automation/          # 9 automation & integration skills
+├── automation/          # 10 automation & integration skills
 ├── cloud/               # 10 cloud architecture skills (AWS, GCP, Azure)
 ├── code-quality/        # 10 code quality & review skills
 ├── content/             # 8 content & copywriting skills
@@ -63,8 +63,8 @@ $ARGUMENTS   ← replaced with user input
 ## External Skills (third-party)
 
 `external/` holds skills authored in *other* repos, in the **Agent Skill** format — a
-directory with `SKILL.md` plus optional `references/` and `workflows/`. Currently 49
-skills from 9 upstream repos (~16 MB). They are a different thing from the slash
+directory with `SKILL.md` plus optional `references/` and `workflows/`. Currently 107
+skills from 13 upstream repos (~34 MB). They are a different thing from the slash
 commands in `skills/`:
 
 | | `skills/` | `external/` |

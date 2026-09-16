@@ -17,7 +17,10 @@ const { execFileSync } = require('child_process');
 const BRAND_GUIDELINES = 'docs/brand-guidelines.md';
 const DESIGN_TOKENS_JSON = 'assets/design-tokens.json';
 const DESIGN_TOKENS_CSS = 'assets/design-tokens.css';
-const GENERATE_TOKENS_SCRIPT = '.claude/skills/design-system/scripts/generate-tokens.cjs';
+// Sibling sub-skill, resolved from this file's location so it works in every
+// install context (plugin cache, project or --global CLI install), not only
+// when the process runs from a project root that contains .claude/skills/.
+const GENERATE_TOKENS_SCRIPT = path.resolve(__dirname, '..', '..', 'design-system', 'scripts', 'generate-tokens.cjs');
 
 /**
  * Extract color info from brand guidelines markdown
@@ -96,15 +99,34 @@ function generateColorScale(baseHex, darkHex, lightHex) {
 }
 
 /**
- * Adjust hex color brightness
+ * Adjust hex color brightness.
+ *
+ * Blends each channel proportionally toward white (percent > 0) or toward
+ * black (percent < 0) instead of adding/subtracting a flat 255*percent to
+ * every channel. The flat-shift approach clamped all three channels to 0
+ * (or 255) whenever the base color's channels were already low (or high)
+ * relative to the shift — e.g. darkening a dark brand color like #4A3228
+ * by -0.3/-0.45/-0.6 produced #000000 for all three, collapsing shades
+ * 700/800/900 into an identical, useless black.
  */
 function adjustBrightness(hex, percent) {
   if (typeof hex !== 'string') return '#000000';
   const num = parseInt(hex.replace('#', ''), 16);
-  const r = Math.min(255, Math.max(0, (num >> 16) + Math.round(255 * percent)));
-  const g = Math.min(255, Math.max(0, ((num >> 8) & 0x00FF) + Math.round(255 * percent)));
-  const b = Math.min(255, Math.max(0, (num & 0x0000FF) + Math.round(255 * percent)));
-  return `#${((r << 16) | (g << 8) | b).toString(16).padStart(6, '0').toUpperCase()}`;
+  const r = (num >> 16) & 0xFF;
+  const g = (num >> 8) & 0xFF;
+  const b = num & 0xFF;
+
+  const adjustChannel = (channel) => {
+    const adjusted = percent >= 0
+      ? channel + (255 - channel) * percent
+      : channel * (1 + percent);
+    return Math.min(255, Math.max(0, Math.round(adjusted)));
+  };
+
+  const newR = adjustChannel(r);
+  const newG = adjustChannel(g);
+  const newB = adjustChannel(b);
+  return `#${((newR << 16) | (newG << 8) | newB).toString(16).padStart(6, '0').toUpperCase()}`;
 }
 
 /**
@@ -229,7 +251,7 @@ function main() {
   console.log(`✅ Updated: ${DESIGN_TOKENS_JSON}`);
 
   // Regenerate CSS
-  const generateScript = path.resolve(process.cwd(), GENERATE_TOKENS_SCRIPT);
+  const generateScript = GENERATE_TOKENS_SCRIPT;
   if (fs.existsSync(generateScript)) {
     try {
       execFileSync('node', [generateScript, '--config', DESIGN_TOKENS_JSON, '-o', DESIGN_TOKENS_CSS], {
@@ -240,6 +262,8 @@ function main() {
     } catch (e) {
       console.error('⚠️  Failed to regenerate CSS:', e.message);
     }
+  } else {
+    console.warn(`⚠️  design-system sub-skill not found at ${generateScript}; ${DESIGN_TOKENS_CSS} not regenerated`);
   }
 
   console.log('\n✨ Brand sync complete!');
