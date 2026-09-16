@@ -4,7 +4,7 @@
     "name": "sgomez-dev"
   },
   "metadata": {
-    "description": "326 battle-tested slash commands for Claude Code — sales, product, data, finance, ai, git, security, testing, devops, web, and more.",
+    "description": "327 battle-tested slash commands for Claude Code — sales, product, data, finance, ai, git, security, testing, devops, web, and more.",
     "version": "2.0.0"
   },
   "plugins": [
@@ -300,7 +300,7 @@
     },
     {
       "name": "automation-skills",
-      "description": "9 automation skills — web scraping, LLM extraction, browser & workflow automation, email, reports, PDF, spreadsheets, scheduling",
+      "description": "10 automation skills — web scraping, site-wide markdown crawls, LLM extraction, browser & workflow automation, email, reports, PDF, spreadsheets, scheduling",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/sgomez-dev/claude-skills.git",

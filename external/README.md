@@ -28,7 +28,7 @@ Two formats, two install targets, two directories:
 
 ## Currently vendored
 
-36 skills from 8 upstream repos, ~15 MB. Grouped by source:
+107 skills from 13 upstream repos, ~34 MB. Grouped by source:
 
 | Upstream | License | Skills |
 |----------|---------|--------|
@@ -40,6 +40,11 @@ Two formats, two install targets, two directories:
 | [AgriciDaniel/banana-claude](https://github.com/AgriciDaniel/banana-claude) | MIT | `banana` |
 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Apache-2.0 | `agent-browser` |
 | [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) | MIT | `agent-reach` |
+| [higgsfield-ai/skills](https://github.com/higgsfield-ai/skills) | MIT | `higgsfield-brandkit` `higgsfield-generate` `higgsfield-marketplace-cards` `higgsfield-product-photoshoot` `higgsfield-soul-id` `higgsfield-video-explainer` `higgsfield-websites` `higgsfield-youtube-thumbnail` |
+| [AgriciDaniel/claude-ads](https://github.com/AgriciDaniel/claude-ads) | MIT | `ads` plus 33 `ads-*` — `ads-google` `ads-meta` `ads-tiktok` `ads-linkedin` `ads-amazon` `ads-apple` `ads-microsoft` `ads-reddit` `ads-pinterest` `ads-snapchat` `ads-x` `ads-youtube` `ads-attribution` `ads-audit` `ads-budget` `ads-competitor` `ads-create` `ads-creative` `ads-dna` `ads-generate` `ads-landing` `ads-launch` `ads-math` `ads-monitor` `ads-optimize` `ads-photoshoot` `ads-plan` `ads-report` `ads-research` `ads-server-side-tracking` `ads-setup` `ads-test` `ads-validate` |
+| [Jakeschincariol/instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill) | MIT | `ig-audit` `ig-caption` `ig-carousel` `ig-comment` `ig-dm` `ig-human` `ig-plan` `ig-profile` `ig-reel` `ig-reply` `ig-repurpose` `ig-story` `ig-viral` |
+| [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | Apache-2.0 | `hyperframes` `hyperframes-animation` `hyperframes-audio` `hyperframes-cli` `hyperframes-core` `hyperframes-creative` `hyperframes-keyframes` `hyperframes-registry` `embedded-captions` `faceless-explainer` `figma` `general-video` `media-use` `motion-graphics` `music-to-video` |
+| [oso95/scroll-world](https://github.com/oso95/scroll-world) | MIT | `scroll-world` |
 
 Each directory carries an `UPSTREAM.md` recording the exact vendored commit, and
 the upstream `LICENSE`.
@@ -51,11 +56,16 @@ they do anything useful:
 
 | Skill | Needs |
 |-------|-------|
-| `impeccable` | Node — ships ~107 `.mjs`/`.js` files (browser automation, antipattern detectors, hooks). Talks to `https://impeccable.style/api`, overridable via `IMPECCABLE_API_URL` |
+| `impeccable` | Node — ships a packaged CLI (`scripts/impeccable`, `scripts/impeccable.cmd`) plus browser helpers. Talks to `https://impeccable.style/api`, overridable via `IMPECCABLE_API_URL` |
 | `agent-browser` | The `agent-browser` npm CLI — the skill is a thin front end for it |
 | `agent-reach` | Its Python package installed separately |
 | `banana` | A Gemini API key; ships Python scripts |
 | `ui-ux-pro-max`, `ui-styling`, `design`, `design-system` | Python for their helper scripts; ship large data assets (Google Fonts CSV, Phosphor icon JSON) |
+| `higgsfield-*` (all 8) | The `higgsfield` CLI and a Higgsfield account. **Each one instructs a `curl … \| sh` install** of `higgsfield-ai/cli` — first-party and gated on "install it only after permission", but it is the pattern this repo's safety lint forbids inside `skills/`, and `external/` is not scanned. Install the CLI yourself if you would rather not have a skill do it |
+| `ads`, `ads-*` (34) | Per-platform ad-account API credentials. `ads-research` references the repo-root `claude_ads_core` Python package, which does not travel with a per-skill vendored subpath — clone upstream separately if you need that one at full strength |
+| `ig-*` (13) | Python helpers; Instagram/Meta credentials for anything that touches a real account |
+| `media-use` | The `heygen` CLI (`node scripts/resolve.mjs --doctor` verifies it). Earlier OpenMontage copies of this skill shipped a `curl … \| bash` install; this upstream does not |
+| `hyperframes*`, `embedded-captions`, `music-to-video` | Node and the hyperframes toolchain; ffmpeg for the video paths |
 
 ### Names are upstream's, not ours
 
@@ -67,6 +77,7 @@ Installed names match upstream exactly, so `animate` installs as `/animate` and
 Two names were changed, both for cause:
 
 - `agent-reach` — upstream's directory is literally `skill`, which would install as `/skill`.
+- The private `seedance-*` entries — upstream numbers its directories (`01-cinematic` … `15-real-estate`), which would install as `/01-cinematic`. Each of those `SKILL.md` files already declares `name: seedance-…` in its frontmatter, so the directory is renamed to match what upstream itself calls the skill.
 - Nothing else. Renaming diverges from upstream's own docs, so it needs a reason.
 
 `sync-external.sh` refuses a manifest with duplicate names rather than letting a
@@ -95,10 +106,21 @@ only difference is what gets committed. `sync-external.sh` marks private entries
 Because `sources.local.txt` is gitignored it exists only on the machine that
 created it — **keep your own backup** if the selection matters to you.
 
-Currently 55 private skills from 4 repos: `vercel-labs/agent-skills` (9, no
-license), `AccessLint/skills` (5, no license), `bencium/bencium-marketplace`
-(16, no license), and a 25-skill selection from `calesthio/OpenMontage`
-(AGPL-3.0 — Three.js, Remotion, Motion, video and dataviz skills).
+Sources tracked privately so far — 73 skills from 5 repos:
+
+| Upstream | Why private | Skills |
+|----------|-------------|--------|
+| `vercel-labs/agent-skills` | no LICENSE | 9 — react/next, UI and prose review |
+| `AccessLint/skills` | no LICENSE | 5 — WCAG 2.2 audit tiers |
+| `bencium/bencium-marketplace` | no LICENSE | 16 — UX lenses, EU AI Act, AEO |
+| `calesthio/OpenMontage` | AGPL-3.0 | 25 of ~88 — Three.js, Remotion, Motion, video, dataviz |
+| `AKCodez/higgsfield-claude-skills` | no LICENSE | 18 of 19 — Seedance/Higgsfield UGC ad pipeline, driven through Playwright browser automation |
+
+Because the manifest is gitignored, **each machine holds whatever its own
+`sources.local.txt` lists** — a fresh clone starts with none of them, and a
+clone that wrote only part of this table has only that part. The table records
+what has been selected, not what any given checkout currently has on disk; run
+`./scripts/sync-external.sh --list` to see the truth for this machine.
 
 **Moving an entry from `sources.local.txt` to `sources.txt` publishes it.** Only
 do that once upstream has a license that permits it.
@@ -120,6 +142,14 @@ them forward:
 
 # What's in the manifest, and at which commit
 ./scripts/sync-external.sh --list
+```
+
+On **Windows**, `heygen-com/hyperframes` contains paths longer than the 260-char
+default limit, and the clone inside the sync fails before it can vendor anything.
+Enable long paths for that one run without touching your global git config:
+
+```bash
+GIT_CONFIG_COUNT=1 GIT_CONFIG_KEY_0=core.longpaths GIT_CONFIG_VALUE_0=true ./scripts/sync-external.sh
 ```
 
 Then review and commit like any other change:

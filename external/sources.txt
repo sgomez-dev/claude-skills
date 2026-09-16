@@ -113,3 +113,115 @@ agent-browser|https://github.com/vercel-labs/agent-browser.git|main|skills/agent
 #  package that must be installed separately.
 # ---------------------------------------------------------------------------
 agent-reach|https://github.com/Panniantong/Agent-Reach.git|main|agent_reach/skill
+
+# ---------------------------------------------------------------------------
+#  higgsfield-ai/skills — MIT
+#  Higgsfield's own skills: image/video generation, brand kits, product
+#  photoshoots, Soul ID characters, marketplace cards, site and thumbnail
+#  generation. Ships Python helpers and expects a Higgsfield API key.
+# ---------------------------------------------------------------------------
+higgsfield-brandkit|https://github.com/higgsfield-ai/skills.git|main|higgsfield-brandkit
+higgsfield-generate|https://github.com/higgsfield-ai/skills.git|main|higgsfield-generate
+higgsfield-marketplace-cards|https://github.com/higgsfield-ai/skills.git|main|higgsfield-marketplace-cards
+higgsfield-product-photoshoot|https://github.com/higgsfield-ai/skills.git|main|higgsfield-product-photoshoot
+higgsfield-soul-id|https://github.com/higgsfield-ai/skills.git|main|higgsfield-soul-id
+higgsfield-video-explainer|https://github.com/higgsfield-ai/skills.git|main|higgsfield-video-explainer
+higgsfield-websites|https://github.com/higgsfield-ai/skills.git|main|higgsfield-websites
+higgsfield-youtube-thumbnail|https://github.com/higgsfield-ai/skills.git|main|higgsfield-youtube-thumbnail
+
+# ---------------------------------------------------------------------------
+#  AgriciDaniel/claude-ads — MIT
+#  Paid-media operating system: one conductor skill plus per-platform audits,
+#  budget/attribution math, creative production and reporting. Same author as
+#  banana-claude above. Ships ~76 Python files and expects platform API
+#  credentials. Note: ads-research references the repo-root claude_ads_core
+#  package, which does not travel with a per-skill vendored subpath — install
+#  the upstream repo separately if you need that one at full strength.
+# ---------------------------------------------------------------------------
+ads|https://github.com/AgriciDaniel/claude-ads.git|main|ads
+ads-amazon|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-amazon
+ads-apple|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-apple
+ads-attribution|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-attribution
+ads-audit|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-audit
+ads-budget|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-budget
+ads-competitor|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-competitor
+ads-create|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-create
+ads-creative|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-creative
+ads-dna|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-dna
+ads-generate|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-generate
+ads-google|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-google
+ads-landing|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-landing
+ads-launch|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-launch
+ads-linkedin|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-linkedin
+ads-math|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-math
+ads-meta|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-meta
+ads-microsoft|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-microsoft
+ads-monitor|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-monitor
+ads-optimize|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-optimize
+ads-photoshoot|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-photoshoot
+ads-pinterest|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-pinterest
+ads-plan|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-plan
+ads-reddit|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-reddit
+ads-report|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-report
+ads-research|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-research
+ads-server-side-tracking|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-server-side-tracking
+ads-setup|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-setup
+ads-snapchat|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-snapchat
+ads-test|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-test
+ads-tiktok|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-tiktok
+ads-validate|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-validate
+ads-x|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-x
+ads-youtube|https://github.com/AgriciDaniel/claude-ads.git|main|skills/ads-youtube
+
+# ---------------------------------------------------------------------------
+#  Jakeschincariol/instagram-agent-skill — MIT
+#  Instagram content operation: audits, planning, captions, carousels, reels,
+#  stories, DMs and reply handling. Ships a few Python helpers.
+# ---------------------------------------------------------------------------
+ig-audit|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-audit
+ig-caption|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-caption
+ig-carousel|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-carousel
+ig-comment|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-comment
+ig-dm|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-dm
+ig-human|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-human
+ig-plan|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-plan
+ig-profile|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-profile
+ig-reel|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-reel
+ig-reply|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-reply
+ig-repurpose|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-repurpose
+ig-story|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-story
+ig-viral|https://github.com/Jakeschincariol/instagram-agent-skill.git|main|skills/ig-viral
+
+# ---------------------------------------------------------------------------
+#  oso95/scroll-world — MIT
+#  Scroll-scrubbed "fly through the world" landing pages: one continuous
+#  camera flight through generated scenes, no cuts. creativetimofficial/
+#  scroll-world is the same tree at the same commit — vendoring both would
+#  collide on the name, so only the upstream the README points at is tracked.
+# ---------------------------------------------------------------------------
+scroll-world|https://github.com/oso95/scroll-world.git|main|skills/scroll-world
+
+# ---------------------------------------------------------------------------
+#  heygen-com/hyperframes — Apache-2.0
+#  Programmatic video: the hyperframes engine (core, animation, audio,
+#  keyframes, registry, CLI) plus captions, motion graphics, music videos and
+#  faceless explainers. Only skills/ is vendored — the repo is ~198 MB and
+#  .claude/skills/ holds a different, editorial set. media-use drives the
+#  heygen CLI; earlier OpenMontage copies of it shipped a curl|bash install,
+#  this upstream does not.
+# ---------------------------------------------------------------------------
+embedded-captions|https://github.com/heygen-com/hyperframes.git|main|skills/embedded-captions
+faceless-explainer|https://github.com/heygen-com/hyperframes.git|main|skills/faceless-explainer
+figma|https://github.com/heygen-com/hyperframes.git|main|skills/figma
+general-video|https://github.com/heygen-com/hyperframes.git|main|skills/general-video
+hyperframes|https://github.com/heygen-com/hyperframes.git|main|skills/hyperframes
+hyperframes-animation|https://github.com/heygen-com/hyperframes.git|main|skills/hyperframes-animation
+hyperframes-audio|https://github.com/heygen-com/hyperframes.git|main|skills/hyperframes-audio
+hyperframes-cli|https://github.com/heygen-com/hyperframes.git|main|skills/hyperframes-cli
+hyperframes-core|https://github.com/heygen-com/hyperframes.git|main|skills/hyperframes-core
+hyperframes-creative|https://github.com/heygen-com/hyperframes.git|main|skills/hyperframes-creative
+hyperframes-keyframes|https://github.com/heygen-com/hyperframes.git|main|skills/hyperframes-keyframes
+hyperframes-registry|https://github.com/heygen-com/hyperframes.git|main|skills/hyperframes-registry
+media-use|https://github.com/heygen-com/hyperframes.git|main|skills/media-use
+motion-graphics|https://github.com/heygen-com/hyperframes.git|main|skills/motion-graphics
+music-to-video|https://github.com/heygen-com/hyperframes.git|main|skills/music-to-video
