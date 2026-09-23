@@ -1,54 +1,91 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Skills-327-blue?style=for-the-badge" alt="327 Skills" />
-  <img src="https://img.shields.io/badge/Tested-CI_Validated-brightgreen?style=for-the-badge" alt="CI Tested" />
-  <img src="https://img.shields.io/badge/Permissions-100%25_Declared-brightgreen?style=for-the-badge" alt="Permissions" />
-  <img src="https://img.shields.io/badge/Pipelines-7-purple?style=for-the-badge" alt="7 Pipelines" />
-  <img src="https://img.shields.io/github/license/santiago-gomez/claude-skills?style=for-the-badge" alt="License" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Claude_Code-Compatible-blueviolet?style=flat-square&logo=anthropic" alt="Claude Code" />
-  <img src="https://img.shields.io/badge/Cursor-Compatible-orange?style=flat-square" alt="Cursor" />
-  <img src="https://img.shields.io/badge/Windsurf-Compatible-teal?style=flat-square" alt="Windsurf" />
-  <img src="https://img.shields.io/badge/Codex-Compatible-green?style=flat-square" alt="Codex" />
+  <a href="https://github.com/sgomez-dev/claude-skills/raw/main/docs/assets/claude-skills.mp4">
+    <img src="docs/assets/claude-skills-poster.jpg" width="290" alt="Claude Skills trailer: nobody knows everything, and neither does your agent" />
+  </a>
 </p>
 
 <h1 align="center">Claude Skills</h1>
 
 <p align="center">
-  <strong>The only skills collection where every skill is tested, permission-scoped, and composable.</strong><br/>
-  327 skills across 32 categories. 7 pipelines. Full CI validation. Zero trust assumptions.
+  <strong>Nobody knows everything. Your agent doesn't either.</strong><br/>
+  327 specialists you can put to work inside Claude Code, one command each.
 </p>
 
 <p align="center">
-  <a href="#quick-install">Quick Install</a> &bull;
-  <a href="#what-makes-this-different">Why This One</a> &bull;
-  <a href="#all-327-skills">Browse Skills</a> &bull;
-  <a href="#web--ui-6----landing-pages-spas-animations-design-systems">Web & UI</a> &bull;
+  <a href="https://github.com/sgomez-dev/claude-skills/raw/main/docs/assets/claude-skills.mp4"><b>Watch the 22 second trailer</b></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Skills-327-D97757?style=for-the-badge" alt="327 skills" />
+  <img src="https://img.shields.io/badge/Categories-32-7C5CFF?style=for-the-badge" alt="32 categories" />
+  <img src="https://img.shields.io/badge/Permissions-100%25_declared-3FB950?style=for-the-badge" alt="100% of skills declare their permissions" />
+  <img src="https://img.shields.io/badge/Tested-every_skill-3FB950?style=for-the-badge" alt="Every skill is tested in CI" />
+  <img src="https://img.shields.io/badge/Pipelines-7-8A8A94?style=for-the-badge" alt="7 pipelines" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Claude_Code-works-blueviolet?style=flat-square&logo=anthropic" alt="Claude Code" />
+  <img src="https://img.shields.io/badge/Cursor-works-orange?style=flat-square" alt="Cursor" />
+  <img src="https://img.shields.io/badge/Windsurf-works-teal?style=flat-square" alt="Windsurf" />
+  <img src="https://img.shields.io/badge/Codex-works-green?style=flat-square" alt="Codex" />
+</p>
+
+<p align="center">
+  <a href="#install-it-in-30-seconds">Install</a> &bull;
+  <a href="#pick-your-world">Pick your world</a> &bull;
+  <a href="#every-skill-tells-you-what-it-can-touch">Permissions</a> &bull;
+  <a href="#all-327-skills">Browse all 327</a> &bull;
   <a href="#pipelines">Pipelines</a> &bull;
   <a href="#plugin-marketplace">Marketplace</a> &bull;
-  <a href="#cross-platform">Cross-Platform</a>
+  <a href="#faq">FAQ</a>
 </p>
 
 ---
 
-## What Makes This Different
+## Install it in 30 seconds
 
-> **The problem:** 36% of skills in public registries have security flaws. 76 were found to be [genuinely malicious](https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/). Skills don't fire reliably. No repo tests their skills. You install and pray.
+```
+/plugin marketplace add sgomez-dev/claude-skills
+/plugin install git-skills@claude-skills-collection
+```
 
-**We fix all of that.**
+That is it. Type `/` in Claude Code and your new experts are waiting in the list.
 
-| Feature | Other Repos | This Repo |
-|---------|------------|-----------|
-| **Permission manifests** | None declare what skills can do | Every skill declares reads, writes, commands, network, destructive |
-| **Test harness** | No testing, no validation | CI pipeline validates structure, safety, and trigger quality |
-| **Safety linting** | No scanning for dangerous patterns | Automated detection of `rm -rf`, `curl\|bash`, `chmod 777`, credential leaks |
-| **Pipelines** | Skills are isolated, one-shot | 7 pre-built pipelines chain skills into end-to-end workflows |
-| **Smart Router** | Install 100 skills, all active always | `/meta--skills-init` detects your stack, activates only relevant skills |
-| **Skill Forge** | Write skills from scratch | `/meta--skill-forge` generates tested, permissioned skills from description |
-| **Project-aware** | Generic prompts for any project | Skills detect your language, framework, ORM, test runner automatically |
+Prefer a script, a single file, or a different agent? [Every other way to install is further down.](#every-way-to-install)
 
-### Permission Manifest (every skill has one)
+---
+
+## Pick your world
+
+This is not a repo of developer tools with a few extras bolted on. 61 of the 327 skills never touch code at all.
+
+| If your day looks like this | Start here | What you get |
+|---|---|---|
+| **You ship software** | `/code-quality--review`, `/testing--test-gen`, `/devops--ci` | Review, tests, pipelines, infra, debugging, releases |
+| **You sell** | `/sales--icp-builder`, `/sales--lead-finder`, `/sales--cold-outreach` | 21 skills from finding a lead to closing the deal |
+| **You run the business** | `/finance--saas-metrics`, `/product--prd`, `/legal--gdpr-audit` | Metrics, roadmaps, pricing, contracts, compliance |
+| **You write and market** | `/content--blog-post`, `/marketing--marketing-audit` | Posts, newsletters, SEO, campaigns, social |
+| **You keep things safe** | `/security--security-audit`, `/security--threat-model` | Audits, threat models, secrets, hardening |
+
+Every skill reads your project first. It knows your language, your framework, your test runner, and your ORM before it says a word.
+
+---
+
+## Every skill tells you what it can touch
+
+Most skill collections ask you to install a black box and hope. [Snyk found that 36% of the skills in public registries have security flaws, and 76 of them were outright malicious.](https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/)
+
+Here, every single skill carries a card that says, before you install it:
+
+| | `/git--commit` |
+|---|---|
+| **Reads** | your git history, nothing else |
+| **Changes** | no files |
+| **Runs** | `git diff`, `git log`, `git commit` |
+| **Uses the internet** | no |
+| **Deletes anything** | no |
+
+That card is not documentation anyone has to remember to update. It lives in the skill file itself, and CI refuses to merge a skill without one:
 
 ```yaml
 ---
@@ -62,13 +99,28 @@ permissions:
 ---
 ```
 
-You know **exactly** what each skill can do before you install it. No other collection offers this.
+No other collection offers this.
 
 ---
 
-## Quick Install
+## Why this one
 
-### Plugin Marketplace (Recommended)
+| | Other collections | This one |
+|---|---|---|
+| **You know what it can do** | No. You install and hope. | Every skill declares what it reads, writes, runs, and deletes. |
+| **Someone checked it works** | No tests, no validation. | CI checks structure, safety, and trigger quality on every skill. |
+| **Dangerous patterns** | Nobody is looking. | Automatic scanning for `rm -rf`, `curl \| bash`, `chmod 777`, leaked credentials. |
+| **Skills work together** | One shot each, on their own. | 7 ready made pipelines chain skills into end to end workflows. |
+| **You install 300 and drown** | Everything is always on. | `/meta--skills-init` reads your project and activates only what fits. |
+| **You need a new one** | Write it from scratch. | `/meta--skill-forge` writes it for you, permissions and tests included. |
+| **It knows your project** | Generic prompts. | Skills detect your stack before they run. |
+
+---
+
+## Every way to install
+
+<details>
+<summary><strong>Plugin marketplace</strong> (recommended)</summary>
 
 ```
 /plugin marketplace add sgomez-dev/claude-skills
@@ -77,21 +129,30 @@ You know **exactly** what each skill can do before you install it. No other coll
 /plugin install testing-skills@claude-skills-collection
 ```
 
-Install individual bundles or all at once. See [all available plugins](#plugin-marketplace).
+Install one bundle or all of them. [See all available bundles.](#plugin-marketplace)
 
-### One-liner — no clone needed (macOS / Linux / Git Bash)
+</details>
+
+<details>
+<summary><strong>One line, no clone</strong> (macOS, Linux, Git Bash)</summary>
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/sgomez-dev/claude-skills/main/install.sh | bash
 ```
 
-### One-liner — no clone needed (Windows PowerShell)
+</details>
+
+<details>
+<summary><strong>One line, no clone</strong> (Windows PowerShell)</summary>
 
 ```powershell
 irm https://raw.githubusercontent.com/sgomez-dev/claude-skills/main/install.ps1 | iex
 ```
 
-### Install a single skill (no clone, no installer)
+</details>
+
+<details>
+<summary><strong>Just one skill</strong> (no clone, no installer)</summary>
 
 ```bash
 # Example: just the animations skill
@@ -99,31 +160,39 @@ curl -fsSL https://raw.githubusercontent.com/sgomez-dev/claude-skills/main/skill
   -o ~/.claude/commands/web--animations.md
 ```
 
-### Clone + install (if you want to customize)
+</details>
+
+<details>
+<summary><strong>Clone and install</strong> (if you want to customize)</summary>
 
 ```bash
 git clone https://github.com/sgomez-dev/claude-skills.git
 cd claude-skills && ./install.sh
 ```
 
-### Windows PowerShell (clone)
+Windows PowerShell:
 
 ```powershell
 git clone https://github.com/sgomez-dev/claude-skills.git
 cd claude-skills; .\install.ps1
 ```
 
-### Manual (single skill)
+</details>
+
+<details>
+<summary><strong>Copy a file by hand</strong></summary>
 
 ```bash
 cp skills/git/commit.md ~/.claude/commands/git--commit.md
 ```
 
+</details>
+
 ---
 
 ## All 327 Skills
 
-327 skills across 32 categories. Click any group to expand its command table.
+Every one of them, grouped by what you would be doing. Click a group to open its table.
 
 ### Engineering & Data
 
@@ -132,22 +201,22 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 
 | Command | What It Does |
 |---------|-------------|
-| `web--animated-components` | Pre-built animated React components — Magic UI (150+ shadcn/Tailwind) and React Bits (90+ effects) |
-| `web--animations` | Build cinematic, world-class web animations — 3D models, horizontal scroll, WebGL, particles, shaders, and more |
-| `web--awwwards-animations` | Awwwards-level React animations — GSAP, Motion, Anime.js, Lenis smooth scroll, ScrollTrigger, magnetic effects |
-| `web--conversion-optimizer` | Audit and optimize a landing page or web app for conversions — copy, layout, UX, and trust |
-| `web--design-engineering` | Design engineering — UI polish, animation decisions, and invisible details that make interfaces feel great (Emil Kowalski) |
+| `web--animated-components` | Pre-built animated React components: Magic UI (150+ shadcn/Tailwind) and React Bits (90+ effects) |
+| `web--animations` | Build cinematic, world-class web animations: 3D models, horizontal scroll, WebGL, particles, shaders, and more |
+| `web--awwwards-animations` | Awwwards-level React animations: GSAP, Motion, Anime.js, Lenis smooth scroll, ScrollTrigger, magnetic effects |
+| `web--conversion-optimizer` | Audit and optimize a landing page or web app for conversions: copy, layout, UX, and trust |
+| `web--design-engineering` | Design engineering: UI polish, animation decisions, and invisible details that make interfaces feel great (Emil Kowalski) |
 | `web--design-system` | Create a complete, opinionated design system with tokens, typography, color, and components |
-| `web--graphic-design` | AI Design Studio — generate production-quality mockups, social graphics, brand kits, pitch decks, infographics, and more from natural language prompts |
-| `web--gsap-creative-gallery` | GSAP creative galleries — infinite scroll, masonry animations, lightbox transitions, FLIP layouts, and interactive image showcases |
-| `web--gsap-hero-cinematic` | GSAP cinematic hero sections — layered reveals, 3D parallax, animated typography, video backgrounds, and immersive landing experiences |
-| `web--gsap-micro-interactions` | Premium micro-interactions — GSAP custom cursors, magnetic buttons, tilt cards, spotlight effects, button animations, scroll indicators |
-| `web--gsap-page-transitions` | GSAP page transitions — route animations, shared element transitions, overlay wipes, and seamless navigation effects |
-| `web--gsap-preloader` | GSAP preloaders — progress bars, animated logos, skeleton screens, number counters, and cinematic loading sequences |
-| `web--gsap-scroll-experience` | GSAP ScrollTrigger scroll-driven animations — parallax, pinning, horizontal scroll, scrub timelines, scroll velocity effects |
-| `web--gsap-svg-morphing` | SVG morphing & shape animations — GSAP path drawing, shape morphing, animated icons, blob shapes, wave dividers, motion paths |
-| `web--gsap-text-fx` | Advanced kinetic typography — GSAP text split, scramble, liquid, glitch, 3D rotation, gradient sweep, curved path text |
-| `web--landing-page` | Generate a world-class landing page — unique, crafted, high-converting, never AI-looking |
+| `web--graphic-design` | AI Design Studio: generate production-quality mockups, social graphics, brand kits, pitch decks, infographics, and more from natural language prompts |
+| `web--gsap-creative-gallery` | GSAP creative galleries: infinite scroll, masonry animations, lightbox transitions, FLIP layouts, and interactive image showcases |
+| `web--gsap-hero-cinematic` | GSAP cinematic hero sections: layered reveals, 3D parallax, animated typography, video backgrounds, and immersive landing experiences |
+| `web--gsap-micro-interactions` | Premium micro-interactions: GSAP custom cursors, magnetic buttons, tilt cards, spotlight effects, button animations, scroll indicators |
+| `web--gsap-page-transitions` | GSAP page transitions: route animations, shared element transitions, overlay wipes, and seamless navigation effects |
+| `web--gsap-preloader` | GSAP preloaders: progress bars, animated logos, skeleton screens, number counters, and cinematic loading sequences |
+| `web--gsap-scroll-experience` | GSAP ScrollTrigger scroll-driven animations: parallax, pinning, horizontal scroll, scrub timelines, scroll velocity effects |
+| `web--gsap-svg-morphing` | SVG morphing & shape animations: GSAP path drawing, shape morphing, animated icons, blob shapes, wave dividers, motion paths |
+| `web--gsap-text-fx` | Advanced kinetic typography: GSAP text split, scramble, liquid, glitch, 3D rotation, gradient sweep, curved path text |
+| `web--landing-page` | Generate a world-class landing page: unique, crafted, high-converting, never AI-looking |
 | `web--spa-scaffold` | Scaffold a production-grade SPA with elite architecture, stunning UI, and real-world patterns |
 | `web--ui-components-pro` | Build elite UI components with animations, compound patterns, and zero AI-looking aesthetics |
 
@@ -209,9 +278,9 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 | Command | What It Does |
 |---------|-------------|
 | `testing--contract-testing` | Add consumer-driven contract tests (Pact-style) between services |
-| `testing--load-testing` | Load-test setup — choose k6/Locust/Artillery, scenarios, thresholds, CI gate |
+| `testing--load-testing` | Load-test setup: choose k6/Locust/Artillery, scenarios, thresholds, CI gate |
 | `testing--mutation-testing` | Set up mutation testing, interpret surviving mutants, and harden weak tests |
-| `testing--playwright-mcp` | Playwright MCP browser automation — navigate, click, fill forms, debug, take screenshots |
+| `testing--playwright-mcp` | Playwright MCP browser automation: navigate, click, fill forms, debug, take screenshots |
 | `testing--snapshot-update` | Review and update test snapshots intelligently |
 | `testing--test-coverage` | Analyze test coverage gaps and generate tests to fill them |
 | `testing--test-e2e` | Generate end-to-end tests for user workflows |
@@ -261,7 +330,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 | `docs--onboarding-guide` | Generate a developer onboarding guide from the actual repo setup |
 | `docs--openapi-gen` | Generate or update OpenAPI/Swagger specification from code |
 | `docs--readme-gen` | Generate a professional README.md for the project |
-| `docs--video-spec` | Motion design video specs — scene breakdowns, timing, audio strategy, animation principles |
+| `docs--video-spec` | Motion design video specs: scene breakdowns, timing, audio strategy, animation principles |
 
 </details>
 
@@ -295,7 +364,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 | `devops--docker-compose` | Generate docker-compose.yml for local development or production |
 | `devops--dockerfile` | Generate or optimize a production-ready Dockerfile |
 | `devops--github-actions` | Generate GitHub Actions workflows for CI, CD, auto-labeling, and automation |
-| `devops--gitops` | Set up GitOps with ArgoCD or Flux — repo structure, sync policies, safe rollbacks |
+| `devops--gitops` | Set up GitOps with ArgoCD or Flux: repo structure, sync policies, safe rollbacks |
 | `devops--helm-chart` | Build a Helm chart with clean templates, values, dependencies, lint, release strategy |
 | `devops--k8s` | Generate Kubernetes manifests for deploying the application |
 | `devops--nginx` | Generate optimized Nginx configuration |
@@ -380,14 +449,14 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 |---------|-------------|
 | `scaffold--component` | Generate a complete React/Vue/Svelte component with types, tests, and stories |
 | `scaffold--component-3d` | Generate a 3D component (React Three Fiber, Three.js, Babylon.js) with types, animations, and controls |
-| `scaffold--create-video` | Bootstrap a NEW video project from scratch with npx create-video — picks the right Remotion template, scaffolds, and customizes it ready to preview |
+| `scaffold--create-video` | Bootstrap a NEW video project from scratch with npx create-video: picks the right Remotion template, scaffolds, and customizes it ready to preview |
 | `scaffold--fullstack` | Scaffold a complete full-stack feature across frontend, backend, and database |
 | `scaffold--hook` | Generate a custom React hook with proper types and tests |
 | `scaffold--middleware` | Generate middleware for authentication, logging, validation, etc. |
 | `scaffold--model` | Generate a data model with validation, serialization, and database integration |
-| `scaffold--remotion` | Remotion video creation in React — compositions, animations, audio, transitions, text effects |
+| `scaffold--remotion` | Remotion video creation in React: compositions, animations, audio, transitions, text effects |
 | `scaffold--scaffold` | Scaffold a complete project structure from scratch |
-| `scaffold--startup-generator` | Generador completo de startup/SaaS — 10 agentes especializados en paralelo + PowerPoint con plan de negocio |
+| `scaffold--startup-generator` | Generador completo de startup/SaaS: 10 agentes especializados en paralelo + PowerPoint con plan de negocio |
 
 </details>
 
@@ -417,15 +486,15 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 | Command | What It Does |
 |---------|-------------|
 | `cloud--autoscaling-strategy` | Design autoscaling: metrics, policies, warm pools, load-testing validation |
-| `cloud--aws-architect` | Design an AWS architecture for this app — service choices, diagram, IaC starter |
-| `cloud--azure-architect` | Design an Azure architecture for this app — service choices, diagram, IaC starter |
-| `cloud--cloud-cost-audit` | Audit cloud costs from billing exports and IaC — find waste, rightsize, plan savings |
-| `cloud--cloud-migration` | Plan a migration to the cloud — assessment, 6 Rs strategy, phased plan, rollback |
-| `cloud--disaster-recovery` | Build a DR plan — RTO/RPO targets, backup strategy, failover runbook, test schedule |
-| `cloud--gcp-architect` | Design a GCP architecture for this app — service choices, diagram, IaC starter |
+| `cloud--aws-architect` | Design an AWS architecture for this app: service choices, diagram, IaC starter |
+| `cloud--azure-architect` | Design an Azure architecture for this app: service choices, diagram, IaC starter |
+| `cloud--cloud-cost-audit` | Audit cloud costs from billing exports and IaC: find waste, rightsize, plan savings |
+| `cloud--cloud-migration` | Plan a migration to the cloud: assessment, 6 Rs strategy, phased plan, rollback |
+| `cloud--disaster-recovery` | Build a DR plan: RTO/RPO targets, backup strategy, failover runbook, test schedule |
+| `cloud--gcp-architect` | Design a GCP architecture for this app: service choices, diagram, IaC starter |
 | `cloud--iam-least-privilege` | Audit IAM policies and generate least-privilege replacements you review and apply |
 | `cloud--infra-diagram` | Generate infrastructure diagrams (Mermaid) from IaC and config files |
-| `cloud--serverless-api` | Build a serverless API — functions, routing, cold-start mitigation, local dev setup |
+| `cloud--serverless-api` | Build a serverless API: functions, routing, cold-start mitigation, local dev setup |
 
 </details>
 
@@ -476,14 +545,14 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 
 | Command | What It Does |
 |---------|-------------|
-| `ml--dataset-prep` | Prepare a dataset for ML — cleaning, splits, leakage checks, balance, versioning |
-| `ml--feature-engineering` | Engineer features with leakage-safe pipelines — encodings, scaling, interactions |
-| `ml--mlops-pipeline` | Set up MLOps — experiment tracking, model registry, CI for models, reproducibility |
+| `ml--dataset-prep` | Prepare a dataset for ML: cleaning, splits, leakage checks, balance, versioning |
+| `ml--feature-engineering` | Engineer features with leakage-safe pipelines: encodings, scaling, interactions |
+| `ml--mlops-pipeline` | Set up MLOps: experiment tracking, model registry, CI for models, reproducibility |
 | `ml--model-deployment` | Deploy an ML model: serving pattern (batch/online), API, monitoring, drift detection |
-| `ml--model-evaluation` | Evaluate a model properly — right metrics, calibration, slices, error analysis |
-| `ml--model-training` | Train a model — baseline first, framework choice, cross-validation, tuning |
+| `ml--model-evaluation` | Evaluate a model properly: right metrics, calibration, slices, error analysis |
+| `ml--model-training` | Train a model: baseline first, framework choice, cross-validation, tuning |
 | `ml--recommender-system` | Build a recommender: collaborative/content/hybrid choice, cold start, evaluation |
-| `ml--time-series-forecast` | Forecast time series — naive baselines, seasonality, backtesting, intervals |
+| `ml--time-series-forecast` | Forecast time series: naive baselines, seasonality, backtesting, intervals |
 
 </details>
 
@@ -530,16 +599,16 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 
 | Command | What It Does |
 |---------|-------------|
-| `automation--browser-automation` | Automate a browser task — login flows, form filling, downloads, scheduled runs |
-| `automation--email-automation` | Build email automations — parse inbound mail, templated sending, sequences, unsubscribe |
-| `automation--pdf-processing` | Build PDF workflows — extract text/tables, fill forms, merge/split, OCR fallback |
-| `automation--report-automation` | Automate a recurring report — data pull, template, schedule, delivery channel |
+| `automation--browser-automation` | Automate a browser task: login flows, form filling, downloads, scheduled runs |
+| `automation--email-automation` | Build email automations: parse inbound mail, templated sending, sequences, unsubscribe |
+| `automation--pdf-processing` | Build PDF workflows: extract text/tables, fill forms, merge/split, OCR fallback |
+| `automation--report-automation` | Automate a recurring report: data pull, template, schedule, delivery channel |
 | `automation--scheduled-tasks` | Schedule tasks reliably: cron vs queues, retries, monitoring, timezone traps |
-| `automation--scrape-it-now` | Run a site-wide markdown crawl with scrape-it-now — job config, local vs Azure, indexing |
-| `automation--scrapegraph-scraper` | Build an LLM-powered scraper with scrapegraph-ai — graph choice, Pydantic schemas, token cost |
+| `automation--scrape-it-now` | Run a site-wide markdown crawl with scrape-it-now: job config, local vs Azure, indexing |
+| `automation--scrapegraph-scraper` | Build an LLM-powered scraper with scrapegraph-ai: graph choice, Pydantic schemas, token cost |
 | `automation--spreadsheet-automation` | Automate spreadsheets: formulas, Apps Script/openpyxl, imports, validation |
-| `automation--web-scraper` | Build a polite web scraper — robots.txt, rate limits, selectors, pagination, storage |
-| `automation--workflow-automation` | Design automations for n8n, Zapier, or Make — triggers, steps, error paths, export |
+| `automation--web-scraper` | Build a polite web scraper: robots.txt, rate limits, selectors, pagination, storage |
+| `automation--workflow-automation` | Design automations for n8n, Zapier, or Make: triggers, steps, error paths, export |
 
 </details>
 
@@ -574,7 +643,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 | `utils--env-setup` | Set up environment variables with .env files and validation |
 | `utils--eslint-config` | Generate or optimize ESLint configuration with sensible defaults |
 | `utils--explain` | Explain code in detail - what it does, how it works, and why |
-| `utils--ffmpeg` | FFmpeg video/audio processing — convert, resize, compress, trim, concatenate, platform export |
+| `utils--ffmpeg` | FFmpeg video/audio processing: convert, resize, compress, trim, concatenate, platform export |
 | `utils--gitignore` | Generate a comprehensive .gitignore tailored to the project |
 | `utils--json-tools` | JSON utilities: validate, diff, query with jq, flatten, infer schema |
 | `utils--monorepo` | Set up or optimize monorepo with workspaces, shared configs, and build pipeline |
@@ -587,7 +656,7 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 
 ### Business & Operations
 
-*Skills that go beyond code — the work of actually running a software business.*
+*The work of actually running a software business, not just writing it.*
 
 <details>
 <summary><strong>Sales & Growth (21)</strong></summary>
@@ -623,16 +692,16 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 
 | Command | What It Does |
 |---------|-------------|
-| `product--ab-test-design` | Design an A/B test — hypothesis, metrics, sample size, guardrails, analysis |
-| `product--competitive-teardown` | Deep teardown of a competitor product — onboarding, features, pricing, UX |
-| `product--feature-spec` | Detailed feature spec — user flows, edge cases, acceptance criteria, open questions |
-| `product--launch-plan` | Build a product launch plan — phases, channels, assets, owners, checklist |
+| `product--ab-test-design` | Design an A/B test: hypothesis, metrics, sample size, guardrails, analysis |
+| `product--competitive-teardown` | Deep teardown of a competitor product: onboarding, features, pricing, UX |
+| `product--feature-spec` | Detailed feature spec: user flows, edge cases, acceptance criteria, open questions |
+| `product--launch-plan` | Build a product launch plan: phases, channels, assets, owners, checklist |
 | `product--okr-builder` | Draft objectives and measurable key results from strategy and goals |
-| `product--prd` | Write a full PRD from a feature idea — problem, goals, scope, success metrics |
+| `product--prd` | Write a full PRD from a feature idea: problem, goals, scope, success metrics |
 | `product--pr-faq` | Write an Amazon working-backwards PR/FAQ for a product idea |
 | `product--rice-prioritization` | Score a backlog with RICE and return a ranked, tiered priority list |
 | `product--roadmap` | Build a now/next/later product roadmap from goals, backlog, and constraints |
-| `product--user-interview-guide` | Create a discovery interview script — screener, non-leading questions, probes |
+| `product--user-interview-guide` | Create a discovery interview script: screener, non-leading questions, probes |
 | `product--user-research-synthesis` | Synthesize interview notes and feedback into themes, insights, opportunities |
 | `product--user-stories` | Break an epic or feature into INVEST user stories with acceptance criteria |
 
@@ -678,13 +747,13 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 | Command | What It Does |
 |---------|-------------|
 | `content--blog-post` | Write a technical or business blog post with a real angle and human prose |
-| `content--content-calendar` | Build a content calendar — pillars, cadence, formats mapped to funnel stages |
-| `content--docs-site` | Scaffold a documentation site — tool choice, information architecture, templates |
+| `content--content-calendar` | Build a content calendar: pillars, cadence, formats mapped to funnel stages |
+| `content--docs-site` | Scaffold a documentation site: tool choice, information architecture, templates |
 | `content--newsletter` | Newsletter issue: curation, structure, A/B subject lines, plain-text friendly |
 | `content--seo-content` | SEO brief + article: keyword intent, SERP analysis, headings, internal links |
 | `content--social-posts` | Repurpose one piece of content into native LinkedIn, X, and Instagram posts |
 | `content--technical-writing` | Turn engineering work into a technical article with narrative, diagrams, and code |
-| `content--video-script` | Video script: hook, retention structure, B-roll notes, CTA — short or long form |
+| `content--video-script` | Video script: hook, retention structure, B-roll notes, CTA: short or long form |
 
 </details>
 
@@ -693,14 +762,14 @@ cp skills/git/commit.md ~/.claude/commands/git--commit.md
 
 | Command | What It Does |
 |---------|-------------|
-| `ecommerce--abandoned-cart` | Build abandoned cart recovery — detection, email sequence, incentive logic |
-| `ecommerce--checkout-flow` | Build or audit an optimized checkout — guest flow, payment UX, error recovery |
-| `ecommerce--inventory-management` | Implement inventory — stock tracking, reservations, low-stock alerts, multi-location |
+| `ecommerce--abandoned-cart` | Build abandoned cart recovery: detection, email sequence, incentive logic |
+| `ecommerce--checkout-flow` | Build or audit an optimized checkout: guest flow, payment UX, error recovery |
+| `ecommerce--inventory-management` | Implement inventory: stock tracking, reservations, low-stock alerts, multi-location |
 | `ecommerce--payment-methods` | Add payment methods: cards, wallets, BNPL, and local methods per market |
-| `ecommerce--product-catalog` | Model a product catalog — variants, options, categories, attributes, media |
+| `ecommerce--product-catalog` | Model a product catalog: variants, options, categories, attributes, media |
 | `ecommerce--product-descriptions` | Write conversion-focused product descriptions at scale from specs or a CSV |
-| `ecommerce--shipping-setup` | Set up shipping — zones, rates, carrier integration, tracking notifications |
-| `ecommerce--store-scaffold` | Scaffold an e-commerce store — platform choice, catalog, cart, and checkout shell |
+| `ecommerce--shipping-setup` | Set up shipping: zones, rates, carrier integration, tracking notifications |
+| `ecommerce--store-scaffold` | Scaffold an e-commerce store: platform choice, catalog, cart, and checkout shell |
 
 </details>
 
@@ -768,8 +837,8 @@ Install skill bundles directly in Claude Code:
 Not everything worth using was written here. `external/` vendors third-party skills
 from their upstream repos, kept current with a sync script.
 
-These use the **Agent Skill** format — a directory with `SKILL.md` plus
-`references/` and `workflows/` — rather than this repo's single-file slash-command
+These use the **Agent Skill** format: a directory with `SKILL.md` plus
+`references/` and `workflows/`: rather than this repo's single-file slash-command
 format, so they install to `~/.claude/skills/` and are invoked as `/skill-name`
 (or trigger automatically from their description).
 
@@ -777,21 +846,21 @@ format, so they install to `~/.claude/skills/` and are invoked as `/skill-name`
 
 | Upstream | License | What you get |
 |----------|---------|--------------|
-| [kylezantos/design-motion-principles](https://github.com/kylezantos/design-motion-principles) | MIT | Motion design in two modes — build with purposeful motion, or audit existing animations for AI-slop patterns and emit an HTML report with looping demos |
-| [emilkowalski/skills](https://github.com/emilkowalski/skills) | MIT | 12 skills from the author of Sonner and Vaul — animation craft, Apple design, animation vocabulary, UI library selection, prototyping, Swift |
-| [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | MIT | 12 anti-slop frontend skills — taste, brutalist/minimalist/soft styles, redesigns, image-to-code, brand kits |
-| [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | MIT | 7 design skills — design systems, brand, banners, slides, UI styling |
+| [kylezantos/design-motion-principles](https://github.com/kylezantos/design-motion-principles) | MIT | Motion design in two modes: build with purposeful motion, or audit existing animations for AI-slop patterns and emit an HTML report with looping demos |
+| [emilkowalski/skills](https://github.com/emilkowalski/skills) | MIT | 12 skills from the author of Sonner and Vaul: animation craft, Apple design, animation vocabulary, UI library selection, prototyping, Swift |
+| [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | MIT | 12 anti-slop frontend skills: taste, brutalist/minimalist/soft styles, redesigns, image-to-code, brand kits |
+| [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | MIT | 7 design skills: design systems, brand, banners, slides, UI styling |
 | [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | Apache-2.0 | Design-critique loop with browser automation and antipattern detection |
-| [AgriciDaniel/banana-claude](https://github.com/AgriciDaniel/banana-claude) | MIT | Gemini image generation — presets, batching, cost tracking |
+| [AgriciDaniel/banana-claude](https://github.com/AgriciDaniel/banana-claude) | MIT | Gemini image generation: presets, batching, cost tracking |
 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Apache-2.0 | Driving a browser from an agent |
 | [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) | MIT | Outreach and contact discovery |
-| [higgsfield-ai/skills](https://github.com/higgsfield-ai/skills) | MIT | 8 skills from Higgsfield — image and video generation, brand kits, product photoshoots, Soul ID characters, marketplace cards, sites, thumbnails |
-| [AgriciDaniel/claude-ads](https://github.com/AgriciDaniel/claude-ads) | MIT | 34 paid-media skills — a conductor plus per-platform audits (Google, Meta, TikTok, LinkedIn, Amazon…), budget and attribution math, creative production, reporting |
-| [Jakeschincariol/instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill) | MIT | 13 skills that run an Instagram account — reels, captions, carousels, stories, profile audit, weekly plan, comments, DMs, repurposing, post-mortems, and a humanizer that strips AI slop |
-| [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | Apache-2.0 | 15 programmatic-video skills — the hyperframes engine (core, animation, audio, keyframes, registry, CLI) plus captions, motion graphics, music videos, faceless explainers |
-| [oso95/scroll-world](https://github.com/oso95/scroll-world) | MIT | Scroll-scrubbed "fly through the world" landing pages — one continuous camera flight, no cuts |
+| [higgsfield-ai/skills](https://github.com/higgsfield-ai/skills) | MIT | 8 skills from Higgsfield: image and video generation, brand kits, product photoshoots, Soul ID characters, marketplace cards, sites, thumbnails |
+| [AgriciDaniel/claude-ads](https://github.com/AgriciDaniel/claude-ads) | MIT | 34 paid-media skills: a conductor plus per-platform audits (Google, Meta, TikTok, LinkedIn, Amazon…), budget and attribution math, creative production, reporting |
+| [Jakeschincariol/instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill) | MIT | 13 skills that run an Instagram account: reels, captions, carousels, stories, profile audit, weekly plan, comments, DMs, repurposing, post-mortems, and a humanizer that strips AI slop |
+| [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | Apache-2.0 | 15 programmatic-video skills: the hyperframes engine (core, animation, audio, keyframes, registry, CLI) plus captions, motion graphics, music videos, faceless explainers |
+| [oso95/scroll-world](https://github.com/oso95/scroll-world) | MIT | Scroll-scrubbed "fly through the world" landing pages: one continuous camera flight, no cuts |
 
-`./install.sh` installs these alongside the slash commands — nothing extra to run.
+`./install.sh` installs these alongside the slash commands: nothing extra to run.
 
 Some of them drive an external tool, and vendoring the prompt does not install
 that tool: `impeccable` ships a packaged Node CLI, `agent-browser` needs its npm
@@ -831,7 +900,7 @@ directories still agree.
 
 ### Private skills
 
-Some third-party skills are worth using but not ours to republish — upstream
+Some third-party skills are worth using but not ours to republish: upstream
 ships no LICENSE, or a copyleft one incompatible with this repo's MIT. Those go
 in `external/sources.local.txt` and vendor into `external/.local/`, both
 gitignored. Same sync command, same installer, same `~/.claude/skills/` result —
@@ -850,7 +919,7 @@ name|repo-url|ref|subpath
 ```
 
 `subpath` points at the directory containing `SKILL.md` (`.` if it's at the repo
-root). Read what you vendor before committing it — third-party prompt content runs
+root). Read what you vendor before committing it: third-party prompt content runs
 with your permissions. Full workflow in [external/README.md](external/README.md).
 
 ---
@@ -861,7 +930,7 @@ These skills work across multiple AI coding assistants:
 
 | Platform | Install Method | Guide |
 |----------|---------------|-------|
-| **Claude Code** | `./install.sh` or plugin marketplace | [This README](#quick-install) |
+| **Claude Code** | `./install.sh` or plugin marketplace | [This README](#install-it-in-30-seconds) |
 | **Cursor** | Copy to `.cursor/rules/` as `.mdc` (requires frontmatter conversion) | [Cursor Guide](platforms/cursor.md) |
 | **Windsurf** | Copy to `.windsurf/rules/` | [Windsurf Guide](platforms/windsurf.md) |
 | **Codex** | Concatenate into `AGENTS.md` | [Codex Guide](platforms/codex.md) |
@@ -888,10 +957,10 @@ The skill format (markdown with numbered steps) is intentionally portable. No ve
 ```
 
 Options:
-1. **Global** — All 327 skills in every project
-2. **Project** — All 327 skills in current project only
-3. **Selective** — Pick categories to install
-4. **Uninstall** — Remove all installed skills
+1. **Global**: All 327 skills in every project
+2. **Project**: All 327 skills in current project only
+3. **Selective**: Pick categories to install
+4. **Uninstall**: Remove all installed skills
 
 ### Cherry-Pick
 
@@ -914,7 +983,7 @@ description: Shown in the command palette when you type /
 
 Step-by-step instructions that Claude follows.
 Skills detect your project context (language, framework, patterns)
-automatically — no configuration needed.
+automatically: no configuration needed.
 
 $ARGUMENTS   <-- your input when invoking the command
 ```
@@ -1025,14 +1094,14 @@ These skills are designed for Claude Code's slash command system. For Claude.ai,
 <details>
 <summary><strong>Can I use these with other AI assistants?</strong></summary>
 
-Yes. The skills are just markdown with instructions. They work with any AI coding assistant that supports custom prompts — Cursor, Windsurf, Codex, Continue, etc. See [Cross-Platform](#cross-platform).
+Yes. The skills are just markdown with instructions. They work with any AI coding assistant that supports custom prompts: Cursor, Windsurf, Codex, Continue, etc. See [Cross-Platform](#cross-platform).
 
 </details>
 
 <details>
 <summary><strong>How do I create my own skill?</strong></summary>
 
-Use the [template](template/SKILL.md) and follow the [contributing guide](CONTRIBUTING.md). The key is specific, numbered steps — not vague instructions.
+Use the [template](template/SKILL.md) and follow the [contributing guide](CONTRIBUTING.md). The key is specific, numbered steps: not vague instructions.
 
 </details>
 
@@ -1144,4 +1213,4 @@ Good skill ideas:
 
 ## License
 
-MIT — use these however you want.
+MIT: use these however you want.
