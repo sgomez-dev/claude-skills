@@ -1,0 +1,18 @@
+{
+  "sourceHash": "70d8175476a167c3",
+  "es": {
+    "description": "Panel de administración: CRUD de los modelos principales, suplantación de usuario (impersonation), registro de auditoría, control de acceso por rol",
+    "howToAsk": [
+      "/fullstack--admin-panel crea un panel de admin con CRUD para usuarios y pedidos",
+      "/fullstack--admin-panel necesito poder entrar como un usuario para depurar un problema",
+      "/fullstack--admin-panel añade un registro de auditoría y roles de acceso al panel"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/fullstack--admin-panel build an admin panel with CRUD for users and orders",
+      "/fullstack--admin-panel I need to impersonate a user to debug an issue",
+      "/fullstack--admin-panel add an audit log and role-based access to the panel"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "9b45bcf020824edc",
+  "es": {
+    "description": "Prepara un dataset para ML: limpieza, particiones, comprobaciones de fugas de datos, balanceo, versionado",
+    "howToAsk": [
+      "/ml--dataset-prep prepara mi dataset de clientes para entrenar el modelo",
+      "/ml--dataset-prep comprueba si hay fugas de datos entre train y test",
+      "/ml--dataset-prep balancea las clases de este dataset desequilibrado"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ml--dataset-prep prepare my customer dataset for training",
+      "/ml--dataset-prep check for data leakage between train and test",
+      "/ml--dataset-prep balance the classes in this imbalanced dataset"
+    ]
+  }
+}

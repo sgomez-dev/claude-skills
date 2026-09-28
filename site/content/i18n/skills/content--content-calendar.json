@@ -1,0 +1,18 @@
+{
+  "sourceHash": "5b8018f1072d90df",
+  "es": {
+    "description": "Construye un calendario de contenidos — pilares, cadencia, formatos mapeados a las etapas del embudo",
+    "howToAsk": [
+      "/content--content-calendar crea un calendario de contenidos para el próximo trimestre",
+      "/content--content-calendar defíneme los pilares de contenido para mi marca",
+      "/content--content-calendar planifica la cadencia de publicación por etapa del embudo"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/content--content-calendar build a content calendar for next quarter",
+      "/content--content-calendar define the content pillars for my brand",
+      "/content--content-calendar plan a posting cadence mapped to funnel stages"
+    ]
+  }
+}

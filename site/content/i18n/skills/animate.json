@@ -1,0 +1,18 @@
+{
+  "sourceHash": "7b49481b304d8fa7",
+  "es": {
+    "description": "Construye una animación desde cero, tomando las decisiones en el orden que determina si se siente bien: si debe animarse siquiera, con qué propósito, qué herramienta, qué propiedades, qué curva y duración, cómo se interrumpe y cómo termina. Escribe la implementación. Úsalo cuando te pidan animar algo, añadir movimiento, dar vida a un componente o construir una transición. Para criticar una animación ya existente usa review-animations; para auditar todo un código base usa improve-animations.",
+    "howToAsk": [
+      "Añade una animación de entrada a esta tarjeta cuando aparece en pantalla",
+      "Quiero que este menú se sienta más vivo al abrirse y cerrarse",
+      "Crea una transición suave entre estas dos pantallas"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Add an entrance animation to this card when it appears",
+      "Make this menu feel more alive when it opens and closes",
+      "Create a smooth transition between these two screens"
+    ]
+  }
+}

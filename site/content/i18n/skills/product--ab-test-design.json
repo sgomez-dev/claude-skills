@@ -1,0 +1,18 @@
+{
+  "sourceHash": "b92a227e0073a974",
+  "es": {
+    "description": "Diseña un test A/B: hipótesis, métricas, tamaño de muestra, guardrails y análisis",
+    "howToAsk": [
+      "/product--ab-test-design diseña un test A/B para el nuevo botón de compra",
+      "/product--ab-test-design calcula el tamaño de muestra que necesito para este experimento",
+      "/product--ab-test-design ayúdame a definir la hipótesis y las métricas de éxito"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/product--ab-test-design design an A/B test for the new buy button",
+      "/product--ab-test-design calculate the sample size I need for this experiment",
+      "/product--ab-test-design help me define the hypothesis and success metrics"
+    ]
+  }
+}

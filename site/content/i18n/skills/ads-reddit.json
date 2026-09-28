@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a2a1bf382c22307b",
+  "es": {
+    "description": "Audita la medición de Reddit Ads, la estructura de campañas, la segmentación por comunidad e interés, la adecuación nativa de la creatividad, la publicidad de catálogo, los presupuestos, la seguridad de marca y los informes. Úsalo para Reddit Ads, publicaciones promocionadas, anuncios de conversación, segmentación por comunidad, Reddit Pixel, Reddit Conversions API o anuncios dinámicos de producto en Reddit.",
+    "howToAsk": [
+      "Audita mi cuenta de Reddit Ads y la segmentación por comunidad",
+      "¿Mis anuncios encajan de forma nativa en Reddit o parecen spam?",
+      "Revisa el Reddit Pixel y la Conversions API"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Audit my Reddit Ads account and community targeting",
+      "Do my ads feel native on Reddit or too spammy?",
+      "Review the Reddit Pixel and Conversions API setup"
+    ]
+  }
+}

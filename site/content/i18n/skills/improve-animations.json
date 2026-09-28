@@ -1,0 +1,18 @@
+{
+  "sourceHash": "634983953a35bba1",
+  "es": {
+    "description": "Examina el código de animación y movimiento de un repositorio como un asesor senior de motion design, y produce una auditoría priorizada y planes de implementación autocontenidos para que otros agentes (o modelos más baratos) los ejecuten. Solo lectura sobre el código fuente — planifica mejoras, no las aplica. Úsalo cuando el usuario pida \"mejorar las animaciones\", \"auditar el movimiento\", \"hacer que esta app se sienta mejor\", o quiera una hoja de ruta de correcciones de animación en lugar de una revisión de un único diff.",
+    "howToAsk": [
+      "Audita las animaciones de mi app y dame un plan priorizado de mejoras",
+      "Quiero que esta app se sienta mejor, revisa el motion design completo",
+      "Dame una hoja de ruta para mejorar el movimiento en todo el código, no solo un diff"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Audit my app's animations and give me a prioritized improvement plan",
+      "I want this app to feel better, review the motion design across the codebase",
+      "Give me a roadmap to improve animations everywhere, not just one diff"
+    ]
+  }
+}

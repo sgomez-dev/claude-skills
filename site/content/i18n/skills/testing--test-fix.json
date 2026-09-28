@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a33c7c4264cd6cf9",
+  "es": {
+    "description": "Diagnostica y arregla los tests que están fallando",
+    "howToAsk": [
+      "/testing--test-fix arregla los tests que fallan en CI",
+      "/testing--test-fix ¿por qué falla este test desde el último commit?",
+      "/testing--test-fix diagnostica este test que fallaba de forma intermitente"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/testing--test-fix fix the tests failing in CI",
+      "/testing--test-fix why is this test failing since the last commit?",
+      "/testing--test-fix diagnose this flaky test"
+    ]
+  }
+}

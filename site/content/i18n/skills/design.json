@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d9d3fa2890f79c8e",
+  "es": {
+    "description": "Skill de diseño integral: identidad de marca, design tokens, estilos de UI, generación de logos (55 estilos, Gemini, Atlas Cloud o MuAPI AI), programa de identidad corporativa (50 entregables, mockups de CIP), presentaciones HTML (Chart.js), diseño de banners (22 estilos, social/ads/web/print), diseño de iconos (15 estilos, SVG, Gemini 3.1 Pro), fotos sociales (HTML→captura de pantalla, multiplataforma). Acciones: diseñar logo, crear CIP, generar mockups, construir diapositivas, diseñar banner, generar icono, crear fotos sociales, imágenes para redes sociales, identidad de marca, design system. Plataformas: Facebook, Twitter, LinkedIn, YouTube, Instagram, Pinterest, TikTok, Threads, Google Ads.",
+    "howToAsk": [
+      "Diseña el logo de mi marca de café en 3 estilos distintos",
+      "Crea un banner para Instagram anunciando mi lanzamiento",
+      "Necesito un programa de identidad corporativa completo para mi startup"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Design my coffee brand's logo in three different styles",
+      "Create an Instagram banner announcing my product launch",
+      "I need a full corporate identity program for my startup"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "8c91d7308752d16a",
+  "es": {
+    "description": "Genera tests end-to-end para los flujos de usuario",
+    "howToAsk": [
+      "/testing--test-e2e genera un test e2e para el flujo de compra",
+      "/testing--test-e2e crea tests end-to-end del registro de usuarios",
+      "/testing--test-e2e necesito cubrir el flujo completo de checkout"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/testing--test-e2e generate an e2e test for the checkout flow",
+      "/testing--test-e2e create end-to-end tests for user signup",
+      "/testing--test-e2e I need to cover the full checkout flow"
+    ]
+  }
+}

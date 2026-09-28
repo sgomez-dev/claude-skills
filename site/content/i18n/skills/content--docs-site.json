@@ -1,0 +1,18 @@
+{
+  "sourceHash": "c30fb3f8c4d485a7",
+  "es": {
+    "description": "Monta un sitio de documentación — elección de herramienta, arquitectura de la información, plantillas",
+    "howToAsk": [
+      "/content--docs-site ayúdame a montar el sitio de documentación de mi producto",
+      "/content--docs-site qué herramienta de docs me conviene y cómo organizo las secciones",
+      "/content--docs-site genera plantillas para la documentación de mi API"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/content--docs-site help me scaffold my product's documentation site",
+      "/content--docs-site which docs tool should I use and how should I organize sections",
+      "/content--docs-site generate templates for my API documentation"
+    ]
+  }
+}

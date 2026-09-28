@@ -1,0 +1,18 @@
+{
+  "sourceHash": "e1fd857dd80e42bb",
+  "es": {
+    "description": "Usa el bucle de desarrollo de la CLI de HyperFrames: init, add, catalog, capture, lint, check, snapshot, compare, grade-compare, preview, play, present, beats, keyframes, render individual o en lote, publish, cloud, cloudrun, feedback, lambda, doctor, browser, info, upgrade, skills, compositions, timeline, history, docs, benchmark, telemetry, transcribe, auth, tts y remove-background. Úsalo también para diagnosticar fallos de build o de render. validate, inspect y layout son alias obsoletos; usa check. Cubre renderizado local, en la nube alojada por HeyGen, AWS Lambda y Google Cloud Run.",
+    "howToAsk": [
+      "Inicializa un nuevo proyecto de HyperFrames y renderiza una preview",
+      "El render está fallando, ayúdame a diagnosticarlo con la CLI",
+      "Publica este proyecto en la nube y muéstrame el resultado"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Initialize a new HyperFrames project and render a preview",
+      "The render is failing, help me diagnose it with the CLI",
+      "Publish this project to the cloud and show me the result"
+    ]
+  }
+}

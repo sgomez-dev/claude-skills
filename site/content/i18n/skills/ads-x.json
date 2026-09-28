@@ -1,0 +1,18 @@
+{
+  "sourceHash": "e0dbf3c83829ecf7",
+  "es": {
+    "description": "Audita la medición de X Ads, el X Pixel y la Conversions API, los objetivos de campaña, la segmentación por palabra clave y conversación, la creatividad, los presupuestos, la seguridad de marca, la medición de apps y los informes. Úsalo para X Ads, Twitter Ads, publicaciones promocionadas, X Pixel, X Conversions API, segmentación por conversación o campañas de pago en X.",
+    "howToAsk": [
+      "Audita mi cuenta de X Ads (antes Twitter Ads)",
+      "Revisa la segmentación por conversación en mi campaña de X",
+      "¿El X Pixel está bien configurado para medir conversiones?"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Audit my X Ads (formerly Twitter Ads) account",
+      "Review conversation targeting on my X campaign",
+      "Is the X Pixel set up correctly to measure conversions?"
+    ]
+  }
+}

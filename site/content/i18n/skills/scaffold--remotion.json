@@ -1,0 +1,18 @@
+{
+  "sourceHash": "6f16cf38b09e43cd",
+  "es": {
+    "description": "Creación de vídeo con Remotion en React: composiciones, animaciones, audio, transiciones, efectos de texto",
+    "howToAsk": [
+      "/scaffold--remotion crea una composición de Remotion con transiciones entre escenas",
+      "/scaffold--remotion necesito animaciones de texto y audio sincronizado en este vídeo",
+      "/scaffold--remotion genera efectos de texto para el intro de este vídeo en React"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/scaffold--remotion create a Remotion composition with scene transitions",
+      "/scaffold--remotion I need text animations and synced audio in this video",
+      "/scaffold--remotion generate text effects for this React video's intro"
+    ]
+  }
+}

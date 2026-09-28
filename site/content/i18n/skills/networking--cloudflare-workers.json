@@ -1,0 +1,18 @@
+{
+  "sourceHash": "0410a31856cdaaad",
+  "es": {
+    "description": "Genera y despliega Cloudflare Workers para computación en el edge",
+    "howToAsk": [
+      "/networking--cloudflare-workers crea un worker que redirija peticiones por país",
+      "/networking--cloudflare-workers despliega una función edge para procesar imágenes",
+      "/networking--cloudflare-workers monta un worker de API sencillo"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/networking--cloudflare-workers create a worker that redirects requests by country",
+      "/networking--cloudflare-workers deploy an edge function to process images",
+      "/networking--cloudflare-workers scaffold a simple API worker"
+    ]
+  }
+}

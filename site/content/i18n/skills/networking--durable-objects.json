@@ -1,0 +1,18 @@
+{
+  "sourceHash": "5a319d4135034e70",
+  "es": {
+    "description": "Implementa Cloudflare Durable Objects para computación con estado en el edge",
+    "howToAsk": [
+      "/networking--durable-objects crea un contador global con estado persistente",
+      "/networking--durable-objects implementa una sala de chat en tiempo real",
+      "/networking--durable-objects gestiona sesiones de usuario en el edge"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/networking--durable-objects build a globally consistent counter with persistent state",
+      "/networking--durable-objects implement a real-time chat room",
+      "/networking--durable-objects manage user sessions at the edge"
+    ]
+  }
+}

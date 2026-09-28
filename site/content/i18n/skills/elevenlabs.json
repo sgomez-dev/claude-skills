@@ -1,0 +1,18 @@
+{
+  "sourceHash": "e2dd2147e8203114",
+  "es": {
+    "description": "Genera voces en off, efectos de sonido y música con IA usando las APIs de ElevenLabs. Úsalo al crear contenido de audio para vídeos, podcasts o videojuegos. Se activa para generar voces en off, narración, diálogos, efectos de sonido a partir de descripciones, música de fondo, bandas sonoras, clonación de voz o cualquier tarea de síntesis de audio.",
+    "howToAsk": [
+      "Genera una voz en off en español para este vídeo",
+      "Necesito efectos de sonido de pasos y una puerta cerrándose",
+      "Clona mi voz y narra este guion de podcast"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Generate a voiceover for this video",
+      "I need sound effects of footsteps and a door closing",
+      "Clone my voice and narrate this podcast script"
+    ]
+  }
+}

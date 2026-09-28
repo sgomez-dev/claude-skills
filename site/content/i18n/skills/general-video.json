@@ -1,0 +1,18 @@
+{
+  "sourceHash": "878660fe9ed4bf83",
+  "es": {
+    "description": "Crea o edita una composición de HyperFrames personalizada cuando ningún flujo de trabajo especializado encaja, o cuando BRIEF.md establece flow: companion. Úsalo para piezas más largas o de varias escenas, vídeos de marca y sizzle reels, montajes, loops estáticos, tarjetas de título estáticas, remixes de metraje y construcciones libres. Usa motion-graphics en su lugar para una unidad corta sin narración centrada en el movimiento, incluido un título animado. Dirige la creación desde cero a través de hyperframes antes de usar esta skill.",
+    "howToAsk": [
+      "Necesito montar un vídeo de marca de varias escenas a partir de este metraje",
+      "Quiero crear un loop estático para la web con HyperFrames",
+      "Ayúdame a montar un sizzle reel largo que combine varios clips"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "I need to put together a multi-scene brand video from this footage",
+      "I want to create a static loop for the website with HyperFrames",
+      "Help me put together a long sizzle reel that combines several clips"
+    ]
+  }
+}

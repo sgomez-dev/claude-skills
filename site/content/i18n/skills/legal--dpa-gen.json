@@ -1,0 +1,18 @@
+{
+  "sourceHash": "738a82124a90489f",
+  "es": {
+    "description": "Redacta un esqueleto de DPA con una lista de subencargados construida a partir de tu stack real",
+    "howToAsk": [
+      "/legal--dpa-gen redacta un DPA para mi SaaS con mis subencargados actuales",
+      "/legal--dpa-gen necesito el acuerdo de tratamiento de datos con mi stack real",
+      "/legal--dpa-gen genera la lista de subprocesadores y el DPA base"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/legal--dpa-gen draft a DPA for my SaaS with my current subprocessors",
+      "/legal--dpa-gen I need the data processing agreement based on my real stack",
+      "/legal--dpa-gen generate the subprocessor list and base DPA"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "f276efd0c1ac9e49",
+  "es": {
+    "description": "Automatización de navegador con Playwright MCP: navega, haz clic, rellena formularios, depura y toma capturas de pantalla",
+    "howToAsk": [
+      "/testing--playwright-mcp navega a mi web y rellena el formulario de registro",
+      "/testing--playwright-mcp haz clic en el botón de compra y toma una captura",
+      "/testing--playwright-mcp depura por qué falla este flujo en el navegador"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/testing--playwright-mcp navigate my site and fill out the signup form",
+      "/testing--playwright-mcp click the checkout button and take a screenshot",
+      "/testing--playwright-mcp debug why this flow fails in the browser"
+    ]
+  }
+}

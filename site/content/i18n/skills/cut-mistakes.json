@@ -1,0 +1,18 @@
+{
+  "sourceHash": "cb194bd1b42f6b02",
+  "es": {
+    "description": "Agente 2 del pipeline de edición de vídeo. Encuentra y elimina errores hablados — tartamudeos, palabras repetidas, falsos inicios y retakes (frases regrabadas) — de una grabación de talking-head. Úsalo después de cut-silences, cuando te pidan cortar errores, quitar tartamudeos / repeticiones / reinicios de relleno, limpiar patinazos, o quedarte con la mejor toma. Funciona con revisión: propone cada corte con contexto y motivo para que lo apruebes, y solo renderiza los cortes aprobados vía ffmpeg. Requiere una transcripción a nivel de palabra.",
+    "howToAsk": [
+      "Quita los tartamudeos y las frases repetidas de mi último vídeo de talking-head",
+      "Revisa esta grabación y propón los cortes de los falsos inicios para que los apruebe",
+      "Limpia los patinazos de esta toma y quédate solo con la mejor versión de cada frase"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Remove the stutters and repeated words from my latest talking-head recording",
+      "Review this recording and propose cuts for the false starts for me to approve",
+      "Clean up the flubs in this take and keep only the best version of each line"
+    ]
+  }
+}

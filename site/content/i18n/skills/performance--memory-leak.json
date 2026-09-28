@@ -1,0 +1,18 @@
+{
+  "sourceHash": "9da12e84f8735510",
+  "es": {
+    "description": "Encuentra y corrige fugas de memoria en la aplicación",
+    "howToAsk": [
+      "/performance--memory-leak la app cada vez consume más memoria y no baja",
+      "/performance--memory-leak encuentra la fuga de memoria en este componente",
+      "/performance--memory-leak el servidor se queda sin memoria tras unas horas"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/performance--memory-leak the app keeps using more memory and it never drops",
+      "/performance--memory-leak find the memory leak in this component",
+      "/performance--memory-leak the server runs out of memory after a few hours"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "c758690a34c8bffa",
+  "es": {
+    "description": "Gestiona publicidad de pago profesional en Google, Meta, YouTube, LinkedIn, TikTok, Microsoft, Apple, Amazon, Reddit, Pinterest, Snapchat y X. Úsalo para dar de alta cuentas, auditorías basadas en fuentes verificadas, estrategia, planificación de presupuesto y medición, producción creativa, experimentos, informes, monitorización y cambios de campaña explícitamente aprobados. Se activa también con PPC, social de pago, medios minoristas (retail media), atribución, tracking, páginas de aterrizaje, totales de conversión entre plataformas, palabras clave negativas o términos de búsqueda, puntuación de funciones beta, afirmaciones desactualizadas sobre plataformas, configuración de tokens de API o credenciales, eliminación de campañas, e instalación o desinstalación segura de Claude Ads.",
+    "howToAsk": [
+      "Quiero montar una estrategia de publicidad de pago para varias plataformas a la vez",
+      "Audítame la cuenta de Google Ads y Meta Ads y dime qué está fallando",
+      "Ayúdame a planificar el presupuesto y la medición de mi próxima campaña"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Help me build a paid advertising strategy across several platforms at once",
+      "Audit my Google Ads and Meta Ads accounts and tell me what's broken",
+      "Help me plan the budget and measurement setup for my next campaign"
+    ]
+  }
+}

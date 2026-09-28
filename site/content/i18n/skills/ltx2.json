@@ -1,0 +1,18 @@
+{
+  "sourceHash": "e2a366d72f63309e",
+  "es": {
+    "description": "Generación de vídeo con IA usando LTX-2.3 22B — clips de texto a vídeo e imagen a vídeo para producción audiovisual. Úsalo para generar clips de vídeo, animar imágenes, crear b-roll, fondos animados o contenido en movimiento. Se activa con: generación de vídeo, animar imagen, b-roll, movimiento, clip de vídeo, texto a vídeo, imagen a vídeo.",
+    "howToAsk": [
+      "Genera un clip de vídeo de una ciudad futurista al atardecer",
+      "Anima esta foto de producto para usarla como b-roll",
+      "Crea un fondo animado con movimiento sutil para el hero de la web"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Generate a video clip of a futuristic city at sunset",
+      "Animate this product photo into b-roll footage",
+      "Create a looping animated background for the hero section"
+    ]
+  }
+}

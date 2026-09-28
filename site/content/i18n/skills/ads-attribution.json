@@ -1,0 +1,18 @@
+{
+  "sourceHash": "fdafd0774f091a7c",
+  "es": {
+    "description": "Audita la atribución entre plataformas, definiciones de conversión, ventanas de informes, GA4, AdServices y AdAttributionKit, MMPs, eventos de navegador y servidor, conversiones offline y reconciliación entre plataformas. Úsalo para auditorías de atribución, modelos de atribución, ventanas de conversión, solicitudes de sumar o totalizar conversiones de Meta y Google, agregación incompatible de ventanas de informes, atribución en GA4, revisión de MMP, AppsFlyer, Adjust, Branch, Singular o discrepancias entre plataformas.",
+    "howToAsk": [
+      "¿Por qué Meta y Google Ads no cuadran en el número de conversiones?",
+      "Revisa nuestra configuración de atribución en GA4",
+      "Ayúdame a comparar los datos de AppsFlyer con los de las plataformas de anuncios"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Why don't Meta and Google Ads agree on conversion counts?",
+      "Review our attribution setup in GA4",
+      "Help me reconcile AppsFlyer data against the ad platforms"
+    ]
+  }
+}

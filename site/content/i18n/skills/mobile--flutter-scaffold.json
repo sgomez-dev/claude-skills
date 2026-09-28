@@ -1,0 +1,18 @@
+{
+  "sourceHash": "689dddb4f674b685",
+  "es": {
+    "description": "Genera el andamiaje de una app Flutter de producción: enrutado, gestión de estado, theming, flavors",
+    "howToAsk": [
+      "/mobile--flutter-scaffold crea una app Flutter nueva para mi startup",
+      "/mobile--flutter-scaffold añade gestión de estado y theming",
+      "/mobile--flutter-scaffold configura flavors para dev y producción"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/mobile--flutter-scaffold scaffold a new Flutter app for my startup",
+      "/mobile--flutter-scaffold add state management and theming",
+      "/mobile--flutter-scaffold set up flavors for dev and production"
+    ]
+  }
+}

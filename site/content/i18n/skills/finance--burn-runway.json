@@ -1,0 +1,18 @@
+{
+  "sourceHash": "4ec452229d1ff1a1",
+  "es": {
+    "description": "Calcula el burn rate y el runway a partir de gastos e ingresos, con escenarios optimista/base/pesimista",
+    "howToAsk": [
+      "/finance--burn-runway calcula cuántos meses de runway nos quedan",
+      "/finance--burn-runway necesito el burn rate con escenario optimista y pesimista",
+      "/finance--burn-runway analiza nuestros gastos e ingresos para saber cuándo se acaba el dinero"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/finance--burn-runway calculate how many months of runway we have left",
+      "/finance--burn-runway I need burn rate with best-case and worst-case scenarios",
+      "/finance--burn-runway analyze our expenses and revenue to see when we run out of cash"
+    ]
+  }
+}

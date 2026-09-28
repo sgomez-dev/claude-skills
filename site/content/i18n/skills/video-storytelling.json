@@ -1,0 +1,18 @@
+{
+  "sourceHash": "c4c8001fb4e666ef",
+  "es": {
+    "description": "Diseña y construye la capa visual de un vídeo de cabeza parlante (talking-head) de larga duración como un único mundo persistente por el que se mueve la cámara, en lugar de una secuencia de gráficos independientes. Se usa cuando se pide editar un vídeo, añadir motion graphics, diseñar los visuales de un guion, planificar un montaje, o arreglar un montaje que resulta confuso, con demasiado texto, difícil de seguir o \"claramente hecho por una IA\". Cubre el mundo persistente, la gramática de cámara, la regla del foco (spotlight), los bucles abiertos espaciales, la disciplina de ornamentos y elementos, la sincronización con la transcripción y las validaciones finales.",
+    "howToAsk": [
+      "Diseña los visuales de este guion de vídeo de cabeza parlante",
+      "Este montaje queda muy plano y con mucho texto, ayúdame a arreglarlo",
+      "Planifica el motion graphics para este vídeo explicativo largo"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Design the visuals for this talking-head video script",
+      "This edit feels flat and text-heavy, help me fix it",
+      "Plan the motion graphics for this long explainer video"
+    ]
+  }
+}

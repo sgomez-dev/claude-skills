@@ -1,0 +1,18 @@
+{
+  "sourceHash": "4c6d51855c2d2b3c",
+  "es": {
+    "description": "Audita una presencia en LinkedIn y crea un plan de contenido de social selling para un nicho",
+    "howToAsk": [
+      "/sales--social-selling audita mi perfil de LinkedIn y dime qué mejorar",
+      "/sales--social-selling crea un plan de contenido para vender en LinkedIn a este nicho",
+      "/sales--social-selling necesito una estrategia de social selling para el sector legal"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/sales--social-selling audit my LinkedIn profile and tell me what to fix",
+      "/sales--social-selling build a LinkedIn content plan to sell into this niche",
+      "/sales--social-selling I need a social selling strategy for the legal sector"
+    ]
+  }
+}

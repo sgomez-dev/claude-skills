@@ -1,0 +1,18 @@
+{
+  "sourceHash": "301e27f540fdc75e",
+  "es": {
+    "description": "Uso robusto de herramientas por el LLM: diseño de esquemas, llamadas en paralelo, errores y arnés de evaluación",
+    "howToAsk": [
+      "/ai--tool-calling diseña el esquema de herramientas para que el modelo no se equivoque",
+      "/ai--tool-calling permite que el agente llame a varias herramientas en paralelo",
+      "/ai--tool-calling maneja los errores cuando falla una llamada a herramienta"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ai--tool-calling design the tool schema so the model stops mis-calling it",
+      "/ai--tool-calling let the agent call several tools in parallel",
+      "/ai--tool-calling handle errors when a tool call fails"
+    ]
+  }
+}

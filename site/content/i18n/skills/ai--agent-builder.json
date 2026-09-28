@@ -1,0 +1,18 @@
+{
+  "sourceHash": "e64fc9649174468b",
+  "es": {
+    "description": "Construye un agente de IA: diseño del bucle, superficie de herramientas, memoria, condiciones de parada y evaluaciones (evals)",
+    "howToAsk": [
+      "/ai--agent-builder diseña un agente para responder tickets de soporte",
+      "/ai--agent-builder ayúdame a definir las condiciones de parada de mi agente",
+      "/ai--agent-builder qué herramientas debería exponerle a este agente"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ai--agent-builder design an agent that handles support tickets",
+      "/ai--agent-builder help me define stop conditions for my agent",
+      "/ai--agent-builder what tools should I expose to this agent?"
+    ]
+  }
+}

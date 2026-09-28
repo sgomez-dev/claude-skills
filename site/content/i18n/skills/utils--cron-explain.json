@@ -1,0 +1,18 @@
+{
+  "sourceHash": "5e5d43a9f865558d",
+  "es": {
+    "description": "Genera y explica expresiones cron con las próximas fechas de ejecución",
+    "howToAsk": [
+      "/utils--cron-explain ¿qué significa esta expresión cron?",
+      "/utils--cron-explain genera un cron que se ejecute cada lunes a las 9am",
+      "/utils--cron-explain dime cuándo se ejecutará esta tarea programada"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/utils--cron-explain what does this cron expression mean?",
+      "/utils--cron-explain generate a cron that runs every Monday at 9am",
+      "/utils--cron-explain tell me when this scheduled job will next run"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "309a135658790f71",
+  "es": {
+    "description": "Revisa y corrige la configuración de CORS por motivos de seguridad",
+    "howToAsk": [
+      "/security--cors-review revisa la configuración CORS de mi API",
+      "/security--cors-review ¿por qué el navegador bloquea las peticiones desde el frontend?",
+      "/security--cors-review arregla los headers CORS de este servidor Express"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/security--cors-review check my API's CORS configuration",
+      "/security--cors-review why is the browser blocking requests from the frontend?",
+      "/security--cors-review fix the CORS headers on this Express server"
+    ]
+  }
+}

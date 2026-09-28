@@ -1,0 +1,18 @@
+{
+  "sourceHash": "9e407656c97ec59c",
+  "es": {
+    "description": "Guías de rendimiento de React y Next.js de Vercel Engineering. Se usa al escribir, revisar o refactorizar código de React/Next.js para garantizar patrones de rendimiento óptimos. Se activa en tareas relacionadas con componentes de React, páginas de Next.js, obtención de datos, optimización del bundle o mejoras de rendimiento.",
+    "howToAsk": [
+      "Revisa este componente de React para ver si sigue buenas prácticas de rendimiento",
+      "¿Esta forma de hacer fetching de datos en Next.js es óptima?",
+      "Refactoriza esta página de Next.js siguiendo las guías de Vercel"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Review this React component for performance best practices",
+      "Is this Next.js data fetching pattern optimal?",
+      "Refactor this Next.js page following Vercel's performance guidelines"
+    ]
+  }
+}

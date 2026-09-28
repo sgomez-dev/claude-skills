@@ -1,0 +1,18 @@
+{
+  "sourceHash": "27fcb1b33ad438fe",
+  "es": {
+    "description": "Genera una política de cookies a partir de las cookies y rastreadores realmente definidos en el código",
+    "howToAsk": [
+      "/legal--cookie-policy genera la política de cookies para mi sitio Next.js",
+      "/legal--cookie-policy escanea el código y crea el aviso de cookies",
+      "/legal--cookie-policy necesito la política de cookies basada en mis trackers reales"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/legal--cookie-policy generate the cookie policy for my Next.js site",
+      "/legal--cookie-policy scan the code and create the cookie notice",
+      "/legal--cookie-policy I need a cookie policy based on my actual trackers"
+    ]
+  }
+}

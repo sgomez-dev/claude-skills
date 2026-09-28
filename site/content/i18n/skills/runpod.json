@@ -1,0 +1,18 @@
+{
+  "sourceHash": "93a04aa9054ae29b",
+  "es": {
+    "description": "Procesamiento en GPU en la nube vía RunPod serverless. Úsalo al configurar endpoints de RunPod, desplegar imágenes Docker, gestionar recursos de GPU, resolver problemas de un endpoint, o entender los costes. Cubre las 5 imágenes del toolkit (qwen-edit, realesrgan, propainter, sadtalker, qwen3-tts).",
+    "howToAsk": [
+      "Configura un endpoint de RunPod para desplegar mi imagen Docker con GPU",
+      "El endpoint de RunPod está fallando, ayúdame a diagnosticarlo",
+      "Explícame cuánto me va a costar usar realesrgan en RunPod serverless"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Set up a RunPod endpoint to deploy my Docker image on GPU",
+      "My RunPod endpoint is failing, help me troubleshoot it",
+      "Explain how much running realesrgan on RunPod serverless will cost"
+    ]
+  }
+}

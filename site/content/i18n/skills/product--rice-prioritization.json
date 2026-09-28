@@ -1,0 +1,18 @@
+{
+  "sourceHash": "794c316e0cf01dd3",
+  "es": {
+    "description": "Puntúa el backlog con RICE y devuelve una lista de prioridades ordenada por niveles",
+    "howToAsk": [
+      "/product--rice-prioritization puntúa estas diez funcionalidades con RICE",
+      "/product--rice-prioritization ordena el backlog por prioridad usando RICE",
+      "/product--rice-prioritization ayúdame a decidir qué hacer primero este trimestre"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/product--rice-prioritization score these ten features with RICE",
+      "/product--rice-prioritization rank the backlog by priority using RICE",
+      "/product--rice-prioritization help me decide what to build first this quarter"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "8cdcfae44c1e3cd7",
+  "es": {
+    "description": "Post-mortem de lo que el usuario ya ha publicado - qué reels funcionaron de verdad, por qué, y qué dejar de hacer. Úsalo cuando el usuario pega sus estadísticas de Instagram o publicaciones pasadas y pregunta \"qué está funcionando\", \"por qué esto fracasó\", \"lee mis analíticas\", \"audita mi contenido\", o quiere saber qué hacer más.",
+    "howToAsk": [
+      "Aquí tienes mis estadísticas de Instagram, dime qué reels funcionaron y por qué",
+      "Audita mi contenido del último mes y dime qué dejar de publicar",
+      "¿Por qué este reel no funcionó? Te paso los datos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Here are my Instagram insights, tell me which reels worked and why",
+      "Audit last month's content and tell me what to stop posting",
+      "Why did this reel flop? Here's the data"
+    ]
+  }
+}

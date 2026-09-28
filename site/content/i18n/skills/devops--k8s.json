@@ -1,0 +1,18 @@
+{
+  "sourceHash": "17ea7fb3e4b9480d",
+  "es": {
+    "description": "Genera manifiestos de Kubernetes para desplegar la aplicación",
+    "howToAsk": [
+      "/devops--k8s manifiestos de Kubernetes para mi API",
+      "/devops--k8s genera un Deployment y un Service para esta app",
+      "/devops--k8s crea los manifiestos de Kubernetes para producción"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/devops--k8s Kubernetes manifests for my API",
+      "/devops--k8s generate a Deployment and Service for this app",
+      "/devops--k8s create Kubernetes manifests for production"
+    ]
+  }
+}

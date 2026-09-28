@@ -1,0 +1,18 @@
+{
+  "sourceHash": "07aba888bd92de14",
+  "es": {
+    "description": "Genera configuraciones de infraestructura como código (IaC) con Terraform",
+    "howToAsk": [
+      "/devops--terraform escribe el Terraform para una VPC con subredes públicas y privadas",
+      "/devops--terraform necesito el módulo de Terraform para un cluster de base de datos",
+      "/devops--terraform genera el estado inicial para desplegar en AWS"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/devops--terraform write the Terraform for a VPC with public and private subnets",
+      "/devops--terraform I need a Terraform module for a database cluster",
+      "/devops--terraform generate the starter setup to deploy to AWS"
+    ]
+  }
+}

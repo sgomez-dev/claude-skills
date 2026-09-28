@@ -1,0 +1,18 @@
+{
+  "sourceHash": "cd4c6bd2f2d888e9",
+  "es": {
+    "description": "Encuentra y elimina código muerto: funciones, imports, variables y ficheros sin usar",
+    "howToAsk": [
+      "/code-quality--dead-code encuentra funciones y variables sin usar en mi proyecto",
+      "/code-quality--dead-code limpia los imports muertos de este archivo",
+      "/code-quality--dead-code detecta ficheros que ya no se usan en el repositorio"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/code-quality--dead-code find unused functions and variables in my project",
+      "/code-quality--dead-code clean up dead imports in this file",
+      "/code-quality--dead-code detect files in the repo that are no longer used"
+    ]
+  }
+}

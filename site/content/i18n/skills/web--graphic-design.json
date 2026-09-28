@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d937cc17926df620",
+  "es": {
+    "description": "Estudio de diseño con IA: genera mockups listos para producción, gráficos para redes sociales, kits de marca, pitch decks, infografías y más a partir de instrucciones en lenguaje natural",
+    "howToAsk": [
+      "/web--graphic-design crea un mockup de mi app para presentarlo a inversores",
+      "/web--graphic-design genera gráficos para Instagram sobre mi lanzamiento",
+      "/web--graphic-design diseña un pitch deck para mi startup"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/web--graphic-design create a mockup of my app to show investors",
+      "/web--graphic-design generate Instagram graphics for my launch",
+      "/web--graphic-design design a pitch deck for my startup"
+    ]
+  }
+}

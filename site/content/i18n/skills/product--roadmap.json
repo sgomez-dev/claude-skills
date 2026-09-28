@@ -1,0 +1,18 @@
+{
+  "sourceHash": "f4e120db8275de22",
+  "es": {
+    "description": "Elabora un roadmap de producto now/next/later a partir de objetivos, backlog y restricciones",
+    "howToAsk": [
+      "/product--roadmap crea el roadmap now/next/later para el próximo semestre",
+      "/product--roadmap organiza el backlog en ahora, próximo y más adelante",
+      "/product--roadmap construye el roadmap teniendo en cuenta estas restricciones de equipo"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/product--roadmap build the now/next/later roadmap for next half",
+      "/product--roadmap organize the backlog into now, next, and later",
+      "/product--roadmap build the roadmap given these team constraints"
+    ]
+  }
+}

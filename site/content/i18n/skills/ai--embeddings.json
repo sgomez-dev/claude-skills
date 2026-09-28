@@ -1,0 +1,18 @@
+{
+  "sourceHash": "330a2909e5d0f670",
+  "es": {
+    "description": "Implementa embeddings vectoriales para búsqueda semántica, RAG o comparación de similitud",
+    "howToAsk": [
+      "/ai--embeddings añade búsqueda semántica a mi catálogo de productos",
+      "/ai--embeddings necesito embeddings para encontrar documentos parecidos",
+      "/ai--embeddings monta el sistema de similitud para recomendar artículos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ai--embeddings add semantic search to my product catalog",
+      "/ai--embeddings I need embeddings to find similar documents",
+      "/ai--embeddings set up similarity matching to recommend articles"
+    ]
+  }
+}

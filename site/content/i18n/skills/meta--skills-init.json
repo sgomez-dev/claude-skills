@@ -1,0 +1,18 @@
+{
+  "sourceHash": "79e480fb69d0dd96",
+  "es": {
+    "description": "Escanea tu proyecto y activa solo las skills relevantes con configuración específica para el proyecto",
+    "howToAsk": [
+      "/meta--skills-init activa las skills que necesito para este proyecto",
+      "/meta--skills-init escanea mi repo y configura las skills relevantes",
+      "/meta--skills-init es un proyecto Next.js, ¿qué skills me sirven?"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/meta--skills-init activate the skills I need for this project",
+      "/meta--skills-init scan my repo and set up the relevant skills",
+      "/meta--skills-init this is a Next.js project, which skills apply?"
+    ]
+  }
+}

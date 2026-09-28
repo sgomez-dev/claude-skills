@@ -1,0 +1,18 @@
+{
+  "sourceHash": "ba5ce67d0bfdef2a",
+  "es": {
+    "description": "Genera el andamiaje de una app React Native/Expo de producción: navegación, estado, theming, CI",
+    "howToAsk": [
+      "/mobile--react-native-scaffold crea una app Expo nueva desde cero",
+      "/mobile--react-native-scaffold añade navegación y gestión de estado",
+      "/mobile--react-native-scaffold configura CI para mi app React Native"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/mobile--react-native-scaffold scaffold a new Expo app from scratch",
+      "/mobile--react-native-scaffold add navigation and state management",
+      "/mobile--react-native-scaffold set up CI for my React Native app"
+    ]
+  }
+}

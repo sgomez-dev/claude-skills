@@ -1,0 +1,18 @@
+{
+  "sourceHash": "c6c9875243e477b9",
+  "es": {
+    "description": "Core Web Vitals: mide LCP/INP/CLS, diagnostica las causas y corrígelas con cambios de código",
+    "howToAsk": [
+      "/performance--web-vitals mide los Core Web Vitals de mi web",
+      "/performance--web-vitals por qué mi LCP es tan alto",
+      "/performance--web-vitals arregla el CLS que me penaliza en Google"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/performance--web-vitals measure Core Web Vitals for my site",
+      "/performance--web-vitals why is my LCP so high",
+      "/performance--web-vitals fix the CLS that's hurting my Google ranking"
+    ]
+  }
+}

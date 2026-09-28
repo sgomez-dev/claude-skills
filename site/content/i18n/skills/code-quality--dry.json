@@ -1,0 +1,18 @@
+{
+  "sourceHash": "015ddaa30e7ee557",
+  "es": {
+    "description": "Encuentra violaciones de DRY: patrones de código duplicado que deberían abstraerse",
+    "howToAsk": [
+      "/code-quality--dry busca código duplicado en mi carpeta de componentes",
+      "/code-quality--dry encuentra patrones repetidos que debería convertir en función",
+      "/code-quality--dry revisa este módulo en busca de violaciones de DRY"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/code-quality--dry find duplicated code across my components folder",
+      "/code-quality--dry spot repeated patterns I should turn into a function",
+      "/code-quality--dry check this module for DRY violations"
+    ]
+  }
+}

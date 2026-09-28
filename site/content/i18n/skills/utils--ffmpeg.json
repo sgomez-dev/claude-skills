@@ -1,0 +1,18 @@
+{
+  "sourceHash": "89a44fecad7761d9",
+  "es": {
+    "description": "Procesamiento de vídeo y audio con FFmpeg: convertir, redimensionar, comprimir, recortar, concatenar y exportar para cada plataforma",
+    "howToAsk": [
+      "/utils--ffmpeg convierte este vídeo.mov a mp4 comprimido para WhatsApp",
+      "/utils--ffmpeg recorta los primeros 10 segundos de este audio",
+      "/utils--ffmpeg une estos tres clips en un solo vídeo para Instagram"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/utils--ffmpeg convert this video.mov to a compressed mp4 for WhatsApp",
+      "/utils--ffmpeg trim the first 10 seconds off this audio file",
+      "/utils--ffmpeg merge these three clips into one video for Instagram"
+    ]
+  }
+}

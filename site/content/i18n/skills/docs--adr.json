@@ -1,0 +1,18 @@
+{
+  "sourceHash": "3aca822ec5b169d6",
+  "es": {
+    "description": "Crea un Architecture Decision Record (ADR) para documentar decisiones técnicas importantes",
+    "howToAsk": [
+      "/docs--adr documenta por qué elegimos PostgreSQL sobre MongoDB",
+      "/docs--adr crea un ADR para el cambio de arquitectura a microservicios",
+      "/docs--adr registra la decisión de usar GraphQL en vez de REST"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/docs--adr document why we chose PostgreSQL over MongoDB",
+      "/docs--adr create an ADR for the move to microservices",
+      "/docs--adr record the decision to use GraphQL instead of REST"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "ccc017099e1ee78d",
+  "es": {
+    "description": "Sintetiza notas de entrevistas y feedback en temas, insights y oportunidades",
+    "howToAsk": [
+      "/product--user-research-synthesis tengo 8 entrevistas de usuarios, ayúdame a sacar patrones",
+      "/product--user-research-synthesis resume este feedback de la encuesta de NPS",
+      "/product--user-research-synthesis convierte estas notas de research en oportunidades de producto"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/product--user-research-synthesis I have 8 user interviews, help me find patterns",
+      "/product--user-research-synthesis summarize this NPS survey feedback",
+      "/product--user-research-synthesis turn these research notes into product opportunities"
+    ]
+  }
+}

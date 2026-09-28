@@ -1,0 +1,18 @@
+{
+  "sourceHash": "9f72b7a9a032cf44",
+  "es": {
+    "description": "Traduce código entre lenguajes de programación conservando la lógica y los idiomas propios de cada uno",
+    "howToAsk": [
+      "/utils--translate esta función de Python a TypeScript",
+      "/utils--translate este script de Bash a PowerShell",
+      "/utils--translate esta clase de Java a Kotlin manteniendo el mismo comportamiento"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/utils--translate this Python function to TypeScript",
+      "/utils--translate this Bash script to PowerShell",
+      "/utils--translate this Java class to Kotlin, keeping the same behavior"
+    ]
+  }
+}

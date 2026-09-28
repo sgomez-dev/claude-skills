@@ -1,0 +1,18 @@
+{
+  "sourceHash": "04e0a99e4b7be847",
+  "es": {
+    "description": "Diseña sistemas multiagente: patrones de orquestador, traspasos entre agentes, estado compartido y modos de fallo",
+    "howToAsk": [
+      "/ai--multi-agent diseña un orquestador que reparta tareas entre varios agentes",
+      "/ai--multi-agent ¿cómo hago el traspaso de una conversación entre dos agentes?",
+      "/ai--multi-agent qué pasa si uno de mis agentes falla a mitad del flujo"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ai--multi-agent design an orchestrator that splits work across agents",
+      "/ai--multi-agent how do I hand off a conversation between two agents?",
+      "/ai--multi-agent what happens if one of my agents fails mid-flow"
+    ]
+  }
+}

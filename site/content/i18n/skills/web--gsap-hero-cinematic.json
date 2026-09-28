@@ -1,0 +1,18 @@
+{
+  "sourceHash": "56cbd3e2e2df4c2d",
+  "es": {
+    "description": "Secciones hero cinematográficas con GSAP: revelados por capas, parallax 3D, tipografía animada, fondos de vídeo y experiencias de landing inmersivas",
+    "howToAsk": [
+      "/web--gsap-hero-cinematic crea un hero cinematográfico con vídeo de fondo",
+      "/web--gsap-hero-cinematic añade parallax 3D al hero de mi landing",
+      "/web--gsap-hero-cinematic anima el título con un efecto de revelado por capas"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/web--gsap-hero-cinematic create a cinematic hero with a video background",
+      "/web--gsap-hero-cinematic add 3D parallax to my landing page hero",
+      "/web--gsap-hero-cinematic animate the headline with a layered reveal effect"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "7f845f8d9255067f",
+  "es": {
+    "description": "Analiza una traza de pila (stack trace) o mensaje de error y localiza la causa raíz",
+    "howToAsk": [
+      "/debugging--stack-trace analiza este stack trace y dime qué falla",
+      "/debugging--stack-trace encuentra la causa raíz de este error",
+      "/debugging--stack-trace explica este mensaje de error de mi app"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/debugging--stack-trace analyze this stack trace and tell me what's wrong",
+      "/debugging--stack-trace find the root cause of this error",
+      "/debugging--stack-trace explain this error message from my app"
+    ]
+  }
+}

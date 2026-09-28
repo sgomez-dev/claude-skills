@@ -1,0 +1,18 @@
+{
+  "sourceHash": "ae6d03aaf588f41f",
+  "es": {
+    "description": "Convierte entre formatos de datos: JSON, YAML, TOML, XML, CSV, ENV",
+    "howToAsk": [
+      "/utils--convert convierte este JSON a YAML",
+      "/utils--convert pasa este CSV a un archivo JSON",
+      "/utils--convert necesito convertir este .env a formato TOML"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/utils--convert convert this JSON to YAML",
+      "/utils--convert turn this CSV into a JSON file",
+      "/utils--convert I need to convert this .env to TOML format"
+    ]
+  }
+}

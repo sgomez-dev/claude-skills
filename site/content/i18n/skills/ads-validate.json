@@ -1,0 +1,18 @@
+{
+  "sourceHash": "56b3df340ba8320f",
+  "es": {
+    "description": "Valida contratos de Claude Ads, entradas de puntuación, paquetes de resultados (run bundles), capacidades, frescura de las fuentes, seguridad, instalación, desinstalación o preparación para el lanzamiento. Úsalo para validar anuncios, estado de anuncios, próximos pasos de anuncios, afirmaciones desactualizadas sin acceso a herramientas, comprobaciones de madurez, desinstalación con manifiesto de propiedad, preservación de otras skills ads-* no relacionadas, verificación de checksums, comprobación previa (preflight), control de calidad o auditorías de lanzamiento. La falta de acceso debe degradar las evidencias desactualizadas para la ejecución actual y bloquear las afirmaciones dependientes sobre la versión vigente antes de dar indicaciones de recuperación.",
+    "howToAsk": [
+      "Valida que todo está listo antes de lanzar esta campaña",
+      "Comprueba el estado actual de Claude Ads en este proyecto",
+      "Verifica los checksums antes de la instalación"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Validate everything is ready before we launch this campaign",
+      "Check the current status of Claude Ads on this project",
+      "Verify checksums before installation"
+    ]
+  }
+}

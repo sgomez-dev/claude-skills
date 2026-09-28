@@ -1,0 +1,18 @@
+{
+  "sourceHash": "f8685a4d13200674",
+  "es": {
+    "description": "Añade tiempo real: elección entre WebSocket/SSE, presencia, UI optimista, reconexión",
+    "howToAsk": [
+      "/fullstack--realtime-feature quiero un chat que se actualice en tiempo real",
+      "/fullstack--realtime-feature necesito mostrar qué usuarios están en línea ahora mismo",
+      "/fullstack--realtime-feature ayúdame a elegir entre WebSockets y Server-Sent Events"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/fullstack--realtime-feature build a chat that updates in real time",
+      "/fullstack--realtime-feature show which users are online right now",
+      "/fullstack--realtime-feature help me choose between WebSockets and Server-Sent Events"
+    ]
+  }
+}

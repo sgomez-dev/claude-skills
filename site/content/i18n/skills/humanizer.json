@@ -1,0 +1,18 @@
+{
+  "sourceHash": "19e30bd0701d9843",
+  "es": {
+    "description": "Elimina los rasgos de escritura generada por IA de un texto. Úsalo al editar o revisar texto para que suene más natural y escrito por una persona. Se basa en la guía de Wikipedia \"Signs of AI writing\". Detecta y corrige patrones como: simbolismo inflado, lenguaje promocional, análisis superficiales en \"-ando/-iendo\", atribuciones vagas, abuso de la raya, la regla de tres, vocabulario típico de IA, paralelismos negativos y frases conjuntivas excesivas.",
+    "howToAsk": [
+      "¿Puedes revisar este texto y quitarle el tono de que lo escribió una IA?",
+      "Humaniza este párrafo, suena demasiado a ChatGPT",
+      "Revisa mi artículo y elimina las rayas y el lenguaje de marketing exagerado"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Can you review this text and make it sound less like AI wrote it?",
+      "Humanize this paragraph, it sounds too much like ChatGPT",
+      "Check my article and remove the em dashes and inflated marketing language"
+    ]
+  }
+}

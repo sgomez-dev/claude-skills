@@ -1,0 +1,18 @@
+{
+  "sourceHash": "75db1a94e2470a55",
+  "es": {
+    "description": "Crea presentaciones HTML estratégicas con Chart.js, design tokens, layouts responsive, fórmulas de copywriting y estrategias de diapositivas según el contexto.",
+    "howToAsk": [
+      "Crea una presentación HTML para mi pitch de inversores",
+      "Necesito unas slides con gráficos de Chart.js para la reunión de ventas",
+      "Genérame un deck responsive para explicar nuestro producto"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Create an HTML presentation for my investor pitch",
+      "I need slides with Chart.js graphs for the sales meeting",
+      "Build a responsive deck to explain our product"
+    ]
+  }
+}

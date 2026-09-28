@@ -1,0 +1,18 @@
+{
+  "sourceHash": "ec1c1424b656f7dd",
+  "es": {
+    "description": "Genera la configuración de un pipeline CI/CD (GitHub Actions, GitLab CI, etc.)",
+    "howToAsk": [
+      "/devops--ci pipeline de GitHub Actions para tests y despliegue",
+      "/devops--ci configura CI en GitLab para mi proyecto Node",
+      "/devops--ci genera un pipeline que corra tests en cada pull request"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/devops--ci GitHub Actions pipeline for tests and deploy",
+      "/devops--ci set up GitLab CI for my Node project",
+      "/devops--ci generate a pipeline that runs tests on every pull request"
+    ]
+  }
+}

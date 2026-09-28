@@ -1,0 +1,18 @@
+{
+  "sourceHash": "7813e24fd85d6eb2",
+  "es": {
+    "description": "Redacta o responde emails de ventas ajustados a la etapa de la operación, el tono y la intención",
+    "howToAsk": [
+      "/sales--email-assistant responde a este email de un cliente que duda del precio",
+      "/sales--email-assistant escribe un email de seguimiento tras la demo de hoy",
+      "/sales--email-assistant redacta un email para reactivar este lead frío"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/sales--email-assistant reply to this email from a client hesitant about price",
+      "/sales--email-assistant write a follow-up email after today's demo",
+      "/sales--email-assistant draft an email to re-engage this cold lead"
+    ]
+  }
+}

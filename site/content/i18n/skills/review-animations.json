@@ -1,0 +1,18 @@
+{
+  "sourceHash": "33eba2c2266237b8",
+  "es": {
+    "description": "Revisa código de animación y movimiento contra un listón de calidad alto inspirado en la filosofía de ingeniería de diseño de Emil Kowalski. Por defecto señala problemas; la aprobación hay que ganársela.",
+    "howToAsk": [
+      "Revisa las animaciones de este componente con criterio exigente",
+      "Comprueba si el movimiento de esta interfaz cumple un estándar de calidad alto",
+      "Dame feedback crítico sobre esta transición animada antes de darla por buena"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Review this component's animations with a high bar for quality",
+      "Check whether this interface's motion meets a strict craft standard",
+      "Give me critical feedback on this animated transition before approving it"
+    ]
+  }
+}

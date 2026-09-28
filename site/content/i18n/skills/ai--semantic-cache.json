@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d9d1f7f424373bc9",
+  "es": {
+    "description": "Añade caché semántica a las llamadas a LLM: claves por embedding, umbrales e invalidación",
+    "howToAsk": [
+      "/ai--semantic-cache quiero cachear respuestas de preguntas parecidas, no solo idénticas",
+      "/ai--semantic-cache ajusta el umbral de similitud para la caché semántica",
+      "/ai--semantic-cache invalida la caché cuando cambien los documentos fuente"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ai--semantic-cache cache answers for similar questions, not just identical ones",
+      "/ai--semantic-cache tune the similarity threshold for the semantic cache",
+      "/ai--semantic-cache invalidate the cache when source documents change"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a5ebe69261cb3719",
+  "es": {
+    "description": "Construye un sistema de recomendación: elección colaborativo/por contenido/híbrido, arranque en frío, evaluación",
+    "howToAsk": [
+      "/ml--recommender-system diseña un recomendador de productos para mi tienda",
+      "/ml--recommender-system resuelve el problema de arranque en frío para usuarios nuevos",
+      "/ml--recommender-system compara enfoque colaborativo vs. híbrido"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ml--recommender-system design a product recommender for my store",
+      "/ml--recommender-system handle cold start for new users",
+      "/ml--recommender-system compare collaborative vs. hybrid approaches"
+    ]
+  }
+}

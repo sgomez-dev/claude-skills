@@ -1,0 +1,18 @@
+{
+  "sourceHash": "ed0a2cd1a45b7542",
+  "es": {
+    "description": "Diseña el autoescalado: métricas, políticas, warm pools, validación con pruebas de carga",
+    "howToAsk": [
+      "/cloud--autoscaling-strategy diseña el autoescalado para mi API en Kubernetes",
+      "/cloud--autoscaling-strategy necesito políticas de escalado para picos de tráfico en Black Friday",
+      "/cloud--autoscaling-strategy valida mi estrategia de autoescalado con una prueba de carga"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/cloud--autoscaling-strategy design autoscaling for my API running on Kubernetes",
+      "/cloud--autoscaling-strategy I need scaling policies for Black Friday traffic spikes",
+      "/cloud--autoscaling-strategy validate my autoscaling setup with a load test"
+    ]
+  }
+}

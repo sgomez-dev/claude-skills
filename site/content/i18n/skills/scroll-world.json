@@ -1,0 +1,18 @@
+{
+  "sourceHash": "138706b2cd1a2db9",
+  "es": {
+    "description": "Crea una landing page inmersiva de tipo \"vuela por el mundo\" controlada por el scroll, para cualquier sector o marca, usando Higgsfield. A medida que el visitante hace scroll, una cámara prerrenderizada vuela desde el exterior de cada escena hacia su interior, y luego fluye a la siguiente escena SIN cortes — un vuelo continuo y conectado (un mundo diorama isométrico al estilo Emons, o cualquier dirección de arte que elijas). La skill entrevista al usuario sobre el tema, los beats/secciones de la historia y el brand kit, y después genera escenas cohesionadas y clips de cámara continuos con Higgsfield, además de integrar un motor de scroll-scrub portátil y agnóstico de framework. La cadena de vídeo se renderiza por defecto a través de Monid (Seedance 2.0, pago por clip en USD — la disponibilidad se revisa en cada build, ver el Paso 4), con los créditos de Higgsfield como facturación de respaldo. Úsala cuando el usuario quiera un hero de \"mundo 3D\" / \"recorre el sector\", un cinemático de scroll, una landing diorama, o convertir un negocio en un mundo navegable con scroll.",
+    "howToAsk": [
+      "Quiero una landing con scroll que vuele por un mundo 3D de mi marca",
+      "Crea una página tipo diorama donde al hacer scroll recorremos el sector",
+      "Necesito un hero cinemático de scroll para la web de mi startup"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "I want a scroll landing page that flies through a 3D world for my brand",
+      "Build a diorama-style page where scrolling flies through our industry",
+      "I need a cinematic scroll hero section for my startup's website"
+    ]
+  }
+}

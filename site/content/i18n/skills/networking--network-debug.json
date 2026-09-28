@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d6f1535045055037",
+  "es": {
+    "description": "Diagnostica problemas de conectividad de red, latencia y enrutamiento",
+    "howToAsk": [
+      "/networking--network-debug mi servidor tarda mucho en responder desde Europa",
+      "/networking--network-debug no puedo conectar con la base de datos remota",
+      "/networking--network-debug investiga por qué hay picos de latencia intermitentes"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/networking--network-debug my server is slow to respond from Europe",
+      "/networking--network-debug I can't connect to the remote database",
+      "/networking--network-debug investigate intermittent latency spikes"
+    ]
+  }
+}

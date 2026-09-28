@@ -1,0 +1,18 @@
+{
+  "sourceHash": "71f9595c75785741",
+  "es": {
+    "description": "Genera un CHANGELOG a partir del historial de git usando conventional commits",
+    "howToAsk": [
+      "/git--changelog genera el CHANGELOG de esta versión",
+      "/git--changelog necesito un changelog desde el último tag",
+      "/git--changelog crea el historial de cambios para la release"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/git--changelog generate the CHANGELOG for this release",
+      "/git--changelog I need a changelog since the last tag",
+      "/git--changelog create the change history for the release"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "23a991e775e90e21",
+  "es": {
+    "description": "Diseña una estrategia de caché con CDN y reglas de caché para aplicaciones web",
+    "howToAsk": [
+      "/networking--cdn-strategy diseña la estrategia de CDN para mi web",
+      "/networking--cdn-strategy define qué assets deben cachearse y por cuánto tiempo",
+      "/networking--cdn-strategy mi sitio va lento fuera de España, ¿cómo lo arreglo con CDN?"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/networking--cdn-strategy design a CDN caching strategy for my site",
+      "/networking--cdn-strategy define which assets to cache and for how long",
+      "/networking--cdn-strategy my site is slow overseas, how do I fix it with a CDN?"
+    ]
+  }
+}

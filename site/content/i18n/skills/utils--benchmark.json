@@ -1,0 +1,18 @@
+{
+  "sourceHash": "9eacbbfbbee9ed02",
+  "es": {
+    "description": "Haz benchmarking de código correctamente: harness, warmup, estadísticas y puertas de regresión",
+    "howToAsk": [
+      "/utils--benchmark mide el rendimiento de esta función correctamente",
+      "/utils--benchmark monta un harness de benchmark con warmup",
+      "/utils--benchmark añade una puerta de regresión de rendimiento en CI"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/utils--benchmark properly benchmark this function's performance",
+      "/utils--benchmark set up a benchmark harness with warmup",
+      "/utils--benchmark add a performance regression gate to CI"
+    ]
+  }
+}

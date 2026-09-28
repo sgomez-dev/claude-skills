@@ -1,0 +1,18 @@
+{
+  "sourceHash": "0bca331a184d7e61",
+  "es": {
+    "description": "Genera workflows de GitHub Actions para CI, CD, etiquetado automático y automatización",
+    "howToAsk": [
+      "/devops--github-actions workflow de CI que corra tests en cada push",
+      "/devops--github-actions automatiza el etiquetado de issues con GitHub Actions",
+      "/devops--github-actions workflow de despliegue automático a producción"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/devops--github-actions CI workflow that runs tests on every push",
+      "/devops--github-actions automate issue labeling with GitHub Actions",
+      "/devops--github-actions workflow to auto-deploy to production"
+    ]
+  }
+}

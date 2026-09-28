@@ -1,0 +1,18 @@
+{
+  "sourceHash": "b0e20e53f448efee",
+  "es": {
+    "description": "Añade multi-tenancy: elección del modelo de aislamiento (por fila/esquema/base de datos), scoping, migraciones",
+    "howToAsk": [
+      "/fullstack--multi-tenancy quiero que cada cliente tenga sus datos aislados en mi SaaS",
+      "/fullstack--multi-tenancy ayúdame a elegir entre aislamiento por fila o por esquema",
+      "/fullstack--multi-tenancy necesito migrar mi app single-tenant a multi-tenant"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/fullstack--multi-tenancy isolate each customer's data in my SaaS",
+      "/fullstack--multi-tenancy help me choose between row-level and schema-level isolation",
+      "/fullstack--multi-tenancy migrate my single-tenant app to multi-tenant"
+    ]
+  }
+}

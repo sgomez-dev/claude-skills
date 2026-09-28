@@ -1,0 +1,18 @@
+{
+  "sourceHash": "7614e25a67a6210a",
+  "es": {
+    "description": "Creador de vídeo de principio a fin para HyperFrames, pensado para principiantes. Úsalo cuando el usuario diga \"haz un vídeo\", \"crea un vídeo\", \"vídeo nuevo\", \"quiero hacer un vídeo\", \"ayúdame a crear un vídeo\", o cuando alguien que nunca ha usado HyperFrames llegue con un concepto, un guion o una idea aproximada y quiera un MP4 terminado. Entrevista al usuario en una sola pasada y luego construye el vídeo completo con vistas previas obligatorias y comprobaciones de verificación visual.",
+    "howToAsk": [
+      "Quiero hacer un vídeo pero no sé por dónde empezar",
+      "Ayúdame a crear un vídeo para presentar mi producto",
+      "Haz un vídeo a partir de esta idea: un anuncio corto de mi cafetería"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "I want to make a video but have no idea where to start",
+      "Help me create a video to introduce my product",
+      "Make a video from this idea: a short ad for my coffee shop"
+    ]
+  }
+}

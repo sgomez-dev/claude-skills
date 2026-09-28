@@ -1,0 +1,18 @@
+{
+  "sourceHash": "31fa2e834e0fd92e",
+  "es": {
+    "description": "Changelog de API: detecta cambios incompatibles (breaking changes) entre versiones con notas de migración",
+    "howToAsk": [
+      "/docs--api-changelog compara la v1 y la v2 de mi API y detecta breaking changes",
+      "/docs--api-changelog genera el changelog de esta release con notas de migración",
+      "/docs--api-changelog qué endpoints han cambiado desde la última versión"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/docs--api-changelog compare v1 and v2 of my API and flag breaking changes",
+      "/docs--api-changelog generate the changelog for this release with migration notes",
+      "/docs--api-changelog which endpoints changed since the last version"
+    ]
+  }
+}

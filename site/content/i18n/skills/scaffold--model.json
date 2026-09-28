@@ -1,0 +1,18 @@
+{
+  "sourceHash": "c72897cb6717af8e",
+  "es": {
+    "description": "Genera un modelo de datos con validación, serialización e integración con la base de datos",
+    "howToAsk": [
+      "/scaffold--model crea el modelo de datos de Usuario con validación",
+      "/scaffold--model necesito un modelo con serialización para la entidad Pedido",
+      "/scaffold--model genera el modelo de Producto integrado con la base de datos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/scaffold--model create the User data model with validation",
+      "/scaffold--model I need a model with serialization for the Order entity",
+      "/scaffold--model generate the Product model wired to the database"
+    ]
+  }
+}

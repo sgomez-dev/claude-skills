@@ -1,0 +1,18 @@
+{
+  "sourceHash": "75d4bf78a723a443",
+  "es": {
+    "description": "Mejora los nombres de variables, funciones y clases para más claridad y consistencia",
+    "howToAsk": [
+      "/code-quality--naming revisa los nombres de variables de este archivo",
+      "/code-quality--naming sugiere mejores nombres para mis funciones y clases",
+      "/code-quality--naming unifica la convención de nombres en todo el módulo"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/code-quality--naming review the variable names in this file",
+      "/code-quality--naming suggest better names for my functions and classes",
+      "/code-quality--naming make naming conventions consistent across this module"
+    ]
+  }
+}

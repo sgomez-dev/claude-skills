@@ -1,0 +1,18 @@
+{
+  "sourceHash": "32cd76eaca9521d3",
+  "es": {
+    "description": "Analiza y optimiza consultas SQL u ORM lentas",
+    "howToAsk": [
+      "/database--query-optimize esta consulta SQL tarda 10 segundos, ¿por qué?",
+      "/database--query-optimize optimiza esta query de Prisma que va lenta",
+      "/database--query-optimize revisa los índices para esta consulta de reportes"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/database--query-optimize this SQL query takes 10 seconds, why?",
+      "/database--query-optimize optimize this slow Prisma query",
+      "/database--query-optimize review indexes for this reporting query"
+    ]
+  }
+}

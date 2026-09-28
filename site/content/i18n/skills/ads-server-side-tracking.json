@@ -1,0 +1,18 @@
+{
+  "sourceHash": "eec7743fc66b5cb1",
+  "es": {
+    "description": "Audita la medición de medios de pago del lado servidor, incluyendo la gestión de etiquetas del lado servidor, las Conversion API de las plataformas, la taxonomía de eventos, la deduplicación entre navegador y servidor, el consentimiento, el hashing, la calidad de los datos, la observabilidad y la privacidad. Úsalo para tracking del lado servidor, sGTM, etiquetado del lado servidor, CAPI, Events API, event_id, depuración de píxeles, medición first-party o pérdida de datos de conversión.",
+    "howToAsk": [
+      "Ayúdame a configurar el tracking del lado servidor con sGTM",
+      "¿Por qué se están perdiendo conversiones entre el píxel y la CAPI?",
+      "Revisa la deduplicación de eventos entre navegador y servidor"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Help me set up server-side tracking with sGTM",
+      "Why are conversions getting lost between the pixel and the CAPI?",
+      "Review event deduplication between browser and server"
+    ]
+  }
+}

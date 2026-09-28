@@ -1,0 +1,18 @@
+{
+  "sourceHash": "35ad933fca43e298",
+  "es": {
+    "description": "Construye un scraper con IA usando scrapegraph-ai: elección del graph, esquemas Pydantic y coste en tokens",
+    "howToAsk": [
+      "/automation--scrapegraph-scraper extrae datos estructurados de estas páginas con scrapegraph-ai",
+      "/automation--scrapegraph-scraper define un esquema Pydantic para la salida del scraper",
+      "/automation--scrapegraph-scraper ¿cuántos tokens me va a costar rastrear este sitio?"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/automation--scrapegraph-scraper extract structured data from these pages with scrapegraph-ai",
+      "/automation--scrapegraph-scraper define a Pydantic schema for the scraper's output",
+      "/automation--scrapegraph-scraper how many tokens will crawling this site cost?"
+    ]
+  }
+}

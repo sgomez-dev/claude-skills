@@ -1,0 +1,18 @@
+{
+  "sourceHash": "e3baec1541cc7b4f",
+  "es": {
+    "description": "Crea un plan estratégico de cuenta con mapa organizativo, puntos de dolor, iniciativas y jugadas de entrada",
+    "howToAsk": [
+      "/sales--account-plan plan de cuenta para Acme Corp, quiero entrar en su departamento de IT",
+      "/sales--account-plan mapea la organización de este cliente clave y sus iniciativas",
+      "/sales--account-plan necesito una estrategia de cuenta para renovar este contrato grande"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/sales--account-plan account plan for Acme Corp, I want to break into their IT department",
+      "/sales--account-plan map this key customer's org chart and initiatives",
+      "/sales--account-plan I need an account strategy to renew this big contract"
+    ]
+  }
+}

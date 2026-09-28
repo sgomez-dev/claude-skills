@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a14668c4692a10cf",
+  "es": {
+    "description": "Audita la medición de Meta Ads, Pixel y Conversions API, atribución, creatividades de Facebook e Instagram, audiencias, ubicaciones, automatización, presupuestos, estructura de cuenta y políticas. Úsalo para Meta Ads, Facebook Ads, Instagram Ads, Advantage+, Pixel, CAPI, Events Manager, fatiga creativa u optimización de campañas de Meta.",
+    "howToAsk": [
+      "Audita mi cuenta de Meta Ads, sobre todo el Pixel y la CAPI",
+      "¿Mis anuncios de Instagram tienen fatiga creativa?",
+      "Revisa la estructura de mi cuenta de Facebook Ads"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Audit my Meta Ads account, especially the Pixel and CAPI setup",
+      "Are my Instagram ads suffering from creative fatigue?",
+      "Review the structure of my Facebook Ads account"
+    ]
+  }
+}

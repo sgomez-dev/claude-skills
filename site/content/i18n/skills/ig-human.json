@@ -1,0 +1,18 @@
+{
+  "sourceHash": "50e30dcba23ee9e2",
+  "es": {
+    "description": "Elimina la huella de máquina de cualquier borrador - rayas largas, palabras de relleno de IA, caracteres de marca de agua invisibles - y lo puntúa contra un panel de cinco chequeos de detección antes de publicarlo. Úsalo siempre que un texto necesite sonar humano, cuando el usuario diga humanizar, \"esto suena a IA\", \"quita las rayas\", \"quítale el de-slop\", \"esto suena a ChatGPT\", o antes de mostrar al usuario cualquier caption, guion, comentario, respuesta o DM.",
+    "howToAsk": [
+      "Revisa este texto y quítale cualquier rastro de que lo escribió una IA",
+      "Este caption suena a ChatGPT, humanízalo antes de publicarlo",
+      "Puntúa este guion contra el panel de detección de IA"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Check this text and strip out anything that sounds AI-written",
+      "This caption sounds like ChatGPT, humanize it before I post",
+      "Score this script against the AI-detection panel"
+    ]
+  }
+}

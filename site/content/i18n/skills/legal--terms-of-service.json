@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d747ba357a63543e",
+  "es": {
+    "description": "Redacta unos Términos de Servicio adaptados al modelo de negocio real del producto",
+    "howToAsk": [
+      "/legal--terms-of-service redacta los términos de servicio de mi SaaS",
+      "/legal--terms-of-service necesito los términos para mi marketplace con pagos",
+      "/legal--terms-of-service genera los TOS adaptados a mi modelo de suscripción"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/legal--terms-of-service draft the terms of service for my SaaS",
+      "/legal--terms-of-service I need terms for my marketplace with payments",
+      "/legal--terms-of-service generate ToS tailored to my subscription model"
+    ]
+  }
+}

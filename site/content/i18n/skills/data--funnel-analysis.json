@@ -1,0 +1,18 @@
+{
+  "sourceHash": "9d902ac35a80084c",
+  "es": {
+    "description": "Construye un embudo de conversión: definición de pasos, SQL de abandono, plantilla de insights",
+    "howToAsk": [
+      "/data--funnel-analysis embudo de conversión del onboarding",
+      "/data--funnel-analysis SQL para ver dónde abandonan los usuarios el checkout",
+      "/data--funnel-analysis analiza el embudo de la prueba gratuita a pago"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/data--funnel-analysis conversion funnel for onboarding",
+      "/data--funnel-analysis SQL to find where users drop off at checkout",
+      "/data--funnel-analysis analyze the funnel from free trial to paid"
+    ]
+  }
+}

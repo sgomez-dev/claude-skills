@@ -1,0 +1,18 @@
+{
+  "sourceHash": "0ecd1a6b60707d08",
+  "es": {
+    "description": "Sistema de trabajos en segundo plano: elección de cola según el stack, workers, reintentos, cron, monitorización",
+    "howToAsk": [
+      "/fullstack--background-jobs necesito procesar vídeos subidos sin bloquear la app",
+      "/fullstack--background-jobs añade una tarea programada que se ejecute cada noche",
+      "/fullstack--background-jobs quiero reintentos automáticos si falla el envío de emails"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/fullstack--background-jobs process uploaded videos without blocking the app",
+      "/fullstack--background-jobs add a nightly scheduled task",
+      "/fullstack--background-jobs auto-retry failed email sends"
+    ]
+  }
+}

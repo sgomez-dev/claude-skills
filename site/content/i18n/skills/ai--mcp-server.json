@@ -1,0 +1,18 @@
+{
+  "sourceHash": "81d62ab5999f292e",
+  "es": {
+    "description": "Construye un servidor MCP: herramientas, recursos, prompts, transporte, autenticación y pruebas",
+    "howToAsk": [
+      "/ai--mcp-server crea un servidor MCP que exponga mis herramientas internas",
+      "/ai--mcp-server añade autenticación a mi servidor MCP",
+      "/ai--mcp-server necesito tests para las herramientas de mi servidor MCP"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ai--mcp-server create an MCP server that exposes our internal tools",
+      "/ai--mcp-server add authentication to my MCP server",
+      "/ai--mcp-server I need tests for my MCP server's tools"
+    ]
+  }
+}

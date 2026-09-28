@@ -1,0 +1,18 @@
+{
+  "sourceHash": "738646628056bcd3",
+  "es": {
+    "description": "Construye el onboarding de usuarios: flujo de registro a activación, checklists, estados vacíos, métricas",
+    "howToAsk": [
+      "/fullstack--onboarding-flow diseña el flujo desde el registro hasta la primera acción útil",
+      "/fullstack--onboarding-flow añade una checklist de primeros pasos para usuarios nuevos",
+      "/fullstack--onboarding-flow mide cuántos usuarios se activan tras registrarse"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/fullstack--onboarding-flow design the flow from signup to first useful action",
+      "/fullstack--onboarding-flow add a getting-started checklist for new users",
+      "/fullstack--onboarding-flow track how many users activate after signing up"
+    ]
+  }
+}

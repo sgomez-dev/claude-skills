@@ -1,0 +1,18 @@
+{
+  "sourceHash": "fb50d2a79fc58b9c",
+  "es": {
+    "description": "Experta en diseño de movimiento e interacción basada en las técnicas de Emil Kowalski, Jakub Krehel y Jhey Tompkins. Dos modos: construir componentes interactivos con movimiento con propósito, o auditar animaciones existentes para detectar patrones de movimiento con pinta de IA genérica (la auditoría genera un informe HTML de marca con demos en bucle). Úsala al crear, añadir, animar o revisar movimiento de UI: transiciones, estados hover, microinteracciones, animaciones de entrada/salida, o cualquier trabajo de motion design en React, Framer Motion, CSS o HTML. Ofrece perspectivas por diseñador con ponderación según el contexto.",
+    "howToAsk": [
+      "Añade una animación de entrada con propósito a esta tarjeta",
+      "Audita las animaciones de mi web y dime si parecen genéricas de IA",
+      "Crea microinteracciones de hover para estos botones en Framer Motion"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Add a purposeful entrance animation to this card",
+      "Audit my site's animations and tell me if they look like AI-slop",
+      "Create hover micro-interactions for these buttons in Framer Motion"
+    ]
+  }
+}

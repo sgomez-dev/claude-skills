@@ -1,0 +1,18 @@
+{
+  "sourceHash": "86284021b75628ef",
+  "es": {
+    "description": "Crea un design system completo y con criterio propio: tokens, tipografía, color y componentes",
+    "howToAsk": [
+      "/web--design-system crea un design system completo para mi startup",
+      "/web--design-system define los tokens de color y tipografía de mi producto",
+      "/web--design-system genera la librería de componentes base de mi app"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/web--design-system create a complete design system for my startup",
+      "/web--design-system define the color and typography tokens for my product",
+      "/web--design-system generate the base component library for my app"
+    ]
+  }
+}

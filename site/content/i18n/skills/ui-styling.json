@@ -1,0 +1,18 @@
+{
+  "sourceHash": "84db6d6100ed668b",
+  "es": {
+    "description": "Crea interfaces de usuario bonitas y accesibles con componentes de shadcn/ui (construidos sobre Radix UI + Tailwind), estilos utility-first de Tailwind CSS y diseños visuales basados en canvas. Úsala al construir interfaces de usuario, implementar sistemas de diseño, crear layouts responsive, añadir componentes accesibles (diálogos, desplegables, formularios, tablas), personalizar temas y colores, implementar modo oscuro, generar diseños visuales y pósteres, o establecer patrones de estilo consistentes en toda la aplicación.",
+    "howToAsk": [
+      "Crea un formulario accesible con componentes de shadcn/ui",
+      "Implementa el modo oscuro en esta interfaz con Tailwind",
+      "Diseña un dashboard responsive con componentes reutilizables"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Build an accessible form using shadcn/ui components",
+      "Implement dark mode for this interface with Tailwind",
+      "Design a responsive dashboard with reusable components"
+    ]
+  }
+}

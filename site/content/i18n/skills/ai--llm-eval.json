@@ -1,0 +1,18 @@
+{
+  "sourceHash": "9d402aa128b50264",
+  "es": {
+    "description": "Evaluación de salidas de LLM: rúbricas, LLM como juez con controles de sesgo, e integración en CI",
+    "howToAsk": [
+      "/ai--llm-eval crea una rúbrica para evaluar las respuestas de mi asistente",
+      "/ai--llm-eval monta un LLM-as-judge que controle el sesgo",
+      "/ai--llm-eval integra las evaluaciones del modelo en el pipeline de CI"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ai--llm-eval create a rubric to score my assistant's answers",
+      "/ai--llm-eval set up an LLM-as-judge with bias controls",
+      "/ai--llm-eval wire model evals into our CI pipeline"
+    ]
+  }
+}

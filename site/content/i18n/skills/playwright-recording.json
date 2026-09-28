@@ -1,0 +1,18 @@
+{
+  "sourceHash": "37e752c6aba9a465",
+  "es": {
+    "description": "Graba interacciones del navegador como vídeo usando Playwright. Úsalo para capturar vídeos de demo, recorridos de la app y flujos de interfaz para vídeos de Remotion. Se activa con peticiones como grabar una demo, capturar vídeo del navegador, grabar la pantalla de un sitio web o crear metraje de un recorrido.",
+    "howToAsk": [
+      "Graba un vídeo de demo mostrando cómo funciona el registro",
+      "Captura en vídeo el flujo de checkout de mi web",
+      "Necesito un recorrido en vídeo de la app para el vídeo de Remotion"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Record a demo video showing how signup works",
+      "Capture the checkout flow on my site as a video",
+      "I need a video walkthrough of the app for the Remotion video"
+    ]
+  }
+}

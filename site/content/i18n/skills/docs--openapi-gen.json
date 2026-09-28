@@ -1,0 +1,18 @@
+{
+  "sourceHash": "72f451992784b3f7",
+  "es": {
+    "description": "Genera o actualiza la especificación OpenAPI/Swagger a partir del código",
+    "howToAsk": [
+      "/docs--openapi-gen genera el archivo OpenAPI de mi API REST",
+      "/docs--openapi-gen actualiza el swagger.json con los endpoints nuevos",
+      "/docs--openapi-gen necesito la especificación OpenAPI de este servicio"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/docs--openapi-gen generate the OpenAPI file for my REST API",
+      "/docs--openapi-gen update swagger.json with the new endpoints",
+      "/docs--openapi-gen I need the OpenAPI spec for this service"
+    ]
+  }
+}

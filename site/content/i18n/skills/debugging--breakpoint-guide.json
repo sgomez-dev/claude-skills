@@ -1,0 +1,18 @@
+{
+  "sourceHash": "e87ed3bd7ceee225",
+  "es": {
+    "description": "Genera un plan estratégico de breakpoints para depurar un problema concreto",
+    "howToAsk": [
+      "/debugging--breakpoint-guide dónde poner breakpoints para este bug de login",
+      "/debugging--breakpoint-guide plan de breakpoints para depurar el checkout",
+      "/debugging--breakpoint-guide ayúdame a depurar este error paso a paso"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/debugging--breakpoint-guide where to set breakpoints for this login bug",
+      "/debugging--breakpoint-guide breakpoint plan to debug the checkout flow",
+      "/debugging--breakpoint-guide help me step through this error"
+    ]
+  }
+}

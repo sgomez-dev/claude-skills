@@ -1,0 +1,18 @@
+{
+  "sourceHash": "315b099b417b0551",
+  "es": {
+    "description": "Redacta un PR/FAQ al estilo Amazon (working backwards) para una idea de producto",
+    "howToAsk": [
+      "/product--pr-faq escribe el PR/FAQ para esta idea de producto nueva",
+      "/product--pr-faq ayúdame a hacer el working-backwards de esta funcionalidad",
+      "/product--pr-faq redacta el comunicado de prensa como si ya hubiéramos lanzado"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/product--pr-faq write the PR/FAQ for this new product idea",
+      "/product--pr-faq help me work backwards from the customer for this feature",
+      "/product--pr-faq draft the press release as if we'd already launched"
+    ]
+  }
+}

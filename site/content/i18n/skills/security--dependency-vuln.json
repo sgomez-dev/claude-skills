@@ -1,0 +1,18 @@
+{
+  "sourceHash": "c1626d503a5510f2",
+  "es": {
+    "description": "Comprueba si las dependencias tienen vulnerabilidades de seguridad conocidas",
+    "howToAsk": [
+      "/security--dependency-vuln revisa las dependencias de mi proyecto Node",
+      "/security--dependency-vuln ¿alguna de mis librerías tiene un CVE conocido?",
+      "/security--dependency-vuln audita el package.json antes de desplegar"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/security--dependency-vuln check my Node project's dependencies",
+      "/security--dependency-vuln does any of my libraries have a known CVE?",
+      "/security--dependency-vuln audit package.json before we deploy"
+    ]
+  }
+}

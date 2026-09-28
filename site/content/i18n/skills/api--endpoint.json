@@ -1,0 +1,18 @@
+{
+  "sourceHash": "185f2031ef3707ba",
+  "es": {
+    "description": "Genera un endpoint de API completo con validación, autenticación y manejo de errores",
+    "howToAsk": [
+      "/api--endpoint crea un endpoint para crear pedidos con validación de datos",
+      "/api--endpoint añade autenticación a este endpoint de usuarios",
+      "/api--endpoint necesito manejo de errores consistente en mis rutas de API"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/api--endpoint create an endpoint to place orders with input validation",
+      "/api--endpoint add authentication to this users endpoint",
+      "/api--endpoint I need consistent error handling across my API routes"
+    ]
+  }
+}

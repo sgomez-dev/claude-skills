@@ -1,0 +1,18 @@
+{
+  "sourceHash": "bb3ff60468f73cf1",
+  "es": {
+    "description": "Transiciones de página con GSAP: animaciones entre rutas, transiciones de elementos compartidos, cortinas (wipes) superpuestas y efectos de navegación fluidos",
+    "howToAsk": [
+      "/web--gsap-page-transitions añade una transición suave entre páginas",
+      "/web--gsap-page-transitions crea un efecto de cortina al cambiar de ruta",
+      "/web--gsap-page-transitions anima un elemento compartido entre dos vistas"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/web--gsap-page-transitions add a smooth transition between pages",
+      "/web--gsap-page-transitions create a wipe effect on route change",
+      "/web--gsap-page-transitions animate a shared element between two views"
+    ]
+  }
+}

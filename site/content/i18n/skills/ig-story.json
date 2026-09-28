@@ -1,0 +1,18 @@
+{
+  "sourceHash": "64a3a22aa955c098",
+  "es": {
+    "description": "Escribe las Stories de Instagram del día - la secuencia frame a frame, qué stickers usar y dónde, y la que mueve a la gente hacia los DMs. Úsalo cuando el usuario diga \"stories\", \"qué publico en mi story\", \"secuencia de story\", \"idea de encuesta\", \"no tengo nada que contar en mi story\", o quiera vender algo sin hacer un post al respecto.",
+    "howToAsk": [
+      "Escríbeme la secuencia de stories de hoy",
+      "No tengo nada que contar en mi story, dame ideas",
+      "Necesito una story que mueva a la gente a escribirme por DM"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Write today's story sequence for me",
+      "I have nothing to post on my story, give me ideas",
+      "I need a story that moves people into my DMs"
+    ]
+  }
+}

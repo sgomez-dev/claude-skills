@@ -1,0 +1,18 @@
+{
+  "sourceHash": "3208327cf988b060",
+  "es": {
+    "description": "Diseña features con pipelines seguros frente a fugas de datos: codificaciones, escalado, interacciones",
+    "howToAsk": [
+      "/ml--feature-engineering crea features a partir de estas columnas de fecha",
+      "/ml--feature-engineering codifica estas variables categóricas sin fugas",
+      "/ml--feature-engineering añade interacciones entre precio y categoría"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ml--feature-engineering create features from these date columns",
+      "/ml--feature-engineering encode these categorical variables without leakage",
+      "/ml--feature-engineering add interaction features between price and category"
+    ]
+  }
+}

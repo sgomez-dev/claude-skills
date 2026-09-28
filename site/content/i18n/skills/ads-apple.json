@@ -1,0 +1,18 @@
+{
+  "sourceHash": "5b86bb512568bbce",
+  "es": {
+    "description": "Audita la medición de Apple Ads, AdServices y AdAttributionKit, la estructura de campañas y palabras clave, Search Match, ubicaciones en App Store, páginas de producto personalizadas, pujas, presupuestos, reconciliación con MMP y políticas. Úsalo para Apple Ads, Apple Search Ads, anuncios en App Store, Search Match, páginas de producto personalizadas, AdServices o campañas de instalación de apps de Apple.",
+    "howToAsk": [
+      "Audita mi cuenta de Apple Search Ads y revisa la estructura de palabras clave",
+      "¿Search Match me está gastando presupuesto en términos irrelevantes?",
+      "Revisa mis páginas de producto personalizadas en App Store"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Audit my Apple Search Ads account and review the keyword structure",
+      "Is Search Match wasting budget on irrelevant terms?",
+      "Review my custom product pages on the App Store"
+    ]
+  }
+}

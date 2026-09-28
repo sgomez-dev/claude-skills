@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a7509060803e2e6a",
+  "es": {
+    "description": "Elige la librería adecuada para una tarea de frontend a partir de una lista curada y con criterio propio: números, inputs OTP, gráficos, menús de comandos, virtualización, drag and drop, toasts, estado, estilos y más. Solo se ejecuta cuando se invoca explícitamente; no se activa por sí sola.",
+    "howToAsk": [
+      "Qué librería me recomiendas para un menú de comandos tipo Cmd+K",
+      "Necesito una librería para arrastrar y soltar tarjetas en un tablero",
+      "Qué usar para virtualizar una lista larga en React"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "What library do you recommend for a Cmd+K command menu",
+      "I need a library for drag-and-drop cards on a board",
+      "What should I use to virtualize a long list in React"
+    ]
+  }
+}

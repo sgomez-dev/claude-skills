@@ -1,0 +1,18 @@
+{
+  "sourceHash": "79fe6933cf4001ee",
+  "es": {
+    "description": "Ingeniería de contexto: qué entra en la ventana de contexto, recuperación (retrieval) frente a stuffing, y compactación",
+    "howToAsk": [
+      "/ai--context-engineering mi agente se queda sin contexto en conversaciones largas",
+      "/ai--context-engineering ¿uso retrieval o meto todo el documento en el prompt?",
+      "/ai--context-engineering ayúdame a compactar el historial de chat para ahorrar tokens"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ai--context-engineering my agent runs out of context in long conversations",
+      "/ai--context-engineering should I use retrieval or stuff the whole doc in the prompt?",
+      "/ai--context-engineering help me compact chat history to save tokens"
+    ]
+  }
+}

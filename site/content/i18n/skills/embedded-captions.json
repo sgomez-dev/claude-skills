@@ -1,0 +1,18 @@
+{
+  "sourceHash": "b4dcd7233d0095ee",
+  "es": {
+    "description": "Añade subtítulos o captions a un vídeo existente de una sola persona hablando a cámara, sin editar el metraje. Úsalo para subtítulos literales sencillos, captions cinematográficos incrustados detrás del sujeto, captions con efectos (VFX), \"炸/特效/酷炫字幕\", o una identidad concreta del catálogo de 35 estilos. Elige según la identidad visual, no según el motor técnico. El estilo discreto `anchor` es el predeterminado; incrusta cada palabra solo cuando el usuario pida explícitamente un tratamiento totalmente cinematográfico. El flujo se ejecuta en local de principio a fin, incluida la transcripción y el recorte del sujeto (matting); separa el metraje con varios planos antes de aplicarlo.",
+    "howToAsk": [
+      "Añade subtítulos a este vídeo donde hablo a cámara",
+      "Ponle captions cinematográficos detrás de mí en este vídeo",
+      "Quiero subtítulos con efectos llamativos estilo TikTok en este clip"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Add captions to this talking-head video",
+      "Put cinematic captions behind me in this video",
+      "I want flashy TikTok-style effect captions on this clip"
+    ]
+  }
+}

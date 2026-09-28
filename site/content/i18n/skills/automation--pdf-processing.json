@@ -1,0 +1,18 @@
+{
+  "sourceHash": "da1e35d9293e0d9f",
+  "es": {
+    "description": "Construye flujos de trabajo con PDF: extrae texto y tablas, rellena formularios, combina/divide y usa OCR como respaldo",
+    "howToAsk": [
+      "/automation--pdf-processing extrae las tablas de estos PDF de facturas",
+      "/automation--pdf-processing rellena automáticamente este formulario PDF",
+      "/automation--pdf-processing combina estos PDF escaneados y aplica OCR"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/automation--pdf-processing extract the tables from these invoice PDFs",
+      "/automation--pdf-processing automatically fill out this PDF form",
+      "/automation--pdf-processing merge these scanned PDFs and run OCR on them"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "e3889e4f538def89",
+  "es": {
+    "description": "Genera ficheros de migración de base de datos para cambios de esquema",
+    "howToAsk": [
+      "/database--migration migración para añadir la columna email a users",
+      "/database--migration genera la migración para renombrar una tabla",
+      "/database--migration crea el archivo de migración para el nuevo índice"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/database--migration migration to add an email column to users",
+      "/database--migration generate the migration to rename a table",
+      "/database--migration create the migration file for a new index"
+    ]
+  }
+}

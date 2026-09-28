@@ -1,0 +1,18 @@
+{
+  "sourceHash": "316c05176bd31c0e",
+  "es": {
+    "description": "Inteligencia de diseño UI/UX para web, móvil y escritorio. Esta skill debe usarse al diseñar, construir, revisar o corregir interfaces, incluyendo páginas, componentes, sistemas de diseño, accesibilidad, interacción, layout responsive, tipografía, color, gráficos y la implementación de UI específica de cada stack. Datos locales consultables: 79 estilos buscables (50 activos), 192 paletas de producto y perfiles de razonamiento, 74 combinaciones de fuentes, 119 guías de UX, 105 iconos, 17 presets de GSAP, 25 tipos de gráficos y 22 stacks.",
+    "howToAsk": [
+      "Revisa la UX de esta pantalla de checkout",
+      "Elige una paleta de colores y tipografía para mi producto",
+      "Ayúdame a implementar este componente siguiendo buenas prácticas de UX"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Review the UX of this checkout screen",
+      "Pick a color palette and font pairing for my product",
+      "Help me implement this component following good UX practices"
+    ]
+  }
+}

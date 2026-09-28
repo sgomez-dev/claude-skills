@@ -1,0 +1,18 @@
+{
+  "sourceHash": "7ae5b3fbb39c1ecf",
+  "es": {
+    "description": "Configura políticas de acceso Zero Trust e identity-aware proxy en Cloudflare",
+    "howToAsk": [
+      "/networking--zero-trust protege el panel de administración solo para mi equipo",
+      "/networking--zero-trust exige login corporativo para acceder a la app interna",
+      "/networking--zero-trust configura Zero Trust para nuestra herramienta interna"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/networking--zero-trust restrict the admin panel to just my team",
+      "/networking--zero-trust require company login to access the internal app",
+      "/networking--zero-trust set up Zero Trust for our internal tool"
+    ]
+  }
+}

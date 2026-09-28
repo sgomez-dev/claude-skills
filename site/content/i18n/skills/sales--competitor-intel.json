@@ -1,0 +1,18 @@
+{
+  "sourceHash": "1686ada867a18779",
+  "es": {
+    "description": "Informe de inteligencia competitiva con posicionamiento, precios, matriz de funcionalidades y carencias",
+    "howToAsk": [
+      "/sales--competitor-intel analiza a nuestro competidor principal en este mercado",
+      "/sales--competitor-intel compara nuestros precios y funciones con los de X",
+      "/sales--competitor-intel dame un informe de dónde tenemos ventaja frente a la competencia"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/sales--competitor-intel analyze our main competitor in this market",
+      "/sales--competitor-intel compare our pricing and features against X",
+      "/sales--competitor-intel give me a report on where we beat the competition"
+    ]
+  }
+}

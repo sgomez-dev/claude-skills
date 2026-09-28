@@ -1,0 +1,18 @@
+{
+  "sourceHash": "9a1aa208cfe190a0",
+  "es": {
+    "description": "Implementa una estrategia de caché para respuestas de API, consultas a base de datos o cálculos",
+    "howToAsk": [
+      "/performance--cache añade caché a las respuestas de mi API",
+      "/performance--cache cachea los resultados de esta consulta pesada a la base de datos",
+      "/performance--cache diseña una estrategia de caché para los cálculos repetidos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/performance--cache add caching to my API responses",
+      "/performance--cache cache the results of this expensive database query",
+      "/performance--cache design a caching strategy for repeated computations"
+    ]
+  }
+}

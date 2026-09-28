@@ -1,0 +1,18 @@
+{
+  "sourceHash": "e73025649a334336",
+  "es": {
+    "description": "Construye animaciones en React Native y Expo, tomando las decisiones en el orden que determina si se sienten bien: si debe animarse, en qué hilo se ejecuta, qué propiedades, spring o timing, cómo se entrega el gesto y cómo degrada. Escribe la implementación con Reanimated, Gesture Handler, Expo Router y expo-haptics. Úsalo para animar cualquier cosa en una app Expo, añadir gestos, hojas (sheets), transiciones de pantalla, feedback al pulsar o haptics, o arreglar movimiento que va a tirones en el dispositivo. Para animación web usa `animate`.",
+    "howToAsk": [
+      "Anima la apertura de esta hoja modal en mi app de Expo",
+      "Añade feedback háptico cuando el usuario pulsa este botón",
+      "Esta transición entre pantallas va a tirones en el móvil, arréglala"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Animate this bottom sheet opening in my Expo app",
+      "Add haptic feedback when the user taps this button",
+      "This screen transition stutters on device, fix it"
+    ]
+  }
+}

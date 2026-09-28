@@ -1,0 +1,18 @@
+{
+  "sourceHash": "ff2cad71569efed3",
+  "es": {
+    "description": "Construye un análisis de retención por cohortes: SQL ejecutable más una guía de interpretación",
+    "howToAsk": [
+      "/data--cohort-analysis haz un análisis de retención por cohortes de mis usuarios",
+      "/data--cohort-analysis dame el SQL para ver la retención mensual desde el registro",
+      "/data--cohort-analysis explica cómo interpretar la tabla de cohortes que generes"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/data--cohort-analysis build a cohort retention analysis of my users",
+      "/data--cohort-analysis give me SQL to see monthly retention since signup",
+      "/data--cohort-analysis explain how to interpret the cohort table you generate"
+    ]
+  }
+}

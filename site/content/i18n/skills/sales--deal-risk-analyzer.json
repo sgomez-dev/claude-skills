@@ -1,0 +1,18 @@
+{
+  "sourceHash": "4631130131181228",
+  "es": {
+    "description": "Analiza notas de una operación o del pipeline en busca de señales de riesgo con un análisis de carencias MEDDIC",
+    "howToAsk": [
+      "/sales--deal-risk-analyzer revisa esta operación y dime si está en riesgo",
+      "/sales--deal-risk-analyzer analiza mi pipeline con MEDDIC y encuentra huecos",
+      "/sales--deal-risk-analyzer estas notas del deal, ¿qué señales de alarma ves?"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/sales--deal-risk-analyzer review this deal and tell me if it's at risk",
+      "/sales--deal-risk-analyzer run MEDDIC on my pipeline and find gaps",
+      "/sales--deal-risk-analyzer look at these deal notes, what red flags do you see?"
+    ]
+  }
+}

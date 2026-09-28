@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a752dc6d63dc9c8c",
+  "es": {
+    "description": "Anula el comportamiento por defecto de truncado del LLM. Obliga a generar código completo, prohíbe patrones de placeholder y gestiona con limpieza las divisiones por límite de tokens. Aplícalo a cualquier tarea que requiera una salida exhaustiva y sin recortes.",
+    "howToAsk": [
+      "Genera el archivo completo, sin dejar partes a medias ni comentarios de 'resto igual'",
+      "Necesito el componente entero sin placeholders tipo TODO, aunque sea muy largo",
+      "Si el código no cabe en una respuesta, continúa en la siguiente sin cortar nada"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Generate the whole file, no partial sections or 'rest stays the same' comments",
+      "I need the entire component with no TODO placeholders, even if it's long",
+      "If the code doesn't fit in one response, continue in the next without cutting"
+    ]
+  }
+}

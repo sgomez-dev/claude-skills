@@ -1,0 +1,18 @@
+{
+  "sourceHash": "b7fdba3b7461577b",
+  "es": {
+    "description": "Configura Cloudflare Pages para despliegues de sitios estáticos y JAMstack",
+    "howToAsk": [
+      "/networking--cloudflare-pages despliega mi sitio estático en Cloudflare Pages",
+      "/networking--cloudflare-pages configura un dominio personalizado para Pages",
+      "/networking--cloudflare-pages añade previews automáticos por pull request"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/networking--cloudflare-pages deploy my static site on Cloudflare Pages",
+      "/networking--cloudflare-pages set up a custom domain for Pages",
+      "/networking--cloudflare-pages add automatic preview deploys per pull request"
+    ]
+  }
+}

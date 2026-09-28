@@ -1,0 +1,18 @@
+{
+  "sourceHash": "384c90ef30ec373b",
+  "es": {
+    "description": "Importa contenido de Figma a una composición de HyperFrames: assets renderizados, tokens de marca, componentes, secciones de storyboard → movimiento reconstruido (los frames se leen como estados, no como diapositivas) (REST/CLI), movimiento asistido por conector cuando está disponible, y shaders desde un conector o exportación nativa. Úsalo cuando el usuario pegue un enlace de figma.com o pida llevar un diseño, frame, logo, marca o animación de Figma a un vídeo/composición.",
+    "howToAsk": [
+      "Trae este diseño de Figma a mi composición de HyperFrames",
+      "Importa el logo y los tokens de marca desde este archivo de Figma",
+      "Convierte este storyboard de Figma en una animación"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Bring this Figma design into my HyperFrames composition",
+      "Import the logo and brand tokens from this Figma file",
+      "Turn this Figma storyboard into an animation"
+    ]
+  }
+}

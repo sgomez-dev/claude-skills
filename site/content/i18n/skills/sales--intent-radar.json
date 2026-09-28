@@ -1,0 +1,18 @@
+{
+  "sourceHash": "e1fe4606b84d3a1c",
+  "es": {
+    "description": "Detecta señales de compra en cuentas objetivo: contrataciones, financiación, cambios tecnológicos, noticias",
+    "howToAsk": [
+      "/sales--intent-radar busca señales de compra en estas 10 cuentas objetivo",
+      "/sales--intent-radar avísame si alguna de mis cuentas clave está contratando o levantando ronda",
+      "/sales--intent-radar detecta cambios tecnológicos recientes en esta lista de empresas"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/sales--intent-radar find buying signals across these 10 target accounts",
+      "/sales--intent-radar tell me if any key account is hiring or raising funding",
+      "/sales--intent-radar detect recent tech changes across this list of companies"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "67aab6e4ecdc49cc",
+  "es": {
+    "description": "Ejecuta una comprobación de salud sobre todas las skills instaladas: valida estructura, permisos y seguridad",
+    "howToAsk": [
+      "/meta--health-check revisa todas mis skills instaladas",
+      "/meta--health-check comprueba si hay permisos peligrosos en mis skills",
+      "/meta--health-check valida la estructura de mis comandos personalizados"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/meta--health-check check all my installed skills",
+      "/meta--health-check look for risky permissions in my skills",
+      "/meta--health-check validate the structure of my custom commands"
+    ]
+  }
+}

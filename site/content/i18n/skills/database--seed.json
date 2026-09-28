@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a0c2c079151d3218",
+  "es": {
+    "description": "Genera datos de prueba realistas para desarrollo y testing",
+    "howToAsk": [
+      "/database--seed genera 50 usuarios de prueba con pedidos",
+      "/database--seed crea datos semilla realistas para mi entorno de desarrollo",
+      "/database--seed necesito datos de prueba para la tabla de productos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/database--seed generate 50 test users with orders",
+      "/database--seed create realistic seed data for my dev environment",
+      "/database--seed I need test data for the products table"
+    ]
+  }
+}

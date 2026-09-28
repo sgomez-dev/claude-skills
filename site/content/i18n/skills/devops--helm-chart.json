@@ -1,0 +1,18 @@
+{
+  "sourceHash": "fb3c379c0eab49d1",
+  "es": {
+    "description": "Construye un Helm chart con plantillas limpias, values, dependencias, lint y estrategia de release",
+    "howToAsk": [
+      "/devops--helm-chart crea un Helm chart para mi aplicación",
+      "/devops--helm-chart añade dependencias y values a mi chart de Helm",
+      "/devops--helm-chart define la estrategia de release de mi Helm chart"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/devops--helm-chart create a Helm chart for my application",
+      "/devops--helm-chart add dependencies and values to my Helm chart",
+      "/devops--helm-chart define the release strategy for my Helm chart"
+    ]
+  }
+}

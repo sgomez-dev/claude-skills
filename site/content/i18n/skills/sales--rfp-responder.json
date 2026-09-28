@@ -1,0 +1,18 @@
+{
+  "sourceHash": "b101111201825b01",
+  "es": {
+    "description": "Redacta respuestas a RFP/RFI a partir de una matriz de requisitos con seguimiento de cumplimiento",
+    "howToAsk": [
+      "/sales--rfp-responder responde a este RFP usando la matriz de requisitos adjunta",
+      "/sales--rfp-responder necesito una respuesta a esta RFI con seguimiento de cumplimiento",
+      "/sales--rfp-responder redacta las respuestas técnicas de este pliego de licitación"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/sales--rfp-responder respond to this RFP using the attached requirements matrix",
+      "/sales--rfp-responder I need a response to this RFI with compliance tracking",
+      "/sales--rfp-responder draft the technical answers for this tender document"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a154b6d9b5eb24f5",
+  "es": {
+    "description": "Animaciones de React a nivel Awwwards: GSAP, Motion, Anime.js, scroll suave con Lenis, ScrollTrigger, efectos magnéticos",
+    "howToAsk": [
+      "/web--awwwards-animations añade scroll suave estilo Awwwards a mi web con Lenis",
+      "/web--awwwards-animations crea un botón con efecto magnético",
+      "/web--awwwards-animations anima las secciones al hacer scroll con GSAP ScrollTrigger"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/web--awwwards-animations add Awwwards-style smooth scroll with Lenis",
+      "/web--awwwards-animations create a button with a magnetic hover effect",
+      "/web--awwwards-animations animate sections on scroll with GSAP ScrollTrigger"
+    ]
+  }
+}

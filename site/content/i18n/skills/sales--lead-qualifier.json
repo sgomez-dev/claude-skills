@@ -1,0 +1,18 @@
+{
+  "sourceHash": "79a5c9b40aec6ede",
+  "es": {
+    "description": "Cualifica y clasifica leads por niveles con puntuación BANT, MEDDIC o CHAMP, más próximas acciones",
+    "howToAsk": [
+      "/sales--lead-qualifier cualifica estos leads con BANT y dime en qué nivel están",
+      "/sales--lead-qualifier puntúa esta lista con MEDDIC y dime las siguientes acciones",
+      "/sales--lead-qualifier clasifica estos leads entrantes por prioridad"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/sales--lead-qualifier qualify these leads with BANT and tell me their tier",
+      "/sales--lead-qualifier score this list with MEDDIC and suggest next actions",
+      "/sales--lead-qualifier tier these inbound leads by priority"
+    ]
+  }
+}

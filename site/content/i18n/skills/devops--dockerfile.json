@@ -1,0 +1,18 @@
+{
+  "sourceHash": "9c8c8dd523aa38a1",
+  "es": {
+    "description": "Genera u optimiza un Dockerfile listo para producción",
+    "howToAsk": [
+      "/devops--dockerfile genera un Dockerfile para mi app de Next.js",
+      "/devops--dockerfile optimiza este Dockerfile para que la imagen pese menos",
+      "/devops--dockerfile crea un Dockerfile multi-stage para producción"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/devops--dockerfile generate a Dockerfile for my Next.js app",
+      "/devops--dockerfile optimize this Dockerfile to shrink the image size",
+      "/devops--dockerfile create a multi-stage Dockerfile for production"
+    ]
+  }
+}

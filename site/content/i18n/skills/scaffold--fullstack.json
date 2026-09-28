@@ -1,0 +1,18 @@
+{
+  "sourceHash": "f2ece0b69e5b42dc",
+  "es": {
+    "description": "Genera una funcionalidad full-stack completa: frontend, backend y base de datos",
+    "howToAsk": [
+      "/scaffold--fullstack genera la funcionalidad completa de comentarios, de frontend a base de datos",
+      "/scaffold--fullstack necesito el scaffold full-stack de un sistema de favoritos",
+      "/scaffold--fullstack crea backend, frontend y esquema de datos para el carrito de compra"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/scaffold--fullstack scaffold a full comments feature, frontend to database",
+      "/scaffold--fullstack I need the full-stack scaffold for a favorites system",
+      "/scaffold--fullstack create backend, frontend, and schema for the shopping cart"
+    ]
+  }
+}

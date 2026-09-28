@@ -1,0 +1,18 @@
+{
+  "sourceHash": "466dfc7c21ca665f",
+  "es": {
+    "description": "Brief SEO + artículo: intención de la keyword, análisis de la SERP, encabezados, enlaces internos",
+    "howToAsk": [
+      "/content--seo-content escribe un artículo SEO sobre 'mejores CRM para pymes'",
+      "/content--seo-content analiza la SERP de mi keyword y dame la estructura de encabezados",
+      "/content--seo-content crea un brief SEO con enlaces internos para este tema"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/content--seo-content write an SEO article about 'best CRM for small businesses'",
+      "/content--seo-content analyze the SERP for my keyword and give me a heading structure",
+      "/content--seo-content create an SEO brief with internal links for this topic"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "7fb5dd4144d44cf0",
+  "es": {
+    "description": "Genera mocks, stubs y fixtures para tests",
+    "howToAsk": [
+      "/testing--test-mock crea un mock de este servicio externo para los tests",
+      "/testing--test-mock genera fixtures de usuarios de prueba",
+      "/testing--test-mock necesito un stub para esta llamada a la API de pagos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/testing--test-mock create a mock of this external service for tests",
+      "/testing--test-mock generate fixtures for test users",
+      "/testing--test-mock I need a stub for this payments API call"
+    ]
+  }
+}

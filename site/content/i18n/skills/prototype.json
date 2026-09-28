@@ -1,0 +1,18 @@
+{
+  "sourceHash": "6e478c0cdf8f552a",
+  "es": {
+    "description": "Construye varias versiones genuinamente distintas de una pieza de UI que describas, renderizadas detrás de un selector visual para que puedas ir pasando entre ellas en vivo y promover la que te convenza. Solo se ejecuta cuando se invoca explícitamente; no se activa por sí sola.",
+    "howToAsk": [
+      "Genera tres versiones distintas de la cabecera de mi landing page para comparar",
+      "Quiero probar varios diseños de la tarjeta de producto antes de decidir",
+      "Crea alternativas visuales del formulario de registro y déjame elegir una"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Generate three different versions of my landing page hero to compare",
+      "I want to try several designs for the product card before deciding",
+      "Create visual alternatives for the sign-up form and let me pick one"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "242e51704150e11d",
+  "es": {
+    "description": "Generador completo de startup o SaaS: 10 agentes especializados trabajando en paralelo, más un PowerPoint con el plan de negocio",
+    "howToAsk": [
+      "/scaffold--startup-generator una app de gestión de inventario para tiendas pequeñas",
+      "/scaffold--startup-generator quiero lanzar un SaaS de facturación electrónica",
+      "/scaffold--startup-generator genera el plan de negocio para mi idea de app de fitness"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/scaffold--startup-generator an inventory app for small retail stores",
+      "/scaffold--startup-generator I want to launch an invoicing SaaS",
+      "/scaffold--startup-generator build the business plan for my fitness app idea"
+    ]
+  }
+}

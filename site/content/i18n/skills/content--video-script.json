@@ -1,0 +1,18 @@
+{
+  "sourceHash": "38fa95b0e33b732f",
+  "es": {
+    "description": "Guion de vídeo: gancho, estructura de retención, notas de B-roll, CTA — formato corto o largo",
+    "howToAsk": [
+      "/content--video-script escribe el guion de un vídeo corto para redes sobre mi producto",
+      "/content--video-script necesito un guion largo con gancho fuerte y notas de B-roll",
+      "/content--video-script dame la estructura de retención para este vídeo de YouTube"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/content--video-script write a short-form social video script for my product",
+      "/content--video-script I need a long-form script with a strong hook and B-roll notes",
+      "/content--video-script give me a retention structure for this YouTube video"
+    ]
+  }
+}

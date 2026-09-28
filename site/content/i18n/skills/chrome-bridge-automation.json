@@ -1,0 +1,18 @@
+{
+  "sourceHash": "28cafd4055e3fc04",
+  "es": {
+    "description": "Automatización de navegador guiada por visión usando el modo Bridge de Midscene. Funciona enteramente a partir de capturas de pantalla — no necesita DOM ni etiquetas de accesibilidad. Puede interactuar con todos los elementos visibles en pantalla sin importar la tecnología usada. Este modo se conecta al navegador Chrome de escritorio del usuario a través de la extensión Midscene Chrome, conservando cookies, sesiones y estado de login. Usa esta skill cuando el usuario quiera: - Navegar o abrir páginas web en su propio Chrome - Interactuar con páginas que requieren sesiones de login, cookies o estado de navegador existente - Extraer o recopilar datos de sitios web usando el navegador real del usuario - Rellenar formularios, hacer clic en botones o interactuar con elementos web - Verificar, validar o probar el comportamiento de la interfaz frontend - Tomar capturas de pantalla de páginas web - Automatizar flujos de trabajo web de varios pasos - Comprobar el contenido o la apariencia de un sitio web Impulsado por Midscene.js (https://midscenejs.com)",
+    "howToAsk": [
+      "Abre mi cuenta de Gmail en Chrome y busca los correos sin leer de esta semana",
+      "Entra en mi panel de administración y rellena el formulario de nuevo producto",
+      "Haz capturas de pantalla de mi web tras iniciar sesión en mi cuenta real"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Open my Gmail in Chrome and find this week's unread emails",
+      "Log into my admin dashboard and fill out the new product form",
+      "Take screenshots of my site after signing into my real account"
+    ]
+  }
+}

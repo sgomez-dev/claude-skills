@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a363df3cefc7af78",
+  "es": {
+    "description": "Un número de newsletter: curación, estructura, líneas de asunto A/B, apto para texto plano",
+    "howToAsk": [
+      "/content--newsletter escribe el número de esta semana de mi newsletter",
+      "/content--newsletter dame varias líneas de asunto para probar en A/B",
+      "/content--newsletter estructura el contenido para que se lea bien en texto plano"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/content--newsletter write this week's newsletter issue",
+      "/content--newsletter give me a few subject lines to A/B test",
+      "/content--newsletter structure the content so it reads well as plain text"
+    ]
+  }
+}

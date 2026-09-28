@@ -1,0 +1,18 @@
+{
+  "sourceHash": "5444969970ff0960",
+  "es": {
+    "description": "Revisa la implementación de autenticación y autorización en busca de vulnerabilidades",
+    "howToAsk": [
+      "/security--auth-review revisa el login de nuestra app",
+      "/security--auth-review comprueba los permisos del panel de administración",
+      "/security--auth-review ¿hay fallos en cómo verificamos los tokens JWT?"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/security--auth-review check our app's login flow for issues",
+      "/security--auth-review review admin panel permission checks",
+      "/security--auth-review are there flaws in how we verify JWT tokens?"
+    ]
+  }
+}

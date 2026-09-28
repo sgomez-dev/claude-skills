@@ -1,0 +1,18 @@
+{
+  "sourceHash": "7655345f394e40e1",
+  "es": {
+    "description": "Skill oficial de GSAP para gsap.utils: clamp, mapRange, normalize, interpolate, random, snap, toArray, wrap, pipe. Úsalo cuando el usuario pregunte por gsap.utils, clamp, mapRange, random, snap, toArray, wrap, o utilidades auxiliares de GSAP.",
+    "howToAsk": [
+      "Cómo limito un valor a un rango con clamp en GSAP",
+      "Necesito convertir un rango de valores a otro con mapRange",
+      "Ayúdame a redondear una posición al valor más cercano con snap"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "How do I clamp a value to a range in GSAP",
+      "I need to convert one range of values to another with mapRange",
+      "Help me round a position to the nearest value with snap"
+    ]
+  }
+}

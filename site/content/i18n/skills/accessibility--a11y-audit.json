@@ -1,0 +1,18 @@
+{
+  "sourceHash": "8caf94cf54bcc0ea",
+  "es": {
+    "description": "Audita componentes de la interfaz para verificar accesibilidad (cumplimiento WCAG 2.1)",
+    "howToAsk": [
+      "/accessibility--a11y-audit revisa el formulario de registro",
+      "/accessibility--a11y-audit el componente de navegación del sitio",
+      "/accessibility--a11y-audit comprueba si cumplimos WCAG 2.1 AA"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/accessibility--a11y-audit check our signup form for accessibility",
+      "/accessibility--a11y-audit review the navigation component",
+      "/accessibility--a11y-audit does this meet WCAG 2.1 AA?"
+    ]
+  }
+}

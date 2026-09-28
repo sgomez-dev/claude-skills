@@ -1,0 +1,18 @@
+{
+  "sourceHash": "26648ed1585a5d49",
+  "es": {
+    "description": "Configura y audita registros y ajustes DNS en Cloudflare",
+    "howToAsk": [
+      "/networking--cloudflare-dns configura los registros DNS para mi dominio",
+      "/networking--cloudflare-dns audita mi configuración DNS actual en Cloudflare",
+      "/networking--cloudflare-dns añade un registro MX para el correo"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/networking--cloudflare-dns configure DNS records for my domain",
+      "/networking--cloudflare-dns audit my current Cloudflare DNS setup",
+      "/networking--cloudflare-dns add an MX record for email"
+    ]
+  }
+}

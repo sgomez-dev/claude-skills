@@ -1,0 +1,18 @@
+{
+  "sourceHash": "59bf20251ab3ea42",
+  "es": {
+    "description": "Construye un carrusel de Instagram - la portada que se gana el swipe, el copy diapositiva a diapositiva, y los archivos 1080x1350 para subir. Úsalo cuando el usuario diga \"carrusel\", \"slides\", \"post para deslizar\", \"convierte esto en un carrusel\", o tenga una idea con forma de lista o de pasos que moriría como imagen única.",
+    "howToAsk": [
+      "Convierte esta lista de consejos en un carrusel de Instagram",
+      "Hazme un carrusel de 8 diapositivas sobre productividad",
+      "Necesito la portada y el copy de cada slide de este carrusel"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Turn this list of tips into an Instagram carousel",
+      "Make me an 8-slide carousel about productivity",
+      "I need the cover and slide-by-slide copy for this carousel"
+    ]
+  }
+}

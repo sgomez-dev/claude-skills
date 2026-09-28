@@ -1,0 +1,18 @@
+{
+  "sourceHash": "1ce4dde528eed2f8",
+  "es": {
+    "description": "Evalúa un pipeline de RAG: métricas de recuperación, fundamentación (groundedness), golden set y regresiones",
+    "howToAsk": [
+      "/ai--rag-eval mide si mi sistema RAG recupera los documentos correctos",
+      "/ai--rag-eval crea un golden set para evaluar las respuestas del RAG",
+      "/ai--rag-eval detecta si un cambio reciente ha empeorado el RAG"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ai--rag-eval measure whether my RAG pipeline retrieves the right documents",
+      "/ai--rag-eval build a golden set to evaluate RAG answers",
+      "/ai--rag-eval check whether a recent change regressed our RAG quality"
+    ]
+  }
+}

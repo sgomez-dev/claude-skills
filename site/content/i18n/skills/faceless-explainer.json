@@ -1,0 +1,18 @@
+{
+  "sourceHash": "86fb2cc3670c6d84",
+  "es": {
+    "description": "Convierte un texto cualquiera (un artículo, notas, un tema, un brief) en un vídeo explicativo sin rostro (faceless): no hay web ni metraje que capturar, así que los visuales se inventan escena a escena (tipografía, gráficos abstractos, diagramas, data-viz). Úsalo para explicaciones de un tema, desgloses de conceptos, tutoriales o listicles. No es un vídeo construido a partir de una web (para eso, `/product-launch-video` — promo o tour). Si no está claro, usa `/hyperframes`.",
+    "howToAsk": [
+      "Convierte este artículo en un vídeo explicativo sin cara delante de cámara",
+      "Haz un vídeo tipo listicle a partir de estas notas sobre productividad",
+      "Explica este concepto técnico en vídeo con gráficos y tipografía, sin grabarme"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Turn this article into a faceless explainer video",
+      "Make a listicle-style video from these notes about productivity",
+      "Explain this technical concept as a video with graphics and typography, no camera"
+    ]
+  }
+}

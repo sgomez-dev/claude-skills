@@ -1,0 +1,18 @@
+{
+  "sourceHash": "21676129dd16b65c",
+  "es": {
+    "description": "Instrumenta métricas de la aplicación con el método RED/USE usando Prometheus u OpenTelemetry",
+    "howToAsk": [
+      "/observability--metrics-setup añade métricas RED a mi API con Prometheus",
+      "/observability--metrics-setup instrumenta mi servicio con OpenTelemetry",
+      "/observability--metrics-setup quiero ver tasa de errores y latencia por endpoint"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/observability--metrics-setup add RED metrics to my API with Prometheus",
+      "/observability--metrics-setup instrument my service with OpenTelemetry",
+      "/observability--metrics-setup I want error rate and latency per endpoint"
+    ]
+  }
+}

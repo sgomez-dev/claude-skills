@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a4b23e5fb0cceb9e",
+  "es": {
+    "description": "Analiza la complejidad del código y sugiere simplificaciones",
+    "howToAsk": [
+      "/code-quality--complexity analiza la complejidad de esta función tan larga",
+      "/code-quality--complexity qué partes de mi proyecto son más complejas de mantener",
+      "/code-quality--complexity sugiere cómo simplificar este módulo enrevesado"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/code-quality--complexity analyze the complexity of this long function",
+      "/code-quality--complexity which parts of my project are hardest to maintain",
+      "/code-quality--complexity suggest how to simplify this tangled module"
+    ]
+  }
+}

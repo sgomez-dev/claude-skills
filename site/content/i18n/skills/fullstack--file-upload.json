@@ -1,0 +1,18 @@
+{
+  "sourceHash": "244176ca5a98081f",
+  "es": {
+    "description": "Subida de ficheros: flujo directo a S3/R2 con URLs prefirmadas, validación, progreso, miniaturas",
+    "howToAsk": [
+      "/fullstack--file-upload quiero subir imágenes directamente a S3 desde el navegador",
+      "/fullstack--file-upload necesito una barra de progreso y generar miniaturas automáticas",
+      "/fullstack--file-upload valida que solo se suban PDFs de menos de 10MB"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/fullstack--file-upload upload images straight to S3 from the browser",
+      "/fullstack--file-upload add a progress bar and auto-generate thumbnails",
+      "/fullstack--file-upload validate that only PDFs under 10MB get uploaded"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "85477eaf9cfea004",
+  "es": {
+    "description": "Proyecta ingresos a partir del pipeline y datos históricos: construcción bottom-up con escenarios",
+    "howToAsk": [
+      "/finance--revenue-forecast proyecta nuestros ingresos del próximo trimestre",
+      "/finance--revenue-forecast necesito una previsión de ingresos basada en el pipeline de ventas",
+      "/finance--revenue-forecast genera escenarios optimista y pesimista de ingresos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/finance--revenue-forecast forecast our revenue for next quarter",
+      "/finance--revenue-forecast I need a revenue forecast based on the sales pipeline",
+      "/finance--revenue-forecast generate best-case and worst-case revenue scenarios"
+    ]
+  }
+}

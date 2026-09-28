@@ -1,0 +1,18 @@
+{
+  "sourceHash": "94cca5486bc7caf1",
+  "es": {
+    "description": "Audita y configura certificados SSL/TLS y ajustes de HTTPS",
+    "howToAsk": [
+      "/networking--ssl-tls revisa si mi certificado está a punto de caducar",
+      "/networking--ssl-tls configura HTTPS estricto en mi dominio",
+      "/networking--ssl-tls audita la configuración TLS de mi servidor"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/networking--ssl-tls check if my certificate is about to expire",
+      "/networking--ssl-tls enforce strict HTTPS on my domain",
+      "/networking--ssl-tls audit my server's TLS configuration"
+    ]
+  }
+}

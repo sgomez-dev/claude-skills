@@ -1,0 +1,18 @@
+{
+  "sourceHash": "6a0ce7dec32702c5",
+  "es": {
+    "description": "Salida estructurada fiable: esquemas, modos nativos, validación y bucles de reparación",
+    "howToAsk": [
+      "/ai--structured-output haz que el modelo devuelva siempre JSON válido",
+      "/ai--structured-output define un esquema para extraer datos de facturas",
+      "/ai--structured-output añade un bucle que repare la salida si falla el esquema"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ai--structured-output make the model always return valid JSON",
+      "/ai--structured-output define a schema to extract data from invoices",
+      "/ai--structured-output add a repair loop for output that fails schema validation"
+    ]
+  }
+}

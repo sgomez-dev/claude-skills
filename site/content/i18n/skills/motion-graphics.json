@@ -1,0 +1,18 @@
+{
+  "sourceHash": "17e1f89b221c4dbf",
+  "es": {
+    "description": "Una pieza gráfica animada corta y con dirección de diseño donde el movimiento es el mensaje: tipografía cinética, contador de estadísticas, impacto de gráfico/data-viz, sting de logo / lockup de marca, tercio inferior / callout / overlay social, mapa animado (resaltar regiones, conectar lugares, hacer zoom a una ubicación), tuit / artículo de noticias / titular animado, animación de página web / UI (scroll, cursor, callouts), o fusionar la geometría de una imagen real en un gráfico. Normalmente dura menos de 10s (hasta ~30s), sin narración ni sujeto de acción real; se renderiza a MP4 o como overlay transparente. Más largo / narrado / multi-escena → /general-video. Si no está claro → /hyperframes.",
+    "howToAsk": [
+      "Haz un sting de logo animado para el final de mi vídeo",
+      "Crea un contador animado con nuestras estadísticas de crecimiento",
+      "Anima este mapa resaltando las ciudades donde tenemos oficina"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Make an animated logo sting for the end of my video",
+      "Create an animated stat count-up with our growth numbers",
+      "Animate this map highlighting the cities where we have offices"
+    ]
+  }
+}

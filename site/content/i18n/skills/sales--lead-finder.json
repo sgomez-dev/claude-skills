@@ -1,0 +1,18 @@
+{
+  "sourceHash": "bc657c8ce98bc170",
+  "es": {
+    "description": "Encuentra y puntúa leads que encajen con tu ICP mediante búsqueda web, o prioriza una lista existente",
+    "howToAsk": [
+      "/sales--lead-finder busca leads que encajen con nuestro ICP en el sector retail",
+      "/sales--lead-finder prioriza esta lista de leads existente por probabilidad de cierre",
+      "/sales--lead-finder encuentra 20 empresas de logística que podrían necesitar nuestro producto"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/sales--lead-finder find leads matching our ICP in the retail sector",
+      "/sales--lead-finder prioritize this existing lead list by likelihood to close",
+      "/sales--lead-finder find 20 logistics companies that might need our product"
+    ]
+  }
+}

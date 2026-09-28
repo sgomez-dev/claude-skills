@@ -1,0 +1,18 @@
+{
+  "sourceHash": "66543623f9421b6f",
+  "es": {
+    "description": "Genera una nueva skill probada con manifiesto de permisos a partir de una descripción en lenguaje natural",
+    "howToAsk": [
+      "/meta--skill-forge crea una skill que revise mis facturas en PDF",
+      "/meta--skill-forge genera una skill para publicar posts en redes sociales",
+      "/meta--skill-forge quiero una skill que valide mis migraciones de base de datos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/meta--skill-forge create a skill that reviews my PDF invoices",
+      "/meta--skill-forge generate a skill for posting to social media",
+      "/meta--skill-forge I want a skill that validates my database migrations"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "e8a45d2f71a63433",
+  "es": {
+    "description": "Úsalo cuando el audio ya colocado en una composición de HyperFrames necesita mezclarse: fade-in/fade-out, crossfade, ganancia o volumen de pista, automatización de volumen, ducking, una música de fondo que compite con una voz en off (voiceover carve), efectos en una pista (EQ, compresor, limitador, gate, saturación, delay, reverb, chorus, phaser, bitcrush), envolventes de automatización dibujadas sobre el volumen de una pista o cualquier parámetro de efecto, o un bus de submezcla que agrupa una cadena, un fader y un reloj de automatización para varias pistas a la vez (`<hf-audio-group>`). No lo uses para buscar o generar audio — encontrar música, SFX o crear una voz en off es `/media-use`. No lo uses para el timing de clips o la disposición de pistas, que es `/hyperframes-core`.",
+    "howToAsk": [
+      "Haz un fade-out suave en la música de fondo al final del vídeo",
+      "Baja la música cuando entra la voz en off y súbela después",
+      "Añade compresión y reverb a la pista de voz de esta composición"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Fade out the background music smoothly at the end of the video",
+      "Duck the music when the voiceover comes in and bring it back up after",
+      "Add compression and reverb to the voice track in this composition"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "af775f8632e03ee2",
+  "es": {
+    "description": "Genera documentación completa para código, APIs o módulos enteros",
+    "howToAsk": [
+      "/docs--doc-gen documenta todo el módulo de pagos",
+      "/docs--doc-gen genera la documentación de estas funciones de utilidades",
+      "/docs--doc-gen necesito docs completas de esta librería interna"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/docs--doc-gen document the entire payments module",
+      "/docs--doc-gen generate documentation for these utility functions",
+      "/docs--doc-gen I need full docs for this internal library"
+    ]
+  }
+}

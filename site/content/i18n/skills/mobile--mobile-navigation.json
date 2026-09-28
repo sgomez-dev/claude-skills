@@ -1,0 +1,18 @@
+{
+  "sourceHash": "eb056cb8a723398e",
+  "es": {
+    "description": "Diseña la navegación móvil: pilas/pestañas/modales, control de acceso por autenticación, restauración de estado",
+    "howToAsk": [
+      "/mobile--mobile-navigation diseña la navegación por pestañas de mi app",
+      "/mobile--mobile-navigation bloquea pantallas hasta que el usuario inicie sesión",
+      "/mobile--mobile-navigation restaura el estado al reabrir la app"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/mobile--mobile-navigation design the tab navigation for my app",
+      "/mobile--mobile-navigation gate screens behind login",
+      "/mobile--mobile-navigation restore navigation state when the app reopens"
+    ]
+  }
+}

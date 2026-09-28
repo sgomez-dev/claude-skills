@@ -1,0 +1,18 @@
+{
+  "sourceHash": "1eba89fde1f8823b",
+  "es": {
+    "description": "Añade o corrige anotaciones de tipos TypeScript/Python para mayor seguridad de tipos",
+    "howToAsk": [
+      "/code-quality--type-check añade tipos de TypeScript a este archivo",
+      "/code-quality--type-check corrige los errores de tipado de mi proyecto Python",
+      "/code-quality--type-check revisa que las anotaciones de tipos sean correctas aquí"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/code-quality--type-check add TypeScript types to this file",
+      "/code-quality--type-check fix the type errors in my Python project",
+      "/code-quality--type-check check that these type annotations are correct"
+    ]
+  }
+}

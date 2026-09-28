@@ -1,0 +1,18 @@
+{
+  "sourceHash": "cfb467b6acaccdb3",
+  "es": {
+    "description": "Crea un manual de objeciones con reformulaciones, pruebas de valor y próximos pasos",
+    "howToAsk": [
+      "/sales--objection-handler crea un playbook para la objeción de precio",
+      "/sales--objection-handler cómo respondo cuando dicen que ya usan a un competidor",
+      "/sales--objection-handler dame reformulaciones para la objeción de \"lo pensaré\""
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/sales--objection-handler build a playbook for the price objection",
+      "/sales--objection-handler how do I respond when they say they already use a competitor",
+      "/sales--objection-handler give me reframes for the \"I'll think about it\" objection"
+    ]
+  }
+}

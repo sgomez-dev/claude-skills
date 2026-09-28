@@ -1,0 +1,18 @@
+{
+  "sourceHash": "f9433ea4e87a657d",
+  "es": {
+    "description": "Dirección creativa no relacionada con animación para vídeos de HyperFrames. Úsalo para el manejo de la especificación de diseño (frame.md / design.md), paletas, tipografía, narración, planificación de beats, visuales reactivos al audio, patrones de composición y decisiones de marca/estilo. Para patrones de movimiento atómicos y blueprints de escena, usa `hyperframes-animation`.",
+    "howToAsk": [
+      "Ayúdame a definir la paleta de colores y tipografía de este vídeo",
+      "Necesito planificar los beats narrativos de mi explicativo",
+      "Dame dirección de marca y estilo para esta composición de HyperFrames"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Help me define the color palette and typography for this video",
+      "I need to plan the narrative beats for my explainer",
+      "Give me brand and style direction for this HyperFrames composition"
+    ]
+  }
+}

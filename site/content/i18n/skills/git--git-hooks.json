@@ -1,0 +1,18 @@
+{
+  "sourceHash": "450e75e8cb24ad62",
+  "es": {
+    "description": "Configura git hooks: pre-commit, husky, lint-staged, validación de commit-msg",
+    "howToAsk": [
+      "/git--git-hooks añade un hook que ejecute el linter antes de cada commit",
+      "/git--git-hooks configura husky y lint-staged en mi proyecto",
+      "/git--git-hooks valida que los mensajes de commit sigan nuestro formato"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/git--git-hooks add a hook that runs the linter before every commit",
+      "/git--git-hooks set up husky and lint-staged in my project",
+      "/git--git-hooks validate that commit messages follow our format"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "5f1715506c195ba6",
+  "es": {
+    "description": "Redacta o aplica explícitamente el lanzamiento de una campaña de publicidad de pago mediante los adaptadores de Claude Ads controlados por capacidades. Úsalo para creación de campañas, planes de lanzamiento, publicación de anuncios, activación de campañas, subida de creatividades o solicitudes para poner en marcha una campaña.",
+    "howToAsk": [
+      "Prepárame el plan de lanzamiento para esta campaña",
+      "Sube estas creatividades y activa la campaña en Meta Ads",
+      "Quiero poner en marcha esta campaña ya mismo"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Prepare a launch plan for this campaign",
+      "Upload these creatives and activate the campaign on Meta Ads",
+      "I want to push this campaign live right now"
+    ]
+  }
+}

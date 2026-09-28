@@ -1,0 +1,18 @@
+{
+  "sourceHash": "b22360d1ed52b40f",
+  "es": {
+    "description": "Diseña cadencias de seguimiento por etapa de la operación, con tiempos y disparadores de salida",
+    "howToAsk": [
+      "/sales--follow-up-sequencer diseña una cadencia de seguimiento para leads que no responden",
+      "/sales--follow-up-sequencer necesito los tiempos de seguimiento para deals en negociación",
+      "/sales--follow-up-sequencer crea disparadores de salida para esta cadencia de emails"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/sales--follow-up-sequencer design a follow-up cadence for unresponsive leads",
+      "/sales--follow-up-sequencer I need follow-up timing for deals in negotiation",
+      "/sales--follow-up-sequencer create exit triggers for this email cadence"
+    ]
+  }
+}

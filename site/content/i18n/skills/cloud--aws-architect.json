@@ -1,0 +1,18 @@
+{
+  "sourceHash": "7beca5a17033de65",
+  "es": {
+    "description": "Diseña una arquitectura AWS para esta app — elección de servicios, diagrama, arranque de IaC",
+    "howToAsk": [
+      "/cloud--aws-architect diseña la arquitectura AWS para mi app de e-commerce",
+      "/cloud--aws-architect qué servicios de AWS necesito para una API con colas y base de datos",
+      "/cloud--aws-architect genera el diagrama y el Terraform inicial para mi backend"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/cloud--aws-architect design the AWS architecture for my e-commerce app",
+      "/cloud--aws-architect what AWS services do I need for an API with queues and a database",
+      "/cloud--aws-architect generate the diagram and starter Terraform for my backend"
+    ]
+  }
+}

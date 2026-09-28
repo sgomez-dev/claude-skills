@@ -1,0 +1,18 @@
+{
+  "sourceHash": "abb884b236983837",
+  "es": {
+    "description": "Crea receptores de webhooks seguros con verificación de firma y reintentos",
+    "howToAsk": [
+      "/networking--webhook-endpoint crea un endpoint para recibir webhooks de Stripe",
+      "/networking--webhook-endpoint añade verificación de firma a mi webhook actual",
+      "/networking--webhook-endpoint gestiona los reintentos cuando falla el webhook"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/networking--webhook-endpoint build an endpoint to receive Stripe webhooks",
+      "/networking--webhook-endpoint add signature verification to my existing webhook",
+      "/networking--webhook-endpoint handle retries when a webhook delivery fails"
+    ]
+  }
+}

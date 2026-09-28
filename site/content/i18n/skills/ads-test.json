@@ -1,0 +1,18 @@
+{
+  "sourceHash": "2ed4a38db31d69a0",
+  "es": {
+    "description": "Diseña y evalúa experimentos de anuncios de pago con hipótesis, unidades de aleatorización, supuestos de tamaño de muestra y duración, salvaguardas, herramientas de experimentación de la plataforma, análisis y reglas de decisión. Úsalo para test A/B, split test, diseño de experimentos, hipótesis, significancia estadística, tamaño de muestra, duración del test o lectura de resultados de un experimento.",
+    "howToAsk": [
+      "Diseña un test A/B para probar dos creatividades distintas",
+      "¿Qué tamaño de muestra necesito para que este test sea significativo?",
+      "Analiza los resultados de este experimento y dime qué ganó"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Design an A/B test for two different creatives",
+      "What sample size do I need for this test to be significant?",
+      "Analyze this experiment's results and tell me what won"
+    ]
+  }
+}

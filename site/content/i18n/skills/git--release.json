@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a632c0fdd5763f1a",
+  "es": {
+    "description": "Crea una release con versionado semántico, incluyendo tag, changelog y release de GitHub",
+    "howToAsk": [
+      "/git--release crea la siguiente versión con su changelog",
+      "/git--release necesito publicar una release en GitHub con el tag correspondiente",
+      "/git--release genera la versión 2.1.0 con notas de la release"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/git--release cut the next version with its changelog",
+      "/git--release publish a GitHub release with the matching tag",
+      "/git--release generate version 2.1.0 with release notes"
+    ]
+  }
+}

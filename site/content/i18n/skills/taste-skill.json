@@ -1,0 +1,18 @@
+{
+  "sourceHash": "2142f793e222abbe",
+  "es": {
+    "description": "Skill de frontend anti-genérico para landing pages, portfolios y rediseños. El agente lee el briefing, infiere la dirección de diseño adecuada y entrega interfaces que no parecen hechas con una plantilla. Usa sistemas de diseño reales cuando aplica, empieza con una auditoría en los rediseños y aplica una comprobación previa estricta.",
+    "howToAsk": [
+      "Diseña mi portfolio para que no parezca una plantilla genérica",
+      "Rediseña esta landing page partiendo de una auditoría del diseño actual",
+      "Necesito una interfaz con dirección de diseño propia, no genérica"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Design my portfolio so it doesn't look like a generic template",
+      "Redesign this landing page, starting with an audit of the current design",
+      "I need an interface with real design direction, not something generic"
+    ]
+  }
+}

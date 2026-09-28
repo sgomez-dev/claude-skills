@@ -1,0 +1,18 @@
+{
+  "sourceHash": "0d1d0771d4e21ef7",
+  "es": {
+    "description": "Agent Media OS, la única skill para cualquier necesidad de medios en un proyecto HyperFrames. Resuelve música de fondo, efectos de sonido, imagen, icono, logo de marca, voz, gradación de color o LUT en un archivo local fijo o un bloque listo para pegar + registro en el ledger (un solo verbo, `resolve`); genera vía TTS, música o modelos de imagen cuando el catálogo no lo tiene; produce voz en off, transcripción, subtítulos y quita de fondo mediante un motor de audio compartido; opera sobre medios (cortar, reencuadrar, transformar); y reutiliza recursos entre proyectos. Úsalo también ante feedback vago como que el metraje real se ve oscuro, plano o aburrido, que debería sentirse retro, de videocámara, de imprenta o ASCII, que necesita privacidad, o que necesita un \"media reveal\".",
+    "howToAsk": [
+      "Necesito música de fondo para este vídeo, algo animado",
+      "Este metraje se ve muy plano, dale un toque retro de videocámara",
+      "Quita el fondo de este vídeo y añade subtítulos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "I need upbeat background music for this video",
+      "This footage looks flat, give it a retro camcorder feel",
+      "Remove the background from this video and add captions"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "16b4554acc7cb219",
+  "es": {
+    "description": "Añade autenticación biométrica: Face/Touch ID, almacenamiento seguro de tokens, alternativas seguras",
+    "howToAsk": [
+      "/mobile--biometric-auth añade Face ID a mi app de iOS",
+      "/mobile--biometric-auth implementa Touch ID con alternativa de PIN",
+      "/mobile--biometric-auth guarda el token de sesión de forma segura"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/mobile--biometric-auth add Face ID to my iOS app",
+      "/mobile--biometric-auth implement Touch ID with a PIN fallback",
+      "/mobile--biometric-auth store the session token securely"
+    ]
+  }
+}

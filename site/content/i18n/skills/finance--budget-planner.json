@@ -1,0 +1,18 @@
+{
+  "sourceHash": "23bd71b0d02756d1",
+  "es": {
+    "description": "Presupuesto departamental o de proyecto con categorías, hipótesis y seguimiento de desviaciones",
+    "howToAsk": [
+      "/finance--budget-planner crea el presupuesto del departamento de marketing para este año",
+      "/finance--budget-planner necesito seguir las desviaciones de gasto de este proyecto",
+      "/finance--budget-planner define las categorías de presupuesto para el próximo trimestre"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/finance--budget-planner create the marketing department budget for this year",
+      "/finance--budget-planner I need to track spending variance for this project",
+      "/finance--budget-planner define the budget categories for next quarter"
+    ]
+  }
+}

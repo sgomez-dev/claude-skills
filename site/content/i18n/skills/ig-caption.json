@@ -1,0 +1,18 @@
+{
+  "sourceHash": "9004157f16b57704",
+  "es": {
+    "description": "Escribe el pie de foto de Instagram - la línea que sobrevive al corte de \"... más\", el cuerpo, la única llamada a la acción, los términos de búsqueda y los tres hashtags - y lo revisa antes de publicarlo. Úsalo cuando el usuario diga \"escribe el caption\", \"ponle caption a esto\", \"qué pongo en la descripción\", tenga un reel o carrusel listo y necesite el texto, o pregunte sobre hashtags.",
+    "howToAsk": [
+      "Escríbeme el caption para este reel que acabo de grabar",
+      "¿Qué pongo en la descripción de este carrusel?",
+      "Dame tres hashtags buenos para este post"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Write the caption for this reel I just recorded",
+      "What should I put in the description for this carousel?",
+      "Give me three good hashtags for this post"
+    ]
+  }
+}

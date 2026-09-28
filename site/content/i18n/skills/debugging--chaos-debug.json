@@ -1,0 +1,18 @@
+{
+  "sourceHash": "36d1c8618c28bd98",
+  "es": {
+    "description": "Somete el código a pruebas de estrés con inyección de fallos, casos límite y escenarios caóticos para encontrar bugs ocultos",
+    "howToAsk": [
+      "/debugging--chaos-debug prueba mi API con inyección de fallos",
+      "/debugging--chaos-debug busca bugs ocultos con casos límite extremos",
+      "/debugging--chaos-debug estresa el servicio de pagos con escenarios caóticos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/debugging--chaos-debug stress-test my API with fault injection",
+      "/debugging--chaos-debug find hidden bugs with extreme edge cases",
+      "/debugging--chaos-debug run chaos scenarios on the payment service"
+    ]
+  }
+}

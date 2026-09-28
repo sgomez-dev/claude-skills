@@ -1,0 +1,18 @@
+{
+  "sourceHash": "4c7ecbbaeb323c43",
+  "es": {
+    "description": "Implementa carga diferida para rutas, componentes, imágenes y módulos",
+    "howToAsk": [
+      "/performance--lazy-load carga las imágenes solo cuando entran en pantalla",
+      "/performance--lazy-load divide las rutas de mi app para que carguen bajo demanda",
+      "/performance--lazy-load aplica lazy loading a este componente pesado"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/performance--lazy-load load images only when they scroll into view",
+      "/performance--lazy-load split my app's routes so they load on demand",
+      "/performance--lazy-load lazy-load this heavy component"
+    ]
+  }
+}

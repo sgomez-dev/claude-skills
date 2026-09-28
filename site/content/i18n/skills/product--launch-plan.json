@@ -1,0 +1,18 @@
+{
+  "sourceHash": "852f4eabe3006271",
+  "es": {
+    "description": "Elabora un plan de lanzamiento de producto: fases, canales, materiales, responsables y checklist",
+    "howToAsk": [
+      "/product--launch-plan crea el plan de lanzamiento para nuestra nueva app",
+      "/product--launch-plan qué canales usamos y quién se encarga de cada cosa",
+      "/product--launch-plan dame el checklist completo para el día del lanzamiento"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/product--launch-plan build the launch plan for our new app",
+      "/product--launch-plan which channels should we use and who owns what",
+      "/product--launch-plan give me the full checklist for launch day"
+    ]
+  }
+}

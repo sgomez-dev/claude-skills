@@ -1,0 +1,18 @@
+{
+  "sourceHash": "8d1c6192e95bb2fe",
+  "es": {
+    "description": "Define SLIs/SLOs a partir de los recorridos de usuario con presupuestos de error y alertas de burn-rate",
+    "howToAsk": [
+      "/observability--slo-sli define el SLO de disponibilidad para el checkout",
+      "/observability--slo-sli calcula el presupuesto de error de nuestra API",
+      "/observability--slo-sli avísame cuando el presupuesto de error se consuma demasiado rápido"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/observability--slo-sli define the availability SLO for checkout",
+      "/observability--slo-sli calculate the error budget for our API",
+      "/observability--slo-sli alert us when the error budget burns too fast"
+    ]
+  }
+}

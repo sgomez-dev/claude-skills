@@ -1,0 +1,18 @@
+{
+  "sourceHash": "0fa198004148d2af",
+  "es": {
+    "description": "Glosario de búsqueda inversa que convierte una descripción vaga de una animación web o efecto de movimiento en su término exacto (\"eso que rebota cuando se abre un popover\" → Pop in; \"el scroll elástico de iOS\" → Rubber-banding). Úsalo cuando el usuario pregunte \"¿cómo se llama cuando...\", o describa un efecto de movimiento sin saber su nombre y quiera la palabra correcta para pedírselo a una IA o a un diseñador. Sirve para nombrar un efecto, no para diseñarlo ni construirlo.",
+    "howToAsk": [
+      "¿Cómo se llama ese efecto rebote cuando se abre un popover?",
+      "Necesito el nombre exacto del scroll elástico estilo iOS para un diseñador",
+      "¿Cómo se llama cuando un elemento se desliza y desaparece al hacer swipe?"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "What's that bounce effect called when a popover opens?",
+      "I need the exact name for the iOS-style rubber-band scroll to brief a designer",
+      "What do you call it when an element slides away on swipe?"
+    ]
+  }
+}

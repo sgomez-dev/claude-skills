@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d8c4bafaf3fbbacb",
+  "es": {
+    "description": "Escribe descripciones de producto orientadas a conversión, a escala, a partir de especificaciones o un CSV",
+    "howToAsk": [
+      "/ecommerce--product-descriptions escribe las descripciones de estos 50 productos desde este CSV",
+      "/ecommerce--product-descriptions genera una descripción persuasiva para esta camiseta",
+      "/ecommerce--product-descriptions necesito descripciones de producto que conviertan más"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ecommerce--product-descriptions write descriptions for these 50 products from this CSV",
+      "/ecommerce--product-descriptions generate a persuasive description for this t-shirt",
+      "/ecommerce--product-descriptions I need product descriptions that convert better"
+    ]
+  }
+}

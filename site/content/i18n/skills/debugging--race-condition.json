@@ -1,0 +1,18 @@
+{
+  "sourceHash": "526d3d749f9f3c40",
+  "es": {
+    "description": "Detecta y corrige condiciones de carrera, data races y bugs TOCTOU",
+    "howToAsk": [
+      "/debugging--race-condition encuentra la condición de carrera en este código concurrente",
+      "/debugging--race-condition arregla este bug intermitente que parece un data race",
+      "/debugging--race-condition revisa si hay un TOCTOU en esta validación"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/debugging--race-condition find the race condition in this concurrent code",
+      "/debugging--race-condition fix this flaky bug that looks like a data race",
+      "/debugging--race-condition check for a TOCTOU bug in this validation"
+    ]
+  }
+}

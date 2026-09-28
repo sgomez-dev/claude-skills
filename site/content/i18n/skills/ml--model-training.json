@@ -1,0 +1,18 @@
+{
+  "sourceHash": "cf4b5f0333a2315a",
+  "es": {
+    "description": "Entrena un modelo: baseline primero, elección de framework, validación cruzada, ajuste de hiperparámetros",
+    "howToAsk": [
+      "/ml--model-training entrena un modelo para predecir cancelaciones",
+      "/ml--model-training empieza con un baseline simple antes de complicarlo",
+      "/ml--model-training ajusta los hiperparámetros con validación cruzada"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ml--model-training train a model to predict customer churn",
+      "/ml--model-training start with a simple baseline before anything fancy",
+      "/ml--model-training tune hyperparameters with cross-validation"
+    ]
+  }
+}

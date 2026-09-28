@@ -1,0 +1,18 @@
+{
+  "sourceHash": "9b2e7423766edd32",
+  "es": {
+    "description": "Genera o actualiza el esquema de Prisma a partir de requisitos o de una base de datos existente",
+    "howToAsk": [
+      "/database--prisma-gen genera el schema de Prisma para un blog con posts y comentarios",
+      "/database--prisma-gen actualiza mi schema.prisma a partir de la base de datos actual",
+      "/database--prisma-gen añade una relación many-to-many a mi esquema Prisma"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/database--prisma-gen generate a Prisma schema for a blog with posts and comments",
+      "/database--prisma-gen update my schema.prisma from the existing database",
+      "/database--prisma-gen add a many-to-many relation to my Prisma schema"
+    ]
+  }
+}

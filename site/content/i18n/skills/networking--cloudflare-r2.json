@@ -1,0 +1,18 @@
+{
+  "sourceHash": "00fd2ca85a477a24",
+  "es": {
+    "description": "Configura Cloudflare R2, almacenamiento de objetos compatible con S3",
+    "howToAsk": [
+      "/networking--cloudflare-r2 configura un bucket R2 para subir imágenes",
+      "/networking--cloudflare-r2 migra mis archivos de S3 a R2",
+      "/networking--cloudflare-r2 conecta R2 con mi Worker para servir archivos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/networking--cloudflare-r2 set up an R2 bucket for image uploads",
+      "/networking--cloudflare-r2 migrate my files from S3 to R2",
+      "/networking--cloudflare-r2 connect R2 to my Worker to serve files"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "ba53fef68524e1ee",
+  "es": {
+    "description": "Genera informes de publicidad de pago en Markdown, HTML o PDF a partir de un paquete de resultados (run bundle) JSON validado de Claude Ads. Úsalo para informes de anuncios, informes de cliente, PDF de auditoría, informes ejecutivos para audiencia o exportación de resultados previos de auditoría y planificación.",
+    "howToAsk": [
+      "Genera un informe en PDF con los resultados de la última auditoría",
+      "Haz un informe para el cliente a partir de este run bundle",
+      "Exporta el plan de campaña a un documento en Markdown"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Generate a PDF report from the latest audit results",
+      "Build a client-facing report from this run bundle",
+      "Export the campaign plan to a Markdown document"
+    ]
+  }
+}

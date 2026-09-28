@@ -1,0 +1,18 @@
+{
+  "sourceHash": "73533d453dcbca4b",
+  "es": {
+    "description": "Audita la medición de Snapchat Ads, el Snap Pixel y la Conversions API, las campañas móviles y de apps, la creatividad, los formatos de realidad aumentada y catálogo, las audiencias, los presupuestos, la seguridad de marca y los informes. Úsalo para Snapchat Ads, Snap Ads, Snap Pixel, Snapchat Conversions API, anuncios con lentes de RA, campañas de instalación de apps o anuncios dinámicos de producto en Snapchat.",
+    "howToAsk": [
+      "Audita mi cuenta de Snapchat Ads y el Snap Pixel",
+      "¿Cómo van mis campañas de instalación de apps en Snapchat?",
+      "Revisa mis anuncios con lentes de realidad aumentada"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Audit my Snapchat Ads account and Snap Pixel",
+      "How are my app-install campaigns performing on Snapchat?",
+      "Review my AR Lens ads"
+    ]
+  }
+}

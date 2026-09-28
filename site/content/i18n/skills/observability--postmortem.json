@@ -1,0 +1,18 @@
+{
+  "sourceHash": "1e2df43a4c935f77",
+  "es": {
+    "description": "Redacta un postmortem sin culpables con cronología, factores contribuyentes y acciones",
+    "howToAsk": [
+      "/observability--postmortem escribe el postmortem de la caída de ayer",
+      "/observability--postmortem documenta la cronología del incidente en producción",
+      "/observability--postmortem ayúdame con las acciones de seguimiento tras el fallo"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/observability--postmortem write the postmortem for yesterday's outage",
+      "/observability--postmortem document the timeline of the production incident",
+      "/observability--postmortem help me draft follow-up actions after the failure"
+    ]
+  }
+}

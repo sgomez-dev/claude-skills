@@ -1,0 +1,18 @@
+{
+  "sourceHash": "105ebc05ed6ba988",
+  "es": {
+    "description": "Configura MLOps: seguimiento de experimentos, registro de modelos, CI para modelos, reproducibilidad",
+    "howToAsk": [
+      "/ml--mlops-pipeline monta un registro de modelos para mi equipo",
+      "/ml--mlops-pipeline añade seguimiento de experimentos a mi proyecto",
+      "/ml--mlops-pipeline configura CI para validar modelos antes de desplegar"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ml--mlops-pipeline set up a model registry for my team",
+      "/ml--mlops-pipeline add experiment tracking to my project",
+      "/ml--mlops-pipeline configure CI to validate models before deploy"
+    ]
+  }
+}

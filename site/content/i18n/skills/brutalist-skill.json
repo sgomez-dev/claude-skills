@@ -1,0 +1,18 @@
+{
+  "sourceHash": "b8e2623f2c9a298e",
+  "es": {
+    "description": "Interfaces mecánicas y crudas que fusionan la tipografía impresa suiza con la estética de terminal militar. Grids rígidos, contraste extremo de escala tipográfica, color utilitario, efectos de degradación analógica. Para dashboards con muchos datos, portfolios o sitios editoriales que necesitan sentirse como planos desclasificados.",
+    "howToAsk": [
+      "Diséñame un dashboard brutalista con grid rígido y estética de terminal militar",
+      "Quiero un portfolio con tipografía suiza cruda y efectos de degradación analógica",
+      "Hazme un sitio editorial con contraste tipográfico extremo, estilo planos desclasificados"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Design a brutalist dashboard with a rigid grid and military terminal look",
+      "I want a portfolio with raw Swiss typography and analog degradation effects",
+      "Build an editorial site with extreme type contrast, declassified-blueprint style"
+    ]
+  }
+}

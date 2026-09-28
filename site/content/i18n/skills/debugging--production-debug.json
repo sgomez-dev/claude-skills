@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d0cf01ca24dfea55",
+  "es": {
+    "description": "Depura problemas que solo ocurren en producción usando logs, métricas y trazas sin acceso directo",
+    "howToAsk": [
+      "/debugging--production-debug este bug solo pasa en producción, ayúdame con los logs",
+      "/debugging--production-debug analiza estas métricas para encontrar el fallo",
+      "/debugging--production-debug investiga este incidente solo con logs y trazas"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/debugging--production-debug this bug only happens in production, help with the logs",
+      "/debugging--production-debug analyze these metrics to find the failure",
+      "/debugging--production-debug investigate this incident using only logs and traces"
+    ]
+  }
+}

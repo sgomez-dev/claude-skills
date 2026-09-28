@@ -1,0 +1,18 @@
+{
+  "sourceHash": "8492544a31dbff05",
+  "es": {
+    "description": "Cómo escribir Swift moderno de forma correcta: modelado con value types, seguridad frente a data races de Swift 6 y concurrencia accesible (@concurrent, actor principal por defecto, actors, task groups), protocols y generics (some vs any), diseño de API, rendimiento y ARC, Swift Testing, macros, y las funcionalidades modernas del lenguaje que los agentes todavía no conocen. Se usa al escribir, revisar o migrar Swift, o cuando hay que arreglar un error de concurrencia, un cuelgue, una data race, un retain cycle o un problema de rendimiento.",
+    "howToAsk": [
+      "Revisa este código Swift para ver si tiene problemas de concurrencia",
+      "Ayúdame a migrar esta clase a value types en Swift 6",
+      "Arregla este retain cycle en mi código Swift"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Review this Swift code for concurrency issues",
+      "Help me migrate this class to value types in Swift 6",
+      "Fix this retain cycle in my Swift code"
+    ]
+  }
+}

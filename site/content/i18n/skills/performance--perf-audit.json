@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a974c0f2524ae671",
+  "es": {
+    "description": "Auditoría de rendimiento completa: identifica cuellos de botella y optimiza",
+    "howToAsk": [
+      "/performance--perf-audit haz una auditoría de rendimiento completa de la app",
+      "/performance--perf-audit encuentra los cuellos de botella más importantes",
+      "/performance--perf-audit revisa por qué la app va lenta en general"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/performance--perf-audit run a full performance audit on the app",
+      "/performance--perf-audit find the biggest bottlenecks",
+      "/performance--perf-audit figure out why the app feels slow overall"
+    ]
+  }
+}

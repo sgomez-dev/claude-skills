@@ -1,0 +1,18 @@
+{
+  "sourceHash": "2942bc96c9306be8",
+  "es": {
+    "description": "Construye la semana en Instagram - qué publicar, en qué formato, cuándo, y con quién interactuar. Úsalo cuando el usuario diga \"planifica mi semana\", \"qué debería publicar\", \"calendario de contenido\", \"no tengo nada que publicar\", o quiera un calendario de publicación y una lista de engagement.",
+    "howToAsk": [
+      "Planifícame la semana de contenido en Instagram",
+      "No tengo ideas de qué publicar esta semana, ayúdame",
+      "Dame un calendario de publicación y a quién interactuar esta semana"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Plan my Instagram content for the week",
+      "I have nothing to post this week, help me out",
+      "Give me a posting schedule and an engagement list for this week"
+    ]
+  }
+}

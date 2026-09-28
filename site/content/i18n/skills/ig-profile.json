@@ -1,0 +1,18 @@
+{
+  "sourceHash": "b2ebf4bcc90d0d66",
+  "es": {
+    "description": "Puntúa un perfil de Instagram sobre 100 contra una rúbrica de 12 partes y reescribe las partes que pierden puntos - campo de nombre, bio, enlace, destacados, los tres fijados, la cuadrícula. Úsalo cuando el usuario diga \"optimiza mi perfil\", \"arregla mi bio\", \"puntúa mi Instagram\", \"por qué no me sigue nadie\", o pegue su perfil y pregunte cómo se lee.",
+    "howToAsk": [
+      "Puntúa mi perfil de Instagram y dime qué mejorar",
+      "Arréglame la bio, no consigo que la gente me siga",
+      "Aquí está mi perfil, dime por qué no convierte"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Score my Instagram profile and tell me what to improve",
+      "Fix my bio, I can't get people to follow me",
+      "Here's my profile, tell me why it's not converting"
+    ]
+  }
+}

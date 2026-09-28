@@ -1,0 +1,18 @@
+{
+  "sourceHash": "fd1c7856df05fb90",
+  "es": {
+    "description": "Genera una propuesta comercial o un SOW a partir de notas de descubrimiento, con opciones de precio",
+    "howToAsk": [
+      "/sales--proposal-generator genera una propuesta comercial a partir de estas notas de la llamada",
+      "/sales--proposal-generator necesito un SOW para este proyecto de implementación",
+      "/sales--proposal-generator crea una propuesta con 3 opciones de precio para este cliente"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/sales--proposal-generator generate a commercial proposal from these call notes",
+      "/sales--proposal-generator I need a SOW for this implementation project",
+      "/sales--proposal-generator create a proposal with 3 pricing options for this client"
+    ]
+  }
+}

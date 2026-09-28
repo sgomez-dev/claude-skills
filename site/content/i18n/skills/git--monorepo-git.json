@@ -1,0 +1,18 @@
+{
+  "sourceHash": "264153245049a439",
+  "es": {
+    "description": "Estrategias de git para monorepos: sparse checkout, CODEOWNERS, disparadores de CI selectivos",
+    "howToAsk": [
+      "/git--monorepo-git quiero clonar solo una parte del monorepo",
+      "/git--monorepo-git configura CODEOWNERS para nuestros equipos",
+      "/git--monorepo-git necesito que la CI solo se ejecute para el paquete que cambió"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/git--monorepo-git I only want to check out part of the monorepo",
+      "/git--monorepo-git set up CODEOWNERS for our teams",
+      "/git--monorepo-git only run CI for the package that changed"
+    ]
+  }
+}

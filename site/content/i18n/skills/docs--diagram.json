@@ -1,0 +1,18 @@
+{
+  "sourceHash": "ec12f0ecbcd04701",
+  "es": {
+    "description": "Genera diagramas de arquitectura con Mermaid a partir del análisis del código",
+    "howToAsk": [
+      "/docs--diagram dibuja el diagrama de arquitectura de este backend",
+      "/docs--diagram genera un diagrama Mermaid del flujo de autenticación",
+      "/docs--diagram necesito un diagrama de cómo se conectan mis microservicios"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/docs--diagram draw the architecture diagram for this backend",
+      "/docs--diagram generate a Mermaid diagram of the authentication flow",
+      "/docs--diagram I need a diagram of how my microservices connect"
+    ]
+  }
+}

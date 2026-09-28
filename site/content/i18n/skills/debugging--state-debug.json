@@ -1,0 +1,18 @@
+{
+  "sourceHash": "96476302661f8bde",
+  "es": {
+    "description": "Depura problemas complejos de estado en la aplicación (Redux, bases de datos, cachés, sesiones)",
+    "howToAsk": [
+      "/debugging--state-debug mi store de Redux tiene un estado inconsistente",
+      "/debugging--state-debug depura por qué la caché muestra datos viejos",
+      "/debugging--state-debug investiga este problema de sesiones que se pierden"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/debugging--state-debug my Redux store has inconsistent state",
+      "/debugging--state-debug debug why the cache shows stale data",
+      "/debugging--state-debug investigate why user sessions keep dropping"
+    ]
+  }
+}

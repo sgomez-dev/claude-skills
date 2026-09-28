@@ -1,0 +1,18 @@
+{
+  "sourceHash": "2268c7447ff52a38",
+  "es": {
+    "description": "Configura Cloudflare Tunnel para exponer servicios locales de forma segura",
+    "howToAsk": [
+      "/networking--cloudflare-tunnel expón mi servidor local en tunnel.midominio.com",
+      "/networking--cloudflare-tunnel conecta mi API en localhost:3000 a internet sin abrir puertos",
+      "/networking--cloudflare-tunnel configura un túnel para mi app de desarrollo"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/networking--cloudflare-tunnel expose my local server at tunnel.mydomain.com",
+      "/networking--cloudflare-tunnel connect my API on localhost:3000 to the internet without opening ports",
+      "/networking--cloudflare-tunnel set up a tunnel for my dev app"
+    ]
+  }
+}

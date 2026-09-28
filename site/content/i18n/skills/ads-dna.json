@@ -1,0 +1,18 @@
+{
+  "sourceHash": "ad3d569baab5aa33",
+  "es": {
+    "description": "Extrae un perfil de marca y de oferta apto para publicación pública, pensado para publicidad de pago, a partir de un sitio web autorizado y la información aportada por el operador. Se activa con: ADN de marca, perfil de marca, identidad de marca, estilo de marca, colores de marca, voz de marca, identidad visual, guía de estilo, análisis de marca del sitio web.",
+    "howToAsk": [
+      "Analiza mi web y sácame el perfil de marca para usarlo en anuncios",
+      "¿Cuáles son los colores y la voz de marca de mi sitio?",
+      "Genera una guía de estilo a partir de mi página web"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Analyze my website and pull out a brand profile for ads",
+      "What are my site's brand colors and voice?",
+      "Generate a style guide from my website"
+    ]
+  }
+}

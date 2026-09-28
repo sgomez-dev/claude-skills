@@ -1,0 +1,18 @@
+{
+  "sourceHash": "76b9d178c7c0eccc",
+  "es": {
+    "description": "Analiza volcados de memoria (core dumps), segfaults, panics y terminaciones fatales de procesos",
+    "howToAsk": [
+      "/debugging--core-dump analiza este core dump de mi servidor en C",
+      "/debugging--core-dump por qué crashea este proceso con un segfault",
+      "/debugging--core-dump investiga este panic de Rust en producción"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/debugging--core-dump analyze this core dump from my C server",
+      "/debugging--core-dump why does this process crash with a segfault",
+      "/debugging--core-dump investigate this Rust panic in production"
+    ]
+  }
+}

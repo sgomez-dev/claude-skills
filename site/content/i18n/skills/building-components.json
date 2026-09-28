@@ -1,0 +1,18 @@
+{
+  "sourceHash": "c611809a111ca4c9",
+  "es": {
+    "description": "Guía para construir componentes de UI modernos, accesibles y componibles. Úsala cuando construyas componentes nuevos, implementes accesibilidad, crees APIs componibles, configures design tokens, publiques a npm/registry, o escribas documentación de componentes.",
+    "howToAsk": [
+      "Ayúdame a construir un componente de UI accesible y reutilizable en React",
+      "Quiero configurar design tokens y publicar mis componentes en npm",
+      "Necesito escribir documentación clara para mi librería de componentes"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Help me build an accessible, reusable UI component in React",
+      "I want to set up design tokens and publish my components to npm",
+      "Write clear documentation for my component library"
+    ]
+  }
+}

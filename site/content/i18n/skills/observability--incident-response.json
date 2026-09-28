@@ -1,0 +1,18 @@
+{
+  "sourceHash": "e8be28fe7b000399",
+  "es": {
+    "description": "Configura un proceso de respuesta a incidentes con matriz de severidad, roles y comunicación",
+    "howToAsk": [
+      "/observability--incident-response define un proceso de respuesta a incidentes para el equipo",
+      "/observability--incident-response crea la matriz de severidad y los roles de guardia",
+      "/observability--incident-response cómo comunicamos una caída a los clientes"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/observability--incident-response set up an incident response process for the team",
+      "/observability--incident-response define the severity matrix and on-call roles",
+      "/observability--incident-response how should we communicate an outage to customers"
+    ]
+  }
+}

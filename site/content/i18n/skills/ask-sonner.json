@@ -1,0 +1,18 @@
+{
+  "sourceHash": "5c29d88b96345e09",
+  "es": {
+    "description": "Guía de Sonner, la librería de toasts para React: instalar y configurar el Toaster, elegir la llamada a toast() adecuada, toasts de promesa y de carga, actualizar, descartar y persistir toasts, estilos, temas e iconos, posicionamiento y varios toasters a la vez. Úsala cuando trabajes con Sonner o tengas problemas con ella: toasts que no aparecen, que aparecen duplicados, que pierden sus estilos, que ignoran las clases de Tailwind, que quedan detrás de un modal, o que no siguen el modo oscuro.",
+    "howToAsk": [
+      "Instala Sonner y configura el Toaster en mi app de React",
+      "Mis toasts de Sonner no siguen el modo oscuro, ayúdame a arreglarlo",
+      "Muestra un toast de carga mientras se resuelve esta promesa"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Install Sonner and set up the Toaster in my React app",
+      "My Sonner toasts aren't following dark mode, help me fix it",
+      "Show a loading toast while this promise resolves"
+    ]
+  }
+}

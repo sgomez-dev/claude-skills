@@ -1,0 +1,18 @@
+{
+  "sourceHash": "9fa2a4f2fb6b4efb",
+  "es": {
+    "description": "Revisa código de interfaz para comprobar el cumplimiento de las Web Interface Guidelines. Se usa cuando se pide \"revisa mi interfaz\", \"comprueba la accesibilidad\", \"audita el diseño\", \"revisa la UX\" o \"comprueba mi web frente a las buenas prácticas\".",
+    "howToAsk": [
+      "Revisa la accesibilidad de esta interfaz",
+      "Audita el diseño de mi web frente a las mejores prácticas",
+      "Comprueba si mi sitio cumple las guías de interfaz web"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Review the accessibility of this interface",
+      "Audit my site's design against best practices",
+      "Check whether my site follows web interface guidelines"
+    ]
+  }
+}

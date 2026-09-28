@@ -1,0 +1,18 @@
+{
+  "sourceHash": "bb2a7884293b1870",
+  "es": {
+    "description": "Feature flags: elección entre proveedor externo o solución propia, segmentación, interruptores de emergencia, limpieza",
+    "howToAsk": [
+      "/fullstack--feature-flags quiero lanzar una función solo al 10% de usuarios",
+      "/fullstack--feature-flags necesito un interruptor para desactivar una función rota en producción",
+      "/fullstack--feature-flags ayúdame a elegir entre LaunchDarkly y una solución propia"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/fullstack--feature-flags roll out a new feature to only 10% of users",
+      "/fullstack--feature-flags add a kill switch to disable a broken feature in production",
+      "/fullstack--feature-flags help me choose between LaunchDarkly and a homegrown solution"
+    ]
+  }
+}

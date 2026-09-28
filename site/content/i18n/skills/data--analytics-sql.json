@@ -1,0 +1,18 @@
+{
+  "sourceHash": "1c44cfdee949a2a5",
+  "es": {
+    "description": "Convierte una pregunta en lenguaje llano en SQL analítico optimizado para tu esquema",
+    "howToAsk": [
+      "/data--analytics-sql cuántos usuarios nuevos tuvimos cada mes este año",
+      "/data--analytics-sql dame el SQL para calcular el ingreso medio por cliente",
+      "/data--analytics-sql qué productos se venden más en cada región, en SQL"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/data--analytics-sql how many new users did we get each month this year",
+      "/data--analytics-sql give me the SQL to calculate average revenue per customer",
+      "/data--analytics-sql which products sell best in each region, as SQL"
+    ]
+  }
+}

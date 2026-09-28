@@ -1,0 +1,18 @@
+{
+  "sourceHash": "46aea4af50c39c69",
+  "es": {
+    "description": "Evalúa un modelo correctamente: métricas adecuadas, calibración, segmentos, análisis de errores",
+    "howToAsk": [
+      "/ml--model-evaluation evalúa este modelo de clasificación de fraude",
+      "/ml--model-evaluation comprueba si el modelo está bien calibrado",
+      "/ml--model-evaluation haz un análisis de errores por segmento de usuarios"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ml--model-evaluation evaluate this fraud classification model",
+      "/ml--model-evaluation check whether the model is well calibrated",
+      "/ml--model-evaluation break down errors by user segment"
+    ]
+  }
+}

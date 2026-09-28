@@ -1,0 +1,18 @@
+{
+  "sourceHash": "cc10f613c5c58f27",
+  "es": {
+    "description": "Skill premium de generación de imágenes para brand kits: tableros de guías de marca, sistemas de logotipo, decks de identidad y presentaciones de universo visual. Entrenada para sistemas de marca minimalistas, cinematográficos, editoriales, dark-tech, de lujo, culturales, de seguridad, gaming, developer-tool y de apps de consumo. Optimizada para conceptualización de logotipos intencional, composición refinada, tipografía escasa, fuerte significado simbólico, mockups premium, imágenes con dirección de arte y layouts de grid flexibles.",
+    "howToAsk": [
+      "Necesito un tablero de guías de marca para una app fintech, estilo dark-tech y minimalista",
+      "Genérame un sistema de logotipo y deck de identidad para mi startup de gaming",
+      "Quiero una presentación de universo visual de lujo para mi marca de cosmética"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Create a brand-guidelines board for my fintech app, dark-tech and minimalist",
+      "Generate a logo system and identity deck for my gaming startup",
+      "I need a luxury visual-world presentation for my cosmetics brand"
+    ]
+  }
+}

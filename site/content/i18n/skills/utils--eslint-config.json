@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a80f7c2f64a4e225",
+  "es": {
+    "description": "Genera u optimiza la configuración de ESLint con valores por defecto sensatos",
+    "howToAsk": [
+      "/utils--eslint-config crea una configuración de ESLint para mi proyecto TypeScript",
+      "/utils--eslint-config revisa mi .eslintrc y elimina reglas redundantes",
+      "/utils--eslint-config añade reglas recomendadas para React"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/utils--eslint-config set up ESLint for my TypeScript project",
+      "/utils--eslint-config review my .eslintrc and remove redundant rules",
+      "/utils--eslint-config add recommended rules for React"
+    ]
+  }
+}

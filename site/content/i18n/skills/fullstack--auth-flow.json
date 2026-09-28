@@ -1,0 +1,18 @@
+{
+  "sourceHash": "64fa9c9da53b2b8d",
+  "es": {
+    "description": "Implementa autenticación completa: flujos OAuth y por email, sesiones/JWT, RBAC, restablecimiento de contraseña",
+    "howToAsk": [
+      "/fullstack--auth-flow añade login con Google y email/contraseña a mi app Next.js",
+      "/fullstack--auth-flow necesito roles de admin y usuario con permisos distintos",
+      "/fullstack--auth-flow implementa recuperación de contraseña por email"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/fullstack--auth-flow add Google login and email/password to my Next.js app",
+      "/fullstack--auth-flow set up admin vs user roles with different permissions",
+      "/fullstack--auth-flow add a forgot-password email flow"
+    ]
+  }
+}

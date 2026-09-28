@@ -1,0 +1,18 @@
+{
+  "sourceHash": "71aa068ab0564a8d",
+  "es": {
+    "description": "Genera diagramas de infraestructura (Mermaid) a partir de IaC y ficheros de configuración",
+    "howToAsk": [
+      "/cloud--infra-diagram genera un diagrama de mi infraestructura a partir del Terraform",
+      "/cloud--infra-diagram quiero visualizar cómo se conectan mis servicios en producción",
+      "/cloud--infra-diagram crea un diagrama Mermaid de mi arquitectura en Kubernetes"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/cloud--infra-diagram generate a diagram of my infrastructure from the Terraform files",
+      "/cloud--infra-diagram I want to visualize how my services connect in production",
+      "/cloud--infra-diagram create a Mermaid diagram of my Kubernetes architecture"
+    ]
+  }
+}

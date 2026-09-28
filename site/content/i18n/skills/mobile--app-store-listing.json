@@ -1,0 +1,18 @@
+{
+  "sourceHash": "99b51460dceee29f",
+  "es": {
+    "description": "Redacta fichas de App Store/Play: título, palabras clave/ASO, descripciones, plan de capturas de pantalla",
+    "howToAsk": [
+      "/mobile--app-store-listing escribe la ficha de App Store para mi app de fitness",
+      "/mobile--app-store-listing optimiza las palabras clave para ASO",
+      "/mobile--app-store-listing planifica las capturas de pantalla de la ficha"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/mobile--app-store-listing write the App Store listing for my fitness app",
+      "/mobile--app-store-listing optimize keywords for ASO",
+      "/mobile--app-store-listing plan the screenshots for the listing"
+    ]
+  }
+}

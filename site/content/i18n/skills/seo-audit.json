@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d23ad1e19bb5378c",
+  "es": {
+    "description": "Úsala cuando el usuario quiera auditar, revisar o diagnosticar problemas de SEO en su sitio. Actívala también cuando el usuario mencione \"auditoría SEO\", \"SEO técnico\", \"por qué no estoy posicionando\", \"problemas de SEO\", \"SEO on-page\", \"revisión de meta tags\", \"chequeo de salud SEO\", \"se me ha caído el tráfico\", \"he perdido posiciones\", \"no aparezco en Google\", \"mi sitio no posiciona\", \"me afectó una actualización de Google\", \"velocidad de página\", \"Core Web Vitals\", \"errores de rastreo\" o \"problemas de indexación\". Úsala incluso si el usuario solo dice algo vago como \"mi SEO está mal\" o \"ayúdame con el SEO\" — empieza con una auditoría. Para crear páginas a gran escala orientadas a palabras clave, consulta programmatic-seo. Para añadir datos estructurados, consulta schema-markup. Para optimización de búsqueda con IA, consulta ai-seo.",
+    "howToAsk": [
+      "Mi tráfico orgánico ha caído mucho, ¿puedes auditar el SEO de mi web?",
+      "No aparezco en Google para mis palabras clave principales, ¿qué está pasando?",
+      "Haz una revisión técnica de SEO de mi sitio, incluyendo Core Web Vitals"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "My organic traffic dropped, can you audit my site's SEO?",
+      "I'm not showing up in Google for my main keywords, what's wrong?",
+      "Run a technical SEO review of my site, including Core Web Vitals"
+    ]
+  }
+}

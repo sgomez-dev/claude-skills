@@ -1,0 +1,18 @@
+{
+  "sourceHash": "4d6abdf8963b8005",
+  "es": {
+    "description": "Escribe DMs de Instagram que consiguen respuesta - la entrega por palabra clave, el primer mensaje a alguien que interactuó, el pitch de colaboración, y los dos seguimientos. Úsalo cuando el usuario diga \"manda un DM a esta persona\", \"qué le escribo\", \"mensaje de outreach\", \"cómo hago seguimiento\", \"pitch a esta marca\", o esté contactando a alguien específico.",
+    "howToAsk": [
+      "Escríbeme el DM para hacer seguimiento a esta marca",
+      "Necesito un primer mensaje para alguien que comentó mi reel",
+      "Dame el pitch de colaboración para este creador"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Write me the follow-up DM for this brand",
+      "I need a first message for someone who engaged with my reel",
+      "Give me the collab pitch for this creator"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "5f771210514a97d5",
+  "es": {
+    "description": "Configura tests de regresión visual con baselines, integración en CI y control de flakiness",
+    "howToAsk": [
+      "/testing--visual-regression configura tests de regresión visual para mi web",
+      "/testing--visual-regression crea las capturas base para comparar cambios visuales",
+      "/testing--visual-regression integra los tests visuales en el pipeline de CI"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/testing--visual-regression set up visual regression tests for my site",
+      "/testing--visual-regression create baseline screenshots for visual diffs",
+      "/testing--visual-regression integrate visual tests into the CI pipeline"
+    ]
+  }
+}

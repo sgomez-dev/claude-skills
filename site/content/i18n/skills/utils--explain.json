@@ -1,0 +1,18 @@
+{
+  "sourceHash": "86cc26931c9b3e81",
+  "es": {
+    "description": "Explica el código en detalle: qué hace, cómo funciona y por qué",
+    "howToAsk": [
+      "/utils--explain esta función de autenticación, no entiendo cómo funciona",
+      "/utils--explain el archivo utils/parser.js línea por línea",
+      "/utils--explain por qué este bucle usa recursión en vez de un for"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/utils--explain this authentication function, I don't get how it works",
+      "/utils--explain the file utils/parser.js line by line",
+      "/utils--explain why this loop uses recursion instead of a for"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a455f36f360eec3b",
+  "es": {
+    "description": "Guardrails para LLM: filtros de entrada/salida, defensa contra inyección de prompts, PII y pruebas de jailbreak",
+    "howToAsk": [
+      "/ai--guardrails protege mi chatbot contra inyección de prompts",
+      "/ai--guardrails filtra datos personales (PII) antes de enviarlos al modelo",
+      "/ai--guardrails haz pruebas de jailbreak sobre mi asistente"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ai--guardrails protect my chatbot from prompt injection",
+      "/ai--guardrails filter PII before it reaches the model",
+      "/ai--guardrails run jailbreak tests against my assistant"
+    ]
+  }
+}

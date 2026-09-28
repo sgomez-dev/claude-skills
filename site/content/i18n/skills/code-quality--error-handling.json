@@ -1,0 +1,18 @@
+{
+  "sourceHash": "1ff6d64126cc9119",
+  "es": {
+    "description": "Audita y mejora los patrones de manejo de errores en toda la base de código",
+    "howToAsk": [
+      "/code-quality--error-handling revisa cómo manejo los errores en mi API",
+      "/code-quality--error-handling mejora el manejo de excepciones de este servicio",
+      "/code-quality--error-handling encuentra bloques try/catch mal usados en el proyecto"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/code-quality--error-handling review how my API handles errors",
+      "/code-quality--error-handling improve exception handling in this service",
+      "/code-quality--error-handling find misused try/catch blocks across the project"
+    ]
+  }
+}

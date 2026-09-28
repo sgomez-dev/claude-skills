@@ -1,0 +1,18 @@
+{
+  "sourceHash": "2c66890e05fca22a",
+  "es": {
+    "description": "Auditoría de seguridad completa que revisa el OWASP Top 10 y vulnerabilidades habituales",
+    "howToAsk": [
+      "/security--security-audit haz una auditoría de seguridad completa de mi app",
+      "/security--security-audit revisa mi API contra el OWASP Top 10",
+      "/security--security-audit ¿qué vulnerabilidades comunes tiene este proyecto?"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/security--security-audit run a full security audit on my app",
+      "/security--security-audit check my API against the OWASP Top 10",
+      "/security--security-audit what common vulnerabilities does this project have?"
+    ]
+  }
+}

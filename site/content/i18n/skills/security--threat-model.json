@@ -1,0 +1,18 @@
+{
+  "sourceHash": "82644217b5e3632d",
+  "es": {
+    "description": "Modelado de amenazas con STRIDE: activos, límites de confianza, superficie de ataque y mitigaciones",
+    "howToAsk": [
+      "/security--threat-model haz el modelado de amenazas de mi arquitectura",
+      "/security--threat-model identifica los límites de confianza de este sistema",
+      "/security--threat-model ¿cuál es la superficie de ataque de mi API?"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/security--threat-model build a threat model for my architecture",
+      "/security--threat-model identify the trust boundaries in this system",
+      "/security--threat-model what's the attack surface of my API?"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "5a33194664d8054e",
+  "es": {
+    "description": "Automatiza un informe recurrente: extracción de datos, plantilla, calendario y canal de entrega",
+    "howToAsk": [
+      "/automation--report-automation envía un informe semanal de ventas por email automáticamente",
+      "/automation--report-automation genera un informe mensual a partir de mi base de datos",
+      "/automation--report-automation programa el envío de este informe cada lunes a Slack"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/automation--report-automation email a weekly sales report automatically",
+      "/automation--report-automation generate a monthly report from my database",
+      "/automation--report-automation schedule this report to Slack every Monday"
+    ]
+  }
+}

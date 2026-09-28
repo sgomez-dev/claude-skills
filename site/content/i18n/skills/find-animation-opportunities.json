@@ -1,0 +1,18 @@
+{
+  "sourceHash": "9c2fc2f8aa09ae9b",
+  "es": {
+    "description": "Busca en el código o la interfaz sitios que no tienen animación pero deberían tenerla, y descarta todo lo que no debería animarse. Es de solo lectura: propone el movimiento con valores exactos, pero no lo implementa. Úsalo cuando el usuario pregunte \"¿qué se podría animar aquí?\" o quiera \"que esto se sienta más vivo\". Para arreglar animaciones ya existentes, usa improve-animations o review-animations en su lugar.",
+    "howToAsk": [
+      "¿Qué partes de esta interfaz deberían tener animación?",
+      "Revisa mi app y dime dónde falta movimiento",
+      "Quiero que esta pantalla se sienta más viva, ¿qué animarías?"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "What parts of this UI should have animation?",
+      "Review my app and tell me where motion is missing",
+      "I want this screen to feel more alive, what would you animate?"
+    ]
+  }
+}

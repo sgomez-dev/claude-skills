@@ -1,0 +1,18 @@
+{
+  "sourceHash": "7c422bed99748308",
+  "es": {
+    "description": "Composición de vídeo en Python con moviepy 2.x: superponer texto determinista sobre vídeo generado por IA (LTX-2, SadTalker), componer clips, proyectos de vídeo en un solo archivo build.py. Úsalo para añadir etiquetas/subtítulos/tercios inferiores a clips de LTX-2 o SadTalker, construir spots publicitarios cortos en Python puro sin Remotion, o hacer composición de vídeo programática. Se activa con: superponer texto en vídeo, etiquetar clip de LTX-2, subtitular salida de SadTalker, tercio inferior, build.py de vídeo, moviepy, composición de vídeo en Python, spot publicitario de menos de 30s.",
+    "howToAsk": [
+      "Añade un tercio inferior con el nombre del entrevistado a este clip",
+      "Superpón texto a este vídeo generado con LTX-2",
+      "Monta un spot de 20 segundos en Python usando moviepy"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Add a lower-third with the interviewee's name to this clip",
+      "Overlay text on this LTX-2-generated video",
+      "Build a 20-second ad spot in Python using moviepy"
+    ]
+  }
+}

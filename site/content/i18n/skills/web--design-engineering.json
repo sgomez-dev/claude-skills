@@ -1,0 +1,18 @@
+{
+  "sourceHash": "ed0246dd9003c150",
+  "es": {
+    "description": "Ingeniería de diseño: pulido de UI, decisiones de animación y detalles invisibles que hacen que una interfaz se sienta bien (estilo Emil Kowalski)",
+    "howToAsk": [
+      "/web--design-engineering pule los detalles de esta interfaz, se siente tosca",
+      "/web--design-engineering revisa las transiciones de este modal",
+      "/web--design-engineering mejora los detalles invisibles de esta pantalla de ajustes"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/web--design-engineering polish the details on this interface, it feels rough",
+      "/web--design-engineering review the transitions on this modal",
+      "/web--design-engineering improve the invisible details on this settings screen"
+    ]
+  }
+}

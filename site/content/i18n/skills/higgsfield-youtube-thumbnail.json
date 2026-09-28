@@ -1,0 +1,18 @@
+{
+  "sourceHash": "f574b848fe6bf7d9",
+  "es": {
+    "description": "Crea miniaturas de YouTube con alto CTR y portadas de vídeo verticales mediante la CLI de Higgsfield. Construye un concepto veraz de \"brecha de información\", conserva hasta tres identidades de referencia, admite logos y variantes controladas, renderiza la imagen principal con Nano Banana Pro y aplica ediciones puntuales con Seedream. Úsalo cuando: \"haz una miniatura de YouTube\", \"miniatura para este vídeo\", \"portada estilo MrBeast\", \"portada para Shorts\" o \"portada de vídeo para Instagram\". Enlázalo después de cualquier flujo de vídeo una vez que se conozcan su tema veraz y su dirección visual. NO sirve para producir el propio vídeo (usa higgsfield-generate), fotos de catálogo de producto (usa higgsfield-product-photoshoot) ni tarjetas de marketplace (usa higgsfield-marketplace-cards).",
+    "howToAsk": [
+      "Hazme una miniatura llamativa de YouTube para mi último vídeo",
+      "Necesito una portada estilo MrBeast con mi cara y el logo de mi canal",
+      "Crea la portada vertical para mi Short de hoy"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Make me a clickable YouTube thumbnail for my latest video",
+      "I need a MrBeast-style cover with my face and channel logo",
+      "Create the vertical cover for today's Short"
+    ]
+  }
+}

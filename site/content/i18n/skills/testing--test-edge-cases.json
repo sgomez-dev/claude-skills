@@ -1,0 +1,18 @@
+{
+  "sourceHash": "0a798ee9feed71df",
+  "es": {
+    "description": "Genera tests de casos límite y de frontera que detectan los bugs que otros pasan por alto",
+    "howToAsk": [
+      "/testing--test-edge-cases genera casos límite para esta función de validación",
+      "/testing--test-edge-cases ¿qué casos frontera me estoy dejando en este endpoint?",
+      "/testing--test-edge-cases añade tests para valores nulos y vacíos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/testing--test-edge-cases generate edge cases for this validation function",
+      "/testing--test-edge-cases what boundary cases am I missing on this endpoint?",
+      "/testing--test-edge-cases add tests for null and empty values"
+    ]
+  }
+}

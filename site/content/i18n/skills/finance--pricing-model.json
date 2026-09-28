@@ -1,0 +1,18 @@
+{
+  "sourceHash": "caf7942c79ca403a",
+  "es": {
+    "description": "Diseña modelos de precios: planes, métricas de valor, empaquetado, localización de precios",
+    "howToAsk": [
+      "/finance--pricing-model diseña los planes de precios de mi SaaS",
+      "/finance--pricing-model necesito definir la métrica de valor para cobrar por uso",
+      "/finance--pricing-model ayúdame a adaptar los precios a distintos países"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/finance--pricing-model design the pricing tiers for my SaaS",
+      "/finance--pricing-model I need to define the value metric for usage-based pricing",
+      "/finance--pricing-model help me localize pricing for different countries"
+    ]
+  }
+}

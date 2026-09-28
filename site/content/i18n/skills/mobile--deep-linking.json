@@ -1,0 +1,18 @@
+{
+  "sourceHash": "2b973bc7d7452537",
+  "es": {
+    "description": "Configura universal/app links: configuración, enrutado dentro de la app, enlaces diferidos, matriz de pruebas",
+    "howToAsk": [
+      "/mobile--deep-linking configura universal links para mi app",
+      "/mobile--deep-linking haz que un enlace abra directamente el producto",
+      "/mobile--deep-linking añade enlaces diferidos para usuarios sin la app instalada"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/mobile--deep-linking set up universal links for my app",
+      "/mobile--deep-linking make a link open directly to a product page",
+      "/mobile--deep-linking add deferred links for users without the app"
+    ]
+  }
+}

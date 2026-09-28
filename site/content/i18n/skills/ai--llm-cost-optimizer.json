@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d7d59a5ddd6b5441",
+  "es": {
+    "description": "Reduce los costes de LLM: enrutado entre modelos, caché, compresión de prompts y batching sin perder calidad",
+    "howToAsk": [
+      "/ai--llm-cost-optimizer la factura de la API de Claude se ha disparado, ayúdame a bajarla",
+      "/ai--llm-cost-optimizer añade caché para no repetir llamadas idénticas al modelo",
+      "/ai--llm-cost-optimizer enruta las consultas sencillas a un modelo más barato"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ai--llm-cost-optimizer our Claude API bill spiked, help me bring it down",
+      "/ai--llm-cost-optimizer add caching so we don't repeat identical model calls",
+      "/ai--llm-cost-optimizer route simple queries to a cheaper model"
+    ]
+  }
+}

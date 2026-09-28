@@ -1,0 +1,18 @@
+{
+  "sourceHash": "1e051ddf51246bfd",
+  "es": {
+    "description": "El contrato de composición de HyperFrames — construye un proyecto renderizable. Úsalo para la estructura de la composición, los atributos de tiempo `data-*`, `class=\"clip\"`, pistas, subcomposiciones, variables, la reproducción de medios gestionada por el framework, las reglas de renderizado determinista y la validación. Léelo antes de escribir HTML de composición.",
+    "howToAsk": [
+      "Explícame cómo estructurar una composición nueva de HyperFrames",
+      "¿Cómo defino los tiempos de los clips con los atributos data-*?",
+      "Revisa si mi HTML de composición cumple las reglas de renderizado determinista"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Explain how to structure a new HyperFrames composition",
+      "How do I set clip timing with the data-* attributes?",
+      "Check whether my composition HTML follows the deterministic render rules"
+    ]
+  }
+}

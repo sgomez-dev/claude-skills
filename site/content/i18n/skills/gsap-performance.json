@@ -1,0 +1,18 @@
+{
+  "sourceHash": "0e8d9b2e03db109a",
+  "es": {
+    "description": "Skill oficial de GSAP sobre rendimiento: preferir transforms, evitar layout thrashing, will-change, batching. Úsalo al optimizar animaciones GSAP, reducir el jank, o cuando el usuario pregunte por rendimiento de animaciones, FPS o conseguir 60fps fluidos.",
+    "howToAsk": [
+      "Mi animación GSAP va a tirones, ayúdame a optimizarla",
+      "Cómo evito el layout thrashing en esta animación",
+      "Necesito que esta animación vaya a 60fps estables"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "My GSAP animation is janky, help me optimize it",
+      "How do I avoid layout thrashing in this animation",
+      "I need this animation to hold a smooth 60fps"
+    ]
+  }
+}

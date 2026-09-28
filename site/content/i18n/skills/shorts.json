@@ -1,0 +1,18 @@
+{
+  "sourceHash": "e00f6e7d852a5610",
+  "es": {
+    "description": "Creador interactivo que convierte vídeo largo en formato corto. Extrae clips cortos listos para viralizarse a partir de vídeos largos usando Claude como orquestador. Transcribe con faster-whisper (GPU), Claude puntúa y presenta los segmentos candidatos de forma interactiva, el usuario elige y ajusta, Remotion renderiza subtítulos animados premium (estilos Bold/Bounce/Clean) y FFmpeg exporta archivos optimizados por plataforma (YouTube Shorts, TikTok, Instagram Reels). Úsala cuando el usuario diga \"shorts\", \"clips cortos\", \"formato corto\", \"extraer clips\", \"tiktok a partir de un vídeo\", \"reels a partir de un vídeo\", \"clips verticales\" o \"crear shorts\".",
+    "howToAsk": [
+      "Saca clips virales cortos de este vídeo largo para TikTok",
+      "Convierte esta entrevista en varios Reels con subtítulos animados",
+      "Necesito clips verticales de este vídeo para YouTube Shorts"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Pull viral short clips from this long video for TikTok",
+      "Turn this interview into several Reels with animated captions",
+      "I need vertical clips from this video for YouTube Shorts"
+    ]
+  }
+}

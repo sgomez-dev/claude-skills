@@ -1,0 +1,18 @@
+{
+  "sourceHash": "ea1465e5810a4c41",
+  "es": {
+    "description": "Construye una API serverless — funciones, enrutado, mitigación de cold-start, configuración de desarrollo local",
+    "howToAsk": [
+      "/cloud--serverless-api monta una API serverless para mi app con funciones Lambda",
+      "/cloud--serverless-api ayúdame a reducir el cold-start de mis funciones",
+      "/cloud--serverless-api configúrame el entorno de desarrollo local para probar la API"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/cloud--serverless-api build a serverless API for my app using Lambda functions",
+      "/cloud--serverless-api help me reduce cold-start latency on my functions",
+      "/cloud--serverless-api set up a local dev environment to test the API"
+    ]
+  }
+}

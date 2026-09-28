@@ -1,0 +1,18 @@
+{
+  "sourceHash": "e01805c7f6a70362",
+  "es": {
+    "description": "Enriquece una lista de leads con datos públicos: stack tecnológico, tamaño, financiación, contrataciones, noticias",
+    "howToAsk": [
+      "/sales--lead-enrichment enriquece esta lista de leads con datos de empresa",
+      "/sales--lead-enrichment añade el stack tecnológico y el tamaño de estas cuentas",
+      "/sales--lead-enrichment completa esta hoja de leads con financiación y noticias recientes"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/sales--lead-enrichment enrich this lead list with company data",
+      "/sales--lead-enrichment add tech stack and headcount for these accounts",
+      "/sales--lead-enrichment fill in this lead sheet with funding and recent news"
+    ]
+  }
+}

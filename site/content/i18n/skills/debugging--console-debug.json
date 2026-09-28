@@ -1,0 +1,18 @@
+{
+  "sourceHash": "836f77254a3be0f9",
+  "es": {
+    "description": "Añade logging de depuración estratégico para rastrear un bug en el código",
+    "howToAsk": [
+      "/debugging--console-debug añade logs para rastrear este bug de checkout",
+      "/debugging--console-debug ayúdame a poner console.log en los sitios correctos",
+      "/debugging--console-debug traza este error paso a paso con logging"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/debugging--console-debug add logging to trace this checkout bug",
+      "/debugging--console-debug help me place console.log in the right spots",
+      "/debugging--console-debug trace this error step by step with logging"
+    ]
+  }
+}

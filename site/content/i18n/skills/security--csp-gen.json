@@ -1,0 +1,18 @@
+{
+  "sourceHash": "bb61f0ae3d425783",
+  "es": {
+    "description": "Genera y valida cabeceras de Content Security Policy (CSP)",
+    "howToAsk": [
+      "/security--csp-gen genera una política CSP para mi sitio web",
+      "/security--csp-gen valida la CSP que ya tengo configurada",
+      "/security--csp-gen necesito bloquear scripts externos no autorizados"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/security--csp-gen generate a CSP policy for my website",
+      "/security--csp-gen validate the CSP I already have configured",
+      "/security--csp-gen I need to block unauthorized external scripts"
+    ]
+  }
+}

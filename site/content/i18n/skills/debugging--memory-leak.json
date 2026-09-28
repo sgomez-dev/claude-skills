@@ -1,0 +1,18 @@
+{
+  "sourceHash": "b3aead388d549ee1",
+  "es": {
+    "description": "Encuentra fugas de memoria analizando patrones de asignación y rutas de retención",
+    "howToAsk": [
+      "/debugging--memory-leak mi app de Node consume más memoria cada hora",
+      "/debugging--memory-leak encuentra la fuga de memoria en este servicio",
+      "/debugging--memory-leak analiza por qué no se libera esta memoria"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/debugging--memory-leak my Node app keeps using more memory every hour",
+      "/debugging--memory-leak find the memory leak in this service",
+      "/debugging--memory-leak figure out why this memory never gets released"
+    ]
+  }
+}

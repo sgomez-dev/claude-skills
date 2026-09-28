@@ -1,0 +1,18 @@
+{
+  "sourceHash": "afebe17416ef76dc",
+  "es": {
+    "description": "Pipeline de producción para animaciones matemáticas y técnicas con Manim Community Edition. Crea vídeos explicativos al estilo 3Blue1Brown, visualizaciones de algoritmos, derivaciones de ecuaciones, diagramas de arquitectura e historias con datos. Úsalo cuando el usuario pida: explicaciones animadas, animaciones matemáticas, visualizaciones de conceptos, recorridos de algoritmos, explicaciones técnicas, vídeos al estilo 3Blue1Brown, o cualquier animación programática con contenido geométrico o matemático.",
+    "howToAsk": [
+      "Crea un vídeo explicando el teorema de Pitágoras al estilo 3Blue1Brown",
+      "Anima este algoritmo de ordenación paso a paso",
+      "Haz una visualización de cómo se deriva esta ecuación"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Make a 3Blue1Brown-style video explaining the Pythagorean theorem",
+      "Animate this sorting algorithm step by step",
+      "Visualize how this equation is derived"
+    ]
+  }
+}

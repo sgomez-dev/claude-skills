@@ -1,0 +1,18 @@
+{
+  "sourceHash": "37dea1983d0e95cd",
+  "es": {
+    "description": "Añade búsqueda: elección de motor (Postgres FTS/Meilisearch/Elastic), indexación, ranking, UI",
+    "howToAsk": [
+      "/fullstack--search-feature añade un buscador de productos con filtros",
+      "/fullstack--search-feature ayúdame a elegir entre Postgres FTS y Meilisearch",
+      "/fullstack--search-feature necesito que los resultados más relevantes salgan primero"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/fullstack--search-feature add a product search bar with filters",
+      "/fullstack--search-feature help me choose between Postgres FTS and Meilisearch",
+      "/fullstack--search-feature make the most relevant results show up first"
+    ]
+  }
+}

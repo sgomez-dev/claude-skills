@@ -1,0 +1,18 @@
+{
+  "sourceHash": "440ecec360f119cb",
+  "es": {
+    "description": "Implementa capacidades de extracción de contenido de páginas web usando el z-ai-web-dev-sdk. Se usa cuando el usuario necesita hacer scraping de páginas web, extraer el contenido de artículos, obtener metadatos de la página o construir aplicaciones que procesen contenido web. Soporta extracción automática de contenido con título, HTML y fecha de publicación.",
+    "howToAsk": [
+      "Extrae el contenido de este artículo web con su título y fecha de publicación",
+      "Construye una función que haga scraping de estas páginas de noticias",
+      "Saca los metadatos de esta URL para mi aplicación"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Extract this article's content along with its title and publication date",
+      "Build a function that scrapes these news pages",
+      "Pull the metadata from this URL for my app"
+    ]
+  }
+}

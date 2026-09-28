@@ -1,0 +1,18 @@
+{
+  "sourceHash": "5997ce963aaae114",
+  "es": {
+    "description": "Configura los lanzamientos móviles: versionado, firma, canales beta, despliegue escalonado, envío a las tiendas",
+    "howToAsk": [
+      "/mobile--mobile-release prepara el primer lanzamiento de mi app",
+      "/mobile--mobile-release configura un canal beta antes del lanzamiento",
+      "/mobile--mobile-release haz un despliegue escalonado para la nueva versión"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/mobile--mobile-release prepare my app's first release",
+      "/mobile--mobile-release set up a beta track before launch",
+      "/mobile--mobile-release do a staged rollout for the new version"
+    ]
+  }
+}

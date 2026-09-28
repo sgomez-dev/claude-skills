@@ -1,0 +1,18 @@
+{
+  "sourceHash": "3822130f5e6b1269",
+  "es": {
+    "description": "Crea y amplía sistemas de marca visual completos mediante la CLI de Higgsfield y herramientas locales deterministas integradas: paletas, logotipos en SVG, tipografía, mockups, gráficos para redes sociales, packaging, señalética, merchandising, pósters, presentaciones y brandbooks editables en PPTX/PDF. Conserva los activos oficiales proporcionados, guarda las aprobaciones localmente y regenera solo las salidas dependientes. Úsalo cuando: \"crea un kit de marca\", \"haz una identidad visual\", \"diseña un logo y un brandbook\", \"aplica este logo a activos de marca\", \"haz packaging o señalética\", o \"amplía nuestra marca existente\". Combínalo con higgsfield-generate para producción general de imágenes y con los brand-kits de Marketing Studio al importar metadatos del sitio web para anuncios. NO lo uses para generación de imágenes sin marca (usa higgsfield-generate), fotografía de catálogo de producto (usa higgsfield-product-photoshoot), implementación de sitios web (usa higgsfield-websites), o entrega nativa en Figma/Canva/PSD/AI.",
+    "howToAsk": [
+      "Crea un kit de marca completo con logo, paleta y tipografía",
+      "Aplica nuestro logo a plantillas de packaging y señalética",
+      "Necesito un brandbook editable en PPTX con nuestra identidad visual"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Create a full brand kit with logo, palette, and typography",
+      "Apply our logo to packaging and signage templates",
+      "I need an editable PPTX brandbook with our visual identity"
+    ]
+  }
+}

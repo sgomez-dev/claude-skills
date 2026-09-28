@@ -1,0 +1,18 @@
+{
+  "sourceHash": "88fd814b5ed0d549",
+  "es": {
+    "description": "Genera un docker-compose.yml para desarrollo local o producción",
+    "howToAsk": [
+      "/devops--docker-compose docker-compose para mi app Node con Postgres y Redis",
+      "/devops--docker-compose genera un compose para producción de mi API",
+      "/devops--docker-compose monta el entorno local con docker-compose"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/devops--docker-compose docker-compose for my Node app with Postgres and Redis",
+      "/devops--docker-compose generate a production compose file for my API",
+      "/devops--docker-compose set up my local dev environment with docker-compose"
+    ]
+  }
+}

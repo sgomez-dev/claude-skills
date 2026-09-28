@@ -1,0 +1,18 @@
+{
+  "sourceHash": "52d60b1e9ca63e1a",
+  "es": {
+    "description": "Audita los costes cloud a partir de exportaciones de facturación e IaC — encuentra despilfarro, ajusta el tamaño de recursos, planifica ahorros",
+    "howToAsk": [
+      "/cloud--cloud-cost-audit revisa mi factura de AWS del último mes y encuentra dónde ahorrar",
+      "/cloud--cloud-cost-audit analiza mi Terraform y detecta recursos sobredimensionados",
+      "/cloud--cloud-cost-audit dame un plan de ahorro para reducir mi gasto en GCP"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/cloud--cloud-cost-audit review last month's AWS bill and find where to cut costs",
+      "/cloud--cloud-cost-audit scan my Terraform for oversized, wasteful resources",
+      "/cloud--cloud-cost-audit give me a savings plan to reduce my GCP spend"
+    ]
+  }
+}

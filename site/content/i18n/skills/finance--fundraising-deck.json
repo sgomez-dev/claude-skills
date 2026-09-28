@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d626edc25ae03abb",
+  "es": {
+    "description": "Estructura un deck para levantar financiación: narrativa, contenido diapositiva a diapositiva, data room",
+    "howToAsk": [
+      "/finance--fundraising-deck ayúdame a estructurar el deck para nuestra ronda seed",
+      "/finance--fundraising-deck necesito el contenido diapositiva a diapositiva del pitch deck",
+      "/finance--fundraising-deck organiza el data room para los inversores"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/finance--fundraising-deck help me structure the deck for our seed round",
+      "/finance--fundraising-deck I need slide-by-slide content for the pitch deck",
+      "/finance--fundraising-deck organize the data room for investors"
+    ]
+  }
+}

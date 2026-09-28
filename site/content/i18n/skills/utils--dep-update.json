@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a90a5c945a99288a",
+  "es": {
+    "description": "Actualiza las dependencias del proyecto de forma segura, detectando cambios incompatibles (breaking changes)",
+    "howToAsk": [
+      "/utils--dep-update revisa si hay dependencias desactualizadas en package.json",
+      "/utils--dep-update actualiza React a la última versión mayor sin romper nada",
+      "/utils--dep-update comprueba qué librerías tienen cambios incompatibles antes de actualizar"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/utils--dep-update check which dependencies are outdated in package.json",
+      "/utils--dep-update update React to the latest major version safely",
+      "/utils--dep-update find breaking changes before upgrading all packages"
+    ]
+  }
+}

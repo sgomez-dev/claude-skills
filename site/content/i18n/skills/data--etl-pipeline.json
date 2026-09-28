@@ -1,0 +1,18 @@
+{
+  "sourceHash": "415b2f1604de64a6",
+  "es": {
+    "description": "Crea el andamiaje de un pipeline ETL/ELT idempotente para tu stack con manejo de errores",
+    "howToAsk": [
+      "/data--etl-pipeline pipeline ETL de Postgres a BigQuery",
+      "/data--etl-pipeline pipeline ELT idempotente con reintentos en caso de fallo",
+      "/data--etl-pipeline monta un ETL para sincronizar Stripe con mi warehouse"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/data--etl-pipeline ETL pipeline from Postgres to BigQuery",
+      "/data--etl-pipeline idempotent ELT pipeline with retry on failure",
+      "/data--etl-pipeline scaffold ETL to sync Stripe into my warehouse"
+    ]
+  }
+}

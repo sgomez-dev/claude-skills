@@ -1,0 +1,18 @@
+{
+  "sourceHash": "4c1dd736b8923bbb",
+  "es": {
+    "description": "Programa tareas de forma fiable: cron frente a colas, reintentos, monitorización y trampas de zona horaria",
+    "howToAsk": [
+      "/automation--scheduled-tasks necesito una tarea que se ejecute cada noche sin fallar",
+      "/automation--scheduled-tasks ¿uso cron o una cola de tareas para esto?",
+      "/automation--scheduled-tasks mi tarea programada falla por problemas de zona horaria"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/automation--scheduled-tasks I need a task that runs every night without failing",
+      "/automation--scheduled-tasks should I use cron or a job queue for this?",
+      "/automation--scheduled-tasks my scheduled job breaks due to timezone issues"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "10d286ce095a3f84",
+  "es": {
+    "description": "Integra pagos: checkout, suscripciones, webhooks firmados, portal de cliente",
+    "howToAsk": [
+      "/fullstack--payments-integration añade Stripe checkout para pagos únicos",
+      "/fullstack--payments-integration necesito suscripciones mensuales y un portal para cancelarlas",
+      "/fullstack--payments-integration valida los webhooks de pago de forma segura"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/fullstack--payments-integration add Stripe checkout for one-time payments",
+      "/fullstack--payments-integration set up monthly subscriptions with a cancel-anytime portal",
+      "/fullstack--payments-integration verify payment webhooks securely"
+    ]
+  }
+}

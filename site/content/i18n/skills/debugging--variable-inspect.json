@@ -1,0 +1,18 @@
+{
+  "sourceHash": "3d45f4fb48bf959e",
+  "es": {
+    "description": "Rastrea el ciclo de vida de una variable para encontrar dónde se corrompe o falla",
+    "howToAsk": [
+      "/debugging--variable-inspect rastrea por qué esta variable llega a null",
+      "/debugging--variable-inspect encuentra dónde se corrompe este objeto",
+      "/debugging--variable-inspect sigue el valor de esta variable por todo el flujo"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/debugging--variable-inspect trace why this variable ends up null",
+      "/debugging--variable-inspect find where this object gets corrupted",
+      "/debugging--variable-inspect follow this variable's value through the flow"
+    ]
+  }
+}

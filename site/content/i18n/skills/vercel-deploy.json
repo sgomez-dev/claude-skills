@@ -1,0 +1,18 @@
+{
+  "sourceHash": "2ded67e8be88b2b3",
+  "es": {
+    "description": "Despliega aplicaciones y sitios web en Vercel. Se usa cuando el usuario pide acciones de despliegue como \"despliega mi app\", \"despliega y dame el enlace\", \"publícalo ya\" o \"crea un despliegue de vista previa\".",
+    "howToAsk": [
+      "Despliega mi aplicación en Vercel y dame el enlace",
+      "Publica esta web ya, necesito el link cuanto antes",
+      "Crea un despliegue de vista previa de esta rama"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Deploy my app to Vercel and give me the link",
+      "Push this site live right now",
+      "Create a preview deployment for this branch"
+    ]
+  }
+}

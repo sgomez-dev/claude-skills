@@ -1,0 +1,18 @@
+{
+  "sourceHash": "9a24d2f5d945d9ca",
+  "es": {
+    "description": "Voz de marca, identidad visual, marcos de mensaje, gestión de recursos y consistencia de marca. Actívalo para contenido de marca, tono de voz, recursos de marketing, cumplimiento de marca y guías de estilo.",
+    "howToAsk": [
+      "Revisa si este texto respeta el tono de voz de nuestra marca",
+      "Crea una guía de estilo con nuestra identidad visual",
+      "Comprueba que estos recursos de marketing cumplen las normas de marca"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Check whether this copy matches our brand's tone of voice",
+      "Create a style guide for our visual identity",
+      "Make sure these marketing assets comply with our brand guidelines"
+    ]
+  }
+}

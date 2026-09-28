@@ -1,0 +1,18 @@
+{
+  "sourceHash": "c946ef168ec0933c",
+  "es": {
+    "description": "Revisa un borrador de contrato - señala cláusulas de riesgo, términos faltantes, obligaciones unilaterales",
+    "howToAsk": [
+      "/legal--contract-review contrato-proveedor.pdf, soy el cliente",
+      "/legal--contract-review revisa este NDA, soy la parte receptora",
+      "/legal--contract-review contrato-arrendamiento.docx, señala cláusulas abusivas"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/legal--contract-review vendor-contract.pdf, I'm the client",
+      "/legal--contract-review review this NDA, I'm the receiving party",
+      "/legal--contract-review lease-agreement.docx, flag one-sided clauses"
+    ]
+  }
+}

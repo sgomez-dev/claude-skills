@@ -1,0 +1,18 @@
+{
+  "sourceHash": "2f0f201bd981b23c",
+  "es": {
+    "description": "Despliega un modelo de ML: patrón de servicio (batch/online), API, monitorización, detección de drift",
+    "howToAsk": [
+      "/ml--model-deployment despliega mi modelo como una API online",
+      "/ml--model-deployment monta inferencia por lotes para este modelo",
+      "/ml--model-deployment añade detección de drift a mi modelo en producción"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ml--model-deployment deploy my model as an online API",
+      "/ml--model-deployment set up batch inference for this model",
+      "/ml--model-deployment add drift detection to my production model"
+    ]
+  }
+}

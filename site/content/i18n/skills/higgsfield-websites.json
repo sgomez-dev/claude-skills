@@ -1,0 +1,18 @@
+{
+  "sourceHash": "60f80305e53f1a2f",
+  "es": {
+    "description": "Construye, edita y despliega sitios web, apps y juegos full-stack mediante la CLI de Higgsfield (`higgsfield website …`). Cada uno es una app React 19 + TanStack Start SSR en un único Cloudflare Worker (D1/R2/KV/DO/Containers). TRES tipos de producto, elegidos con `--type` al crear: `website` (independiente, sin integración con Higgsfield — references/website-flow.md), `app` (Sign in with Higgsfield + fnf SDK, Quanta — references/app-flow.md), `game` (salas multijugador en tiempo real — references/game-flow.md). Enruta al flujo correcto; cada uno tiene sus propias reglas y verificaciones de deploy/publish. Úsalo cuando: \"constrúyeme un sitio web\", \"haz una landing page\", \"crea una web app\", \"construye un dashboard SaaS / portfolio\", \"hazme un juego\", \"despliega este sitio\", \"publica\". También cubre ARTE DE JUEGO: \"haz un spritesheet\", \"una textura tileable\", \"anima un personaje 3D\", música/SFX de juego — ver las referencias game-*. NO sirve para: generación de una sola imagen/vídeo/audio (higgsfield-generate), fotos de producto (higgsfield-product-photoshoot), tarjetas de marketplace (higgsfield-marketplace-cards).",
+    "howToAsk": [
+      "Quiero construir una landing page para mi startup, ¿me ayudas a desplegarla?",
+      "Necesito crear una app web con inicio de sesión y publicarla ya",
+      "Hazme un juego multijugador sencillo y súbelo a producción"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Build me a landing page for my startup and deploy it",
+      "Create a web app with sign-in and publish it live",
+      "Make a simple multiplayer game and ship it"
+    ]
+  }
+}

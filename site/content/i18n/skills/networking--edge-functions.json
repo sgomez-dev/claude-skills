@@ -1,0 +1,18 @@
+{
+  "sourceHash": "6328bc94951f194c",
+  "es": {
+    "description": "Crea funciones edge para manipular peticiones/respuestas y enrutamiento",
+    "howToAsk": [
+      "/networking--edge-functions reescribe las cabeceras de todas las respuestas",
+      "/networking--edge-functions redirige a los usuarios móviles a otra ruta",
+      "/networking--edge-functions crea una función edge para pruebas A/B"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/networking--edge-functions rewrite response headers for every request",
+      "/networking--edge-functions redirect mobile users to a different route",
+      "/networking--edge-functions build an edge function for A/B testing"
+    ]
+  }
+}

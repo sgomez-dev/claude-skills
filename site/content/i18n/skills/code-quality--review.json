@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a221f648b3dfb6be",
+  "es": {
+    "description": "Revisión de código completa de los ficheros modificados o especificados",
+    "howToAsk": [
+      "/code-quality--review revisa los cambios de mi último commit",
+      "/code-quality--review haz una revisión de código completa de este archivo",
+      "/code-quality--review revisa el pull request antes de que lo apruebe mi equipo"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/code-quality--review review the changes from my latest commit",
+      "/code-quality--review do a full code review of this file",
+      "/code-quality--review review this pull request before my team approves it"
+    ]
+  }
+}

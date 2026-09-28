@@ -1,0 +1,18 @@
+{
+  "sourceHash": "1cbe0b4914e1272a",
+  "es": {
+    "description": "Gestiona los comentarios bajo los propios reels y posts del usuario - redacta respuestas a los que merecen respuesta, ordenados por cuáles lo merecen. Úsalo cuando el usuario pegue sus comentarios, diga \"responde a esto\", \"gestiona mis comentarios\", \"alguien dijo X en mi reel\", o esté lidiando con un crítico, un hater o un lead en los comentarios.",
+    "howToAsk": [
+      "Aquí están los comentarios de mi último reel, respóndeme a los importantes",
+      "Alguien me dejó un comentario negativo, ayúdame a responder",
+      "Gestiona estos comentarios y dime cuáles son en realidad leads"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Here are the comments on my latest reel, draft replies to the important ones",
+      "Someone left a negative comment, help me respond",
+      "Handle these comments and tell me which ones are actually leads"
+    ]
+  }
+}

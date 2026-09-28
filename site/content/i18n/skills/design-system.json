@@ -1,0 +1,18 @@
+{
+  "sourceHash": "4317ed52dfaeedbc",
+  "es": {
+    "description": "Arquitectura de tokens, especificaciones de componentes y generación de diapositivas. Tokens en tres capas (primitivo→semántico→componente), variables CSS, escalas de espaciado y tipografía, especificaciones de componentes, creación estratégica de diapositivas. Úsala para design tokens, diseño sistemático, presentaciones alineadas con la marca.",
+    "howToAsk": [
+      "Crea un sistema de tokens de diseño en tres capas para mi producto",
+      "Define las escalas de espaciado y tipografía de mi design system",
+      "Genera diapositivas de marca a partir de mis design tokens"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Build a three-layer design token system for my product",
+      "Define the spacing and typography scales for my design system",
+      "Generate brand-compliant slides from my design tokens"
+    ]
+  }
+}

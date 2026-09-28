@@ -1,0 +1,18 @@
+{
+  "sourceHash": "cd37da53e78b436c",
+  "es": {
+    "description": "Dirige, genera, edita, compara y revisa recursos visuales con los modelos de imagen actuales de Google Gemini. Úsalo para creación de imágenes, edición de imágenes, consistencia basada en referencias, visuales de producto y personajes, gráficos con texto, diagramas fundamentados, imágenes derivadas de vídeo, y portafolios de imágenes con varios modelos.",
+    "howToAsk": [
+      "Genera una imagen de producto para mi tienda con Gemini",
+      "Edita esta imagen manteniendo la cara del personaje consistente",
+      "Crea varias variantes de este gráfico con texto para redes sociales"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Generate a product shot for my store with Gemini",
+      "Edit this image while keeping the character's face consistent",
+      "Create a few text-bearing graphic variants for social media"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "c7349350bc793e06",
+  "es": {
+    "description": "Encuentra entradas sin sanear y añade la validación/saneamiento adecuados",
+    "howToAsk": [
+      "/security--sanitize revisa los formularios de mi web en busca de inputs sin validar",
+      "/security--sanitize añade saneamiento a los parámetros de esta API",
+      "/security--sanitize ¿este código es vulnerable a inyección SQL?"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/security--sanitize check my forms for unsanitized inputs",
+      "/security--sanitize add sanitization to this API's parameters",
+      "/security--sanitize is this code vulnerable to SQL injection?"
+    ]
+  }
+}

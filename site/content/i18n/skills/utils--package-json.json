@@ -1,0 +1,18 @@
+{
+  "sourceHash": "c147d89fa0c4d56d",
+  "es": {
+    "description": "Optimiza y limpia el package.json: scripts, dependencias y metadatos",
+    "howToAsk": [
+      "/utils--package-json limpia las dependencias que ya no uso en package.json",
+      "/utils--package-json ordena y mejora mis scripts de npm",
+      "/utils--package-json añade los metadatos que faltan antes de publicar en npm"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/utils--package-json clean up unused dependencies in package.json",
+      "/utils--package-json organize and improve my npm scripts",
+      "/utils--package-json add missing metadata before publishing to npm"
+    ]
+  }
+}

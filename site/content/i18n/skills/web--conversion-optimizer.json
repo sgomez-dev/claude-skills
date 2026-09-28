@@ -1,0 +1,18 @@
+{
+  "sourceHash": "fa37d3c658f2a1a3",
+  "es": {
+    "description": "Audita y optimiza una landing page o app web para mejorar las conversiones: copy, diseño, UX y confianza",
+    "howToAsk": [
+      "/web--conversion-optimizer audita mi landing page, la conversión es muy baja",
+      "/web--conversion-optimizer revisa el copy de mi página de precios",
+      "/web--conversion-optimizer dime qué elementos de confianza le faltan a mi checkout"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/web--conversion-optimizer audit my landing page, conversion rate is very low",
+      "/web--conversion-optimizer review the copy on my pricing page",
+      "/web--conversion-optimizer tell me what trust elements my checkout is missing"
+    ]
+  }
+}

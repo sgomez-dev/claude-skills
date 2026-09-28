@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a0bde46a6901956c",
+  "es": {
+    "description": "Investigación a fondo de quién cambió qué y por qué, usando git blame y git log",
+    "howToAsk": [
+      "/git--blame-detective averigua quién y por qué cambió esta función",
+      "/git--blame-detective investiga el historial de esta línea de código",
+      "/git--blame-detective quiero saber cuándo se introdujo este bug"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/git--blame-detective find out who changed this function and why",
+      "/git--blame-detective dig into the history of this line of code",
+      "/git--blame-detective find out when this bug was introduced"
+    ]
+  }
+}

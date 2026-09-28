@@ -1,0 +1,18 @@
+{
+  "sourceHash": "c185ca8777e548f4",
+  "es": {
+    "description": "Ingeniero de UX/UI de élite y de movimiento avanzado con GSAP. Impone aleatoriedad real basada en Python para variar el layout, una estructura de página AIDA estricta, tipografía editorial ancha (prohíbe párrafos envueltos en 6 líneas), bento grids sin huecos, ScrollTriggers de GSAP estrictos (pinning, apilado, scrubbing), micro-imágenes en línea y espaciado masivo entre secciones.",
+    "howToAsk": [
+      "Diseña una landing page con una estructura AIDA muy cuidada",
+      "Quiero un bento grid sin huecos con animaciones GSAP al hacer scroll",
+      "Ayúdame a que la tipografía de esta página se vea editorial y no genérica"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Design a landing page with a tight AIDA structure",
+      "I want a gapless bento grid with GSAP scroll animations",
+      "Make this page's typography feel editorial instead of generic"
+    ]
+  }
+}

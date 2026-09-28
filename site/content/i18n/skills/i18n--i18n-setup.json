@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d30d1e9f2af17835",
+  "es": {
+    "description": "Configura internacionalización (i18n) con extracción y gestión de traducciones",
+    "howToAsk": [
+      "/i18n--i18n-setup configura i18n en mi app Next.js con español e inglés",
+      "/i18n--i18n-setup extrae todos los textos hardcodeados para traducirlos",
+      "/i18n--i18n-setup añade soporte multi-idioma a este proyecto React"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/i18n--i18n-setup set up i18n in my Next.js app with English and Spanish",
+      "/i18n--i18n-setup extract all hardcoded strings so I can translate them",
+      "/i18n--i18n-setup add multi-language support to this React project"
+    ]
+  }
+}

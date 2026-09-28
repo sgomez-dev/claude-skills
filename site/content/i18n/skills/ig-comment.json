@@ -1,0 +1,18 @@
+{
+  "sourceHash": "60f4eb3c509ee952",
+  "es": {
+    "description": "Escribe comentarios en publicaciones y reels de otras personas en Instagram que suenen como una persona con opinión, no como un bot. Úsalo cuando el usuario pega un post o un reel y quiere un comentario, dice \"comenta esto\", \"interactúa con esto\", \"qué digo aquí\", o quiere un lote para su ronda diaria de engagement.",
+    "howToAsk": [
+      "Aquí tienes un reel de mi nicho, escríbeme un buen comentario",
+      "Dame 10 comentarios para mi ronda de engagement de hoy",
+      "¿Qué le comento a este post sin sonar a bot?"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Here's a reel in my niche, write me a good comment",
+      "Give me 10 comments for today's engagement round",
+      "What should I comment on this post without sounding like a bot?"
+    ]
+  }
+}

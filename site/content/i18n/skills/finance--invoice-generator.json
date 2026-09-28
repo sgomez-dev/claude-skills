@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d129c6221f619502",
+  "es": {
+    "description": "Genera facturas profesionales listas para HTML/PDF a partir de las partidas y los datos del cliente",
+    "howToAsk": [
+      "/finance--invoice-generator genera la factura de este proyecto para mi cliente",
+      "/finance--invoice-generator necesito una factura en PDF con estas partidas",
+      "/finance--invoice-generator crea una plantilla de factura profesional para mi negocio"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/finance--invoice-generator generate the invoice for this project for my client",
+      "/finance--invoice-generator I need a PDF invoice with these line items",
+      "/finance--invoice-generator create a professional invoice template for my business"
+    ]
+  }
+}

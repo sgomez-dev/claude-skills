@@ -1,0 +1,18 @@
+{
+  "sourceHash": "c383213b6af7edca",
+  "es": {
+    "description": "Genera un README.md profesional para el proyecto",
+    "howToAsk": [
+      "/docs--readme-gen escribe el README de este repo",
+      "/docs--readme-gen necesito un README profesional con instrucciones de instalación",
+      "/docs--readme-gen genera el README con badges y ejemplos de uso"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/docs--readme-gen write the README for this repo",
+      "/docs--readme-gen I need a professional README with installation instructions",
+      "/docs--readme-gen generate the README with badges and usage examples"
+    ]
+  }
+}

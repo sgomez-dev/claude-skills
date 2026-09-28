@@ -1,0 +1,18 @@
+{
+  "sourceHash": "46a54c46099b62a3",
+  "es": {
+    "description": "Enseña a la IA a diseñar como una agencia de alta gama. Define las fuentes, espaciados, sombras, estructuras de tarjetas y animaciones exactas que hacen que una web se sienta premium. Bloquea los valores por defecto habituales que hacen que los diseños de IA parezcan baratos o genéricos.",
+    "howToAsk": [
+      "Diseña esta landing para que parezca de una agencia premium",
+      "Mi web se ve genérica, dale un aspecto de diseño caro",
+      "Aplica tipografías y sombras de alta gama a este componente"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Design this landing page to feel like a high-end agency made it",
+      "My site looks generic, make it feel expensive",
+      "Apply premium fonts and shadows to this component"
+    ]
+  }
+}

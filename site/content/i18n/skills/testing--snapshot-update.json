@@ -1,0 +1,18 @@
+{
+  "sourceHash": "1ee0be00de6773c3",
+  "es": {
+    "description": "Revisa y actualiza los snapshots de tests de forma inteligente",
+    "howToAsk": [
+      "/testing--snapshot-update actualiza los snapshots que han cambiado a propósito",
+      "/testing--snapshot-update revisa por qué fallan estos snapshots de tests",
+      "/testing--snapshot-update ¿qué snapshots debería regenerar tras este cambio?"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/testing--snapshot-update update snapshots that changed on purpose",
+      "/testing--snapshot-update review why these test snapshots are failing",
+      "/testing--snapshot-update which snapshots should I regenerate after this change?"
+    ]
+  }
+}

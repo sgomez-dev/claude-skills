@@ -1,0 +1,18 @@
+{
+  "sourceHash": "3e46273dc9c630d2",
+  "es": {
+    "description": "Componentes de React animados y listos para usar: Magic UI (más de 150 componentes shadcn/Tailwind) y React Bits (más de 90 efectos)",
+    "howToAsk": [
+      "/web--animated-components añade un botón animado de Magic UI a mi landing",
+      "/web--animated-components busca un efecto de texto llamativo de React Bits",
+      "/web--animated-components instala una tarjeta animada con hover para mi web"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/web--animated-components add an animated Magic UI button to my landing page",
+      "/web--animated-components find a flashy text effect from React Bits",
+      "/web--animated-components install an animated hover card for my site"
+    ]
+  }
+}

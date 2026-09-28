@@ -1,0 +1,18 @@
+{
+  "sourceHash": "41820fd33b6907f1",
+  "es": {
+    "description": "Diseña un esquema de warehouse en estrella/copo de nieve con tablas de hechos y dimensiones",
+    "howToAsk": [
+      "/data--warehouse-schema esquema en estrella para ventas y clientes",
+      "/data--warehouse-schema diseña tablas de hechos y dimensiones para pedidos",
+      "/data--warehouse-schema convierte mi modelo relacional en esquema copo de nieve"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/data--warehouse-schema star schema for sales and customers",
+      "/data--warehouse-schema design fact and dimension tables for orders",
+      "/data--warehouse-schema turn my relational model into a snowflake schema"
+    ]
+  }
+}

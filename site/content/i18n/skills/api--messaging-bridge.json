@@ -1,0 +1,18 @@
+{
+  "sourceHash": "b8e0f0fdcc7ad241",
+  "es": {
+    "description": "Genera un servicio puente entre plataformas de mensajería (Telegram, WhatsApp, Instagram, Messenger) y la API de Claude",
+    "howToAsk": [
+      "/api--messaging-bridge conecta mi bot de WhatsApp con la API de Claude",
+      "/api--messaging-bridge crea un puente entre Telegram y Claude para responder mensajes",
+      "/api--messaging-bridge integra Instagram y Messenger con mi asistente de Claude"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/api--messaging-bridge connect my WhatsApp bot to the Claude API",
+      "/api--messaging-bridge bridge Telegram messages to Claude for automatic replies",
+      "/api--messaging-bridge integrate Instagram and Messenger with my Claude assistant"
+    ]
+  }
+}

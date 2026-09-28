@@ -1,0 +1,18 @@
+{
+  "sourceHash": "454081db8df9e8f4",
+  "es": {
+    "description": "Genera el andamiaje de una SPA lista para producción, con arquitectura de primer nivel, interfaz impresionante y patrones reales",
+    "howToAsk": [
+      "/web--spa-scaffold crea la estructura de una SPA en React para mi proyecto",
+      "/web--spa-scaffold monta un scaffold con buena arquitectura para mi app",
+      "/web--spa-scaffold genera una SPA de producción con una UI cuidada"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/web--spa-scaffold scaffold a React SPA for my project",
+      "/web--spa-scaffold set up a well-architected app skeleton",
+      "/web--spa-scaffold generate a production-ready SPA with a polished UI"
+    ]
+  }
+}

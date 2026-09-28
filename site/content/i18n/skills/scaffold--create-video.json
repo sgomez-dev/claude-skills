@@ -1,0 +1,18 @@
+{
+  "sourceHash": "2aab54645a14dfe0",
+  "es": {
+    "description": "Arranca un proyecto de vídeo NUEVO desde cero con npx create-video: elige la plantilla de Remotion adecuada, la genera y la personaliza lista para previsualizar",
+    "howToAsk": [
+      "/scaffold--create-video crea un proyecto de vídeo nuevo para un anuncio de producto",
+      "/scaffold--create-video necesito arrancar un vídeo de Remotion desde cero para redes sociales",
+      "/scaffold--create-video monta la plantilla adecuada para un vídeo de lanzamiento"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/scaffold--create-video bootstrap a new video project for a product ad",
+      "/scaffold--create-video I need to start a Remotion video from scratch for social media",
+      "/scaffold--create-video set up the right template for a launch video"
+    ]
+  }
+}

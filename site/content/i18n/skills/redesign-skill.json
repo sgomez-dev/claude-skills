@@ -1,0 +1,18 @@
+{
+  "sourceHash": "5adf68c621308806",
+  "es": {
+    "description": "Mejora sitios web y apps existentes hasta un acabado premium. Audita el diseño actual, identifica patrones genéricos de IA, y aplica estándares de diseño de alta gama sin romper la funcionalidad. Funciona con cualquier framework CSS o CSS vanilla.",
+    "howToAsk": [
+      "Mi web parece hecha con IA, ayúdame a que se vea más premium",
+      "Audita el diseño de mi app y dime qué patrones genéricos debería cambiar",
+      "Sube el nivel visual de esta landing sin romper nada del código"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "My site looks AI-generated, help make it feel more premium",
+      "Audit my app's design and tell me which generic patterns to fix",
+      "Level up this landing page's visuals without breaking the code"
+    ]
+  }
+}

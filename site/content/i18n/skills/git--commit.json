@@ -1,0 +1,18 @@
+{
+  "sourceHash": "870fc7f27afca9aa",
+  "es": {
+    "description": "Genera un mensaje de commit inteligente y conventional analizando los cambios en stage",
+    "howToAsk": [
+      "/git--commit escribe el mensaje de commit para estos cambios",
+      "/git--commit genera un commit siguiendo conventional commits",
+      "/git--commit necesito un mensaje de commit claro para este fix"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/git--commit write the commit message for these changes",
+      "/git--commit generate a conventional commit for what I staged",
+      "/git--commit I need a clear commit message for this fix"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "68bc42efff5b21a7",
+  "es": {
+    "description": "Patrones de prompting para Ideogram 4 texto-a-imagen — de primer nivel en renderizado de texto dentro de la imagen y control exacto de color/layout mediante captions JSON estructurados. Úsalo al generar imágenes que necesitan texto legible sobre la imagen (tarjetas de título, miniaturas, logos, señalización, CTAs), colores de marca precisos, o un layout espacial controlado. Los disparadores incluyen imagen de diapositiva de título, miniatura con texto, texto en imagen, texto legible en imagen, imagen de paleta de colores de marca, layout con bounding-box, Ideogram.",
+    "howToAsk": [
+      "Genera una miniatura con texto legible usando Ideogram 4",
+      "Necesito una imagen de título con los colores exactos de mi marca",
+      "Crea un logo con texto nítido y un layout controlado"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Generate a thumbnail with legible on-image text using Ideogram 4",
+      "I need a title image with my brand's exact colors",
+      "Create a logo with crisp text and controlled layout"
+    ]
+  }
+}

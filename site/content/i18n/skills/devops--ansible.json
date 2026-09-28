@@ -1,0 +1,18 @@
+{
+  "sourceHash": "f2952591f235eb1e",
+  "es": {
+    "description": "Escribe playbooks de Ansible con roles, idempotencia, secretos cifrados con vault e inventarios",
+    "howToAsk": [
+      "/devops--ansible playbook para instalar Nginx en varios servidores",
+      "/devops--ansible añade secretos cifrados con vault a mi playbook",
+      "/devops--ansible organiza mi inventario de Ansible por entornos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/devops--ansible playbook to install Nginx across several servers",
+      "/devops--ansible add vault-encrypted secrets to my playbook",
+      "/devops--ansible organize my Ansible inventory by environment"
+    ]
+  }
+}

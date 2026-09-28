@@ -1,0 +1,18 @@
+{
+  "sourceHash": "896868c5e05f3960",
+  "es": {
+    "description": "Edita un vídeo en bruto de tipo talking-head con transcripción, recorte de silencios, revisión de errores, storytelling visual, motion graphics y renderizado verificado con HyperFrames. Úsalo para una edición completa; para una única operación concreta, ve directamente a la skill especializada.",
+    "howToAsk": [
+      "Edita este vídeo en bruto donde hablo a cámara y déjalo listo",
+      "Quita los silencios y los errores de este vídeo y móntalo entero",
+      "Necesito el montaje completo de mi vídeo talking-head, con motion graphics incluido"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Edit this raw talking-head video and get it ready to publish",
+      "Trim the silences and mistakes from this video and do the full edit",
+      "I need a complete edit of my talking-head video, including motion graphics"
+    ]
+  }
+}

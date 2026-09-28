@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d555b2b76b75e3fb",
+  "es": {
+    "description": "Diseña alertas basadas en síntomas con umbrales, severidad, enrutamiento y deduplicación",
+    "howToAsk": [
+      "/observability--alerting-rules crea alertas para cuando la latencia supere 500ms",
+      "/observability--alerting-rules define severidades y a quién avisar en cada caso",
+      "/observability--alerting-rules evita que nos lleguen alertas duplicadas"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/observability--alerting-rules create alerts for when latency goes above 500ms",
+      "/observability--alerting-rules define severity levels and who gets notified",
+      "/observability--alerting-rules stop duplicate alerts from flooding us"
+    ]
+  }
+}

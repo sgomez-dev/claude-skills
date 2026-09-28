@@ -1,0 +1,18 @@
+{
+  "sourceHash": "8a460102ad1c5b6d",
+  "es": {
+    "description": "Notificaciones multicanal: en la app, email y push, con preferencias y resúmenes periódicos",
+    "howToAsk": [
+      "/fullstack--notification-system añade notificaciones en la app y por email para mensajes nuevos",
+      "/fullstack--notification-system quiero que los usuarios elijan qué notificaciones recibir",
+      "/fullstack--notification-system necesito un resumen semanal por email de la actividad"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/fullstack--notification-system add in-app and email notifications for new messages",
+      "/fullstack--notification-system let users choose which notifications they get",
+      "/fullstack--notification-system send a weekly email digest of activity"
+    ]
+  }
+}

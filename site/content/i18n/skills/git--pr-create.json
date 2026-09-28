@@ -1,0 +1,18 @@
+{
+  "sourceHash": "dcaa6f9970cb3300",
+  "es": {
+    "description": "Crea un pull request completo con título, descripción y etiquetas generados de forma inteligente",
+    "howToAsk": [
+      "/git--pr-create crea el PR para esta rama con una buena descripción",
+      "/git--pr-create abre un pull request y sugiere las etiquetas adecuadas",
+      "/git--pr-create genera el título y la descripción del PR a partir de mis commits"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/git--pr-create create the PR for this branch with a solid description",
+      "/git--pr-create open a pull request and suggest the right labels",
+      "/git--pr-create generate the PR title and description from my commits"
+    ]
+  }
+}

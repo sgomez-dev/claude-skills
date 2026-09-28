@@ -1,0 +1,18 @@
+{
+  "sourceHash": "8cddd6bba24ca43a",
+  "es": {
+    "description": "Escribe secuencias multi-touch de email en frío y LinkedIn personalizadas para cada lead",
+    "howToAsk": [
+      "/sales--cold-outreach secuencia de 4 emails en frío para directores de RRHH",
+      "/sales--cold-outreach necesito mensajes de LinkedIn personalizados para estos leads",
+      "/sales--cold-outreach crea una secuencia de outreach para startups de fintech"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/sales--cold-outreach 4-email cold sequence for HR directors",
+      "/sales--cold-outreach I need personalized LinkedIn messages for these leads",
+      "/sales--cold-outreach create an outreach sequence for fintech startups"
+    ]
+  }
+}

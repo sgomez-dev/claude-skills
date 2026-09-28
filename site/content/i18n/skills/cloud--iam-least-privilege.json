@@ -1,0 +1,18 @@
+{
+  "sourceHash": "3046c8b88f5b52da",
+  "es": {
+    "description": "Audita las políticas de IAM y genera sustitutos de mínimo privilegio que tú revisas y aplicas",
+    "howToAsk": [
+      "/cloud--iam-least-privilege audita los permisos IAM de mi cuenta de AWS",
+      "/cloud--iam-least-privilege revisa mis roles de servicio y propón permisos mínimos",
+      "/cloud--iam-least-privilege encuentra permisos excesivos en mi proyecto de GCP"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/cloud--iam-least-privilege audit the IAM policies on my AWS account",
+      "/cloud--iam-least-privilege review my service roles and suggest minimal permissions",
+      "/cloud--iam-least-privilege find over-privileged access in my GCP project"
+    ]
+  }
+}

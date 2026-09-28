@@ -1,0 +1,18 @@
+{
+  "sourceHash": "68c003a29892241a",
+  "es": {
+    "description": "ÚSALO OBLIGATORIAMENTE cuando el usuario quiera 调研/investigar/搜索/buscar/查/找/consultar cualquier cosa en internet — por ejemplo: 全网调研 X / 帮我调研一下 X / 查一下 X / 搜搜 X / 看看大家怎么评价 X / X 上有什么讨论 / investigar este tema. Úsalo también OBLIGATORIAMENTE cuando el usuario mencione cualquier plataforma o comparta cualquier URL/enlace: 小红书/xiaohongshu/xhs, Twitter/推特/X, B站/bilibili, Reddit, Facebook, Instagram, V2EX, LinkedIn/领英/Boss直聘/招聘/求职/empleos, YouTube, búsqueda de código en GitHub, 小宇宙播客, 雪球/cotizaciones bursátiles, feeds RSS, o cualquier URL web. 16 plataformas, enrutamiento multi-backend (OpenCLI / CLIs específicas por plataforma / APIs). Configuración cero para 6 canales. Ejecuta `agent-reach doctor --json` para ver qué backend sirve cada plataforma ahora mismo. NO usar para: redacción de informes/análisis de datos/traducción y otro procesamiento de contenido (esta skill solo se encarga de obtener contenido de internet); operaciones de escritura como publicar/comentar/dar me gusta; plataformas que ya tienen una skill dedicada (usa primero la skill específica). 【Forma de enrutamiento】SKILL.md incluye la tabla de enrutamiento y los comandos habituales; los escenarios complejos requieren leer bajo demanda los references/*.md de la categoría correspondiente. Categorías: búsqueda / social (小红书/推特/B站/V2EX/Reddit/Facebook/Instagram) / carrera profesional (LinkedIn/Boss直聘) / desarrollo (github) / web (páginas/artículos/RSS) / vídeo (YouTube/B站/podcasts) / finanzas (雪球/acciones).",
+    "howToAsk": [
+      "Investiga en internet qué se dice sobre esta marca en redes sociales",
+      "Aquí tienes un enlace de Reddit, resume la discusión",
+      "Busca en GitHub proyectos similares a este"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Research what people are saying about this brand across the internet",
+      "Here's a Reddit link, summarize the discussion",
+      "Search GitHub for projects similar to this one"
+    ]
+  }
+}

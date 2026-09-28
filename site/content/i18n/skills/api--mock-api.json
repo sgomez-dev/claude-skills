@@ -1,0 +1,18 @@
+{
+  "sourceHash": "4a7149de42628068",
+  "es": {
+    "description": "Crea un servidor de API simulada (mock) para el desarrollo frontend o para pruebas",
+    "howToAsk": [
+      "/api--mock-api monta una API simulada mientras el backend no está listo",
+      "/api--mock-api necesito datos de prueba para desarrollar el frontend",
+      "/api--mock-api crea un mock de la API de pagos para los tests"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/api--mock-api spin up a mock API while the backend isn't ready yet",
+      "/api--mock-api I need fake data to build out the frontend",
+      "/api--mock-api mock the payments API for testing"
+    ]
+  }
+}

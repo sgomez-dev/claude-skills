@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a47a5b51deb0c913",
+  "es": {
+    "description": "Corrige problemas de accesibilidad: añade ARIA, navegación por teclado, gestión del foco y HTML semántico",
+    "howToAsk": [
+      "/accessibility--a11y-fix arregla el menú desplegable, no se navega con teclado",
+      "/accessibility--a11y-fix añade etiquetas ARIA al modal de confirmación",
+      "/accessibility--a11y-fix repasa el foco en el formulario de pago"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/accessibility--a11y-fix fix the dropdown menu, keyboard nav doesn't work",
+      "/accessibility--a11y-fix add ARIA labels to the confirmation modal",
+      "/accessibility--a11y-fix improve focus handling on the checkout form"
+    ]
+  }
+}

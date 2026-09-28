@@ -1,0 +1,18 @@
+{
+  "sourceHash": "2573352f751749ad",
+  "es": {
+    "description": "Genera la base de una tienda online: elección de plataforma, catálogo, carrito y estructura de checkout",
+    "howToAsk": [
+      "/ecommerce--store-scaffold monta la base de mi tienda online desde cero",
+      "/ecommerce--store-scaffold qué plataforma me conviene para vender ropa online",
+      "/ecommerce--store-scaffold crea el esqueleto de catálogo, carrito y checkout"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ecommerce--store-scaffold scaffold my online store from scratch",
+      "/ecommerce--store-scaffold which platform should I use to sell clothes online",
+      "/ecommerce--store-scaffold create the catalog, cart, and checkout shell"
+    ]
+  }
+}

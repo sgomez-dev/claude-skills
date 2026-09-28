@@ -1,0 +1,18 @@
+{
+  "sourceHash": "7324ba64de64bf1a",
+  "es": {
+    "description": "Escribe un artículo de blog técnico o de negocio con un ángulo real y prosa humana",
+    "howToAsk": [
+      "/content--blog-post escribe un artículo sobre cómo migramos nuestra base de datos",
+      "/content--blog-post necesito un post de negocio sobre nuestra nueva estrategia de precios",
+      "/content--blog-post redacta un artículo técnico con un ángulo original sobre IA"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/content--blog-post write a blog post about how we migrated our database",
+      "/content--blog-post I need a business post about our new pricing strategy",
+      "/content--blog-post draft a technical article with a fresh angle on AI"
+    ]
+  }
+}

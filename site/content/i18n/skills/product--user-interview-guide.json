@@ -1,0 +1,18 @@
+{
+  "sourceHash": "85a2f7b33a8f3ddc",
+  "es": {
+    "description": "Crea un guion de entrevista de descubrimiento: cribado, preguntas no sesgadas, repreguntas de profundización",
+    "howToAsk": [
+      "/product--user-interview-guide entrevistas para validar una app de gestión de gastos",
+      "/product--user-interview-guide quiero entender por qué los usuarios abandonan el onboarding",
+      "/product--user-interview-guide guion para hablar con 5 clientes de nuestro SaaS de facturación"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/product--user-interview-guide interviews to validate an expense-tracking app",
+      "/product--user-interview-guide help me understand why users drop off onboarding",
+      "/product--user-interview-guide script to talk to 5 customers of our invoicing SaaS"
+    ]
+  }
+}

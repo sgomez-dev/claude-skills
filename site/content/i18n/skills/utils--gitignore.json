@@ -1,0 +1,18 @@
+{
+  "sourceHash": "13fb557c36fc7fe8",
+  "es": {
+    "description": "Genera un .gitignore completo adaptado al proyecto",
+    "howToAsk": [
+      "/utils--gitignore crea un .gitignore para un proyecto Node con Next.js",
+      "/utils--gitignore añade las carpetas de build y node_modules que faltan",
+      "/utils--gitignore genera uno para un proyecto Python con entorno virtual"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/utils--gitignore create a .gitignore for a Node project with Next.js",
+      "/utils--gitignore add the missing build folder and node_modules entries",
+      "/utils--gitignore generate one for a Python project with a virtualenv"
+    ]
+  }
+}

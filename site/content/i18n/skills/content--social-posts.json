@@ -1,0 +1,18 @@
+{
+  "sourceHash": "2027207a540d2f59",
+  "es": {
+    "description": "Reutiliza una pieza de contenido en publicaciones nativas para LinkedIn, X e Instagram",
+    "howToAsk": [
+      "/content--social-posts convierte este artículo en publicaciones para LinkedIn y X",
+      "/content--social-posts saca posts de Instagram a partir de mi último blog",
+      "/content--social-posts adapta este contenido al tono nativo de cada red social"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/content--social-posts turn this article into LinkedIn and X posts",
+      "/content--social-posts pull Instagram posts from my latest blog piece",
+      "/content--social-posts adapt this content to each platform's native tone"
+    ]
+  }
+}

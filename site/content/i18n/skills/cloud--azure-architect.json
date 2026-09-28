@@ -1,0 +1,18 @@
+{
+  "sourceHash": "83fc4f0217841b65",
+  "es": {
+    "description": "Diseña una arquitectura Azure para esta app — elección de servicios, diagrama, arranque de IaC",
+    "howToAsk": [
+      "/cloud--azure-architect diseña la arquitectura Azure para mi app de gestión de clientes",
+      "/cloud--azure-architect qué servicios de Azure necesito para mi backend con funciones serverless",
+      "/cloud--azure-architect genera el diagrama y la plantilla de Bicep para mi proyecto"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/cloud--azure-architect design the Azure architecture for my customer management app",
+      "/cloud--azure-architect what Azure services do I need for a serverless functions backend",
+      "/cloud--azure-architect generate the diagram and starter Bicep template for my project"
+    ]
+  }
+}

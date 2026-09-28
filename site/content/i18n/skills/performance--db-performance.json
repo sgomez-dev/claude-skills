@@ -1,0 +1,18 @@
+{
+  "sourceHash": "29a4c605fb2c021d",
+  "es": {
+    "description": "Diagnostica el rendimiento de la base de datos: logs de consultas lentas, índices, pooling y rutas críticas",
+    "howToAsk": [
+      "/performance--db-performance por qué esta consulta tarda tanto",
+      "/performance--db-performance revisa si nos faltan índices en esta tabla",
+      "/performance--db-performance analiza el pool de conexiones, se está agotando"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/performance--db-performance why is this query so slow",
+      "/performance--db-performance check if we're missing indexes on this table",
+      "/performance--db-performance analyze our connection pool, it keeps running out"
+    ]
+  }
+}

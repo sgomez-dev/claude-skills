@@ -1,0 +1,18 @@
+{
+  "sourceHash": "483171edc577e93f",
+  "es": {
+    "description": "Genera un SDK de cliente de API con tipado seguro a partir de las definiciones de los endpoints",
+    "howToAsk": [
+      "/api--rest-client genera un cliente TypeScript para mi API REST",
+      "/api--rest-client necesito un SDK tipado a partir de mi OpenAPI",
+      "/api--rest-client crea el cliente de API para consumir estos endpoints"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/api--rest-client generate a TypeScript client for my REST API",
+      "/api--rest-client I need a typed SDK generated from my OpenAPI spec",
+      "/api--rest-client create an API client to call these endpoints"
+    ]
+  }
+}

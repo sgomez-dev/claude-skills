@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d7189306f68bacc1",
+  "es": {
+    "description": "Crea animaciones web cinematográficas de primer nivel: modelos 3D, scroll horizontal, WebGL, partículas, shaders y más",
+    "howToAsk": [
+      "/web--animations crea un scroll horizontal cinematográfico para mi portafolio",
+      "/web--animations añade un efecto de partículas con WebGL al hero de mi web",
+      "/web--animations integra un modelo 3D animado en la página principal"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/web--animations create a cinematic horizontal scroll for my portfolio",
+      "/web--animations add a WebGL particle effect to my hero section",
+      "/web--animations add an animated 3D model to the homepage"
+    ]
+  }
+}

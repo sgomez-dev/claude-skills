@@ -1,0 +1,18 @@
+{
+  "sourceHash": "9e716e0ede600796",
+  "es": {
+    "description": "Habilidad de imagen a código de élite para sitios web, pensada para Codex. Para tareas web visualmente importantes, primero debe generar ella misma la(s) imagen(es) de diseño, analizarlas en profundidad, y luego implementar el sitio para que coincida con ellas lo más fielmente posible. En Codex, debe preferir imágenes grandes y legibles específicas de cada sección en lugar de tableros diminutos y comprimidos, generar imágenes nuevas e independientes para secciones o vistas de detalle en lugar de recortar imágenes antiguas, evitar la infra-generación perezosa, evitar interfaces de tarjetas-dentro-de-tarjetas-dentro-de-tarjetas, y mantener el hero limpio, espacioso, legible y visible en un portátil pequeño.",
+    "howToAsk": [
+      "Genera el diseño de esta landing page y luego impleméntala en código",
+      "Necesito que el hero de mi web quede limpio y legible en pantallas pequeñas",
+      "Crea imágenes de referencia por sección antes de programar este sitio"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Generate the design for this landing page and then implement it in code",
+      "I need my site's hero to look clean and readable on small screens",
+      "Create reference images per section before coding this site"
+    ]
+  }
+}

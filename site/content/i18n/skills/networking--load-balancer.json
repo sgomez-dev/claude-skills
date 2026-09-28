@@ -1,0 +1,18 @@
+{
+  "sourceHash": "658b3bc166136132",
+  "es": {
+    "description": "Configura balanceo de carga con health checks y políticas de failover",
+    "howToAsk": [
+      "/networking--load-balancer reparte el tráfico entre dos servidores backend",
+      "/networking--load-balancer añade un health check con failover automático",
+      "/networking--load-balancer configura balanceo de carga para mi API"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/networking--load-balancer split traffic between two backend servers",
+      "/networking--load-balancer add a health check with automatic failover",
+      "/networking--load-balancer set up load balancing for my API"
+    ]
+  }
+}

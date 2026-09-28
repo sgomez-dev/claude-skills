@@ -1,0 +1,18 @@
+{
+  "sourceHash": "b36454730371195f",
+  "es": {
+    "description": "Segmenta un mercado en territorios y niveles con una cobertura equilibrada por comercial",
+    "howToAsk": [
+      "/sales--territory-planner divide este mercado en territorios para mi equipo de ventas",
+      "/sales--territory-planner reparte estas cuentas entre comerciales de forma equilibrada",
+      "/sales--territory-planner necesito niveles de territorio para la región noreste"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/sales--territory-planner split this market into territories for my sales team",
+      "/sales--territory-planner divide these accounts among reps evenly",
+      "/sales--territory-planner I need territory tiers for the northeast region"
+    ]
+  }
+}

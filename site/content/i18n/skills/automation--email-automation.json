@@ -1,0 +1,18 @@
+{
+  "sourceHash": "b0958778af567b21",
+  "es": {
+    "description": "Construye automatizaciones de correo: analiza el correo entrante, envío con plantillas, secuencias y bajas de suscripción",
+    "howToAsk": [
+      "/automation--email-automation procesa automáticamente los correos que llegan a soporte",
+      "/automation--email-automation crea una secuencia de bienvenida por email para nuevos usuarios",
+      "/automation--email-automation añade un enlace de baja de suscripción a mis correos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/automation--email-automation automatically parse incoming support emails",
+      "/automation--email-automation build a welcome email sequence for new users",
+      "/automation--email-automation add an unsubscribe link to my emails"
+    ]
+  }
+}

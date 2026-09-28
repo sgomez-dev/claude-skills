@@ -1,0 +1,18 @@
+{
+  "sourceHash": "073ffa752a66d778",
+  "es": {
+    "description": "Crea y edita vídeos de motion graphics profesionales con Remotion (vídeo basado en React). Usa esta skill SIEMPRE que el usuario quiera crear un vídeo, editar un vídeo, animar algo, construir una animación de intro/outro/logo, hacer un Reel/Short/promo/vídeo de lanzamiento, añadir animaciones de texto o subtítulos a un metraje, componer imágenes y B-roll en un vídeo, o mencione Remotion, motion graphics, renderizado de vídeo, o \"hacer que este vídeo se vea mejor/menos genérico\". Actívala también al editar un proyecto de Remotion existente o cuando el usuario se queje de que su vídeo se ve básico, genérico o amateur — esta skill contiene las soluciones exactas. Lee siempre esta skill ANTES de escribir cualquier código de Remotion.",
+    "howToAsk": [
+      "Crea un vídeo de intro con nuestro logo animado usando Remotion",
+      "Este vídeo se ve genérico, ayúdame a mejorarlo con motion graphics",
+      "Añade animaciones de texto y subtítulos a este metraje en Remotion"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Create an intro video with our animated logo using Remotion",
+      "This video looks generic, help me improve it with motion graphics",
+      "Add text animations and captions to this footage in Remotion"
+    ]
+  }
+}

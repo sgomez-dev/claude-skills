@@ -1,0 +1,18 @@
+{
+  "sourceHash": "29b634289aee51db",
+  "es": {
+    "description": "Genera un esquema GraphQL con tipos, queries, mutations y resolvers",
+    "howToAsk": [
+      "/api--graphql-schema crea el esquema GraphQL para mi tienda online",
+      "/api--graphql-schema añade una mutation para actualizar el perfil de usuario",
+      "/api--graphql-schema genera los resolvers para las queries de productos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/api--graphql-schema create the GraphQL schema for my online store",
+      "/api--graphql-schema add a mutation to update the user profile",
+      "/api--graphql-schema generate resolvers for the product queries"
+    ]
+  }
+}

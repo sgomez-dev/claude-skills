@@ -1,0 +1,18 @@
+{
+  "sourceHash": "886edec60e095726",
+  "es": {
+    "description": "Ejecuta un pipeline multi-skill: encadena skills para flujos de trabajo de principio a fin",
+    "howToAsk": [
+      "/meta--pipeline-run encadena auditoría de SEO, contenido y publicación",
+      "/meta--pipeline-run ejecuta el pipeline de lanzamiento de producto",
+      "/meta--pipeline-run une revisión de código, tests y despliegue"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/meta--pipeline-run chain SEO audit, content, and publishing together",
+      "/meta--pipeline-run run the product launch pipeline",
+      "/meta--pipeline-run combine code review, tests, and deployment"
+    ]
+  }
+}

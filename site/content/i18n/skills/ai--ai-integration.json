@@ -1,0 +1,18 @@
+{
+  "sourceHash": "5f8ed459ed91561e",
+  "es": {
+    "description": "Integra APIs de IA/LLM (Claude, OpenAI) en la aplicación siguiendo las mejores prácticas",
+    "howToAsk": [
+      "/ai--ai-integration quiero añadir un chatbot con Claude a mi app de Next.js",
+      "/ai--ai-integration integra la API de OpenAI para generar resúmenes de texto",
+      "/ai--ai-integration necesito conectar mi backend en Python con la API de Claude"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ai--ai-integration add a Claude-powered chatbot to my Next.js app",
+      "/ai--ai-integration wire up OpenAI to generate text summaries",
+      "/ai--ai-integration connect my Python backend to the Claude API"
+    ]
+  }
+}

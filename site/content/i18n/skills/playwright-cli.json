@@ -1,0 +1,18 @@
+{
+  "sourceHash": "c95e8f7ddfbabd6b",
+  "es": {
+    "description": "Automatiza interacciones con el navegador para pruebas web, rellenar formularios, capturas de pantalla y extracción de datos. Úsalo cuando necesites navegar por sitios web, interactuar con páginas, rellenar formularios, hacer capturas de pantalla, probar aplicaciones web o extraer información de páginas web.",
+    "howToAsk": [
+      "Rellena este formulario web y envíalo automáticamente",
+      "Haz una captura de pantalla de esta página después de iniciar sesión",
+      "Extrae los precios de esta página de productos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Fill out this web form and submit it automatically",
+      "Take a screenshot of this page after logging in",
+      "Extract the prices from this product page"
+    ]
+  }
+}

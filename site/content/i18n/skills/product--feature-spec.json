@@ -1,0 +1,18 @@
+{
+  "sourceHash": "ceaae7db9828d2e0",
+  "es": {
+    "description": "Especificación detallada de una funcionalidad: flujos de usuario, casos límite, criterios de aceptación y preguntas abiertas",
+    "howToAsk": [
+      "/product--feature-spec escribe la spec de la función para invitar miembros al equipo",
+      "/product--feature-spec define los casos límite del flujo de pago",
+      "/product--feature-spec redacta los criterios de aceptación para esta funcionalidad"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/product--feature-spec write the spec for the new invite-teammates feature",
+      "/product--feature-spec define the edge cases for the payment flow",
+      "/product--feature-spec draft acceptance criteria for this feature"
+    ]
+  }
+}

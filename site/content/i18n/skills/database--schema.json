@@ -1,0 +1,18 @@
+{
+  "sourceHash": "110cd835c6dc3a7e",
+  "es": {
+    "description": "Diseña o revisa el esquema de base de datos con normalización e indexado adecuados",
+    "howToAsk": [
+      "/database--schema diseña el esquema para una app de tareas",
+      "/database--schema revisa si mi esquema está bien normalizado",
+      "/database--schema sugiere índices para mis tablas más consultadas"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/database--schema design the schema for a to-do app",
+      "/database--schema review whether my schema is properly normalized",
+      "/database--schema suggest indexes for my most-queried tables"
+    ]
+  }
+}

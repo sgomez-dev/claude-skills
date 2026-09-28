@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a19408e4ee0b2c42",
+  "es": {
+    "description": "Especifica un dashboard: audiencia, preguntas clave, métricas, tipos de gráfico y layout",
+    "howToAsk": [
+      "/data--dashboard-spec diseña la especificación de un dashboard de ventas para dirección",
+      "/data--dashboard-spec qué métricas y gráficos necesito para un dashboard de soporte",
+      "/data--dashboard-spec define el layout de un dashboard para el equipo de marketing"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/data--dashboard-spec spec a sales dashboard for leadership",
+      "/data--dashboard-spec what metrics and chart types do I need for a support dashboard",
+      "/data--dashboard-spec define the layout for a marketing team dashboard"
+    ]
+  }
+}

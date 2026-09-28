@@ -1,0 +1,18 @@
+{
+  "sourceHash": "8be3a7bf1a46bc1c",
+  "es": {
+    "description": "Diseña precios y empaquetado: niveles, anclaje y lógica de disposición a pagar",
+    "howToAsk": [
+      "/sales--pricing-strategy diseña 3 niveles de precios para nuestro SaaS",
+      "/sales--pricing-strategy ayúdame a definir el ancla de precio de nuestro plan premium",
+      "/sales--pricing-strategy revisa nuestro empaquetado actual y sugiere mejoras"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/sales--pricing-strategy design 3 pricing tiers for our SaaS",
+      "/sales--pricing-strategy help me set the price anchor for our premium plan",
+      "/sales--pricing-strategy review our current packaging and suggest improvements"
+    ]
+  }
+}

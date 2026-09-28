@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d19c67aadc5618c4",
+  "es": {
+    "description": "Esta skill recoge la filosofía de Emil Kowalski sobre el pulido de la interfaz, el diseño de componentes, las decisiones de animación y los detalles invisibles que hacen que el software se sienta bien.",
+    "howToAsk": [
+      "Ayúdame a pulir los detalles de esta interfaz como haría Emil Kowalski",
+      "Revisa las animaciones de este componente y hazlas sentir más naturales",
+      "Dame feedback de diseño con el criterio de Emil Kowalski para este botón"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Help me polish the details of this UI the way Emil Kowalski would",
+      "Review the animations on this component and make them feel more natural",
+      "Give me design feedback on this button using Emil Kowalski's taste"
+    ]
+  }
+}

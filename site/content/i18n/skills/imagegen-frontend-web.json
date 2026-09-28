@@ -1,0 +1,18 @@
+{
+  "sourceHash": "4f6d9769e518de95",
+  "es": {
+    "description": "Habilidad de élite de dirección de imagen frontend para generar referencias de diseño web premium orientadas a conversión. REGLA DE SALIDA CRÍTICA — genera UNA imagen horizontal independiente POR CADA sección. Una landing page con 8 secciones produce 8 imágenes. Nunca comprimas varias secciones en una sola imagen. Fuerza variedad de composición (no siempre texto a la izquierda / imagen a la derecha), libertad de imagen de fondo, CTAs variados, escalas de hero variadas (gigante / medio / mini minimalista), un hilo narrativo conceptual, momentos de \"segunda lectura\", y una única paleta consistente en todas las imágenes. Optimizada para landing pages, sitios de marketing y comps de producto que desarrolladores o modelos de código puedan recrear con precisión.",
+    "howToAsk": [
+      "Genera una imagen de referencia por cada sección de mi landing page",
+      "Necesito varios estilos de hero para elegir el que mejor convierta",
+      "Diséñame las referencias visuales de mi sitio de marketing con una paleta consistente"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Generate one reference image per section of my landing page",
+      "I need a few hero style options to pick the one that converts best",
+      "Design the visual references for my marketing site with one consistent palette"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "c87b08e562bece7f",
+  "es": {
+    "description": "Captura un sitio web y crea un vídeo de HyperFrames a partir de él. Se usa cuando: (1) un usuario da una URL y quiere un vídeo, (2) alguien dice \"captura este sitio\", \"convierte esto en un vídeo\", \"haz un promo de mi web\", (3) el usuario quiere un anuncio para redes sociales, un tour de producto o cualquier vídeo basado en un sitio web existente, (4) el usuario comparte un enlace y pide cualquier tipo de contenido de vídeo. Incluso si el usuario solo pega una URL, esta es la skill que hay que usar.",
+    "howToAsk": [
+      "Aquí tienes mi web, [URL], haz un vídeo promocional con ella",
+      "Captura este sitio y conviértelo en un vídeo para redes sociales",
+      "Haz un tour de producto en vídeo a partir de mi página web"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Here's my site, [URL], make a promo video from it",
+      "Capture this website and turn it into a social video",
+      "Make a product tour video from my webpage"
+    ]
+  }
+}

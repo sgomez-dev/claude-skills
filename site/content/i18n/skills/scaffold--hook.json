@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d4cff7b836bc2c1b",
+  "es": {
+    "description": "Genera un hook personalizado de React con tipos correctos y tests",
+    "howToAsk": [
+      "/scaffold--hook crea un hook de React para gestionar el estado de un formulario",
+      "/scaffold--hook necesito un hook con tipos para hacer polling de una API",
+      "/scaffold--hook genera un custom hook con tests para el modo oscuro"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/scaffold--hook create a React hook to manage form state",
+      "/scaffold--hook I need a typed hook to poll an API",
+      "/scaffold--hook generate a custom hook with tests for dark mode"
+    ]
+  }
+}

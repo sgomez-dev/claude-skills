@@ -1,0 +1,18 @@
+{
+  "sourceHash": "161089f0de005684",
+  "es": {
+    "description": "Instrumenta trazado distribuido con spans de OpenTelemetry y propagación de contexto",
+    "howToAsk": [
+      "/observability--tracing-setup añade tracing distribuido a mis microservicios",
+      "/observability--tracing-setup quiero seguir una petición desde el frontend hasta la base de datos",
+      "/observability--tracing-setup configura la propagación de contexto entre servicios"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/observability--tracing-setup add distributed tracing to my microservices",
+      "/observability--tracing-setup trace a request from the frontend down to the database",
+      "/observability--tracing-setup set up context propagation across services"
+    ]
+  }
+}

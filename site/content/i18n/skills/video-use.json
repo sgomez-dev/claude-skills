@@ -1,0 +1,18 @@
+{
+  "sourceHash": "0ea27a70d5a92f9a",
+  "es": {
+    "description": "Edita cualquier vídeo por conversación. Transcribe, corta, aplica corrección de color, genera animaciones superpuestas, incrusta subtítulos — para vídeos de cabeza parlante, montajes, tutoriales, viajes, entrevistas. Sin presets ni menús. Pregunta, confirma el plan, ejecuta, itera y persiste. Las reglas de corrección de producción son estrictas; todo lo demás es libertad artística.",
+    "howToAsk": [
+      "Edita este vídeo, corta las partes muertas y añade subtítulos",
+      "Transcribe esta entrevista y hazme un montaje con lo mejor",
+      "Aplica corrección de color a este vídeo de viaje y añade una animación al título"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Edit this video, cut the dead air and add subtitles",
+      "Transcribe this interview and cut a highlight reel",
+      "Color grade this travel video and add a title animation"
+    ]
+  }
+}

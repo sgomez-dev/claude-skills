@@ -1,0 +1,18 @@
+{
+  "sourceHash": "7c2564d47f86ca06",
+  "es": {
+    "description": "Genera tests unitarios completos para el código indicado",
+    "howToAsk": [
+      "/testing--test-gen genera tests unitarios para este servicio",
+      "/testing--test-gen escribe tests para la función de cálculo de precios",
+      "/testing--test-gen crea tests completos para este archivo utils.ts"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/testing--test-gen generate unit tests for this service",
+      "/testing--test-gen write tests for the pricing calculation function",
+      "/testing--test-gen create thorough tests for this utils.ts file"
+    ]
+  }
+}

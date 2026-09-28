@@ -1,0 +1,18 @@
+{
+  "sourceHash": "ac05f26d575863cc",
+  "es": {
+    "description": "Convierte una pista musical (un archivo de audio, un vídeo del que extraer el audio, o una pista generada a partir de un brief de ambiente) en un vídeo sincronizado al ritmo: vídeo de letra, diapositivas o promo cinético. La música marca todo el ritmo; cualquier imagen o vídeo aportado por el usuario se corta sobre la misma malla de ritmo, y un vídeo completo no necesita ningún recurso. Las piezas narradas → el flujo según el input (ver /hyperframes). Si no está claro → /hyperframes.",
+    "howToAsk": [
+      "Convierte esta canción en un vídeo de letra sincronizado al ritmo",
+      "Haz un vídeo con estas fotos al ritmo de esta pista de audio",
+      "Genera una pista según este ambiente y móntala en un vídeo promocional"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Turn this song into a beat-synced lyric video",
+      "Make a slideshow video from these photos cut to this track",
+      "Generate a track from this mood and turn it into a promo video"
+    ]
+  }
+}

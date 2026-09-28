@@ -1,0 +1,18 @@
+{
+  "sourceHash": "1062dda5cbe57859",
+  "es": {
+    "description": "Skill de sistema de diseño semántico para Google Stitch. Genera archivos DESIGN.md pensados para agentes que imponen estándares de UI premium y anti-genéricos: tipografía estricta, color calibrado, layouts asimétricos, micro-movimiento constante y rendimiento acelerado por hardware.",
+    "howToAsk": [
+      "Genera un DESIGN.md para mi proyecto en Google Stitch",
+      "Necesito un sistema de diseño semántico que evite una UI genérica",
+      "Define la tipografía y el color de mi app en Stitch"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Generate a DESIGN.md for my Google Stitch project",
+      "I need a semantic design system that avoids a generic UI",
+      "Define the typography and color for my app in Stitch"
+    ]
+  }
+}

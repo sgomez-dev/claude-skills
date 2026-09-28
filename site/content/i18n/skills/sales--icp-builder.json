@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d5e0c559002e3613",
+  "es": {
+    "description": "Crea un ICP a partir de tus clientes, tu producto o tu web, más consultas para encontrar leads",
+    "howToAsk": [
+      "/sales--icp-builder construye el ICP a partir de nuestros mejores clientes actuales",
+      "/sales--icp-builder analiza nuestra web y define nuestro cliente ideal",
+      "/sales--icp-builder dame consultas de búsqueda para encontrar leads que encajen con el ICP"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/sales--icp-builder build an ICP from our current best customers",
+      "/sales--icp-builder analyze our website and define our ideal customer",
+      "/sales--icp-builder give me search queries to find leads matching the ICP"
+    ]
+  }
+}

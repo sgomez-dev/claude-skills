@@ -1,0 +1,18 @@
+{
+  "sourceHash": "7802c7c335ed8065",
+  "es": {
+    "description": "Úsalo cuando una composición de HyperFrames necesita un punch-in, punch-out, zoom, reencuadre, tratamiento Ken Burns, movimiento de cámara, un handoff visual de match/whip, u otros keyframes 2D/3D seek-safe; también para GSAP, CSS keyframes, Anime.js, WAAPI, FLIP, paths, máscaras, morph/draw de SVG, estelas de texto, profundidad 3D, o diagnósticos de `hyperframes keyframes`. No lo uses para estrategia de escena amplia, diseño de marca, búsqueda de medios, subtítulos o planificación general de vídeo.",
+    "howToAsk": [
+      "Añade un zoom tipo Ken Burns a esta imagen fija",
+      "Necesito un punch-in de cámara sincronizado con el beat de la música",
+      "Crea una transición whip-pan entre estas dos escenas"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Add a Ken Burns zoom to this still image",
+      "I need a camera punch-in synced to the music beat",
+      "Create a whip-pan transition between these two scenes"
+    ]
+  }
+}

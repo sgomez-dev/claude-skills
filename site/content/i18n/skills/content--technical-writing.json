@@ -1,0 +1,18 @@
+{
+  "sourceHash": "2b330e9bc81f5bb0",
+  "es": {
+    "description": "Convierte un trabajo de ingeniería en un artículo técnico con narrativa, diagramas y código",
+    "howToAsk": [
+      "/content--technical-writing escribe un artículo técnico sobre nuestra nueva arquitectura",
+      "/content--technical-writing convierte este cambio de código en un post con diagramas",
+      "/content--technical-writing documenta cómo resolvimos este problema de rendimiento"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/content--technical-writing write a technical article about our new architecture",
+      "/content--technical-writing turn this code change into a post with diagrams",
+      "/content--technical-writing document how we solved this performance problem"
+    ]
+  }
+}

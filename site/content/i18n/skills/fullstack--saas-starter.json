@@ -1,0 +1,18 @@
+{
+  "sourceHash": "6ae9ca881c8bea5b",
+  "es": {
+    "description": "Genera un starter de SaaS listo para producción: auth, organizaciones/equipos, facturación básica, ajustes, emails",
+    "howToAsk": [
+      "/fullstack--saas-starter monta la base de mi SaaS con auth y equipos desde cero",
+      "/fullstack--saas-starter necesito una plantilla con facturación y ajustes de cuenta",
+      "/fullstack--saas-starter quiero un starter con emails transaccionales incluidos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/fullstack--saas-starter scaffold my SaaS base with auth and teams from scratch",
+      "/fullstack--saas-starter give me a starter template with billing and account settings",
+      "/fullstack--saas-starter include transactional emails in the starter"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "2ad72f0e13ab6388",
+  "es": {
+    "description": "Análisis a fondo de un producto competidor: onboarding, funcionalidades, precios y UX",
+    "howToAsk": [
+      "/product--competitive-teardown analiza el onboarding de nuestro principal competidor",
+      "/product--competitive-teardown compara los precios de estas dos apps rivales",
+      "/product--competitive-teardown haz un análisis completo del producto de la competencia"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/product--competitive-teardown analyze our main competitor's onboarding flow",
+      "/product--competitive-teardown compare pricing between these two rival apps",
+      "/product--competitive-teardown do a full teardown of the competitor's product"
+    ]
+  }
+}

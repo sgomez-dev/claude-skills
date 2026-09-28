@@ -1,0 +1,18 @@
+{
+  "sourceHash": "17ab8d9d9b77360e",
+  "es": {
+    "description": "Convierte notas de proyecto y métricas en un caso de éxito de cliente (problema-solución-resultados)",
+    "howToAsk": [
+      "/sales--case-study-generator escribe un caso de éxito con estas métricas del proyecto",
+      "/sales--case-study-generator necesito un case study de este cliente para la web",
+      "/sales--case-study-generator convierte estos resultados en una historia de problema-solución"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/sales--case-study-generator write a case study using these project metrics",
+      "/sales--case-study-generator I need a case study of this client for the website",
+      "/sales--case-study-generator turn these results into a problem-solution story"
+    ]
+  }
+}

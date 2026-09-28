@@ -1,0 +1,18 @@
+{
+  "sourceHash": "f632ad427b6ad741",
+  "es": {
+    "description": "Ejecuta un rastreo completo de un sitio a markdown con scrape-it-now: configuración del job, local frente a Azure, e indexado",
+    "howToAsk": [
+      "/automation--scrape-it-now rastrea todo mi sitio web y conviértelo a markdown",
+      "/automation--scrape-it-now configura el job de scrape-it-now para que corra en Azure",
+      "/automation--scrape-it-now indexa el contenido rastreado de mi documentación"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/automation--scrape-it-now crawl my whole site and convert it to markdown",
+      "/automation--scrape-it-now configure the scrape-it-now job to run on Azure",
+      "/automation--scrape-it-now index the crawled content from my docs site"
+    ]
+  }
+}

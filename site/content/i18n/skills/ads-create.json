@@ -1,0 +1,18 @@
+{
+  "sourceHash": "b321c716b25ecbac",
+  "es": {
+    "description": "Crea conceptos de campañas publicitarias de pago, mensajes, copys, briefs creativos y planes de producción basados en un perfil de marca validado, un objetivo de campaña, requisitos de la plataforma y, opcionalmente, evidencias de auditoría. Se activa con: brief de campaña, conceptos de campaña, crear una campaña, conceptos de anuncio, copy de anuncio, mensajes publicitarios, brief creativo, titulares, descripciones.",
+    "howToAsk": [
+      "Crea un brief creativo para una campaña de lanzamiento de producto",
+      "Escríbeme titulares y descripciones para anuncios de Google Ads",
+      "Genera conceptos de campaña a partir de nuestro perfil de marca"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Create a creative brief for a product launch campaign",
+      "Write headlines and descriptions for Google Ads",
+      "Generate campaign concepts from our brand profile"
+    ]
+  }
+}

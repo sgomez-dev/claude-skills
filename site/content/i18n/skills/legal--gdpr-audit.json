@@ -1,0 +1,18 @@
+{
+  "sourceHash": "3aafcad3d69501ef",
+  "es": {
+    "description": "Audita el código en busca de brechas de RGPD - consentimiento, retención, derechos de los interesados",
+    "howToAsk": [
+      "/legal--gdpr-audit revisa mi app en busca de brechas de RGPD",
+      "/legal--gdpr-audit comprueba si gestiono bien el consentimiento y la retención",
+      "/legal--gdpr-audit audita los derechos de los usuarios sobre sus datos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/legal--gdpr-audit review my app for GDPR gaps",
+      "/legal--gdpr-audit check whether I handle consent and retention correctly",
+      "/legal--gdpr-audit audit how I handle data subject rights"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a6ff43c7d103ed68",
+  "es": {
+    "description": "Diseña el rate limiting: algoritmos, límites por ruta, cabeceras y estado distribuido",
+    "howToAsk": [
+      "/security--rate-limiting añade límites de peticiones a mi API",
+      "/security--rate-limiting ¿qué algoritmo de rate limiting me conviene?",
+      "/security--rate-limiting protege el endpoint de login contra fuerza bruta"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/security--rate-limiting add request limits to my API",
+      "/security--rate-limiting which rate limiting algorithm should I use?",
+      "/security--rate-limiting protect the login endpoint from brute force"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a6401722314f9ed7",
+  "es": {
+    "description": "Crea una rama de git bien nombrada siguiendo las convenciones del equipo",
+    "howToAsk": [
+      "/git--branch crea una rama para la funcionalidad de login social",
+      "/git--branch necesito una rama para arreglar el bug del checkout",
+      "/git--branch crea una rama siguiendo nuestra convención de nombres"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/git--branch create a branch for the social login feature",
+      "/git--branch I need a branch to fix the checkout bug",
+      "/git--branch create a branch following our naming convention"
+    ]
+  }
+}

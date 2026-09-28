@@ -1,0 +1,18 @@
+{
+  "sourceHash": "107ab705791494d2",
+  "es": {
+    "description": "Genera tarjetas de imagen de producto para marketplaces mediante Higgsfield: imagen principal conforme a normativa, imágenes secundarias del producto y módulos de contenido estilo A+. Úsalo cuando el usuario pida imágenes de listado para marketplace, tarjetas de detalle de producto, imágenes secundarias de producto, infografías de producto, fotos de estilo de vida para el listado, contenido estilo A+, conjuntos de imágenes para marketplace o visuales de producto listos para venta. El backend gestiona las referencias de cumplimiento normativo del marketplace y las plantillas de prompt; esta skill solo dirige la intención del usuario a la CLI. NO la uses para fotografía de producto de marca genérica sin contexto de marketplace/listado (usa higgsfield-product-photoshoot), generación de vídeo o anuncios UGC (usa higgsfield-generate), o entrenamiento de Soul Character (usa higgsfield-soul-id).",
+    "howToAsk": [
+      "Crea la imagen principal de este producto para Amazon",
+      "Necesito imágenes secundarias y contenido A+ para mi listado",
+      "Haz una infografía de producto para el marketplace"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Create the main listing image for this product on Amazon",
+      "I need secondary images and A+ style content for my listing",
+      "Make a product infographic for the marketplace"
+    ]
+  }
+}

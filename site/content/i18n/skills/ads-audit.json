@@ -1,0 +1,18 @@
+{
+  "sourceHash": "10a81009e5d4ac20",
+  "es": {
+    "description": "Realiza una auditoría de publicidad de pago basada en fuentes verificadas para una o varias plataformas entre Google, Meta, YouTube, LinkedIn, TikTok, Microsoft, Apple, Amazon, Reddit, Pinterest, Snapchat y X. Úsalo para revisiones completas de anuncios, revisiones de salud de cuenta, diagnósticos de medios de pago, auditorías parciales tras un fallo de autenticación o de worker, ponderación de plataformas ausentes, elegibilidad y puntuación de funciones beta, auditorías de gasto, auditorías de tracking u oportunidades y riesgos priorizados.",
+    "howToAsk": [
+      "Haz una auditoría completa de todas mis cuentas de publicidad de pago",
+      "Revisa la salud de mi cuenta de Meta Ads y dime los riesgos principales",
+      "Dame una lista priorizada de oportunidades tras la auditoría"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Run a full audit across all my paid ad accounts",
+      "Check the health of my Meta Ads account and flag the top risks",
+      "Give me a prioritized list of opportunities after the audit"
+    ]
+  }
+}

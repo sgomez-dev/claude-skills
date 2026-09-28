@@ -1,0 +1,18 @@
+{
+  "sourceHash": "3b4d57bade2a3797",
+  "es": {
+    "description": "Construye componentes de UI de primer nivel con animaciones, patrones compuestos y una estética que nunca parezca hecha por IA",
+    "howToAsk": [
+      "/web--ui-components-pro crea un componente de acordeón animado y accesible",
+      "/web--ui-components-pro construye un selector de fechas con patrón compuesto",
+      "/web--ui-components-pro diseña un modal que no parezca hecho con IA"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/web--ui-components-pro build an animated, accessible accordion component",
+      "/web--ui-components-pro create a date picker using a compound component pattern",
+      "/web--ui-components-pro design a modal that doesn't look AI-generated"
+    ]
+  }
+}

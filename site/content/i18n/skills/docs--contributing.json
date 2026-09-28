@@ -1,0 +1,18 @@
+{
+  "sourceHash": "9617f53a731e1a47",
+  "es": {
+    "description": "Genera una guía CONTRIBUTING.md para proyectos open source",
+    "howToAsk": [
+      "/docs--contributing crea la guía CONTRIBUTING.md para mi proyecto open source",
+      "/docs--contributing necesito instrucciones claras para que la gente contribuya al repo",
+      "/docs--contributing genera las normas de contribución y el proceso de pull requests"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/docs--contributing create a CONTRIBUTING.md guide for my open source project",
+      "/docs--contributing I need clear instructions for people contributing to the repo",
+      "/docs--contributing generate contribution guidelines and the pull request process"
+    ]
+  }
+}

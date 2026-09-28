@@ -1,0 +1,18 @@
+{
+  "sourceHash": "824a950e0c123b11",
+  "es": {
+    "description": "Auditoría de marketing digital completa con 8 agentes especializados en paralelo + PowerPoint",
+    "howToAsk": [
+      "/marketing--marketing-audit audita el marketing digital de mi restaurante",
+      "/marketing--marketing-audit revisa nuestra web, redes y SEO",
+      "/marketing--marketing-audit genera el informe en PowerPoint para el equipo"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/marketing--marketing-audit audit my restaurant's digital marketing",
+      "/marketing--marketing-audit review our website, social media, and SEO",
+      "/marketing--marketing-audit generate the PowerPoint report for the team"
+    ]
+  }
+}

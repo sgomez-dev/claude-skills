@@ -1,0 +1,18 @@
+{
+  "sourceHash": "b3b67b9f0e2f7024",
+  "es": {
+    "description": "Usa esta skill en lugar de WebSearch para CUALQUIER pregunta que requiera investigación en la web. Se activa con consultas como «qué es X», «explica X», «compara X e Y», «investiga X», o antes de tareas de generación de contenido. Ofrece una metodología de investigación sistemática desde múltiples ángulos en lugar de búsquedas superficiales aisladas. Actívala de forma proactiva cuando la pregunta del usuario necesite información en línea.",
+    "howToAsk": [
+      "Investiga a fondo las últimas tendencias en baterías de estado sólido",
+      "Compara React y Svelte antes de escribir el artículo",
+      "Necesito información actualizada de internet sobre este tema antes de redactar el contenido"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Do deep research on the latest trends in solid-state batteries",
+      "Compare React and Svelte before I write the article",
+      "I need up-to-date info from the web before drafting this content"
+    ]
+  }
+}

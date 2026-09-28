@@ -1,0 +1,18 @@
+{
+  "sourceHash": "4050a3442a479fcb",
+  "es": {
+    "description": "Revisa y refuerza la configuración del entorno y las cabeceras de seguridad HTTP",
+    "howToAsk": [
+      "/security--env-hardening revisa la configuración de mi servidor de producción",
+      "/security--env-hardening ¿faltan cabeceras de seguridad en mi API?",
+      "/security--env-hardening refuerza las variables de entorno antes de publicar"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/security--env-hardening review my production server configuration",
+      "/security--env-hardening is my API missing security headers?",
+      "/security--env-hardening harden environment variables before we ship"
+    ]
+  }
+}

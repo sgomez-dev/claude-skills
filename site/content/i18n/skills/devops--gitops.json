@@ -1,0 +1,18 @@
+{
+  "sourceHash": "fd609bea6b4fb622",
+  "es": {
+    "description": "Configura GitOps con ArgoCD o Flux: estructura de repositorio, políticas de sincronización, rollbacks seguros",
+    "howToAsk": [
+      "/devops--gitops configura GitOps con ArgoCD para mi cluster",
+      "/devops--gitops estructura mi repo para un flujo GitOps con Flux",
+      "/devops--gitops define una política de rollback seguro con ArgoCD"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/devops--gitops set up GitOps with ArgoCD for my cluster",
+      "/devops--gitops structure my repo for a GitOps workflow with Flux",
+      "/devops--gitops define a safe rollback policy with ArgoCD"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "69d242a0a8483758",
+  "es": {
+    "description": "Preloaders con GSAP: barras de progreso, logos animados, pantallas skeleton, contadores numéricos y secuencias de carga cinematográficas",
+    "howToAsk": [
+      "/web--gsap-preloader crea una pantalla de carga con mi logo animado",
+      "/web--gsap-preloader añade una barra de progreso antes de entrar a la web",
+      "/web--gsap-preloader haz un contador numérico animado en el preloader"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/web--gsap-preloader create a loading screen with my animated logo",
+      "/web--gsap-preloader add a progress bar before the site loads",
+      "/web--gsap-preloader make an animated number counter for the preloader"
+    ]
+  }
+}

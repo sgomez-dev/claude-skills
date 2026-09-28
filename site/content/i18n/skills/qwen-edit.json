@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d03bf92ff5e430b8",
+  "es": {
+    "description": "Patrones de prompting para edición de imágenes con IA en Qwen-Image-Edit. Úsalo al editar fotos manteniendo la identidad, reencuadrar imágenes recortadas, cambiar ropa o accesorios, ajustar poses, aplicar transferencias de estilo o transformaciones de personaje. Incluye patrones de prompt, ajuste de parámetros y ejemplos.",
+    "howToAsk": [
+      "Edita esta foto para cambiarle la ropa sin perder el parecido de la persona",
+      "Reencuadra esta imagen recortada y ajusta la pose del personaje",
+      "Aplica una transferencia de estilo a este retrato con Qwen-Image-Edit"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Edit this photo to change the outfit without losing the person's likeness",
+      "Reframe this cropped image and adjust the character's pose",
+      "Apply a style transfer to this portrait using Qwen-Image-Edit"
+    ]
+  }
+}

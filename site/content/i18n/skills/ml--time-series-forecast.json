@@ -1,0 +1,18 @@
+{
+  "sourceHash": "7157e557b5eca129",
+  "es": {
+    "description": "Predice series temporales: baselines ingenuos, estacionalidad, backtesting, intervalos de confianza",
+    "howToAsk": [
+      "/ml--time-series-forecast predice las ventas del próximo trimestre",
+      "/ml--time-series-forecast añade estacionalidad a mi modelo de demanda",
+      "/ml--time-series-forecast valida el forecast con backtesting"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ml--time-series-forecast forecast sales for next quarter",
+      "/ml--time-series-forecast add seasonality to my demand model",
+      "/ml--time-series-forecast validate the forecast with backtesting"
+    ]
+  }
+}

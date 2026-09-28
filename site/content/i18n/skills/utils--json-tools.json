@@ -1,0 +1,18 @@
+{
+  "sourceHash": "65724147c327ad73",
+  "es": {
+    "description": "Utilidades JSON: validar, comparar (diff), consultar con jq, aplanar e inferir esquema",
+    "howToAsk": [
+      "/utils--json-tools valida si este archivo config.json tiene errores de sintaxis",
+      "/utils--json-tools compara estos dos JSON y dime qué ha cambiado",
+      "/utils--json-tools infiere el esquema de este JSON de respuesta de la API"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/utils--json-tools validate whether this config.json has syntax errors",
+      "/utils--json-tools diff these two JSON files and tell me what changed",
+      "/utils--json-tools infer the schema from this API response JSON"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "4b4884f1e9e59185",
+  "es": {
+    "description": "Escribe un Reel de Instagram a partir de una idea en bruto - opciones de gancho basadas en 26 fórmulas, el guion hablado, el texto en pantalla, y un guion de beats con tiempos - con la propia voz del usuario y puntuado antes de grabarlo. Úsalo siempre que el usuario quiera un Reel, un guion de vídeo corto, un gancho, una voz en off, \"hazme un reel sobre X\", \"qué digo en este vídeo\", o esté a punto de grabar y no tenga aún la primera línea.",
+    "howToAsk": [
+      "Hazme un reel sobre cómo ahorrar tiempo cocinando",
+      "Necesito el guion y el gancho para este vídeo que voy a grabar",
+      "Dame varias opciones de gancho para hablar de este tema"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Make me a reel about saving time while cooking",
+      "I need the script and hook for this video I'm about to record",
+      "Give me a few hook options to talk about this topic"
+    ]
+  }
+}

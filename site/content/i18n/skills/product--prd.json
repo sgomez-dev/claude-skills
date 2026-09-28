@@ -1,0 +1,18 @@
+{
+  "sourceHash": "f326e11ae9705e42",
+  "es": {
+    "description": "Redacta un PRD completo a partir de una idea de funcionalidad: problema, objetivos, alcance y métricas de éxito",
+    "howToAsk": [
+      "/product--prd escribe el PRD para la nueva función de notificaciones",
+      "/product--prd define el problema, el alcance y las métricas de éxito de esta idea",
+      "/product--prd necesito un PRD completo para presentar a dirección"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/product--prd write the PRD for the new notifications feature",
+      "/product--prd define the problem, scope, and success metrics for this idea",
+      "/product--prd I need a full PRD to present to leadership"
+    ]
+  }
+}

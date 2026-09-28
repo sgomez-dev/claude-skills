@@ -1,0 +1,18 @@
+{
+  "sourceHash": "6edc3fa23cb7ed5e",
+  "es": {
+    "description": "Automatiza una tarea de navegador: flujos de inicio de sesión, rellenado de formularios, descargas y ejecuciones programadas",
+    "howToAsk": [
+      "/automation--browser-automation automatiza el inicio de sesión en este portal cada mañana",
+      "/automation--browser-automation rellena este formulario web con datos de un CSV",
+      "/automation--browser-automation descarga estos informes del navegador cada semana"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/automation--browser-automation automate logging into this portal every morning",
+      "/automation--browser-automation fill out this web form automatically from a CSV",
+      "/automation--browser-automation download these reports from the browser weekly"
+    ]
+  }
+}

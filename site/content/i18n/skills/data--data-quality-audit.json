@@ -1,0 +1,18 @@
+{
+  "sourceHash": "de831c8b3d4d268c",
+  "es": {
+    "description": "Audita un dataset o pipeline en busca de nulos, duplicados, deriva de datos y referencias rotas",
+    "howToAsk": [
+      "/data--data-quality-audit audita la calidad de datos de mi tabla de clientes",
+      "/data--data-quality-audit busca valores nulos y duplicados en este dataset",
+      "/data--data-quality-audit revisa mi pipeline en busca de referencias rotas"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/data--data-quality-audit audit the data quality of my customers table",
+      "/data--data-quality-audit find null values and duplicates in this dataset",
+      "/data--data-quality-audit check my pipeline for broken references"
+    ]
+  }
+}

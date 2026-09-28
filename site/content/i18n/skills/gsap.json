@@ -1,0 +1,18 @@
+{
+  "sourceHash": "dcc91731c4945b53",
+  "es": {
+    "description": "Referencia de animación GSAP para HyperFrames. Cubre gsap.to(), from(), fromTo(), easing, stagger, valores por defecto, timelines (gsap.timeline(), parámetro position, labels, anidación, reproducción) y rendimiento (transforms, will-change, quickTo). Úsalo al escribir animaciones GSAP en composiciones de HyperFrames.",
+    "howToAsk": [
+      "Cómo animo la posición de un elemento con gsap.to() en HyperFrames",
+      "Necesito encadenar varias animaciones con un timeline de GSAP",
+      "Ayúdame a optimizar el rendimiento de mis animaciones GSAP con transforms"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "How do I animate an element's position with gsap.to() in HyperFrames",
+      "I need to chain several animations with a GSAP timeline",
+      "Help me optimize my GSAP animation performance using transforms"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "19843c617733a6bc",
+  "es": {
+    "description": "Refactoriza el código de forma inteligente preservando su comportamiento",
+    "howToAsk": [
+      "/code-quality--refactor refactoriza este componente sin cambiar su comportamiento",
+      "/code-quality--refactor simplifica esta función manteniendo los mismos resultados",
+      "/code-quality--refactor mejora la estructura de este módulo sin romper nada"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/code-quality--refactor refactor this component without changing its behavior",
+      "/code-quality--refactor simplify this function while keeping the same output",
+      "/code-quality--refactor improve this module's structure without breaking anything"
+    ]
+  }
+}

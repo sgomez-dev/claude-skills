@@ -1,0 +1,18 @@
+{
+  "sourceHash": "0349b69876037235",
+  "es": {
+    "description": "Genera el andamiaje de un chatbot listo para producción: interfaz con streaming, historial, conexión a RAG y bucle de feedback",
+    "howToAsk": [
+      "/ai--chatbot-scaffold crea un chatbot de soporte con historial de conversación",
+      "/ai--chatbot-scaffold monta un chat con respuestas en streaming y RAG",
+      "/ai--chatbot-scaffold necesito un chatbot con botones de me gusta y no me gusta"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ai--chatbot-scaffold build a support chatbot with conversation history",
+      "/ai--chatbot-scaffold set up a chat with streaming responses and RAG",
+      "/ai--chatbot-scaffold I need a chatbot with thumbs up/down feedback"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "dcfef7b0c946ff0f",
+  "es": {
+    "description": "Audita la medición de Microsoft Advertising, UET, campañas de búsqueda y de audiencias, importaciones desde Google, sindicación, palabras clave, creatividades, pujas, presupuestos, inventario de Copilot y políticas. Úsalo para Microsoft Ads, Bing Ads, UET, Microsoft Audience Network, importación desde Google Ads u optimización de campañas de Microsoft.",
+    "howToAsk": [
+      "Audita mi cuenta de Microsoft Advertising (Bing Ads)",
+      "Importa mis campañas de Google Ads a Microsoft Ads",
+      "Revisa si el UET está bien configurado"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Audit my Microsoft Advertising (Bing Ads) account",
+      "Import my Google Ads campaigns into Microsoft Ads",
+      "Check whether UET is set up correctly"
+    ]
+  }
+}

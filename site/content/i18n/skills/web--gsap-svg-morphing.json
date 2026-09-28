@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d1c9d91c6969f3e4",
+  "es": {
+    "description": "Animaciones de morphing y formas SVG: dibujo de trazados con GSAP, morphing de formas, iconos animados, formas blob, separadores tipo onda, animación siguiendo un trazado (motion path)",
+    "howToAsk": [
+      "/web--gsap-svg-morphing anima este icono para que se dibuje al hacer scroll",
+      "/web--gsap-svg-morphing crea una forma blob animada de fondo",
+      "/web--gsap-svg-morphing haz que este SVG se transforme (morph) en otra forma"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/web--gsap-svg-morphing animate this icon to draw itself on scroll",
+      "/web--gsap-svg-morphing create an animated blob shape for the background",
+      "/web--gsap-svg-morphing make this SVG morph into another shape"
+    ]
+  }
+}

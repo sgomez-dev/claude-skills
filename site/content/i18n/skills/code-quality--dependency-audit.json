@@ -1,0 +1,18 @@
+{
+  "sourceHash": "9cb6fc578a1d0bf8",
+  "es": {
+    "description": "Audita las dependencias del proyecto en cuanto a seguridad, tamaño, estado de mantenimiento y alternativas",
+    "howToAsk": [
+      "/code-quality--dependency-audit revisa las dependencias de mi package.json",
+      "/code-quality--dependency-audit hay alguna librería insegura o sin mantenimiento en mi proyecto",
+      "/code-quality--dependency-audit sugiere alternativas más ligeras a mis dependencias actuales"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/code-quality--dependency-audit review the dependencies in my package.json",
+      "/code-quality--dependency-audit is any library in my project unsafe or unmaintained",
+      "/code-quality--dependency-audit suggest lighter alternatives to my current dependencies"
+    ]
+  }
+}

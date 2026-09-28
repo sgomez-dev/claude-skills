@@ -1,0 +1,18 @@
+{
+  "sourceHash": "826f71b4adcb1e5d",
+  "es": {
+    "description": "Galerías creativas con GSAP: scroll infinito, animaciones tipo masonry, transiciones de lightbox, layouts FLIP y galerías de imágenes interactivas",
+    "howToAsk": [
+      "/web--gsap-creative-gallery crea una galería con scroll infinito para mi portafolio",
+      "/web--gsap-creative-gallery añade un lightbox animado a mi galería de fotos",
+      "/web--gsap-creative-gallery haz un layout tipo masonry con animación al entrar"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/web--gsap-creative-gallery create an infinite scroll gallery for my portfolio",
+      "/web--gsap-creative-gallery add an animated lightbox to my photo gallery",
+      "/web--gsap-creative-gallery build a masonry layout with entrance animations"
+    ]
+  }
+}

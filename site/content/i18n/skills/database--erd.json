@@ -1,0 +1,18 @@
+{
+  "sourceHash": "fd0f5961c6e730fe",
+  "es": {
+    "description": "Genera un diagrama entidad-relación a partir del esquema de base de datos o modelos ORM",
+    "howToAsk": [
+      "/database--erd genera el ERD de mi base de datos Postgres",
+      "/database--erd diagrama entidad-relación a partir de mis modelos Prisma",
+      "/database--erd crea un ERD para explicar el esquema al equipo"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/database--erd generate the ERD for my Postgres database",
+      "/database--erd entity-relationship diagram from my Prisma models",
+      "/database--erd create an ERD to explain the schema to the team"
+    ]
+  }
+}

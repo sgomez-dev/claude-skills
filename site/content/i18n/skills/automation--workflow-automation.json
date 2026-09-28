@@ -1,0 +1,18 @@
+{
+  "sourceHash": "f189e4ca25a2c182",
+  "es": {
+    "description": "Diseña automatizaciones para n8n, Zapier o Make: disparadores, pasos, rutas de error y exportación",
+    "howToAsk": [
+      "/automation--workflow-automation crea un flujo en n8n que se dispare al recibir un email",
+      "/automation--workflow-automation diseña una automatización en Zapier para sincronizar CRM y hojas",
+      "/automation--workflow-automation añade manejo de errores a este flujo de Make"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/automation--workflow-automation create an n8n flow triggered by an incoming email",
+      "/automation--workflow-automation design a Zapier automation to sync CRM and spreadsheets",
+      "/automation--workflow-automation add error handling to this Make scenario"
+    ]
+  }
+}

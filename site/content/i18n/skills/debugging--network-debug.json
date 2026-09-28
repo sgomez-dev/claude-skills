@@ -1,0 +1,18 @@
+{
+  "sourceHash": "6fafcaccaef9d016",
+  "es": {
+    "description": "Depura problemas de conectividad de red en HTTP, WebSocket y gRPC",
+    "howToAsk": [
+      "/debugging--network-debug por qué falla esta conexión WebSocket",
+      "/debugging--network-debug depura este error de conexión gRPC",
+      "/debugging--network-debug investiga por qué esta petición HTTP da timeout"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/debugging--network-debug why does this WebSocket connection fail",
+      "/debugging--network-debug debug this gRPC connection error",
+      "/debugging--network-debug figure out why this HTTP request times out"
+    ]
+  }
+}

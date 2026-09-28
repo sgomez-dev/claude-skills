@@ -1,0 +1,18 @@
+{
+  "sourceHash": "b06711444eeadff1",
+  "es": {
+    "description": "Especificaciones de vídeo de motion design: desglose de escenas, timing, estrategia de audio, principios de animación",
+    "howToAsk": [
+      "/docs--video-spec crea el spec del vídeo de lanzamiento del producto",
+      "/docs--video-spec desglosa las escenas y el timing de este vídeo explicativo",
+      "/docs--video-spec define la estrategia de audio y animación para el vídeo"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/docs--video-spec create the spec for our product launch video",
+      "/docs--video-spec break down the scenes and timing for this explainer video",
+      "/docs--video-spec define the audio and animation strategy for the video"
+    ]
+  }
+}

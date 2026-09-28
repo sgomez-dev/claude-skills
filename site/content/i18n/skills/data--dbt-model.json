@@ -1,0 +1,18 @@
+{
+  "sourceHash": "7133966a9ae62616",
+  "es": {
+    "description": "Genera modelos de dbt con capas staging/marts, tests y documentación",
+    "howToAsk": [
+      "/data--dbt-model modelo de staging para la tabla orders",
+      "/data--dbt-model capa marts para ingresos mensuales",
+      "/data--dbt-model añade tests y documentación a mis modelos dbt"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/data--dbt-model staging model for the orders table",
+      "/data--dbt-model marts layer for monthly revenue",
+      "/data--dbt-model add tests and docs to my dbt models"
+    ]
+  }
+}

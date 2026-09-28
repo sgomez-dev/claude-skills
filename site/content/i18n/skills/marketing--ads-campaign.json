@@ -1,0 +1,18 @@
+{
+  "sourceHash": "7da5e5a05faee6b8",
+  "es": {
+    "description": "Gestión completa de campañas publicitarias con 8 agentes especializados en paralelo + PowerPoint",
+    "howToAsk": [
+      "/marketing--ads-campaign lanza campaña de Black Friday para mi tienda online",
+      "/marketing--ads-campaign presupuesto de 5000€, público joven, app de fitness",
+      "/marketing--ads-campaign genera el plan y el PowerPoint para el cliente"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/marketing--ads-campaign launch a Black Friday campaign for my online store",
+      "/marketing--ads-campaign €5000 budget, young audience, fitness app",
+      "/marketing--ads-campaign build the plan and PowerPoint for the client"
+    ]
+  }
+}

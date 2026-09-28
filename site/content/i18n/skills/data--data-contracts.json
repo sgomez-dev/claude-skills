@@ -1,0 +1,18 @@
+{
+  "sourceHash": "246ea3f114257a7e",
+  "es": {
+    "description": "Define contratos de datos entre productores y consumidores: esquema, SLAs, versionado",
+    "howToAsk": [
+      "/data--data-contracts define el contrato de datos entre mi API y el equipo de analítica",
+      "/data--data-contracts necesito un esquema y SLA para el evento de compra que emitimos",
+      "/data--data-contracts ayúdame a versionar este contrato de datos sin romper consumidores"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/data--data-contracts define the data contract between my API and the analytics team",
+      "/data--data-contracts I need a schema and SLA for the purchase event we emit",
+      "/data--data-contracts help me version this data contract without breaking consumers"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "2e78abba25d9f301",
+  "es": {
+    "description": "Agente 1 del pipeline de edición de vídeo. Elimina silencios y aire muerto de una grabación de talking-head. Úsalo cuando te pidan cortar silencios, recortar pausas, eliminar huecos / aire muerto, o ajustar el ritmo de un vídeo en bruto, dada una transcripción a nivel de palabra. Produce una lista de edición (EDL), una transcripción re-sincronizada para los agentes siguientes y, opcionalmente, el vídeo ya cortado vía ffmpeg. NO corta errores, repeticiones ni falsos inicios — de eso se encarga el agente cut-mistakes.",
+    "howToAsk": [
+      "Quita los silencios y el aire muerto de esta grabación de talking-head",
+      "Recorta las pausas largas de mi vídeo en bruto y dame la lista de edición",
+      "Ajusta el ritmo de este vídeo eliminando los huecos de silencio"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Remove the silences and dead air from this talking-head recording",
+      "Trim the long pauses in my raw video and give me the edit list",
+      "Tighten the pacing of this video by cutting the silent gaps"
+    ]
+  }
+}

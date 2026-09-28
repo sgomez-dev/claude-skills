@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d81c23495fefd90e",
+  "es": {
+    "description": "Micro-interacciones premium con GSAP: cursores personalizados, botones magnéticos, tarjetas con efecto tilt, efectos de foco (spotlight), animaciones de botones, indicadores de scroll",
+    "howToAsk": [
+      "/web--gsap-micro-interactions añade un cursor personalizado a mi web",
+      "/web--gsap-micro-interactions crea tarjetas con efecto tilt al pasar el ratón",
+      "/web--gsap-micro-interactions haz un botón magnético para el call to action"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/web--gsap-micro-interactions add a custom cursor to my site",
+      "/web--gsap-micro-interactions create tilt-effect cards on hover",
+      "/web--gsap-micro-interactions make a magnetic button for the call to action"
+    ]
+  }
+}

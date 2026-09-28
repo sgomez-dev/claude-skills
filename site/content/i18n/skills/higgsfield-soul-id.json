@@ -1,0 +1,18 @@
+{
+  "sourceHash": "5f3dcc0e7d41e152",
+  "es": {
+    "description": "Entrena un Soul Character: un modelo personalizado del rostro de una persona que Higgsfield usa para generar imágenes y vídeos fieles a esa identidad. Úsalo cuando: \"crea mi Soul\", \"entrena mi rostro\", \"haz mi gemelo digital\", \"créame un avatar\", \"aprende mi aspecto\", \"crea un personaje basado en mí\", \"configura la identidad para vídeo\", \"quiero mi cara en imágenes generadas\". Encadenado: entrena el Soul (una sola vez, devuelve reference_id) → úsalo en higgsfield-generate con `--soul-id <id>` y modelos como `text2image_soul_v2` o `soul_cinematic`. NO lo uses para: intercambios de cara puntuales (usa higgsfield-generate con --image), avatares con nombre de personaje no basados en foto (usa higgsfield-generate con prompt).",
+    "howToAsk": [
+      "Entrena un Soul con mi cara para usarlo en vídeos",
+      "Quiero un avatar digital que se parezca a mí en las imágenes generadas",
+      "Crea mi gemelo digital para futuras generaciones de vídeo"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Train a Soul on my face to use in videos",
+      "I want a digital avatar that looks like me in generated images",
+      "Create my digital twin for future video generations"
+    ]
+  }
+}

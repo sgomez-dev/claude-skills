@@ -1,0 +1,18 @@
+{
+  "sourceHash": "7d4f2c65d47a1a56",
+  "es": {
+    "description": "Escanea las dependencias en busca de compatibilidad de licencias, obligaciones y riesgo de copyleft",
+    "howToAsk": [
+      "/legal--oss-license-check revisa las licencias de mis dependencias npm",
+      "/legal--oss-license-check dime si tengo algún riesgo de copyleft en el proyecto",
+      "/legal--oss-license-check comprueba la compatibilidad de licencias antes de publicar"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/legal--oss-license-check check the licenses of my npm dependencies",
+      "/legal--oss-license-check tell me if I have any copyleft risk in this project",
+      "/legal--oss-license-check check license compatibility before I ship"
+    ]
+  }
+}

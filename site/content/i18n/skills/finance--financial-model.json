@@ -1,0 +1,18 @@
+{
+  "sourceHash": "6d1b696bc9bc20d7",
+  "es": {
+    "description": "Construye el esqueleto de un modelo financiero a 3 años (con fórmulas de hoja de cálculo) a partir de tus datos",
+    "howToAsk": [
+      "/finance--financial-model crea el modelo financiero a 3 años de mi startup",
+      "/finance--financial-model necesito una hoja de cálculo con proyecciones de ingresos y gastos",
+      "/finance--financial-model genera el esqueleto financiero a partir de estos supuestos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/finance--financial-model build the 3-year financial model for my startup",
+      "/finance--financial-model I need a spreadsheet with revenue and expense projections",
+      "/finance--financial-model generate the financial model skeleton from these assumptions"
+    ]
+  }
+}

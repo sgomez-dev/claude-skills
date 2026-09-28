@@ -1,0 +1,18 @@
+{
+  "sourceHash": "2204146ec02e5ff4",
+  "es": {
+    "description": "Configura proxy inverso con Cloudflare, Nginx o Caddy",
+    "howToAsk": [
+      "/networking--reverse-proxy pon Nginx delante de mi app en Node",
+      "/networking--reverse-proxy configura Caddy para servir varios dominios",
+      "/networking--reverse-proxy monta un proxy inverso con Cloudflare para mi backend"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/networking--reverse-proxy put Nginx in front of my Node app",
+      "/networking--reverse-proxy configure Caddy to serve multiple domains",
+      "/networking--reverse-proxy set up a reverse proxy with Cloudflare for my backend"
+    ]
+  }
+}

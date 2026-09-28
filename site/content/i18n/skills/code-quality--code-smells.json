@@ -1,0 +1,18 @@
+{
+  "sourceHash": "3521e3ed4f2e4f1c",
+  "es": {
+    "description": "Detecta code smells y anti-patrones con soluciones concretas",
+    "howToAsk": [
+      "/code-quality--code-smells revisa mi carpeta src y detecta code smells",
+      "/code-quality--code-smells encuentra anti-patrones en este archivo y propón soluciones",
+      "/code-quality--code-smells analiza el módulo de pagos en busca de malas prácticas"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/code-quality--code-smells scan my src folder for code smells",
+      "/code-quality--code-smells find anti-patterns in this file and suggest fixes",
+      "/code-quality--code-smells check the payments module for bad practices"
+    ]
+  }
+}

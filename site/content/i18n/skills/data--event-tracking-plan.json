@@ -1,0 +1,18 @@
+{
+  "sourceHash": "f97d239d85ecdabf",
+  "es": {
+    "description": "Diseña un plan de tracking de analítica de producto con eventos, propiedades y reglas de nomenclatura",
+    "howToAsk": [
+      "/data--event-tracking-plan plan de tracking para el flujo de registro",
+      "/data--event-tracking-plan define eventos y propiedades para el checkout",
+      "/data--event-tracking-plan revisa la nomenclatura de mis eventos de analítica"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/data--event-tracking-plan tracking plan for the signup flow",
+      "/data--event-tracking-plan define events and properties for checkout",
+      "/data--event-tracking-plan review naming rules for my analytics events"
+    ]
+  }
+}

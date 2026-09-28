@@ -1,0 +1,18 @@
+{
+  "sourceHash": "b992b82a8d981163",
+  "es": {
+    "description": "Configura el envío: zonas, tarifas, integración con transportistas, notificaciones de seguimiento",
+    "howToAsk": [
+      "/ecommerce--shipping-setup configura tarifas de envío por zona en mi tienda",
+      "/ecommerce--shipping-setup integra el seguimiento de pedidos con la transportista",
+      "/ecommerce--shipping-setup necesito enviar notificaciones automáticas de envío"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ecommerce--shipping-setup set up shipping rates by zone for my store",
+      "/ecommerce--shipping-setup integrate order tracking with the carrier",
+      "/ecommerce--shipping-setup I need automatic shipping notifications"
+    ]
+  }
+}

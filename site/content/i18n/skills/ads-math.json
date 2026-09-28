@@ -1,0 +1,18 @@
+{
+  "sourceHash": "c02207dbf465d1c7",
+  "es": {
+    "description": "Calcula y modela CPA, CPL, CPC, CPM, ROAS, MER, objetivos de punto de equilibrio, margen de contribución, LTV:CAC, oportunidad de cuota de impresiones, presupuestos, previsiones y economía de experimentos en medios de pago. Úsalo para matemáticas de PPC, calculadora de anuncios, análisis de punto de equilibrio, calculadora de ROAS, calculadora de CPA, previsión de presupuesto, LTV CAC o MER.",
+    "howToAsk": [
+      "Calcúlame el punto de equilibrio de esta campaña",
+      "¿Qué ROAS necesito para que esto sea rentable?",
+      "Ayúdame a calcular el LTV:CAC de mi negocio"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Calculate the break-even point for this campaign",
+      "What ROAS do I need for this to be profitable?",
+      "Help me calculate my business's LTV:CAC"
+    ]
+  }
+}

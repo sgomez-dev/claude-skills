@@ -1,0 +1,18 @@
+{
+  "sourceHash": "f7a0dc7620794597",
+  "es": {
+    "description": "Planifica, escribe, sincroniza, estiliza y valida los beats de motion graphics para vídeos de HyperFrames de formato largo tipo talking-head. Úsalo cuando se pida a Codex añadir o mejorar beats visuales, tercios inferiores con glassmorphism, transiciones de pantalla completa tipo papel arrugado, callouts sincronizados con la transcripción, cobertura de ritmo, gráficos de retención para YouTube, u overlays listos para renderizar en un proyecto de vídeo de HyperFrames existente.",
+    "howToAsk": [
+      "Añade tercios inferiores con glassmorphism a este vídeo talking-head",
+      "Necesito beats visuales sincronizados con la transcripción para retener audiencia en YouTube",
+      "Mejora el ritmo visual de este vídeo largo con más gráficos de apoyo"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Add glassmorphism lower thirds to this talking-head video",
+      "I need transcript-synced visual beats to boost YouTube retention",
+      "Improve the visual pacing of this long-form video with more overlays"
+    ]
+  }
+}

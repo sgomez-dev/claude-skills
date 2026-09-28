@@ -1,0 +1,18 @@
+{
+  "sourceHash": "0cc7cd45928f79f4",
+  "es": {
+    "description": "Skill oficial de GSAP para los plugins de GSAP: registro, ScrollToPlugin, ScrollSmoother, Flip, Draggable, Inertia, Observer, SplitText, ScrambleText, plugins de SVG y física, CustomEase, EasePack, CustomWiggle, CustomBounce, GSDevTools. Úsalo cuando el usuario pregunte por un plugin de GSAP, scroll-to, animaciones flip, draggable, dibujo de SVG o registro de plugins.",
+    "howToAsk": [
+      "Cómo registro el plugin Draggable en mi proyecto con GSAP",
+      "Quiero animar el dibujo de un SVG con GSAP",
+      "Necesito una animación flip al reordenar elementos de una lista"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "How do I register the Draggable plugin in my GSAP project",
+      "I want to animate an SVG being drawn with GSAP",
+      "I need a flip animation when reordering list items"
+    ]
+  }
+}

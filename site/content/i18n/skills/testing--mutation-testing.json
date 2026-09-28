@@ -1,0 +1,18 @@
+{
+  "sourceHash": "24c57d5cb45b38db",
+  "es": {
+    "description": "Configura mutation testing, interpreta los mutantes supervivientes y refuerza los tests débiles",
+    "howToAsk": [
+      "/testing--mutation-testing configura mutation testing en mi proyecto",
+      "/testing--mutation-testing ¿por qué sobreviven tantos mutantes en este módulo?",
+      "/testing--mutation-testing refuerza los tests que no detectan estos cambios"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/testing--mutation-testing set up mutation testing on my project",
+      "/testing--mutation-testing why are so many mutants surviving in this module?",
+      "/testing--mutation-testing harden tests that miss these mutations"
+    ]
+  }
+}

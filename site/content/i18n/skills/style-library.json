@@ -1,0 +1,18 @@
+{
+  "sourceHash": "483bc3b3c06051be",
+  "es": {
+    "description": "Selecciona, personaliza o amplía la biblioteca reutilizable de tarjetas de motion graphics y las plantillas de estilo del proyecto. Úsala para elegir un estilo visual, añadir una tarjeta, crear un nuevo pack de estilos o reutilizar una plantilla en un vídeo de HyperFrames.",
+    "howToAsk": [
+      "Elige un estilo visual de la librería para este vídeo de HyperFrames",
+      "Añade una nueva tarjeta de motion graphics a la biblioteca",
+      "Reutiliza una plantilla de estilo existente en esta composición"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Pick a visual style from the library for this HyperFrames video",
+      "Add a new motion-graphics card to the style library",
+      "Reuse an existing style template in this composition"
+    ]
+  }
+}

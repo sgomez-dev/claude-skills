@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a6b2ae22ecbedbc9",
+  "es": {
+    "description": "Configura reglas de WAF y políticas de firewall en Cloudflare",
+    "howToAsk": [
+      "/networking--cloudflare-waf bloquea el tráfico sospechoso de mi web",
+      "/networking--cloudflare-waf crea una regla para frenar bots en el formulario de contacto",
+      "/networking--cloudflare-waf revisa mis políticas de firewall actuales"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/networking--cloudflare-waf block suspicious traffic to my site",
+      "/networking--cloudflare-waf add a rule to stop bots on the contact form",
+      "/networking--cloudflare-waf review my current firewall policies"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "3f1f82d1c92bd252",
+  "es": {
+    "description": "Modela una cap table: rondas, dilución, option pools, escenarios de reparto en una salida (exit waterfall)",
+    "howToAsk": [
+      "/finance--cap-table modela nuestra cap table después de la próxima ronda",
+      "/finance--cap-table calcula la dilución del option pool para los empleados",
+      "/finance--cap-table simula el reparto en una venta de la empresa"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/finance--cap-table model our cap table after the next funding round",
+      "/finance--cap-table calculate option pool dilution for employees",
+      "/finance--cap-table simulate the payout waterfall in an acquisition"
+    ]
+  }
+}

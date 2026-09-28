@@ -1,0 +1,18 @@
+{
+  "sourceHash": "b9dc2c52bfbadce1",
+  "es": {
+    "description": "Procesamiento de vídeo y audio con FFmpeg. Úsalo para conversión de formato, redimensionado, compresión, extracción de audio y preparación de assets para Remotion. Se activa al convertir GIF a MP4, redimensionar vídeo, extraer audio, comprimir archivos o cualquier tarea de transformación de medios.",
+    "howToAsk": [
+      "Convierte este GIF a MP4",
+      "Redimensiona este vídeo a 1080p y comprímelo",
+      "Extrae el audio de este vídeo en formato MP3"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Convert this GIF to MP4",
+      "Resize this video to 1080p and compress it",
+      "Extract the audio from this video as MP3"
+    ]
+  }
+}

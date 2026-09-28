@@ -1,0 +1,18 @@
+{
+  "sourceHash": "11137d6193dfa883",
+  "es": {
+    "description": "Configura Cloudflare D1, la base de datos SQLite serverless",
+    "howToAsk": [
+      "/networking--cloudflare-d1 crea una base de datos D1 para mi Worker",
+      "/networking--cloudflare-d1 migra mi esquema SQLite a D1",
+      "/networking--cloudflare-d1 conecta D1 con mi aplicación en Cloudflare Pages"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/networking--cloudflare-d1 create a D1 database for my Worker",
+      "/networking--cloudflare-d1 migrate my SQLite schema to D1",
+      "/networking--cloudflare-d1 connect D1 to my Cloudflare Pages app"
+    ]
+  }
+}

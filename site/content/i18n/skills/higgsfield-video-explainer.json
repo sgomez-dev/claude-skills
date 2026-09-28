@@ -1,0 +1,18 @@
+{
+  "sourceHash": "6dfbafaefacd34f1",
+  "es": {
+    "description": "Construye un vídeo explicativo o narrativo no fotorrealista completo a partir de bloques ordenados de 10 segundos: un narrador, una clave de estilo universal, una toma de Seed Audio y un clip de Gemini Omni por bloque, con ensamblaje final en el servidor mediante explainer_video. Úsalo cuando: \"haz un vídeo explicativo\", \"explica esto en un vídeo\", \"convierte este tema o documento en un vídeo narrado\", \"cuenta esta historia como un vídeo animado\", \"haz un vídeo narrado sin rostro\", o \"muéstrame estilos de explicativos\". Soporta presets de CMS en vivo, referencias de estilo personalizadas, modos mascota/sin rostro, dos formatos de aspecto y subtítulos incrustados opcionales. NO lo uses para: películas fotorrealistas, anuncios/UGC, cabezas parlantes, podcasts, reels de tipografía en movimiento, clips sueltos sin narración, o edición de un vídeo ya terminado.",
+    "howToAsk": [
+      "Convierte este documento en un vídeo explicativo narrado",
+      "Haz un vídeo animado que cuente esta historia paso a paso",
+      "Necesito un explicativo sin rostro con subtítulos incrustados"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Turn this document into a narrated explainer video",
+      "Make an animated video that tells this story step by step",
+      "I need a faceless explainer with burned-in subtitles"
+    ]
+  }
+}

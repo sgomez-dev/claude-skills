@@ -1,0 +1,18 @@
+{
+  "sourceHash": "f9942231938f4749",
+  "es": {
+    "description": "Diseña una arquitectura GCP para esta app — elección de servicios, diagrama, arranque de IaC",
+    "howToAsk": [
+      "/cloud--gcp-architect diseña la arquitectura GCP para mi app de análisis de datos",
+      "/cloud--gcp-architect qué servicios de Google Cloud necesito para mi backend con BigQuery",
+      "/cloud--gcp-architect genera el diagrama y el Terraform inicial para mi proyecto en GCP"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/cloud--gcp-architect design the GCP architecture for my data analytics app",
+      "/cloud--gcp-architect what Google Cloud services do I need for a BigQuery backend",
+      "/cloud--gcp-architect generate the diagram and starter Terraform for my GCP project"
+    ]
+  }
+}

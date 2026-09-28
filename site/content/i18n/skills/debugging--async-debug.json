@@ -1,0 +1,18 @@
+{
+  "sourceHash": "0d3637138631f09f",
+  "es": {
+    "description": "Depura errores de async/await, cadenas de promesas y concurrencia",
+    "howToAsk": [
+      "/debugging--async-debug esta promesa nunca se resuelve, ayúdame",
+      "/debugging--async-debug depura esta cadena de async/await que falla",
+      "/debugging--async-debug encuentra el bug de concurrencia en este código"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/debugging--async-debug this promise never resolves, help me debug it",
+      "/debugging--async-debug debug this failing async/await chain",
+      "/debugging--async-debug find the concurrency bug in this code"
+    ]
+  }
+}

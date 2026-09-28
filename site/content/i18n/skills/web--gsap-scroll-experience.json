@@ -1,0 +1,18 @@
+{
+  "sourceHash": "e75ce3108d5e5e90",
+  "es": {
+    "description": "Animaciones controladas por scroll con GSAP ScrollTrigger: parallax, pinning, scroll horizontal, timelines con scrub y efectos según la velocidad del scroll",
+    "howToAsk": [
+      "/web--gsap-scroll-experience añade parallax a las imágenes de mi página",
+      "/web--gsap-scroll-experience fija (pin) una sección mientras el usuario hace scroll",
+      "/web--gsap-scroll-experience crea una sección con scroll horizontal"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/web--gsap-scroll-experience add parallax to the images on my page",
+      "/web--gsap-scroll-experience pin a section while the user scrolls",
+      "/web--gsap-scroll-experience create a horizontal scroll section"
+    ]
+  }
+}

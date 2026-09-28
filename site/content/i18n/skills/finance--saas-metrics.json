@@ -1,0 +1,18 @@
+{
+  "sourceHash": "4a5b036583162f7f",
+  "es": {
+    "description": "Calcula métricas SaaS a partir de los datos de ingresos: MRR, ARR, churn, NRR, LTV, CAC",
+    "howToAsk": [
+      "/finance--saas-metrics calcula el MRR y el churn de este mes",
+      "/finance--saas-metrics necesito el LTV y el CAC de nuestros clientes",
+      "/finance--saas-metrics saca las métricas SaaS a partir de este CSV de ingresos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/finance--saas-metrics calculate this month's MRR and churn",
+      "/finance--saas-metrics I need the LTV and CAC for our customers",
+      "/finance--saas-metrics compute SaaS metrics from this revenue CSV"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "fa4a5ab67a502539",
+  "es": {
+    "description": "Convierte notas desordenadas de una llamada de ventas en campos de CRM estructurados, tareas y seguimientos",
+    "howToAsk": [
+      "/sales--call-notes-to-crm aquí van mis notas de la llamada con el cliente, pásalas al CRM",
+      "/sales--call-notes-to-crm organiza estas notas de la demo de ayer en tareas de seguimiento",
+      "/sales--call-notes-to-crm estructura esta llamada desordenada en campos de Salesforce"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/sales--call-notes-to-crm here are my notes from the client call, turn them into CRM fields",
+      "/sales--call-notes-to-crm organize yesterday's demo notes into follow-up tasks",
+      "/sales--call-notes-to-crm structure this messy call into Salesforce fields"
+    ]
+  }
+}

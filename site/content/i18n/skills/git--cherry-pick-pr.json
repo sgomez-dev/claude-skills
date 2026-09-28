@@ -1,0 +1,18 @@
+{
+  "sourceHash": "37c12d200f986976",
+  "es": {
+    "description": "Aplica commits concretos de un PR o rama mediante cherry-pick a la rama actual",
+    "howToAsk": [
+      "/git--cherry-pick-pr trae solo el commit del fix de seguridad de ese PR",
+      "/git--cherry-pick-pr aplica dos commits de la rama release a mi rama",
+      "/git--cherry-pick-pr necesito llevar un cambio concreto sin fusionar todo el PR"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/git--cherry-pick-pr bring just the security fix commit from that PR",
+      "/git--cherry-pick-pr apply two commits from the release branch to mine",
+      "/git--cherry-pick-pr grab one specific change without merging the whole PR"
+    ]
+  }
+}

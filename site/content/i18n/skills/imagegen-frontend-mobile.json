@@ -1,0 +1,18 @@
+{
+  "sourceHash": "24c790491b1813eb",
+  "es": {
+    "description": "Habilidad de élite para generación de imágenes de apps móviles, orientada a crear conceptos y flujos de pantalla premium y nativos de app. Diseñada para iOS, Android y productos móviles multiplataforma. Prioriza jerarquía limpia, texto cómodamente legible, fuerte consistencia entre múltiples pantallas, paletas de color controladas, dirección creativa no genérica, superficies con textura, composición guiada por imagen, iconografía personalizada con buen gusto, y un encuadre limpio en mockup de teléfono. Por defecto, las pantallas deben mostrarse dentro de un mockup de iPhone (o similar) premium y sutil con marco visible, manteniendo el foco principal en el contenido de la app. Esta habilidad solo genera imágenes. No escribe código.",
+    "howToAsk": [
+      "Genérame conceptos de pantallas para mi app móvil de iOS",
+      "Necesito el flujo visual de onboarding de mi app dentro de un mockup de iPhone",
+      "Diséñame la pantalla principal de mi app con iconografía personalizada"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Generate screen concepts for my iOS mobile app",
+      "I need the onboarding flow visuals for my app inside an iPhone mockup",
+      "Design the main screen of my app with custom iconography"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "f063fba5f9c95514",
+  "es": {
+    "description": "Genera una estructura de proyecto completa desde cero",
+    "howToAsk": [
+      "/scaffold--scaffold crea la estructura de un proyecto nuevo de Next.js",
+      "/scaffold--scaffold necesito el andamiaje completo para una API en Node",
+      "/scaffold--scaffold genera la estructura de carpetas de un monorepo desde cero"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/scaffold--scaffold create the structure for a new Next.js project",
+      "/scaffold--scaffold I need the full scaffold for a Node API",
+      "/scaffold--scaffold generate a monorepo folder structure from scratch"
+    ]
+  }
+}

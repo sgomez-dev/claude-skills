@@ -1,0 +1,18 @@
+{
+  "sourceHash": "d629b8a5755e0646",
+  "es": {
+    "description": "Añade tests de contrato dirigidos por el consumidor (estilo Pact) entre servicios",
+    "howToAsk": [
+      "/testing--contract-testing añade tests de contrato entre mi frontend y la API",
+      "/testing--contract-testing configura Pact entre estos dos microservicios",
+      "/testing--contract-testing ¿cómo verifico que el consumidor y el proveedor son compatibles?"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/testing--contract-testing add contract tests between my frontend and API",
+      "/testing--contract-testing set up Pact between these two microservices",
+      "/testing--contract-testing how do I verify consumer and provider compatibility?"
+    ]
+  }
+}

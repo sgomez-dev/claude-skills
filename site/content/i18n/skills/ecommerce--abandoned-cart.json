@@ -1,0 +1,18 @@
+{
+  "sourceHash": "2affda620baae770",
+  "es": {
+    "description": "Crea la recuperación de carritos abandonados: detección, secuencia de emails, lógica de incentivos",
+    "howToAsk": [
+      "/ecommerce--abandoned-cart monta la secuencia de emails para carritos abandonados",
+      "/ecommerce--abandoned-cart necesito detectar carritos abandonados y ofrecer un descuento",
+      "/ecommerce--abandoned-cart diseña la lógica de incentivos para recuperar ventas perdidas"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ecommerce--abandoned-cart set up the email sequence for abandoned carts",
+      "/ecommerce--abandoned-cart I need to detect abandoned carts and offer a discount",
+      "/ecommerce--abandoned-cart design the incentive logic to recover lost sales"
+    ]
+  }
+}

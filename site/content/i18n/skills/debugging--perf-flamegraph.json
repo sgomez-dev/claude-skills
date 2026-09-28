@@ -1,0 +1,18 @@
+{
+  "sourceHash": "06b74b0237dee783",
+  "es": {
+    "description": "Perfila y depura cuellos de botella de rendimiento con análisis de flamegraph y perfilado de CPU/IO",
+    "howToAsk": [
+      "/debugging--perf-flamegraph genera un flamegraph de mi endpoint más lento",
+      "/debugging--perf-flamegraph encuentra el cuello de botella de CPU en este servicio",
+      "/debugging--perf-flamegraph perfila el uso de IO de este proceso"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/debugging--perf-flamegraph generate a flamegraph for my slowest endpoint",
+      "/debugging--perf-flamegraph find the CPU bottleneck in this service",
+      "/debugging--perf-flamegraph profile the IO usage of this process"
+    ]
+  }
+}

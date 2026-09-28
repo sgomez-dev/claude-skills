@@ -1,0 +1,18 @@
+{
+  "sourceHash": "e351402a55188e3e",
+  "es": {
+    "description": "Genera imágenes de producto con calidad de marca mediante la mejora de prompts de product-photoshoot de Higgsfield sobre GPT Image 2 / gpt_image_2. Punto de entrada para visuales profesionales de marca/producto. Úsalo cuando: \"foto de producto\", \"toma de estudio\", \"imagen lifestyle\", \"pin de Pinterest\", \"hero/banner\", \"carrusel\", \"creatividad publicitaria\", \"anuncios de Meta\", \"prueba virtual\", \"modelo con el producto puesto\", \"persona sosteniendo el producto\", \"primer plano con manos\", \"producto levitando/flotando/con salpicadura\", \"producto CGI/surrealista\", \"reestilizar\", \"variación estacional/estética\", o cualquier creatividad de producto, marca o social de pago. Modos: product_shot, lifestyle_scene, closeup_product_with_person, moodboard_pin, hero_banner, social_carousel, ad_creative_pack, virtual_model_tryout, conceptual_product, restyle. El backend ensambla el prompt final; nunca lo improvises a mano. NO la uses para: texto a imagen sin producto (usa higgsfield-generate), vídeo de avatar de marca (usa Marketing Studio en higgsfield-generate), tarjetas de listado para marketplace (usa higgsfield-marketplace-cards), entrenamiento de Soul Character (usa higgsfield-soul-id).",
+    "howToAsk": [
+      "Haz una foto de estudio profesional de este producto",
+      "Crea una imagen lifestyle con el producto en uso",
+      "Genera un banner hero para nuestra campaña de anuncios"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Create a professional studio shot of this product",
+      "Make a lifestyle image showing the product in use",
+      "Generate a hero banner for our ad campaign"
+    ]
+  }
+}

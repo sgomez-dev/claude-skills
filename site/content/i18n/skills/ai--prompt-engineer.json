@@ -1,0 +1,18 @@
+{
+  "sourceHash": "190ccc3373560ac7",
+  "es": {
+    "description": "Optimiza los prompts de IA/LLM para mejores resultados: prompts de sistema, prompts de usuario y definiciones de herramientas",
+    "howToAsk": [
+      "/ai--prompt-engineer mejora el prompt de sistema de mi asistente de soporte",
+      "/ai--prompt-engineer las respuestas del modelo son inconsistentes, afina el prompt",
+      "/ai--prompt-engineer revisa mis definiciones de herramientas para que el modelo las use mejor"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ai--prompt-engineer improve the system prompt for my support assistant",
+      "/ai--prompt-engineer the model's answers are inconsistent, help me tighten the prompt",
+      "/ai--prompt-engineer review my tool definitions so the model uses them better"
+    ]
+  }
+}

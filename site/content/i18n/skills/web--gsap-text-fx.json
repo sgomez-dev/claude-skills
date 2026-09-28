@@ -1,0 +1,18 @@
+{
+  "sourceHash": "fa87b21d8aa065c5",
+  "es": {
+    "description": "Tipografía cinética avanzada: división de texto con GSAP, efecto scramble, líquido, glitch, rotación 3D, barrido de degradado, texto siguiendo un trazado curvo",
+    "howToAsk": [
+      "/web--gsap-text-fx anima este titular con un efecto glitch",
+      "/web--gsap-text-fx haz que el texto se desordene y recomponga (scramble)",
+      "/web--gsap-text-fx crea un texto que sigue un trazado curvo"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/web--gsap-text-fx animate this headline with a glitch effect",
+      "/web--gsap-text-fx make the text scramble and reassemble",
+      "/web--gsap-text-fx create text that follows a curved path"
+    ]
+  }
+}

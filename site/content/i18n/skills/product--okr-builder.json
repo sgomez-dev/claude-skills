@@ -1,0 +1,18 @@
+{
+  "sourceHash": "9b59df2579ff3bb7",
+  "es": {
+    "description": "Redacta objetivos y resultados clave medibles a partir de la estrategia y las metas",
+    "howToAsk": [
+      "/product--okr-builder ayúdame a escribir los OKR del próximo trimestre",
+      "/product--okr-builder convierte esta meta de negocio en objetivos medibles",
+      "/product--okr-builder revisa si estos resultados clave son realmente medibles"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/product--okr-builder help me write next quarter's OKRs",
+      "/product--okr-builder turn this business goal into measurable objectives",
+      "/product--okr-builder check whether these key results are actually measurable"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "692fd91a03cf85f7",
+  "es": {
+    "description": "Genera un componente completo de React/Vue/Svelte con tipos, tests y stories",
+    "howToAsk": [
+      "/scaffold--component crea un componente Button de React con tipos y tests",
+      "/scaffold--component necesito un componente de Vue para una tarjeta de producto",
+      "/scaffold--component genera un componente Svelte con su story de Storybook"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/scaffold--component create a React Button component with types and tests",
+      "/scaffold--component I need a Vue component for a product card",
+      "/scaffold--component generate a Svelte component with its Storybook story"
+    ]
+  }
+}

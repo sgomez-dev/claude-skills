@@ -1,0 +1,18 @@
+{
+  "sourceHash": "83293f67bdf8ac68",
+  "es": {
+    "description": "Genera middleware para autenticación, logging, validación, etc.",
+    "howToAsk": [
+      "/scaffold--middleware crea un middleware de autenticación con JWT",
+      "/scaffold--middleware necesito un middleware de validación de peticiones",
+      "/scaffold--middleware genera un middleware de logging para mi API"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/scaffold--middleware create a JWT authentication middleware",
+      "/scaffold--middleware I need a request validation middleware",
+      "/scaffold--middleware generate a logging middleware for my API"
+    ]
+  }
+}

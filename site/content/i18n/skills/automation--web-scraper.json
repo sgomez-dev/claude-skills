@@ -1,0 +1,18 @@
+{
+  "sourceHash": "90a018285f37ac2b",
+  "es": {
+    "description": "Construye un web scraper respetuoso: robots.txt, límites de frecuencia, selectores, paginación y almacenamiento",
+    "howToAsk": [
+      "/automation--web-scraper crea un scraper que respete el robots.txt de esta web",
+      "/automation--web-scraper extrae los precios de este sitio con paginación",
+      "/automation--web-scraper guarda los datos scrapeados en una base de datos"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/automation--web-scraper build a scraper that respects this site's robots.txt",
+      "/automation--web-scraper extract prices from this site across paginated results",
+      "/automation--web-scraper store the scraped data in a database"
+    ]
+  }
+}

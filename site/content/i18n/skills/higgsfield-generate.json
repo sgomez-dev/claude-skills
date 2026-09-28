@@ -1,0 +1,18 @@
+{
+  "sourceHash": "bea5f0d7886e407c",
+  "es": {
+    "description": "Genera imágenes/vídeos/activos 3D/audio mediante Higgsfield AI. Por defecto: GPT Image 2.5 para imagen/diseño/texto, Seedance 2.5 para vídeo, Nano Banana 2 para personajes de dibujos animados, Marketing Studio para anuncios, Seed Audio 1.0 para audio. Úsalo cuando: \"genera una imagen\", \"haz un vídeo\", \"anima esta foto\", \"imagen a vídeo\", \"edita/estiliza/remezcla esta imagen\", \"reencuadra este vídeo\", \"edita este vídeo a partir de un boceto\", \"crea un modelo 3D/GLB\", \"crea un efecto de sonido\", \"haz música\", \"texto a audio\", \"crea un anuncio\", \"haz un vídeo UGC\", \"unboxing\", \"vídeo de presentador\", \"importar producto desde URL\", o \"analiza la viralidad de un vídeo\". Soporta generación genérica, workflows, Marketing Studio y el Predictor de Viralidad. Combínalo con higgsfield-soul-id para consistencia de rostro/identidad. NO lo uses para: entrenamiento de Soul, sistemas de marca/brandbooks (usa higgsfield-brandkit), sesiones de fotos, tarjetas, miniaturas de YouTube (usa higgsfield-youtube-thumbnail), explicativos (usa higgsfield-video-explainer), juegos o activos jugables (usa higgsfield-websites), o TTS.",
+    "howToAsk": [
+      "Genera una imagen de un producto flotando sobre fondo blanco",
+      "Anima esta foto y conviértela en un vídeo corto",
+      "Crea un efecto de sonido para esta animación"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Generate an image of a product floating on a white background",
+      "Animate this photo into a short video",
+      "Create a sound effect for this animation"
+    ]
+  }
+}

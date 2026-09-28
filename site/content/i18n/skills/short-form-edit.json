@@ -1,0 +1,18 @@
+{
+  "sourceHash": "2c0bc51b9978bf87",
+  "es": {
+    "description": "Convierte grabaciones de tipo talking-head en un reel, YouTube Short o anuncio corto terminado, con aperturas que generan curiosidad, remates ganados, cortes guiados por la historia, gráficos de movimiento sincronizados con la transcripción, B-roll en movimiento, subtítulos, música sutil y efectos de sonido sincronizados. Úsala para edición de formato corto; usa edit-video para vídeos largos y cut-silences solo para quitar pausas.",
+    "howToAsk": [
+      "Convierte este vídeo hablando a cámara en un reel para Instagram",
+      "Edítame un YouTube Short a partir de esta grabación con subtítulos y música",
+      "Necesito un anuncio corto con buenos cortes y B-roll a partir de este clip"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Turn this talking-head video into an Instagram reel",
+      "Edit a YouTube Short from this recording with captions and music",
+      "I need a short ad with good cuts and B-roll from this clip"
+    ]
+  }
+}

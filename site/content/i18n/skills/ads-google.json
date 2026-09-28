@@ -1,0 +1,18 @@
+{
+  "sourceHash": "dd4d128b29cbba85",
+  "es": {
+    "description": "Audita la medición de Google Ads, Search, Shopping, Performance Max, Demand Gen, inventario vinculado a YouTube, palabras clave y términos de búsqueda, generación o revisión de palabras clave negativas, recursos creativos, pujas, presupuestos, configuración y políticas. Úsalo para Google Ads, AdWords, campañas de Search, informes de términos de búsqueda, negativas amplias, Shopping, Performance Max, PMax, Demand Gen, GAQL, tracking de conversiones de Google u optimización de campañas de Google.",
+    "howToAsk": [
+      "Audita mi cuenta de Google Ads, sobre todo las campañas de Search",
+      "Revisa el informe de términos de búsqueda y sugiere negativas",
+      "¿Cómo está rindiendo mi campaña de Performance Max?"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Audit my Google Ads account, especially the Search campaigns",
+      "Review the search terms report and suggest negative keywords",
+      "How is my Performance Max campaign performing?"
+    ]
+  }
+}

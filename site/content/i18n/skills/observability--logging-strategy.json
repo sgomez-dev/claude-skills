@@ -1,0 +1,18 @@
+{
+  "sourceHash": "f1f9483726c2cd7a",
+  "es": {
+    "description": "Diseña logging estructurado: niveles, IDs de correlación, redacción de PII y retención",
+    "howToAsk": [
+      "/observability--logging-strategy diseña el esquema de logs para mi API",
+      "/observability--logging-strategy añade IDs de correlación para seguir una petición entre servicios",
+      "/observability--logging-strategy define cuánto guardamos los logs y cómo ocultar datos personales"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/observability--logging-strategy design the logging schema for my API",
+      "/observability--logging-strategy add correlation IDs to trace a request across services",
+      "/observability--logging-strategy define log retention and how to redact personal data"
+    ]
+  }
+}

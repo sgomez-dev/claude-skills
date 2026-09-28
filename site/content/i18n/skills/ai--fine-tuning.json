@@ -1,0 +1,18 @@
+{
+  "sourceHash": "9108c2f2660b8928",
+  "es": {
+    "description": "Haz fine-tuning de un LLM: decide si conviene frente a usar prompting, prepara el dataset, entrena y evalúa antes y después",
+    "howToAsk": [
+      "/ai--fine-tuning ¿me conviene el fine-tuning o basta con mejorar el prompt?",
+      "/ai--fine-tuning prepara mi dataset de conversaciones para entrenar el modelo",
+      "/ai--fine-tuning compara el rendimiento antes y después del fine-tuning"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ai--fine-tuning should I fine-tune or just improve my prompt?",
+      "/ai--fine-tuning prep my conversation dataset for training",
+      "/ai--fine-tuning compare model performance before and after fine-tuning"
+    ]
+  }
+}

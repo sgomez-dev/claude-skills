@@ -1,0 +1,18 @@
+{
+  "sourceHash": "ca93d6d51bf5d87e",
+  "es": {
+    "description": "Analiza el tamaño del bundle de JavaScript y sugiere optimizaciones",
+    "howToAsk": [
+      "/performance--bundle-analyze por qué mi bundle pesa tanto",
+      "/performance--bundle-analyze encuentra qué dependencias están inflando el build",
+      "/performance--bundle-analyze sugiere cómo reducir el tamaño del bundle de producción"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/performance--bundle-analyze why is my bundle so heavy",
+      "/performance--bundle-analyze find which dependencies are bloating the build",
+      "/performance--bundle-analyze suggest ways to shrink the production bundle"
+    ]
+  }
+}

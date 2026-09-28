@@ -1,0 +1,18 @@
+{
+  "sourceHash": "0e1e9e628040f585",
+  "es": {
+    "description": "Mantén las composiciones didácticas existentes de May Shorts usando sus patrones heredados de modo cara, superposición de escenas y subtítulos estilo karaoke. Úsala solo cuando trabajes en esos ejemplos o pidas explícitamente este scaffold heredado. Para reels, Shorts o anuncios cortos nuevos, usa short-form-edit.",
+    "howToAsk": [
+      "Actualiza la composición de May Shorts con el modo cara heredado",
+      "Necesito tocar el scaffold antiguo de May Shorts, no uno nuevo",
+      "Añade subtítulos estilo karaoke a esta composición legacy de May Shorts"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Update the May Shorts composition using the legacy face-mode",
+      "I need to touch the old May Shorts scaffold, not a new one",
+      "Add karaoke-style captions to this legacy May Shorts composition"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "088d3a0c5ac05842",
+  "es": {
+    "description": "Construye un plan de recuperación ante desastres — objetivos RTO/RPO, estrategia de backup, runbook de failover, calendario de pruebas",
+    "howToAsk": [
+      "/cloud--disaster-recovery crea un plan de recuperación ante desastres para mi base de datos",
+      "/cloud--disaster-recovery defíneme objetivos de RTO y RPO para mi sistema de pagos",
+      "/cloud--disaster-recovery necesito un runbook de failover y un calendario de pruebas"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/cloud--disaster-recovery build a disaster recovery plan for my database",
+      "/cloud--disaster-recovery set RTO and RPO targets for my payments system",
+      "/cloud--disaster-recovery I need a failover runbook and a test schedule"
+    ]
+  }
+}

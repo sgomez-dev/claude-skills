@@ -1,0 +1,18 @@
+{
+  "sourceHash": "ca6b38c31a81d1c5",
+  "es": {
+    "description": "Úsalo cuando el usuario quiera diseñar, rediseñar, dar forma, criticar, auditar, pulir, clarificar, destilar, endurecer, optimizar, adaptar, animar, colorear, extraer, o de otro modo mejorar una interfaz frontend. Cubre sitios web, landing pages, dashboards, UI de producto, shells de app, componentes, formularios, ajustes, onboarding y estados vacíos. Maneja revisión de UX, jerarquía visual, arquitectura de la información, carga cognitiva, accesibilidad, rendimiento, comportamiento responsive, tematización, anti-patrones, tipografía, fuentes, espaciado, layout, alineación, color, movimiento, micro-interacciones, copy de UX, estados de error, casos límite, i18n, y sistemas de diseño o tokens reutilizables. Úsalo también para diseños soso que necesitan ser más atrevidos o deliciosos, diseños ruidosos que deberían ser más silenciosos, iteración en vivo en el navegador sobre elementos de UI, o efectos visuales ambiciosos que deban sentirse técnicamente extraordinarios. No es para tareas exclusivamente de backend o sin interfaz.",
+    "howToAsk": [
+      "Rediseña este dashboard, se siente anticuado y confuso",
+      "Audita la accesibilidad y jerarquía visual de esta landing page",
+      "Este diseño es demasiado soso, hazlo más atrevido y con más personalidad"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Redesign this dashboard, it feels dated and confusing",
+      "Audit the accessibility and visual hierarchy of this landing page",
+      "This design is too bland, make it bolder and more distinctive"
+    ]
+  }
+}

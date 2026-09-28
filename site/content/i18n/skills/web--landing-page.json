@@ -1,0 +1,18 @@
+{
+  "sourceHash": "1faa18e3a1908813",
+  "es": {
+    "description": "Genera una landing page de primer nivel: única, cuidada, orientada a la conversión y que nunca parezca hecha por una IA",
+    "howToAsk": [
+      "/web--landing-page crea una landing page para mi producto SaaS",
+      "/web--landing-page diseña una landing para el lanzamiento de mi app",
+      "/web--landing-page genera una landing que no parezca hecha con IA"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/web--landing-page create a landing page for my SaaS product",
+      "/web--landing-page design a landing page for my app launch",
+      "/web--landing-page generate a landing page that doesn't look AI-made"
+    ]
+  }
+}

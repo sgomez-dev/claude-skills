@@ -1,0 +1,18 @@
+{
+  "sourceHash": "ed00accd26cbc519",
+  "es": {
+    "description": "Planifica y revisa presupuestos de medios de pago, pujas, ritmo de gasto (pacing), retorno marginal, previsiones, CPA, ROAS, MER, LTV:CAC, restricciones y asignación entre plataformas compatibles. Úsalo para asignación de presupuesto publicitario, presupuesto de medios, estrategia de pujas, escalado, ritmo de gasto, previsión de presupuesto, objetivo de ROAS o decisiones de inversión.",
+    "howToAsk": [
+      "Ayúdame a repartir el presupuesto de publicidad entre plataformas este trimestre",
+      "¿Puedo escalar el gasto en esta campaña sin que suba mucho el CPA?",
+      "Haz una previsión de presupuesto para alcanzar un ROAS de 4"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Help me allocate ad budget across platforms this quarter",
+      "Can I scale spend on this campaign without CPA blowing up?",
+      "Forecast a budget to hit a 4x ROAS target"
+    ]
+  }
+}

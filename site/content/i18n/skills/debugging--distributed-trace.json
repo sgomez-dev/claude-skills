@@ -1,0 +1,18 @@
+{
+  "sourceHash": "3936b938801465d2",
+  "es": {
+    "description": "Depura fallos entre microservicios usando trazado distribuido y correlación de peticiones",
+    "howToAsk": [
+      "/debugging--distributed-trace rastrea por qué falla esta petición entre microservicios",
+      "/debugging--distributed-trace correlaciona los logs de estos tres servicios",
+      "/debugging--distributed-trace encuentra dónde se pierde esta petición en la arquitectura"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/debugging--distributed-trace trace why this request fails across microservices",
+      "/debugging--distributed-trace correlate logs across these three services",
+      "/debugging--distributed-trace find where this request gets lost in the architecture"
+    ]
+  }
+}

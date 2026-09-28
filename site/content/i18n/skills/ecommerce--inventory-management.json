@@ -1,0 +1,18 @@
+{
+  "sourceHash": "182cdf9f9c7dea3f",
+  "es": {
+    "description": "Implementa la gestión de inventario: seguimiento de stock, reservas, alertas de stock bajo, multi-ubicación",
+    "howToAsk": [
+      "/ecommerce--inventory-management necesito controlar el stock en varias tiendas",
+      "/ecommerce--inventory-management añade alertas cuando un producto tenga poco stock",
+      "/ecommerce--inventory-management implementa reservas de stock durante el checkout"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ecommerce--inventory-management I need to track stock across multiple stores",
+      "/ecommerce--inventory-management add alerts when a product is running low",
+      "/ecommerce--inventory-management implement stock reservations during checkout"
+    ]
+  }
+}

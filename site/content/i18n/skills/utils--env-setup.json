@@ -1,0 +1,18 @@
+{
+  "sourceHash": "df0b1fb764d170be",
+  "es": {
+    "description": "Configura variables de entorno con ficheros .env y su validación",
+    "howToAsk": [
+      "/utils--env-setup crea un .env.example para mi proyecto Next.js",
+      "/utils--env-setup añade validación de variables de entorno obligatorias",
+      "/utils--env-setup ayúdame a separar variables de desarrollo y producción"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/utils--env-setup create a .env.example file for my Next.js project",
+      "/utils--env-setup add validation for required environment variables",
+      "/utils--env-setup help me separate dev and production env vars"
+    ]
+  }
+}

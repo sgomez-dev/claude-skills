@@ -1,0 +1,18 @@
+{
+  "sourceHash": "73f1c061f9179af8",
+  "es": {
+    "description": "Descifra códigos y mensajes de error crípticos y los convierte en explicaciones accionables",
+    "howToAsk": [
+      "/debugging--error-decode qué significa este error de Node.js",
+      "/debugging--error-decode descifra este código de error de Stripe",
+      "/debugging--error-decode explica este mensaje de error tan raro"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/debugging--error-decode what does this Node.js error mean",
+      "/debugging--error-decode decode this Stripe error code",
+      "/debugging--error-decode explain this cryptic error message"
+    ]
+  }
+}

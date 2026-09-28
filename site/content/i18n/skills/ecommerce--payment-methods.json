@@ -1,0 +1,18 @@
+{
+  "sourceHash": "4f811a21800a5880",
+  "es": {
+    "description": "Añade métodos de pago: tarjetas, wallets, BNPL (paga después) y métodos locales según el mercado",
+    "howToAsk": [
+      "/ecommerce--payment-methods añade Apple Pay y Google Pay a mi tienda",
+      "/ecommerce--payment-methods necesito ofrecer pago a plazos (BNPL) en el checkout",
+      "/ecommerce--payment-methods qué métodos de pago locales necesito para vender en México"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ecommerce--payment-methods add Apple Pay and Google Pay to my store",
+      "/ecommerce--payment-methods I need to offer buy-now-pay-later at checkout",
+      "/ecommerce--payment-methods what local payment methods do I need to sell in Mexico"
+    ]
+  }
+}

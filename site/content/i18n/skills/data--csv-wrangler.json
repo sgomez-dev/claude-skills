@@ -1,0 +1,18 @@
+{
+  "sourceHash": "8c82ca5ebeed7dfb",
+  "es": {
+    "description": "Limpia, transforma, deduplica y reestructura ficheros CSV/Excel con un script repetible",
+    "howToAsk": [
+      "/data--csv-wrangler limpia este CSV de clientes y quita los duplicados",
+      "/data--csv-wrangler transforma este Excel al formato que necesito para importar",
+      "/data--csv-wrangler dame un script repetible para procesar estos ficheros cada mes"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/data--csv-wrangler clean up this customer CSV and remove duplicates",
+      "/data--csv-wrangler transform this Excel file into the format I need to import",
+      "/data--csv-wrangler give me a repeatable script to process these files monthly"
+    ]
+  }
+}

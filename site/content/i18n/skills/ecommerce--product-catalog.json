@@ -1,0 +1,18 @@
+{
+  "sourceHash": "84489dd47178f576",
+  "es": {
+    "description": "Modela un catálogo de productos: variantes, opciones, categorías, atributos, contenido multimedia",
+    "howToAsk": [
+      "/ecommerce--product-catalog diseña el modelo de datos para productos con tallas y colores",
+      "/ecommerce--product-catalog necesito categorías y atributos para filtrar productos",
+      "/ecommerce--product-catalog añade soporte de variantes con imágenes distintas por color"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ecommerce--product-catalog design the data model for products with sizes and colors",
+      "/ecommerce--product-catalog I need categories and attributes to filter products",
+      "/ecommerce--product-catalog add variant support with different images per color"
+    ]
+  }
+}

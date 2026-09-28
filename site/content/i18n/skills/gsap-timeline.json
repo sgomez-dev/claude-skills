@@ -1,0 +1,18 @@
+{
+  "sourceHash": "1189b89ea06b03ec",
+  "es": {
+    "description": "Skill oficial de GSAP para timelines: gsap.timeline(), parámetro position, anidación, reproducción. Úsalo al secuenciar animaciones, coreografiar keyframes, o cuando el usuario pregunte por secuenciación de animaciones, timelines u orden de animación (en GSAP o al recomendar una librería que soporte timelines).",
+    "howToAsk": [
+      "Necesito encadenar tres animaciones una detrás de otra",
+      "Cómo controlo el orden y el solape de varias animaciones con un timeline",
+      "Quiero anidar timelines de GSAP dentro de otro timeline"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "I need to chain three animations one after another",
+      "How do I control the order and overlap of several animations with a timeline",
+      "I want to nest GSAP timelines inside another timeline"
+    ]
+  }
+}

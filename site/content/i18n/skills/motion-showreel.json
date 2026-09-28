@@ -1,0 +1,18 @@
+{
+  "sourceHash": "e393da3108c83ec1",
+  "es": {
+    "description": "Diseña y construye un showreel de motion design o reel de marca de 10-30 segundos al estilo del \"CLAUDE / MOTION REEL\" de Opus 5.5 de Nate: un motivo de marca transformado a través de capítulos de oficio etiquetados, un HUD persistente, cortes anclados a una malla de 120-130 BPM, un aluvión de menos de un segundo, y un lockup de logo final que responde a la apertura. Úsalo cuando te pidan un showreel, un sizzle reel, un reel de marca, un motion reel, \"un reel como el de Opus\", \"presume del motion design de <marca>\", una película de marca de 15 segundos cortada al ritmo de la música, o para estudiar por qué funciona un reel de referencia y reconstruir esa energía para otra marca.",
+    "howToAsk": [
+      "Haz un showreel de 20 segundos con el motion design de mi marca",
+      "Quiero un reel como el de Opus pero para mi startup",
+      "Estudia este reel de referencia y recréalo para nuestra marca"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Make a 20-second showreel of my brand's motion design",
+      "I want a reel like the Opus one but for my startup",
+      "Study this reference reel and rebuild that energy for our brand"
+    ]
+  }
+}

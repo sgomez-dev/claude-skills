@@ -1,0 +1,18 @@
+{
+  "sourceHash": "0ae5bbbe2b2362bb",
+  "es": {
+    "description": "Convierte un contenido largo - un vídeo de YouTube, podcast, livestream, newsletter, entrada de blog o llamada con un cliente - en una semana de reels y carruseles. Úsalo cuando el usuario diga \"reutiliza esto\", \"convierte esto en reels\", \"tengo un vídeo/podcast/transcripción\", \"trocea esto\", o pegue algo largo y quiera llevarlo a Instagram.",
+    "howToAsk": [
+      "Convierte este podcast en una semana de reels para Instagram",
+      "Tengo la transcripción de mi última charla, trocéala en carruseles",
+      "Reutiliza este artículo de blog como contenido de Instagram"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Turn this podcast into a week of Instagram reels",
+      "I have the transcript of my last talk, chop it into carousels",
+      "Repurpose this blog post as Instagram content"
+    ]
+  }
+}

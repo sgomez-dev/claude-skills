@@ -1,0 +1,18 @@
+{
+  "sourceHash": "7674a3be43dcea24",
+  "es": {
+    "description": "Genera u optimiza el tsconfig.json del proyecto",
+    "howToAsk": [
+      "/utils--tsconfig crea un tsconfig.json para un proyecto React con Vite",
+      "/utils--tsconfig activa el modo estricto y arregla los errores que salgan",
+      "/utils--tsconfig optimiza las rutas de importación (paths) de mi proyecto"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/utils--tsconfig create a tsconfig.json for a React project with Vite",
+      "/utils--tsconfig turn on strict mode and fix whatever errors show up",
+      "/utils--tsconfig optimize the import path aliases in my project"
+    ]
+  }
+}

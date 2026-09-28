@@ -1,0 +1,18 @@
+{
+  "sourceHash": "a6263985769e92d0",
+  "es": {
+    "description": "Diagnostica y soluciona problemas de resolución y propagación de DNS",
+    "howToAsk": [
+      "/networking--dns-debug mi dominio no resuelve desde ayer",
+      "/networking--dns-debug revisa por qué el correo no llega, sospecho de los MX",
+      "/networking--dns-debug comprueba si el cambio de DNS ya se propagó"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/networking--dns-debug my domain hasn't resolved since yesterday",
+      "/networking--dns-debug check why email isn't arriving, I suspect the MX records",
+      "/networking--dns-debug has my DNS change propagated yet?"
+    ]
+  }
+}

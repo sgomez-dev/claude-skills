@@ -1,0 +1,18 @@
+{
+  "sourceHash": "03b2f7fe2c392c23",
+  "es": {
+    "description": "Genera documentación de API a partir de los route handlers y controladores",
+    "howToAsk": [
+      "/docs--api-doc documenta los endpoints de mi carpeta routes/",
+      "/docs--api-doc genera la documentación de la API a partir de mis controladores",
+      "/docs--api-doc necesito docs de los endpoints de este servicio Express"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/docs--api-doc document the endpoints in my routes/ folder",
+      "/docs--api-doc generate API documentation from my controllers",
+      "/docs--api-doc I need docs for this Express service's endpoints"
+    ]
+  }
+}

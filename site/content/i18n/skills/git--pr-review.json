@@ -1,0 +1,18 @@
+{
+  "sourceHash": "51a0eb8518111c2c",
+  "es": {
+    "description": "Realiza una revisión de código exhaustiva de un pull request",
+    "howToAsk": [
+      "/git--pr-review revisa este pull request antes de aprobarlo",
+      "/git--pr-review haz una revisión a fondo del PR número 42",
+      "/git--pr-review necesito feedback detallado sobre este cambio"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/git--pr-review review this pull request before I approve it",
+      "/git--pr-review do a thorough review of PR number 42",
+      "/git--pr-review I need detailed feedback on this change"
+    ]
+  }
+}

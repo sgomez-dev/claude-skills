@@ -1,0 +1,18 @@
+{
+  "sourceHash": "e390f88a5f7807b1",
+  "es": {
+    "description": "Generación de música con IA usando ACE-Step 1.5: música de fondo, pistas vocales, versiones (covers), extracción de stems, repintado de audio y continuación para producción de vídeo. Úsalo para generar música, bandas sonoras, jingles o trabajar con stems de audio. Se activa con términos como música de fondo, banda sonora, jingle, generación de música, extracción de stems, cover, transferencia de estilo, repintado, continuación o tareas de composición musical.",
+    "howToAsk": [
+      "Necesito una música de fondo instrumental para un vídeo de producto de 30 segundos",
+      "¿Puedes extraer la pista vocal de esta canción para hacer un cover?",
+      "Genera un jingle corto y alegre para el anuncio de mi marca"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "I need instrumental background music for a 30-second product video",
+      "Can you extract the vocal stem from this song so I can make a cover?",
+      "Generate a short upbeat jingle for my brand's ad"
+    ]
+  }
+}

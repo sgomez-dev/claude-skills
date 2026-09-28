@@ -1,0 +1,18 @@
+{
+  "sourceHash": "74e303ad93159ee3",
+  "es": {
+    "description": "Diseña la configuración de un API gateway con limitación de tasa, autenticación y enrutado",
+    "howToAsk": [
+      "/networking--api-gateway configura un API gateway para mis microservicios",
+      "/networking--api-gateway añade límites de peticiones por cliente",
+      "/networking--api-gateway define reglas de enrutado por versión de API"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/networking--api-gateway set up an API gateway for my microservices",
+      "/networking--api-gateway add per-client rate limits",
+      "/networking--api-gateway define routing rules by API version"
+    ]
+  }
+}

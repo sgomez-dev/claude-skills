@@ -1,0 +1,18 @@
+{
+  "sourceHash": "38854f900bd6577d",
+  "es": {
+    "description": "Redacta una política de privacidad a partir de las prácticas de datos realmente encontradas en tu código",
+    "howToAsk": [
+      "/legal--privacy-policy genera la política de privacidad de mi app",
+      "/legal--privacy-policy escanea el código y redacta el aviso de privacidad",
+      "/legal--privacy-policy necesito una política de privacidad basada en mis datos reales"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/legal--privacy-policy generate the privacy policy for my app",
+      "/legal--privacy-policy scan the code and draft the privacy notice",
+      "/legal--privacy-policy I need a privacy policy based on my actual data practices"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "f62e980a0e67e256",
+  "es": {
+    "description": "Instrumenta las llamadas a LLM: trazabilidad, seguimiento de tokens y coste, paneles de calidad y alertas",
+    "howToAsk": [
+      "/ai--llm-observability quiero ver cuántos tokens gasta cada llamada al modelo",
+      "/ai--llm-observability añade trazas para depurar las respuestas del agente",
+      "/ai--llm-observability necesito alertas cuando baje la calidad de las respuestas"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ai--llm-observability I want to see how many tokens each model call uses",
+      "/ai--llm-observability add tracing to debug the agent's responses",
+      "/ai--llm-observability alert me when response quality drops"
+    ]
+  }
+}

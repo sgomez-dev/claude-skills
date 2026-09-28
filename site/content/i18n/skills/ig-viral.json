@@ -1,0 +1,18 @@
+{
+  "sourceHash": "dfeb134b92a50afb",
+  "es": {
+    "description": "Sal a buscar los reels que están funcionando de verdad ahora mismo en el nicho del usuario, clasifícalos por cuánto superaron cada uno a su propia cuenta, nombra la fórmula de gancho que usó cada uno, y convierte eso en un swipe file del que puedan grabar. Úsalo cuando el usuario diga \"encuentra vídeos virales\", \"qué está funcionando ahora mismo\", \"qué está publicando la gente en mi nicho\", \"haz ingeniería inversa de esta cuenta\", \"hazme un swipe file\", \"por qué este reel está haciendo tantos números\", o pregunte qué hacer después y no tenga evidencia con la que responder.",
+    "howToAsk": [
+      "Busca los reels que están funcionando ahora mismo en mi nicho",
+      "Haz ingeniería inversa de esta cuenta y dime qué fórmulas de gancho usa",
+      "Constrúyeme un swipe file con ideas para grabar esta semana"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Find the reels that are actually working right now in my niche",
+      "Reverse engineer this account and tell me what hook formulas it uses",
+      "Build me a swipe file of ideas to shoot this week"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sourceHash": "c1d6fa143ce4bd62",
+  "es": {
+    "description": "Analiza los huecos de cobertura de tests y genera tests para cubrirlos",
+    "howToAsk": [
+      "/testing--test-coverage ¿qué partes de mi código no tienen tests?",
+      "/testing--test-coverage genera tests para cubrir el módulo de pagos",
+      "/testing--test-coverage mejora la cobertura de este servicio a más del 80%"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/testing--test-coverage what parts of my code have no tests?",
+      "/testing--test-coverage generate tests to cover the payments module",
+      "/testing--test-coverage improve this service's coverage above 80%"
+    ]
+  }
+}

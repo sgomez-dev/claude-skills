@@ -1,0 +1,18 @@
+{
+  "sourceHash": "0de1a0c2400e3066",
+  "es": {
+    "description": "Planifica una migración a la nube — evaluación, estrategia de las 6 Rs, plan por fases, rollback",
+    "howToAsk": [
+      "/cloud--cloud-migration ayúdame a planificar la migración de mi app a la nube",
+      "/cloud--cloud-migration qué estrategia de migración me conviene, rehost o refactor",
+      "/cloud--cloud-migration necesito un plan por fases con opción de marcha atrás"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/cloud--cloud-migration help me plan moving my app to the cloud",
+      "/cloud--cloud-migration should I rehost, replatform, or refactor my system",
+      "/cloud--cloud-migration I need a phased migration plan with a rollback option"
+    ]
+  }
+}

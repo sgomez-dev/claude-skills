@@ -1,0 +1,18 @@
+{
+  "sourceHash": "b8a45d91eb2df95b",
+  "es": {
+    "description": "Configura el perfil de cliente, marca, cuenta, fuentes de datos, privacidad y salvaguardas de mutación para Claude Ads en medios de pago. Úsalo para incorporación (onboarding), configuración inicial, ADN de marca, tokens de API o perfiles de credenciales, configuración de variables de entorno o keychain, conexión de exportaciones o adaptadores de solo lectura, instalación nativa o local verificada segura, solicitudes de instalación por curl-pipe-bash, declaración de KPIs o preparación de un nuevo proyecto publicitario.",
+    "howToAsk": [
+      "Ayúdame a configurar Claude Ads por primera vez para mi cuenta",
+      "Configura las credenciales de la API de Google Ads de forma segura",
+      "Quiero declarar los KPIs de este nuevo proyecto publicitario"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Help me set up Claude Ads for the first time on my account",
+      "Configure the Google Ads API credentials securely",
+      "I want to declare the KPIs for this new advertising project"
+    ]
+  }
+}

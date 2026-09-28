@@ -1,0 +1,18 @@
+{
+  "sourceHash": "50b090c097d8a140",
+  "es": {
+    "description": "Define una métrica de negocio con precisión: fórmula, granularidad, filtros, casos límite, responsable",
+    "howToAsk": [
+      "/data--metric-definition define la métrica de ingresos recurrentes mensuales",
+      "/data--metric-definition aclara la fórmula y granularidad de churn rate",
+      "/data--metric-definition documenta casos límite y responsable de active users"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/data--metric-definition define monthly recurring revenue precisely",
+      "/data--metric-definition clarify the formula and grain for churn rate",
+      "/data--metric-definition document edge cases and owner for active users"
+    ]
+  }
+}

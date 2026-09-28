@@ -1,0 +1,18 @@
+{
+  "sourceHash": "8a5d3e8da2a014dd",
+  "es": {
+    "description": "Gestión interactiva de git stash: listar, aplicar, eliminar y organizar los stashes",
+    "howToAsk": [
+      "/git--stash-manager muéstrame todos mis stashes guardados",
+      "/git--stash-manager aplica el stash que hice ayer",
+      "/git--stash-manager limpia los stashes que ya no necesito"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/git--stash-manager show me all my saved stashes",
+      "/git--stash-manager apply the stash I made yesterday",
+      "/git--stash-manager clean up the stashes I don't need anymore"
+    ]
+  }
+}

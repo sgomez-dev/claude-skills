@@ -1,0 +1,18 @@
+{
+  "sourceHash": "34f27010b31e7d89",
+  "es": {
+    "description": "Crea una battlecard frente a un competidor con trampas, contraataques, pruebas y minas a evitar",
+    "howToAsk": [
+      "/sales--sales-battlecard crea una battlecard contra nuestro competidor principal",
+      "/sales--sales-battlecard necesito contraataques y pruebas frente a este rival",
+      "/sales--sales-battlecard qué minas debo evitar cuando compito contra esta empresa"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/sales--sales-battlecard build a battlecard against our main competitor",
+      "/sales--sales-battlecard I need counters and proof points against this rival",
+      "/sales--sales-battlecard what landmines should I avoid competing against this company"
+    ]
+  }
+}

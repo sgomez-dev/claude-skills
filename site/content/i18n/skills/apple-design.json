@@ -1,0 +1,18 @@
+{
+  "sourceHash": "07b280d5b529ba5e",
+  "es": {
+    "description": "El enfoque de Apple para el diseño de interfaces y el movimiento fluido y físico, adaptado a la web. Úsalo al construir o revisar interfaces basadas en gestos, animaciones spring, interacciones de arrastre/swipe/hojas (sheets), transiciones con inercia e interrumpibles, materiales translúcidos y profundidad, tipografía (tamaño óptico, tracking, leading), reduced-motion, o los fundamentos de diseño (feedback, consistencia espacial, contención) detrás de las interfaces estilo Apple.",
+    "howToAsk": [
+      "Revisa si esta interfaz sigue las convenciones de diseño de Apple",
+      "Añade una animación spring al arrastrar esta hoja modal",
+      "Ajusta la tipografía para que se parezca al estilo de iOS"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Review whether this UI follows Apple's design conventions",
+      "Add a spring animation to this draggable sheet",
+      "Tune the typography to feel more iOS-native"
+    ]
+  }
+}

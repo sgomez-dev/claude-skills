@@ -1,0 +1,18 @@
+{
+  "sourceHash": "80469a2ea7a2e9bd",
+  "es": {
+    "description": "Configuración de pruebas de carga: elige entre k6/Locust/Artillery, define escenarios, umbrales y una puerta de calidad en CI",
+    "howToAsk": [
+      "/testing--load-testing monta pruebas de carga para mi API con k6",
+      "/testing--load-testing ¿qué umbrales debería usar para el checkout?",
+      "/testing--load-testing añade una puerta de carga en el pipeline de CI"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/testing--load-testing set up load tests for my API with k6",
+      "/testing--load-testing what thresholds should I use for checkout?",
+      "/testing--load-testing add a load-test gate to the CI pipeline"
+    ]
+  }
+}

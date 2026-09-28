@@ -1,0 +1,18 @@
+{
+  "sourceHash": "2919daf9a52908dc",
+  "es": {
+    "description": "Crea o audita un checkout optimizado: flujo como invitado, UX de pago, recuperación de errores",
+    "howToAsk": [
+      "/ecommerce--checkout-flow audita mi checkout y dime dónde perdemos ventas",
+      "/ecommerce--checkout-flow añade la opción de comprar como invitado",
+      "/ecommerce--checkout-flow mejora la gestión de errores de pago en el checkout"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "/ecommerce--checkout-flow audit my checkout and tell me where we're losing sales",
+      "/ecommerce--checkout-flow add a guest checkout option",
+      "/ecommerce--checkout-flow improve payment error handling at checkout"
+    ]
+  }
+}

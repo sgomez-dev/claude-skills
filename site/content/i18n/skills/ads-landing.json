@@ -1,0 +1,18 @@
+{
+  "sourceHash": "af9ed45f03eb0da8",
+  "es": {
+    "description": "Audita páginas de aterrizaje de anuncios de pago en cuanto a coherencia del mensaje, experiencia móvil, rendimiento, accesibilidad, confianza, formularios, consentimiento, tracking, seguridad y fricción en la conversión. Úsalo para auditoría de landing page, experiencia post-clic, auditoría de LP, optimización de la tasa de conversión, optimización de formularios, coherencia de mensaje entre anuncio y página, redirecciones, navegación bloqueada o solicitudes que impliquen destinos de IP privados, loopback, link-local o de metadatos.",
+    "howToAsk": [
+      "Audita la landing page de esta campaña y busca fricción en el formulario",
+      "¿La página de aterrizaje coincide con el mensaje del anuncio?",
+      "Revisa la experiencia móvil y el rendimiento de esta landing"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Audit this campaign's landing page for form friction",
+      "Does the landing page match the ad's message?",
+      "Review the mobile experience and performance of this landing page"
+    ]
+  }
+}

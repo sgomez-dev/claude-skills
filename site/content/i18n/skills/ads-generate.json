@@ -1,0 +1,18 @@
+{
+  "sourceHash": "e8eba3f1b1af45cb",
+  "es": {
+    "description": "Genera imágenes para anuncios de pago a partir de un brief creativo y un perfil de marca validados, usando un proveedor de generación de imágenes configurado explícitamente. Se activa con: generar anuncios, generar imágenes de anuncios, crear creatividades de anuncio, crear imágenes de anuncio, hacer imágenes de anuncio, generar visuales, hacer visuales de campaña, generar imágenes a partir del brief de campaña.",
+    "howToAsk": [
+      "Genera imágenes de anuncio a partir de este brief creativo",
+      "Crea visuales de campaña usando nuestro perfil de marca",
+      "Hazme varias variantes de imagen para este anuncio"
+    ]
+  },
+  "en": {
+    "howToAsk": [
+      "Generate ad images from this creative brief",
+      "Create campaign visuals using our brand profile",
+      "Make a few image variants for this ad"
+    ]
+  }
+}
