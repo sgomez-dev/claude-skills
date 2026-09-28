@@ -1,7 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import matter from 'gray-matter';
-import { cleanDescription, normalizeFrontmatter, toPosix } from './clean';
+import { cleanDescription, parseFrontmatter, toPosix } from './clean';
 import { detectLicense } from './license';
 import type { RawExternal, Upstream } from './types';
 
@@ -30,7 +29,7 @@ function parseUpstream(md: string, rel: string): { upstream: Upstream; commitDat
 export function parseExternal(dir: string, repoRoot: string): RawExternal {
   const rel = toPosix(path.relative(repoRoot, dir));
   const slug = path.basename(dir);
-  const { data } = matter(normalizeFrontmatter(fs.readFileSync(path.join(dir, 'SKILL.md'), 'utf8')));
+  const { data } = parseFrontmatter(fs.readFileSync(path.join(dir, 'SKILL.md'), 'utf8'));
   const description = cleanDescription(data.description);
   if (!description) throw new Error(`${rel}/SKILL.md: missing description`);
   const licensePath = path.join(dir, 'LICENSE');

@@ -1,7 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import matter from 'gray-matter';
-import { cleanDescription, normalizeFrontmatter, toPosix } from './clean';
+import { cleanDescription, parseFrontmatter, toPosix } from './clean';
 import type { Permissions, RawCommand } from './types';
 
 export function listCommandFiles(repoRoot: string): string[] {
@@ -36,7 +35,7 @@ function parsePermissions(p: unknown, rel: string): Permissions {
 
 export function parseCommand(file: string, repoRoot: string): RawCommand {
   const rel = toPosix(path.relative(repoRoot, file));
-  const { data } = matter(normalizeFrontmatter(fs.readFileSync(file, 'utf8')));
+  const { data } = parseFrontmatter(fs.readFileSync(file, 'utf8'));
   const description = cleanDescription(data.description);
   if (!description) throw new Error(`${rel}: missing description`);
   const category = path.basename(path.dirname(file));
