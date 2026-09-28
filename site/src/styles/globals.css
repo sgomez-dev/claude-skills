@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-night: #0d0d0f;
+  --color-ink: #f4eee4;
+  --color-ink-muted: #b9b2a8;
+  --color-line: rgb(244 238 228 / 0.18);
+  --color-acid: #c6ff3d;
+  --color-pink: #ff5ea8;
+  --color-cyan: #2af5ff;
+  --color-sun: #ffd23d;
+  --color-terra: #d97757;
+  --font-display: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-instrument), ui-serif, Georgia, serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, monospace;
+  --ease-out-soft: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+html {
+  background: var(--color-night);
+  color: var(--color-ink);
+  color-scheme: dark;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+::selection { background: var(--color-acid); color: var(--color-night); }
+:focus-visible { outline: 2px solid var(--color-acid); outline-offset: 3px; border-radius: 4px; }
+
+/* Stickers "stick" once on mount. */
+.sticker { transform: rotate(var(--r, -3deg)); animation: stick 0.5s var(--ease-out-soft) both; }
+@keyframes stick {
+  from { transform: rotate(calc(var(--r, -3deg) - 8deg)) scale(1.18); opacity: 0; }
+}
+
+/* Reveal: hidden only when JS is present, so no-JS readers and crawlers always see content. */
+.js .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s var(--ease-out-soft), transform 0.6s var(--ease-out-soft); }
+.js .reveal.is-in { opacity: 1; transform: none; }
+
+/* Ticker (home). */
+.ticker-track { animation: ticker 48s linear infinite; }
+.ticker:hover .ticker-track, .ticker:focus-within .ticker-track { animation-play-state: paused; }
+@keyframes ticker { to { transform: translateY(-50%); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  .js .reveal { opacity: 1; transform: none; }
+  .ticker-track { animation: none; }
+}
