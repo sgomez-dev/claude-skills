@@ -6,10 +6,14 @@
     "node": ">=22"
   },
   "scripts": {
+    "generate": "tsx scripts/generate.ts",
+    "predev": "npm run generate",
     "dev": "next dev",
+    "prebuild": "npm run generate",
     "build": "next build",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "pretypecheck": "npm run generate",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
