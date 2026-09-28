@@ -6,9 +6,9 @@ authored here.
 - Source repo: <https://github.com/emilkowalski/skills>
 - Tracked ref: `main`
 - Upstream path: `skills/find-animation-opportunities`
-- Vendored commit: `85e8e2363b713506e1d5b6e07a0eb2da66be1bc3`
-- Commit date: 2026-09-15T17:52:10+02:00
-- Synced: 2026-09-16T09:52:30Z
+- Vendored commit: `d16ebe60d09a5ba2afcb7054ede9d0a10c9f6128`
+- Commit date: 2026-09-24T01:18:27+02:00
+- Synced: 2026-09-28T08:17:39Z
 - Scope: public
 
 ## Do not edit by hand

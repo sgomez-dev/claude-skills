@@ -6,9 +6,9 @@ authored here.
 - Source repo: <https://github.com/pbakaus/impeccable>
 - Tracked ref: `main`
 - Upstream path: `.claude/skills/impeccable`
-- Vendored commit: `0a4e72a254f3b175c95b36b82e5f2e60fa63f116`
-- Commit date: 2026-09-15T00:46:19Z
-- Synced: 2026-09-16T09:53:04Z
+- Vendored commit: `9d715cc4f5564a990ca8345abfdd5df6dc9b41c8`
+- Commit date: 2026-09-24T17:50:29-07:00
+- Synced: 2026-09-28T08:18:17Z
 - Scope: public
 
 ## Do not edit by hand

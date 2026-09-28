@@ -6,9 +6,9 @@ authored here.
 - Source repo: <https://github.com/nextlevelbuilder/ui-ux-pro-max-skill>
 - Tracked ref: `main`
 - Upstream path: `.claude/skills/brand`
-- Vendored commit: `15de38fb70bc80ae9276fa7703b48ae861a672e6`
-- Commit date: 2026-09-15T16:29:29+07:00
-- Synced: 2026-09-16T09:52:51Z
+- Vendored commit: `09170eec67eefd46a7ae85de61b40c194020f997`
+- Commit date: 2026-09-27T18:30:41+07:00
+- Synced: 2026-09-28T08:18:03Z
 - Scope: public
 
 ## Do not edit by hand

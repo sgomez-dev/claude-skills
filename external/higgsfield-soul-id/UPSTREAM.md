@@ -6,9 +6,9 @@ authored here.
 - Source repo: <https://github.com/higgsfield-ai/skills>
 - Tracked ref: `main`
 - Upstream path: `higgsfield-soul-id`
-- Vendored commit: `d071406147a37b835bed09543d85ab3e9bd85c7d`
-- Commit date: 2026-09-11T21:15:43+05:00
-- Synced: 2026-09-16T10:07:28Z
+- Vendored commit: `f83af0bc1d937c8119099a11f8ebbf5e6fb99819`
+- Commit date: 2026-09-26T21:43:57+05:00
+- Synced: 2026-09-28T08:18:40Z
 - Scope: public
 
 ## Do not edit by hand

@@ -6,9 +6,9 @@ authored here.
 - Source repo: <https://github.com/Leonxlnx/taste-skill>
 - Tracked ref: `main`
 - Upstream path: `skills/minimalist-skill`
-- Vendored commit: `ccbc15639c97057cbfcf32ecebc38ef716e4bb37`
-- Commit date: 2026-08-24T23:23:56+08:00
-- Synced: 2026-08-26T20:39:57Z
+- Vendored commit: `ce26fc25c0e5e8cab638f883de62d9a86ee5e45b`
+- Commit date: 2026-09-26T11:01:50+02:00
+- Synced: 2026-09-28T08:17:54Z
 - Scope: public
 
 ## Do not edit by hand
