@@ -28,7 +28,7 @@ Two formats, two install targets, two directories:
 
 ## Currently vendored
 
-107 skills from 13 upstream repos, ~34 MB. Grouped by source:
+151 skills from 20 upstream repos, ~39 MB. Grouped by source:
 
 | Upstream | License | Skills |
 |----------|---------|--------|
@@ -45,6 +45,13 @@ Two formats, two install targets, two directories:
 | [Jakeschincariol/instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill) | MIT | `ig-audit` `ig-caption` `ig-carousel` `ig-comment` `ig-dm` `ig-human` `ig-plan` `ig-profile` `ig-reel` `ig-reply` `ig-repurpose` `ig-story` `ig-viral` |
 | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | Apache-2.0 | `hyperframes` `hyperframes-animation` `hyperframes-audio` `hyperframes-cli` `hyperframes-core` `hyperframes-creative` `hyperframes-keyframes` `hyperframes-registry` `embedded-captions` `faceless-explainer` `figma` `general-video` `media-use` `motion-graphics` `music-to-video` |
 | [oso95/scroll-world](https://github.com/oso95/scroll-world) | MIT | `scroll-world` |
+| [Hainrixz/claude-webkit](https://github.com/Hainrixz/claude-webkit) | MIT | `building-components` `chrome-bridge-automation` `deep-research` `humanizer` `playwright-cli` `seo-audit` `vercel-deploy` `vercel-react-best-practices` `web-design-guidelines` `web-reader` |
+| [digitalsamba/claude-code-video-toolkit](https://github.com/digitalsamba/claude-code-video-toolkit) | MIT | `acestep` `elevenlabs` `ffmpeg` `ideogram4` `ltx2` `moviepy` `playwright-recording` `qwen-edit` `remotion` `runpod` |
+| [greensock/gsap-skills](https://github.com/greensock/gsap-skills) | MIT | `gsap-core` `gsap-frameworks` `gsap-performance` `gsap-plugins` `gsap-react` `gsap-scrolltrigger` `gsap-timeline` `gsap-utils` |
+| [nateherkai/hyperframes-student-kit](https://github.com/nateherkai/hyperframes-student-kit) | MIT | `cut-mistakes` `cut-silences` `edit-video` `gsap` `hyperframes-video-beats` `make-a-video` `motion-showreel` `short-form-edit` `short-form-video` `style-library` `video-storytelling` `website-to-hyperframes` |
+| [haidrrrry/claude-remotion-skill](https://github.com/haidrrrry/claude-remotion-skill) | MIT | `remotion-motion-graphics` |
+| [AgriciDaniel/claude-shorts](https://github.com/AgriciDaniel/claude-shorts) | MIT | `shorts` |
+| [browser-use/video-use](https://github.com/browser-use/video-use) | MIT | `video-use` `manim-video` |
 
 Each directory carries an `UPSTREAM.md` recording the exact vendored commit, and
 the upstream `LICENSE`.
@@ -67,6 +74,14 @@ they do anything useful:
 | `ig-reel`, `ig-human`, `ig-caption`, `ig-viral` | Python 3 for their five offline tools (hook scoring, beat sheets, slop detection, caption linting, swipe-file ranking). Standard library only — no packages, no network |
 | `media-use` | The `heygen` CLI (`node scripts/resolve.mjs --doctor` verifies it). Earlier OpenMontage copies of this skill shipped a `curl … \| bash` install; this upstream does not |
 | `hyperframes*`, `embedded-captions`, `music-to-video` | Node and the hyperframes toolchain; ffmpeg for the video paths |
+| `remotion`, `remotion-motion-graphics`, `shorts` | Node and Remotion (`npx remotion`). `shorts` also ships `setup.sh`, which pip-installs faster-whisper, mediapipe and opencv into a venv under `~/` |
+| `elevenlabs`, `video-use` | `ELEVENLABS_API_KEY`. `video-use` also wants ffmpeg and yt-dlp |
+| `acestep`, `ltx2`, `qwen-edit`, `runpod` | A RunPod account and `RUNPOD_API_KEY` — they run GPU models on RunPod (`runpod` also takes S3-style storage keys). `acestep` alternatively takes `ACEMUSIC_API_KEY` |
+| `ideogram4` | `IDEOGRAM_API_KEY` |
+| `manim-video` | `pip install manim` |
+| `chrome-bridge-automation` | Midscene (`npx @midscene/web`) and `MIDSCENE_MODEL_API_KEY` |
+| `web-reader` | The `z-ai-web-dev-sdk` package |
+| `vercel-deploy` | Nothing, but it **uploads your project** to Vercel's claimable-deployment endpoint — the result is a public URL |
 
 ### Names are upstream's, not ours
 

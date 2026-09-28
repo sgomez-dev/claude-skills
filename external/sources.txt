@@ -230,3 +230,89 @@ hyperframes-registry|https://github.com/heygen-com/hyperframes.git|main|skills/h
 media-use|https://github.com/heygen-com/hyperframes.git|main|skills/media-use
 motion-graphics|https://github.com/heygen-com/hyperframes.git|main|skills/motion-graphics
 music-to-video|https://github.com/heygen-com/hyperframes.git|main|skills/music-to-video
+
+# ---------------------------------------------------------------------------
+#  Hainrixz/claude-webkit — MIT
+#  A landing-page builder *template* (CLAUDE.md + docs), not a skill. Only the
+#  bundled skills this repo did not already vendor are tracked. Skipped:
+#  the eight Emil Kowalski skills and ui-ux-pro-max (locally modified copies
+#  that would collide with the upstream ones above), frontend-design
+#  (Anthropic's, ships as a plugin), and shadcn-ui (no stated provenance or
+#  license — tracked in sources.local.txt instead). Several of these are
+#  themselves copies of other upstreams; webkit's repo-level MIT is the grant.
+# ---------------------------------------------------------------------------
+building-components|https://github.com/Hainrixz/claude-webkit.git|main|.claude/skills/building-components
+chrome-bridge-automation|https://github.com/Hainrixz/claude-webkit.git|main|.claude/skills/chrome-bridge-automation
+deep-research|https://github.com/Hainrixz/claude-webkit.git|main|.claude/skills/deep-research
+humanizer|https://github.com/Hainrixz/claude-webkit.git|main|.claude/skills/humanizer
+playwright-cli|https://github.com/Hainrixz/claude-webkit.git|main|.claude/skills/playwright-cli
+seo-audit|https://github.com/Hainrixz/claude-webkit.git|main|.claude/skills/seo-audit
+vercel-deploy|https://github.com/Hainrixz/claude-webkit.git|main|.claude/skills/vercel-deploy
+vercel-react-best-practices|https://github.com/Hainrixz/claude-webkit.git|main|.claude/skills/vercel-react-best-practices
+web-design-guidelines|https://github.com/Hainrixz/claude-webkit.git|main|.claude/skills/web-design-guidelines
+web-reader|https://github.com/Hainrixz/claude-webkit.git|main|.claude/skills/web-reader
+
+# ---------------------------------------------------------------------------
+#  digitalsamba/claude-code-video-toolkit — MIT
+#  AI video production: Remotion patterns, MoviePy, FFmpeg, ElevenLabs voice,
+#  ACE-Step music, LTX-2 / Qwen-Edit / Ideogram generation on RunPod, and
+#  browser screen recording. Skipped: remotion-official (a copy of
+#  remotion-dev/skills, tracked directly in sources.local.txt), frontend-design
+#  (Anthropic's), openclaw-video-toolkit (OpenClaw-specific wrapper).
+# ---------------------------------------------------------------------------
+acestep|https://github.com/digitalsamba/claude-code-video-toolkit.git|main|.claude/skills/acestep
+elevenlabs|https://github.com/digitalsamba/claude-code-video-toolkit.git|main|.claude/skills/elevenlabs
+ffmpeg|https://github.com/digitalsamba/claude-code-video-toolkit.git|main|.claude/skills/ffmpeg
+ideogram4|https://github.com/digitalsamba/claude-code-video-toolkit.git|main|.claude/skills/ideogram4
+ltx2|https://github.com/digitalsamba/claude-code-video-toolkit.git|main|.claude/skills/ltx2
+moviepy|https://github.com/digitalsamba/claude-code-video-toolkit.git|main|.claude/skills/moviepy
+playwright-recording|https://github.com/digitalsamba/claude-code-video-toolkit.git|main|.claude/skills/playwright-recording
+qwen-edit|https://github.com/digitalsamba/claude-code-video-toolkit.git|main|.claude/skills/qwen-edit
+remotion|https://github.com/digitalsamba/claude-code-video-toolkit.git|main|.claude/skills/remotion
+runpod|https://github.com/digitalsamba/claude-code-video-toolkit.git|main|.claude/skills/runpod
+
+# ---------------------------------------------------------------------------
+#  greensock/gsap-skills — MIT
+#  Official GSAP skills: core, timeline, ScrollTrigger, plugins, React.
+#  The motion engine under hyperframes-animation and most web motion here.
+# ---------------------------------------------------------------------------
+gsap-core|https://github.com/greensock/gsap-skills.git|main|skills/gsap-core
+gsap-frameworks|https://github.com/greensock/gsap-skills.git|main|skills/gsap-frameworks
+gsap-performance|https://github.com/greensock/gsap-skills.git|main|skills/gsap-performance
+gsap-plugins|https://github.com/greensock/gsap-skills.git|main|skills/gsap-plugins
+gsap-react|https://github.com/greensock/gsap-skills.git|main|skills/gsap-react
+gsap-scrolltrigger|https://github.com/greensock/gsap-skills.git|main|skills/gsap-scrolltrigger
+gsap-timeline|https://github.com/greensock/gsap-skills.git|main|skills/gsap-timeline
+gsap-utils|https://github.com/greensock/gsap-skills.git|main|skills/gsap-utils
+
+# ---------------------------------------------------------------------------
+#  nateherkai/hyperframes-student-kit — MIT (+ brand-asset carve-out)
+#  Short-form editing on HyperFrames: transcript-driven cuts, silence and
+#  mistake removal, hooks/storytelling, style library, showreels. Skipped:
+#  hyperframes, hyperframes-cli, hyperframes-registry (older copies of the
+#  heygen-com upstream above). The LICENSE excludes the AI Automation Society
+#  brand assets — none of the tracked skill directories ship them.
+# ---------------------------------------------------------------------------
+cut-mistakes|https://github.com/nateherkai/hyperframes-student-kit.git|main|.claude/skills/cut-mistakes
+cut-silences|https://github.com/nateherkai/hyperframes-student-kit.git|main|.claude/skills/cut-silences
+edit-video|https://github.com/nateherkai/hyperframes-student-kit.git|main|.claude/skills/edit-video
+gsap|https://github.com/nateherkai/hyperframes-student-kit.git|main|.claude/skills/gsap
+hyperframes-video-beats|https://github.com/nateherkai/hyperframes-student-kit.git|main|.claude/skills/hyperframes-video-beats
+make-a-video|https://github.com/nateherkai/hyperframes-student-kit.git|main|.claude/skills/make-a-video
+motion-showreel|https://github.com/nateherkai/hyperframes-student-kit.git|main|.claude/skills/motion-showreel
+short-form-edit|https://github.com/nateherkai/hyperframes-student-kit.git|main|.claude/skills/short-form-edit
+short-form-video|https://github.com/nateherkai/hyperframes-student-kit.git|main|.claude/skills/short-form-video
+style-library|https://github.com/nateherkai/hyperframes-student-kit.git|main|.claude/skills/style-library
+video-storytelling|https://github.com/nateherkai/hyperframes-student-kit.git|main|.claude/skills/video-storytelling
+website-to-hyperframes|https://github.com/nateherkai/hyperframes-student-kit.git|main|.claude/skills/website-to-hyperframes
+
+# ---------------------------------------------------------------------------
+#  Single-skill video repos — all MIT
+#  remotion-motion-graphics: Remotion reels/shorts, kinetic type, lower thirds.
+#  shorts (repo claude-shorts): long-form -> short-form with animated captions, AI scoring.
+#  video-use / manim-video: browser-use's agent video editor; Manim explainers.
+# ---------------------------------------------------------------------------
+remotion-motion-graphics|https://github.com/haidrrrry/claude-remotion-skill.git|main|remotion-motion-graphics
+shorts|https://github.com/AgriciDaniel/claude-shorts.git|main|.
+video-use|https://github.com/browser-use/video-use.git|main|.
+manim-video|https://github.com/browser-use/video-use.git|main|skills/manim-video
