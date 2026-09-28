@@ -8,7 +8,7 @@ function Patterns({ items, dict }: { items: string[]; dict: Dictionary }) {
   return (
     <span className="flex flex-wrap gap-1.5">
       {items.slice(0, MAX).map((p) => (
-        <code key={p} className="rounded bg-ink/[0.07] px-1.5 py-0.5 font-mono text-[12px]">{p}</code>
+        <code key={p} className="rounded bg-ink/[0.07] px-1.5 py-0.5 font-mono text-[12px] [overflow-wrap:anywhere]">{p}</code>
       ))}
       {items.length > MAX ? <span className="font-mono text-[12px] text-ink-muted">{dict.skill.perm.more(items.length - MAX)}</span> : null}
     </span>

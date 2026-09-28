@@ -51,7 +51,7 @@ export function InstallTabs({ options, labels }: { options: InstallOption[]; lab
         ))}
       </div>
       <div id={`${id}-panel`} role="tabpanel" aria-labelledby={`${id}-tab-${active}`} className="flex items-start gap-3 p-4">
-        <pre className="min-w-0 flex-1 overflow-x-auto font-mono text-[13px] leading-relaxed text-acid"><code>{current.command}</code></pre>
+        <pre tabIndex={0} aria-label={labels.tabs[current.id]} className="min-w-0 flex-1 overflow-x-auto font-mono text-[13px] leading-relaxed text-acid"><code>{current.command}</code></pre>
         <CopyButton text={current.command} label={labels.copy} copiedLabel={labels.copied} />
       </div>
       {current.bundle ? <p className="px-4 pb-4 text-[13px] text-ink-muted">{fill(labels.pluginNote, { bundle: current.bundle })}</p> : null}
