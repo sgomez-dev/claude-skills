@@ -6,3 +6,6 @@ node_modules/
 # this repo's MIT). See external/README.md.
 external/.local/
 external/sources.local.txt
+
+# Brainstorming companion mockups
+.superpowers/
