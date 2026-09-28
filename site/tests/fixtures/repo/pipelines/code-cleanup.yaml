@@ -1,0 +1,10 @@
+name: Code Cleanup
+description: Dead code removal and DRY fixes
+trigger: /pipeline--code-cleanup
+steps:
+  - name: Dead Code Removal
+    skill: code-quality--dead-code
+    description: Find and remove unused code
+  - name: DRY Analysis
+    skill: code-quality--dry
+    description: Find duplicated code

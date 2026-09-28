@@ -1,0 +1,2 @@
+# private
+secret-skill|https://github.com/example/secret.git|main|.

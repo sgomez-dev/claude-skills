@@ -1,0 +1,7 @@
+{
+  "name": "claude-skills-collection",
+  "plugins": [
+    { "name": "legal-skills", "source": { "source": "git-subdir", "url": "x", "path": "skills/legal" } },
+    { "name": "utility-skills", "source": { "source": "git-subdir", "url": "x", "path": "skills/utils" } }
+  ]
+}
