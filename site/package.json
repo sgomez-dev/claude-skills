@@ -16,7 +16,9 @@
     "pretypecheck": "npm run generate",
     "typecheck": "tsc --noEmit",
     "pretest": "npm run generate",
-    "test": "vitest run"
+    "test": "vitest run",
+    "translations:plan": "npm run generate && tsx scripts/translations.ts plan",
+    "translations:check": "npm run generate && tsx scripts/translations.ts check"
   },
   "dependencies": {
     "gray-matter": "4.0.3",
