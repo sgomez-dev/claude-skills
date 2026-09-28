@@ -63,8 +63,8 @@ $ARGUMENTS   ← replaced with user input
 ## External Skills (third-party)
 
 `external/` holds skills authored in *other* repos, in the **Agent Skill** format — a
-directory with `SKILL.md` plus optional `references/` and `workflows/`. Currently 107
-skills from 13 upstream repos (~34 MB). They are a different thing from the slash
+directory with `SKILL.md` plus optional `references/` and `workflows/`. Currently 151
+skills from 20 upstream repos (~39 MB), plus private ones in `sources.local.txt`. They are a different thing from the slash
 commands in `skills/`:
 
 | | `skills/` | `external/` |

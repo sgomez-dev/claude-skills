@@ -842,7 +842,7 @@ These use the **Agent Skill** format: a directory with `SKILL.md` plus
 format, so they install to `~/.claude/skills/` and are invoked as `/skill-name`
 (or trigger automatically from their description).
 
-**107 skills from 13 upstream repos.** Grouped by source:
+**151 skills from 20 upstream repos.** Grouped by source:
 
 | Upstream | License | What you get |
 |----------|---------|--------------|
@@ -859,6 +859,13 @@ format, so they install to `~/.claude/skills/` and are invoked as `/skill-name`
 | [Jakeschincariol/instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill) | MIT | 13 skills that run an Instagram account: reels, captions, carousels, stories, profile audit, weekly plan, comments, DMs, repurposing, post-mortems, and a humanizer that strips AI slop |
 | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | Apache-2.0 | 15 programmatic-video skills: the hyperframes engine (core, animation, audio, keyframes, registry, CLI) plus captions, motion graphics, music videos, faceless explainers |
 | [oso95/scroll-world](https://github.com/oso95/scroll-world) | MIT | Scroll-scrubbed "fly through the world" landing pages: one continuous camera flight, no cuts |
+| [Hainrixz/claude-webkit](https://github.com/Hainrixz/claude-webkit) | MIT | 10 skills from a landing-page builder: humanizer for copy, SEO audit, Vercel deploy and React best practices, Web Interface Guidelines review, component building, Playwright and Midscene visual QA, web research and page reading |
+| [digitalsamba/claude-code-video-toolkit](https://github.com/digitalsamba/claude-code-video-toolkit) | MIT | 10 video-production skills: Remotion patterns, MoviePy, FFmpeg, ElevenLabs voice, ACE-Step music, LTX-2 / Qwen-Edit / Ideogram generation on RunPod, browser screen recording |
+| [greensock/gsap-skills](https://github.com/greensock/gsap-skills) | MIT | 8 official GSAP skills: core, timeline, ScrollTrigger, plugins, React, frameworks, performance, utils |
+| [nateherkai/hyperframes-student-kit](https://github.com/nateherkai/hyperframes-student-kit) | MIT | 12 short-form editing skills on HyperFrames: transcript-driven cuts, silence and mistake removal, hooks and storytelling, style library, showreels |
+| [haidrrrry/claude-remotion-skill](https://github.com/haidrrrry/claude-remotion-skill) | MIT | Remotion motion graphics: reels, kinetic type, lower thirds, animated captions |
+| [AgriciDaniel/claude-shorts](https://github.com/AgriciDaniel/claude-shorts) | MIT | `shorts`: long-form to short-form with AI segment scoring and Remotion-rendered animated captions |
+| [browser-use/video-use](https://github.com/browser-use/video-use) | MIT | Edit real footage with an agent (`video-use`), plus Manim explainer videos (`manim-video`) |
 
 `./install.sh` installs these alongside the slash commands: nothing extra to run.
 
@@ -866,7 +873,7 @@ Some of them drive an external tool, and vendoring the prompt does not install
 that tool: `impeccable` ships a packaged Node CLI, `agent-browser` needs its npm
 CLI, `agent-reach` needs its Python package, `banana` needs a Gemini API key,
 the `higgsfield-*` skills need a Higgsfield API key, the `ads-*` skills need
-per-platform ad credentials, `media-use` drives the `heygen` CLI, and the
+per-platform ad credentials, `media-use` drives the `heygen` CLI, the Remotion and video-toolkit skills need Node, Python, ffmpeg and in places ElevenLabs or RunPod keys, and the
 `ig-*` pack reads a voice profile you write once at `~/.claude/instagram/voice.md`. See
 [external/README.md](external/README.md#skills-that-need-something-installed).
 

@@ -6,9 +6,9 @@ authored here.
 - Source repo: <https://github.com/heygen-com/hyperframes>
 - Tracked ref: `main`
 - Upstream path: `skills/motion-graphics`
-- Vendored commit: `08d48ab7539e3a21facbe005c0610f2dbc8bf5a5`
-- Commit date: 2026-09-16T06:33:29Z
-- Synced: 2026-09-16T10:09:04Z
+- Vendored commit: `5969c6894ba42f9cc55941503be51af2e96e2b3a`
+- Commit date: 2026-09-28T08:04:14Z
+- Synced: 2026-09-28T08:24:44Z
 - Scope: public
 
 ## Do not edit by hand
