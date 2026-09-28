@@ -51,7 +51,7 @@ export const es: Dictionary = {
       label: 'Filtros', origin: 'Origen', all: 'Todas', command: 'Hechas aquí', external: 'Comunidad',
       group: 'Categoría', allGroups: 'Todas las categorías', network: 'Usa la red',
     },
-    showing: (v, t) => `Mostrando ${v} de ${t}`,
+    showing: 'Mostrando {v} de {t}',
     empty: 'Ninguna skill cumple estos filtros.',
   },
   skill: {
@@ -66,7 +66,7 @@ export const es: Dictionary = {
     invoke: 'Tras instalar con el script, escribe',
     install: 'Instalar',
     tabs: { 'script-unix': 'macOS · Linux', 'script-windows': 'Windows', plugin: 'Plugin de Claude Code' },
-    pluginNote: (bundle) => `Instala el paquete ${bundle} completo.`,
+    pluginNote: 'Instala el paquete {bundle} completo.',
     otherAgents: '¿Usas Cursor, Windsurf o Codex?',
     otherAgentsLink: 'Guías por plataforma',
     permissions: 'Qué puede tocar',

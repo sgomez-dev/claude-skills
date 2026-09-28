@@ -50,7 +50,7 @@ export const en = {
       label: 'Filters', origin: 'Origin', all: 'All', command: 'Built here', external: 'Community',
       group: 'Category', allGroups: 'All categories', network: 'Uses the network',
     },
-    showing: (v: number, t: number) => `Showing ${v} of ${t}`,
+    showing: 'Showing {v} of {t}',
     empty: 'No skill matches these filters.',
   },
   skill: {
@@ -65,7 +65,7 @@ export const en = {
     invoke: 'After installing with the script, type',
     install: 'Install',
     tabs: { 'script-unix': 'macOS · Linux', 'script-windows': 'Windows', plugin: 'Claude Code plugin' },
-    pluginNote: (bundle: string) => `Installs the whole ${bundle} bundle.`,
+    pluginNote: 'Installs the whole {bundle} bundle.',
     otherAgents: 'Using Cursor, Windsurf or Codex?',
     otherAgentsLink: 'Platform guides',
     permissions: 'What it can touch',
