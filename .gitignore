@@ -9,3 +9,4 @@ external/sources.local.txt
 
 # Brainstorming companion mockups
 .superpowers/
+.playwright-mcp/
