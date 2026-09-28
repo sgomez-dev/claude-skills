@@ -4927,6 +4927,122 @@ Open a PR from `feat/skills-site` to `main` only when the user asks.
 
 ---
 
+### Task 18: Copy pass, sticky masthead and logo C (runs right AFTER Task 11)
+
+Added 2026-09-28 at the user's request. The user chose logo concept **C · Comando vivo**: a slash plus a blinking acid block cursor, set in JetBrains Mono. Mockup: `.superpowers/brainstorm/*/content/logo-v2.html`. The user also asked for a fixed navbar and a copy revision.
+
+**Files:**
+- Create: `site/src/components/brand/Logo.tsx`, `site/src/app/icon.svg`, `site/src/app/apple-icon.tsx`, `site/public/brand/isotipo.svg`
+- Modify: `site/src/content/sections.ts` (headlines), `site/src/lib/i18n/dictionaries/{en,es}.ts` (cover lines), `site/src/components/layout/Masthead.tsx` (sticky + Logo), `site/src/styles/globals.css` (cursor, scroll padding)
+
+**Interfaces:**
+- Produces:
+  - `<Logo />`, the wordmark: `/claude-skills` plus the cursor, with accessible name "Claude Skills"
+  - `LOGO_TEXT = '/claude-skills'`, exported from `Logo.tsx`
+  - the favicon served at `/icon.svg` and the Apple touch icon
+  - Task 14 (OG covers) must use `LOGO_TEXT` plus an acid cursor block in its header instead of `claude/skills`.
+
+- [ ] **Step 1: Copy changes (exact values)**
+
+In `site/src/content/sections.ts`, set these `headline` values. All other headlines and every `dek` stay unchanged.
+
+| id | es `{lead, accent}` | en `{lead, accent}` |
+|---|---|---|
+| video | `Edita como un` / `estudio` | `Edit like a` / `studio` |
+| web | `Webs con` / `oficio` | `Websites with` / `craft` |
+| brand | `Una marca con` / `voz propia` | `A brand with` / `its own voice` |
+| sales | `Ventas en` / `piloto automático` | `Sales on` / `autopilot` |
+| business | `Negocio` / `en orden` | `Business,` / `in order` |
+| ai | `Agentes que` / `trabajan` | `Agents that` / `get to work` |
+| code | `Código` / `sin drama` | `Code,` / `minus the drama` |
+
+In `home.coverLines`:
+- es: `business` → `Contratos revisados antes de firmar`; `sales` → `Prospección que llena la agenda`; `web` → `Webs con oficio`. `video` stays.
+- en: `business` → `Contracts checked before you sign`; `sales` → `Prospecting that fills your calendar`; `web` → `Websites with craft`. `video` stays.
+
+- [ ] **Step 2: Logo, isotipo and favicon**
+
+`site/src/components/brand/Logo.tsx`:
+```tsx
+export const LOGO_TEXT = '/claude-skills';
+
+/** Logo C · "Comando vivo": the command you are about to type. Cursor blinks; static with reduced motion. */
+export function Logo({ className = '' }: { className?: string }) {
+  return (
+    <span aria-label="Claude Skills" role="img" className={`inline-flex items-center font-mono text-[19px] font-bold tracking-[-0.04em] ${className}`}>
+      <span aria-hidden className="text-ink-muted">/</span>
+      <span aria-hidden>claude-skills</span>
+      <span aria-hidden className="logo-cursor" />
+    </span>
+  );
+}
+```
+
+Add to `site/src/styles/globals.css`, above the reduced-motion block:
+```css
+html { scroll-padding-top: 4.5rem; }
+.logo-cursor { display: inline-block; width: 0.5em; height: 0.95em; margin-left: 0.18em; border-radius: 2px; background: var(--color-acid); vertical-align: -0.12em; animation: blink 1.05s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+```
+Inside the reduced-motion block, add: `.logo-cursor { animation: none; }`.
+
+`site/public/brand/isotipo.svg` and `site/src/app/icon.svg` get the same content, the static cursor version:
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect x="2" y="2" width="60" height="60" rx="14" fill="#0d0d0f" stroke="#f4eee4" stroke-width="3"/><polygon points="26,12 36,12 22,52 12,52" fill="#f4eee4"/><rect x="38" y="30" width="14" height="22" rx="2" fill="#c6ff3d"/></svg>
+```
+
+`site/src/app/apple-icon.tsx`:
+```tsx
+import { ImageResponse } from 'next/og';
+
+export const size = { width: 180, height: 180 };
+export const contentType = 'image/png';
+export const dynamic = 'force-static';
+
+export default function AppleIcon() {
+  return new ImageResponse(
+    (
+      <div style={{ width: '100%', height: '100%', display: 'flex', background: '#0d0d0f' }}>
+        <svg width="180" height="180" viewBox="0 0 64 64">
+          <polygon points="26,12 36,12 22,52 12,52" fill="#f4eee4" />
+          <rect x="38" y="30" width="14" height="22" rx="2" fill="#c6ff3d" />
+        </svg>
+      </div>
+    ),
+    size,
+  );
+}
+```
+
+- [ ] **Step 3: Sticky masthead with the logo**
+
+In `Masthead.tsx`:
+- replace the `claude/skills` text inside the home `<Link>` with `<Logo />`, and give the Link `aria-label={dict.nav.home}` (the logo's own name stays "Claude Skills");
+- make the `<header>`: `sticky top-0 z-40 border-b-2 border-ink bg-night/85 backdrop-blur-md supports-[backdrop-filter]:bg-night/70`.
+
+The skip link, the search trigger (Task 12) and the language switch keep working inside it. The grain overlay in Task 17 sits at z-index 70, above the header, which is intended.
+
+- [ ] **Step 4: Verify**
+
+Run `npm run typecheck && npm test && npm run build`. The build lists `/icon.svg` and `/apple-icon` as static routes.
+
+With `npm run dev` and the Playwright MCP browser, at 1440 and 375 px:
+- The header stays fixed while scrolling on `/es`, `/es/web` and a skill page, and the content underneath is never hidden (check the skip link and `#main` anchor with the scroll padding).
+- The cursor blinks, and is static under reduced-motion emulation.
+- `<link rel="icon" href="/icon.svg…">` and an apple-touch-icon link are present in the page `<head>`, and `GET /icon.svg` returns 200.
+- The new headlines show on the home index and on `/es/web` and `/en/business`.
+
+Take screenshots under `.playwright-mcp/task18-*.png` and look at them.
+
+- [ ] **Step 5: Commit**
+
+```bash
+git add site/
+git commit -m "feat(site): logo C (command + cursor), favicon, sticky masthead, copy pass"
+```
+
+---
+
 ### Task 17: Motion layer (runs AFTER Task 15 and BEFORE Task 16)
 
 Added 2026-09-28 at the user's request (spec §6.1, approved: all five layers). It runs after Task 15 so its e2e and Lighthouse harness exists, and before Task 16 so production ships with it.
