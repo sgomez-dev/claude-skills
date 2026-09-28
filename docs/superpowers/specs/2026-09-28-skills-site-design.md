@@ -61,12 +61,12 @@ repo/
 ├── skills/  external/  pipelines/          ← fuente de verdad (ya existe)
 └── site/                                   ← nuevo
     ├── scripts/build-catalog.ts            ← repo → catalog.json
-    ├── scripts/translate-catalog.ts        ← descripciones EN → ES, con caché
+    ├── scripts/translations.ts             ← lista de trabajo y validación (sin API)
     ├── content/
     │   ├── sections.ts                     ← 9 secciones y mapeo de categorías
     │   ├── {es,en}/sections/*.mdx          ← titular, entradilla, reportaje
     │   ├── {es,en}/recipes/*.mdx           ← recetas del onboarding
-    │   ├── es/skills/*.json                ← traducciones cacheadas (hash del original)
+    │   ├── i18n/skills/*.json              ← traducciones cacheadas (hash del original)
     │   └── demos/*.json                    ← metadatos y procedencia de cada demo
     ├── src/app/[lang]/…                    ← rutas (App Router)
     └── src/components/…
@@ -112,15 +112,28 @@ en estos casos:
   o de cualquier ruta bajo `.local`. El script **no lee** esas rutas; esta comprobación es
   un cinturón de seguridad por si lo hiciera.
 
-### 3.2 Traducción (`translate-catalog.ts`)
+### 3.2 Traducción: se hace en Claude Code, sin API
 
-Las descripciones originales están en inglés. El script traduce al español con la API de
-Claude (`claude-sonnet-5`) solo las entradas cuyo hash no esté en la caché
-`content/es/skills/<slug>.json`, y guarda `{ sourceHash, description, howToAsk[] }`. Los
-prompts de ejemplo "cómo pedírselo" se generan en la misma llamada. Se ejecuta en local
-(necesita `ANTHROPIC_API_KEY`) y la caché se versiona. El build de CI **no** traduce: si
-falta una traducción, cae al inglés con `lang="en"` en ese bloque y avisa. Las fichas de
-las skills del escaparate se revisan a mano.
+**Restricción dura: cero llamadas a la API de Anthropic ni a ningún servicio de pago.**
+Ni en el código, ni en scripts, ni en CI. No hay SDK de Anthropic entre las dependencias
+ni se usa `ANTHROPIC_API_KEY`.
+
+Las descripciones originales están en inglés. El trabajo se reparte así:
+
+1. `site/scripts/translations.ts plan` compara el catálogo con la caché
+   `content/i18n/skills/<slug>.json` y escribe `.generated/translation-worklist.json` con
+   las entradas que faltan o cuyo `sourceHash` ya no coincide con la descripción actual.
+2. **Una sesión de Claude Code**, o sus subagentes por lotes, lee la lista de trabajo y
+   escribe cada JSON con este formato:
+   `{ sourceHash, es: { description, howToAsk[3] }, en: { howToAsk[3] } }`.
+   Los prompts "cómo pedírselo" se escriben en el mismo paso. Es trabajo de desarrollo
+   hecho con la suscripción de Claude Code, no una llamada en runtime.
+3. `site/scripts/translations.ts check` valida el esquema y el hash de cada fichero. Se
+   ejecuta en CI.
+
+La caché se versiona en git. El build **nunca** traduce: si una entrada falta o está
+desactualizada, ese bloque cae al inglés con `lang="en"`, y `check` lo lista como aviso,
+no como error. Las fichas de las skills del escaparate se revisan a mano.
 
 ### 3.3 Secciones
 
@@ -274,7 +287,7 @@ contenido está en HTML, así que la página se lee y se indexa sin JavaScript.
   tipados, de modo que falta una clave y el build falla.
 - El selector de idioma lleva a la misma página en el otro idioma.
 - El contenido editorial (secciones, reportajes, recetas) se escribe en los dos idiomas.
-  Las descripciones de skills en ES salen de la caché de traducción (§3.2).
+  Las descripciones de skills en ES salen de la caché de traducción, escrita en Claude Code (§3.2).
 
 ## 9. Verificación
 
@@ -324,8 +337,9 @@ Cada fase tiene su propio plan de implementación y termina en algo desplegable.
 | Riesgo | Mitigación |
 |---|---|
 | Compatibilidad de OpenNext con Next 16 | Se verifica en la primera tarea del plan de la fase 1, con un "hello world" desplegado. Si falla, se baja a la última versión de Next que OpenNext soporte. |
-| Calidad de 478 traducciones automáticas | Revisión manual del escaparate; el resto lleva un sistema de reporte en la ficha ("¿mejorar traducción?" → issue de GitHub). |
+| Calidad de 478 traducciones hechas en Claude Code | Revisión manual del escaparate; el resto lleva un sistema de reporte en la ficha ("¿mejorar traducción?" → issue de GitHub). |
 | Peso de video | R2 más `preload="none"`, AV1 y ninguna reproducción fuera de viewport. |
 | Claude Code no es gratis | Se dice al principio de `/empieza`. Ocultarlo rompería la confianza, que es el activo de la web. |
 | Licencias de las demos | Solo con skills publicables. El sello de procedencia hace el origen auditable. |
 | Bloqueo de bots de IA en Cloudflare | Checklist de despliegue con comprobación por `curl` (§7). |
+| Costes inesperados | Cero APIs de pago (§3.2). Cloudflare en su plan gratuito: Workers con 100k peticiones/día y R2 con 10 GB y sin coste de salida. La cuenta de Cloudflare es la personal de `sgomez.dev`, no una de empresa. |
