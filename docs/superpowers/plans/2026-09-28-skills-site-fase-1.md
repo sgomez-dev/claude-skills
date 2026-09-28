@@ -4927,6 +4927,534 @@ Open a PR from `feat/skills-site` to `main` only when the user asks.
 
 ---
 
+### Task 17: Motion layer (runs AFTER Task 15 and BEFORE Task 16)
+
+Added 2026-09-28 at the user's request (spec §6.1, approved: all five layers). It runs after Task 15 so its e2e and Lighthouse harness exists, and before Task 16 so production ships with it.
+
+**Files:**
+- Create: `site/src/lib/motion/gsap.ts`, `site/src/lib/motion/intro-key.ts`, `site/src/components/motion/CoverIntro.tsx`, `site/src/components/motion/KineticHeadline.tsx`, `site/src/components/motion/ScrubNumber.tsx`, `site/src/components/motion/Tilt.tsx`, `site/src/components/motion/VelocityMarquee.tsx`, `site/src/components/motion/CountUp.tsx`, `site/tests/e2e/motion.spec.ts`
+- Create only if `@types/react` lacks `ViewTransition`: `site/src/types/react-view-transition.d.ts`
+- Modify: `site/src/styles/globals.css` (motion section), `site/src/app/[lang]/layout.tsx` (inline script), `site/src/components/ui/Sticker.tsx` (`intro` prop), `site/src/components/ui/CopyButton.tsx` (burst), `site/src/components/skill/SkillCard.tsx` (Tilt, sweep, ViewTransition), `site/src/components/home/Cover.tsx`, `site/src/components/home/CommandTicker.tsx` (drum), `site/src/components/home/SectionIndex.tsx` (CountUp, ViewTransition), `site/src/components/home/StatsStrip.tsx` (CountUp on the total), `site/src/app/[lang]/page.tsx` (CoverIntro, VelocityMarquee), `site/src/app/[lang]/[section]/page.tsx` (KineticHeadline, ScrubNumber, ViewTransition), `site/src/app/[lang]/s/[slug]/page.tsx` (ViewTransition on h1)
+
+**Interfaces:**
+- Consumes: every component from Tasks 6, 9, 10 and 11; `gsap@3.15.0` (core, `gsap/ScrollTrigger` and `gsap/SplitText` are all free in 3.13+); `motion/react` (Task 10).
+- Produces:
+  - `loadGsap(): Promise<{ gsap; ScrollTrigger; SplitText }>` (idempotent, registers plugins once)
+  - `INTRO_KEY = 'cs-intro'`
+  - `document.documentElement.dataset.intro` ∈ `'played' | 'skipped'` (used by e2e)
+  - class `intro-pending` on `<html>` while the intro is armed
+
+**Reference before coding:** read `external/gsap-core/SKILL.md`, `external/gsap-scrolltrigger/SKILL.md`, `external/gsap-plugins/SKILL.md` (SplitText) and `external/gsap-performance/SKILL.md`, plus `external/emil-design-eng/SKILL.md` for easing and duration taste. Where they disagree with this task on a *value* (duration, ease), this task wins; where they flag a *correctness* issue (cleanup, layout thrash), follow them and note it in the report.
+
+- [ ] **Step 1: Install GSAP**
+
+```bash
+npm i --save-exact gsap@3.15.0
+```
+
+- [ ] **Step 2: Write the failing e2e spec**
+
+`site/tests/e2e/motion.spec.ts`:
+```ts
+import { gzipSync } from 'node:zlib';
+import { expect, test } from '@playwright/test';
+
+const introState = (page: import('@playwright/test').Page) => page.evaluate(() => document.documentElement.dataset.intro);
+
+test('intro plays once per session and never hides the claim text', async ({ page }) => {
+  await page.goto('/en');
+  await expect(page.locator('h1')).toContainText('Nobody knows');
+  await expect.poll(() => introState(page), { timeout: 5000 }).toBe('played');
+  await expect(page.locator('html')).not.toHaveClass(/intro-pending/);
+  await page.reload();
+  await expect.poll(() => introState(page)).toBe('skipped');
+});
+
+test('reduced motion: no intro, no split text, static marquee', async ({ browser }) => {
+  const ctx = await browser.newContext({ reducedMotion: 'reduce' });
+  const page = await ctx.newPage();
+  await page.goto('/en');
+  await expect.poll(() => introState(page)).toBe('skipped');
+  await expect(page.locator('html')).not.toHaveClass(/intro-pending/);
+  expect(await page.locator('.marquee-track').first().evaluate((el) => getComputedStyle(el).animationName)).toBe('none');
+  await page.goto('/en/video');
+  const h1 = page.getByRole('heading', { level: 1 });
+  await expect(h1).toBeVisible();
+  expect(await h1.locator('div, span[style]').count()).toBe(0); // SplitText never ran
+  await ctx.close();
+});
+
+test('kinetic headline stays accessible and becomes visible', async ({ page }) => {
+  await page.goto('/es/business');
+  const h1 = page.getByRole('heading', { level: 1 });
+  await expect(h1).toBeVisible({ timeout: 3000 });
+  await expect(h1).toHaveAccessibleName(/Letra\s+pequeña/);
+});
+
+test('navigating from a card starts a view transition', async ({ page }) => {
+  await page.goto('/en/business');
+  await page.evaluate(() => {
+    const w = window as unknown as { __vt: number };
+    w.__vt = 0;
+    const original = document.startViewTransition?.bind(document);
+    if (original) {
+      document.startViewTransition = ((arg: Parameters<typeof original>[0]) => {
+        w.__vt += 1;
+        return original(arg);
+      }) as typeof document.startViewTransition;
+    }
+  });
+  await page.locator('main a[href^="/en/s/"]').first().click();
+  await expect(page).toHaveURL(/\/en\/s\//);
+  expect(await page.evaluate(() => (window as unknown as { __vt: number }).__vt)).toBeGreaterThan(0);
+});
+
+test('copy shows a short burst', async ({ page, context }) => {
+  await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+  await page.goto('/en/s/legal--contract-review');
+  await page.getByRole('tabpanel').getByRole('button', { name: 'Copy' }).click();
+  await expect(page.locator('.burst')).toHaveCount(1);
+  await expect(page.locator('.burst')).toHaveCount(0, { timeout: 2000 });
+});
+
+test('JS stays within budget with the motion layer loaded', async ({ page, request }) => {
+  for (const path of ['/en', '/en/video']) {
+    const urls = new Set<string>();
+    const onResponse = (r: import('@playwright/test').Response) => {
+      if (r.request().resourceType() === 'script') urls.add(r.url());
+    };
+    page.on('response', onResponse);
+    await page.goto(path);
+    await page.waitForLoadState('networkidle');
+    page.off('response', onResponse);
+    let total = 0;
+    for (const u of urls) total += gzipSync(await (await request.get(u)).body()).length;
+    expect(total, `${path} gzip JS bytes`).toBeLessThanOrEqual(165 * 1024);
+  }
+});
+```
+
+Run: `npx playwright test tests/e2e/motion.spec.ts --project=desktop`
+Expected: FAIL (no `data-intro`, no `.marquee-track`, no `.burst`).
+
+- [ ] **Step 3: GSAP loader and intro key**
+
+`site/src/lib/motion/intro-key.ts`:
+```ts
+export const INTRO_KEY = 'cs-intro';
+```
+
+`site/src/lib/motion/gsap.ts`:
+```ts
+let loading: Promise<{
+  gsap: typeof import('gsap').gsap;
+  ScrollTrigger: typeof import('gsap/ScrollTrigger').ScrollTrigger;
+  SplitText: typeof import('gsap/SplitText').SplitText;
+}> | null = null;
+
+/** Lazy, idempotent. Keeps GSAP out of the first-load bundle. */
+export function loadGsap() {
+  loading ??= Promise.all([import('gsap'), import('gsap/ScrollTrigger'), import('gsap/SplitText')]).then(([g, st, sp]) => {
+    g.gsap.registerPlugin(st.ScrollTrigger, sp.SplitText);
+    return { gsap: g.gsap, ScrollTrigger: st.ScrollTrigger, SplitText: sp.SplitText };
+  });
+  return loading;
+}
+
+export function prefersReducedMotion(): boolean {
+  return typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+```
+
+- [ ] **Step 4: Arm the intro before first paint (layout)**
+
+In `site/src/app/[lang]/layout.tsx`, add `import { INTRO_KEY } from '@/lib/motion/intro-key';` and replace the inline script's `__html` with:
+```tsx
+`(function(){var d=document.documentElement;d.classList.add('js');try{if(/^\\/(es|en)\\/?$/.test(location.pathname)&&!sessionStorage.getItem('${INTRO_KEY}')&&!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('intro-pending');setTimeout(function(){d.classList.remove('intro-pending')},3000)}}catch(e){}})()`
+```
+The 3 s timeout is the failsafe: if GSAP never loads, nothing stays hidden.
+
+- [ ] **Step 5: Motion CSS**
+
+Append to `site/src/styles/globals.css` (before the existing reduced-motion block), and extend that block as shown:
+```css
+/* ---------- Motion layer (spec §6.1) ---------- */
+
+/* 1. Intro: states held only while <html> is intro-pending. */
+.intro-pending [data-intro='rule'],
+.intro-pending [data-intro='highlight-bg'] { transform: scaleX(0); transform-origin: left center; }
+.intro-pending [data-intro='accent'] { clip-path: inset(0 100% 0 0); }
+.intro-pending [data-intro='sticker'] { opacity: 0; }
+.sticker[data-intro] { animation: none; }
+
+/* 2. Kinetic headline: hidden until split, with a failsafe. */
+.js [data-kinetic] { visibility: hidden; animation: kinetic-failsafe 0s 1.2s forwards; }
+@keyframes kinetic-failsafe { to { visibility: visible; } }
+
+/* 3. View transitions */
+::view-transition-group(*) { animation-duration: 0.45s; animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); }
+
+/* 4. Interaction */
+.sticker { transition: transform 0.2s var(--ease-out-soft), box-shadow 0.2s var(--ease-out-soft); }
+.sticker:hover { transform: rotate(calc(var(--r, -3deg) + 4deg)) translateY(-3px) scale(1.04); box-shadow: 0 9px 0 rgba(0, 0, 0, 0.35); }
+.card-sweep { position: relative; isolation: isolate; }
+.card-sweep::before {
+  content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(115deg, transparent 38%, color-mix(in srgb, var(--accent) 16%, transparent) 50%, transparent 62%);
+  background-size: 260% 100%; background-position: 100% 0;
+  transition: background-position 0.6s var(--ease-out-soft);
+}
+.card-sweep:hover::before, .card-sweep:focus-visible::before { background-position: 0 0; }
+.burst { position: absolute; inset: 50% auto auto 50%; pointer-events: none; }
+.burst i {
+  position: absolute; width: 6px; height: 6px; border-radius: 9999px; background: var(--color-acid);
+  animation: burst 0.6s var(--ease-out-soft) forwards;
+}
+@keyframes burst {
+  from { transform: rotate(var(--a)) translateX(0) scale(1); opacity: 1; }
+  to { transform: rotate(var(--a)) translateX(26px) scale(0.2); opacity: 0; }
+}
+
+/* 5. Living cover */
+.marquee-track { animation: marquee 32s linear infinite; }
+@keyframes marquee { to { transform: translateX(-100%); } }
+.drum { perspective: 700px; }
+.drum-viewport { transform: rotateX(9deg); mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 78%, transparent); }
+body::after {
+  content: ''; position: fixed; inset: -50%; z-index: 70; pointer-events: none; opacity: 0.055;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grain 1s steps(6) infinite;
+}
+@keyframes grain {
+  0% { transform: translate(0, 0); } 20% { transform: translate(-3%, 2%); } 40% { transform: translate(2%, -3%); }
+  60% { transform: translate(-2%, -1%); } 80% { transform: translate(3%, 3%); } 100% { transform: translate(0, 0); }
+}
+```
+Inside the existing `@media (prefers-reduced-motion: reduce)` block, add:
+```css
+  .js [data-kinetic] { visibility: visible; animation: none; }
+  .marquee-track, body::after { animation: none; }
+  .drum-viewport { transform: none; }
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+  .sticker:hover { transform: rotate(var(--r, -3deg)); }
+```
+
+- [ ] **Step 6: Layer 1 — CoverIntro and Cover hooks**
+
+`site/src/components/motion/CoverIntro.tsx`:
+```tsx
+'use client';
+import type { gsap as Gsap } from 'gsap';
+import { useEffect } from 'react';
+import { loadGsap } from '@/lib/motion/gsap';
+import { INTRO_KEY } from '@/lib/motion/intro-key';
+
+const INTERRUPT = ['pointerdown', 'keydown', 'wheel', 'touchstart'] as const;
+
+/** ~1.4 s magazine opening. Only animates transforms, clip and backgrounds: h1 text paints immediately. */
+export function CoverIntro() {
+  useEffect(() => {
+    const root = document.documentElement;
+    if (!root.classList.contains('intro-pending')) {
+      root.dataset.intro = 'skipped';
+      return;
+    }
+    let tl: Gsap.core.Timeline | undefined;
+    let cancelled = false;
+    const finish = () => tl?.progress(1);
+    void loadGsap().then(({ gsap }) => {
+      if (cancelled) return;
+      const q = (k: string) => gsap.utils.toArray<HTMLElement>(`[data-intro="${k}"]`);
+      tl = gsap.timeline({ defaults: { ease: 'power3.out' }, onComplete: () => { root.dataset.intro = 'played'; } });
+      tl.fromTo(q('rule'), { scaleX: 0 }, { scaleX: 1, duration: 0.6, transformOrigin: 'left center' })
+        .fromTo(q('accent'), { clipPath: 'inset(0 100% 0 0)' }, { clipPath: 'inset(0 0% 0 0)', duration: 0.5 }, '-=0.25')
+        .fromTo(q('highlight-bg'), { scaleX: 0 }, { scaleX: 1, duration: 0.45, transformOrigin: 'left center' }, '-=0.15')
+        .fromTo(q('sticker'), { y: -40, scale: 1.2, autoAlpha: 0 }, { y: 0, scale: 1, autoAlpha: 1, duration: 0.5, stagger: 0.12, ease: 'back.out(2)', clearProps: 'transform,opacity,visibility' }, '-=0.1');
+      root.classList.remove('intro-pending');
+      try { sessionStorage.setItem(INTRO_KEY, '1'); } catch { /* private mode */ }
+      INTERRUPT.forEach((e) => window.addEventListener(e, finish, { once: true, passive: true }));
+    });
+    return () => {
+      cancelled = true;
+      tl?.kill();
+      INTERRUPT.forEach((e) => window.removeEventListener(e, finish));
+    };
+  }, []);
+  return null;
+}
+```
+
+In `Masthead.tsx`, change the header to `<header className="relative">` (drop `border-b-2 border-ink`), and add as its last child:
+```tsx
+<span aria-hidden data-intro="rule" className="absolute inset-x-0 bottom-0 block h-0.5 origin-left bg-ink" />
+```
+
+In `Sticker.tsx`, add an optional `intro?: boolean` prop, rendered as `data-intro={intro ? 'sticker' : undefined}`.
+
+In `Cover.tsx`:
+- give the accent `<em>` the attribute `data-intro="accent"`;
+- replace the highlight span with:
+```tsx
+<span className="relative isolate mt-2 inline-block -rotate-2 px-3.5 pb-1.5 text-night">
+  <span aria-hidden data-intro="highlight-bg" className="absolute inset-0 -z-10 rounded-[18px] bg-acid" />
+  {c.highlight}
+</span>
+```
+- pass `intro` to both `<Sticker>`s.
+
+- [ ] **Step 7: Layer 2 — KineticHeadline and ScrubNumber**
+
+`site/src/components/motion/KineticHeadline.tsx`:
+```tsx
+'use client';
+import { useEffect, useRef, type ReactNode } from 'react';
+import { loadGsap, prefersReducedMotion } from '@/lib/motion/gsap';
+
+export function KineticHeadline({ children, className = '' }: { children: ReactNode; className?: string }) {
+  const ref = useRef<HTMLHeadingElement>(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    if (prefersReducedMotion()) {
+      el.style.visibility = 'visible';
+      return;
+    }
+    let split: { revert: () => void } | undefined;
+    let cancelled = false;
+    void loadGsap().then(({ gsap, SplitText }) => {
+      if (cancelled) return;
+      const s = SplitText.create(el, { type: 'words,chars', mask: 'chars', aria: 'auto' });
+      split = s;
+      gsap.set(el, { visibility: 'visible' });
+      gsap.from(s.chars, { yPercent: 110, duration: 0.7, stagger: 0.018, ease: 'power4.out' });
+    });
+    return () => {
+      cancelled = true;
+      split?.revert();
+    };
+  }, []);
+  return <h1 ref={ref} data-kinetic className={className}>{children}</h1>;
+}
+```
+
+`site/src/components/motion/ScrubNumber.tsx`:
+```tsx
+'use client';
+import { useEffect, useRef } from 'react';
+import { loadGsap, prefersReducedMotion } from '@/lib/motion/gsap';
+
+/** Giant outline section number that drifts with scroll (scrub, never hijacks scroll). */
+export function ScrubNumber({ value }: { value: string }) {
+  const ref = useRef<HTMLSpanElement>(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || prefersReducedMotion()) return;
+    let kill: (() => void) | undefined;
+    let cancelled = false;
+    void loadGsap().then(({ gsap }) => {
+      if (cancelled || !el.parentElement) return;
+      const tween = gsap.to(el, { yPercent: 35, ease: 'none', scrollTrigger: { trigger: el.parentElement, start: 'top top', end: 'bottom top', scrub: true } });
+      kill = () => { tween.scrollTrigger?.kill(); tween.kill(); };
+    });
+    return () => { cancelled = true; kill?.(); };
+  }, []);
+  return (
+    <span ref={ref} aria-hidden className="pointer-events-none absolute -top-6 right-0 -z-10 select-none font-display text-[clamp(8rem,30vw,24rem)] font-extrabold leading-none tracking-[-0.06em] text-transparent [-webkit-text-stroke:1.5px_rgb(244_238_228/0.16)]">
+      {value}
+    </span>
+  );
+}
+```
+
+In `site/src/app/[lang]/[section]/page.tsx`:
+- make the `<header>` `relative isolate overflow-hidden border-b-2 border-ink pb-10`;
+- add `<ScrubNumber value={def.number} />` as its first child;
+- replace the `<h1 …>` element with `<KineticHeadline className="…same classes…">`, keeping its children;
+- wrap that headline in `<ViewTransition name={`section-${def.id}`}>` (Step 8).
+
+- [ ] **Step 8: Layer 3 — View transitions**
+
+Import `ViewTransition` from `'react'` (Next 16 App Router bundles a React build that exports it; no config needed). If `npm run typecheck` reports that `react` has no exported member `ViewTransition`, create `site/src/types/react-view-transition.d.ts`:
+```ts
+import 'react';
+
+declare module 'react' {
+  export const ViewTransition: React.FC<{ name?: string; children: React.ReactNode; default?: string; enter?: string; exit?: string; update?: string; share?: string }>;
+}
+```
+Wrap:
+- in `SkillCard.tsx`, the `/{slug}` span: `<ViewTransition name={`skill-${slug}`}>…</ViewTransition>`;
+- in the skill page, the `<h1>`: same name `skill-${skill.slug}`;
+- in `SectionIndex.tsx`, the headline span: `section-${s.id}`;
+- in the section page, the `KineticHeadline`: `section-${def.id}`.
+No name may appear twice on one page. The ticker does not use `SkillCard`, so its duplicated rows are safe.
+
+- [ ] **Step 9: Layer 4 — Tilt, sweep, sticker peel, copy burst**
+
+`site/src/components/motion/Tilt.tsx`:
+```tsx
+'use client';
+import { motion, useReducedMotion, useSpring } from 'motion/react';
+import { useEffect, useState, type ReactNode } from 'react';
+
+/** Magnetic tilt, fine pointers only; plain div otherwise. */
+export function Tilt({ children, className = '' }: { children: ReactNode; className?: string }) {
+  const reduce = useReducedMotion();
+  const [fine, setFine] = useState(false);
+  const rx = useSpring(0, { stiffness: 260, damping: 22 });
+  const ry = useSpring(0, { stiffness: 260, damping: 22 });
+  useEffect(() => setFine(window.matchMedia('(pointer: fine)').matches), []);
+  if (reduce || !fine) return <div className={className}>{children}</div>;
+  return (
+    <motion.div
+      className={className}
+      style={{ rotateX: rx, rotateY: ry, transformPerspective: 800 }}
+      onPointerMove={(e) => {
+        const r = e.currentTarget.getBoundingClientRect();
+        ry.set(((e.clientX - r.left) / r.width - 0.5) * 8);
+        rx.set(-((e.clientY - r.top) / r.height - 0.5) * 8);
+      }}
+      onPointerLeave={() => { rx.set(0); ry.set(0); }}
+    >
+      {children}
+    </motion.div>
+  );
+}
+```
+
+In `SkillCard.tsx`: wrap the `<Link>` in `<Tilt className="h-full">`, add `card-sweep` to the Link's classes and `style={{ '--accent': COLORS[accent] } as CSSProperties}` (import `COLORS` from `@/lib/design/tokens`).
+
+In `CopyButton.tsx`: add `relative` to the button classes and a `burst` state. On a successful copy, set `burst` to `Date.now()` and clear it after 700 ms. While it is set, render inside the button:
+```tsx
+{burst ? (
+  <span key={burst} className="burst" aria-hidden>
+    {Array.from({ length: 8 }, (_, i) => <i key={i} style={{ '--a': `${i * 45}deg` } as CSSProperties} />)}
+  </span>
+) : null}
+```
+With reduced motion the global rule collapses the animation to one frame, so no burst is visible.
+
+- [ ] **Step 10: Layer 5 — Marquee, count-up, drum, grain**
+
+`site/src/components/motion/VelocityMarquee.tsx`:
+```tsx
+'use client';
+import { useEffect, useRef } from 'react';
+import { loadGsap, prefersReducedMotion } from '@/lib/motion/gsap';
+
+/** Decorative band (aria-hidden: its text already appears as the "In this issue" list). Skews with scroll velocity. */
+export function VelocityMarquee({ items }: { items: string[] }) {
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || prefersReducedMotion()) return;
+    let kill: (() => void) | undefined;
+    let cancelled = false;
+    void loadGsap().then(({ gsap, ScrollTrigger }) => {
+      if (cancelled) return;
+      const skew = gsap.quickTo(el, 'skewX', { duration: 0.5, ease: 'power3' });
+      let idle: ReturnType<typeof setTimeout> | undefined;
+      const st = ScrollTrigger.create({
+        onUpdate: (self) => {
+          skew(gsap.utils.clamp(-8, 8, self.getVelocity() / -250));
+          clearTimeout(idle);
+          idle = setTimeout(() => skew(0), 120);
+        },
+      });
+      kill = () => { clearTimeout(idle); st.kill(); };
+    });
+    return () => { cancelled = true; kill?.(); };
+  }, []);
+  const text = items.join('  ✦  ');
+  const Track = () => (
+    <div className="marquee-track flex shrink-0 gap-10 pr-10 font-display text-[clamp(1.5rem,4vw,3rem)] font-extrabold uppercase tracking-[-0.02em]">
+      <span>{text}</span><span>{text}</span>
+    </div>
+  );
+  return (
+    <div aria-hidden className="mt-4 overflow-hidden border-y-2 border-ink bg-acid py-3 text-night">
+      <div ref={ref} className="flex w-max will-change-transform"><Track /><Track /></div>
+    </div>
+  );
+}
+```
+
+`site/src/components/motion/CountUp.tsx`:
+```tsx
+'use client';
+import { useEffect, useRef } from 'react';
+import { prefersReducedMotion } from '@/lib/motion/gsap';
+
+/** Server renders the final number; counts up from 0 only if it starts off-screen. */
+export function CountUp({ value, className = '' }: { value: number; className?: string }) {
+  const ref = useRef<HTMLSpanElement>(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || prefersReducedMotion()) return;
+    if (el.getBoundingClientRect().top < window.innerHeight) return;
+    el.textContent = '0';
+    let raf = 0;
+    const io = new IntersectionObserver(([entry]) => {
+      if (!entry?.isIntersecting) return;
+      io.disconnect();
+      const t0 = performance.now();
+      const tick = (t: number) => {
+        const p = Math.min(1, (t - t0) / 900);
+        el.textContent = String(Math.round(value * (1 - (1 - p) ** 3)));
+        if (p < 1) raf = requestAnimationFrame(tick);
+      };
+      raf = requestAnimationFrame(tick);
+    }, { threshold: 0.6 });
+    io.observe(el);
+    return () => { io.disconnect(); cancelAnimationFrame(raf); };
+  }, [value]);
+  return <span ref={ref} className={className}>{value}</span>;
+}
+```
+
+Wire them:
+- In the home page (`[lang]/page.tsx`):
+  - render `<CoverIntro />` once inside `<main>`;
+  - render `<VelocityMarquee items={d.home.coverLines.map((l) => l.text)} />` right after `<Cover …/>`.
+- In `SectionIndex.tsx`, the count chip becomes `<CountUp value={counts[s.id] ?? 0} />`.
+- In `StatsStrip.tsx`, the first stat's value (the total) renders `<CountUp value={total} />`. Change the `stats` tuple type to `[React.ReactNode, string][]`.
+- In `CommandTicker.tsx`:
+  - add `drum` to the outer gradient wrapper's classes;
+  - wrap the `.ticker` element's contents in `<div className="drum-viewport">…</div>`.
+
+- [ ] **Step 11: Run the motion spec, the full e2e and Lighthouse**
+
+Run `npm run typecheck`, then `npx playwright test tests/e2e/motion.spec.ts`.
+Expected: PASS on both projects. The view-transition test passes on the chromium projects. Skip it only for a browser without `startViewTransition`, and say so in the report.
+
+Run `npm run e2e`. Expected: every spec passes, including Task 15's reduced-motion ticker test.
+
+Run `npm run lhci`. Expected: every Task 15 budget still passes (LCP < 2500 ms, CLS < 0.05, TBT < 200 ms, SEO 1, a11y ≥ 0.95).
+- If LCP regresses on section pages because of the hidden kinetic headline, lower the failsafe delay in `globals.css` (1.2 s → 0.6 s) and rerun.
+- If the budget still fails, animate only the accent `<em>` with SplitText and keep the lead static.
+- Never relax a budget.
+
+- [ ] **Step 12: Real browser pass with screenshots**
+
+With the Playwright MCP browser, on `npm run preview`, at 1440×900 and 375×812:
+1. Fresh session on `/es`: screenshots at about 200 ms, 700 ms and 1600 ms after load, to show the intro's phases. Then press a key mid-intro in a new session and confirm it jumps to the end.
+2. Scroll the home page: the marquee skews with scroll speed and settles back, the index counters count up, and the drum ticker keeps scrolling.
+3. Click an index card: the section headline flies in (a view transition) and its letters rise. Scroll: the giant outline number drifts.
+4. Hover a skill card (desktop): it tilts and the colour sweep shows. Click it: the `/slug` morphs into the h1.
+5. Copy a command: the burst shows.
+6. Repeat 1–3 with reduced motion emulated: everything is static and fully readable.
+
+Save the screenshots under `.playwright-mcp/motion-*.png`, look at every one, and list defects in the report. Fix and re-shoot before reporting DONE.
+
+- [ ] **Step 13: Commit**
+
+```bash
+git add site/
+git commit -m "feat(site): motion layer — magazine intro, kinetic type, view transitions, living cover"
+```
+
+---
+
 ## Self-review notes (for the executor)
 
 - Spec coverage for phase 1:

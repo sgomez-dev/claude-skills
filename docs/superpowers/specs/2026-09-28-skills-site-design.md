@@ -250,6 +250,42 @@ contenido está en HTML, así que la página se lee y se indexa sin JavaScript.
 - **Scroll nativo.** Nada de smooth-scroll secuestrado, porque rompe la accesibilidad y el
   INP.
 
+### 6.1 Capa de motion (añadida el 2026-09-28, aprobada por Santiago)
+
+Entrar en la web tiene que ser una experiencia. Son cinco capas, todas en la fase 1:
+
+1. **Apertura de revista:** una coreografía GSAP de unos 1,4 s en la primera carga de la
+   portada. La regla de la cabecera se dibuja (`scaleX`), la palabra acento en serif se
+   escribe con `clip-path`, el resaltado ácido barre (`scaleX` sobre un pseudo-fondo) y
+   los stickers caen y se pegan. **El texto del h1 se pinta al instante:** solo se animan
+   transformaciones, clip y fondos, así que el LCP no se retrasa. Solo se reproduce una vez
+   por sesión (`sessionStorage`).
+2. **Tipografía cinética:** en las cabeceras de sección, las letras entran escalonadas con
+   SplitText (manteniendo `aria-label` con el texto completo). El número de sección
+   gigante va en contorno y se desplaza con ScrollTrigger `scrub`.
+3. **Transiciones entre páginas:** `<ViewTransition>` de React (Next 16, sin
+   configuración). El `/slug` de la tarjeta se transforma en el h1 de la ficha, y el
+   número y titular de sección viajan de la portada a la sección. En los navegadores sin
+   View Transitions, la navegación es normal.
+4. **Interacción:** tarjetas con inclinación magnética (spring de Motion, solo con puntero
+   fino), un barrido del color de la sección al pasar el ratón, stickers que se "despegan"
+   al pasar el ratón y un estallido de partículas al copiar un comando.
+5. **Portada viva:**
+   - Una banda "En este número" en marquesina que se inclina según la velocidad del scroll.
+   - Contadores del índice que suben al entrar en pantalla.
+   - El ticker convertido en tambor de imprenta 3D en CSS.
+   - Grano animado de fondo, en CSS con `steps()`, sin JS.
+
+Reglas:
+- Con `prefers-reduced-motion: reduce` desaparecen todas las capas: sin apertura, sin
+  SplitText, sin inclinación, sin marquesina y sin transiciones de vista.
+- Nada secuestra el scroll ni bloquea la interacción: la apertura se puede interrumpir
+  con cualquier input.
+- GSAP (core, ScrollTrigger y SplitText) se importa de forma dinámica solo en la portada
+  y en las secciones. El motion añade como máximo unos 45 KB gzip por página, y los
+  umbrales de Lighthouse de §1 siguen vigentes.
+- Los videos de motion graphics renderizados siguen siendo la fase 3.
+
 ## 7. SEO y GEO
 
 **SEO:**
