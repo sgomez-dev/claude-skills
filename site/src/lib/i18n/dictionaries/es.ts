@@ -21,7 +21,6 @@ export const es: Dictionary = {
       { section: 'web', text: 'Webs que ganan premios' },
       { section: 'video', text: 'Videos que paran el scroll' },
     ],
-    tickerLabel: 'Ahora mismo en la mesa',
     stickerFree: 'gratis y open source',
     stickerPlatforms: 'Claude Code · Cursor · Windsurf · Codex',
     index: 'Índice',

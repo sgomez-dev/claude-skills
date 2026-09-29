@@ -20,7 +20,6 @@ export const en = {
       { section: 'web', text: 'Websites that win awards' },
       { section: 'video', text: 'Videos that stop the scroll' },
     ],
-    tickerLabel: 'On the desk right now',
     stickerFree: 'free & open source',
     stickerPlatforms: 'Claude Code · Cursor · Windsurf · Codex',
     index: 'Contents',
