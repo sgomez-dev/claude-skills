@@ -3,12 +3,13 @@ import path from 'node:path';
 import { buildCatalog } from '../src/lib/catalog/build';
 import { readGitDates } from '../src/lib/catalog/git-dates';
 import type { Catalog } from '../src/lib/catalog/types';
+import { writeGeoFiles } from '../src/lib/geo/write';
 import { writeSearchIndexes } from '../src/lib/search/index';
 
 export type Writer = (catalog: Catalog, publicDir: string) => void;
 
 /** Later tasks register their writers here. */
-const WRITERS: Writer[] = [writeSearchIndexes];
+const WRITERS: Writer[] = [writeSearchIndexes, writeGeoFiles];
 
 const siteRoot = path.resolve(import.meta.dirname, '..');
 const repoRoot = path.resolve(siteRoot, '..');

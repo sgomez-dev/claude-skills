@@ -38,6 +38,7 @@ export default async function LangLayout({ children, params }: { children: React
   return (
     <html lang={lang} className={`${bricolage.variable} ${instrument.variable} ${jetbrains.variable}`} suppressHydrationWarning>
       <head>
+        <link rel="author" type="text/plain" href="/humans.txt" />
         <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
       </head>
       <body className="min-h-dvh bg-night text-ink">
