@@ -10,6 +10,13 @@ export interface SectionDef {
   name: Record<Lang, string>;
   headline: Record<Lang, { lead: string; accent: string }>;
   dek: Record<Lang, string>;
+  /**
+   * Search-facing copy, all optional (Task 20 writes it). Fallbacks: the headline for the title, the dek for the description,
+   * no intro block. `intro` is a list of paragraphs; a link to a skill is written `[text](slug)` (see lib/intro.ts).
+   */
+  seoTitle?: Record<Lang, string>;
+  description?: Record<Lang, string>;
+  intro?: Record<Lang, string[]>;
 }
 
 export const SECTIONS: SectionDef[] = [

@@ -17,8 +17,10 @@ export function Cover({ lang, dict, total, ticker }: { lang: Lang; dict: Diction
           <span data-intro="highlight" className="relative isolate mt-2 inline-block -rotate-2 px-3.5 pb-1.5 text-night">
             <span aria-hidden data-intro="highlight-bg" className="absolute inset-0 -z-10 rounded-[18px] bg-acid" />
             <span data-intro="highlight-text">{c.highlight}</span>
-            {/* Intro only: the night copy the bar reveals over the ink words (same box, same clip animation as the bar). */}
-            <span aria-hidden data-intro="highlight-overlay" className="absolute inset-0 hidden px-3.5 pb-1.5">{c.highlight}</span>
+            {/* Intro only: the night copy the bar reveals over the ink words (same box, same clip animation as the bar).
+                The words live in an attribute and are painted by ::before (globals.css), so the h1's text content, which is what a
+                crawler or a reader without CSS gets, holds them once. */}
+            <span aria-hidden data-intro="highlight-overlay" data-text={c.highlight} className="absolute inset-0 hidden px-3.5 pb-1.5" />
           </span>{' '}
           {c.tail}
         </h1>

@@ -1,79 +1,128 @@
-import type { BreadcrumbList, FAQPage, ItemList, Person, SoftwareApplication, WebSite, WithContext } from 'schema-dts';
-import type { Skill } from '@/lib/catalog/types';
+import type { SectionId, Skill } from '@/lib/catalog/types';
 import type { Lang } from '@/lib/i18n/languages';
-import { AUTHOR, SITE_URL } from '@/lib/site';
+import { AUTHOR, REPO_URL, SITE_URL } from '@/lib/site';
 import { absolute, paths, sourceUrl } from '@/lib/urls';
 
+/** One JSON-LD node. The types live in schema.org, not here: this file only builds and links them. */
+export type LdNode = Record<string, unknown>;
+
 export function serializeJsonLd(data: object): string {
-  return JSON.stringify(data).replace(/</g, '\\u003c');
+  // The output goes inside a <script>: nothing in it may close the tag or be read as HTML, and U+2028/2029 are line breaks to old parsers.
+  return JSON.stringify(data)
+    .replace(/</g, '\\u003c')
+    .replace(/>/g, '\\u003e')
+    .replace(/&/g, '\\u0026')
+    .replace(/\u2028/g, '\\u2028')
+    .replace(/\u2029/g, '\\u2029');
 }
 
-export function authorLd(): Person {
-  return { '@type': 'Person', '@id': `${SITE_URL}/#author`, name: AUTHOR.name, url: AUTHOR.url };
+const ref = (id: string) => ({ '@id': id });
+
+export const AUTHOR_ID = `${SITE_URL}/#author`;
+const websiteId = (lang: Lang) => `${absolute(paths.home(lang))}#website`;
+
+/** Every page ships exactly one script: a @graph whose nodes point at each other by @id. */
+export function graph(nodes: LdNode[]): { '@context': 'https://schema.org'; '@graph': LdNode[] } {
+  return { '@context': 'https://schema.org', '@graph': nodes };
 }
 
-export function websiteLd(lang: Lang): WithContext<WebSite> {
+export function authorLd(): LdNode {
   return {
-    '@context': 'https://schema.org',
+    '@type': 'Person', '@id': AUTHOR_ID, name: AUTHOR.name, url: AUTHOR.url,
+    sameAs: [...AUTHOR.sameAs], knowsAbout: ['Claude Code', 'Agent Skills'],
+  };
+}
+
+export function websiteLd(lang: Lang): LdNode {
+  return {
     '@type': 'WebSite',
-    '@id': `${SITE_URL}/#website`,
+    '@id': websiteId(lang),
     name: 'Claude Skills',
     url: absolute(paths.home(lang)),
     inLanguage: lang,
-    publisher: authorLd(),
+    publisher: ref(AUTHOR_ID),
     potentialAction: {
       '@type': 'SearchAction',
       target: { '@type': 'EntryPoint', urlTemplate: `${absolute(paths.home(lang))}?q={search_term_string}` },
       'query-input': 'required name=search_term_string',
-    } as never,
+    },
   };
 }
 
-export function skillLd(skill: Skill, lang: Lang, description: string): WithContext<SoftwareApplication> {
-  const base: WithContext<SoftwareApplication> = {
-    '@context': 'https://schema.org',
-    '@type': 'SoftwareApplication',
-    name: `/${skill.slug}`,
-    alternateName: skill.name,
-    description,
-    url: absolute(paths.skill(lang, skill.slug)),
-    inLanguage: lang,
-    applicationCategory: 'DeveloperApplication',
-    operatingSystem: 'macOS, Linux, Windows',
-    isAccessibleForFree: true,
-    offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
-    ...(skill.updatedAt ? { dateModified: skill.updatedAt } : {}),
-  };
-  if (skill.kind === 'command') {
-    return { ...base, author: authorLd(), publisher: authorLd(), license: 'https://spdx.org/licenses/MIT.html', sameAs: sourceUrl(skill) };
-  }
-  const license = skill.license.startsWith('LicenseRef') ? sourceUrl(skill) : `https://spdx.org/licenses/${skill.license}.html`;
-  // Externals are credited to their upstream owner; this site neither authored nor publishes them.
-  const owner = skill.upstream.owner;
-  return { ...base, author: { '@type': 'Person', name: owner, url: `https://github.com/${owner}` }, isBasedOn: skill.upstream.url, license, sameAs: sourceUrl(skill) };
-}
-
-export function breadcrumbLd(items: { name: string; path: string }[]): WithContext<BreadcrumbList> {
+export function breadcrumbLd(pageUrl: string, items: { name: string; path: string }[]): LdNode {
   return {
-    '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    '@id': `${pageUrl}#breadcrumb`,
     itemListElement: items.map((it, i) => ({ '@type': 'ListItem', position: i + 1, name: it.name, item: absolute(it.path) })),
   };
 }
 
-export function itemListLd(items: { name: string; path: string }[]): WithContext<ItemList> {
+export function webPageLd({ lang, path, name, description, type = 'WebPage', dateModified, mainEntity, breadcrumb = true }: {
+  lang: Lang; path: string; name: string; description: string; type?: 'WebPage' | 'CollectionPage' | 'AboutPage';
+  dateModified?: string | null; mainEntity?: string; breadcrumb?: boolean;
+}): LdNode {
+  const url = absolute(path);
   return {
-    '@context': 'https://schema.org',
+    '@type': type, '@id': url, url, name, description, inLanguage: lang,
+    isPartOf: ref(websiteId(lang)),
+    ...(dateModified ? { dateModified } : {}),
+    ...(breadcrumb ? { breadcrumb: ref(`${url}#breadcrumb`) } : {}),
+    ...(mainEntity ? { mainEntity: ref(mainEntity) } : {}),
+  };
+}
+
+const CATEGORY: Record<SectionId, string> = {
+  video: 'MultimediaApplication', web: 'DesignApplication', brand: 'DesignApplication', ads: 'BusinessApplication',
+  sales: 'BusinessApplication', business: 'BusinessApplication', ai: 'DeveloperApplication', data: 'DeveloperApplication', code: 'DeveloperApplication',
+};
+
+/** The id of a skill page's SoftwareApplication node. */
+export const skillNodeId = (lang: Lang, slug: string) => `${absolute(paths.skill(lang, slug))}#skill`;
+
+/** `name` is the human title (or the slug while it has none); the slug is always `alternateName`. */
+export function skillLd(skill: Skill, lang: Lang, { name, description }: { name: string; description: string }): LdNode {
+  const url = absolute(paths.skill(lang, skill.slug));
+  const external = skill.kind === 'external';
+  const license = !external
+    ? 'https://spdx.org/licenses/MIT.html'
+    : skill.license.startsWith('LicenseRef') ? sourceUrl(skill) : `https://spdx.org/licenses/${skill.license}.html`;
+  return {
+    '@type': 'SoftwareApplication',
+    '@id': skillNodeId(lang, skill.slug),
+    name,
+    alternateName: `/${skill.slug}`,
+    description,
+    url,
+    mainEntityOfPage: ref(url),
+    inLanguage: lang,
+    applicationCategory: CATEGORY[skill.section],
+    operatingSystem: 'macOS, Linux, Windows',
+    softwareRequirements: 'Claude Code',
+    isAccessibleForFree: true,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
+    ...(skill.updatedAt ? { dateModified: skill.updatedAt } : {}),
+    license,
+    isBasedOn: { '@type': 'SoftwareSourceCode', codeRepository: external ? skill.upstream.url : REPO_URL, url: sourceUrl(skill) },
+    // Externals are credited to their upstream owner; this site neither authored nor publishes them.
+    ...(external
+      ? { author: { '@type': 'Person', name: skill.upstream.owner, url: `https://github.com/${skill.upstream.owner}` } }
+      : { author: ref(AUTHOR_ID), publisher: ref(AUTHOR_ID) }),
+  };
+}
+
+export function itemListLd(id: string, items: { name: string; path: string }[]): LdNode {
+  return {
     '@type': 'ItemList',
+    '@id': id,
     numberOfItems: items.length,
     itemListElement: items.map((it, i) => ({ '@type': 'ListItem', position: i + 1, name: it.name, url: absolute(it.path) })),
   };
 }
 
-export function faqLd(faq: { q: string; a: string }[]): WithContext<FAQPage> {
+export function faqLd(id: string, faq: { q: string; a: string }[]): LdNode {
   return {
-    '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    '@id': id,
     mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
   };
 }

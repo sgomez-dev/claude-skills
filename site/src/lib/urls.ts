@@ -7,6 +7,7 @@ export const paths = {
   section: (lang: Lang, id: SectionId) => `/${lang}/${id}`,
   skill: (lang: Lang, slug: string) => `/${lang}/s/${slug}`,
   credits: (lang: Lang) => `/${lang}/credits`,
+  methodology: (lang: Lang) => `/${lang}/methodology`,
 };
 
 export function absolute(p: string): string {
@@ -28,4 +29,9 @@ export function sourceUrl(skill: Skill): string {
   if (skill.kind === 'command') return `${REPO_URL}/blob/main/${skill.sourcePath}`;
   const { url, commit, path } = skill.upstream;
   return path === '.' ? `${url}/tree/${commit}` : `${url}/tree/${commit}/${path}`;
+}
+
+/** A recipe has no page of its own yet: it links to its definition in the repository. */
+export function pipelineUrl(slug: string): string {
+  return `${REPO_URL}/blob/main/pipelines/${slug}.yaml`;
 }

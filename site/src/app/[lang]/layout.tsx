@@ -4,7 +4,7 @@ import type { ReactNode } from 'react';
 import { Footer } from '@/components/layout/Footer';
 import { Masthead } from '@/components/layout/Masthead';
 import { SearchDialog } from '@/components/search/SearchDialog';
-import { catalog } from '@/lib/catalog';
+import { catalog, catalogUpdatedAt } from '@/lib/catalog';
 import { bricolage, instrument, jetbrains } from '@/lib/fonts';
 import { getDictionary } from '@/lib/i18n';
 import { isLang, LANGS } from '@/lib/i18n/languages';
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const d = getDictionary(lang);
   return {
     metadataBase: new URL(SITE_URL),
-    title: { default: d.meta.title, template: `%s · ${d.meta.siteName}` },
+    title: { default: d.meta.title(catalog.counts.total), template: `%s · ${d.meta.siteName}` },
     applicationName: d.meta.siteName,
     authors: [{ name: AUTHOR.name, url: AUTHOR.url }],
     creator: AUTHOR.name,
@@ -47,7 +47,7 @@ export default async function LangLayout({ children, params }: { children: React
         <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-acid focus:px-4 focus:py-2 focus:text-night">
           {d.nav.skipToContent}
         </a>
-        <Masthead lang={lang} dict={d} generatedAt={catalog.generatedAt} total={catalog.counts.total} />
+        <Masthead lang={lang} dict={d} updatedAt={catalogUpdatedAt() ?? catalog.generatedAt} total={catalog.counts.total} />
         <div id="main">{children}</div>
         <Footer lang={lang} dict={d} />
         <SearchDialog lang={lang} labels={{ ...d.search, placeholder: d.search.placeholder(catalog.counts.total) }} />

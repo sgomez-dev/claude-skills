@@ -1,6 +1,12 @@
 import data from '../../../.generated/catalog.json';
-import type { Catalog, SectionId, Skill } from './types';
+import { catalogUpdatedAt as catalogUpdatedAtOf, sectionUpdatedAt as sectionUpdatedAtOf } from './dates';
+import { pairedSkills as pairedSkillsOf, pipelinesOf as pipelinesOfIn, relatedSkills as relatedSkillsOf } from './related';
+import type { Catalog, Pipeline, SectionId, Skill } from './types';
 
+/**
+ * The generated catalog and helpers bound to it. Code that also runs inside `scripts/generate.ts` (before this file
+ * exists) must use the pure modules (dates, related, figures) with an explicit catalog instead of importing this one.
+ */
 export const catalog = data as unknown as Catalog;
 
 const bySlug = new Map(catalog.skills.map((s) => [s.slug, s]));
@@ -13,14 +19,8 @@ export function skillsInSection(id: SectionId): Skill[] {
   return catalog.skills.filter((s) => s.section === id);
 }
 
-function groupOf(s: Skill): string {
-  return s.kind === 'command' ? s.category : s.upstream.repo;
-}
-
-/** Same section; same category or upstream first, then the rest, alphabetically. Deterministic. */
-export function relatedSkills(skill: Skill, n = 6): Skill[] {
-  const pool = skillsInSection(skill.section).filter((s) => s.slug !== skill.slug);
-  const same = pool.filter((s) => groupOf(s) === groupOf(skill));
-  const rest = pool.filter((s) => groupOf(s) !== groupOf(skill));
-  return [...same, ...rest].slice(0, n);
-}
+export const sectionUpdatedAt = (id: SectionId): string | null => sectionUpdatedAtOf(catalog, id);
+export const catalogUpdatedAt = (): string | null => catalogUpdatedAtOf(catalog);
+export const relatedSkills = (skill: Skill, n?: number, exclude?: ReadonlySet<string>): Skill[] => relatedSkillsOf(catalog, skill, n, exclude);
+export const pairedSkills = (skill: Skill, n?: number): Skill[] => pairedSkillsOf(catalog, skill, n);
+export const pipelinesOf = (slug: string): Pipeline[] => pipelinesOfIn(catalog, slug);

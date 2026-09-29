@@ -1,13 +1,16 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { JsonLd } from '@/components/ui/JsonLd';
 import { catalog } from '@/lib/catalog';
+import { latestDate } from '@/lib/catalog/dates';
 import type { ExternalSkill } from '@/lib/catalog/types';
 import { getDictionary } from '@/lib/i18n';
 import { isLang, type Lang } from '@/lib/i18n/languages';
+import { authorLd, breadcrumbLd, graph, webPageLd, websiteLd } from '@/lib/seo/jsonld';
 import { pageMetadata } from '@/lib/seo/metadata';
 import { AUTHOR } from '@/lib/site';
-import { paths } from '@/lib/urls';
+import { absolute, paths } from '@/lib/urls';
 
 type Params = Promise<{ lang: string }>;
 
@@ -28,6 +31,12 @@ export default async function Credits({ params }: { params: Params }) {
 
   return (
     <main className="mx-auto max-w-[1440px] px-4 pb-10 pt-10 sm:px-7">
+      <JsonLd data={graph([
+        websiteLd(lang),
+        authorLd(),
+        webPageLd({ lang, path: paths.credits(lang), name: d.credits.title, description: d.credits.dek, dateModified: latestDate(externals.map((s) => s.updatedAt)) }),
+        breadcrumbLd(absolute(paths.credits(lang)), [{ name: d.nav.home, path: paths.home(lang) }, { name: d.credits.title, path: paths.credits(lang) }]),
+      ])} />
       <header className="border-b-2 border-ink pb-10">
         <h1 className="font-display text-[clamp(3rem,9vw,7rem)] font-extrabold leading-[0.9] tracking-[-0.04em]">{d.credits.title}</h1>
         <p className="mt-6 max-w-2xl text-[19px] text-ink-muted">{d.credits.dek}</p>

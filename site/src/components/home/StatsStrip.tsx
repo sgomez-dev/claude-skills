@@ -1,13 +1,14 @@
 import type { ReactNode } from 'react';
 import { CountUp } from '@/components/motion/CountUp';
+import { isoDay } from '@/lib/catalog/dates';
 import type { Dictionary } from '@/lib/i18n';
 
-export function StatsStrip({ dict, total, declared, commands, updated }: { dict: Dictionary; total: number; declared: number; commands: number; updated: Date }) {
+export function StatsStrip({ dict, total, declared, commands, updated }: { dict: Dictionary; total: number; declared: number; commands: number; updated: Date | null }) {
   const stats: [ReactNode, string][] = [
     [<CountUp key="total" value={total} />, dict.home.stats.skills],
     [`${declared}/${commands}`, dict.home.stats.permissionsLabel],
     ['4', dict.home.stats.platforms],
-    [dict.date(updated), dict.home.stats.updated],
+    [updated ? <time key="updated" dateTime={isoDay(updated.toISOString())}>{dict.date(updated)}</time> : '—', dict.home.stats.updated],
   ];
   return (
     <section className="mx-auto mt-16 max-w-[1440px] px-4 sm:px-7">

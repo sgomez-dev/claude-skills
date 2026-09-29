@@ -13,6 +13,8 @@ const loadMotion = () => (motionModule ??= import('motion/react'));
 export interface GridItem {
   slug: string;
   href: string;
+  /** Human title, when authored. */
+  title?: string;
   description: string;
   descLang?: string;
   kind: 'command' | 'external';
@@ -54,7 +56,7 @@ export function SkillGrid({ items, accent, labels }: { items: GridItem[]; accent
   }
 
   const card = (i: GridItem) => (
-    <SkillCard href={i.href} slug={i.slug} description={i.description} descLang={i.descLang} badge={i.badge} accent={accent} network={i.network} networkLabel={labels.network} />
+    <SkillCard href={i.href} slug={i.slug} title={i.title} description={i.description} descLang={i.descLang} badge={i.badge} accent={accent} network={i.network} networkLabel={labels.network} />
   );
   const gridClass = 'grid border-l border-t border-line sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4';
 

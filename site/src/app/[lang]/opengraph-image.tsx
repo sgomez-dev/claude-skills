@@ -6,7 +6,7 @@ import { OG_SIZE, renderCover } from '@/lib/og/cover';
 
 export const size = OG_SIZE;
 export const contentType = 'image/png';
-export const alt = 'Claude Skills';
+// No `alt` export: the alt text is set in the page metadata, from the dictionaries (see pageMetadata `image`).
 export const dynamicParams = false;
 export function generateStaticParams() {
   return LANGS.map((lang) => ({ lang }));

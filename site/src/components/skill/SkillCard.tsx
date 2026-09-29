@@ -7,6 +7,8 @@ import { ACCENT_TEXT, COLORS } from '@/lib/design/tokens';
 export interface SkillCardProps {
   href: string;
   slug: string;
+  /** The human title, when authored: shown under the slug, and part of the link's text for readers and crawlers. */
+  title?: string;
   description: string;
   descLang?: string;
   badge: string;
@@ -17,7 +19,7 @@ export interface SkillCardProps {
 
 // Every <Link> in the site passes prefetch={false}: on OpenNext for Cloudflare the segment prefetch (`Next-Router-Segment-Prefetch: /_tree`)
 // is answered with the full RSC payload, the client rejects it and re-issues it in an endless loop (hundreds of requests per second).
-export function SkillCard({ href, slug, description, descLang, badge, accent, network, networkLabel }: SkillCardProps) {
+export function SkillCard({ href, slug, title, description, descLang, badge, accent, network, networkLabel }: SkillCardProps) {
   return (
     <Tilt className="h-full">
       <Link prefetch={false} href={href} style={{ '--accent': COLORS[accent] } as CSSProperties}
@@ -26,6 +28,7 @@ export function SkillCard({ href, slug, description, descLang, badge, accent, ne
         <ViewTransition name={`skill-${slug}`} share="morph" default="none">
           <span className={`font-mono text-[13px] font-bold [overflow-wrap:anywhere] ${ACCENT_TEXT[accent]}`}>/{slug}</span>
         </ViewTransition>
+        {title ? <span className="font-display text-[17px] font-extrabold leading-tight tracking-[-0.01em] text-ink">{title}</span> : null}
         <p lang={descLang} className="line-clamp-3 text-[14px] leading-snug text-ink-muted group-hover:text-ink">{description}</p>
         <span className="mt-auto flex flex-wrap gap-2 font-mono text-[10px] font-bold uppercase tracking-[0.08em] text-ink-muted">
           <span className="rounded-full border border-line px-2 py-0.5">{badge}</span>

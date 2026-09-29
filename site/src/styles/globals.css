@@ -69,6 +69,7 @@ html { scroll-padding-top: 4.5rem; }
 [data-sweep] > [data-intro='highlight-text'] { color: var(--color-ink); }
 .intro-pending [data-intro='highlight-overlay'],
 [data-sweep] > [data-intro='highlight-overlay'] { display: block; clip-path: inset(0 100% 0 0); }
+[data-intro='highlight-overlay']::before { content: attr(data-text); }
 .sticker[data-intro] { animation: none; }
 
 /* 2. Kinetic headline: letters split on the server, rise in pure CSS. The h1 is the LCP element of section pages, so it
