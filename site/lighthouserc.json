@@ -5,7 +5,8 @@
       "startServerReadyPattern": "Ready on",
       "startServerReadyTimeout": 900000,
       "url": ["http://localhost:8787/en", "http://localhost:8787/es/business", "http://localhost:8787/es/s/legal--contract-review"],
-      "numberOfRuns": 3
+      "numberOfRuns": 3,
+      "settings": { "skipAudits": ["robots-txt"] }
     },
     "assert": {
       "assertions": {

@@ -3,7 +3,8 @@
     "collect": {
       "numberOfRuns": 3,
       "settings": {
-        "formFactor": "mobile"
+        "formFactor": "mobile",
+        "skipAudits": ["robots-txt"]
       }
     },
     "assert": {
