@@ -62,9 +62,11 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           PR_NUMBER: ${{ github.event.number }}
         run: |
-          out=$(npx wrangler versions upload --preview-alias "pr-${PR_NUMBER}" 2>&1 | tee /dev/stderr)
+          # OpenNext's upload populates the remote cache, then runs `wrangler versions upload`; unknown flags such as
+          # --preview-alias are passed through to wrangler (a raw wrangler upload would skip populateCache).
+          out=$(npx opennextjs-cloudflare upload --preview-alias "pr-${PR_NUMBER}" 2>&1 | tee /dev/stderr)
           url=$(printf '%s' "$out" | grep -oE 'https://pr-[^ ]+\.workers\.dev' | head -1 || true)
-          if [ -z "$url" ]; then echo "::error::no preview URL in wrangler output"; exit 1; fi
+          if [ -z "$url" ]; then echo "::error::no preview URL in upload output"; exit 1; fi
           echo "url=$url" >> "$GITHUB_OUTPUT"
           gh pr comment "$PR_NUMBER" --body "Preview: $url" --edit-last || gh pr comment "$PR_NUMBER" --body "Preview: $url"
       # lhci does not expand env vars inside JSON, so the "$PREVIEW_URL/..." URLs in
