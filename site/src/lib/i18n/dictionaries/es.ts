@@ -16,9 +16,9 @@ export const es: Dictionary = {
     dek: (n) => `${n} especialistas para Claude Code. Video, motion, marca, ventas, legal y código: una orden y listo.`,
     inThisIssue: 'En este número',
     coverLines: [
-      { section: 'business', text: 'Contratos revisados sin abogado' },
-      { section: 'sales', text: 'Ventas en piloto automático' },
-      { section: 'web', text: 'Webs que ganan premios' },
+      { section: 'business', text: 'Contratos revisados antes de firmar' },
+      { section: 'sales', text: 'Prospección que llena la agenda' },
+      { section: 'web', text: 'Webs con oficio' },
       { section: 'video', text: 'Videos que paran el scroll' },
     ],
     stickerFree: 'gratis y open source',

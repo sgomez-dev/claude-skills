@@ -15,9 +15,9 @@ export const en = {
     dek: (n: number) => `${n} specialists for Claude Code. Video, motion, brand, sales, legal and code: one command and done.`,
     inThisIssue: 'In this issue',
     coverLines: [
-      { section: 'business', text: 'Contracts reviewed without a lawyer' },
-      { section: 'sales', text: 'Sales on autopilot' },
-      { section: 'web', text: 'Websites that win awards' },
+      { section: 'business', text: 'Contracts checked before you sign' },
+      { section: 'sales', text: 'Prospecting that fills your calendar' },
+      { section: 'web', text: 'Websites with craft' },
       { section: 'video', text: 'Videos that stop the scroll' },
     ],
     stickerFree: 'free & open source',

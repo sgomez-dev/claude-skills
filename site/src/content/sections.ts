@@ -16,19 +16,19 @@ export const SECTIONS: SectionDef[] = [
   {
     id: 'video', number: '01', accent: 'acid',
     name: { es: 'Video & Motion', en: 'Video & Motion' },
-    headline: { es: { lead: 'Edita como', accent: 'estudio' }, en: { lead: 'Edit like a', accent: 'studio' } },
+    headline: { es: { lead: 'Edita como un', accent: 'estudio' }, en: { lead: 'Edit like a', accent: 'studio' } },
     dek: { es: 'Cortes, subtítulos karaoke, motion graphics y sonido. Del bruto al reel.', en: 'Cuts, karaoke captions, motion graphics and sound. From raw footage to reel.' },
   },
   {
     id: 'web', number: '02', accent: 'pink',
     name: { es: 'Web y Diseño', en: 'Web & Design' },
-    headline: { es: { lead: 'Webs de', accent: 'premio' }, en: { lead: 'Websites that win', accent: 'awards' } },
+    headline: { es: { lead: 'Webs con', accent: 'oficio' }, en: { lead: 'Websites with', accent: 'craft' } },
     dek: { es: 'Landings, animación con GSAP, interfaces con criterio y accesibilidad.', en: 'Landing pages, GSAP animation, interfaces with taste, and accessibility.' },
   },
   {
     id: 'brand', number: '03', accent: 'sun',
     name: { es: 'Marca y Contenido', en: 'Brand & Content' },
-    headline: { es: { lead: 'Una marca con', accent: 'voz propia' }, en: { lead: 'A brand with', accent: 'a voice' } },
+    headline: { es: { lead: 'Una marca con', accent: 'voz propia' }, en: { lead: 'A brand with', accent: 'its own voice' } },
     dek: { es: 'Identidad, textos que no suenan a IA, imágenes, presentaciones y traducción.', en: 'Identity, copy that does not sound like AI, images, slides and translation.' },
   },
   {
@@ -40,19 +40,19 @@ export const SECTIONS: SectionDef[] = [
   {
     id: 'sales', number: '05', accent: 'acid',
     name: { es: 'Ventas', en: 'Sales' },
-    headline: { es: { lead: 'Pipeline en', accent: 'piloto' }, en: { lead: 'Pipeline on', accent: 'autopilot' } },
+    headline: { es: { lead: 'Ventas en', accent: 'piloto automático' }, en: { lead: 'Sales on', accent: 'autopilot' } },
     dek: { es: 'Leads, cold outreach, propuestas, objeciones y tienda online.', en: 'Leads, cold outreach, proposals, objections and online stores.' },
   },
   {
     id: 'business', number: '06', accent: 'sun',
     name: { es: 'Negocio', en: 'Business' },
-    headline: { es: { lead: 'Letra', accent: 'pequeña' }, en: { lead: 'The fine', accent: 'print' } },
+    headline: { es: { lead: 'Negocio', accent: 'en orden' }, en: { lead: 'Business,', accent: 'in order' } },
     dek: { es: 'Contratos, GDPR, finanzas, pricing y producto.', en: 'Contracts, GDPR, finance, pricing and product.' },
   },
   {
     id: 'ai', number: '07', accent: 'cyan',
     name: { es: 'IA y Agentes', en: 'AI & Agents' },
-    headline: { es: { lead: 'Máquinas que', accent: 'piensan' }, en: { lead: 'Machines that', accent: 'think' } },
+    headline: { es: { lead: 'Agentes que', accent: 'trabajan' }, en: { lead: 'Agents that', accent: 'get to work' } },
     dek: { es: 'Agentes, RAG, evals, MCP y machine learning.', en: 'Agents, RAG, evals, MCP and machine learning.' },
   },
   {
@@ -64,7 +64,7 @@ export const SECTIONS: SectionDef[] = [
   {
     id: 'code', number: '09', accent: 'terra',
     name: { es: 'Código', en: 'Code' },
-    headline: { es: { lead: 'Para los', accent: 'devs' }, en: { lead: 'For the', accent: 'devs' } },
+    headline: { es: { lead: 'Código', accent: 'sin drama' }, en: { lead: 'Code,', accent: 'minus the drama' } },
     dek: { es: 'Testing, devops, seguridad, git, cloud y depuración.', en: 'Testing, devops, security, git, cloud and debugging.' },
   },
 ];

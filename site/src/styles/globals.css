@@ -45,8 +45,13 @@ body {
 .ticker:hover .ticker-track, .ticker:focus-within .ticker-track { animation-play-state: paused; }
 @keyframes ticker { to { transform: translateY(-50%); } }
 
+html { scroll-padding-top: 4.5rem; }
+.logo-cursor { display: inline-block; width: 0.5em; height: 0.95em; margin-left: 0.18em; border-radius: 2px; background: var(--color-acid); vertical-align: -0.12em; animation: blink 1.05s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
   .js .reveal { opacity: 1; transform: none; }
   .ticker-track { animation: none; }
+  .logo-cursor { animation: none; }
 }
