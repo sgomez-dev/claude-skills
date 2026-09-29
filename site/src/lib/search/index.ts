@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { CATEGORY_LABELS } from '@/content/category-labels';
 import { getSection } from '@/content/sections';
 import type { Catalog } from '@/lib/catalog/types';
 import { LANGS, type Lang } from '@/lib/i18n/languages';
@@ -11,6 +12,8 @@ export interface SearchEntry {
   d: string;
   n: string;
   h: string;
+  /** Keywords: category label (commands) or section name (externals), in the active language. */
+  k: string;
 }
 
 export function buildSearchIndex(catalog: Catalog, lang: Lang): SearchEntry[] {
@@ -19,6 +22,7 @@ export function buildSearchIndex(catalog: Catalog, lang: Lang): SearchEntry[] {
     d: truncate(sk.text[lang].description, 200),
     n: getSection(sk.section).name[lang],
     h: paths.skill(lang, sk.slug),
+    k: sk.kind === 'command' ? (CATEGORY_LABELS[sk.category]?.[lang] ?? '') : getSection(sk.section).name[lang],
   }));
 }
 

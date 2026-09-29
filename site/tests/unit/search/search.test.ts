@@ -4,9 +4,9 @@ import { createSearcher } from '@/lib/search/searcher';
 import type { Catalog, CommandSkill } from '@/lib/catalog/types';
 
 const entries: SearchEntry[] = [
-  { s: 'legal--contract-review', d: 'Revisa un borrador de contrato y marca cláusulas de riesgo', n: 'Negocio', h: '/es/s/legal--contract-review' },
-  { s: 'embedded-captions', d: 'Subtítulos incrustados con estilo karaoke', n: 'Video & Motion', h: '/es/s/embedded-captions' },
-  { s: 'git--commit', d: 'Mensajes de commit claros', n: 'Código', h: '/es/s/git--commit' },
+  { s: 'legal--contract-review', d: 'Revisa un borrador de contrato y marca cláusulas de riesgo', n: 'Negocio', h: '/es/s/legal--contract-review', k: 'legal contratos' },
+  { s: 'embedded-captions', d: 'Subtítulos incrustados con estilo karaoke', n: 'Video & Motion', h: '/es/s/embedded-captions', k: 'Video & Motion' },
+  { s: 'git--commit', d: 'Mensajes de commit claros', n: 'Código', h: '/es/s/git--commit', k: 'git control de versiones' },
 ];
 
 describe('searcher', () => {
@@ -23,10 +23,10 @@ describe('searcher', () => {
 describe('buildSearchIndex', () => {
   it('uses the language text and section name', () => {
     const skill = {
-      kind: 'command', slug: 'legal--contract-review', section: 'business',
+      kind: 'command', slug: 'legal--contract-review', section: 'business', category: 'legal',
       text: { en: { description: 'Review a contract', howToAsk: [], translated: true }, es: { description: 'Revisa un contrato', howToAsk: [], translated: true } },
     } as unknown as CommandSkill;
     const catalog = { skills: [skill] } as Catalog;
-    expect(buildSearchIndex(catalog, 'es')).toEqual([{ s: 'legal--contract-review', d: 'Revisa un contrato', n: 'Negocio', h: '/es/s/legal--contract-review' }]);
+    expect(buildSearchIndex(catalog, 'es')).toEqual([{ s: 'legal--contract-review', d: 'Revisa un contrato', n: 'Negocio', h: '/es/s/legal--contract-review', k: 'legal contratos' }]);
   });
 });
