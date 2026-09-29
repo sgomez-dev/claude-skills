@@ -243,7 +243,8 @@ contenido está en HTML, así que la página se lee y se indexa sin JavaScript.
   cualquier cosa que retrase el LCP.
 - **`prefers-reduced-motion`:** todas las animaciones pasan a fundidos de opacidad o se
   anulan. El reel se detiene en el primer fotograma y los videos no se reproducen solos.
-- **Presupuestos:** JS de primera carga ≤ 120 KB gzip en la portada. GSAP se importa de
+- **Presupuestos:** JS de primera carga ≤ 150 KB gzip en la portada (ajustado a 150 KB el
+  2026-09-29: el suelo de Next 16 + React ronda los 135 KB). GSAP se importa de
   forma dinámica solo donde se usa. El LCP de la portada es el titular en texto, nunca una
   imagen ni un video. Las fuentes llevan `size-adjust` para CLS ≈ 0. Las imágenes son
   AVIF/WebP con tamaño declarado.
@@ -282,8 +283,8 @@ Reglas:
 - Nada secuestra el scroll ni bloquea la interacción: la apertura se puede interrumpir
   con cualquier input.
 - GSAP (core, ScrollTrigger y SplitText) se importa de forma dinámica solo en la portada
-  y en las secciones. El motion añade como máximo unos 45 KB gzip por página, y los
-  umbrales de Lighthouse de §1 siguen vigentes.
+  y en las secciones. El motion añade como máximo unos 45 KB gzip por página, siempre
+  dentro del total de 150 KB de §6, y los umbrales de Lighthouse de §1 siguen vigentes.
 - Los videos de motion graphics renderizados siguen siendo la fase 3.
 
 ## 7. SEO y GEO
