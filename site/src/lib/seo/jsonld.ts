@@ -42,14 +42,15 @@ export function skillLd(skill: Skill, lang: Lang, description: string): WithCont
     operatingSystem: 'macOS, Linux, Windows',
     isAccessibleForFree: true,
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
-    publisher: authorLd(),
     ...(skill.updatedAt ? { dateModified: skill.updatedAt } : {}),
   };
   if (skill.kind === 'command') {
-    return { ...base, author: authorLd(), license: 'https://spdx.org/licenses/MIT.html', sameAs: sourceUrl(skill) };
+    return { ...base, author: authorLd(), publisher: authorLd(), license: 'https://spdx.org/licenses/MIT.html', sameAs: sourceUrl(skill) };
   }
   const license = skill.license.startsWith('LicenseRef') ? sourceUrl(skill) : `https://spdx.org/licenses/${skill.license}.html`;
-  return { ...base, isBasedOn: skill.upstream.url, license, sameAs: sourceUrl(skill) };
+  // Externals are credited to their upstream owner; this site neither authored nor publishes them.
+  const owner = skill.upstream.owner;
+  return { ...base, author: { '@type': 'Person', name: owner, url: `https://github.com/${owner}` }, isBasedOn: skill.upstream.url, license, sameAs: sourceUrl(skill) };
 }
 
 export function breadcrumbLd(items: { name: string; path: string }[]): WithContext<BreadcrumbList> {

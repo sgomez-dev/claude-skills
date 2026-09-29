@@ -52,11 +52,13 @@ describe('JSON-LD', () => {
     const ld = skillLd(command, 'es', 'desc') as unknown as Record<string, unknown>;
     expect(ld['@type']).toBe('SoftwareApplication');
     expect((ld.author as { name: string }).name).toBe('Santiago Gómez de la Torre');
+    expect((ld.publisher as { name: string }).name).toBe('Santiago Gómez de la Torre');
     expect(ld.url).toBe('https://skills.sgomez.dev/es/s/legal--contract-review');
   });
   it('credits upstream on externals instead of claiming authorship', () => {
     const ld = skillLd(external, 'en', 'desc') as unknown as Record<string, unknown>;
-    expect(ld.author).toBeUndefined();
+    expect(ld.author).toEqual({ '@type': 'Person', name: 'o', url: 'https://github.com/o' });
+    expect(ld.publisher).toBeUndefined();
     expect(ld.isBasedOn).toBe('https://github.com/o/r');
     expect(ld.license).toBe('https://spdx.org/licenses/MIT.html');
   });
