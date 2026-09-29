@@ -23,6 +23,8 @@ test('reduced motion: no intro, no split text, static marquee', async ({ browser
   const h1 = page.getByRole('heading', { level: 1 });
   await expect(h1).toBeVisible();
   expect(await h1.locator('div, span[style]').count()).toBe(0); // SplitText never ran
+  // Never hidden-until-split: no failsafe timer holding it back (timing-independent check).
+  expect(await h1.evaluate((el) => getComputedStyle(el).animationName)).toBe('none');
   await ctx.close();
 });
 

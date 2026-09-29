@@ -60,8 +60,11 @@ html { scroll-padding-top: 4.5rem; }
 .intro-pending [data-intro='sticker'] { opacity: 0; }
 .sticker[data-intro] { animation: none; }
 
-/* 2. Kinetic headline: hidden until split, with a failsafe if JS never runs. */
-.js [data-kinetic]:not([data-split]) { visibility: hidden; animation: kinetic-failsafe 0s 1.2s forwards; }
+/* 2. Kinetic headline: hidden until split, with a failsafe if JS never runs. Only where motion is allowed: with reduced
+   motion it never splits, and a reduce-block override would lose to this selector's specificity. */
+@media (prefers-reduced-motion: no-preference) {
+  .js [data-kinetic]:not([data-split]) { visibility: hidden; animation: kinetic-failsafe 0s 1.2s forwards; }
+}
 @keyframes kinetic-failsafe { to { visibility: visible; } }
 /* Each word is a mask: clipped at the bottom only, with room for descenders and italic overhang. */
 .kw { display: inline-block; white-space: nowrap; clip-path: inset(-0.5em -0.3em -0.16em -0.3em); }
@@ -105,9 +108,11 @@ html { scroll-padding-top: 4.5rem; }
   position: absolute; left: -3px; top: -3px; width: 6px; height: 6px; border-radius: 9999px; background: var(--color-acid);
   animation: burst 0.6s var(--ease-out-soft) forwards;
 }
+/* 40px clears the copy button's half-width (33px), so the side particles leave it too; opacity holds to mid-flight so the ring reads. */
 @keyframes burst {
   from { transform: rotate(var(--a)) translateX(0) scale(1); opacity: 1; }
-  to { transform: rotate(var(--a)) translateX(26px) scale(0.2); opacity: 0; }
+  45% { opacity: 1; }
+  to { transform: rotate(var(--a)) translateX(40px) scale(0.2); opacity: 0; }
 }
 
 /* 5. Living cover */
@@ -116,8 +121,10 @@ html { scroll-padding-top: 4.5rem; }
 .drum { perspective: 700px; }
 /* Sized to the ticker window (not the double-length track), so the fades sit at the window edges. */
 .drum-viewport { height: 100%; transform: rotateX(9deg); mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 78%, transparent); }
+/* inset -10% (not -50%): the keyframes move it at most 3 % of its 120 % size, so the edges never show,
+   and the composited layer is 1.44x the viewport instead of 4x. */
 body::after {
-  content: ''; position: fixed; inset: -50%; z-index: 70; pointer-events: none; opacity: 0.055;
+  content: ''; position: fixed; inset: -10%; z-index: 70; pointer-events: none; opacity: 0.055;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   animation: grain 1s steps(6) infinite;
 }
