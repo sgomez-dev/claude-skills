@@ -71,16 +71,16 @@ html { scroll-padding-top: 4.5rem; }
 [data-sweep] > [data-intro='highlight-overlay'] { display: block; clip-path: inset(0 100% 0 0); }
 .sticker[data-intro] { animation: none; }
 
-/* 2. Kinetic headline: hidden until split, with a failsafe if JS never runs. Only where motion is allowed: with reduced
-   motion it never splits, and a reduce-block override would lose to this selector's specificity. */
-@media (prefers-reduced-motion: no-preference) {
-  .js [data-kinetic]:not([data-split]) { visibility: hidden; animation: kinetic-failsafe 0s 1.2s forwards; }
-}
-@keyframes kinetic-failsafe { to { visibility: visible; } }
+/* 2. Kinetic headline: letters split on the server, rise in pure CSS. The h1 is the LCP element of section pages, so it
+   is painted from the first frame: no visibility or opacity gate, transform only, and the start offset keeps each
+   letter mostly inside its word mask (only its foot is clipped). Only with JS and where motion is allowed. */
 /* Each word is a mask: clipped at the bottom only, with room for descenders and italic overhang. */
 .kw { display: inline-block; white-space: nowrap; clip-path: inset(-0.5em -0.3em -0.16em -0.3em); }
-.kc { display: inline-block; animation: kc-rise 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) both; animation-delay: calc(var(--i, 0) * 18ms); }
-@keyframes kc-rise { from { transform: translateY(1.25em); } }
+.kc { display: inline-block; }
+@media (prefers-reduced-motion: no-preference) {
+  .js .kc { animation: kc-rise 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) both; animation-delay: calc(var(--i, 0) * 18ms); }
+}
+@keyframes kc-rise { from { transform: translateY(0.4em); } }
 /* Giant outline number drifts with scroll where scroll-driven animations exist; static elsewhere. */
 .scrub-host { view-timeline: --scrub block; }
 @supports (animation-timeline: view()) {
@@ -149,7 +149,10 @@ body::after {
   .js .reveal { opacity: 1; transform: none; }
   .ticker-track { animation: none; }
   .logo-cursor { animation: none; }
-  .js [data-kinetic] { visibility: visible; animation: none; }
+  /* Static ticker: scrollable, so tabbing brings each link into view; the inert loop copy is dropped, not scrolled into. */
+  .ticker { overflow-y: auto; }
+  .ticker [inert] { display: none; }
+  .drum-viewport { height: auto; mask-image: none; }
   .marquee-track, body::after, .scrub-number { animation: none; }
   .drum-viewport { transform: none; }
   ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }

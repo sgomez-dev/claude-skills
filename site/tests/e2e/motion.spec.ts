@@ -12,7 +12,7 @@ test('intro plays once per session and never hides the claim text', async ({ pag
   await expect.poll(() => introState(page)).toBe('skipped');
 });
 
-test('reduced motion: no intro, no split text, static marquee', async ({ browser }) => {
+test('reduced motion: no intro, no letter rise, static marquee', async ({ browser }) => {
   const ctx = await browser.newContext({ reducedMotion: 'reduce' });
   const page = await ctx.newPage();
   await page.goto('/en');
@@ -22,18 +22,24 @@ test('reduced motion: no intro, no split text, static marquee', async ({ browser
   await page.goto('/en/video');
   const h1 = page.getByRole('heading', { level: 1 });
   await expect(h1).toBeVisible();
-  expect(await h1.locator('div, span[style]').count()).toBe(0); // SplitText never ran
-  // Never hidden-until-split: no failsafe timer holding it back (timing-independent check).
+  await expect(h1).toHaveAccessibleName(/.+/);
+  // The letters are still split on the server, but none of them rises and the heading itself never animates.
+  const names = await h1.locator('.kc').evaluateAll((els) => els.map((el) => getComputedStyle(el).animationName));
+  expect(names.length).toBeGreaterThan(0);
+  expect(new Set(names)).toEqual(new Set(['none']));
   expect(await h1.evaluate((el) => getComputedStyle(el).animationName)).toBe('none');
   await ctx.close();
 });
 
-test('kinetic headline stays accessible and becomes visible', async ({ page }) => {
+test('kinetic headline: letters split on the server, full accessible name', async ({ page, request }) => {
+  const html = await (await request.get('/es/business')).text();
+  const h1Html = html.match(/<h1[^>]*data-kinetic[^>]*>[\s\S]*?<\/h1>/)?.[0] ?? '';
+  expect(h1Html).toContain('class="kc"'); // split markup is in the server HTML, not added after hydration
+  expect(h1Html).toMatch(/<span aria-hidden="true">/);
   await page.goto('/es/business');
   const h1 = page.getByRole('heading', { level: 1 });
-  await expect(h1).toBeVisible({ timeout: 3000 });
-  await expect(h1).toHaveAttribute('data-split'); // letters were split for the stagger…
-  await expect(h1).toHaveAccessibleName(/Negocio\s+en\s+orden/); // …and the full name survives it
+  await expect(h1).toHaveAccessibleName(/Negocio\s+en\s+orden/);
+  expect(await h1.locator('.kc').first().evaluate((el) => getComputedStyle(el).animationName)).toBe('kc-rise');
 });
 
 test('navigating from a card starts a view transition', async ({ page }) => {
@@ -74,27 +80,26 @@ test('JS stays within budget with the motion layer loaded', async ({ page, reque
     page.off('response', onResponse);
     let total = 0;
     for (const u of urls) total += gzipSync(await (await request.get(u)).body()).length;
-    expect(total, `${path} gzip JS bytes`).toBeLessThanOrEqual(165 * 1024);
+    expect(total, `${path} gzip JS bytes`).toBeLessThanOrEqual(150 * 1024);
   }
 });
 
-test('late hydration: a headline the failsafe already showed is not split again', async ({ page }) => {
-  // Hold every JS chunk (not CSS: a pending stylesheet would block the parser) past the 1.2 s CSS failsafe, so the plain headline is visible before React hydrates.
+test('kinetic headline is painted before hydration (LCP never waits for React)', async ({ page }) => {
+  // Hold every JS chunk (not CSS: a pending stylesheet would block the parser), so anything visible is server HTML + CSS.
   await page.route('**/_next/static/chunks/*.js', async (route) => {
-    await new Promise((r) => setTimeout(r, 2200));
+    await new Promise((r) => setTimeout(r, 4000));
     await route.continue();
   });
-  await page.goto('/es/business', { waitUntil: 'commit' });
+  await page.goto('/es/business', { waitUntil: 'domcontentloaded' });
   const h1 = page.getByRole('heading', { level: 1 });
-  await expect(h1).toBeVisible({ timeout: 2000 }); // the failsafe, not React, revealed it
-  // Hydrated: React has attached its props to the heading.
-  await page.waitForFunction(() => {
-    const el = document.querySelector('h1');
-    return !!el && Object.keys(el).some((k) => k.startsWith('__reactProps'));
-  }, undefined, { timeout: 20_000 });
-  await page.waitForTimeout(300); // give a (wrong) split its chance to render
-  await expect(h1).not.toHaveAttribute('data-split');
-  expect(await h1.locator('.kc').count()).toBe(0);
-  await expect(h1).toHaveAccessibleName(/Negocio\s+en\s+orden/);
+  await expect(h1).toBeVisible({ timeout: 1000 });
+  const state = await h1.evaluate((el) => {
+    const hydrated = Object.keys(el).some((k) => k.startsWith('__reactProps'));
+    const letters = [...el.querySelectorAll<HTMLElement>('.kc')];
+    const hidden = [el, ...letters].some((n) => { const cs = getComputedStyle(n); return cs.visibility !== 'visible' || cs.opacity !== '1'; });
+    return { hydrated, letters: letters.length, hidden };
+  });
+  expect(state).toEqual({ hydrated: false, letters: expect.any(Number), hidden: false });
+  expect(state.letters).toBeGreaterThan(0);
   await page.unrouteAll({ behavior: 'ignoreErrors' });
 });
