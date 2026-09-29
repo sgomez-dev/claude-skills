@@ -1,2 +1,27 @@
 /_next/static/*
   Cache-Control: public,max-age=31536000,immutable
+
+# Text files are UTF-8 (without a charset a client may read "Gómez" as "GÃ³mez"). Explicit paths, not /*.txt: the Workers
+# Static Assets limit is 100 rules and a splat would also catch files we do not own.
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+/llms-full.txt
+  Content-Type: text/plain; charset=utf-8
+/es/llms.txt
+  Content-Type: text/plain; charset=utf-8
+/es/llms-full.txt
+  Content-Type: text/plain; charset=utf-8
+/humans.txt
+  Content-Type: text/plain; charset=utf-8
+
+# Markdown twins: UTF-8, and each one names its HTML page as canonical (Google accepts rel=canonical in an HTTP header for
+# non-HTML files), so the twin never competes with the page it mirrors. Three shapes cover every twin:
+# /es.md, /es/business.md and /es/s/legal--contract-review.md. One rule each, however many pages there are.
+/*.md
+  Content-Type: text/markdown; charset=utf-8
+/:lang.md
+  Link: <https://skills.sgomez.dev/:lang>; rel="canonical"
+/:lang/:page.md
+  Link: <https://skills.sgomez.dev/:lang/:page>; rel="canonical"
+/:lang/s/:slug.md
+  Link: <https://skills.sgomez.dev/:lang/s/:slug>; rel="canonical"
