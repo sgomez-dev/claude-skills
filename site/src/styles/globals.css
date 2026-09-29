@@ -58,20 +58,17 @@ html { scroll-padding-top: 4.5rem; }
    Native only (WAAPI, CSS, scroll-driven animations): GSAP does not fit the 165 KB gzip JS budget. */
 
 /* 1. Intro: states held only while <html> is intro-pending (CoverIntro takes over with WAAPI fills). */
-.intro-pending [data-intro='rule'],
-.intro-pending [data-intro='highlight-bg'] { transform: scaleX(0); transform-origin: left center; }
+.intro-pending [data-intro='rule'] { transform: scaleX(0); transform-origin: left center; }
+.intro-pending [data-intro='highlight-bg'] { clip-path: inset(0 100% 0 0); }
 .intro-pending [data-intro='accent'] { clip-path: inset(0 100% 0 0); }
 .intro-pending [data-intro='sticker'] { opacity: 0; }
-/* The highlighted words stay readable: ink on the dark page until the acid bar arrives. During the sweep, CoverIntro paints them
-   with a hard ink|night gradient whose edge moves with the bar's edge, so every letter is ink off the bar and night on it. */
-.intro-pending [data-intro='highlight-text'] { color: var(--color-ink); }
-[data-intro='highlight-text'][data-sweep] {
-  /* The night base colour fills the strip left of the image once its position goes positive near the end. */
-  background: linear-gradient(90deg, var(--color-night) 50%, var(--color-ink) 50%) no-repeat var(--color-night);
-  background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent;
-  /* background-clip:text paints only inside the box; glyphs overhang it (tight tracking, the comma). Grow the paint area, not the layout. */
-  padding: 0.1em 0.15em 0.2em 0; margin: -0.1em -0.15em -0.2em 0;
-}
+/* The highlighted words stay readable: ink on the dark page until the acid bar arrives. During the sweep a night copy
+   (overlay) is revealed by the same clip-path animation as the bar, so each letter is ink off the bar and night on it.
+   Bar and overlay animate the same property on the same box: they run on the same thread and cannot drift apart. */
+.intro-pending [data-intro='highlight-text'],
+[data-sweep] > [data-intro='highlight-text'] { color: var(--color-ink); }
+.intro-pending [data-intro='highlight-overlay'],
+[data-sweep] > [data-intro='highlight-overlay'] { display: block; clip-path: inset(0 100% 0 0); }
 .sticker[data-intro] { animation: none; }
 
 /* 2. Kinetic headline: hidden until split, with a failsafe if JS never runs. Only where motion is allowed: with reduced

@@ -14,9 +14,11 @@ export function Cover({ lang, dict, total, ticker }: { lang: Lang; dict: Diction
         <h1 className="font-display text-[clamp(3.25rem,9.5vw,7.25rem)] font-extrabold leading-[0.9] tracking-[-0.035em] [word-spacing:0.06em]">
           {c.lead} <em data-intro="accent" className="font-serif font-normal italic tracking-[-0.02em]">{c.accent}</em>
           <br />
-          <span className="relative isolate mt-2 inline-block -rotate-2 px-3.5 pb-1.5 text-night">
-            <span aria-hidden data-intro="highlight-bg" className="absolute inset-0 -z-10 origin-left rounded-[18px] bg-acid" />
+          <span data-intro="highlight" className="relative isolate mt-2 inline-block -rotate-2 px-3.5 pb-1.5 text-night">
+            <span aria-hidden data-intro="highlight-bg" className="absolute inset-0 -z-10 rounded-[18px] bg-acid" />
             <span data-intro="highlight-text">{c.highlight}</span>
+            {/* Intro only: the night copy the bar reveals over the ink words (same box, same clip animation as the bar). */}
+            <span aria-hidden data-intro="highlight-overlay" className="absolute inset-0 hidden px-3.5 pb-1.5">{c.highlight}</span>
           </span>{' '}
           {c.tail}
         </h1>
