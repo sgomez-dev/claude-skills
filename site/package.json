@@ -18,7 +18,10 @@
     "pretest": "npm run generate",
     "test": "vitest run",
     "translations:plan": "npm run generate && tsx scripts/translations.ts plan",
-    "translations:check": "npm run generate && tsx scripts/translations.ts check"
+    "translations:check": "npm run generate && tsx scripts/translations.ts check",
+    "e2e": "playwright test",
+    "lhci": "lhci autorun",
+    "check:private": "tsx scripts/check-no-private.ts"
   },
   "dependencies": {
     "fuse.js": "7.5.0",
@@ -31,7 +34,9 @@
     "zod": "4.6.5"
   },
   "devDependencies": {
+    "@lhci/cli": "0.15.1",
     "@opennextjs/cloudflare": "^1.20.6",
+    "@playwright/test": "1.63.0",
     "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^26.6.3",
     "@types/react": "^19.3.0",
