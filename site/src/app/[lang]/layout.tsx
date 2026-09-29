@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import type { ReactNode } from 'react';
 import { Footer } from '@/components/layout/Footer';
 import { Masthead } from '@/components/layout/Masthead';
+import { SearchDialog } from '@/components/search/SearchDialog';
 import { catalog } from '@/lib/catalog';
 import { bricolage, instrument, jetbrains } from '@/lib/fonts';
 import { getDictionary } from '@/lib/i18n';
@@ -46,6 +47,7 @@ export default async function LangLayout({ children, params }: { children: React
         <Masthead lang={lang} dict={d} generatedAt={catalog.generatedAt} total={catalog.counts.total} />
         <div id="main">{children}</div>
         <Footer lang={lang} dict={d} />
+        <SearchDialog lang={lang} labels={{ ...d.search, placeholder: d.search.placeholder(catalog.counts.total) }} />
       </body>
     </html>
   );

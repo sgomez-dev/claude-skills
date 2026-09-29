@@ -4,6 +4,7 @@ import type { Lang } from '@/lib/i18n/languages';
 import { REPO_URL } from '@/lib/site';
 import { paths } from '@/lib/urls';
 import { Logo } from '@/components/brand/Logo';
+import { SearchTrigger } from '@/components/search/SearchTrigger';
 import { LangSwitch } from './LangSwitch';
 
 export function Masthead({ lang, dict, generatedAt, total }: { lang: Lang; dict: Dictionary; generatedAt: string; total: number }) {
@@ -17,6 +18,7 @@ export function Masthead({ lang, dict, generatedAt, total }: { lang: Lang; dict:
           {dict.masthead.issue(new Date(generatedAt), total)}
         </p>
         <nav aria-label={dict.nav.label} className="flex items-center gap-2">
+          <SearchTrigger label={dict.search.open} />
           <LangSwitch current={lang} label={dict.nav.language} />
           <a href={REPO_URL} className="hidden rounded-full border border-line px-3 py-1.5 font-mono text-[11px] font-bold uppercase hover:border-acid hover:text-acid sm:inline-block">
             {dict.nav.github}
