@@ -22,7 +22,9 @@ export default async function Image({ params }: { params: Promise<{ lang: string
   const lang = isLang(p.lang) ? p.lang : 'en';
   const s = getSection(skill.section);
   const [head, ...rest] = skill.slug.split('--');
-  const lead = rest.length ? `/${head}--` : '/';
-  const accent = rest.length ? rest.join('--') : skill.slug;
-  return renderCover({ kicker: `${s.number} ${s.name[lang]}`, lead, accent, body: truncate(skill.text[lang].description, 140), accentColor: COLORS[s.accent] });
+  const lead = rest.length ? `/${head}--` : '';
+  const accent = rest.length ? rest.join('--') : `/${skill.slug}`;
+  const len = lead.length + accent.length;
+  const accentSize = len <= 18 ? 112 : len <= 26 ? 88 : 72;
+  return renderCover({ kicker: `${s.number} ${s.name[lang]}`, lead, accent, body: truncate(skill.text[lang].description, 140), accentColor: COLORS[s.accent], accentSize });
 }

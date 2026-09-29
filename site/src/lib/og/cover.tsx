@@ -9,7 +9,7 @@ export const OG_SIZE = { width: 1200, height: 630 };
 const font = (f: string) => fs.readFile(path.join(process.cwd(), 'assets', 'og-fonts', f));
 
 /** Avoid glyphs outside the latin subset (✦, arrows): satori would draw tofu. */
-export async function renderCover({ kicker, lead, accent, body, accentColor }: { kicker: string; lead: string; accent: string; body?: string; accentColor: string }) {
+export async function renderCover({ kicker, lead, accent, body, accentColor, accentSize = 112 }: { kicker: string; lead: string; accent: string; body?: string; accentColor: string; accentSize?: number }) {
   const [display, serif, mono] = await Promise.all([font('bricolage-800.woff'), font('instrument-italic.woff'), font('jetbrains-700.woff')]);
   return new ImageResponse(
     (
@@ -22,9 +22,9 @@ export async function renderCover({ kicker, lead, accent, body, accentColor }: {
           </div>
           <span>{kicker}</span>
         </div>
-        <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', marginTop: 56, fontSize: 104, lineHeight: 0.92, letterSpacing: -4 }}>
-          <span style={{ marginRight: 24 }}>{lead}</span>
-          <span style={{ fontFamily: 'Serif', fontSize: 112, letterSpacing: -2, background: accentColor, color: COLORS.night, padding: '0 18px 8px', borderRadius: 20 }}>{accent}</span>
+        <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', marginTop: 56, fontSize: Math.round(accentSize * 104 / 112), lineHeight: 0.92, letterSpacing: -4 }}>
+          {lead ? <span style={{ marginRight: 24 }}>{lead}</span> : null}
+          <span style={{ fontFamily: 'Serif', fontSize: accentSize, letterSpacing: -2, background: accentColor, color: COLORS.night, padding: '0 18px 8px', borderRadius: 20 }}>{accent}</span>
         </div>
         {body ? <div style={{ marginTop: 'auto', fontSize: 30, lineHeight: 1.3, color: COLORS.inkMuted, maxWidth: 980 }}>{body}</div> : null}
       </div>
