@@ -1,5 +1,5 @@
 ---
-description: Auditoría de marketing digital completa con 8 agentes especializados en paralelo + PowerPoint
+description: Complete digital marketing audit with 8 specialized agents in parallel + PowerPoint
 permissions:
   reads: []
   writes: ["*.pptx"]

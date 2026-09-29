@@ -1,5 +1,5 @@
 ---
-description: Genera un servicio puente entre plataformas de mensajería (Telegram, WhatsApp, Instagram, Messenger) y Claude API
+description: Generate a bridge service between messaging platforms (Telegram, WhatsApp, Instagram, Messenger) and the Claude API
 permissions:
   reads: ["**/*"]
   writes: ["**/*"]

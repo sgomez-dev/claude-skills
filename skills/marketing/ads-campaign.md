@@ -1,5 +1,5 @@
 ---
-description: Gestión completa de campañas publicitarias con 8 agentes especializados en paralelo + PowerPoint
+description: Full ad campaign management with 8 specialized agents in parallel + PowerPoint
 permissions:
   reads: []
   writes: ["*.pptx"]

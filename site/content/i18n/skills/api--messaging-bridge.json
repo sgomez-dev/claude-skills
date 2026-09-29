@@ -1,5 +1,5 @@
 {
-  "sourceHash": "b8e0f0fdcc7ad241",
+  "sourceHash": "506c840e63ed5fa0",
   "es": {
     "description": "Genera un servicio puente entre plataformas de mensajería (Telegram, WhatsApp, Instagram, Messenger) y la API de Claude",
     "howToAsk": [
