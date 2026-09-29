@@ -16,7 +16,7 @@ export function Cover({ lang, dict, total, ticker }: { lang: Lang; dict: Diction
           <br />
           <span className="relative isolate mt-2 inline-block -rotate-2 px-3.5 pb-1.5 text-night">
             <span aria-hidden data-intro="highlight-bg" className="absolute inset-0 -z-10 origin-left rounded-[18px] bg-acid" />
-            {c.highlight}
+            <span data-intro="highlight-text">{c.highlight}</span>
           </span>{' '}
           {c.tail}
         </h1>

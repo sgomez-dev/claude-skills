@@ -8,6 +8,7 @@ import { PermissionManifest } from '@/components/skill/PermissionManifest';
 import { Provenance } from '@/components/skill/Provenance';
 import { SkillCard } from '@/components/skill/SkillCard';
 import { JsonLd } from '@/components/ui/JsonLd';
+import { SlugText } from '@/components/ui/SlugText';
 import { Sticker } from '@/components/ui/Sticker';
 import { getSection } from '@/content/sections';
 import { catalog, getSkill, relatedSkills } from '@/lib/catalog';
@@ -68,10 +69,10 @@ export default async function SkillPage({ params }: { params: Params }) {
           {skill.updatedAt ? <span className="font-mono text-[11px] uppercase text-ink-muted">{d.skill.updated(new Date(skill.updatedAt))}</span> : null}
         </div>
         <ViewTransition name={`skill-${skill.slug}`} share="morph" default="none">
-          <h1 className="mt-5 font-display text-[clamp(2.25rem,7vw,5.5rem)] font-extrabold leading-[0.95] tracking-[-0.035em] break-all">/{skill.slug}</h1>
+          <h1 className="mt-5 font-display text-[clamp(2.25rem,7vw,5.5rem)] font-extrabold leading-[0.95] tracking-[-0.035em] break-all slug-text"><SlugText text={`/${skill.slug}`} /></h1>
         </ViewTransition>
         <p className="mt-6 max-w-3xl text-[19px] leading-relaxed">
-          <span>{answer}</span>{' '}
+          <span className="slug-text"><SlugText text={answer} /></span>{' '}
           <span lang={descLang}>{text.description}</span>
         </p>
         {!text.translated ? <p className="mt-2 font-mono text-[11px] text-ink-muted">{d.skill.notTranslated}</p> : null}

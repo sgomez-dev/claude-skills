@@ -1,12 +1,11 @@
 'use client';
 import { useMemo, useState } from 'react';
-import { flushSync } from 'react-dom';
 import { SkillCard } from '@/components/skill/SkillCard';
 import type { Accent } from '@/content/sections';
 import { fill } from '@/lib/i18n/format';
 import { DURATION, EASE_OUT, prefersReducedMotion } from '@/lib/motion';
 
-// `motion` is 43 KB gzip: loaded on the first filter interaction (hover/focus preloads it), never on page load.
+// `motion` is ~65 KB gzip: loaded on the first filter interaction (hover/focus preloads it), never on page load.
 type MotionModule = typeof import('motion/react');
 let motionModule: Promise<MotionModule> | null = null;
 const loadMotion = () => (motionModule ??= import('motion/react'));
@@ -43,16 +42,15 @@ export function SkillGrid({ items, accent, labels }: { items: GridItem[]; accent
   const hasBothKinds = new Set(items.map((i) => i.kind)).size > 1;
   const [M, setM] = useState<MotionModule | null>(null);
 
-  const warm = () => { if (!prefersReducedMotion()) void loadMotion().catch(() => {}); };
-  /** The first change mounts the animated grid (unchanged) before filtering, so it animates too. */
-  async function apply(change: () => void) {
-    if (!M && !prefersReducedMotion()) {
-      try {
-        const mod = await loadMotion();
-        flushSync(() => setM(() => mod));
-      } catch { /* offline: filter without animation */ }
-    }
+  /** Loads motion and swaps in the animated grid once it arrives (identical markup, so the swap is invisible). */
+  const warm = () => {
+    if (M || prefersReducedMotion()) return;
+    loadMotion().then((mod) => setM(() => mod), () => { /* offline: the grid just filters without animation */ });
+  };
+  /** Changes apply at once, so the controls never lag. Only a change made before motion arrives goes unanimated. */
+  function apply(change: () => void) {
     change();
+    warm();
   }
 
   const card = (i: GridItem) => (
@@ -66,7 +64,7 @@ export function SkillGrid({ items, accent, labels }: { items: GridItem[]; accent
         {hasBothKinds ? (
           <div role="group" aria-label={labels.origin} className="flex rounded-full border border-line p-0.5">
             {(['all', 'command', 'external'] as const).map((k) => (
-              <button key={k} type="button" aria-pressed={kind === k} onClick={() => void apply(() => setKind(k))}
+              <button key={k} type="button" aria-pressed={kind === k} onClick={() => apply(() => setKind(k))}
                 className={`rounded-full px-3 py-1.5 font-mono text-[11px] font-bold uppercase ${kind === k ? 'bg-ink text-night' : 'text-ink-muted hover:text-ink'}`}>
                 {labels[k]}
               </button>
@@ -76,7 +74,7 @@ export function SkillGrid({ items, accent, labels }: { items: GridItem[]; accent
         {groups.length > 1 ? (
           <label className="flex items-center gap-2 font-mono text-[11px] font-bold uppercase text-ink-muted">
             <span className="sr-only">{labels.group}</span>
-            <select value={group} onChange={(e) => { const v = e.target.value; void apply(() => setGroup(v)); }} className="rounded-full border border-line bg-night px-3 py-1.5 text-ink">
+            <select value={group} onChange={(e) => { const v = e.target.value; apply(() => setGroup(v)); }} className="rounded-full border border-line bg-night px-3 py-1.5 text-ink">
               <option value="all">{labels.allGroups}</option>
               {groups.map((g) => <option key={g} value={g}>{g}</option>)}
             </select>
@@ -84,7 +82,7 @@ export function SkillGrid({ items, accent, labels }: { items: GridItem[]; accent
         ) : null}
         {items.some((i) => i.network) ? (
           <label className="flex cursor-pointer items-center gap-2 font-mono text-[11px] font-bold uppercase text-ink-muted">
-            <input type="checkbox" checked={network} onChange={(e) => { const c = e.target.checked; void apply(() => setNetwork(c)); }} className="accent-[var(--color-acid)]" />
+            <input type="checkbox" checked={network} onChange={(e) => { const c = e.target.checked; apply(() => setNetwork(c)); }} className="accent-[var(--color-acid)]" />
             {labels.network}
           </label>
         ) : null}

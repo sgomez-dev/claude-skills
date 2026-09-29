@@ -1,5 +1,5 @@
 'use client';
-import { Fragment, useLayoutEffect, useState, type CSSProperties } from 'react';
+import { Fragment, useLayoutEffect, useRef, useState, type CSSProperties } from 'react';
 import { prefersReducedMotion } from '@/lib/motion';
 
 /** Words as masks, chars as risers. `start` is the running char index, so the stagger flows across lead and accent. */
@@ -28,12 +28,17 @@ function Split({ text, start }: { text: string; start: number }) {
  */
 export function KineticHeadline({ lead, accent, className = '', accentClassName = '' }: { lead: string; accent: string; className?: string; accentClassName?: string }) {
   const [split, setSplit] = useState(false);
+  const ref = useRef<HTMLHeadingElement>(null);
   useLayoutEffect(() => {
-    if (!prefersReducedMotion()) setSplit(true);
+    // Late hydration: if the CSS failsafe has already shown the plain headline, splitting now would make it
+    // vanish and rise a second time. Leave it as it is.
+    const el = ref.current;
+    if (!el || prefersReducedMotion() || getComputedStyle(el).visibility === 'visible') return;
+    setSplit(true);
   }, []);
   if (!split) {
     return (
-      <h1 data-kinetic className={className}>
+      <h1 ref={ref} data-kinetic className={className}>
         {lead} <em className={accentClassName}>{accent}</em>
       </h1>
     );

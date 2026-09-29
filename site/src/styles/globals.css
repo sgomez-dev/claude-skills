@@ -47,6 +47,10 @@ body {
 @keyframes ticker { to { transform: translateY(-50%); } }
 
 html { scroll-padding-top: 4.5rem; }
+/* Slugs in non-mono fonts: no ligatures or contextual alternates, and a gap inside each `--` (SlugText),
+   because the display font's negative tracking makes the pair touch and read as one dash. */
+.slug-text { font-variant-ligatures: none; font-feature-settings: "liga" 0, "calt" 0; }
+.slug-text .dd { letter-spacing: 0.07em; }
 .logo-cursor { display: inline-block; width: 0.5em; height: 0.95em; margin-left: 0.18em; border-radius: 2px; background: var(--color-acid); vertical-align: -0.12em; animation: blink 1.05s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 
@@ -58,6 +62,16 @@ html { scroll-padding-top: 4.5rem; }
 .intro-pending [data-intro='highlight-bg'] { transform: scaleX(0); transform-origin: left center; }
 .intro-pending [data-intro='accent'] { clip-path: inset(0 100% 0 0); }
 .intro-pending [data-intro='sticker'] { opacity: 0; }
+/* The highlighted words stay readable: ink on the dark page until the acid bar arrives. During the sweep, CoverIntro paints them
+   with a hard ink|night gradient whose edge moves with the bar's edge, so every letter is ink off the bar and night on it. */
+.intro-pending [data-intro='highlight-text'] { color: var(--color-ink); }
+[data-intro='highlight-text'][data-sweep] {
+  /* The night base colour fills the strip left of the image once its position goes positive near the end. */
+  background: linear-gradient(90deg, var(--color-night) 50%, var(--color-ink) 50%) no-repeat var(--color-night);
+  background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent;
+  /* background-clip:text paints only inside the box; glyphs overhang it (tight tracking, the comma). Grow the paint area, not the layout. */
+  padding: 0.1em 0.15em 0.2em 0; margin: -0.1em -0.15em -0.2em 0;
+}
 .sticker[data-intro] { animation: none; }
 
 /* 2. Kinetic headline: hidden until split, with a failsafe if JS never runs. Only where motion is allowed: with reduced
@@ -118,9 +132,9 @@ html { scroll-padding-top: 4.5rem; }
 /* 5. Living cover */
 .marquee-track { animation: marquee 32s linear infinite; }
 @keyframes marquee { to { transform: translateX(-100%); } }
-.drum { perspective: 700px; }
 /* Sized to the ticker window (not the double-length track), so the fades sit at the window edges. */
-.drum-viewport { height: 100%; transform: rotateX(9deg); mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 78%, transparent); }
+/* perspective() in the transform itself: a `perspective` property on .drum would not reach this grandchild through .ticker. */
+.drum-viewport { height: 100%; transform: perspective(700px) rotateX(9deg); mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 78%, transparent); }
 /* inset -10% (not -50%): the keyframes move it at most 3 % of its 120 % size, so the edges never show,
    and the composited layer is 1.44x the viewport instead of 4x. */
 body::after {

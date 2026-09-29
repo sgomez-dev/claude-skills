@@ -27,6 +27,21 @@ export function CoverIntro() {
     q('rule').forEach((el) => play(el, [{ transform: 'scaleX(0)' }, { transform: 'scaleX(1)' }], 0, 600));
     q('accent').forEach((el) => play(el, [{ clipPath: 'inset(0 100% 0 0)' }, { clipPath: 'inset(0 0% 0 0)' }], 350, 500));
     q('highlight-bg').forEach((el) => play(el, [{ transform: 'scaleX(0)' }, { transform: 'scaleX(1)' }], 700, 450));
+    // The highlighted words: a hard ink|night gradient (200 % wide, clipped to the text) whose edge tracks the bar's edge.
+    // Same delay, duration and ease as the bar, and both move linearly in eased progress, so they stay in lockstep.
+    // The bar spans the host's padding box; the text starts `pad` in, so the edge runs from -pad to W + pad in text coordinates.
+    q('highlight-text').forEach((el) => {
+      const host = el.parentElement;
+      if (!host) return;
+      const pad = parseFloat(getComputedStyle(host).paddingLeft) || 0;
+      el.dataset.sweep = '';
+      // Text width without the paint-area padding that [data-sweep] adds (margin cancels it in layout).
+      const w = el.offsetWidth - (parseFloat(getComputedStyle(el).paddingRight) || 0);
+      const a = el.animate([{ backgroundPosition: `${-pad - w}px 0` }, { backgroundPosition: `${pad}px 0` }], { delay: 700, duration: 450, easing: CSS_EASE.power3Out, fill: 'backwards' });
+      anims.push(a);
+      const end = () => { delete el.dataset.sweep; };
+      a.finished.then(end, end);
+    });
     q('sticker').forEach((el, i) => {
       const r = getComputedStyle(el).getPropertyValue('--r').trim() || '-3deg';
       play(el, [

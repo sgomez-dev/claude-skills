@@ -3,8 +3,17 @@ import path from 'node:path';
 import { ImageResponse } from 'next/og';
 import { LOGO_TEXT } from '@/components/brand/Logo';
 import { COLORS } from '@/lib/design/tokens';
+import { splitDoubleHyphens } from '@/lib/slug-text';
 
 export const OG_SIZE = { width: 1200, height: 630 };
+
+/** `--` as two spaced hyphens (satori has no font-feature control, and the tight tracking makes the pair touch). */
+function slugRuns(text: string, gap: number) {
+  return splitDoubleHyphens(text).flatMap((p, i) => [
+    ...(i > 0 ? [<span key={`d${i}`} style={{ marginRight: gap }}>-</span>, <span key={`e${i}`}>-</span>] : []),
+    ...(p ? [<span key={`p${i}`}>{p}</span>] : []),
+  ]);
+}
 
 const font = (f: string) => fs.readFile(path.join(process.cwd(), 'assets', 'og-fonts', f));
 
@@ -23,8 +32,8 @@ export async function renderCover({ kicker, lead, accent, body, accentColor, acc
           <span>{kicker}</span>
         </div>
         <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', marginTop: 56, fontSize: Math.round(accentSize * 104 / 112), lineHeight: 0.92, letterSpacing: -4 }}>
-          {lead ? <span style={{ marginRight: 24 }}>{lead}</span> : null}
-          <span style={{ fontFamily: 'Serif', fontSize: accentSize, letterSpacing: -2, background: accentColor, color: COLORS.night, padding: '0 18px 8px', borderRadius: 20 }}>{accent}</span>
+          {lead ? <span style={{ display: 'flex', marginRight: 24 }}>{slugRuns(lead, 8)}</span> : null}
+          <span style={{ fontFamily: 'Serif', fontSize: accentSize, letterSpacing: -2, background: accentColor, color: COLORS.night, padding: '0 18px 8px', borderRadius: 20, display: 'flex' }}>{slugRuns(accent, 6)}</span>
         </div>
         {body ? <div style={{ marginTop: 'auto', fontSize: 30, lineHeight: 1.3, color: COLORS.inkMuted, maxWidth: 980 }}>{body}</div> : null}
       </div>

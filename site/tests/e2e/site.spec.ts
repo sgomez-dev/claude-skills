@@ -58,6 +58,29 @@ test('section filters narrow the grid', async ({ page }) => {
   }).toPass({ timeout: 15_000 });
 });
 
+test('the first filter change applies at once, before the lazy motion chunk arrives', async ({ page }) => {
+  // Every chunk requested after hydration (i.e. the lazy `motion` one) is held for 5 s.
+  let slow = false;
+  await page.route('**/_next/static/chunks/*.js', async (route) => {
+    if (slow) await new Promise((r) => setTimeout(r, 5000));
+    await route.continue();
+  });
+  await page.goto('/en/web');
+  const cards = page.locator('main ul li a[href^="/en/s/"]');
+  const total = await cards.count();
+  const community = page.getByRole('button', { name: 'Community' });
+  await page.waitForFunction(() => {
+    const el = document.querySelector('main [aria-pressed]');
+    return !!el && Object.keys(el).some((k) => k.startsWith('__reactProps'));
+  });
+  slow = true;
+  await expect(community).toHaveAttribute('aria-pressed', 'false');
+  await community.click();
+  await expect(community).toHaveAttribute('aria-pressed', 'true', { timeout: 1000 });
+  await expect.poll(() => cards.count(), { timeout: 1000 }).toBeLessThan(total);
+  await page.unrouteAll({ behavior: 'ignoreErrors' });
+});
+
 test('reduced motion: ticker is not animated', async ({ browser }) => {
   const ctx = await browser.newContext({ reducedMotion: 'reduce' });
   const page = await ctx.newPage();

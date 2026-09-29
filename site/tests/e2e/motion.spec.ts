@@ -77,3 +77,24 @@ test('JS stays within budget with the motion layer loaded', async ({ page, reque
     expect(total, `${path} gzip JS bytes`).toBeLessThanOrEqual(165 * 1024);
   }
 });
+
+test('late hydration: a headline the failsafe already showed is not split again', async ({ page }) => {
+  // Hold every JS chunk (not CSS: a pending stylesheet would block the parser) past the 1.2 s CSS failsafe, so the plain headline is visible before React hydrates.
+  await page.route('**/_next/static/chunks/*.js', async (route) => {
+    await new Promise((r) => setTimeout(r, 2200));
+    await route.continue();
+  });
+  await page.goto('/es/business', { waitUntil: 'commit' });
+  const h1 = page.getByRole('heading', { level: 1 });
+  await expect(h1).toBeVisible({ timeout: 2000 }); // the failsafe, not React, revealed it
+  // Hydrated: React has attached its props to the heading.
+  await page.waitForFunction(() => {
+    const el = document.querySelector('h1');
+    return !!el && Object.keys(el).some((k) => k.startsWith('__reactProps'));
+  }, undefined, { timeout: 20_000 });
+  await page.waitForTimeout(300); // give a (wrong) split its chance to render
+  await expect(h1).not.toHaveAttribute('data-split');
+  expect(await h1.locator('.kc').count()).toBe(0);
+  await expect(h1).toHaveAccessibleName(/Negocio\s+en\s+orden/);
+  await page.unrouteAll({ behavior: 'ignoreErrors' });
+});
