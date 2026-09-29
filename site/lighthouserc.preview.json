@@ -1,23 +1,48 @@
 {
   "ci": {
     "collect": {
-      "url": [
-        "$PREVIEW_URL/en",
-        "$PREVIEW_URL/es/business",
-        "$PREVIEW_URL/es/s/legal--contract-review"
-      ],
       "numberOfRuns": 3,
-      "settings": { "formFactor": "mobile" }
+      "settings": {
+        "formFactor": "mobile"
+      }
     },
     "assert": {
       "assertions": {
-        "categories:seo": ["error", { "minScore": 1 }],
-        "categories:accessibility": ["error", { "minScore": 0.95 }],
-        "largest-contentful-paint": ["error", { "maxNumericValue": 2500 }],
-        "cumulative-layout-shift": ["error", { "maxNumericValue": 0.05 }],
-        "total-blocking-time": ["error", { "maxNumericValue": 200 }]
+        "categories:seo": [
+          "error",
+          {
+            "minScore": 1
+          }
+        ],
+        "categories:accessibility": [
+          "error",
+          {
+            "minScore": 0.95
+          }
+        ],
+        "largest-contentful-paint": [
+          "error",
+          {
+            "maxNumericValue": 2500
+          }
+        ],
+        "cumulative-layout-shift": [
+          "error",
+          {
+            "maxNumericValue": 0.05
+          }
+        ],
+        "total-blocking-time": [
+          "error",
+          {
+            "maxNumericValue": 200
+          }
+        ]
       }
     },
-    "upload": { "target": "filesystem", "outputDir": ".lighthouseci/preview" }
+    "upload": {
+      "target": "filesystem",
+      "outputDir": ".lighthouseci/preview"
+    }
   }
 }

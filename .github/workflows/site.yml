@@ -9,7 +9,7 @@ on:
 
 concurrency:
   group: site-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 permissions:
   contents: read
@@ -63,7 +63,7 @@ jobs:
           PR_NUMBER: ${{ github.event.number }}
         run: |
           out=$(npx wrangler versions upload --preview-alias "pr-${PR_NUMBER}" 2>&1 | tee /dev/stderr)
-          url=$(printf '%s' "$out" | grep -oE 'https://pr-[^ ]+\.workers\.dev' | head -1)
+          url=$(printf '%s' "$out" | grep -oE 'https://pr-[^ ]+\.workers\.dev' | head -1 || true)
           if [ -z "$url" ]; then echo "::error::no preview URL in wrangler output"; exit 1; fi
           echo "url=$url" >> "$GITHUB_OUTPUT"
           gh pr comment "$PR_NUMBER" --body "Preview: $url" --edit-last || gh pr comment "$PR_NUMBER" --body "Preview: $url"
