@@ -2,7 +2,17 @@ import { z } from 'zod';
 import { SECTION_IDS } from './types';
 
 const slug = z.string().regex(/^[a-z0-9]+(?:--?[a-z0-9]+)*$/);
-const skillText = z.object({ description: z.string().min(1), howToAsk: z.array(z.string()), translated: z.boolean() });
+const skillText = z.object({
+  description: z.string().min(1),
+  howToAsk: z.array(z.string()),
+  translated: z.boolean(),
+  title: z.string().min(1).optional(),
+  summary: z.string().min(1).optional(),
+  useWhen: z.array(z.string().min(1)).optional(),
+  notFor: z.array(z.string().min(1)).optional(),
+  output: z.string().min(1).optional(),
+  faq: z.array(z.object({ q: z.string().min(1), a: z.string().min(1) })).optional(),
+});
 const base = {
   slug,
   name: z.string().min(1),

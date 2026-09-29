@@ -5,7 +5,7 @@ import { describe, expect, it } from 'vitest';
 import { buildCatalog } from '@/lib/catalog/build';
 import { assertNoPrivate, readPrivateNames } from '@/lib/catalog/guard';
 import { sectionFor } from '@/lib/catalog/sections-map';
-import { hashDescription, resolveText } from '@/lib/catalog/text';
+import { hashDescription, resolveText, TranslationEntrySchema } from '@/lib/catalog/text';
 import type { Catalog } from '@/lib/catalog/types';
 
 const FIX = path.resolve(import.meta.dirname, '../../fixtures/repo');
@@ -70,6 +70,30 @@ describe('translations', () => {
     const t = resolveText('A changed description', entry);
     expect(t.es).toEqual({ description: 'A changed description', howToAsk: [], translated: false });
     expect(t.en.howToAsk).toEqual([]);
+  });
+
+  it('carries authored title, summary and A14 blocks, only the ones that exist', () => {
+    const faq = [{ q: 'Q?', a: 'A.' }];
+    const rich = {
+      ...entry,
+      es: { ...entry.es, title: 'Revisión de contratos', summary: 'Resumen.', useWhen: ['a'], faq },
+      en: { ...entry.en, title: 'Contract review', output: 'A report.' },
+    };
+    const t = resolveText(description, rich);
+    expect(t.es).toEqual({ description: 'Revisa un borrador de contrato', howToAsk: ['a', 'b', 'c'], translated: true, title: 'Revisión de contratos', summary: 'Resumen.', useWhen: ['a'], faq });
+    expect(t.en).toEqual({ description, howToAsk: ['x', 'y', 'z'], translated: true, title: 'Contract review', output: 'A report.' });
+    expect(Object.keys(t.en)).not.toContain('summary');
+  });
+
+  it('drops authored copy together with a stale entry (sourceHash invalidation)', () => {
+    const t = resolveText('A changed description', { ...entry, es: { ...entry.es, title: 'X' }, en: { ...entry.en, title: 'Y' } });
+    expect(t.es.title).toBeUndefined();
+    expect(t.en.title).toBeUndefined();
+  });
+
+  it('still accepts entries written before the new fields existed', () => {
+    expect(TranslationEntrySchema.safeParse(entry).success).toBe(true);
+    expect(TranslationEntrySchema.safeParse({ ...entry, en: { ...entry.en, title: 'ok', faq: [{ q: 'q', a: 'a', extra: 1 }] } }).success).toBe(false);
   });
 
   it('loads entries from the translations dir during build', () => {

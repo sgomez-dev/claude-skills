@@ -11,10 +11,25 @@ export interface Permissions {
   destructive: boolean;
 }
 
+export interface SkillFaq {
+  q: string;
+  a: string;
+}
+
+/**
+ * Per-language copy. `title`, `summary` and the A14 blocks are authored in the translation cache and are all optional:
+ * a skill without them falls back deterministically (see lib/catalog/copy.ts). Absent fields are omitted, never null.
+ */
 export interface SkillText {
   description: string;
   howToAsk: string[];
   translated: boolean;
+  title?: string;
+  summary?: string;
+  useWhen?: string[];
+  notFor?: string[];
+  output?: string;
+  faq?: SkillFaq[];
 }
 
 interface SkillBase {
