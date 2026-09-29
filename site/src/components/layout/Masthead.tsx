@@ -9,7 +9,7 @@ import { LangSwitch } from './LangSwitch';
 
 export function Masthead({ lang, dict, generatedAt, total }: { lang: Lang; dict: Dictionary; generatedAt: string; total: number }) {
   return (
-    <header className="sticky top-0 z-40 border-b-2 border-ink bg-night/85 backdrop-blur-md supports-[backdrop-filter]:bg-night/70">
+    <header className="sticky top-0 z-40 bg-night/85 backdrop-blur-md supports-[backdrop-filter]:bg-night/70">
       <div className="mx-auto flex max-w-[1440px] items-center justify-between gap-4 px-4 py-3.5 sm:px-7">
         <Link prefetch={false} href={paths.home(lang)} aria-label={dict.nav.home} className="inline-flex">
           <Logo />
@@ -25,6 +25,8 @@ export function Masthead({ lang, dict, generatedAt, total }: { lang: Lang; dict:
           </a>
         </nav>
       </div>
+      {/* The rule the intro draws; sticky already makes the header the containing block. */}
+      <span aria-hidden data-intro="rule" className="absolute inset-x-0 bottom-0 block h-0.5 origin-left bg-ink" />
     </header>
   );
 }

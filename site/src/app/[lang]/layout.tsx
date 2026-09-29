@@ -8,6 +8,7 @@ import { catalog } from '@/lib/catalog';
 import { bricolage, instrument, jetbrains } from '@/lib/fonts';
 import { getDictionary } from '@/lib/i18n';
 import { isLang, LANGS } from '@/lib/i18n/languages';
+import { INTRO_KEY } from '@/lib/motion/intro-key';
 import { AUTHOR, SITE_URL } from '@/lib/site';
 import '@/styles/globals.css';
 
@@ -39,7 +40,8 @@ export default async function LangLayout({ children, params }: { children: React
     <html lang={lang} className={`${bricolage.variable} ${instrument.variable} ${jetbrains.variable}`} suppressHydrationWarning>
       <head>
         <link rel="author" type="text/plain" href="/humans.txt" />
-        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
+        {/* Arms the cover intro before first paint. The 3 s timeout is the failsafe: if the intro never starts, nothing stays hidden. */}
+        <script dangerouslySetInnerHTML={{ __html: `(function(){var d=document.documentElement;d.classList.add('js');try{if(/^\\/(es|en)\\/?$/.test(location.pathname)&&!sessionStorage.getItem('${INTRO_KEY}')&&!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('intro-pending');setTimeout(function(){d.classList.remove('intro-pending')},3000)}}catch(e){}})()` }} />
       </head>
       <body className="min-h-dvh bg-night text-ink">
         <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-acid focus:px-4 focus:py-2 focus:text-night">

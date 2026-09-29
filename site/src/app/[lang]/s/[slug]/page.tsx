@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { ViewTransition } from 'react';
 import { HowToAsk } from '@/components/skill/HowToAsk';
 import { InstallTabs } from '@/components/skill/InstallTabs';
 import { PermissionManifest } from '@/components/skill/PermissionManifest';
@@ -66,7 +67,9 @@ export default async function SkillPage({ params }: { params: Params }) {
           <Sticker color={section.accent} rotate={-2}>{skill.kind === 'command' ? d.skill.builtHere : d.skill.by(skill.upstream.owner)}</Sticker>
           {skill.updatedAt ? <span className="font-mono text-[11px] uppercase text-ink-muted">{d.skill.updated(new Date(skill.updatedAt))}</span> : null}
         </div>
-        <h1 className="mt-5 font-display text-[clamp(2.25rem,7vw,5.5rem)] font-extrabold leading-[0.95] tracking-[-0.035em] break-all">/{skill.slug}</h1>
+        <ViewTransition name={`skill-${skill.slug}`} share="morph" default="none">
+          <h1 className="mt-5 font-display text-[clamp(2.25rem,7vw,5.5rem)] font-extrabold leading-[0.95] tracking-[-0.035em] break-all">/{skill.slug}</h1>
+        </ViewTransition>
         <p className="mt-6 max-w-3xl text-[19px] leading-relaxed">
           <span>{answer}</span>{' '}
           <span lang={descLang}>{text.description}</span>

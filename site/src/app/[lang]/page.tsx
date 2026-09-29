@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Cover } from '@/components/home/Cover';
 import { Faq } from '@/components/home/Faq';
+import { CoverIntro } from '@/components/motion/CoverIntro';
+import { VelocityMarquee } from '@/components/motion/VelocityMarquee';
 import { SectionIndex } from '@/components/home/SectionIndex';
 import { StatsStrip } from '@/components/home/StatsStrip';
 import { InstallTabs } from '@/components/skill/InstallTabs';
@@ -44,7 +46,9 @@ export default async function Home({ params }: { params: Params }) {
   return (
     <main>
       <JsonLd data={[websiteLd(lang), faqLd(d.home.faq), itemListLd(SECTIONS.map((s) => ({ name: s.name[lang], path: paths.section(lang, s.id) })))]} />
+      <CoverIntro />
       <Cover lang={lang} dict={d} total={catalog.counts.total} ticker={ticker} />
+      <VelocityMarquee items={d.home.coverLines.map((l) => l.text)} />
       <SectionIndex lang={lang} title={d.home.index} counts={counts} />
       <StatsStrip dict={d} total={catalog.counts.total} declared={commands.length} commands={commands.length} updated={new Date(catalog.generatedAt)} />
       <section aria-labelledby="install" className="mx-auto mt-20 grid max-w-[1440px] gap-8 px-4 sm:px-7 lg:grid-cols-2 lg:items-center">

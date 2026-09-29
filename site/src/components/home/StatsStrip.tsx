@@ -1,8 +1,10 @@
+import type { ReactNode } from 'react';
+import { CountUp } from '@/components/motion/CountUp';
 import type { Dictionary } from '@/lib/i18n';
 
 export function StatsStrip({ dict, total, declared, commands, updated }: { dict: Dictionary; total: number; declared: number; commands: number; updated: Date }) {
-  const stats: [string, string][] = [
-    [String(total), dict.home.stats.skills],
+  const stats: [ReactNode, string][] = [
+    [<CountUp key="total" value={total} />, dict.home.stats.skills],
     [`${declared}/${commands}`, dict.home.stats.permissionsLabel],
     ['4', dict.home.stats.platforms],
     [dict.date(updated), dict.home.stats.updated],

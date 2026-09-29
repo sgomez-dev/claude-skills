@@ -22,14 +22,17 @@ function Rows({ items }: { items: TickerItem[] }) {
   );
 }
 
-/** Real skills scrolling in an ink frame with a hard acid shadow. Paused on hover/focus, static with reduced motion. */
+/** Real skills scrolling on a 3D printing drum in an ink frame with a hard acid shadow. Paused on hover/focus, static with reduced motion. */
 export function CommandTicker({ items, label }: { items: TickerItem[]; label: string }) {
   return (
-    <div role="region" aria-label={label} className="rounded-[14px] border-2 border-ink bg-[#131316] shadow-[6px_6px_0_var(--color-acid)]">
+    <div role="region" aria-label={label} className="drum rounded-[14px] border-2 border-ink bg-[#131316] shadow-[6px_6px_0_var(--color-acid)]">
       <div className="ticker relative h-[250px] overflow-hidden rounded-[12px] px-4">
-        <div className="ticker-track pt-2">
-          <ul><Rows items={items} /></ul>
-          <ul aria-hidden="true" inert><Rows items={items} /></ul>
+        {/* Printing drum: the viewport leans back in 3D and fades at both ends. */}
+        <div className="drum-viewport">
+          <div className="ticker-track pt-2">
+            <ul><Rows items={items} /></ul>
+            <ul aria-hidden="true" inert><Rows items={items} /></ul>
+          </div>
         </div>
       </div>
     </div>

@@ -31,7 +31,8 @@ body {
 :focus-visible { outline: 2px solid var(--color-acid); outline-offset: 3px; border-radius: 4px; }
 
 /* Stickers "stick" once on mount. */
-.sticker { transform: rotate(var(--r, -3deg)); animation: stick 0.5s var(--ease-out-soft) both; }
+/* backwards, not both: a held fill would override the hover transform below. */
+.sticker { transform: rotate(var(--r, -3deg)); animation: stick 0.5s var(--ease-out-soft) backwards; }
 @keyframes stick {
   from { transform: rotate(calc(var(--r, -3deg) - 8deg)) scale(1.18); opacity: 0; }
 }
@@ -49,9 +50,90 @@ html { scroll-padding-top: 4.5rem; }
 .logo-cursor { display: inline-block; width: 0.5em; height: 0.95em; margin-left: 0.18em; border-radius: 2px; background: var(--color-acid); vertical-align: -0.12em; animation: blink 1.05s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 
+/* ---------- Motion layer (spec §6.1) ----------
+   Native only (WAAPI, CSS, scroll-driven animations): GSAP does not fit the 165 KB gzip JS budget. */
+
+/* 1. Intro: states held only while <html> is intro-pending (CoverIntro takes over with WAAPI fills). */
+.intro-pending [data-intro='rule'],
+.intro-pending [data-intro='highlight-bg'] { transform: scaleX(0); transform-origin: left center; }
+.intro-pending [data-intro='accent'] { clip-path: inset(0 100% 0 0); }
+.intro-pending [data-intro='sticker'] { opacity: 0; }
+.sticker[data-intro] { animation: none; }
+
+/* 2. Kinetic headline: hidden until split, with a failsafe if JS never runs. */
+.js [data-kinetic]:not([data-split]) { visibility: hidden; animation: kinetic-failsafe 0s 1.2s forwards; }
+@keyframes kinetic-failsafe { to { visibility: visible; } }
+/* Each word is a mask: clipped at the bottom only, with room for descenders and italic overhang. */
+.kw { display: inline-block; white-space: nowrap; clip-path: inset(-0.5em -0.3em -0.16em -0.3em); }
+.kc { display: inline-block; animation: kc-rise 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) both; animation-delay: calc(var(--i, 0) * 18ms); }
+@keyframes kc-rise { from { transform: translateY(1.25em); } }
+/* Giant outline number drifts with scroll where scroll-driven animations exist; static elsewhere. */
+.scrub-host { view-timeline: --scrub block; }
+@supports (animation-timeline: view()) {
+  .scrub-number { animation: scrub-drift linear both; animation-timeline: --scrub; animation-range: exit-crossing 0% exit-crossing 100%; }
+}
+@keyframes scrub-drift { to { transform: translateY(35%); } }
+
+/* 3. View transitions */
+::view-transition { pointer-events: none; }
+::view-transition-group(*) { animation-duration: 0.45s; animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); }
+/* React names every `share` candidate before it knows which one pairs. Unpaired snapshots must leave and arrive
+   with the page (root), not linger as separate fading groups. */
+::view-transition-old(.morph):only-child { display: none; }
+::view-transition-new(.morph):only-child { animation: none; }
+/* Blur hides the pixel interpolation of two different type sizes crossfading mid-flight (Next's guide). */
+::view-transition-image-pair(.morph) { animation-name: via-blur; }
+@keyframes via-blur { 30% { filter: blur(3px); } }
+
+/* 4. Interaction (hover only where hover is real: touch taps would fire it). */
+.sticker { transition: transform 0.2s var(--ease-out-soft), box-shadow 0.2s var(--ease-out-soft); }
+.card-sweep { position: relative; isolation: isolate; }
+.card-sweep::before {
+  content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(115deg, transparent 38%, color-mix(in srgb, var(--accent) 16%, transparent) 50%, transparent 62%);
+  /* Rest position past the edge: at 100 % the angled band still tints the top-left corner (visible on touch, which never hovers). */
+  background-size: 260% 100%; background-position: 115% 0; background-repeat: no-repeat;
+  transition: background-position 0.6s var(--ease-out-soft);
+}
+.card-sweep:focus-visible::before { background-position: 0 0; }
+@media (hover: hover) and (pointer: fine) {
+  .sticker:hover { transform: rotate(calc(var(--r, -3deg) + 4deg)) translateY(-3px) scale(1.04); box-shadow: 0 9px 0 rgba(0, 0, 0, 0.35); }
+  .card-sweep:hover::before { background-position: 0 0; }
+}
+.burst { position: absolute; inset: 50% auto auto 50%; pointer-events: none; }
+.burst i {
+  position: absolute; left: -3px; top: -3px; width: 6px; height: 6px; border-radius: 9999px; background: var(--color-acid);
+  animation: burst 0.6s var(--ease-out-soft) forwards;
+}
+@keyframes burst {
+  from { transform: rotate(var(--a)) translateX(0) scale(1); opacity: 1; }
+  to { transform: rotate(var(--a)) translateX(26px) scale(0.2); opacity: 0; }
+}
+
+/* 5. Living cover */
+.marquee-track { animation: marquee 32s linear infinite; }
+@keyframes marquee { to { transform: translateX(-100%); } }
+.drum { perspective: 700px; }
+/* Sized to the ticker window (not the double-length track), so the fades sit at the window edges. */
+.drum-viewport { height: 100%; transform: rotateX(9deg); mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 78%, transparent); }
+body::after {
+  content: ''; position: fixed; inset: -50%; z-index: 70; pointer-events: none; opacity: 0.055;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grain 1s steps(6) infinite;
+}
+@keyframes grain {
+  0% { transform: translate(0, 0); } 20% { transform: translate(-3%, 2%); } 40% { transform: translate(2%, -3%); }
+  60% { transform: translate(-2%, -1%); } 80% { transform: translate(3%, 3%); } 100% { transform: translate(0, 0); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
   .js .reveal { opacity: 1; transform: none; }
   .ticker-track { animation: none; }
   .logo-cursor { animation: none; }
+  .js [data-kinetic] { visibility: visible; animation: none; }
+  .marquee-track, body::after, .scrub-number { animation: none; }
+  .drum-viewport { transform: none; }
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+  .sticker:hover { transform: rotate(var(--r, -3deg)); }
 }

@@ -1,10 +1,15 @@
 'use client';
-import { AnimatePresence, LayoutGroup, MotionConfig, motion } from 'motion/react';
 import { useMemo, useState } from 'react';
+import { flushSync } from 'react-dom';
 import { SkillCard } from '@/components/skill/SkillCard';
 import type { Accent } from '@/content/sections';
 import { fill } from '@/lib/i18n/format';
-import { DURATION, EASE_OUT } from '@/lib/motion';
+import { DURATION, EASE_OUT, prefersReducedMotion } from '@/lib/motion';
+
+// `motion` is 43 KB gzip: loaded on the first filter interaction (hover/focus preloads it), never on page load.
+type MotionModule = typeof import('motion/react');
+let motionModule: Promise<MotionModule> | null = null;
+const loadMotion = () => (motionModule ??= import('motion/react'));
 
 export interface GridItem {
   slug: string;
@@ -36,14 +41,32 @@ export function SkillGrid({ items, accent, labels }: { items: GridItem[]; accent
   const groups = useMemo(() => [...new Set(items.map((i) => i.group))].sort(), [items]);
   const visible = filterItems(items, { kind, group, network });
   const hasBothKinds = new Set(items.map((i) => i.kind)).size > 1;
+  const [M, setM] = useState<MotionModule | null>(null);
+
+  const warm = () => { if (!prefersReducedMotion()) void loadMotion().catch(() => {}); };
+  /** The first change mounts the animated grid (unchanged) before filtering, so it animates too. */
+  async function apply(change: () => void) {
+    if (!M && !prefersReducedMotion()) {
+      try {
+        const mod = await loadMotion();
+        flushSync(() => setM(() => mod));
+      } catch { /* offline: filter without animation */ }
+    }
+    change();
+  }
+
+  const card = (i: GridItem) => (
+    <SkillCard href={i.href} slug={i.slug} description={i.description} descLang={i.descLang} badge={i.badge} accent={accent} network={i.network} networkLabel={labels.network} />
+  );
+  const gridClass = 'grid border-l border-t border-line sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4';
 
   return (
-    <MotionConfig reducedMotion="user">
-      <div role="group" aria-label={labels.label} className="mb-6 flex flex-wrap items-center gap-3">
+    <>
+      <div role="group" aria-label={labels.label} onPointerEnter={warm} onFocus={warm} className="mb-6 flex flex-wrap items-center gap-3">
         {hasBothKinds ? (
           <div role="group" aria-label={labels.origin} className="flex rounded-full border border-line p-0.5">
             {(['all', 'command', 'external'] as const).map((k) => (
-              <button key={k} type="button" aria-pressed={kind === k} onClick={() => setKind(k)}
+              <button key={k} type="button" aria-pressed={kind === k} onClick={() => void apply(() => setKind(k))}
                 className={`rounded-full px-3 py-1.5 font-mono text-[11px] font-bold uppercase ${kind === k ? 'bg-ink text-night' : 'text-ink-muted hover:text-ink'}`}>
                 {labels[k]}
               </button>
@@ -53,7 +76,7 @@ export function SkillGrid({ items, accent, labels }: { items: GridItem[]; accent
         {groups.length > 1 ? (
           <label className="flex items-center gap-2 font-mono text-[11px] font-bold uppercase text-ink-muted">
             <span className="sr-only">{labels.group}</span>
-            <select value={group} onChange={(e) => setGroup(e.target.value)} className="rounded-full border border-line bg-night px-3 py-1.5 text-ink">
+            <select value={group} onChange={(e) => { const v = e.target.value; void apply(() => setGroup(v)); }} className="rounded-full border border-line bg-night px-3 py-1.5 text-ink">
               <option value="all">{labels.allGroups}</option>
               {groups.map((g) => <option key={g} value={g}>{g}</option>)}
             </select>
@@ -61,26 +84,34 @@ export function SkillGrid({ items, accent, labels }: { items: GridItem[]; accent
         ) : null}
         {items.some((i) => i.network) ? (
           <label className="flex cursor-pointer items-center gap-2 font-mono text-[11px] font-bold uppercase text-ink-muted">
-            <input type="checkbox" checked={network} onChange={(e) => setNetwork(e.target.checked)} className="accent-[var(--color-acid)]" />
+            <input type="checkbox" checked={network} onChange={(e) => { const c = e.target.checked; void apply(() => setNetwork(c)); }} className="accent-[var(--color-acid)]" />
             {labels.network}
           </label>
         ) : null}
         <p aria-live="polite" className="ml-auto font-mono text-[11px] uppercase text-ink-muted">{fill(labels.showing, { v: visible.length, t: items.length })}</p>
       </div>
 
-      <LayoutGroup>
-        <motion.ul layout className="grid border-l border-t border-line sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          <AnimatePresence initial={false}>
-            {visible.map((i) => (
-              <motion.li key={i.slug} layout initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.97 }}
-                transition={{ duration: DURATION.base, ease: EASE_OUT }} className="min-w-0">
-                <SkillCard href={i.href} slug={i.slug} description={i.description} descLang={i.descLang} badge={i.badge} accent={accent} network={i.network} networkLabel={labels.network} />
-              </motion.li>
-            ))}
-          </AnimatePresence>
-        </motion.ul>
-      </LayoutGroup>
+      {M ? (
+        <M.MotionConfig reducedMotion="user">
+          <M.LayoutGroup>
+            <M.motion.ul layout className={gridClass}>
+              <M.AnimatePresence initial={false}>
+                {visible.map((i) => (
+                  <M.motion.li key={i.slug} layout initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.97 }}
+                    transition={{ duration: DURATION.base, ease: EASE_OUT }} className="min-w-0">
+                    {card(i)}
+                  </M.motion.li>
+                ))}
+              </M.AnimatePresence>
+            </M.motion.ul>
+          </M.LayoutGroup>
+        </M.MotionConfig>
+      ) : (
+        <ul className={gridClass}>
+          {visible.map((i) => <li key={i.slug} className="min-w-0">{card(i)}</li>)}
+        </ul>
+      )}
       {visible.length === 0 ? <p className="py-10 text-center text-ink-muted">{labels.empty}</p> : null}
-    </MotionConfig>
+    </>
   );
 }
