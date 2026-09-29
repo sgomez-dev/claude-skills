@@ -56,8 +56,8 @@ export default async function SkillPage({ params }: { params: Params }) {
       <JsonLd data={[skillLd(skill, lang, text.description), breadcrumbLd(crumbs)]} />
       <nav aria-label="Breadcrumb" className="font-mono text-[11px] font-bold uppercase tracking-[0.1em] text-ink-muted">
         <ol className="flex flex-wrap gap-2">
-          <li><Link href={paths.home(lang)} className="hover:text-ink">{d.nav.home}</Link> /</li>
-          <li><Link href={paths.section(lang, section.id)} className="hover:text-ink">{section.number} — {section.name[lang]}</Link></li>
+          <li><Link prefetch={false} href={paths.home(lang)} className="hover:text-ink">{d.nav.home}</Link> /</li>
+          <li><Link prefetch={false} href={paths.section(lang, section.id)} className="hover:text-ink">{section.number} — {section.name[lang]}</Link></li>
         </ol>
       </nav>
 

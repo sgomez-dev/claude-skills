@@ -25,7 +25,7 @@ export function Cover({ lang, dict, total, ticker }: { lang: Lang; dict: Diction
           <ul className="space-y-1 text-[15px]">
             {dict.home.coverLines.map((l) => (
               <li key={l.section}>
-                <Link href={paths.section(lang, l.section as SectionId)} className="underline decoration-line underline-offset-4 hover:decoration-acid">{l.text}</Link>
+                <Link prefetch={false} href={paths.section(lang, l.section as SectionId)} className="underline decoration-line underline-offset-4 hover:decoration-acid">{l.text}</Link>
               </li>
             ))}
           </ul>

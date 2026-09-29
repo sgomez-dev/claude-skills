@@ -12,7 +12,7 @@ export function LangSwitch({ current, label }: { current: Lang; label: string })
         l === current ? (
           <span key={l} aria-current="true" className="rounded-full bg-ink px-2.5 py-1 text-night">{l}</span>
         ) : (
-          <Link key={l} href={swapLang(pathname, l)} hrefLang={l} lang={l} className="rounded-full px-2.5 py-1 hover:text-acid">{l}</Link>
+          <Link prefetch={false} key={l} href={swapLang(pathname, l)} hrefLang={l} lang={l} className="rounded-full px-2.5 py-1 hover:text-acid">{l}</Link>
         ),
       )}
     </div>

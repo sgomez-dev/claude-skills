@@ -44,7 +44,7 @@ export default async function Credits({ params }: { params: Params }) {
             </p>
             <ul className="mt-3 flex flex-wrap gap-x-3 gap-y-1">
               {skills.map((s) => (
-                <li key={s.slug}><Link href={paths.skill(lang, s.slug)} className="font-mono text-[12px] text-ink-muted hover:text-ink">/{s.slug}</Link></li>
+                <li key={s.slug}><Link prefetch={false} href={paths.skill(lang, s.slug)} className="font-mono text-[12px] text-ink-muted hover:text-ink">/{s.slug}</Link></li>
               ))}
             </ul>
           </li>

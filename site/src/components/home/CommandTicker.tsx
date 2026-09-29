@@ -12,7 +12,7 @@ function Rows({ items }: { items: TickerItem[] }) {
     <>
       {items.map((i) => (
         <li key={i.slug} className="border-b border-line py-3">
-          <Link href={i.href} className="block">
+          <Link prefetch={false} href={i.href} className="block">
             <span className="font-mono text-[13px] font-bold text-acid">/{i.slug}</span>
             <span lang={i.descLang} className="mt-1 block text-[14px] leading-snug text-ink-muted">{i.description}</span>
           </Link>

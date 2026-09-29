@@ -14,7 +14,7 @@ export function Footer({ lang, dict }: { lang: Lang; dict: Dictionary }) {
           <a href={AUTHOR.url} className="font-bold text-acid hover:underline">{AUTHOR.name}</a> · {dict.footer.license}
         </p>
         <ul className="flex flex-wrap gap-x-5 gap-y-2 text-ink-muted">
-          <li><Link href={paths.credits(lang)} className="hover:text-ink">{dict.footer.credits}</Link></li>
+          <li><Link prefetch={false} href={paths.credits(lang)} className="hover:text-ink">{dict.footer.credits}</Link></li>
           <li><a href={REPO_URL} className="hover:text-ink">{dict.footer.source}</a></li>
           <li><a href={llms} className="hover:text-ink">{dict.footer.llms}</a></li>
         </ul>
