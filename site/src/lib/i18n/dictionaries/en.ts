@@ -94,6 +94,7 @@ export const en = {
     close: 'Close',
     results: 'Results',
     loading: 'Loading…',
+    error: 'Search could not load. Close and reopen to retry.',
   },
   footer: { madeBy: 'Made by', license: 'MIT licensed', source: 'Source on GitHub', llms: 'For AI agents: llms.txt', credits: 'Credits' },
   md: { web: 'Web version', install: 'Install', howToAsk: 'How to ask for it', permissions: 'Permissions', source: 'Source', section: 'Section', skills: 'Skills', license: 'License', author: 'Author' },

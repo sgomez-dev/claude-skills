@@ -95,6 +95,7 @@ export const es: Dictionary = {
     close: 'Cerrar',
     results: 'Resultados',
     loading: 'Cargando…',
+    error: 'No se pudo cargar la búsqueda. Ciérrala y ábrela de nuevo para reintentar.',
   },
   footer: { madeBy: 'Hecho por', license: 'Licencia MIT', source: 'Código en GitHub', llms: 'Para agentes de IA: llms.txt', credits: 'Créditos' },
   md: { web: 'Versión web', install: 'Instalar', howToAsk: 'Cómo pedírselo', permissions: 'Permisos', source: 'Código', section: 'Sección', skills: 'Skills', license: 'Licencia', author: 'Autor' },

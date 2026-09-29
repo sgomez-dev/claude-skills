@@ -1,6 +1,6 @@
 'use client';
 import { useRouter } from 'next/navigation';
-import { useEffect, useId, useRef, useState } from 'react';
+import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import type { Lang } from '@/lib/i18n/languages';
 import type { SearchEntry } from '@/lib/search/index';
 import { OPEN_SEARCH_EVENT } from './SearchTrigger';
@@ -12,55 +12,65 @@ interface Labels {
   close: string;
   results: string;
   loading: string;
+  error: string;
 }
+
+type Searcher = (q: string) => SearchEntry[];
 
 export function SearchDialog({ lang, labels }: { lang: Lang; labels: Labels }) {
   const ref = useRef<HTMLDialogElement>(null);
   const router = useRouter();
   const id = useId();
   const [query, setQuery] = useState('');
-  const [results, setResults] = useState<SearchEntry[]>([]);
   const [active, setActive] = useState(0);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+  // Held in state so results recompute the moment the index finishes loading.
+  const [searcher, setSearcher] = useState<Searcher | null>(null);
 
-  const searcherRef = useRef<((q: string) => SearchEntry[]) | null>(null);
   const fetchPromiseRef = useRef<Promise<void> | null>(null);
+  const searcherRef = useRef<Searcher | null>(null);
+  const langRef = useRef(lang);
+  langRef.current = lang;
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const ensureSearcher = async () => {
+  const results = useMemo(() => (searcher ? searcher(query) : []), [searcher, query]);
+
+  const ensureSearcher = () => {
     if (searcherRef.current || fetchPromiseRef.current) return;
+    setLoading(true);
+    setError(false);
     fetchPromiseRef.current = (async () => {
       try {
-        setLoading(true);
-        setError(false);
         const [{ createSearcher }, entries] = await Promise.all([
           import('@/lib/search/searcher'),
-          fetch(`/search/${lang}.json`).then((r) => {
+          fetch(`/search/${langRef.current}.json`).then((r) => {
             if (!r.ok) throw new Error(`Failed to load search index: ${r.status}`);
             return r.json() as Promise<SearchEntry[]>;
           }),
         ]);
-        searcherRef.current = createSearcher(entries);
+        const fn = createSearcher(entries);
+        searcherRef.current = fn;
+        setSearcher(() => fn);
       } catch (err) {
         console.error('Search initialization failed:', err);
         setError(true);
+        // Clear the in-flight ref so the next open retries.
+        fetchPromiseRef.current = null;
       } finally {
         setLoading(false);
       }
     })();
-    await fetchPromiseRef.current;
   };
 
   const open = (initial = '') => {
     if (ref.current?.open) {
-      // Dialog already open: focus input, don't change query
       inputRef.current?.focus();
     } else {
-      // Opening dialog: show modal and set initial query
       ref.current?.showModal();
       setQuery(initial);
-      void ensureSearcher();
+      setActive(0);
+      ensureSearcher();
     }
   };
 
@@ -83,14 +93,8 @@ export function SearchDialog({ lang, labels }: { lang: Lang; labels: Labels }) {
       window.removeEventListener('keydown', onKey);
       window.removeEventListener(OPEN_SEARCH_EVENT, onOpen);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  useEffect(() => {
-    if (searcherRef.current) {
-      setResults(searcherRef.current(query));
-      setActive(0);
-    }
-  }, [query]);
 
   function go(entry: SearchEntry | undefined) {
     if (!entry) return;
@@ -111,7 +115,8 @@ export function SearchDialog({ lang, labels }: { lang: Lang; labels: Labels }) {
     }
   }
 
-  const message = error ? labels.noResults : loading ? labels.loading : null;
+  const noResults = !!searcher && query.trim() !== '' && results.length === 0;
+  const message = error ? labels.error : loading ? labels.loading : noResults ? labels.noResults : null;
 
   return (
     <dialog ref={ref} aria-label={labels.results} onClick={(e) => e.target === ref.current && ref.current?.close()}
@@ -126,14 +131,14 @@ export function SearchDialog({ lang, labels }: { lang: Lang; labels: Labels }) {
           aria-controls={`${id}-list`}
           aria-activedescendant={results[active] ? `${id}-opt-${active}` : undefined}
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={(e) => { setQuery(e.target.value); setActive(0); }}
           onKeyDown={onInputKey}
           placeholder={labels.placeholder}
           className="min-w-0 flex-1 bg-transparent font-display text-[18px] outline-none placeholder:text-ink-muted"
         />
         <button type="button" onClick={() => ref.current?.close()} className="font-mono text-[11px] font-bold uppercase text-ink-muted hover:text-ink">{labels.close}</button>
       </div>
-      <div aria-live="polite" className="sr-only">
+      <div role="status" aria-live="polite" className="p-4 text-center text-ink-muted empty:hidden">
         {message}
       </div>
       <ul id={`${id}-list`} role="listbox" className="max-h-[55vh] overflow-y-auto p-2">
@@ -147,12 +152,6 @@ export function SearchDialog({ lang, labels }: { lang: Lang; labels: Labels }) {
           </li>
         ))}
       </ul>
-      {!searcherRef.current && query && message && (
-        <div className="p-4 text-center text-ink-muted">{message}</div>
-      )}
-      {searcherRef.current && query.trim() && results.length === 0 && (
-        <div className="p-4 text-center text-ink-muted">{labels.noResults}</div>
-      )}
       <p className="border-t border-line p-3 font-mono text-[10px] uppercase text-ink-muted">{labels.hint}</p>
     </dialog>
   );

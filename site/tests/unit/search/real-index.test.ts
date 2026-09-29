@@ -25,4 +25,26 @@ describe('real search index', () => {
     const slugs = results.map(r => r.s);
     expect(slugs).toContain('code-quality--review');
   });
+
+  it('subtitulos returns embedded-captions first', () => {
+    expect(search('subtitulos')[0]?.s).toBe('embedded-captions');
+  });
+
+  it('revision returns code-quality--review first', () => {
+    expect(search('revision')[0]?.s).toBe('code-quality--review');
+  });
+
+  it.each(['node(', 'test[', 'test\\','docker)', 'c++', '(', 'git*', 'a|b'])('does not throw on %j', (q) => {
+    expect(() => search(q)).not.toThrow();
+  });
+
+  it('base de datos has a database-- skill in the top 3', () => {
+    const slugs = search('base de datos').slice(0, 3).map((r) => r.s);
+    expect(slugs.some((s) => s.startsWith('database--'))).toBe(true);
+  });
+
+  it('seguridad top 3 are all security-- skills', () => {
+    const slugs = search('seguridad').slice(0, 3).map((r) => r.s);
+    expect(slugs.every((s) => s.startsWith('security--'))).toBe(true);
+  });
 });
