@@ -8,7 +8,7 @@ export const en = {
     description: (n: number) =>
       `${n} free, open-source skills for Claude Code: video, web design, sales, legal, finance, AI and code. One command each, every permission declared.`,
   },
-  nav: { label: 'Main', skipToContent: 'Skip to content', language: 'Language', github: 'GitHub', home: 'Home', credits: 'Credits' },
+  nav: { label: 'Main', skipToContent: 'Skip to content', language: 'Language', github: 'GitHub', home: 'Home', credits: 'Credits', breadcrumb: 'Breadcrumb' },
   masthead: { issue: (d: Date, n: number) => `Nº 01 · ${fmtMonth('en-GB', d)} · ${n} specialists` },
   home: {
     claim: { lead: 'Nobody knows', accent: 'everything.', highlight: 'Your agent,', tail: 'now it does.' },

@@ -11,7 +11,7 @@ export function Masthead({ lang, dict, generatedAt, total }: { lang: Lang; dict:
   return (
     <header className="sticky top-0 z-40 bg-night/85 backdrop-blur-md supports-[backdrop-filter]:bg-night/70">
       <div className="mx-auto flex max-w-[1440px] items-center justify-between gap-4 px-4 py-3.5 sm:px-7">
-        <Link prefetch={false} href={paths.home(lang)} aria-label={dict.nav.home} className="inline-flex">
+        <Link prefetch={false} href={paths.home(lang)} className="inline-flex">
           <Logo />
         </Link>
         <p className="hidden font-mono text-[11px] font-bold uppercase tracking-[0.14em] md:block">

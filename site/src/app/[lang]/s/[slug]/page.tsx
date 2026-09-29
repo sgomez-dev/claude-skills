@@ -56,7 +56,7 @@ export default async function SkillPage({ params }: { params: Params }) {
   return (
     <main className="mx-auto max-w-[1440px] px-4 pb-10 pt-8 sm:px-7">
       <JsonLd data={[skillLd(skill, lang, text.description), breadcrumbLd(crumbs)]} />
-      <nav aria-label="Breadcrumb" className="font-mono text-[11px] font-bold uppercase tracking-[0.1em] text-ink-muted">
+      <nav aria-label={d.nav.breadcrumb} className="font-mono text-[11px] font-bold uppercase tracking-[0.1em] text-ink-muted">
         <ol className="flex flex-wrap gap-2">
           <li><Link prefetch={false} href={paths.home(lang)} className="hover:text-ink">{d.nav.home}</Link> /</li>
           <li><Link prefetch={false} href={paths.section(lang, section.id)} className="hover:text-ink">{section.number} — {section.name[lang]}</Link></li>
@@ -69,7 +69,7 @@ export default async function SkillPage({ params }: { params: Params }) {
           {skill.updatedAt ? <span className="font-mono text-[11px] uppercase text-ink-muted">{d.skill.updated(new Date(skill.updatedAt))}</span> : null}
         </div>
         <ViewTransition name={`skill-${skill.slug}`} share="morph" default="none">
-          <h1 className="mt-5 font-display text-[clamp(2.25rem,7vw,5.5rem)] font-extrabold leading-[0.95] tracking-[-0.035em] break-all slug-text"><SlugText text={`/${skill.slug}`} /></h1>
+          <h1 className="mt-5 font-display text-[clamp(2.25rem,7vw,5.5rem)] font-extrabold leading-[0.95] tracking-[-0.035em] [overflow-wrap:anywhere] slug-text"><SlugText text={`/${skill.slug}`} /></h1>
         </ViewTransition>
         <p className="mt-6 max-w-3xl text-[19px] leading-relaxed">
           <span className="slug-text"><SlugText text={answer} /></span>{' '}

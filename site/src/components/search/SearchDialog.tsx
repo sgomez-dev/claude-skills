@@ -96,6 +96,11 @@ export function SearchDialog({ lang, labels }: { lang: Lang; labels: Labels }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Arrow navigation moves aria-activedescendant, not focus, so the list does not scroll by itself.
+  useEffect(() => {
+    document.getElementById(`${id}-opt-${active}`)?.scrollIntoView({ block: 'nearest' });
+  }, [active, id]);
+
   function go(entry: SearchEntry | undefined) {
     if (!entry) return;
     ref.current?.close();

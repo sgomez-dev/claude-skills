@@ -9,7 +9,7 @@ export const es: Dictionary = {
     description: (n) =>
       `${n} skills gratuitas y open source para Claude Code: video, diseño web, ventas, legal, finanzas, IA y código. Un comando cada una, con todos sus permisos declarados.`,
   },
-  nav: { label: 'Principal', skipToContent: 'Saltar al contenido', language: 'Idioma', github: 'GitHub', home: 'Portada', credits: 'Créditos' },
+  nav: { label: 'Principal', skipToContent: 'Saltar al contenido', language: 'Idioma', github: 'GitHub', home: 'Portada', credits: 'Créditos', breadcrumb: 'Migas de pan' },
   masthead: { issue: (d, n) => `Nº 01 · ${fmtMonth('es-ES', d)} · ${n} especialistas` },
   home: {
     claim: { lead: 'Nadie lo sabe', accent: 'todo.', highlight: 'Tu agente,', tail: 'ahora sí.' },
