@@ -5,5 +5,7 @@
   "compatibility_date": "2026-09-01",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "assets": { "directory": ".open-next/assets", "binding": "ASSETS" },
+  "routes": [{ "pattern": "skills.sgomez.dev", "custom_domain": true }],
+  "preview_urls": true,
   "services": [{ "binding": "WORKER_SELF_REFERENCE", "service": "claude-skills-site" }]
 }
