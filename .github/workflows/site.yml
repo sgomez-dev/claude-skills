@@ -48,6 +48,11 @@ jobs:
       # the e2e step, so Lighthouse results do not depend on the runner image's Chrome version.
       - name: Point Lighthouse at Playwright Chromium
         run: echo "CHROME_PATH=$(node -e "process.stdout.write(require('@playwright/test').chromium.executablePath())")" >> "$GITHUB_ENV"
+      # Ubuntu 24.04 runners restrict unprivileged user namespaces through AppArmor, so Chromium aborts with
+      # "No usable sandbox!". Playwright gets by because it launches with --no-sandbox, but Lighthouse does not.
+      # Lift the restriction on this throwaway runner instead of turning the sandbox off.
+      - name: Allow the Chromium sandbox
+        run: sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
       # Local budgets: SEO, a11y, CLS and TBT are errors; LCP is only a warning here because
       # the local preview serves JS uncompressed. The mandatory LCP < 2500 ms gate runs
       # against the deployed preview (PR step below).
