@@ -6,6 +6,14 @@
       "/web--design-engineering pule los detalles de esta interfaz, se siente tosca",
       "/web--design-engineering revisa las transiciones de este modal",
       "/web--design-engineering mejora los detalles invisibles de esta pantalla de ajustes"
+    ],
+    "title": "Pulido de interfaz y animación",
+    "summary": "Aplica la filosofía de Emil Kowalski para pulir interfaces: decisiones de animación, detalles invisibles y revisiones en tabla Antes, Después y Por qué.",
+    "keywords": [
+      "pulir interfaz",
+      "emil kowalski",
+      "detalles de ui",
+      "easing de animación"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/web--design-engineering polish the details on this interface, it feels rough",
       "/web--design-engineering review the transitions on this modal",
       "/web--design-engineering improve the invisible details on this settings screen"
+    ],
+    "title": "UI polish and animation details",
+    "summary": "Applies Emil Kowalski's design engineering philosophy to polish interfaces: animation decisions, invisible details and Before, After, Why review tables.",
+    "keywords": [
+      "ui polish",
+      "emil kowalski",
+      "interface details",
+      "animation easing"
     ]
-  }
+  },
+  "copyHash": "d14981354fa9c284"
 }

@@ -6,6 +6,14 @@
       "/docs--diagram dibuja el diagrama de arquitectura de este backend",
       "/docs--diagram genera un diagrama Mermaid del flujo de autenticación",
       "/docs--diagram necesito un diagrama de cómo se conectan mis microservicios"
+    ],
+    "title": "Diagramas de arquitectura",
+    "summary": "Lee tu código y dibuja diagramas Mermaid (flujo, secuencia, clases, ER, estados o C4) con una explicación en texto.",
+    "keywords": [
+      "diagrama mermaid",
+      "diagrama de arquitectura",
+      "diagrama de secuencia",
+      "diagrama er"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/docs--diagram draw the architecture diagram for this backend",
       "/docs--diagram generate a Mermaid diagram of the authentication flow",
       "/docs--diagram I need a diagram of how my microservices connect"
+    ],
+    "title": "Architecture diagrams",
+    "summary": "Reads your code and draws Mermaid diagrams (flowchart, sequence, class, ER, state or C4) with a plain-text explanation.",
+    "keywords": [
+      "mermaid diagram",
+      "architecture diagram",
+      "sequence diagram",
+      "er diagram from code"
     ]
-  }
+  },
+  "copyHash": "7fb511edb9e59eaa"
 }

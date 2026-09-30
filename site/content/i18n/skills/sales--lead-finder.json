@@ -6,6 +6,38 @@
       "/sales--lead-finder busca leads que encajen con nuestro ICP en el sector retail",
       "/sales--lead-finder prioriza esta lista de leads existente por probabilidad de cierre",
       "/sales--lead-finder encuentra 20 empresas de logística que podrían necesitar nuestro producto"
+    ],
+    "title": "Búsqueda y priorización de leads",
+    "summary": "Encuentra empresas que encajan con tu cliente ideal mediante búsqueda web, o prioriza tu lista actual, con puntuación de encaje e intención.",
+    "keywords": [
+      "encontrar leads",
+      "prospectos b2b",
+      "priorizar leads",
+      "generar leads"
+    ],
+    "useWhen": [
+      "Tienes un ICP y quieres encontrar empresas nuevas que encajen",
+      "Ya tienes una lista de empresas y necesitas ordenarla por prioridad",
+      "Quieres saber a quién contactar esta semana"
+    ],
+    "notFor": [
+      "Obtener emails o teléfonos verificados de personas",
+      "Sustituir bases de datos de pago de contactos"
+    ],
+    "output": "Un CSV leads_[icp]_[fecha].csv con puntuaciones, nivel A/B/C, motivo y fuente, y una tabla resumen de los diez mejores en la conversación.",
+    "faq": [
+      {
+        "q": "¿Inventa emails o datos de contacto?",
+        "a": "No. Si un nombre o email no se puede verificar en fuentes públicas, el campo queda como «research needed». Un patrón de email puede ir en una columna aparte marcada como no verificada."
+      },
+      {
+        "q": "¿Necesito de pago alguna base de datos?",
+        "a": "No. Solo usa búsqueda web y fuentes públicas y gratuitas, y respeta robots.txt."
+      },
+      {
+        "q": "¿Puedo darle mi propia lista?",
+        "a": "Sí. Con un archivo o una lista de empresas entra en modo enriquecimiento: conserva tus columnas y añade las de datos y puntuación."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "/sales--lead-finder find leads matching our ICP in the retail sector",
       "/sales--lead-finder prioritize this existing lead list by likelihood to close",
       "/sales--lead-finder find 20 logistics companies that might need our product"
+    ],
+    "title": "Lead finding and scoring",
+    "summary": "Finds companies matching your ideal customer through web search, or prioritizes an existing list, scored by fit and buying intent.",
+    "keywords": [
+      "find leads",
+      "b2b prospecting",
+      "lead scoring",
+      "lead list"
+    ],
+    "useWhen": [
+      "You have an ICP and want new matching companies",
+      "You already have a company list and need it ranked by priority",
+      "You want to know who to contact this week"
+    ],
+    "notFor": [
+      "Getting verified personal emails or phone numbers",
+      "Replacing paid contact databases"
+    ],
+    "output": "A CSV, leads_[icp]_[date].csv, with scores, A/B/C tier, reason and source, plus a top-10 summary table in the conversation.",
+    "faq": [
+      {
+        "q": "Does it make up emails or contact details?",
+        "a": "No. If a name or email cannot be verified from public sources, the field is left as research needed. An email pattern may go in a separate column marked unverified."
+      },
+      {
+        "q": "Do I need a paid database?",
+        "a": "No. It uses only web search and public, free sources, and respects robots.txt."
+      },
+      {
+        "q": "Can I give it my own list?",
+        "a": "Yes. Given a file or a list of companies it switches to enrich mode: it keeps your columns and appends the enrichment and scoring columns."
+      }
     ]
-  }
+  },
+  "copyHash": "11164a766bc98188"
 }

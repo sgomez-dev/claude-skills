@@ -6,6 +6,14 @@
       "Aquí tienes un reel de mi nicho, escríbeme un buen comentario",
       "Dame 10 comentarios para mi ronda de engagement de hoy",
       "¿Qué le comento a este post sin sonar a bot?"
+    ],
+    "title": "Comentarios para posts de Instagram",
+    "summary": "Escribe comentarios para posts y reels de otras cuentas que suenen a persona con opinión, no a bot. Da dos opciones y cuál publicar.",
+    "keywords": [
+      "comentar en instagram",
+      "comentarios reels",
+      "engagement instagram",
+      "qué comentar"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Here's a reel in my niche, write me a good comment",
       "Give me 10 comments for today's engagement round",
       "What should I comment on this post without sounding like a bot?"
+    ],
+    "title": "Instagram comments on other posts",
+    "summary": "Writes comments for other people's Instagram posts and reels that sound like a person with an opinion, with two options and a pick of which to post.",
+    "keywords": [
+      "instagram comments",
+      "comment on reels",
+      "daily engagement",
+      "what to comment"
     ]
-  }
+  },
+  "copyHash": "c872ba255cd70f68"
 }

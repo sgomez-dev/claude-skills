@@ -6,6 +6,14 @@
       "/fullstack--realtime-feature quiero un chat que se actualice en tiempo real",
       "/fullstack--realtime-feature necesito mostrar qué usuarios están en línea ahora mismo",
       "/fullstack--realtime-feature ayúdame a elegir entre WebSockets y Server-Sent Events"
+    ],
+    "title": "Funciones en tiempo real",
+    "summary": "Añade tiempo real a tu app: elige WebSocket, SSE o proveedor gestionado, con presencia, UI optimista y reconexión.",
+    "keywords": [
+      "tiempo real",
+      "websocket o sse",
+      "chat en vivo",
+      "presencia de usuarios"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/fullstack--realtime-feature build a chat that updates in real time",
       "/fullstack--realtime-feature show which users are online right now",
       "/fullstack--realtime-feature help me choose between WebSockets and Server-Sent Events"
+    ],
+    "title": "Realtime features",
+    "summary": "Adds realtime to your app: picks WebSocket, SSE or a managed provider, with presence, optimistic UI and reconnection handling.",
+    "keywords": [
+      "realtime",
+      "websocket vs sse",
+      "live chat",
+      "user presence"
     ]
-  }
+  },
+  "copyHash": "c97dfb532a64ac1c"
 }

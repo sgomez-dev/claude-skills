@@ -6,6 +6,14 @@
       "/docs--adr documenta por qué elegimos PostgreSQL sobre MongoDB",
       "/docs--adr crea un ADR para el cambio de arquitectura a microservicios",
       "/docs--adr registra la decisión de usar GraphQL en vez de REST"
+    ],
+    "title": "Registro de decisiones (ADR)",
+    "summary": "Redacta un Architecture Decision Record con contexto, decisión, consecuencias y alternativas, y lo guarda en docs/adr.",
+    "keywords": [
+      "adr",
+      "registro de decisiones",
+      "decisión de arquitectura",
+      "documentar decisión técnica"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/docs--adr document why we chose PostgreSQL over MongoDB",
       "/docs--adr create an ADR for the move to microservices",
       "/docs--adr record the decision to use GraphQL instead of REST"
+    ],
+    "title": "Architecture decision record",
+    "summary": "Writes an Architecture Decision Record with context, decision, consequences and alternatives, and saves it under docs/adr.",
+    "keywords": [
+      "adr",
+      "architecture decision record",
+      "document technical decision",
+      "decision log"
     ]
-  }
+  },
+  "copyHash": "ccd959b510953af1"
 }

@@ -1,6 +1,14 @@
 {
   "sourceHash": "eec7743fc66b5cb1",
   "es": {
+    "title": "Auditoría de tracking server-side",
+    "summary": "Audita tu medición server-side (sGTM, APIs de conversión, deduplicación, consentimiento) y devuelve fallos, prioridad y pasos de verificación.",
+    "keywords": [
+      "tracking server-side",
+      "server-side tagging",
+      "api de conversiones",
+      "deduplicación de eventos"
+    ],
     "description": "Audita la medición de medios de pago del lado servidor, incluyendo la gestión de etiquetas del lado servidor, las Conversion API de las plataformas, la taxonomía de eventos, la deduplicación entre navegador y servidor, el consentimiento, el hashing, la calidad de los datos, la observabilidad y la privacidad. Úsalo para tracking del lado servidor, sGTM, etiquetado del lado servidor, CAPI, Events API, event_id, depuración de píxeles, medición first-party o pérdida de datos de conversión.",
     "howToAsk": [
       "Ayúdame a configurar el tracking del lado servidor con sGTM",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "Server-side tracking audit",
+    "summary": "Audits server-side measurement (sGTM, conversion APIs, deduplication, consent) and returns failure modes, priorities and verification steps.",
+    "keywords": [
+      "server-side tracking",
+      "sgtm",
+      "conversions api",
+      "event deduplication"
+    ],
     "howToAsk": [
       "Help me set up server-side tracking with sGTM",
       "Why are conversions getting lost between the pixel and the CAPI?",
       "Review event deduplication between browser and server"
     ]
-  }
+  },
+  "copyHash": "a0c090d8ec07d7f0"
 }

@@ -6,6 +6,14 @@
       "/devops--github-actions workflow de CI que corra tests en cada push",
       "/devops--github-actions automatiza el etiquetado de issues con GitHub Actions",
       "/devops--github-actions workflow de despliegue automático a producción"
+    ],
+    "title": "Workflows de GitHub Actions",
+    "summary": "Genera workflows de GitHub Actions para CI, despliegue continuo, etiquetado automático y otras automatizaciones de tu repositorio.",
+    "keywords": [
+      "github actions",
+      "workflow ci",
+      "automatizar despliegue",
+      "yaml de actions"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/devops--github-actions CI workflow that runs tests on every push",
       "/devops--github-actions automate issue labeling with GitHub Actions",
       "/devops--github-actions workflow to auto-deploy to production"
+    ],
+    "title": "GitHub Actions workflows",
+    "summary": "Generates GitHub Actions workflows for CI, CD, auto-labeling and other automation in your repository.",
+    "keywords": [
+      "github actions",
+      "ci workflow",
+      "automate deployment",
+      "actions yaml"
     ]
-  }
+  },
+  "copyHash": "3deca6cf1f418397"
 }

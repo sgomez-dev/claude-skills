@@ -6,6 +6,14 @@
       "Busca los reels que están funcionando ahora mismo en mi nicho",
       "Haz ingeniería inversa de esta cuenta y dime qué fórmulas de gancho usa",
       "Constrúyeme un swipe file con ideas para grabar esta semana"
+    ],
+    "title": "Investigar reels que funcionan",
+    "summary": "Busca los reels que funcionan ahora en tu nicho, los ordena por cuánto superan a su propia cuenta y los convierte en un archivo de ideas.",
+    "keywords": [
+      "reels virales",
+      "qué funciona en mi nicho",
+      "swipe file",
+      "fórmulas de gancho"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Find the reels that are actually working right now in my niche",
       "Reverse engineer this account and tell me what hook formulas it uses",
       "Build me a swipe file of ideas to shoot this week"
+    ],
+    "title": "Find reels that are working",
+    "summary": "Finds reels working right now in your niche, ranks them by how far each beat its own account, names the hook formula and builds a swipe file.",
+    "keywords": [
+      "viral reels",
+      "swipe file",
+      "what's working in my niche",
+      "hook formulas"
     ]
-  }
+  },
+  "copyHash": "22c2e46a442b4f99"
 }

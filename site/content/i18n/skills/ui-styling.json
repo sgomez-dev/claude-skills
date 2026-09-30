@@ -6,6 +6,14 @@
       "Crea un formulario accesible con componentes de shadcn/ui",
       "Implementa el modo oscuro en esta interfaz con Tailwind",
       "Diseña un dashboard responsive con componentes reutilizables"
+    ],
+    "title": "Interfaces con shadcn/ui y Tailwind",
+    "summary": "Ayuda a construir interfaces accesibles con componentes shadcn/ui, estilos Tailwind CSS y diseños visuales en canvas: layouts, temas, modo oscuro y formularios.",
+    "keywords": [
+      "shadcn ui",
+      "tailwind css",
+      "modo oscuro",
+      "componentes accesibles"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Build an accessible form using shadcn/ui components",
       "Implement dark mode for this interface with Tailwind",
       "Design a responsive dashboard with reusable components"
+    ],
+    "title": "shadcn/ui and Tailwind styling",
+    "summary": "Helps build accessible interfaces with shadcn/ui components, Tailwind CSS styling and canvas visual designs: layouts, themes, dark mode and forms.",
+    "keywords": [
+      "shadcn ui",
+      "tailwind css",
+      "dark mode",
+      "accessible components"
     ]
-  }
+  },
+  "copyHash": "625e302c60ee8f2e"
 }

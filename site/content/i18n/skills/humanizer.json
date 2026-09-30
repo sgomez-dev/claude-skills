@@ -6,6 +6,14 @@
       "¿Puedes revisar este texto y quitarle el tono de que lo escribió una IA?",
       "Humaniza este párrafo, suena demasiado a ChatGPT",
       "Revisa mi artículo y elimina las rayas y el lenguaje de marketing exagerado"
+    ],
+    "title": "Textos menos robóticos",
+    "summary": "Detecta y corrige patrones de escritura típicos de la IA en un texto para que suene natural, conservando su significado y su tono.",
+    "keywords": [
+      "quitar tono de ia",
+      "humanizar texto",
+      "detectar texto de ia",
+      "reescribir natural"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Can you review this text and make it sound less like AI wrote it?",
       "Humanize this paragraph, it sounds too much like ChatGPT",
       "Check my article and remove the em dashes and inflated marketing language"
+    ],
+    "title": "Humanize AI writing",
+    "summary": "Finds and fixes the patterns typical of AI-written text so it sounds natural, keeping the original meaning and tone.",
+    "keywords": [
+      "remove ai writing",
+      "humanize text",
+      "ai text detector",
+      "sound more human"
     ]
-  }
+  },
+  "copyHash": "52b73cf256fad416"
 }

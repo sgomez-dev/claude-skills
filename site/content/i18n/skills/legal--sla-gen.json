@@ -6,6 +6,38 @@
       "/legal--sla-gen redacta un SLA para mi API con 99.9% de disponibilidad",
       "/legal--sla-gen necesito un acuerdo de nivel de servicio con créditos por incumplimiento",
       "/legal--sla-gen genera el SLA con tiempos de respuesta por severidad"
+    ],
+    "title": "SLA de disponibilidad y soporte",
+    "summary": "Redacta un SLA con niveles de disponibilidad, tiempos de respuesta, créditos y exclusiones, contrastado con tu arquitectura real.",
+    "keywords": [
+      "sla",
+      "acuerdo de nivel de servicio",
+      "disponibilidad uptime",
+      "créditos de servicio"
+    ],
+    "useWhen": [
+      "Un cliente enterprise te pide un SLA o quieres publicar uno",
+      "Quieres saber qué disponibilidad puede soportar tu infraestructura",
+      "Necesitas definir tiempos de respuesta de soporte por gravedad"
+    ],
+    "notFor": [
+      "Sustituir el consejo de un abogado",
+      "Prometer más nueves de los que soporta tu arquitectura: lo señala en vez de redactar alrededor"
+    ],
+    "output": "Un archivo legal/SLA_DRAFT.md con compromisos por nivel, medición, mantenimiento, matriz de soporte, créditos y exclusiones, más las brechas operativas por cerrar.",
+    "faq": [
+      {
+        "q": "¿Comprueba si puedo cumplir el uptime que quiero prometer?",
+        "a": "Sí. Revisa despliegue, redundancia, monitorización y dependencias externas, y avisa si la cifra deseada supera lo que la arquitectura respalda."
+      },
+      {
+        "q": "¿Garantiza tiempos de resolución?",
+        "a": "No. Compromete tiempos de respuesta; la resolución se redacta como objetivo, porque solo debe garantizarse lo controlable."
+      },
+      {
+        "q": "¿Sirve para planes de autoservicio y enterprise?",
+        "a": "Redacta la versión pública y anota las diferencias para acuerdos enterprise."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "/legal--sla-gen draft an SLA for my API with 99.9% uptime",
       "/legal--sla-gen I need a service level agreement with credits for breaches",
       "/legal--sla-gen generate the SLA with response times by severity"
+    ],
+    "title": "Service level agreement (SLA)",
+    "summary": "Drafts an SLA with uptime tiers, response times, service credits and exclusions, checked against your real architecture.",
+    "keywords": [
+      "sla template",
+      "service level agreement",
+      "uptime commitment",
+      "service credits"
+    ],
+    "useWhen": [
+      "An enterprise customer asks for an SLA or you want to publish one",
+      "You want to know what uptime your infrastructure can support",
+      "You need support response times defined by severity"
+    ],
+    "notFor": [
+      "Replacing the advice of a lawyer",
+      "Promising more nines than your architecture supports: it flags the gap instead of drafting around it"
+    ],
+    "output": "A legal/SLA_DRAFT.md file with per-tier commitments, measurement, maintenance, a support matrix, credits and exclusions, plus operational gaps to close.",
+    "faq": [
+      {
+        "q": "Does it check whether I can meet the uptime I want to promise?",
+        "a": "Yes. It inspects deployment, redundancy, monitoring and upstream dependencies, and warns if your target exceeds what the architecture supports."
+      },
+      {
+        "q": "Does it guarantee resolution times?",
+        "a": "No. It commits to response times; resolution is written as a target, since only what you control should be guaranteed."
+      },
+      {
+        "q": "Does it work for self-serve and enterprise plans?",
+        "a": "It drafts the public version and notes the differences for negotiated enterprise deals."
+      }
     ]
-  }
+  },
+  "copyHash": "7736971a6306ec99"
 }

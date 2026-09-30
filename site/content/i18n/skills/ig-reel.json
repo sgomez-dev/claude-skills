@@ -6,6 +6,38 @@
       "Hazme un reel sobre cómo ahorrar tiempo cocinando",
       "Necesito el guion y el gancho para este vídeo que voy a grabar",
       "Dame varias opciones de gancho para hablar de este tema"
+    ],
+    "title": "Guion de Reel de Instagram",
+    "summary": "Convierte una idea en un Reel: tres ganchos puntuados, guion hablado, texto en pantalla y hoja de tiempos por beats, con tu propia voz.",
+    "keywords": [
+      "guion de reel",
+      "gancho para vídeo",
+      "texto en pantalla",
+      "voz en off"
+    ],
+    "useWhen": [
+      "Tienes una idea para un Reel y no sabes cómo empezarlo",
+      "Vas a grabar y aún no tienes la primera línea",
+      "Quieres comparar varios ganchos antes de elegir uno"
+    ],
+    "notFor": [
+      "Publicar el Reel: el guion lo grabas y lo subes tú",
+      "Escribir guiones en una voz que no puedas decir tú mismo"
+    ],
+    "output": "Tres ganchos puntuados, el guion hablado, el texto en pantalla por separado y una hoja de tiempos por beats.",
+    "faq": [
+      {
+        "q": "¿Publica el Reel por mí?",
+        "a": "No. La skill solo produce el guion; tú lo grabas y lo publicas. Si dices que sí, anota la fecha, la fórmula y la primera línea en un registro."
+      },
+      {
+        "q": "¿Cuánto debería durar un Reel?",
+        "a": "El rango de trabajo es de 15 a 45 segundos. Los Reels llegan a 3 minutos, pero casi nadie debería usarlos. Por debajo de 7 segundos solo se inflan las repeticiones."
+      },
+      {
+        "q": "¿Qué hace si mi idea es floja?",
+        "a": "No la rellena. Te pregunta qué pasó, a quién y cuánto costó o rindió, porque un Reel necesita una cosa concreta y verdadera."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "Make me a reel about saving time while cooking",
       "I need the script and hook for this video I'm about to record",
       "Give me a few hook options to talk about this topic"
+    ],
+    "title": "Instagram Reel script",
+    "summary": "Turns a raw idea into a Reel: three scored hooks, a spoken script, on-screen text and a timed beat sheet, written in your own voice.",
+    "keywords": [
+      "reel script",
+      "video hook",
+      "short-form video script",
+      "voiceover"
+    ],
+    "useWhen": [
+      "You have a Reel idea but no idea how to open it",
+      "You are about to record and still lack the first line",
+      "You want to compare several hooks before picking one"
+    ],
+    "notFor": [
+      "Posting the Reel: you record and publish it yourself",
+      "Writing scripts in a voice you could not say out loud"
+    ],
+    "output": "Three scored hooks, the spoken script, the on-screen text written separately and a timed beat sheet.",
+    "faq": [
+      {
+        "q": "Does it publish the Reel for me?",
+        "a": "No. The skill only produces the script; you shoot and post it. If you approve it, it logs the date, hook formula and first line for later audits."
+      },
+      {
+        "q": "How long should a Reel be?",
+        "a": "The working range is 15 to 45 seconds. Reels can run to 3 minutes, but almost nobody should use that. Under 7 seconds only the loop counts inflate."
+      },
+      {
+        "q": "What if my idea is thin?",
+        "a": "It does not pad it. It asks what happened, to whom and what it cost or returned, because a Reel needs one specific true thing."
+      }
     ]
-  }
+  },
+  "copyHash": "fc0374ccc88485d9"
 }

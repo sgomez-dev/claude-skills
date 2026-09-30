@@ -1,18 +1,83 @@
 {
   "sourceHash": "10a81009e5d4ac20",
   "es": {
+    "title": "Auditoría de publicidad de pago",
+    "summary": "Audita tus cuentas de publicidad de pago en una o varias plataformas y entrega un informe con la salud de cada una, los riesgos y las acciones priorizadas.",
+    "keywords": [
+      "auditoría de anuncios",
+      "salud de la cuenta",
+      "diagnóstico de publicidad",
+      "riesgos y oportunidades"
+    ],
     "description": "Realiza una auditoría de publicidad de pago basada en fuentes verificadas para una o varias plataformas entre Google, Meta, YouTube, LinkedIn, TikTok, Microsoft, Apple, Amazon, Reddit, Pinterest, Snapchat y X. Úsalo para revisiones completas de anuncios, revisiones de salud de cuenta, diagnósticos de medios de pago, auditorías parciales tras un fallo de autenticación o de worker, ponderación de plataformas ausentes, elegibilidad y puntuación de funciones beta, auditorías de gasto, auditorías de tracking u oportunidades y riesgos priorizados.",
     "howToAsk": [
       "Haz una auditoría completa de todas mis cuentas de publicidad de pago",
       "Revisa la salud de mi cuenta de Meta Ads y dime los riesgos principales",
       "Dame una lista priorizada de oportunidades tras la auditoría"
+    ],
+    "useWhen": [
+      "Quieres una revisión completa de una o varias plataformas de anuncios",
+      "Necesitas saber la salud de tu cuenta antes de cambiar presupuesto",
+      "Buscas una lista priorizada de riesgos y oportunidades"
+    ],
+    "notFor": [
+      "Cambiar campañas: solo produce informes y borradores",
+      "Dar una puntuación si faltan datos de una plataforma"
+    ],
+    "output": "Un informe en Markdown (opcionalmente HTML o PDF) y un paquete de archivos JSON con la salud de cada plataforma, cobertura de evidencia, acciones priorizadas y plan de medición.",
+    "faq": [
+      {
+        "q": "¿Qué pasa si falla la conexión con una plataforma?",
+        "a": "El análisis sigue con las demás, la auditoría queda marcada como parcial y la plataforma fallida no recibe puntuación ni entra en la salud global."
+      },
+      {
+        "q": "¿Penaliza que no tenga una función en beta?",
+        "a": "No. Las funciones opcionales, beta o no disponibles se anotan como oportunidades sin puntuar y no afectan a la salud de la cuenta."
+      },
+      {
+        "q": "¿Modifica mis cuentas?",
+        "a": "No. La auditoría solo analiza; cualquier cambio propuesto queda como borrador hasta pasar el control de mutaciones."
+      }
     ]
   },
   "en": {
+    "title": "Paid advertising audit",
+    "summary": "Audits your paid ad accounts on one or more platforms and delivers a report with each platform's health, the risks and prioritized actions.",
+    "keywords": [
+      "ad account audit",
+      "paid media audit",
+      "account health check",
+      "ad risks and opportunities"
+    ],
     "howToAsk": [
       "Run a full audit across all my paid ad accounts",
       "Check the health of my Meta Ads account and flag the top risks",
       "Give me a prioritized list of opportunities after the audit"
+    ],
+    "useWhen": [
+      "You want a full review of one or more ad platforms",
+      "You need to know your account health before changing budgets",
+      "You want a prioritized list of risks and opportunities"
+    ],
+    "notFor": [
+      "Changing campaigns: it only produces reports and drafts",
+      "Scoring a platform when its data is missing"
+    ],
+    "output": "A Markdown report (optionally HTML or PDF) plus a JSON run bundle with each platform's health, evidence coverage, prioritized actions and a measurement plan.",
+    "faq": [
+      {
+        "q": "What happens if one platform fails to connect?",
+        "a": "The audit carries on with the others, is labelled partial, and the failed platform gets no score and is left out of the overall health."
+      },
+      {
+        "q": "Does it penalize me for not using a beta feature?",
+        "a": "No. Optional, beta or unavailable features are listed as unscored opportunities and have no effect on account health."
+      },
+      {
+        "q": "Will it change my ad accounts?",
+        "a": "No. The audit only analyzes; any proposed change stays a draft until it passes the mutation gate."
+      }
     ]
-  }
+  },
+  "copyHash": "d599927da30b8752"
 }

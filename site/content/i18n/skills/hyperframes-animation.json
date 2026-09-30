@@ -1,6 +1,15 @@
 {
   "sourceHash": "a40260d82c3d92da",
+  "copyHash": "c16fed4153a9ec22",
   "es": {
+    "title": "Biblioteca de animación HyperFrames",
+    "summary": "Reúne reglas de movimiento, plantillas de escena, transiciones y los siete motores de animación compatibles, entre ellos GSAP, Lottie y Three.js.",
+    "keywords": [
+      "reglas de animación",
+      "transiciones de escena",
+      "animación lottie",
+      "efectos de texto animados"
+    ],
     "description": "Todo el conocimiento de animación para HyperFrames — reglas de movimiento atómicas, blueprints de escena multi-fase, transiciones de escena, técnicas de motion design más amplias, Y los siete adaptadores de runtime (GSAP por defecto, además de Lottie, Three.js, Anime.js, CSS keyframes, Web Animations API, TypeGPU). Úsalo para cualquier tarea de movimiento o animación: elige 2-4 reglas y combínalas, carga un blueprint, o consulta la API específica de un runtime (p. ej. eases de GSAP / reproductor de Lottie / mixer de Three.js). También cubre la auditoría de la coreografía de una composición existente (mapa de animación) y 24 efectos de animación de texto con nombre. Nativo de HyperFrames: timeline única en pausa, seek-safe, determinista.",
     "howToAsk": [
       "Añade una animación de entrada elegante a este título de vídeo",
@@ -9,6 +18,14 @@
     ]
   },
   "en": {
+    "title": "HyperFrames animation library",
+    "summary": "Collects motion rules, scene blueprints, transitions and the seven supported animation runtimes, including GSAP, Lottie and Three.js.",
+    "keywords": [
+      "animation rules",
+      "scene transitions",
+      "lottie animation",
+      "animated text effects"
+    ],
     "howToAsk": [
       "Add a polished entrance animation to this video title",
       "Audit the animation choreography in this composition and suggest fixes",

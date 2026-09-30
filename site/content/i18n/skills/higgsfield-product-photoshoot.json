@@ -6,6 +6,14 @@
       "Haz una foto de estudio profesional de este producto",
       "Crea una imagen lifestyle con el producto en uso",
       "Genera un banner hero para nuestra campaña de anuncios"
+    ],
+    "title": "Fotos de producto con IA",
+    "summary": "Genera fotos de producto de marca en diez modos: estudio, estilo de vida, banners, carruseles, packs de anuncios y prueba virtual.",
+    "keywords": [
+      "foto de producto ia",
+      "fotografía de estudio",
+      "imágenes para anuncios",
+      "prueba virtual de ropa"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Create a professional studio shot of this product",
       "Make a lifestyle image showing the product in use",
       "Generate a hero banner for our ad campaign"
+    ],
+    "title": "AI product photoshoot",
+    "summary": "Generates brand-quality product photos in ten modes: studio shots, lifestyle scenes, banners, carousels, ad packs and virtual try-on.",
+    "keywords": [
+      "ai product photography",
+      "studio product shot",
+      "ad creative images",
+      "virtual try-on"
     ]
-  }
+  },
+  "copyHash": "dc67bd308bb4c854"
 }

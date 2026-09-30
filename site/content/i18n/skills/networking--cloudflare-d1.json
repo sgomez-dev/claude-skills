@@ -1,7 +1,17 @@
 {
   "sourceHash": "11137d6193dfa883",
+  "copyHash": "99a8987ff60ee753",
   "es": {
     "description": "Configura Cloudflare D1, la base de datos SQLite serverless",
+    "title": "Base de datos Cloudflare D1",
+    "summary": "Configura una base de datos Cloudflare D1 (SQLite serverless) con migraciones, bindings de wrangler, capa de acceso a datos y datos de prueba.",
+    "keywords": [
+      "cloudflare d1",
+      "sqlite serverless",
+      "migraciones d1",
+      "wrangler",
+      "base de datos edge"
+    ],
     "howToAsk": [
       "/networking--cloudflare-d1 crea una base de datos D1 para mi Worker",
       "/networking--cloudflare-d1 migra mi esquema SQLite a D1",
@@ -13,6 +23,15 @@
       "/networking--cloudflare-d1 create a D1 database for my Worker",
       "/networking--cloudflare-d1 migrate my SQLite schema to D1",
       "/networking--cloudflare-d1 connect D1 to my Cloudflare Pages app"
+    ],
+    "title": "Cloudflare D1 database setup",
+    "summary": "Sets up a Cloudflare D1 (serverless SQLite) database with migrations, wrangler bindings, a typed data access layer and a development seed script.",
+    "keywords": [
+      "cloudflare d1",
+      "serverless sqlite",
+      "d1 migrations",
+      "wrangler",
+      "edge database"
     ]
   }
 }

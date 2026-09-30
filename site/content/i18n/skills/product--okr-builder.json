@@ -6,6 +6,14 @@
       "/product--okr-builder ayúdame a escribir los OKR del próximo trimestre",
       "/product--okr-builder convierte esta meta de negocio en objetivos medibles",
       "/product--okr-builder revisa si estos resultados clave son realmente medibles"
+    ],
+    "title": "OKRs medibles desde tu estrategia",
+    "summary": "Convierte estrategia y objetivos difusos en OKRs: objetivos claros y resultados clave medibles con línea base y responsable.",
+    "keywords": [
+      "okrs",
+      "resultados clave",
+      "objetivos trimestrales",
+      "plantilla okr"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/product--okr-builder help me write next quarter's OKRs",
       "/product--okr-builder turn this business goal into measurable objectives",
       "/product--okr-builder check whether these key results are actually measurable"
+    ],
+    "title": "OKRs from your strategy",
+    "summary": "Turns strategy and fuzzy goals into OKRs: clear objectives and measurable key results with baselines and owners.",
+    "keywords": [
+      "okr builder",
+      "key results",
+      "quarterly objectives",
+      "okr template"
     ]
-  }
+  },
+  "copyHash": "62fff483c1106290"
 }

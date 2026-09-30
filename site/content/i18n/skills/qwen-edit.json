@@ -6,6 +6,15 @@
       "Edita esta foto para cambiarle la ropa sin perder el parecido de la persona",
       "Reencuadra esta imagen recortada y ajusta la pose del personaje",
       "Aplica una transferencia de estilo a este retrato con Qwen-Image-Edit"
+    ],
+    "title": "Edición de fotos con Qwen-Image-Edit",
+    "summary": "Patrones de instrucciones para editar fotos con Qwen-Image-Edit conservando la identidad: reencuadre, ropa, pose, estilo e iluminación.",
+    "keywords": [
+      "editar foto con ia",
+      "qwen image edit",
+      "cambiar ropa en foto",
+      "transferencia de estilo",
+      "reencuadrar foto"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "Edit this photo to change the outfit without losing the person's likeness",
       "Reframe this cropped image and adjust the character's pose",
       "Apply a style transfer to this portrait using Qwen-Image-Edit"
+    ],
+    "title": "Photo editing with Qwen-Image-Edit",
+    "summary": "Prompting patterns for editing photos with Qwen-Image-Edit while keeping identity: reframing, clothing, pose, style transfer and lighting.",
+    "keywords": [
+      "ai photo editing",
+      "qwen image edit",
+      "change clothing in photo",
+      "style transfer",
+      "reframe cropped photo"
     ]
-  }
+  },
+  "copyHash": "222c5020dbece8cf"
 }

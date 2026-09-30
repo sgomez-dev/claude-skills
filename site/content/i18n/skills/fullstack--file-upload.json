@@ -6,6 +6,14 @@
       "/fullstack--file-upload quiero subir imágenes directamente a S3 desde el navegador",
       "/fullstack--file-upload necesito una barra de progreso y generar miniaturas automáticas",
       "/fullstack--file-upload valida que solo se suban PDFs de menos de 10MB"
+    ],
+    "title": "Subida de archivos",
+    "summary": "Implementa subidas directas a S3 o R2 con URLs prefirmadas, validación en servidor, barra de progreso y miniaturas.",
+    "keywords": [
+      "subir archivos",
+      "urls prefirmadas",
+      "subida a s3",
+      "miniaturas de imágenes"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/fullstack--file-upload upload images straight to S3 from the browser",
       "/fullstack--file-upload add a progress bar and auto-generate thumbnails",
       "/fullstack--file-upload validate that only PDFs under 10MB get uploaded"
+    ],
+    "title": "File uploads",
+    "summary": "Implements direct uploads to S3 or R2 with presigned URLs, server-side validation, progress tracking and thumbnails.",
+    "keywords": [
+      "file upload",
+      "presigned urls",
+      "s3 upload",
+      "image thumbnails"
     ]
-  }
+  },
+  "copyHash": "56bd6e821a0c9717"
 }

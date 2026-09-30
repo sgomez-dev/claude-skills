@@ -6,6 +6,14 @@
       "¿Qué partes de esta interfaz deberían tener animación?",
       "Revisa mi app y dime dónde falta movimiento",
       "Quiero que esta pantalla se sienta más viva, ¿qué animarías?"
+    ],
+    "title": "Dónde conviene animar una interfaz",
+    "summary": "Recorre un código base o interfaz, propone como mucho 5-7 sitios donde el movimiento aporta y rechaza el resto. Solo lee, no modifica código.",
+    "keywords": [
+      "qué animar",
+      "oportunidades de animación",
+      "mejorar sensación de interfaz",
+      "revisar movimiento"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "What parts of this UI should have animation?",
       "Review my app and tell me where motion is missing",
       "I want this screen to feel more alive, what would you animate?"
+    ],
+    "title": "Where a UI should animate",
+    "summary": "Scans a codebase or UI, proposes at most 5-7 places where motion helps with exact values, and rejects the rest. Read-only: it changes no code.",
+    "keywords": [
+      "what should i animate",
+      "animation opportunities",
+      "make ui feel alive",
+      "motion suggestions"
     ]
-  }
+  },
+  "copyHash": "d52a377819b84a71"
 }

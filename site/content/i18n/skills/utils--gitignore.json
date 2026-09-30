@@ -6,6 +6,14 @@
       "/utils--gitignore crea un .gitignore para un proyecto Node con Next.js",
       "/utils--gitignore añade las carpetas de build y node_modules que faltan",
       "/utils--gitignore genera uno para un proyecto Python con entorno virtual"
+    ],
+    "title": "Archivo .gitignore a medida",
+    "summary": "Detecta lenguajes, frameworks y herramientas de tu proyecto y genera un .gitignore comentado, fusionándolo con el que ya exista.",
+    "keywords": [
+      "crear gitignore",
+      "gitignore node",
+      "ignorar archivos git",
+      "archivos .env"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/utils--gitignore create a .gitignore for a Node project with Next.js",
       "/utils--gitignore add the missing build folder and node_modules entries",
       "/utils--gitignore generate one for a Python project with a virtualenv"
+    ],
+    "title": "Tailored .gitignore file",
+    "summary": "Detects your project languages, frameworks and tools, then writes a commented .gitignore, merging with any existing one.",
+    "keywords": [
+      "create gitignore",
+      "gitignore node",
+      "ignore files git",
+      ".env gitignore"
     ]
-  }
+  },
+  "copyHash": "88edb46e4cdb44ca"
 }

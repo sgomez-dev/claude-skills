@@ -6,6 +6,14 @@
       "/web--design-system crea un design system completo para mi startup",
       "/web--design-system define los tokens de color y tipografía de mi producto",
       "/web--design-system genera la librería de componentes base de mi app"
+    ],
+    "title": "Sistema de diseño completo",
+    "summary": "Crea un sistema de diseño con criterio: tokens, tipografía, color y componentes, desde tu producto, su personalidad y tus colores de marca.",
+    "keywords": [
+      "sistema de diseño",
+      "tokens de diseño",
+      "paleta de marca",
+      "librería de componentes"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/web--design-system create a complete design system for my startup",
       "/web--design-system define the color and typography tokens for my product",
       "/web--design-system generate the base component library for my app"
+    ],
+    "title": "Complete design system",
+    "summary": "Creates an opinionated design system with tokens, typography, color and components, starting from your product type, personality and brand colors.",
+    "keywords": [
+      "design system",
+      "design tokens",
+      "brand palette",
+      "component library"
     ]
-  }
+  },
+  "copyHash": "10b77a373269701e"
 }

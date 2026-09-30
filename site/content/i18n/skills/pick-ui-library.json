@@ -6,6 +6,14 @@
       "Qué librería me recomiendas para un menú de comandos tipo Cmd+K",
       "Necesito una librería para arrastrar y soltar tarjetas en un tablero",
       "Qué usar para virtualizar una lista larga en React"
+    ],
+    "title": "Elegir librería de interfaz",
+    "summary": "Recomienda una única librería frontend para tu tarea (toasts, gráficos, arrastrar y soltar, OTP…) a partir de una lista curada de Emil Kowalski.",
+    "keywords": [
+      "qué librería usar",
+      "librería de toasts",
+      "librería de gráficos",
+      "drag and drop react"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "What library do you recommend for a Cmd+K command menu",
       "I need a library for drag-and-drop cards on a board",
       "What should I use to virtualize a long list in React"
+    ],
+    "title": "Pick a frontend library",
+    "summary": "Recommends one frontend library for your task (toasts, charts, drag and drop, OTP inputs and more) from a curated list by Emil Kowalski.",
+    "keywords": [
+      "which react library",
+      "toast library",
+      "chart library",
+      "drag and drop library"
     ]
-  }
+  },
+  "copyHash": "675fdce308683256"
 }

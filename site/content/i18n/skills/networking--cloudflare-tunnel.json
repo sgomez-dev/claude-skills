@@ -1,7 +1,17 @@
 {
   "sourceHash": "2268c7447ff52a38",
+  "copyHash": "28dd275fa8b8d443",
   "es": {
     "description": "Configura Cloudflare Tunnel para exponer servicios locales de forma segura",
+    "title": "Cloudflare Tunnel para servicios",
+    "summary": "Configura un Cloudflare Tunnel para publicar servicios locales sin IP pública, con reglas de entrada, DNS, políticas de acceso y despliegue.",
+    "keywords": [
+      "cloudflare tunnel",
+      "exponer localhost",
+      "cloudflared",
+      "acceso ssh sin ip",
+      "zero trust"
+    ],
     "howToAsk": [
       "/networking--cloudflare-tunnel expón mi servidor local en tunnel.midominio.com",
       "/networking--cloudflare-tunnel conecta mi API en localhost:3000 a internet sin abrir puertos",
@@ -13,6 +23,15 @@
       "/networking--cloudflare-tunnel expose my local server at tunnel.mydomain.com",
       "/networking--cloudflare-tunnel connect my API on localhost:3000 to the internet without opening ports",
       "/networking--cloudflare-tunnel set up a tunnel for my dev app"
+    ],
+    "title": "Local services via Tunnel",
+    "summary": "Configures a Cloudflare Tunnel to expose local services without a public IP, with ingress rules, DNS, access policies and deployment options.",
+    "keywords": [
+      "cloudflare tunnel",
+      "expose localhost",
+      "cloudflared",
+      "ssh without public ip",
+      "zero trust"
     ]
   }
 }

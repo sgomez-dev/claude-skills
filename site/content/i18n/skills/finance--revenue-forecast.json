@@ -6,6 +6,14 @@
       "/finance--revenue-forecast proyecta nuestros ingresos del próximo trimestre",
       "/finance--revenue-forecast necesito una previsión de ingresos basada en el pipeline de ventas",
       "/finance--revenue-forecast genera escenarios optimista y pesimista de ingresos"
+    ],
+    "title": "Previsión de ingresos con escenarios",
+    "summary": "Construye una previsión de ingresos desde tu pipeline o histórico, con drivers visibles y escenarios base, optimista y pesimista.",
+    "keywords": [
+      "previsión de ingresos",
+      "forecast de ventas",
+      "pipeline ponderado",
+      "proyección de mrr"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/finance--revenue-forecast forecast our revenue for next quarter",
       "/finance--revenue-forecast I need a revenue forecast based on the sales pipeline",
       "/finance--revenue-forecast generate best-case and worst-case revenue scenarios"
+    ],
+    "title": "Revenue forecast with scenarios",
+    "summary": "Builds a bottoms-up revenue forecast from your pipeline or history, with every driver exposed and base, best and worst scenarios.",
+    "keywords": [
+      "revenue forecast",
+      "sales forecast",
+      "weighted pipeline",
+      "mrr projection"
     ]
-  }
+  },
+  "copyHash": "d5c818c06c68b38c"
 }

@@ -6,6 +6,14 @@
       "Revisa las animaciones de este componente con criterio exigente",
       "Comprueba si el movimiento de esta interfaz cumple un estándar de calidad alto",
       "Dame feedback crítico sobre esta transición animada antes de darla por buena"
+    ],
+    "title": "Revisión de animaciones",
+    "summary": "Revisa código de animación y movimiento frente a un listón alto de calidad de Emil Kowalski; señala por defecto y solo aprueba si se lo gana.",
+    "keywords": [
+      "revisar animaciones",
+      "code review animación",
+      "easing y duración",
+      "rendimiento de animaciones"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Review this component's animations with a high bar for quality",
       "Check whether this interface's motion meets a strict craft standard",
       "Give me critical feedback on this animated transition before approving it"
+    ],
+    "title": "Animation code review",
+    "summary": "Reviews animation and motion code against a high craft bar based on Emil Kowalski's philosophy. It flags by default and only approves work that earns it.",
+    "keywords": [
+      "review animations",
+      "motion code review",
+      "easing and duration",
+      "animation performance"
     ]
-  }
+  },
+  "copyHash": "6ff590d29e436766"
 }

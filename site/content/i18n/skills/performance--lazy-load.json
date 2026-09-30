@@ -6,6 +6,14 @@
       "/performance--lazy-load carga las imágenes solo cuando entran en pantalla",
       "/performance--lazy-load divide las rutas de mi app para que carguen bajo demanda",
       "/performance--lazy-load aplica lazy loading a este componente pesado"
+    ],
+    "title": "Carga diferida de la web",
+    "summary": "Aplica carga diferida a rutas, componentes, imágenes y módulos para que tu web cargue más rápido al abrirse.",
+    "keywords": [
+      "lazy loading",
+      "carga diferida",
+      "code splitting",
+      "imágenes lazy"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/performance--lazy-load load images only when they scroll into view",
       "/performance--lazy-load split my app's routes so they load on demand",
       "/performance--lazy-load lazy-load this heavy component"
+    ],
+    "title": "Lazy loading for faster pages",
+    "summary": "Applies lazy loading to routes, components, images and modules so your site loads faster on first visit.",
+    "keywords": [
+      "lazy loading",
+      "code splitting",
+      "lazy images",
+      "react lazy"
     ]
-  }
+  },
+  "copyHash": "fcacb85c75900e35"
 }

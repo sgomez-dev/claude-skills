@@ -6,6 +6,14 @@
       "/cloud--autoscaling-strategy diseña el autoescalado para mi API en Kubernetes",
       "/cloud--autoscaling-strategy necesito políticas de escalado para picos de tráfico en Black Friday",
       "/cloud--autoscaling-strategy valida mi estrategia de autoescalado con una prueba de carga"
+    ],
+    "title": "Estrategia de autoescalado",
+    "summary": "Diseña el autoescalado de un servicio: métrica de escalado, límites, enfriamiento y arranques en frío, validado con una prueba de carga.",
+    "keywords": [
+      "autoescalado",
+      "hpa kubernetes",
+      "métricas de escalado",
+      "prueba de carga"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/cloud--autoscaling-strategy design autoscaling for my API running on Kubernetes",
       "/cloud--autoscaling-strategy I need scaling policies for Black Friday traffic spikes",
       "/cloud--autoscaling-strategy validate my autoscaling setup with a load test"
+    ],
+    "title": "Autoscaling strategy",
+    "summary": "Designs a service's autoscaling: scaling metric, bounds, cooldowns and cold-start handling, validated with a load test.",
+    "keywords": [
+      "autoscaling",
+      "kubernetes hpa",
+      "scaling metrics",
+      "load test validation"
     ]
-  }
+  },
+  "copyHash": "7772890ae3c65619"
 }

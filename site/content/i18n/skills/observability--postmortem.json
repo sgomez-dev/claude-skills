@@ -6,6 +6,14 @@
       "/observability--postmortem escribe el postmortem de la caída de ayer",
       "/observability--postmortem documenta la cronología del incidente en producción",
       "/observability--postmortem ayúdame con las acciones de seguimiento tras el fallo"
+    ],
+    "title": "Postmortem sin culpables",
+    "summary": "Convierte chats, alertas y notas de un incidente en un postmortem con cronología, factores contribuyentes y acciones con responsable.",
+    "keywords": [
+      "postmortem",
+      "análisis de incidente",
+      "causa raíz",
+      "cronología de incidente"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/observability--postmortem write the postmortem for yesterday's outage",
       "/observability--postmortem document the timeline of the production incident",
       "/observability--postmortem help me draft follow-up actions after the failure"
+    ],
+    "title": "Blameless postmortem",
+    "summary": "Turns chat logs, alerts and notes from an incident into a postmortem with a timeline, contributing factors and owned action items.",
+    "keywords": [
+      "postmortem",
+      "incident review",
+      "root cause analysis",
+      "incident timeline"
     ]
-  }
+  },
+  "copyHash": "f0f8bbd55f01a3d8"
 }

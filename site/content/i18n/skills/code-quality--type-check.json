@@ -6,6 +6,14 @@
       "/code-quality--type-check añade tipos de TypeScript a este archivo",
       "/code-quality--type-check corrige los errores de tipado de mi proyecto Python",
       "/code-quality--type-check revisa que las anotaciones de tipos sean correctas aquí"
+    ],
+    "title": "Tipos para TypeScript y Python",
+    "summary": "Añade o corrige anotaciones de tipos en TypeScript/JavaScript y Python sin cambiar el comportamiento en ejecución del código.",
+    "keywords": [
+      "anotaciones de tipos",
+      "typescript any",
+      "type hints python",
+      "tipado estricto"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/code-quality--type-check add TypeScript types to this file",
       "/code-quality--type-check fix the type errors in my Python project",
       "/code-quality--type-check check that these type annotations are correct"
+    ],
+    "title": "TypeScript and Python type hints",
+    "summary": "Adds or fixes type annotations in TypeScript/JavaScript and Python code without changing how it behaves at runtime.",
+    "keywords": [
+      "type annotations",
+      "replace any typescript",
+      "python type hints",
+      "type safety"
     ]
-  }
+  },
+  "copyHash": "cd33497bbdcb1aa6"
 }

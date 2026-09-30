@@ -6,6 +6,14 @@
       "/fullstack--saas-starter monta la base de mi SaaS con auth y equipos desde cero",
       "/fullstack--saas-starter necesito una plantilla con facturación y ajustes de cuenta",
       "/fullstack--saas-starter quiero un starter con emails transaccionales incluidos"
+    ],
+    "title": "Plantilla base para SaaS",
+    "summary": "Genera la base de un SaaS en tu stack: autenticación, organizaciones con invitaciones, facturación inicial, ajustes y emails.",
+    "keywords": [
+      "plantilla saas",
+      "starter saas",
+      "organizaciones y equipos",
+      "base de un saas"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/fullstack--saas-starter scaffold my SaaS base with auth and teams from scratch",
       "/fullstack--saas-starter give me a starter template with billing and account settings",
       "/fullstack--saas-starter include transactional emails in the starter"
+    ],
+    "title": "SaaS starter",
+    "summary": "Scaffolds a SaaS foundation in your stack: authentication, organizations with invites, billing stubs, settings and transactional email.",
+    "keywords": [
+      "saas starter",
+      "saas boilerplate",
+      "teams and organizations",
+      "saas scaffold"
     ]
-  }
+  },
+  "copyHash": "31beb82d38aae1cd"
 }

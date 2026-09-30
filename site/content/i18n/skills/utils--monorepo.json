@@ -6,6 +6,14 @@
       "/utils--monorepo configura un monorepo con pnpm workspaces para mis dos apps",
       "/utils--monorepo comparte la configuración de TypeScript entre paquetes",
       "/utils--monorepo optimiza el pipeline de build de mi monorepo con Turborepo"
+    ],
+    "title": "Monorepo con workspaces",
+    "summary": "Configura u optimiza un monorepo con workspaces, configuraciones compartidas, caché de compilación y pruebas solo de lo afectado.",
+    "keywords": [
+      "crear monorepo",
+      "workspaces pnpm",
+      "turborepo",
+      "configuración compartida"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/utils--monorepo set up a monorepo with pnpm workspaces for my two apps",
       "/utils--monorepo share the TypeScript config across all packages",
       "/utils--monorepo optimize my monorepo's build pipeline with Turborepo"
+    ],
+    "title": "Monorepo setup",
+    "summary": "Sets up or tunes a monorepo with workspaces, shared configs, cached builds and tests that run only on affected packages.",
+    "keywords": [
+      "create monorepo",
+      "pnpm workspaces",
+      "turborepo",
+      "shared config"
     ]
-  }
+  },
+  "copyHash": "9061398eb1958740"
 }

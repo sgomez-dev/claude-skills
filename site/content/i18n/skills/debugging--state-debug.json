@@ -6,6 +6,14 @@
       "/debugging--state-debug mi store de Redux tiene un estado inconsistente",
       "/debugging--state-debug depura por qué la caché muestra datos viejos",
       "/debugging--state-debug investiga este problema de sesiones que se pierden"
+    ],
+    "title": "Depurar problemas de estado",
+    "summary": "Depura errores de estado en la aplicación, desde React, Vue o Redux hasta cachés, sesiones y bases de datos, y propone la corrección.",
+    "keywords": [
+      "bug de estado",
+      "redux",
+      "estado react",
+      "caché desactualizada"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/debugging--state-debug my Redux store has inconsistent state",
       "/debugging--state-debug debug why the cache shows stale data",
       "/debugging--state-debug investigate why user sessions keep dropping"
+    ],
+    "title": "Application state debugging",
+    "summary": "Debugs state bugs from UI state (React, Vue, Redux) to caches, sessions and databases, and proposes the fix.",
+    "keywords": [
+      "state bug",
+      "redux state",
+      "react state",
+      "stale cache"
     ]
-  }
+  },
+  "copyHash": "1c5fc7d87182de5e"
 }

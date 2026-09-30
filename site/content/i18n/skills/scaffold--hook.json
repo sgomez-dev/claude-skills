@@ -6,6 +6,14 @@
       "/scaffold--hook crea un hook de React para gestionar el estado de un formulario",
       "/scaffold--hook necesito un hook con tipos para hacer polling de una API",
       "/scaffold--hook genera un custom hook con tests para el modo oscuro"
+    ],
+    "title": "Hook personalizado de React",
+    "summary": "Genera un hook personalizado de React con tipos, limpieza de efectos, gestión de errores, tests y un ejemplo de uso.",
+    "keywords": [
+      "custom hook react",
+      "crear hook",
+      "usecallback",
+      "tests de hooks"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/scaffold--hook create a React hook to manage form state",
       "/scaffold--hook I need a typed hook to poll an API",
       "/scaffold--hook generate a custom hook with tests for dark mode"
+    ],
+    "title": "Custom React hook",
+    "summary": "Generates a custom React hook with types, effect cleanup, error handling, tests and a usage example.",
+    "keywords": [
+      "custom react hook",
+      "create hook",
+      "renderhook tests",
+      "useeffect cleanup"
     ]
-  }
+  },
+  "copyHash": "80bf24b7743742eb"
 }

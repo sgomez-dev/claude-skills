@@ -6,6 +6,14 @@
       "/utils--eslint-config crea una configuración de ESLint para mi proyecto TypeScript",
       "/utils--eslint-config revisa mi .eslintrc y elimina reglas redundantes",
       "/utils--eslint-config añade reglas recomendadas para React"
+    ],
+    "title": "Configuración de ESLint",
+    "summary": "Genera u optimiza la configuración de ESLint de tu proyecto según TypeScript, React o Node, con reglas, exclusiones y scripts de lint.",
+    "keywords": [
+      "configurar eslint",
+      "reglas de lint",
+      "eslint typescript",
+      "lint-staged"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/utils--eslint-config set up ESLint for my TypeScript project",
       "/utils--eslint-config review my .eslintrc and remove redundant rules",
       "/utils--eslint-config add recommended rules for React"
+    ],
+    "title": "ESLint setup",
+    "summary": "Generates or tunes your ESLint config for TypeScript, React or Node, with rules, ignores, lint scripts and a pre-commit hook.",
+    "keywords": [
+      "eslint config",
+      "eslint rules",
+      "lint typescript",
+      "lint-staged"
     ]
-  }
+  },
+  "copyHash": "39ae4e08e043d92a"
 }

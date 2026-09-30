@@ -6,6 +6,14 @@
       "/fullstack--background-jobs necesito procesar vídeos subidos sin bloquear la app",
       "/fullstack--background-jobs añade una tarea programada que se ejecute cada noche",
       "/fullstack--background-jobs quiero reintentos automáticos si falla el envío de emails"
+    ],
+    "title": "Trabajos en segundo plano",
+    "summary": "Monta un sistema de colas adaptado a tu stack: workers, reintentos, tareas programadas y monitorización de fallos.",
+    "keywords": [
+      "colas de trabajos",
+      "tareas en segundo plano",
+      "workers",
+      "cron jobs"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/fullstack--background-jobs process uploaded videos without blocking the app",
       "/fullstack--background-jobs add a nightly scheduled task",
       "/fullstack--background-jobs auto-retry failed email sends"
+    ],
+    "title": "Background jobs",
+    "summary": "Sets up a job queue suited to your stack: workers, retries, scheduled jobs and a way to monitor failures.",
+    "keywords": [
+      "background jobs",
+      "job queue",
+      "workers and retries",
+      "cron jobs"
     ]
-  }
+  },
+  "copyHash": "5963c50ba105b5eb"
 }

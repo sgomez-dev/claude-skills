@@ -6,6 +6,14 @@
       "/debugging--distributed-trace rastrea por qué falla esta petición entre microservicios",
       "/debugging--distributed-trace correlaciona los logs de estos tres servicios",
       "/debugging--distributed-trace encuentra dónde se pierde esta petición en la arquitectura"
+    ],
+    "title": "Depurar fallos entre microservicios",
+    "summary": "Rastrea una petición fallida por varios microservicios con IDs de correlación para hallar el servicio, timeout o reintento que causa el fallo.",
+    "keywords": [
+      "depurar microservicios",
+      "trazado distribuido",
+      "trace id",
+      "timeout entre servicios"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/debugging--distributed-trace trace why this request fails across microservices",
       "/debugging--distributed-trace correlate logs across these three services",
       "/debugging--distributed-trace find where this request gets lost in the architecture"
+    ],
+    "title": "Microservice failure tracing",
+    "summary": "Traces a failing request across microservices using correlation IDs to find the service, timeout or retry behind the failure.",
+    "keywords": [
+      "debug microservices",
+      "distributed tracing",
+      "trace id",
+      "service timeout"
     ]
-  }
+  },
+  "copyHash": "fc9f5c686f7ed48f"
 }

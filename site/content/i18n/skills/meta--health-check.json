@@ -6,6 +6,14 @@
       "/meta--health-check revisa todas mis skills instaladas",
       "/meta--health-check comprueba si hay permisos peligrosos en mis skills",
       "/meta--health-check valida la estructura de mis comandos personalizados"
+    ],
+    "title": "Revisión de salud de skills",
+    "summary": "Revisa todas las skills instaladas: estructura, permisos declarados y seguridad, y entrega un informe con lo que pasa y lo que falla.",
+    "keywords": [
+      "revisar skills",
+      "validar skills",
+      "permisos de skills",
+      "informe de salud"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/meta--health-check check all my installed skills",
       "/meta--health-check look for risky permissions in my skills",
       "/meta--health-check validate the structure of my custom commands"
+    ],
+    "title": "Skills health check",
+    "summary": "Checks every installed skill for structure, declared permissions and safety, then produces a health report of what passes and what fails.",
+    "keywords": [
+      "check installed skills",
+      "validate skills",
+      "skill permissions",
+      "skills health report"
     ]
-  }
+  },
+  "copyHash": "4cf4e3601b0f9077"
 }

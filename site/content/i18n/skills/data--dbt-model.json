@@ -6,6 +6,14 @@
       "/data--dbt-model modelo de staging para la tabla orders",
       "/data--dbt-model capa marts para ingresos mensuales",
       "/data--dbt-model añade tests y documentación a mis modelos dbt"
+    ],
+    "title": "Modelos dbt con tests",
+    "summary": "Genera modelos dbt en capas staging y marts, con tests y documentación de columnas, siguiendo las convenciones que ya tenga tu proyecto.",
+    "keywords": [
+      "modelo dbt",
+      "capa staging",
+      "tablas de hechos",
+      "tests de dbt"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/data--dbt-model staging model for the orders table",
       "/data--dbt-model marts layer for monthly revenue",
       "/data--dbt-model add tests and docs to my dbt models"
+    ],
+    "title": "dbt models with tests",
+    "summary": "Generates dbt models in staging and marts layers with tests and column docs, following the conventions your dbt project already uses.",
+    "keywords": [
+      "dbt model",
+      "staging layer",
+      "fact and dimension",
+      "dbt tests"
     ]
-  }
+  },
+  "copyHash": "6aca2117afd68146"
 }

@@ -6,6 +6,14 @@
       "Revisa este texto y quítale cualquier rastro de que lo escribió una IA",
       "Este caption suena a ChatGPT, humanízalo antes de publicarlo",
       "Puntúa este guion contra el panel de detección de IA"
+    ],
+    "title": "Texto sin huella de IA",
+    "summary": "Limpia un borrador de marcas de texto generado por IA (rayas largas, palabras típicas, caracteres invisibles) y lo puntúa con cinco comprobaciones.",
+    "keywords": [
+      "quitar rayas largas",
+      "humanizar texto",
+      "suena a chatgpt",
+      "detectar texto de ia"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Check this text and strip out anything that sounds AI-written",
       "This caption sounds like ChatGPT, humanize it before I post",
       "Score this script against the AI-detection panel"
+    ],
+    "title": "Make your text sound human",
+    "summary": "Strips AI fingerprints from a draft, such as em dashes, stock words and invisible characters, and scores it against five local checks.",
+    "keywords": [
+      "humanize ai text",
+      "remove em dashes",
+      "sounds like chatgpt",
+      "ai slop words"
     ]
-  }
+  },
+  "copyHash": "bd66947ff98edc0a"
 }

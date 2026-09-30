@@ -6,6 +6,14 @@
       "/web--ui-components-pro crea un componente de acordeón animado y accesible",
       "/web--ui-components-pro construye un selector de fechas con patrón compuesto",
       "/web--ui-components-pro diseña un modal que no parezca hecho con IA"
+    ],
+    "title": "Componentes de interfaz cuidados",
+    "summary": "Crea componentes de interfaz en React y TypeScript con animaciones, estados de carga y error, y accesibilidad incluida.",
+    "keywords": [
+      "componentes ui",
+      "animaciones react",
+      "componentes accesibles",
+      "tailwind"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/web--ui-components-pro build an animated, accessible accordion component",
       "/web--ui-components-pro create a date picker using a compound component pattern",
       "/web--ui-components-pro design a modal that doesn't look AI-generated"
+    ],
+    "title": "Polished UI components",
+    "summary": "Builds typed UI components with animation, loading, error and empty states, theming and built-in accessibility for your project.",
+    "keywords": [
+      "ui components",
+      "react animation",
+      "compound components",
+      "accessible components"
     ]
-  }
+  },
+  "copyHash": "15d3c1fd5b52457c"
 }

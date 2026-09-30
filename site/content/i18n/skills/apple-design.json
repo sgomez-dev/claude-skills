@@ -6,6 +6,14 @@
       "Revisa si esta interfaz sigue las convenciones de diseño de Apple",
       "Añade una animación spring al arrastrar esta hoja modal",
       "Ajusta la tipografía para que se parezca al estilo de iOS"
+    ],
+    "title": "Diseño web fluido estilo Apple",
+    "summary": "Aplica a la web los principios de interfaz de Apple: gestos, animaciones con resortes, transiciones interrumpibles, materiales translúcidos y tipografía.",
+    "keywords": [
+      "diseño estilo apple",
+      "animación con resortes",
+      "gestos y arrastre",
+      "interfaz fluida"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Review whether this UI follows Apple's design conventions",
       "Add a spring animation to this draggable sheet",
       "Tune the typography to feel more iOS-native"
+    ],
+    "title": "Apple-style fluid web interfaces",
+    "summary": "Applies Apple's interface design principles to the web: gestures, spring animations, interruptible transitions, translucent materials and typography.",
+    "keywords": [
+      "apple style ui",
+      "spring animations",
+      "swipe and drag gestures",
+      "fluid interface"
     ]
-  }
+  },
+  "copyHash": "77bb63b7043bb93a"
 }

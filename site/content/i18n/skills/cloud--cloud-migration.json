@@ -6,6 +6,14 @@
       "/cloud--cloud-migration ayúdame a planificar la migración de mi app a la nube",
       "/cloud--cloud-migration qué estrategia de migración me conviene, rehost o refactor",
       "/cloud--cloud-migration necesito un plan por fases con opción de marcha atrás"
+    ],
+    "title": "Migración a la nube",
+    "summary": "Crea un plan de migración por fases: inventario, estrategia de las 6 R por componente, pasos de corte, vuelta atrás y coste estimado.",
+    "keywords": [
+      "migrar a la nube",
+      "plan de migración cloud",
+      "estrategia 6 rs",
+      "rollback migración"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/cloud--cloud-migration help me plan moving my app to the cloud",
       "/cloud--cloud-migration should I rehost, replatform, or refactor my system",
       "/cloud--cloud-migration I need a phased migration plan with a rollback option"
+    ],
+    "title": "Cloud migration plan",
+    "summary": "Creates a phased migration plan with an inventory, a 6 Rs strategy per component, cutover and rollback steps, and estimated costs.",
+    "keywords": [
+      "migrate to the cloud",
+      "cloud migration plan",
+      "6 rs strategy",
+      "migration rollback"
     ]
-  }
+  },
+  "copyHash": "8140a121d6141656"
 }

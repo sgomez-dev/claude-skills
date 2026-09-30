@@ -6,6 +6,15 @@
       "Aquí tienes mi web, [URL], haz un vídeo promocional con ella",
       "Captura este sitio y conviértelo en un vídeo para redes sociales",
       "Haz un tour de producto en vídeo a partir de mi página web"
+    ],
+    "title": "Vídeo desde una web",
+    "summary": "Captura una web a partir de su URL y crea con HyperFrames un vídeo a partir de ella: lanzamiento de producto, anuncio social o recorrido.",
+    "keywords": [
+      "vídeo desde una web",
+      "promo de mi web",
+      "anuncio para instagram",
+      "recorrido de producto",
+      "capturar sitio web"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "Here's my site, [URL], make a promo video from it",
       "Capture this website and turn it into a social video",
       "Make a product tour video from my webpage"
+    ],
+    "title": "Video from a website",
+    "summary": "Captures a website from its URL and builds a HyperFrames video from it, such as a product launch, social ad or product tour.",
+    "keywords": [
+      "video from website",
+      "promo from my site",
+      "instagram ad video",
+      "product tour video",
+      "capture website"
     ]
-  }
+  },
+  "copyHash": "61ec0a7309f0459d"
 }

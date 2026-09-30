@@ -6,6 +6,14 @@
       "/cloud--cloud-cost-audit revisa mi factura de AWS del último mes y encuentra dónde ahorrar",
       "/cloud--cloud-cost-audit analiza mi Terraform y detecta recursos sobredimensionados",
       "/cloud--cloud-cost-audit dame un plan de ahorro para reducir mi gasto en GCP"
+    ],
+    "title": "Auditoría de costes cloud",
+    "summary": "Analiza tus facturas cloud y tu infraestructura como código para detectar gasto innecesario y entrega un plan de ahorro priorizado.",
+    "keywords": [
+      "reducir costes cloud",
+      "auditoría de costes",
+      "ahorro aws",
+      "optimizar gasto cloud"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/cloud--cloud-cost-audit review last month's AWS bill and find where to cut costs",
       "/cloud--cloud-cost-audit scan my Terraform for oversized, wasteful resources",
       "/cloud--cloud-cost-audit give me a savings plan to reduce my GCP spend"
+    ],
+    "title": "Cloud cost audit",
+    "summary": "Analyses billing exports and infrastructure code to find wasted spend and returns a prioritised savings plan with estimated monthly savings.",
+    "keywords": [
+      "reduce cloud costs",
+      "cloud cost audit",
+      "aws savings",
+      "rightsizing"
     ]
-  }
+  },
+  "copyHash": "9c8f304b9311365d"
 }

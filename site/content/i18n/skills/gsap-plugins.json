@@ -6,6 +6,14 @@
       "Cómo registro el plugin Draggable en mi proyecto con GSAP",
       "Quiero animar el dibujo de un SVG con GSAP",
       "Necesito una animación flip al reordenar elementos de una lista"
+    ],
+    "title": "Plugins de GSAP",
+    "summary": "Guía de los plugins de GSAP: registro, ScrollToPlugin, ScrollSmoother, Flip, Draggable, SplitText, plugins de SVG, CustomEase y GSDevTools.",
+    "keywords": [
+      "plugins gsap",
+      "gsap flip",
+      "gsap draggable",
+      "splittext"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "How do I register the Draggable plugin in my GSAP project",
       "I want to animate an SVG being drawn with GSAP",
       "I need a flip animation when reordering list items"
+    ],
+    "title": "GSAP plugins guide",
+    "summary": "A guide to GSAP plugins: registration, ScrollToPlugin, ScrollSmoother, Flip, Draggable, SplitText, SVG plugins, CustomEase and GSDevTools.",
+    "keywords": [
+      "gsap plugins",
+      "gsap flip",
+      "gsap draggable",
+      "splittext"
     ]
-  }
+  },
+  "copyHash": "5838b856c74c07fb"
 }

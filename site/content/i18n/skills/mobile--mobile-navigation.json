@@ -1,7 +1,17 @@
 {
   "sourceHash": "eb056cb8a723398e",
+  "copyHash": "dae3b0f28dcaf048",
   "es": {
     "description": "Diseña la navegación móvil: pilas/pestañas/modales, control de acceso por autenticación, restauración de estado",
+    "title": "Navegación para apps móviles",
+    "summary": "Diseña la navegación de tu app: pilas, pestañas y modales, acceso según login, botón atrás correcto y restauración del estado.",
+    "keywords": [
+      "navegación móvil",
+      "react navigation",
+      "expo router",
+      "pestañas y modales",
+      "restaurar estado"
+    ],
     "howToAsk": [
       "/mobile--mobile-navigation diseña la navegación por pestañas de mi app",
       "/mobile--mobile-navigation bloquea pantallas hasta que el usuario inicie sesión",
@@ -13,6 +23,15 @@
       "/mobile--mobile-navigation design the tab navigation for my app",
       "/mobile--mobile-navigation gate screens behind login",
       "/mobile--mobile-navigation restore navigation state when the app reopens"
+    ],
+    "title": "Mobile app navigation design",
+    "summary": "Designs your app's navigation: stacks, tabs and modals, login-based gating, correct back behaviour and state restoration after the OS kills the app.",
+    "keywords": [
+      "mobile navigation",
+      "react navigation",
+      "expo router",
+      "tabs and modals",
+      "state restoration"
     ]
   }
 }

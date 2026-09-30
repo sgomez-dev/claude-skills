@@ -6,6 +6,14 @@
       "/utils--explain esta función de autenticación, no entiendo cómo funciona",
       "/utils--explain el archivo utils/parser.js línea por línea",
       "/utils--explain por qué este bucle usa recursión en vez de un for"
+    ],
+    "title": "Explicación de código",
+    "summary": "Lee el código que indiques y lo explica por capas: resumen, propósito, funcionamiento paso a paso, conceptos, dependencias y trampas.",
+    "keywords": [
+      "explicar código",
+      "entender código",
+      "qué hace este código",
+      "documentar código"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/utils--explain this authentication function, I don't get how it works",
       "/utils--explain the file utils/parser.js line by line",
       "/utils--explain why this loop uses recursion instead of a for"
+    ],
+    "title": "Code explanation",
+    "summary": "Reads the code you point to and explains it in layers: summary, purpose, step-by-step flow, key concepts, dependencies and gotchas.",
+    "keywords": [
+      "explain code",
+      "understand code",
+      "what does this code do",
+      "code walkthrough"
     ]
-  }
+  },
+  "copyHash": "894fd7f00c9491c8"
 }

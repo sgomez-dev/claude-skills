@@ -6,6 +6,14 @@
       "Ayúdame a pulir los detalles de esta interfaz como haría Emil Kowalski",
       "Revisa las animaciones de este componente y hazlas sentir más naturales",
       "Dame feedback de diseño con el criterio de Emil Kowalski para este botón"
+    ],
+    "title": "Pulido de interfaz y diseño",
+    "summary": "Aplica la filosofía de Emil Kowalski sobre pulido de interfaz, animación y detalles invisibles, y revisa código de UI con tablas antes y después.",
+    "keywords": [
+      "pulido de interfaz",
+      "revisar código ui",
+      "detalles de animación",
+      "emil kowalski"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Help me polish the details of this UI the way Emil Kowalski would",
       "Review the animations on this component and make them feel more natural",
       "Give me design feedback on this button using Emil Kowalski's taste"
+    ],
+    "title": "UI polish and design engineering",
+    "summary": "Applies Emil Kowalski's philosophy on UI polish, animation decisions and invisible details, and reviews UI code in Before/After tables.",
+    "keywords": [
+      "ui polish",
+      "ui code review",
+      "animation details",
+      "emil kowalski"
     ]
-  }
+  },
+  "copyHash": "ffbe68e6007fb42c"
 }

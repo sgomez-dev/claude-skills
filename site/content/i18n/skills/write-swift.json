@@ -6,6 +6,14 @@
       "Revisa este código Swift para ver si tiene problemas de concurrencia",
       "Ayúdame a migrar esta clase a value types en Swift 6",
       "Arregla este retain cycle en mi código Swift"
+    ],
+    "title": "Guía para escribir Swift moderno",
+    "summary": "Guía para escribir, revisar o migrar Swift 6: tipos por valor, concurrencia sin data races, protocolos, rendimiento y Swift Testing.",
+    "keywords": [
+      "swift moderno",
+      "concurrencia swift 6",
+      "data race swift",
+      "migrar a swift 6"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Review this Swift code for concurrency issues",
       "Help me migrate this class to value types in Swift 6",
       "Fix this retain cycle in my Swift code"
+    ],
+    "title": "Modern Swift writing guide",
+    "summary": "A guide for writing, reviewing or migrating Swift 6: value types, data-race-safe concurrency, protocols, performance and Swift Testing.",
+    "keywords": [
+      "modern swift",
+      "swift 6 concurrency",
+      "swift data race",
+      "migrate to swift 6"
     ]
-  }
+  },
+  "copyHash": "16a4b6adb74e338e"
 }

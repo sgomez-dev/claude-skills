@@ -6,6 +6,14 @@
       "Crea un kit de marca completo con logo, paleta y tipografía",
       "Aplica nuestro logo a plantillas de packaging y señalética",
       "Necesito un brandbook editable en PPTX con nuestra identidad visual"
+    ],
+    "title": "Kit de marca completo",
+    "summary": "Crea una identidad visual con paleta, logo SVG, tipografía, mockups y brandbook en PPTX o PDF, vía la CLI de Higgsfield.",
+    "keywords": [
+      "crear brand kit",
+      "identidad visual",
+      "logo y brandbook",
+      "packaging y cartelería"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Create a full brand kit with logo, palette, and typography",
       "Apply our logo to packaging and signage templates",
       "I need an editable PPTX brandbook with our visual identity"
+    ],
+    "title": "Complete brand kit",
+    "summary": "Creates a visual identity with palette, SVG logo, typography, mockups and an editable PPTX or PDF brandbook via the Higgsfield CLI.",
+    "keywords": [
+      "create a brand kit",
+      "visual identity",
+      "logo and brandbook",
+      "packaging design"
     ]
-  }
+  },
+  "copyHash": "fc227dfc1545cb60"
 }

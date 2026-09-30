@@ -1,6 +1,15 @@
 {
   "sourceHash": "e2dd2147e8203114",
+  "copyHash": "70e82a59520a7cfa",
   "es": {
+    "title": "Locución y efectos con IA",
+    "summary": "Genera locuciones, efectos de sonido y música con la API de ElevenLabs, y permite clonar una voz a partir de una muestra de audio.",
+    "keywords": [
+      "voz en off con ia",
+      "generar locución",
+      "clonar voz",
+      "efectos de sonido con ia"
+    ],
     "description": "Genera voces en off, efectos de sonido y música con IA usando las APIs de ElevenLabs. Úsalo al crear contenido de audio para vídeos, podcasts o videojuegos. Se activa para generar voces en off, narración, diálogos, efectos de sonido a partir de descripciones, música de fondo, bandas sonoras, clonación de voz o cualquier tarea de síntesis de audio.",
     "howToAsk": [
       "Genera una voz en off en español para este vídeo",
@@ -9,6 +18,14 @@
     ]
   },
   "en": {
+    "title": "AI voiceovers and sound effects",
+    "summary": "Generates voiceovers, sound effects and music with the ElevenLabs API, and can clone a voice from an audio sample.",
+    "keywords": [
+      "ai voiceover",
+      "text to speech",
+      "voice cloning",
+      "ai sound effects"
+    ],
     "howToAsk": [
       "Generate a voiceover for this video",
       "I need sound effects of footsteps and a door closing",

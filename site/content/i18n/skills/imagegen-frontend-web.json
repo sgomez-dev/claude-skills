@@ -6,6 +6,14 @@
       "Genera una imagen de referencia por cada sección de mi landing page",
       "Necesito varios estilos de hero para elegir el que mejor convierta",
       "Diséñame las referencias visuales de mi sitio de marketing con una paleta consistente"
+    ],
+    "title": "Imágenes de diseño de landings",
+    "summary": "Genera una imagen horizontal por cada sección de una web, con paleta coherente y variedad de composición, como referencia para programarla.",
+    "keywords": [
+      "referencia de diseño web",
+      "mockup landing page",
+      "imagen por sección",
+      "diseño de landing"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Generate one reference image per section of my landing page",
       "I need a few hero style options to pick the one that converts best",
       "Design the visual references for my marketing site with one consistent palette"
+    ],
+    "title": "Landing page design images",
+    "summary": "Generates one horizontal image per website section with a consistent palette and varied layouts, as a design reference for building the page.",
+    "keywords": [
+      "landing page mockup",
+      "website design reference",
+      "section images",
+      "web design comps"
     ]
-  }
+  },
+  "copyHash": "6b5c2256522fdba1"
 }

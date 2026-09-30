@@ -6,6 +6,14 @@
       "/performance--cache añade caché a las respuestas de mi API",
       "/performance--cache cachea los resultados de esta consulta pesada a la base de datos",
       "/performance--cache diseña una estrategia de caché para los cálculos repetidos"
+    ],
+    "title": "Estrategia de caché",
+    "summary": "Diseña e implementa una estrategia de caché para respuestas de API, consultas a base de datos o cálculos costosos, con invalidación.",
+    "keywords": [
+      "caché",
+      "redis",
+      "invalidar caché",
+      "cache-control"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/performance--cache add caching to my API responses",
       "/performance--cache cache the results of this expensive database query",
       "/performance--cache design a caching strategy for repeated computations"
+    ],
+    "title": "Caching strategy",
+    "summary": "Designs and implements a caching strategy for API responses, database queries or expensive computations, including invalidation.",
+    "keywords": [
+      "caching",
+      "redis cache",
+      "cache invalidation",
+      "cache-control"
     ]
-  }
+  },
+  "copyHash": "38b7f850ee092805"
 }

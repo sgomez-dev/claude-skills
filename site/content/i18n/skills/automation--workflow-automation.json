@@ -6,6 +6,14 @@
       "/automation--workflow-automation crea un flujo en n8n que se dispare al recibir un email",
       "/automation--workflow-automation diseña una automatización en Zapier para sincronizar CRM y hojas",
       "/automation--workflow-automation añade manejo de errores a este flujo de Make"
+    ],
+    "title": "Flujos en n8n, Zapier, Make",
+    "summary": "Diseña un flujo para n8n, Zapier o Make con disparador, pasos y gestión de errores, y entrega un JSON de n8n o una guía de montaje.",
+    "keywords": [
+      "automatización n8n",
+      "flujo zapier",
+      "automatizar con make",
+      "exportar workflow n8n"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/automation--workflow-automation create an n8n flow triggered by an incoming email",
       "/automation--workflow-automation design a Zapier automation to sync CRM and spreadsheets",
       "/automation--workflow-automation add error handling to this Make scenario"
+    ],
+    "title": "n8n, Zapier and Make workflows",
+    "summary": "Designs an n8n, Zapier or Make workflow with trigger, steps and error handling, delivered as an n8n JSON export or a build sheet.",
+    "keywords": [
+      "n8n workflow",
+      "zapier automation",
+      "make integromat scenario",
+      "export n8n json"
     ]
-  }
+  },
+  "copyHash": "dca5bc6a44b2c39f"
 }

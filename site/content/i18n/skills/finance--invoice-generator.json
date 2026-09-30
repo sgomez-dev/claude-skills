@@ -6,6 +6,14 @@
       "/finance--invoice-generator genera la factura de este proyecto para mi cliente",
       "/finance--invoice-generator necesito una factura en PDF con estas partidas",
       "/finance--invoice-generator crea una plantilla de factura profesional para mi negocio"
+    ],
+    "title": "Facturas HTML listas para PDF",
+    "summary": "Genera facturas en HTML de un solo archivo a partir de tus líneas, datos de cliente e impuestos, listas para guardar como PDF.",
+    "keywords": [
+      "generar factura",
+      "plantilla de factura",
+      "factura pdf",
+      "facturas por lotes"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/finance--invoice-generator generate the invoice for this project for my client",
       "/finance--invoice-generator I need a PDF invoice with these line items",
       "/finance--invoice-generator create a professional invoice template for my business"
+    ],
+    "title": "PDF-ready HTML invoices",
+    "summary": "Generates self-contained HTML invoices from your line items, client details and taxes, ready to print or save as PDF.",
+    "keywords": [
+      "invoice generator",
+      "invoice template",
+      "html invoice",
+      "batch invoices"
     ]
-  }
+  },
+  "copyHash": "671079f319a71c4b"
 }

@@ -6,6 +6,14 @@
       "Diseña el logo de mi marca de café en 3 estilos distintos",
       "Crea un banner para Instagram anunciando mi lanzamiento",
       "Necesito un programa de identidad corporativa completo para mi startup"
+    ],
+    "title": "Marca y diseño gráfico",
+    "summary": "Cubre identidad de marca, tokens, logotipos, presentaciones, banners, iconos y fotos para redes sociales, apoyándose en habilidades hermanas y referencias.",
+    "keywords": [
+      "diseñar logotipo",
+      "identidad de marca",
+      "banner redes sociales",
+      "iconos svg"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Design my coffee brand's logo in three different styles",
       "Create an Instagram banner announcing my product launch",
       "I need a full corporate identity program for my startup"
+    ],
+    "title": "Brand identity and graphic design",
+    "summary": "Covers brand identity, design tokens, logos, slide decks, banners, icons and social media images, routing each task to bundled sub-skills and references.",
+    "keywords": [
+      "design a logo",
+      "brand identity",
+      "social media banner",
+      "svg icons"
     ]
-  }
+  },
+  "copyHash": "c84f3ecfd6a0fd1c"
 }

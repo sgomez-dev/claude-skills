@@ -6,6 +6,14 @@
       "/git--changelog genera el CHANGELOG de esta versión",
       "/git--changelog necesito un changelog desde el último tag",
       "/git--changelog crea el historial de cambios para la release"
+    ],
+    "title": "Changelog desde git",
+    "summary": "Genera un CHANGELOG.md desde el historial de git con conventional commits, agrupado por versión y por tipo de cambio.",
+    "keywords": [
+      "generar changelog",
+      "changelog.md",
+      "conventional commits",
+      "historial de versiones"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/git--changelog generate the CHANGELOG for this release",
       "/git--changelog I need a changelog since the last tag",
       "/git--changelog create the change history for the release"
+    ],
+    "title": "Changelog from git",
+    "summary": "Generates a CHANGELOG.md from your git history using conventional commits, grouped by version and type of change.",
+    "keywords": [
+      "generate changelog",
+      "changelog.md",
+      "conventional commits",
+      "release notes from git"
     ]
-  }
+  },
+  "copyHash": "39eebf81fd161718"
 }

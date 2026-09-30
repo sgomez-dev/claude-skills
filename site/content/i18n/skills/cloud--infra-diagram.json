@@ -6,6 +6,14 @@
       "/cloud--infra-diagram genera un diagrama de mi infraestructura a partir del Terraform",
       "/cloud--infra-diagram quiero visualizar cómo se conectan mis servicios en producción",
       "/cloud--infra-diagram crea un diagrama Mermaid de mi arquitectura en Kubernetes"
+    ],
+    "title": "Diagrama de infraestructura",
+    "summary": "Genera un diagrama Mermaid de tu infraestructura a partir de Terraform, Kubernetes, docker-compose y otros archivos de configuración.",
+    "keywords": [
+      "diagrama de infraestructura",
+      "mermaid desde terraform",
+      "diagrama de arquitectura",
+      "diagrama kubernetes"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/cloud--infra-diagram generate a diagram of my infrastructure from the Terraform files",
       "/cloud--infra-diagram I want to visualize how my services connect in production",
       "/cloud--infra-diagram create a Mermaid diagram of my Kubernetes architecture"
+    ],
+    "title": "Infrastructure diagram",
+    "summary": "Generates a Mermaid diagram of your infrastructure from Terraform, Kubernetes, docker-compose and other config files.",
+    "keywords": [
+      "infrastructure diagram",
+      "mermaid from terraform",
+      "architecture diagram",
+      "kubernetes diagram"
     ]
-  }
+  },
+  "copyHash": "abd540f1e3e54e49"
 }

@@ -6,6 +6,14 @@
       "/ml--dataset-prep prepara mi dataset de clientes para entrenar el modelo",
       "/ml--dataset-prep comprueba si hay fugas de datos entre train y test",
       "/ml--dataset-prep balancea las clases de este dataset desequilibrado"
+    ],
+    "title": "Preparar un dataset para ML",
+    "summary": "Convierte un conjunto de datos en bruto en una base limpia, bien dividida y sin fuga de información: perfilado, limpieza, divisiones y balance.",
+    "keywords": [
+      "preparar datos",
+      "fuga de datos",
+      "train test split",
+      "limpiar dataset"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ml--dataset-prep prepare my customer dataset for training",
       "/ml--dataset-prep check for data leakage between train and test",
       "/ml--dataset-prep balance the classes in this imbalanced dataset"
+    ],
+    "title": "Preparing an ML dataset",
+    "summary": "Turns a raw dataset into a clean, well-split, leakage-free base for modeling: profiling, cleaning, train/validation/test splits and balance checks.",
+    "keywords": [
+      "prepare dataset",
+      "data leakage",
+      "train test split",
+      "clean training data"
     ]
-  }
+  },
+  "copyHash": "5504fd684c5e16de"
 }

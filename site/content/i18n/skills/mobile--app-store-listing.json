@@ -1,7 +1,17 @@
 {
   "sourceHash": "99b51460dceee29f",
+  "copyHash": "7f419e956db4ce4a",
   "es": {
     "description": "Redacta fichas de App Store/Play: título, palabras clave/ASO, descripciones, plan de capturas de pantalla",
+    "title": "Ficha de tienda de apps",
+    "summary": "Prepara la ficha de tu app para App Store y Google Play: palabras clave, título, descripciones, plan de capturas y metadatos de cumplimiento.",
+    "keywords": [
+      "ficha app store",
+      "aso",
+      "palabras clave app",
+      "google play listing",
+      "capturas de pantalla app"
+    ],
     "howToAsk": [
       "/mobile--app-store-listing escribe la ficha de App Store para mi app de fitness",
       "/mobile--app-store-listing optimiza las palabras clave para ASO",
@@ -13,6 +23,15 @@
       "/mobile--app-store-listing write the App Store listing for my fitness app",
       "/mobile--app-store-listing optimize keywords for ASO",
       "/mobile--app-store-listing plan the screenshots for the listing"
+    ],
+    "title": "Store listing for mobile apps",
+    "summary": "Produces a store listing for your app on both stores: keyword research, title and subtitle, descriptions, a screenshot plan and compliance metadata.",
+    "keywords": [
+      "app store listing",
+      "aso",
+      "app keywords",
+      "google play listing",
+      "app screenshots"
     ]
   }
 }

@@ -6,6 +6,14 @@
       "/utils--dep-update revisa si hay dependencias desactualizadas en package.json",
       "/utils--dep-update actualiza React a la última versión mayor sin romper nada",
       "/utils--dep-update comprueba qué librerías tienen cambios incompatibles antes de actualizar"
+    ],
+    "title": "Actualización segura de dependencias",
+    "summary": "Lista las dependencias desactualizadas, las clasifica en parche, menor y mayor, revisa cambios incompatibles y actualiza por lotes con tests.",
+    "keywords": [
+      "actualizar dependencias",
+      "npm outdated",
+      "cambios incompatibles",
+      "actualizar paquetes"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/utils--dep-update check which dependencies are outdated in package.json",
       "/utils--dep-update update React to the latest major version safely",
       "/utils--dep-update find breaking changes before upgrading all packages"
+    ],
+    "title": "Safe dependency updates",
+    "summary": "Lists outdated dependencies, sorts them into patch, minor and major, checks breaking changes and updates in batches, running tests.",
+    "keywords": [
+      "update dependencies",
+      "npm outdated",
+      "breaking changes",
+      "upgrade packages"
     ]
-  }
+  },
+  "copyHash": "10a13ec1c9a0c7a7"
 }

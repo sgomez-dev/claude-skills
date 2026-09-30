@@ -6,6 +6,14 @@
       "/ecommerce--shipping-setup configura tarifas de envío por zona en mi tienda",
       "/ecommerce--shipping-setup integra el seguimiento de pedidos con la transportista",
       "/ecommerce--shipping-setup necesito enviar notificaciones automáticas de envío"
+    ],
+    "title": "Configuración de envíos",
+    "summary": "Configura zonas de envío, tarifas, integración con transportistas y avisos de seguimiento para que el cliente sepa cuánto cuesta y cuándo llega.",
+    "keywords": [
+      "configurar envíos",
+      "zonas y tarifas de envío",
+      "envío gratis",
+      "seguimiento de pedidos"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ecommerce--shipping-setup set up shipping rates by zone for my store",
       "/ecommerce--shipping-setup integrate order tracking with the carrier",
       "/ecommerce--shipping-setup I need automatic shipping notifications"
+    ],
+    "title": "Store shipping setup",
+    "summary": "Sets up shipping zones, rate strategy, carrier integration and tracking notifications so shoppers see costs early and know when orders arrive.",
+    "keywords": [
+      "shipping setup",
+      "shipping zones and rates",
+      "free shipping threshold",
+      "order tracking emails"
     ]
-  }
+  },
+  "copyHash": "0efe3e4bc00d29ff"
 }

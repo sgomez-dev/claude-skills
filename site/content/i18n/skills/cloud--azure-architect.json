@@ -6,6 +6,14 @@
       "/cloud--azure-architect diseña la arquitectura Azure para mi app de gestión de clientes",
       "/cloud--azure-architect qué servicios de Azure necesito para mi backend con funciones serverless",
       "/cloud--azure-architect genera el diagrama y la plantilla de Bicep para mi proyecto"
+    ],
+    "title": "Arquitectura en Azure",
+    "summary": "Diseña una arquitectura Azure para tu aplicación con los servicios justos, un diagrama Mermaid y una base en Terraform o Bicep.",
+    "keywords": [
+      "arquitectura azure",
+      "diseñar infraestructura azure",
+      "bicep",
+      "terraform azure"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/cloud--azure-architect design the Azure architecture for my customer management app",
       "/cloud--azure-architect what Azure services do I need for a serverless functions backend",
       "/cloud--azure-architect generate the diagram and starter Bicep template for my project"
+    ],
+    "title": "Azure architecture design",
+    "summary": "Designs an Azure architecture for your app with a minimal set of services, a Mermaid diagram and a Terraform or Bicep starter.",
+    "keywords": [
+      "azure architecture",
+      "design azure infrastructure",
+      "bicep",
+      "terraform azure"
     ]
-  }
+  },
+  "copyHash": "7d77c6ca34a54eac"
 }

@@ -6,6 +6,14 @@
       "/testing--test-edge-cases genera casos límite para esta función de validación",
       "/testing--test-edge-cases ¿qué casos frontera me estoy dejando en este endpoint?",
       "/testing--test-edge-cases añade tests para valores nulos y vacíos"
+    ],
+    "title": "Tests de casos límite",
+    "summary": "Genera tests de valores límite, nulos, concurrencia, Unicode y estado para tu código, explicando qué fallo detectaría cada uno.",
+    "keywords": [
+      "casos límite",
+      "tests de borde",
+      "valores nulos",
+      "condiciones de carrera"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/testing--test-edge-cases generate edge cases for this validation function",
       "/testing--test-edge-cases what boundary cases am I missing on this endpoint?",
       "/testing--test-edge-cases add tests for null and empty values"
+    ],
+    "title": "Edge case tests",
+    "summary": "Generates tests for boundaries, nulls, concurrency, Unicode and state in your code, explaining which bug each one would catch.",
+    "keywords": [
+      "edge case tests",
+      "boundary tests",
+      "null handling",
+      "race conditions"
     ]
-  }
+  },
+  "copyHash": "d6068f900852bc9f"
 }

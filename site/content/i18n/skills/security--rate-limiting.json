@@ -6,6 +6,15 @@
       "/security--rate-limiting añade límites de peticiones a mi API",
       "/security--rate-limiting ¿qué algoritmo de rate limiting me conviene?",
       "/security--rate-limiting protege el endpoint de login contra fuerza bruta"
+    ],
+    "title": "Límites de peticiones (rate limiting)",
+    "summary": "Diseña límites de peticiones: elige el algoritmo, fija cuotas por ruta, responde con 429 y Retry-After y añade pruebas.",
+    "keywords": [
+      "rate limiting",
+      "limitar peticiones",
+      "error 429",
+      "proteger api",
+      "fuerza bruta"
     ]
   },
   "en": {
@@ -13,6 +22,15 @@
       "/security--rate-limiting add request limits to my API",
       "/security--rate-limiting which rate limiting algorithm should I use?",
       "/security--rate-limiting protect the login endpoint from brute force"
+    ],
+    "title": "Rate limiting design",
+    "summary": "Designs and adds rate limiting: picks an algorithm, sets per-route budgets, returns 429 with Retry-After and adds tests.",
+    "keywords": [
+      "rate limiting",
+      "limit api requests",
+      "429 too many requests",
+      "brute force protection"
     ]
-  }
+  },
+  "copyHash": "f0243f3db087c187"
 }

@@ -6,6 +6,14 @@
       "Revisa si este texto respeta el tono de voz de nuestra marca",
       "Crea una guía de estilo con nuestra identidad visual",
       "Comprueba que estos recursos de marketing cumplen las normas de marca"
+    ],
+    "title": "Identidad y voz de marca",
+    "summary": "Define y revisa la voz, la identidad visual y los mensajes de una marca, y sincroniza las guías con los tokens de diseño del proyecto.",
+    "keywords": [
+      "voz de marca",
+      "guía de estilo",
+      "identidad visual",
+      "coherencia de marca"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Check whether this copy matches our brand's tone of voice",
       "Create a style guide for our visual identity",
       "Make sure these marketing assets comply with our brand guidelines"
+    ],
+    "title": "Brand voice and identity",
+    "summary": "Defines and reviews a brand's voice, visual identity and messaging, and syncs the guidelines to the project's design tokens.",
+    "keywords": [
+      "brand voice",
+      "style guide",
+      "visual identity",
+      "brand consistency"
     ]
-  }
+  },
+  "copyHash": "1c24139633e2ebf1"
 }

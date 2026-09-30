@@ -6,6 +6,14 @@
       "/sales--email-assistant responde a este email de un cliente que duda del precio",
       "/sales--email-assistant escribe un email de seguimiento tras la demo de hoy",
       "/sales--email-assistant redacta un email para reactivar este lead frío"
+    ],
+    "title": "Emails de ventas y respuestas",
+    "summary": "Redacta un email de ventas nuevo o la respuesta a uno recibido, adaptado a la fase del trato, la intención del destinatario y el tono, con dos variantes.",
+    "keywords": [
+      "email de ventas",
+      "responder a un cliente",
+      "redactar seguimiento",
+      "correo comercial"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/sales--email-assistant reply to this email from a client hesitant about price",
       "/sales--email-assistant write a follow-up email after today's demo",
       "/sales--email-assistant draft an email to re-engage this cold lead"
+    ],
+    "title": "Sales emails and replies",
+    "summary": "Drafts a new sales email or a reply to one, matched to deal stage, recipient intent and tone, with two variants to choose from.",
+    "keywords": [
+      "sales email",
+      "reply to prospect",
+      "draft follow-up email",
+      "email tone"
     ]
-  }
+  },
+  "copyHash": "482f20d36b06a9fa"
 }

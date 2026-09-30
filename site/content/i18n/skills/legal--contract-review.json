@@ -6,6 +6,38 @@
       "/legal--contract-review contrato-proveedor.pdf, soy el cliente",
       "/legal--contract-review revisa este NDA, soy la parte receptora",
       "/legal--contract-review contrato-arrendamiento.docx, señala cláusulas abusivas"
+    ],
+    "title": "Revisión de contratos",
+    "summary": "Revisa un borrador de contrato desde tu lado de la mesa y devuelve cláusulas de riesgo, términos que faltan y obligaciones desequilibradas.",
+    "keywords": [
+      "revisar contrato",
+      "cláusulas de riesgo",
+      "contrato desequilibrado",
+      "redline"
+    ],
+    "useWhen": [
+      "Tienes un borrador de contrato antes de firmarlo o enviarlo a tu abogado",
+      "Quieres saber qué cláusulas te perjudican y qué falta",
+      "Necesitas una lista de puntos que negociar"
+    ],
+    "notFor": [
+      "Sustituir el consejo de un abogado",
+      "Contratos que no puedas compartir en texto o documento legible"
+    ],
+    "output": "Un informe en Markdown con resumen (firmar, negociar o descartar), hallazgos por gravedad con cita y redline, tabla de obligaciones y lista de negociación.",
+    "faq": [
+      {
+        "q": "¿Necesita saber de qué lado estoy?",
+        "a": "Sí. Te pregunta si eres cliente o proveedor, licenciante o licenciatario, etc., porque el riesgo de cada cláusula cambia según el lado."
+      },
+      {
+        "q": "¿Sustituye a un abogado?",
+        "a": "No. Es una segunda lectura estructurada antes de pasar por un profesional y no es asesoramiento legal."
+      },
+      {
+        "q": "¿Qué formatos de contrato acepta?",
+        "a": "Una ruta de archivo o el texto pegado. Puede leer archivos md, txt, pdf, docx y rtf."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "/legal--contract-review vendor-contract.pdf, I'm the client",
       "/legal--contract-review review this NDA, I'm the receiving party",
       "/legal--contract-review lease-agreement.docx, flag one-sided clauses"
+    ],
+    "title": "Contract review",
+    "summary": "Reviews a contract draft from your side of the table and returns risky clauses, missing terms and one-sided obligations.",
+    "keywords": [
+      "contract review",
+      "risky clauses",
+      "one-sided contract",
+      "contract redline"
+    ],
+    "useWhen": [
+      "You have a contract draft before signing it or sending it to counsel",
+      "You want to know which clauses hurt you and what is missing",
+      "You need a prioritized list of points to negotiate"
+    ],
+    "notFor": [
+      "Replacing the advice of a lawyer",
+      "Contracts you cannot share as readable text or a document"
+    ],
+    "output": "A Markdown report with a sign, negotiate or walk-away summary, findings by severity with quote and redline, an obligations table and a negotiation list.",
+    "faq": [
+      {
+        "q": "Does it need to know which side I am on?",
+        "a": "Yes. It asks whether you are customer or vendor, licensor or licensee and so on, because the risk of each clause flips with the side."
+      },
+      {
+        "q": "Does it replace a lawyer?",
+        "a": "No. It is a structured second read before counsel and is not legal advice."
+      },
+      {
+        "q": "What contract formats can it read?",
+        "a": "A file path or pasted text. It can read md, txt, pdf, docx and rtf files."
+      }
     ]
-  }
+  },
+  "copyHash": "f708a8b676cb0314"
 }

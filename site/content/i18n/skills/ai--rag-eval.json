@@ -6,6 +6,38 @@
       "/ai--rag-eval mide si mi sistema RAG recupera los documentos correctos",
       "/ai--rag-eval crea un golden set para evaluar las respuestas del RAG",
       "/ai--rag-eval detecta si un cambio reciente ha empeorado el RAG"
+    ],
+    "title": "Evaluar un sistema RAG",
+    "summary": "Crea un banco de pruebas para medir un pipeline RAG: conjunto de preguntas de referencia, métricas de recuperación, fidelidad y control de regresiones.",
+    "keywords": [
+      "evaluar rag",
+      "recall@k",
+      "alucinaciones rag",
+      "conjunto de referencia"
+    ],
+    "useWhen": [
+      "Ya tienes un RAG y no sabes si responde bien",
+      "Vas a cambiar el troceado, los embeddings o el prompt y quieres medir el efecto",
+      "Quieres detectar respuestas inventadas y fallos de recuperación"
+    ],
+    "notFor": [
+      "Construir el pipeline RAG desde cero (para eso existe ai--embeddings)",
+      "Sustituir la revisión humana de un experto en tu contenido"
+    ],
+    "output": "Un conjunto de preguntas de referencia versionado en el repo y un comando que imprime un cuadro de mando con recall@k, MRR, fidelidad, corrección, abstención, coste y latencia.",
+    "faq": [
+      {
+        "q": "¿Cuántas preguntas necesita el conjunto de referencia?",
+        "a": "Entre 30 y 100, con la respuesta esperada y los fragmentos que contienen la evidencia. Incluye preguntas que el corpus no puede responder, para comprobar que el sistema admite que no lo sabe."
+      },
+      {
+        "q": "¿Por qué mide primero la recuperación?",
+        "a": "Porque suele ser el cuello de botella: si el recall@k es bajo, ningún ajuste del prompt arreglará las respuestas. Según la propia skill, la mayoría de las alucinaciones son fallos de recuperación."
+      },
+      {
+        "q": "¿Usa un modelo como juez?",
+        "a": "Sí, para comprobar la fidelidad: un modelo lista las afirmaciones sin respaldo en el contexto recuperado. Aplica controles de sesgo del juez, como una rúbrica fija y contraste con etiquetas humanas."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "/ai--rag-eval measure whether my RAG pipeline retrieves the right documents",
       "/ai--rag-eval build a golden set to evaluate RAG answers",
       "/ai--rag-eval check whether a recent change regressed our RAG quality"
+    ],
+    "title": "RAG pipeline evaluation",
+    "summary": "Builds a test harness that measures a RAG pipeline: a golden question set, retrieval metrics, groundedness checks and a regression gate.",
+    "keywords": [
+      "evaluate rag",
+      "rag metrics",
+      "rag hallucinations",
+      "golden dataset"
+    ],
+    "useWhen": [
+      "You already have a RAG system and do not know if it answers well",
+      "You are about to change chunking, embeddings or the prompt and want to measure the effect",
+      "You want to catch made-up answers and retrieval misses"
+    ],
+    "notFor": [
+      "Building the RAG pipeline from scratch (that is what ai--embeddings is for)",
+      "Replacing review by a human expert on your content"
+    ],
+    "output": "A versioned golden question set in your repo and one command that prints a scorecard with recall@k, MRR, groundedness, correctness, abstention, cost and latency.",
+    "faq": [
+      {
+        "q": "How many questions does the golden set need?",
+        "a": "Between 30 and 100, each with the expected answer and the chunks that hold the evidence. It includes questions the corpus cannot answer, to check that the system admits it does not know."
+      },
+      {
+        "q": "Why does it measure retrieval first?",
+        "a": "Because retrieval is usually the bottleneck: if recall@k is low, no prompt work will fix the answers. The skill notes that most hallucinations turn out to be retrieval misses."
+      },
+      {
+        "q": "Does it use an LLM as a judge?",
+        "a": "Yes, for groundedness: a model lists the claims not supported by the retrieved context. It applies judge-bias controls such as a fixed rubric and spot-checks against human labels."
+      }
     ]
-  }
+  },
+  "copyHash": "dda18a1e22a0df49"
 }

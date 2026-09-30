@@ -6,6 +6,14 @@
       "/data--dashboard-spec diseña la especificación de un dashboard de ventas para dirección",
       "/data--dashboard-spec qué métricas y gráficos necesito para un dashboard de soporte",
       "/data--dashboard-spec define el layout de un dashboard para el equipo de marketing"
+    ],
+    "title": "Especificación de un dashboard",
+    "summary": "Redacta la especificación de un dashboard en Markdown: audiencia, preguntas clave, métricas, tipos de gráfico y distribución, lista para implementar.",
+    "keywords": [
+      "diseñar dashboard",
+      "especificación bi",
+      "métricas y gráficos",
+      "cuadro de mando"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/data--dashboard-spec spec a sales dashboard for leadership",
       "/data--dashboard-spec what metrics and chart types do I need for a support dashboard",
       "/data--dashboard-spec define the layout for a marketing team dashboard"
+    ],
+    "title": "Dashboard specification",
+    "summary": "Writes a Markdown dashboard spec covering audience, key questions, metrics, chart types and layout, ready to build in any BI tool.",
+    "keywords": [
+      "dashboard design",
+      "bi spec",
+      "choose chart types",
+      "kpi dashboard plan"
     ]
-  }
+  },
+  "copyHash": "1a49ca29105897d6"
 }

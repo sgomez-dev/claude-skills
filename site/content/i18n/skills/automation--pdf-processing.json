@@ -6,6 +6,14 @@
       "/automation--pdf-processing extrae las tablas de estos PDF de facturas",
       "/automation--pdf-processing rellena automáticamente este formulario PDF",
       "/automation--pdf-processing combina estos PDF escaneados y aplica OCR"
+    ],
+    "title": "Flujos de trabajo con PDF",
+    "summary": "Crea un flujo para extraer texto y tablas de PDF, rellenar formularios, unir o dividir páginas y aplicar OCR a documentos escaneados.",
+    "keywords": [
+      "extraer texto de pdf",
+      "tablas de pdf a csv",
+      "ocr pdf escaneado",
+      "unir y dividir pdf"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/automation--pdf-processing extract the tables from these invoice PDFs",
       "/automation--pdf-processing automatically fill out this PDF form",
       "/automation--pdf-processing merge these scanned PDFs and run OCR on them"
+    ],
+    "title": "PDF processing workflows",
+    "summary": "Builds a workflow to extract text and tables from PDFs, fill forms, merge or split pages, and run OCR on scanned documents.",
+    "keywords": [
+      "extract text from pdf",
+      "pdf tables to csv",
+      "ocr scanned pdf",
+      "merge and split pdf"
     ]
-  }
+  },
+  "copyHash": "3e6e233893ec9da8"
 }

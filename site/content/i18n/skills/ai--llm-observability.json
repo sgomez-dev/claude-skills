@@ -6,6 +6,14 @@
       "/ai--llm-observability quiero ver cuántos tokens gasta cada llamada al modelo",
       "/ai--llm-observability añade trazas para depurar las respuestas del agente",
       "/ai--llm-observability necesito alertas cuando baje la calidad de las respuestas"
+    ],
+    "title": "Monitorizar llamadas a un LLM",
+    "summary": "Instrumenta tu aplicación de IA con trazas, seguimiento de tokens y coste, señales de calidad, paneles y alertas para cada llamada.",
+    "keywords": [
+      "observabilidad llm",
+      "trazas llm",
+      "coste por llamada",
+      "alertas de ia"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ai--llm-observability I want to see how many tokens each model call uses",
       "/ai--llm-observability add tracing to debug the agent's responses",
       "/ai--llm-observability alert me when response quality drops"
+    ],
+    "title": "LLM call monitoring",
+    "summary": "Instruments your AI app with traces, token and cost tracking, quality signals, dashboards and alerts for every model call.",
+    "keywords": [
+      "llm observability",
+      "trace llm calls",
+      "token cost tracking",
+      "ai monitoring"
     ]
-  }
+  },
+  "copyHash": "760a66751eb66cd0"
 }

@@ -6,6 +6,14 @@
       "/ai--llm-eval crea una rúbrica para evaluar las respuestas de mi asistente",
       "/ai--llm-eval monta un LLM-as-judge que controle el sesgo",
       "/ai--llm-eval integra las evaluaciones del modelo en el pipeline de CI"
+    ],
+    "title": "Evaluar respuestas de un LLM",
+    "summary": "Monta un conjunto de evaluación para una función de IA: casos, rúbricas, comprobaciones por código, jueces LLM con control de sesgos y puerta en CI.",
+    "keywords": [
+      "evaluar llm",
+      "llm como juez",
+      "evals en ci",
+      "rúbrica de calidad"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ai--llm-eval create a rubric to score my assistant's answers",
       "/ai--llm-eval set up an LLM-as-judge with bias controls",
       "/ai--llm-eval wire model evals into our CI pipeline"
+    ],
+    "title": "LLM output evaluation",
+    "summary": "Sets up an evaluation suite for an AI feature: test cases, rubrics, code-based checks, LLM-as-judge with bias controls and a CI gate.",
+    "keywords": [
+      "llm evals",
+      "llm as judge",
+      "eval dataset",
+      "ci quality gate"
     ]
-  }
+  },
+  "copyHash": "3817b02d74828932"
 }

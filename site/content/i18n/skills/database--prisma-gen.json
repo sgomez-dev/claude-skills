@@ -6,6 +6,14 @@
       "/database--prisma-gen genera el schema de Prisma para un blog con posts y comentarios",
       "/database--prisma-gen actualiza mi schema.prisma a partir de la base de datos actual",
       "/database--prisma-gen añade una relación many-to-many a mi esquema Prisma"
+    ],
+    "title": "Esquema de Prisma",
+    "summary": "Crea o actualiza el archivo schema.prisma a partir de tus requisitos o de la base de datos existente, e indica los comandos de migración.",
+    "keywords": [
+      "schema prisma",
+      "modelos prisma",
+      "relaciones prisma",
+      "prisma migrate"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/database--prisma-gen generate a Prisma schema for a blog with posts and comments",
       "/database--prisma-gen update my schema.prisma from the existing database",
       "/database--prisma-gen add a many-to-many relation to my Prisma schema"
+    ],
+    "title": "Prisma schema",
+    "summary": "Creates or updates your schema.prisma from your requirements or existing database, and gives the migration and client generation commands.",
+    "keywords": [
+      "prisma schema",
+      "prisma models",
+      "prisma relations",
+      "prisma migrate"
     ]
-  }
+  },
+  "copyHash": "ce2475a5686f1ec0"
 }

@@ -6,6 +6,38 @@
       "/finance--burn-runway calcula cuántos meses de runway nos quedan",
       "/finance--burn-runway necesito el burn rate con escenario optimista y pesimista",
       "/finance--burn-runway analiza nuestros gastos e ingresos para saber cuándo se acaba el dinero"
+    ],
+    "title": "Burn rate y runway",
+    "summary": "Calcula el burn rate y los meses de runway con tus gastos e ingresos, y proyecta escenarios base, optimista y pesimista.",
+    "keywords": [
+      "burn rate",
+      "runway",
+      "meses de caja",
+      "cuándo me quedo sin dinero"
+    ],
+    "useWhen": [
+      "Quieres saber cuántos meses de caja te quedan y en qué fecha llegarías a cero",
+      "Necesitas comparar escenarios base, optimista y pesimista",
+      "Tienes que decidir cuándo empezar una ronda o cuánto recortar"
+    ],
+    "notFor": [
+      "Asesoramiento financiero o de inversión",
+      "Predecir ingresos sin datos tuyos: los supuestos los pones tú"
+    ],
+    "output": "Un resumen de burn y un cuadro de escenarios en la conversación, más un CSV con la proyección mensual y un informe en Markdown con fórmulas y supuestos.",
+    "faq": [
+      {
+        "q": "¿Qué datos necesito?",
+        "a": "Lo ideal es el flujo de caja mensual de los últimos 6-12 meses y el saldo actual con su fecha. También sirven cifras resumen o un CSV de movimientos."
+      },
+      {
+        "q": "¿Se inventa las tasas de crecimiento de los escenarios?",
+        "a": "No. Los supuestos optimista y pesimista los aportas tú; si no los tienes, te los pide. Los rangos que cita, como el plazo de una ronda, van marcados como aproximados."
+      },
+      {
+        "q": "¿Sirve si mi contabilidad es de devengo?",
+        "a": "Sí, pero el runway se calcula sobre caja. Si le das un P&L de devengo, te preguntará por los plazos de cobro y avisará de la diferencia."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "/finance--burn-runway calculate how many months of runway we have left",
       "/finance--burn-runway I need burn rate with best-case and worst-case scenarios",
       "/finance--burn-runway analyze our expenses and revenue to see when we run out of cash"
+    ],
+    "title": "Burn rate and runway",
+    "summary": "Works out your burn rate and months of runway from expenses and revenue, then projects base, best and worst-case scenarios.",
+    "keywords": [
+      "burn rate calculator",
+      "cash runway",
+      "months of runway",
+      "startup cash forecast"
+    ],
+    "useWhen": [
+      "You want to know how many months of cash are left and the projected zero-cash date",
+      "You need to compare base, best and worst-case scenarios",
+      "You are deciding when to start raising or how much to cut"
+    ],
+    "notFor": [
+      "Financial or investment advice",
+      "Predicting revenue without your data: the scenario inputs come from you"
+    ],
+    "output": "A burn summary and scenario table in the chat, plus a CSV with the monthly projection and a Markdown report with formulas and assumptions.",
+    "faq": [
+      {
+        "q": "What data do I need?",
+        "a": "Ideally monthly cash in and cash out for the last 6-12 months, plus the current balance and its date. Headline figures or a transactions CSV also work."
+      },
+      {
+        "q": "Does it make up growth rates for the scenarios?",
+        "a": "No. The best and worst-case inputs come from you, and it asks if you have none. Any range it cites, such as fundraising lead time, is labeled approximate."
+      },
+      {
+        "q": "Does it work with accrual accounting?",
+        "a": "Yes, but runway is a cash measure. If you give it an accrual P&L it will ask about collection timing and note the difference."
+      }
     ]
-  }
+  },
+  "copyHash": "85bd5fd635ab911a"
 }

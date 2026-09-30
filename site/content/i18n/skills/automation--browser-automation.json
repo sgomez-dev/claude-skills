@@ -6,6 +6,14 @@
       "/automation--browser-automation automatiza el inicio de sesión en este portal cada mañana",
       "/automation--browser-automation rellena este formulario web con datos de un CSV",
       "/automation--browser-automation descarga estos informes del navegador cada semana"
+    ],
+    "title": "Automatizar tareas del navegador",
+    "summary": "Crea un script de Playwright que inicia sesión, rellena formularios o descarga archivos en webs a las que tienes acceso legítimo.",
+    "keywords": [
+      "automatizar navegador",
+      "script playwright",
+      "descargar archivos automáticamente",
+      "rellenar formularios"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/automation--browser-automation automate logging into this portal every morning",
       "/automation--browser-automation fill out this web form automatically from a CSV",
       "/automation--browser-automation download these reports from the browser weekly"
+    ],
+    "title": "Browser task automation",
+    "summary": "Builds a Playwright script that logs in, fills forms or downloads files on sites you legitimately have access to.",
+    "keywords": [
+      "automate browser tasks",
+      "playwright script",
+      "automatic file download",
+      "auto fill forms"
     ]
-  }
+  },
+  "copyHash": "82d221505b825acb"
 }

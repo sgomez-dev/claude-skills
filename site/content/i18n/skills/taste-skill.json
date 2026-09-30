@@ -6,6 +6,37 @@
       "Diseña mi portfolio para que no parezca una plantilla genérica",
       "Rediseña esta landing page partiendo de una auditoría del diseño actual",
       "Necesito una interfaz con dirección de diseño propia, no genérica"
+    ],
+    "title": "Frontend con criterio de diseño",
+    "summary": "Lee tu briefing, infiere la dirección de diseño y crea landings, portfolios o rediseños que no parecen de plantilla, con auditoría previa en los rediseños.",
+    "keywords": [
+      "landing que no parezca plantilla",
+      "diseño de portfolio",
+      "rediseño con auditoría",
+      "frontend anti-genérico"
+    ],
+    "useWhen": [
+      "Quieres una landing page o un portfolio con dirección de diseño propia",
+      "Vas a rediseñar una web existente y quieres empezar por una auditoría",
+      "Tu última web generada con IA parecía de plantilla"
+    ],
+    "notFor": [
+      "Dashboards, tablas de datos o interfaces de producto de varios pasos"
+    ],
+    "output": "Código de interfaz para la página, precedido de una línea «Design Read» que resume tipo de página, público y estilo elegido.",
+    "faq": [
+      {
+        "q": "¿Sirve para dashboards o tablas de datos?",
+        "a": "No. La propia skill se limita a landing pages, portfolios y rediseños; excluye dashboards, tablas de datos e interfaces de producto de varios pasos."
+      },
+      {
+        "q": "¿Qué pasa si mi briefing es ambiguo?",
+        "a": "Hace una sola pregunta aclaratoria, y solo cuando las lecturas posibles del diseño difieren de verdad. Si puede deducirlo del contexto, no pregunta y sigue adelante."
+      },
+      {
+        "q": "¿Puede rediseñar una web que ya tengo?",
+        "a": "Sí. Detecta si es un rediseño, audita antes de tocar nada y trata tu logo, colores y tipografía existentes como material de partida."
+      }
     ]
   },
   "en": {
@@ -13,6 +44,38 @@
       "Design my portfolio so it doesn't look like a generic template",
       "Redesign this landing page, starting with an audit of the current design",
       "I need an interface with real design direction, not something generic"
+    ],
+    "title": "Frontend with real design taste",
+    "summary": "Reads your brief, infers a design direction and builds landing pages, portfolios or redesigns that do not look templated, auditing first on redesigns.",
+    "keywords": [
+      "non-generic landing page",
+      "portfolio design",
+      "redesign with audit",
+      "anti-slop frontend"
+    ],
+    "useWhen": [
+      "You want a landing page or portfolio with its own design direction",
+      "You are redesigning an existing site and want to start with an audit",
+      "Your last AI-generated page looked like a template"
+    ],
+    "notFor": [
+      "Dashboards, data tables or multi-step product UI"
+    ],
+    "output": "Interface code for the page, preceded by a one-line \"Design Read\" stating the page kind, audience and chosen style.",
+    "faq": [
+      {
+        "q": "Does it work for dashboards or data tables?",
+        "a": "No. The skill limits itself to landing pages, portfolios and redesigns, and explicitly excludes dashboards, data tables and multi-step product UI."
+      },
+      {
+        "q": "What if my brief is vague?",
+        "a": "It asks exactly one clarifying question, and only when the possible design reads genuinely differ. If it can infer the direction from context, it does not ask and proceeds."
+      },
+      {
+        "q": "Can it redesign a site I already have?",
+        "a": "Yes. It detects a redesign, audits before touching anything and treats your existing logo, colors and type as starting material."
+      }
     ]
-  }
+  },
+  "copyHash": "aa194351b246b8b4"
 }

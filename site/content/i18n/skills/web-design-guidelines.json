@@ -6,6 +6,14 @@
       "Revisa la accesibilidad de esta interfaz",
       "Audita el diseño de mi web frente a las mejores prácticas",
       "Comprueba si mi sitio cumple las guías de interfaz web"
+    ],
+    "title": "Revisión de interfaz web",
+    "summary": "Revisa el código de tu interfaz contra las Web Interface Guidelines de Vercel y devuelve los incumplimientos por archivo y línea.",
+    "keywords": [
+      "revisar ui",
+      "auditar diseño web",
+      "accesibilidad web",
+      "buenas prácticas ux"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Review the accessibility of this interface",
       "Audit my site's design against best practices",
       "Check whether my site follows web interface guidelines"
+    ],
+    "title": "Web UI guidelines review",
+    "summary": "Checks your UI code against the Web Interface Guidelines, fetched fresh each run, and reports each finding by file and line.",
+    "keywords": [
+      "review my ui",
+      "web interface guidelines",
+      "audit ux",
+      "accessibility check"
     ]
-  }
+  },
+  "copyHash": "f4647ca866a3accf"
 }

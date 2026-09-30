@@ -1,7 +1,17 @@
 {
   "sourceHash": "addf7fb79acf0bb4",
+  "copyHash": "327ec7621ad88c10",
   "es": {
     "description": "Audita el rendimiento móvil: tiempo de arranque, jank, tamaño del bundle/APK, memoria, imágenes",
+    "title": "Auditoría de rendimiento móvil",
+    "summary": "Audita el arranque, los tirones, el tamaño, la memoria y las imágenes de tu app midiendo antes y después, con arreglos priorizados.",
+    "keywords": [
+      "rendimiento app móvil",
+      "app lenta",
+      "tamaño del apk",
+      "arranque de app",
+      "tirones al hacer scroll"
+    ],
     "howToAsk": [
       "/mobile--mobile-performance mi app tarda mucho en arrancar, ayúdame a mejorarlo",
       "/mobile--mobile-performance reduce el tamaño del APK",
@@ -13,6 +23,15 @@
       "/mobile--mobile-performance my app takes too long to start, help me fix it",
       "/mobile--mobile-performance reduce the APK size",
       "/mobile--mobile-performance find why scrolling feels janky"
+    ],
+    "title": "Mobile app performance audit",
+    "summary": "Audits app startup, jank, download size, memory and images, measuring before and after and returning a prioritised list of fixes.",
+    "keywords": [
+      "mobile app performance",
+      "slow app startup",
+      "apk size",
+      "jank",
+      "app memory usage"
     ]
   }
 }

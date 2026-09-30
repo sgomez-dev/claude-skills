@@ -6,6 +6,14 @@
       "Diseña la landing de mi producto con un estilo editorial minimalista",
       "Quiero una interfaz limpia, sin gradientes ni sombras",
       "Rediseña este dashboard con paleta monocromática y tipografía marcada"
+    ],
+    "title": "Interfaces minimalistas editoriales",
+    "summary": "Guía para diseñar interfaces limpias tipo documento: paleta monocroma cálida, contraste tipográfico, cuadrículas bento planas y pasteles suaves.",
+    "keywords": [
+      "diseño minimalista",
+      "interfaz editorial",
+      "paleta monocroma",
+      "web tipo notion"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Design my product's landing page in a clean editorial style",
       "I want a minimal interface, no gradients or heavy shadows",
       "Redesign this dashboard with a monochrome palette and bold type"
+    ],
+    "title": "Minimalist editorial-style interfaces",
+    "summary": "Design direction for clean, document-style interfaces: warm monochrome palette, typographic contrast, flat bento grids and muted pastels.",
+    "keywords": [
+      "minimalist web design",
+      "editorial ui",
+      "monochrome palette",
+      "notion style design"
     ]
-  }
+  },
+  "copyHash": "36bc7328f085405f"
 }

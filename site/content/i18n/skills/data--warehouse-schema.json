@@ -6,6 +6,14 @@
       "/data--warehouse-schema esquema en estrella para ventas y clientes",
       "/data--warehouse-schema diseña tablas de hechos y dimensiones para pedidos",
       "/data--warehouse-schema convierte mi modelo relacional en esquema copo de nieve"
+    ],
+    "title": "Esquema de almacén de datos",
+    "summary": "Diseña un esquema dimensional en estrella o copo de nieve con tablas de hechos y dimensiones, DDL para tu motor y un documento de diseño.",
+    "keywords": [
+      "modelo en estrella",
+      "tablas de hechos",
+      "data warehouse",
+      "dimensiones y hechos"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/data--warehouse-schema star schema for sales and customers",
       "/data--warehouse-schema design fact and dimension tables for orders",
       "/data--warehouse-schema turn my relational model into a snowflake schema"
+    ],
+    "title": "Data warehouse schema design",
+    "summary": "Designs a star or snowflake warehouse schema with fact and dimension tables, dialect-correct DDL, an entity diagram and a design document.",
+    "keywords": [
+      "star schema",
+      "fact tables",
+      "data warehouse design",
+      "dimensional modeling"
     ]
-  }
+  },
+  "copyHash": "d85d35fde87a26f6"
 }

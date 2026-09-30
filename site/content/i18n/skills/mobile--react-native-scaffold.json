@@ -1,7 +1,17 @@
 {
   "sourceHash": "ba5ce67d0bfdef2a",
+  "copyHash": "f93470b832f12c6d",
   "es": {
     "description": "Genera el andamiaje de una app React Native/Expo de producción: navegación, estado, theming, CI",
+    "title": "Proyecto React Native con Expo",
+    "summary": "Crea una app React Native con Expo lista para producción: navegación, estado, tema con modo oscuro, variables de entorno, linting y CI.",
+    "keywords": [
+      "crear app react native",
+      "expo router",
+      "plantilla expo",
+      "app móvil react native",
+      "modo oscuro"
+    ],
     "howToAsk": [
       "/mobile--react-native-scaffold crea una app Expo nueva desde cero",
       "/mobile--react-native-scaffold añade navegación y gestión de estado",
@@ -13,6 +23,15 @@
       "/mobile--react-native-scaffold scaffold a new Expo app from scratch",
       "/mobile--react-native-scaffold add navigation and state management",
       "/mobile--react-native-scaffold set up CI for my React Native app"
+    ],
+    "title": "React Native Expo starter",
+    "summary": "Scaffolds a production-grade React Native app with Expo: navigation, state, dark-mode theming, environment config, linting and CI.",
+    "keywords": [
+      "react native starter",
+      "expo router",
+      "new expo app",
+      "react native template",
+      "dark mode"
     ]
   }
 }

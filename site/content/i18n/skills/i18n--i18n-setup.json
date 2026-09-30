@@ -6,6 +6,14 @@
       "/i18n--i18n-setup configura i18n en mi app Next.js con español e inglés",
       "/i18n--i18n-setup extrae todos los textos hardcodeados para traducirlos",
       "/i18n--i18n-setup añade soporte multi-idioma a este proyecto React"
+    ],
+    "title": "Internacionalización del proyecto",
+    "summary": "Configura la internacionalización: elige la librería, crea los archivos de traducción y extrae los textos fijos del código.",
+    "keywords": [
+      "configurar i18n",
+      "traducir aplicación",
+      "react-intl i18next",
+      "archivos de idioma"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/i18n--i18n-setup set up i18n in my Next.js app with English and Spanish",
       "/i18n--i18n-setup extract all hardcoded strings so I can translate them",
       "/i18n--i18n-setup add multi-language support to this React project"
+    ],
+    "title": "Project internationalization",
+    "summary": "Sets up i18n: picks the library, creates translation files and extracts hardcoded strings from your code for the locales you name.",
+    "keywords": [
+      "set up i18n",
+      "translate app",
+      "react-i18next",
+      "locale files"
     ]
-  }
+  },
+  "copyHash": "8b471cb3a3b80254"
 }

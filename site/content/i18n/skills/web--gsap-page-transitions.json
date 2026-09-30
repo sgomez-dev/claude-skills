@@ -6,6 +6,14 @@
       "/web--gsap-page-transitions añade una transición suave entre páginas",
       "/web--gsap-page-transitions crea un efecto de cortina al cambiar de ruta",
       "/web--gsap-page-transitions anima un elemento compartido entre dos vistas"
+    ],
+    "title": "Transiciones de página con GSAP",
+    "summary": "Crea transiciones entre páginas en React y Next.js con GSAP: barridos de overlay, elementos compartidos y animaciones de ruta coordinadas.",
+    "keywords": [
+      "transiciones de página",
+      "gsap flip",
+      "animación de ruta",
+      "overlay wipe"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/web--gsap-page-transitions add a smooth transition between pages",
       "/web--gsap-page-transitions create a wipe effect on route change",
       "/web--gsap-page-transitions animate a shared element between two views"
+    ],
+    "title": "Page transitions with GSAP",
+    "summary": "Builds page transitions for React and Next.js with GSAP: overlay wipes, shared-element transitions and coordinated route animations.",
+    "keywords": [
+      "page transitions",
+      "gsap flip",
+      "route animation",
+      "overlay wipe"
     ]
-  }
+  },
+  "copyHash": "e2c396128480baf8"
 }

@@ -6,6 +6,14 @@
       "/testing--test-coverage ¿qué partes de mi código no tienen tests?",
       "/testing--test-coverage genera tests para cubrir el módulo de pagos",
       "/testing--test-coverage mejora la cobertura de este servicio a más del 80%"
+    ],
+    "title": "Huecos de cobertura de tests",
+    "summary": "Analiza qué código no cubren tus tests, prioriza los huecos por riesgo y genera tests para los más importantes.",
+    "keywords": [
+      "cobertura de tests",
+      "código sin tests",
+      "aumentar cobertura",
+      "ramas sin probar"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/testing--test-coverage what parts of my code have no tests?",
       "/testing--test-coverage generate tests to cover the payments module",
       "/testing--test-coverage improve this service's coverage above 80%"
+    ],
+    "title": "Test coverage gaps",
+    "summary": "Finds which code your tests don't cover, ranks the gaps by risk and generates tests for the highest-priority ones.",
+    "keywords": [
+      "test coverage",
+      "untested code",
+      "increase coverage",
+      "coverage report"
     ]
-  }
+  },
+  "copyHash": "8358d22a9c59aaf8"
 }

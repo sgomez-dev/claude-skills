@@ -1,6 +1,14 @@
 {
   "sourceHash": "9fce080c878689bc",
   "es": {
+    "title": "Auditoría de LinkedIn Ads",
+    "summary": "Audita tu cuenta de LinkedIn Ads (Insight Tag, Lead Gen Forms, ABM, pujas) y devuelve hallazgos priorizados y recomendaciones para B2B.",
+    "keywords": [
+      "linkedin ads",
+      "insight tag",
+      "lead gen forms",
+      "publicidad b2b"
+    ],
     "description": "Audita la medición de LinkedIn Ads, Insight Tag y conversiones, audiencias profesionales, generación de leads, ABM, creatividades, pujas, presupuestos, ritmo de gasto, automatización y políticas. Úsalo para LinkedIn Ads, Campaign Manager, Insight Tag, formularios de generación de leads, Thought Leader Ads, campañas ABM o medios de pago B2B.",
     "howToAsk": [
       "Audita mi cuenta de LinkedIn Ads y los formularios de generación de leads",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "LinkedIn Ads audit",
+    "summary": "Audits a LinkedIn Ads account (Insight Tag, Lead Gen Forms, ABM, bidding) and returns prioritized findings and B2B recommendations.",
+    "keywords": [
+      "linkedin ads",
+      "insight tag",
+      "lead gen forms",
+      "b2b paid media"
+    ],
     "howToAsk": [
       "Audit my LinkedIn Ads account and lead gen forms",
       "Review the Insight Tag, I'm not sure it's installed correctly",
       "How do I optimize an ABM campaign on LinkedIn?"
     ]
-  }
+  },
+  "copyHash": "c62438c210727b92"
 }

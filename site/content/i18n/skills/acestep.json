@@ -1,6 +1,15 @@
 {
   "sourceHash": "e390f88a5f7807b1",
+  "copyHash": "b71068ec3978c8d3",
   "es": {
+    "title": "Música de fondo con IA",
+    "summary": "Genera música de fondo, jingles y pistas con voz con ACE-Step 1.5, y permite hacer covers, repintar tramos y extraer stems de audio.",
+    "keywords": [
+      "música de fondo con ia",
+      "generar jingle",
+      "extraer voz de canción",
+      "banda sonora vídeo"
+    ],
     "description": "Generación de música con IA usando ACE-Step 1.5: música de fondo, pistas vocales, versiones (covers), extracción de stems, repintado de audio y continuación para producción de vídeo. Úsalo para generar música, bandas sonoras, jingles o trabajar con stems de audio. Se activa con términos como música de fondo, banda sonora, jingle, generación de música, extracción de stems, cover, transferencia de estilo, repintado, continuación o tareas de composición musical.",
     "howToAsk": [
       "Necesito una música de fondo instrumental para un vídeo de producto de 30 segundos",
@@ -9,6 +18,14 @@
     ]
   },
   "en": {
+    "title": "AI background music",
+    "summary": "Generates background music, jingles and vocal tracks with ACE-Step 1.5, and can make covers, repaint sections and extract audio stems.",
+    "keywords": [
+      "ai background music",
+      "generate jingle",
+      "extract vocals from song",
+      "video soundtrack"
+    ],
     "howToAsk": [
       "I need instrumental background music for a 30-second product video",
       "Can you extract the vocal stem from this song so I can make a cover?",

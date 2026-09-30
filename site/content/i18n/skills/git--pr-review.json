@@ -1,7 +1,17 @@
 {
   "sourceHash": "51a0eb8518111c2c",
+  "copyHash": "d561757c13466a14",
   "es": {
     "description": "Realiza una revisión de código exhaustiva de un pull request",
+    "title": "Revisión de una pull request",
+    "summary": "Revisa una pull request por su número y devuelve los problemas con archivo, línea, gravedad y arreglo sugerido, más un veredicto final.",
+    "keywords": [
+      "revisar pull request",
+      "code review",
+      "revisión de pr",
+      "errores en pr",
+      "gh pr diff"
+    ],
     "howToAsk": [
       "/git--pr-review revisa este pull request antes de aprobarlo",
       "/git--pr-review haz una revisión a fondo del PR número 42",
@@ -13,6 +23,15 @@
       "/git--pr-review review this pull request before I approve it",
       "/git--pr-review do a thorough review of PR number 42",
       "/git--pr-review I need detailed feedback on this change"
+    ],
+    "title": "Pull request code review",
+    "summary": "Reviews a pull request by number and returns issues with file, line, severity and a suggested fix, ending with approve, request changes or comment.",
+    "keywords": [
+      "review pull request",
+      "code review",
+      "pr review",
+      "find bugs in pr",
+      "gh pr diff"
     ]
   }
 }

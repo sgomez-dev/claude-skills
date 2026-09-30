@@ -6,6 +6,14 @@
       "Convierte esta lista de consejos en un carrusel de Instagram",
       "Hazme un carrusel de 8 diapositivas sobre productividad",
       "Necesito la portada y el copy de cada slide de este carrusel"
+    ],
+    "title": "Carrusel de Instagram",
+    "summary": "Crea un carrusel de Instagram a partir de una idea: portada, texto slide a slide y el caption, con archivos de 1080x1350 cuando apruebas el texto.",
+    "keywords": [
+      "carrusel instagram",
+      "slides instagram",
+      "post deslizable",
+      "convertir en carrusel"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Turn this list of tips into an Instagram carousel",
       "Make me an 8-slide carousel about productivity",
       "I need the cover and slide-by-slide copy for this carousel"
+    ],
+    "title": "Instagram carousel builder",
+    "summary": "Turns an idea into an Instagram carousel with a cover, slide-by-slide copy and a caption, then builds 1080x1350 files once you approve the copy.",
+    "keywords": [
+      "instagram carousel",
+      "swipe post",
+      "carousel slides",
+      "turn this into a carousel"
     ]
-  }
+  },
+  "copyHash": "de943e5720ea6e08"
 }

@@ -6,6 +6,38 @@
       "/web--landing-page crea una landing page para mi producto SaaS",
       "/web--landing-page diseña una landing para el lanzamiento de mi app",
       "/web--landing-page genera una landing que no parezca hecha con IA"
+    ],
+    "title": "Landing page de alto nivel",
+    "summary": "Genera una landing page única y orientada a la conversión, con copy redactado primero y un proyecto Next.js completo; prohíbe los patrones típicos de IA.",
+    "keywords": [
+      "crear landing page",
+      "landing que convierta",
+      "next.js tailwind",
+      "landing sin aspecto de ia"
+    ],
+    "useWhen": [
+      "Lanzas un producto o servicio y necesitas una landing desde cero",
+      "Quieres una página con personalidad, no la típica web genérica de IA",
+      "Te importa que el copy y la conversión se trabajen antes del diseño"
+    ],
+    "notFor": [
+      "Dashboards o aplicaciones completas, para eso existe la skill de scaffold de SPA",
+      "Garantizar una tasa de conversión concreta"
+    ],
+    "output": "Un proyecto Next.js completo con sus componentes, una explicación breve de las decisiones de diseño y sugerencias de mejora para una v2.",
+    "faq": [
+      {
+        "q": "¿Qué stack usa?",
+        "a": "Configura un proyecto Next.js con TypeScript, Tailwind y Framer Motion, más algunas utilidades como Radix Slot y lucide-react. Es la base que propone la skill."
+      },
+      {
+        "q": "¿Usa texto de relleno o imágenes de stock?",
+        "a": "No. Prohíbe el lorem ipsum y las fotos de stock o marcadores como imagen principal, y pide redactar primero titular, subtítulo, propuestas de valor y llamada a la acción."
+      },
+      {
+        "q": "¿Garantiza que convierta más?",
+        "a": "No. Sigue principios de conversión y una lista de comprobación final con objetivos como Lighthouse por encima de 90, pero no promete resultados concretos."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "/web--landing-page create a landing page for my SaaS product",
       "/web--landing-page design a landing page for my app launch",
       "/web--landing-page generate a landing page that doesn't look AI-made"
+    ],
+    "title": "High-end landing page",
+    "summary": "Generates a unique, conversion-focused landing page, writing the copy first and delivering a full Next.js project; it bans the usual AI-page patterns.",
+    "keywords": [
+      "create landing page",
+      "high converting landing page",
+      "next.js tailwind",
+      "landing page not ai-looking"
+    ],
+    "useWhen": [
+      "You are launching a product or service and need a landing page from scratch",
+      "You want a page with personality, not the typical generic AI site",
+      "You want copy and conversion thinking done before the design"
+    ],
+    "notFor": [
+      "Dashboards or full applications, which the SPA scaffold skill covers",
+      "Guaranteeing a specific conversion rate"
+    ],
+    "output": "A full Next.js project with its components, a short explanation of the design decisions and suggested improvements for a v2.",
+    "faq": [
+      {
+        "q": "Which stack does it use?",
+        "a": "It sets up a Next.js project with TypeScript, Tailwind and Framer Motion, plus a few utilities such as Radix Slot and lucide-react. That is the base the skill proposes."
+      },
+      {
+        "q": "Does it use filler text or stock photos?",
+        "a": "No. It bans lorem ipsum and stock or placeholder hero images, and asks you to write the headline, subheadline, value props and call to action first."
+      },
+      {
+        "q": "Does it guarantee higher conversions?",
+        "a": "No. It follows conversion principles and a final checklist with targets such as Lighthouse scores above 90, but it does not promise specific results."
+      }
     ]
-  }
+  },
+  "copyHash": "3a2889cd59414cc3"
 }

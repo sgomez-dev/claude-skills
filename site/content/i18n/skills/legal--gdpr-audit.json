@@ -6,6 +6,39 @@
       "/legal--gdpr-audit revisa mi app en busca de brechas de RGPD",
       "/legal--gdpr-audit comprueba si gestiono bien el consentimiento y la retención",
       "/legal--gdpr-audit audita los derechos de los usuarios sobre sus datos"
+    ],
+    "title": "Auditoría RGPD del código",
+    "summary": "Audita tu código en busca de brechas de RGPD en consentimiento, retención y derechos de los interesados, con evidencia por archivo.",
+    "keywords": [
+      "auditoría rgpd",
+      "cumplimiento gdpr",
+      "derecho al olvido",
+      "consentimiento",
+      "retención de datos"
+    ],
+    "useWhen": [
+      "Quieres saber qué incumple tu producto antes de que lo haga notar un cliente o un regulador",
+      "Necesitas comprobar si el borrado de cuenta elimina realmente los datos",
+      "Vas a preparar una política de privacidad o un DPA y quieres partir de la realidad"
+    ],
+    "notFor": [
+      "Sustituir el consejo de un abogado",
+      "Productos sin usuarios en la UE, EEE o Reino Unido: propone otro marco"
+    ],
+    "output": "Un informe en Markdown en legal/ con cada hallazgo, su gravedad, artículo del RGPD, evidencia (archivo y línea) y remediación, más un resumen con los 5 mayores riesgos.",
+    "faq": [
+      {
+        "q": "¿Revisa mi código o me hace un cuestionario?",
+        "a": "Inspecciona el código: modelos, formularios, logs, terceros y flujos de borrado. Cada hallazgo debe apuntar a un archivo, configuración o comportamiento observado."
+      },
+      {
+        "q": "¿Y si no encuentra un flujo de borrado?",
+        "a": "Lo reporta como «no encontrado en el código», no como prueba de que no exista en otro sitio."
+      },
+      {
+        "q": "¿Vale para un backend B2B?",
+        "a": "Sí. Si solo eres encargado, replantea los derechos como capacidades que el responsable te exigirá vía DPA."
+      }
     ]
   },
   "en": {
@@ -13,6 +46,40 @@
       "/legal--gdpr-audit review my app for GDPR gaps",
       "/legal--gdpr-audit check whether I handle consent and retention correctly",
       "/legal--gdpr-audit audit how I handle data subject rights"
+    ],
+    "title": "GDPR audit of your codebase",
+    "summary": "Audits your code for GDPR gaps in consent, retention and data subject rights, with file-level evidence for each finding.",
+    "keywords": [
+      "gdpr audit",
+      "gdpr compliance check",
+      "right to erasure",
+      "consent audit",
+      "data retention"
+    ],
+    "useWhen": [
+      "You want to find compliance gaps before a customer or regulator does",
+      "You need to check whether account deletion really removes data",
+      "You are about to write a privacy policy or DPA and want to start from reality"
+    ],
+    "notFor": [
+      "Replacing the advice of a lawyer",
+      "Products with no users in the EU, EEA or UK: it offers a closer regime instead"
+    ],
+    "output": "A Markdown report in legal/ with each finding, its severity, GDPR article, evidence (file and line) and fix, plus a summary of the top 5 risks.",
+    "faq": [
+      {
+        "q": "Does it inspect code or just ask questions?",
+        "a": "It inspects code: models, forms, logs, third parties and deletion flows. Each finding must point to a file, config or observed behavior."
+      },
+      {
+        "q": "What if it cannot find a deletion flow?",
+        "a": "It reports \"not found in code\" rather than claiming none exists anywhere."
+      },
+      {
+        "q": "Does it work for a B2B backend?",
+        "a": "Yes. If you are only a processor, it reframes rights findings as capabilities the controller will demand through a DPA."
+      }
     ]
-  }
+  },
+  "copyHash": "c4c507ea956407ad"
 }

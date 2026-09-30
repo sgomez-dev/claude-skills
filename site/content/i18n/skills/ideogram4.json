@@ -1,6 +1,15 @@
 {
   "sourceHash": "68bc42efff5b21a7",
+  "copyHash": "738a025f66b09d19",
   "es": {
+    "title": "Imágenes con texto legible",
+    "summary": "Da pautas para generar imágenes con Ideogram 4 con texto legible, colores de marca exactos y maquetación controlada mediante descripciones en JSON.",
+    "keywords": [
+      "imagen con texto",
+      "miniatura con texto",
+      "generar logotipo con ia",
+      "ideogram"
+    ],
     "description": "Patrones de prompting para Ideogram 4 texto-a-imagen — de primer nivel en renderizado de texto dentro de la imagen y control exacto de color/layout mediante captions JSON estructurados. Úsalo al generar imágenes que necesitan texto legible sobre la imagen (tarjetas de título, miniaturas, logos, señalización, CTAs), colores de marca precisos, o un layout espacial controlado. Los disparadores incluyen imagen de diapositiva de título, miniatura con texto, texto en imagen, texto legible en imagen, imagen de paleta de colores de marca, layout con bounding-box, Ideogram.",
     "howToAsk": [
       "Genera una miniatura con texto legible usando Ideogram 4",
@@ -9,6 +18,14 @@
     ]
   },
   "en": {
+    "title": "Images with legible text",
+    "summary": "Prompting patterns for Ideogram 4 to generate images with legible on-image text, exact brand colors and controlled layout using structured JSON captions.",
+    "keywords": [
+      "image with text",
+      "thumbnail with text",
+      "ai logo generation",
+      "ideogram prompts"
+    ],
     "howToAsk": [
       "Generate a thumbnail with legible on-image text using Ideogram 4",
       "I need a title image with my brand's exact colors",

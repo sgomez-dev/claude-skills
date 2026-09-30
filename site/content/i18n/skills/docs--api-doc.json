@@ -6,6 +6,14 @@
       "/docs--api-doc documenta los endpoints de mi carpeta routes/",
       "/docs--api-doc genera la documentación de la API a partir de mis controladores",
       "/docs--api-doc necesito docs de los endpoints de este servicio Express"
+    ],
+    "title": "Documentación de la API",
+    "summary": "Recorre las rutas y controladores de tu proyecto y documenta cada endpoint con parámetros, respuestas y ejemplos, en Markdown u OpenAPI.",
+    "keywords": [
+      "documentar api",
+      "documentación endpoints",
+      "api docs",
+      "rutas y controladores"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/docs--api-doc document the endpoints in my routes/ folder",
       "/docs--api-doc generate API documentation from my controllers",
       "/docs--api-doc I need docs for this Express service's endpoints"
+    ],
+    "title": "API documentation",
+    "summary": "Scans your routes and controllers and documents each endpoint with parameters, responses and examples, as Markdown or OpenAPI.",
+    "keywords": [
+      "document api",
+      "endpoint documentation",
+      "api docs",
+      "route handlers docs"
     ]
-  }
+  },
+  "copyHash": "ccd9827c3637f53e"
 }

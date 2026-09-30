@@ -6,6 +6,14 @@
       "/ai--ai-integration quiero añadir un chatbot con Claude a mi app de Next.js",
       "/ai--ai-integration integra la API de OpenAI para generar resúmenes de texto",
       "/ai--ai-integration necesito conectar mi backend en Python con la API de Claude"
+    ],
+    "title": "Integrar una API de IA",
+    "summary": "Añade a tu aplicación la integración con una API de IA (Claude, OpenAI): cliente, errores, reintentos, tipos y pruebas con respuestas simuladas.",
+    "keywords": [
+      "integrar api claude",
+      "conectar openai",
+      "cliente llm",
+      "reintentos api ia"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ai--ai-integration add a Claude-powered chatbot to my Next.js app",
       "/ai--ai-integration wire up OpenAI to generate text summaries",
       "/ai--ai-integration connect my Python backend to the Claude API"
+    ],
+    "title": "Integrating an AI API",
+    "summary": "Adds an AI API integration (Claude, OpenAI) to your app: client setup, retries, error handling, streaming, typed requests and tests with mocked responses.",
+    "keywords": [
+      "integrate claude api",
+      "openai integration",
+      "llm client code",
+      "api retry logic"
     ]
-  }
+  },
+  "copyHash": "41c49243d36e35a1"
 }

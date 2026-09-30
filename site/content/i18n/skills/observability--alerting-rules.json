@@ -6,6 +6,14 @@
       "/observability--alerting-rules crea alertas para cuando la latencia supere 500ms",
       "/observability--alerting-rules define severidades y a quién avisar en cada caso",
       "/observability--alerting-rules evita que nos lleguen alertas duplicadas"
+    ],
+    "title": "Reglas de alertas sin ruido",
+    "summary": "Audita las alertas actuales y las sustituye por pocas reglas basadas en síntomas, con umbrales, severidad y destino, para tu sistema de monitorización.",
+    "keywords": [
+      "reglas de alertas",
+      "alertmanager",
+      "reducir ruido de alertas",
+      "alertas prometheus"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/observability--alerting-rules create alerts for when latency goes above 500ms",
       "/observability--alerting-rules define severity levels and who gets notified",
       "/observability--alerting-rules stop duplicate alerts from flooding us"
+    ],
+    "title": "Low-noise alerting rules",
+    "summary": "Audits your current alerts and replaces them with a few symptom-based rules, with thresholds, severity and routing, for your monitoring stack.",
+    "keywords": [
+      "alerting rules",
+      "alertmanager",
+      "reduce alert noise",
+      "prometheus alerts"
     ]
-  }
+  },
+  "copyHash": "2ea0bff7bfb5c58a"
 }

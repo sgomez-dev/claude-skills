@@ -6,6 +6,14 @@
       "/testing--visual-regression configura tests de regresión visual para mi web",
       "/testing--visual-regression crea las capturas base para comparar cambios visuales",
       "/testing--visual-regression integra los tests visuales en el pipeline de CI"
+    ],
+    "title": "Tests de regresión visual",
+    "summary": "Configura la comparación de capturas con líneas base aprobadas para detectar cambios no deseados en la interfaz, con CI y control de tests inestables.",
+    "keywords": [
+      "regresión visual",
+      "comparar capturas",
+      "toHaveScreenshot",
+      "cambios en la interfaz"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/testing--visual-regression set up visual regression tests for my site",
       "/testing--visual-regression create baseline screenshots for visual diffs",
       "/testing--visual-regression integrate visual tests into the CI pipeline"
+    ],
+    "title": "Visual regression tests",
+    "summary": "Sets up screenshot comparison against approved baselines to catch unintended UI changes, with CI integration and flakiness control.",
+    "keywords": [
+      "visual regression testing",
+      "screenshot comparison",
+      "ui changes",
+      "playwright screenshots"
     ]
-  }
+  },
+  "copyHash": "5ca1336be43097f8"
 }

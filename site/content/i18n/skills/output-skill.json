@@ -6,6 +6,14 @@
       "Genera el archivo completo, sin dejar partes a medias ni comentarios de 'resto igual'",
       "Necesito el componente entero sin placeholders tipo TODO, aunque sea muy largo",
       "Si el código no cabe en una respuesta, continúa en la siguiente sin cortar nada"
+    ],
+    "title": "Código completo sin recortes",
+    "summary": "Obliga a Claude a entregar archivos y respuestas completos, sin «resto igual» ni TODO, y a pausar con limpieza si no cabe todo.",
+    "keywords": [
+      "código completo",
+      "sin placeholders",
+      "respuesta sin recortar",
+      "archivo entero"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Generate the whole file, no partial sections or 'rest stays the same' comments",
       "I need the entire component with no TODO placeholders, even if it's long",
       "If the code doesn't fit in one response, continue in the next without cutting"
+    ],
+    "title": "Complete code, no truncation",
+    "summary": "Makes Claude deliver whole files and answers with no \"rest stays the same\" or TODO stubs, and pause cleanly when the output will not fit.",
+    "keywords": [
+      "full code output",
+      "no placeholders",
+      "unabridged answer",
+      "stop truncated code"
     ]
-  }
+  },
+  "copyHash": "e5bf48b1ae561511"
 }

@@ -6,6 +6,14 @@
       "/networking--reverse-proxy pon Nginx delante de mi app en Node",
       "/networking--reverse-proxy configura Caddy para servir varios dominios",
       "/networking--reverse-proxy monta un proxy inverso con Cloudflare para mi backend"
+    ],
+    "title": "Configuración de proxy inverso",
+    "summary": "Genera la configuración de un proxy inverso para tu app en Cloudflare Worker, Nginx o Caddy, con enrutado, WebSockets y medidas de seguridad.",
+    "keywords": [
+      "proxy inverso",
+      "nginx proxy_pass",
+      "caddy reverse_proxy",
+      "websocket proxy"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/networking--reverse-proxy put Nginx in front of my Node app",
       "/networking--reverse-proxy configure Caddy to serve multiple domains",
       "/networking--reverse-proxy set up a reverse proxy with Cloudflare for my backend"
+    ],
+    "title": "Reverse proxy setup",
+    "summary": "Generates a reverse proxy configuration for your app on a Cloudflare Worker, Nginx or Caddy, with routing, WebSocket support and security settings.",
+    "keywords": [
+      "reverse proxy",
+      "nginx proxy_pass",
+      "caddyfile",
+      "websocket proxy"
     ]
-  }
+  },
+  "copyHash": "54c22b94e0bc79ed"
 }

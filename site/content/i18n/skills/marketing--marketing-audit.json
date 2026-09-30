@@ -6,6 +6,14 @@
       "/marketing--marketing-audit audita el marketing digital de mi restaurante",
       "/marketing--marketing-audit revisa nuestra web, redes y SEO",
       "/marketing--marketing-audit genera el informe en PowerPoint para el equipo"
+    ],
+    "title": "Auditoría de marketing digital",
+    "summary": "Audita un sitio web con 8 agentes en paralelo (SEO, competencia, UX, marca, crecimiento, contenido y paid media) y entrega un PowerPoint.",
+    "keywords": [
+      "auditoría de marketing",
+      "auditoría seo",
+      "análisis de marca",
+      "informe de marketing"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/marketing--marketing-audit audit my restaurant's digital marketing",
       "/marketing--marketing-audit review our website, social media, and SEO",
       "/marketing--marketing-audit generate the PowerPoint report for the team"
+    ],
+    "title": "Digital marketing audit",
+    "summary": "Audits a website with 8 parallel agents covering SEO, competition, UX, brand, growth, content and paid media, and delivers a consolidated PowerPoint.",
+    "keywords": [
+      "marketing audit",
+      "website audit",
+      "seo audit",
+      "growth plan"
     ]
-  }
+  },
+  "copyHash": "3a358168c8d01f6d"
 }

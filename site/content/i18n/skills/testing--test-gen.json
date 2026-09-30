@@ -6,6 +6,15 @@
       "/testing--test-gen genera tests unitarios para este servicio",
       "/testing--test-gen escribe tests para la función de cálculo de precios",
       "/testing--test-gen crea tests completos para este archivo utils.ts"
+    ],
+    "title": "Tests unitarios de tu código",
+    "summary": "Lee un archivo y genera tests unitarios con caso normal, límites y errores en el framework que uses, y los ejecuta para comprobar que pasan.",
+    "keywords": [
+      "generar tests unitarios",
+      "jest",
+      "vitest",
+      "pytest",
+      "tests automáticos"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "/testing--test-gen generate unit tests for this service",
       "/testing--test-gen write tests for the pricing calculation function",
       "/testing--test-gen create thorough tests for this utils.ts file"
+    ],
+    "title": "Unit tests for your code",
+    "summary": "Reads a file and writes unit tests covering normal use, edge cases and errors in your existing framework, then runs them to check they pass.",
+    "keywords": [
+      "generate unit tests",
+      "jest tests",
+      "vitest",
+      "pytest",
+      "write tests"
     ]
-  }
+  },
+  "copyHash": "c4cb3c3cd52a2427"
 }

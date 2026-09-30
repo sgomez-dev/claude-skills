@@ -6,6 +6,38 @@
       "/sales--icp-builder construye el ICP a partir de nuestros mejores clientes actuales",
       "/sales--icp-builder analiza nuestra web y define nuestro cliente ideal",
       "/sales--icp-builder dame consultas de búsqueda para encontrar leads que encajen con el ICP"
+    ],
+    "title": "Perfil de cliente ideal (ICP)",
+    "summary": "Define tu perfil de cliente ideal a partir de clientes, producto o web, con quién descartar y consultas listas para buscar leads.",
+    "keywords": [
+      "cliente ideal",
+      "perfil icp",
+      "segmentación b2b",
+      "buyer persona"
+    ],
+    "useWhen": [
+      "Aún no tienes definido a quién vender",
+      "Quieres deducir el ICP de tus mejores clientes, tu producto o tu web",
+      "Necesitas consultas de búsqueda para encontrar leads"
+    ],
+    "notFor": [
+      "Sustituir datos de mercado de pago o una investigación de clientes en profundidad",
+      "Crear un ICP fiable con solo dos o tres clientes"
+    ],
+    "output": "Un documento Markdown icp_[segmento].md con resumen, firmografía, personas, disparadores, descartes y consultas de búsqueda.",
+    "faq": [
+      {
+        "q": "¿Qué necesito aportar?",
+        "a": "Una de tres cosas: una lista de tus mejores clientes, la descripción de tu producto o la URL de tu web. Si no das nada, te pedirá una de ellas."
+      },
+      {
+        "q": "¿Usa bases de datos de pago?",
+        "a": "No. Solo usa fuentes públicas y gratuitas para investigar tus clientes o tu web."
+      },
+      {
+        "q": "¿Cómo de fiable es el resultado?",
+        "a": "Depende de la evidencia. Cada criterio se marca como respaldado por evidencia o como hipótesis, y con pocos clientes el resultado es una hipótesis que hay que validar."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "/sales--icp-builder build an ICP from our current best customers",
       "/sales--icp-builder analyze our website and define our ideal customer",
       "/sales--icp-builder give me search queries to find leads matching the ICP"
+    ],
+    "title": "Ideal customer profile (ICP)",
+    "summary": "Builds your ideal customer profile from customers, a product description or a website, with who to exclude and ready-to-run lead search queries.",
+    "keywords": [
+      "ideal customer profile",
+      "icp",
+      "b2b segmentation",
+      "buyer persona"
+    ],
+    "useWhen": [
+      "You have not yet defined who to sell to",
+      "You want to derive an ICP from your best customers, product or website",
+      "You need search queries to find matching leads"
+    ],
+    "notFor": [
+      "Replacing paid market data or in-depth customer research",
+      "Building a reliable ICP from only two or three customers"
+    ],
+    "output": "A Markdown document, icp_[segment].md, with a summary, firmographics, personas, triggers, disqualifiers and ready-to-run queries.",
+    "faq": [
+      {
+        "q": "What do I need to provide?",
+        "a": "One of three things: a list of your best customers, a product description or your website URL. If you give nothing, it asks for one of them."
+      },
+      {
+        "q": "Does it use paid databases?",
+        "a": "No. It uses only public, free sources when researching your customers or website."
+      },
+      {
+        "q": "How reliable is the result?",
+        "a": "It depends on the evidence. Each criterion is marked as evidence-backed or as a hypothesis, and with few customers the result is a hypothesis to validate."
+      }
     ]
-  }
+  },
+  "copyHash": "a9c942484516aa6d"
 }

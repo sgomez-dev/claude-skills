@@ -6,6 +6,14 @@
       "/security--env-hardening revisa la configuración de mi servidor de producción",
       "/security--env-hardening ¿faltan cabeceras de seguridad en mi API?",
       "/security--env-hardening refuerza las variables de entorno antes de publicar"
+    ],
+    "title": "Refuerzo de entorno y cabeceras",
+    "summary": "Revisa tus archivos .env, la configuración del servidor y las cabeceras HTTP de seguridad, y genera una configuración reforzada con comparativa.",
+    "keywords": [
+      "cabeceras de seguridad",
+      "hsts",
+      "proteger .env",
+      "hardening servidor"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/security--env-hardening review my production server configuration",
       "/security--env-hardening is my API missing security headers?",
       "/security--env-hardening harden environment variables before we ship"
+    ],
+    "title": "Environment and headers hardening",
+    "summary": "Reviews .env files, server settings and HTTP security headers, then generates a hardened configuration with a before and after comparison.",
+    "keywords": [
+      "security headers",
+      "hsts",
+      "protect env files",
+      "server hardening"
     ]
-  }
+  },
+  "copyHash": "8c3c7ca5bc95dbb3"
 }

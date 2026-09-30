@@ -6,6 +6,14 @@
       "/meta--pipeline-run encadena auditoría de SEO, contenido y publicación",
       "/meta--pipeline-run ejecuta el pipeline de lanzamiento de producto",
       "/meta--pipeline-run une revisión de código, tests y despliegue"
+    ],
+    "title": "Ejecutar un flujo de skills",
+    "summary": "Ejecuta una cadena de skills definida en un archivo de pipeline, con puertas de calidad entre pasos y un resumen final de cada paso.",
+    "keywords": [
+      "ejecutar pipeline",
+      "encadenar skills",
+      "flujo de trabajo",
+      "puertas de calidad"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/meta--pipeline-run chain SEO audit, content, and publishing together",
       "/meta--pipeline-run run the product launch pipeline",
       "/meta--pipeline-run combine code review, tests, and deployment"
+    ],
+    "title": "Running a skill pipeline",
+    "summary": "Runs a chain of skills defined in a pipeline file, with quality gates between steps and a final summary showing the result of each step.",
+    "keywords": [
+      "run pipeline",
+      "chain skills",
+      "skill workflow",
+      "quality gates"
     ]
-  }
+  },
+  "copyHash": "f0b3775bdc78d052"
 }

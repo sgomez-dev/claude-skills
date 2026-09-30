@@ -6,6 +6,14 @@
       "/git--blame-detective averigua quién y por qué cambió esta función",
       "/git--blame-detective investiga el historial de esta línea de código",
       "/git--blame-detective quiero saber cuándo se introdujo este bug"
+    ],
+    "title": "Historial de cambios de código",
+    "summary": "Investiga con git blame y log quién cambió un archivo o fragmento y por qué, y presenta una línea de tiempo de los cambios.",
+    "keywords": [
+      "git blame",
+      "quién cambió este código",
+      "historial de un archivo",
+      "línea de tiempo git"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/git--blame-detective find out who changed this function and why",
       "/git--blame-detective dig into the history of this line of code",
       "/git--blame-detective find out when this bug was introduced"
+    ],
+    "title": "Code change history",
+    "summary": "Investigates with git blame and log who changed a file or section and why, and presents a timeline of the significant changes.",
+    "keywords": [
+      "git blame",
+      "who changed this code",
+      "file history",
+      "git timeline"
     ]
-  }
+  },
+  "copyHash": "7c299bdda91f60e0"
 }

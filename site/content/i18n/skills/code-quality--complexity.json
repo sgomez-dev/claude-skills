@@ -6,6 +6,14 @@
       "/code-quality--complexity analiza la complejidad de esta función tan larga",
       "/code-quality--complexity qué partes de mi proyecto son más complejas de mantener",
       "/code-quality--complexity sugiere cómo simplificar este módulo enrevesado"
+    ],
+    "title": "Análisis de complejidad de código",
+    "summary": "Mide la complejidad ciclomática y cognitiva de cada función, marca las que superan los umbrales y sugiere cómo simplificarlas.",
+    "keywords": [
+      "complejidad ciclomática",
+      "complejidad cognitiva",
+      "simplificar funciones",
+      "código difícil de leer"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/code-quality--complexity analyze the complexity of this long function",
       "/code-quality--complexity which parts of my project are hardest to maintain",
       "/code-quality--complexity suggest how to simplify this tangled module"
+    ],
+    "title": "Code complexity analysis",
+    "summary": "Measures cyclomatic and cognitive complexity per function, flags those over the thresholds and suggests how to simplify them.",
+    "keywords": [
+      "cyclomatic complexity",
+      "cognitive complexity",
+      "simplify functions",
+      "hard to read code"
     ]
-  }
+  },
+  "copyHash": "23b97821bcb9bdf9"
 }

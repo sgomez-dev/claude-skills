@@ -6,6 +6,14 @@
       "/accessibility--a11y-fix arregla el menú desplegable, no se navega con teclado",
       "/accessibility--a11y-fix añade etiquetas ARIA al modal de confirmación",
       "/accessibility--a11y-fix repasa el foco en el formulario de pago"
+    ],
+    "title": "Corregir accesibilidad de la interfaz",
+    "summary": "Lee un componente o página y corrige sus problemas de accesibilidad: HTML semántico, teclado, atributos ARIA y formularios, sin cambiar el diseño visual.",
+    "keywords": [
+      "arreglar accesibilidad",
+      "atributos aria",
+      "foco en modales",
+      "html semántico"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/accessibility--a11y-fix fix the dropdown menu, keyboard nav doesn't work",
       "/accessibility--a11y-fix add ARIA labels to the confirmation modal",
       "/accessibility--a11y-fix improve focus handling on the checkout form"
+    ],
+    "title": "Fixing UI accessibility issues",
+    "summary": "Fixes accessibility problems in a component or page: semantic HTML, keyboard support, ARIA attributes and form labels, keeping the visual design.",
+    "keywords": [
+      "fix accessibility",
+      "add aria labels",
+      "keyboard navigation",
+      "semantic html"
     ]
-  }
+  },
+  "copyHash": "2faafc63eeb2534f"
 }

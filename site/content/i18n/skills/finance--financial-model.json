@@ -6,6 +6,14 @@
       "/finance--financial-model crea el modelo financiero a 3 años de mi startup",
       "/finance--financial-model necesito una hoja de cálculo con proyecciones de ingresos y gastos",
       "/finance--financial-model genera el esqueleto financiero a partir de estos supuestos"
+    ],
+    "title": "Modelo financiero a 3 años",
+    "summary": "Genera la estructura de un modelo financiero a 36 meses con fórmulas de hoja de cálculo y tus propios supuestos.",
+    "keywords": [
+      "modelo financiero",
+      "proyección a 3 años",
+      "plantilla excel",
+      "p&l y caja"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/finance--financial-model build the 3-year financial model for my startup",
       "/finance--financial-model I need a spreadsheet with revenue and expense projections",
       "/finance--financial-model generate the financial model skeleton from these assumptions"
+    ],
+    "title": "3-year financial model",
+    "summary": "Builds the skeleton of a 36-month financial model as spreadsheet formulas, wired with your own assumptions.",
+    "keywords": [
+      "financial model",
+      "3-year projection",
+      "startup model template",
+      "p&l and cash flow"
     ]
-  }
+  },
+  "copyHash": "5c2ef3535955daf2"
 }

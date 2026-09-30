@@ -6,6 +6,14 @@
       "/data--data-quality-audit audita la calidad de datos de mi tabla de clientes",
       "/data--data-quality-audit busca valores nulos y duplicados en este dataset",
       "/data--data-quality-audit revisa mi pipeline en busca de referencias rotas"
+    ],
+    "title": "Auditoría de calidad de datos",
+    "summary": "Audita tablas o salidas de un pipeline buscando nulos, duplicados, valores inválidos, claves huérfanas y deriva, con SQL ejecutable e informe.",
+    "keywords": [
+      "calidad de datos",
+      "detectar duplicados",
+      "valores nulos",
+      "integridad referencial"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/data--data-quality-audit audit the data quality of my customers table",
       "/data--data-quality-audit find null values and duplicates in this dataset",
       "/data--data-quality-audit check my pipeline for broken references"
+    ],
+    "title": "Data quality audit",
+    "summary": "Audits tables or pipeline output for nulls, duplicates, invalid values, orphaned keys and drift, with runnable SQL and a ranked findings report.",
+    "keywords": [
+      "data quality",
+      "find duplicates",
+      "null checks",
+      "referential integrity"
     ]
-  }
+  },
+  "copyHash": "e7a360cdcf9b32a9"
 }

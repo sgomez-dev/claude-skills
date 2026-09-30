@@ -1,6 +1,15 @@
 {
   "sourceHash": "e8a45d2f71a63433",
+  "copyHash": "70fedc7b32e6fe1d",
   "es": {
+    "title": "Mezcla de audio en HyperFrames",
+    "summary": "Mezcla el audio ya colocado en una composición: fundidos, volumen, ducking de la música bajo la voz, efectos como EQ o reverb y buses de varias pistas.",
+    "keywords": [
+      "mezclar audio",
+      "bajar música sobre la voz",
+      "fundido de audio",
+      "efectos de audio"
+    ],
     "description": "Úsalo cuando el audio ya colocado en una composición de HyperFrames necesita mezclarse: fade-in/fade-out, crossfade, ganancia o volumen de pista, automatización de volumen, ducking, una música de fondo que compite con una voz en off (voiceover carve), efectos en una pista (EQ, compresor, limitador, gate, saturación, delay, reverb, chorus, phaser, bitcrush), envolventes de automatización dibujadas sobre el volumen de una pista o cualquier parámetro de efecto, o un bus de submezcla que agrupa una cadena, un fader y un reloj de automatización para varias pistas a la vez (`<hf-audio-group>`). No lo uses para buscar o generar audio — encontrar música, SFX o crear una voz en off es `/media-use`. No lo uses para el timing de clips o la disposición de pistas, que es `/hyperframes-core`.",
     "howToAsk": [
       "Haz un fade-out suave en la música de fondo al final del vídeo",
@@ -9,6 +18,14 @@
     ]
   },
   "en": {
+    "title": "Audio mixing in HyperFrames",
+    "summary": "Mixes audio already placed in a composition: fades, volume, ducking music under a voiceover, effects such as EQ or reverb, and multi-track buses.",
+    "keywords": [
+      "mix audio",
+      "duck music under voice",
+      "audio fade",
+      "audio effects"
+    ],
     "howToAsk": [
       "Fade out the background music smoothly at the end of the video",
       "Duck the music when the voiceover comes in and bring it back up after",

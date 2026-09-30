@@ -6,6 +6,14 @@
       "/automation--scrape-it-now rastrea todo mi sitio web y conviértelo a markdown",
       "/automation--scrape-it-now configura el job de scrape-it-now para que corra en Azure",
       "/automation--scrape-it-now indexa el contenido rastreado de mi documentación"
+    ],
+    "title": "Rastreo de webs con scrape-it-now",
+    "summary": "Configura y lanza un rastreo completo de un sitio con scrape-it-now para obtener markdown limpio, en local o con Azure e indexado.",
+    "keywords": [
+      "rastrear sitio web",
+      "web a markdown",
+      "scrape-it-now",
+      "crawler para llm"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/automation--scrape-it-now crawl my whole site and convert it to markdown",
       "/automation--scrape-it-now configure the scrape-it-now job to run on Azure",
       "/automation--scrape-it-now index the crawled content from my docs site"
+    ],
+    "title": "Site crawl with scrape-it-now",
+    "summary": "Sets up and runs a site-wide crawl with scrape-it-now to get clean markdown, locally or on Azure, with optional indexing.",
+    "keywords": [
+      "crawl website",
+      "website to markdown",
+      "scrape-it-now",
+      "crawler for llm"
     ]
-  }
+  },
+  "copyHash": "381ac8f97d830590"
 }

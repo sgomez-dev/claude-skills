@@ -6,6 +6,14 @@
       "/debugging--error-decode qué significa este error de Node.js",
       "/debugging--error-decode descifra este código de error de Stripe",
       "/debugging--error-decode explica este mensaje de error tan raro"
+    ],
+    "title": "Explicación de códigos de error",
+    "summary": "Traduce un código o mensaje de error críptico a lenguaje claro con causas probables, comprobaciones, pasos de solución y cómo evitarlo.",
+    "keywords": [
+      "qué significa este error",
+      "código de error",
+      "econnrefused",
+      "explicar error"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/debugging--error-decode what does this Node.js error mean",
       "/debugging--error-decode decode this Stripe error code",
       "/debugging--error-decode explain this cryptic error message"
+    ],
+    "title": "Error code explainer",
+    "summary": "Turns a cryptic error code or message into plain English with likely causes, checks to run, fix steps and how to prevent it.",
+    "keywords": [
+      "what does this error mean",
+      "error code",
+      "econnrefused",
+      "decode error message"
     ]
-  }
+  },
+  "copyHash": "1ffe4d395a9d2729"
 }

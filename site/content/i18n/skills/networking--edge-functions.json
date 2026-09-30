@@ -1,7 +1,17 @@
 {
   "sourceHash": "6328bc94951f194c",
+  "copyHash": "e14547edbecce02e",
   "es": {
     "description": "Crea funciones edge para manipular peticiones/respuestas y enrutamiento",
+    "title": "Funciones edge para peticiones",
+    "summary": "Crea funciones edge que reescriben URLs, modifican cabeceras o validan tokens, en Cloudflare Workers, Vercel Edge o Deno Deploy.",
+    "keywords": [
+      "funciones edge",
+      "reescribir urls",
+      "cabeceras http",
+      "edge functions",
+      "redirecciones por país"
+    ],
     "howToAsk": [
       "/networking--edge-functions reescribe las cabeceras de todas las respuestas",
       "/networking--edge-functions redirige a los usuarios móviles a otra ruta",
@@ -13,6 +23,15 @@
       "/networking--edge-functions rewrite response headers for every request",
       "/networking--edge-functions redirect mobile users to a different route",
       "/networking--edge-functions build an edge function for A/B testing"
+    ],
+    "title": "Edge functions for requests",
+    "summary": "Builds edge functions that rewrite URLs, change headers or validate tokens, on Cloudflare Workers, Vercel Edge Functions or Deno Deploy.",
+    "keywords": [
+      "edge functions",
+      "url rewriting",
+      "http headers",
+      "geo redirects",
+      "edge middleware"
     ]
   }
 }

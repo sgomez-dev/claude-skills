@@ -6,6 +6,14 @@
       "/web--animations crea un scroll horizontal cinematográfico para mi portafolio",
       "/web--animations añade un efecto de partículas con WebGL al hero de mi web",
       "/web--animations integra un modelo 3D animado en la página principal"
+    ],
+    "title": "Animaciones web cinematográficas",
+    "summary": "Crea la animación web que pidas, como modelos 3D, scroll horizontal, WebGL, partículas o shaders, con foco en rendimiento GPU y accesibilidad.",
+    "keywords": [
+      "animaciones web",
+      "webgl",
+      "three.js",
+      "scroll horizontal"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/web--animations create a cinematic horizontal scroll for my portfolio",
       "/web--animations add a WebGL particle effect to my hero section",
       "/web--animations add an animated 3D model to the homepage"
+    ],
+    "title": "Cinematic web animations",
+    "summary": "Builds the web animation you ask for, such as 3D models, horizontal scroll, WebGL, particles or shaders, with a focus on GPU performance and accessibility.",
+    "keywords": [
+      "web animations",
+      "webgl effects",
+      "three.js",
+      "horizontal scroll"
     ]
-  }
+  },
+  "copyHash": "79210cfa7a2228ed"
 }

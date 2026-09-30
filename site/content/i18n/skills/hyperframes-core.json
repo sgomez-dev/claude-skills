@@ -1,6 +1,15 @@
 {
   "sourceHash": "1e051ddf51246bfd",
+  "copyHash": "c232a83c0cae2c7f",
   "es": {
+    "title": "Reglas de composición HyperFrames",
+    "summary": "Define el contrato de una composición de HyperFrames: estructura, atributos de tiempo, pistas, subcomposiciones, variables y reglas de render determinista.",
+    "keywords": [
+      "estructura hyperframes",
+      "atributos data de tiempo",
+      "subcomposiciones",
+      "render determinista"
+    ],
     "description": "El contrato de composición de HyperFrames — construye un proyecto renderizable. Úsalo para la estructura de la composición, los atributos de tiempo `data-*`, `class=\"clip\"`, pistas, subcomposiciones, variables, la reproducción de medios gestionada por el framework, las reglas de renderizado determinista y la validación. Léelo antes de escribir HTML de composición.",
     "howToAsk": [
       "Explícame cómo estructurar una composición nueva de HyperFrames",
@@ -9,6 +18,14 @@
     ]
   },
   "en": {
+    "title": "HyperFrames composition rules",
+    "summary": "Defines the contract for a HyperFrames composition: structure, timing attributes, tracks, sub-compositions, variables and deterministic render rules.",
+    "keywords": [
+      "hyperframes structure",
+      "timing data attributes",
+      "sub-compositions",
+      "deterministic render"
+    ],
     "howToAsk": [
       "Explain how to structure a new HyperFrames composition",
       "How do I set clip timing with the data-* attributes?",

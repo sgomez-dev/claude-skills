@@ -6,6 +6,14 @@
       "/ai--tool-calling diseña el esquema de herramientas para que el modelo no se equivoque",
       "/ai--tool-calling permite que el agente llame a varias herramientas en paralelo",
       "/ai--tool-calling maneja los errores cuando falla una llamada a herramienta"
+    ],
+    "title": "Llamadas a herramientas en LLM",
+    "summary": "Revisa o implementa las herramientas que un modelo puede llamar: esquemas claros, llamadas en paralelo, gestión de errores y medición de aciertos.",
+    "keywords": [
+      "tool calling",
+      "function calling",
+      "herramientas de llm",
+      "esquemas de herramientas"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ai--tool-calling design the tool schema so the model stops mis-calling it",
       "/ai--tool-calling let the agent call several tools in parallel",
       "/ai--tool-calling handle errors when a tool call fails"
+    ],
+    "title": "LLM tool calling",
+    "summary": "Audits or implements the tools a model can call: clear schemas, parallel calls, error handling that lets the model recover, and an accuracy eval.",
+    "keywords": [
+      "tool calling",
+      "function calling",
+      "llm tools",
+      "tool schema design"
     ]
-  }
+  },
+  "copyHash": "32b5b87b9bec37e6"
 }

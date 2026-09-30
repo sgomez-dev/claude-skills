@@ -6,6 +6,14 @@
       "/content--social-posts convierte este artículo en publicaciones para LinkedIn y X",
       "/content--social-posts saca posts de Instagram a partir de mi último blog",
       "/content--social-posts adapta este contenido al tono nativo de cada red social"
+    ],
+    "title": "Posts para redes sociales",
+    "summary": "Convierte un contenido ya terminado en publicaciones propias de LinkedIn, X e Instagram, cada una con su formato y su gancho.",
+    "keywords": [
+      "posts linkedin",
+      "hilo para x",
+      "reutilizar contenido",
+      "carrusel instagram"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/content--social-posts turn this article into LinkedIn and X posts",
       "/content--social-posts pull Instagram posts from my latest blog piece",
       "/content--social-posts adapt this content to each platform's native tone"
+    ],
+    "title": "Social media posts",
+    "summary": "Turns one finished piece of content into posts native to LinkedIn, X and Instagram, each with its own format and hook.",
+    "keywords": [
+      "linkedin post",
+      "x thread",
+      "repurpose content",
+      "instagram carousel"
     ]
-  }
+  },
+  "copyHash": "f0d5419746480064"
 }

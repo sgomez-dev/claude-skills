@@ -6,6 +6,14 @@
       "/sales--pricing-strategy diseña 3 niveles de precios para nuestro SaaS",
       "/sales--pricing-strategy ayúdame a definir el ancla de precio de nuestro plan premium",
       "/sales--pricing-strategy revisa nuestro empaquetado actual y sugiere mejoras"
+    ],
+    "title": "Estrategia de precios y planes",
+    "summary": "Diseña o revisa tu estrategia de precios y paquetes: métrica de valor, niveles, anclaje y disposición a pagar, con una propuesta argumentada.",
+    "keywords": [
+      "estrategia de precios",
+      "planes y tarifas",
+      "pricing saas",
+      "disposición a pagar"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/sales--pricing-strategy design 3 pricing tiers for our SaaS",
       "/sales--pricing-strategy help me set the price anchor for our premium plan",
       "/sales--pricing-strategy review our current packaging and suggest improvements"
+    ],
+    "title": "Pricing and packaging strategy",
+    "summary": "Designs or stress-tests pricing and packaging: value metric, tiers, anchoring and willingness to pay, ending in a defensible proposal.",
+    "keywords": [
+      "pricing strategy",
+      "pricing tiers",
+      "packaging",
+      "willingness to pay"
     ]
-  }
+  },
+  "copyHash": "79e3c89160efe70f"
 }

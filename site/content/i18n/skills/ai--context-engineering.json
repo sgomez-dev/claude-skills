@@ -6,6 +6,14 @@
       "/ai--context-engineering mi agente se queda sin contexto en conversaciones largas",
       "/ai--context-engineering ¿uso retrieval o meto todo el documento en el prompt?",
       "/ai--context-engineering ayúdame a compactar el historial de chat para ahorrar tokens"
+    ],
+    "title": "Ventana de contexto del modelo",
+    "summary": "Analiza qué entra en la ventana de contexto de tu app de IA y propone qué recuperar, qué resumir y cuándo compactar el historial.",
+    "keywords": [
+      "ventana de contexto",
+      "reducir tokens",
+      "compactar historial",
+      "contexto llm"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ai--context-engineering my agent runs out of context in long conversations",
       "/ai--context-engineering should I use retrieval or stuff the whole doc in the prompt?",
       "/ai--context-engineering help me compact chat history to save tokens"
+    ],
+    "title": "LLM context window tuning",
+    "summary": "Audits what goes into your AI app's context window and decides what to retrieve, summarize or compact, then checks the result with an eval.",
+    "keywords": [
+      "context window",
+      "reduce prompt tokens",
+      "conversation compaction",
+      "context engineering"
     ]
-  }
+  },
+  "copyHash": "512eba05d955d24c"
 }

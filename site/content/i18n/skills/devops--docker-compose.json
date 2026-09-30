@@ -6,6 +6,14 @@
       "/devops--docker-compose docker-compose para mi app Node con Postgres y Redis",
       "/devops--docker-compose genera un compose para producción de mi API",
       "/devops--docker-compose monta el entorno local con docker-compose"
+    ],
+    "title": "Archivo docker-compose",
+    "summary": "Genera un docker-compose.yml para desarrollo local o producción con los servicios que tu proyecto necesita, health checks y volúmenes.",
+    "keywords": [
+      "docker compose",
+      "crear docker-compose.yml",
+      "base de datos en docker",
+      "entorno local"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/devops--docker-compose docker-compose for my Node app with Postgres and Redis",
       "/devops--docker-compose generate a production compose file for my API",
       "/devops--docker-compose set up my local dev environment with docker-compose"
+    ],
+    "title": "docker-compose file",
+    "summary": "Generates a docker-compose.yml for local development or production with the services your project needs, health checks and volumes.",
+    "keywords": [
+      "docker compose",
+      "docker-compose.yml",
+      "database in docker",
+      "local environment"
     ]
-  }
+  },
+  "copyHash": "5ddc878b410ebe53"
 }

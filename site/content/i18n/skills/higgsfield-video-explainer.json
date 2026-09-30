@@ -1,6 +1,15 @@
 {
   "sourceHash": "6dfbafaefacd34f1",
+  "copyHash": "86d90d67362512c6",
   "es": {
+    "title": "Vídeo explicativo narrado animado",
+    "summary": "Crea un vídeo narrado y animado, no fotorrealista, a partir de un tema o documento, en bloques de 10 segundos con un narrador y un estilo único.",
+    "keywords": [
+      "vídeo explicativo narrado",
+      "vídeo animado desde un tema",
+      "explainer con narrador",
+      "historia animada"
+    ],
     "description": "Construye un vídeo explicativo o narrativo no fotorrealista completo a partir de bloques ordenados de 10 segundos: un narrador, una clave de estilo universal, una toma de Seed Audio y un clip de Gemini Omni por bloque, con ensamblaje final en el servidor mediante explainer_video. Úsalo cuando: \"haz un vídeo explicativo\", \"explica esto en un vídeo\", \"convierte este tema o documento en un vídeo narrado\", \"cuenta esta historia como un vídeo animado\", \"haz un vídeo narrado sin rostro\", o \"muéstrame estilos de explicativos\". Soporta presets de CMS en vivo, referencias de estilo personalizadas, modos mascota/sin rostro, dos formatos de aspecto y subtítulos incrustados opcionales. NO lo uses para: películas fotorrealistas, anuncios/UGC, cabezas parlantes, podcasts, reels de tipografía en movimiento, clips sueltos sin narración, o edición de un vídeo ya terminado.",
     "howToAsk": [
       "Convierte este documento en un vídeo explicativo narrado",
@@ -9,6 +18,14 @@
     ]
   },
   "en": {
+    "title": "Narrated animated explainer video",
+    "summary": "Builds a narrated, non-photoreal animated video from a topic or document, in 10-second blocks with one narrator and a single visual style.",
+    "keywords": [
+      "narrated explainer video",
+      "animated video from topic",
+      "explainer with narrator",
+      "animated story video"
+    ],
     "howToAsk": [
       "Turn this document into a narrated explainer video",
       "Make an animated video that tells this story step by step",

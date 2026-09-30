@@ -1,18 +1,83 @@
 {
   "sourceHash": "dd4d128b29cbba85",
   "es": {
+    "title": "Auditoría de Google Ads",
+    "summary": "Audita tu cuenta de Google Ads (Search, Shopping, Performance Max, Demand Gen) y entrega hallazgos priorizados sobre medición, términos de búsqueda y pujas.",
+    "keywords": [
+      "google ads",
+      "performance max",
+      "términos de búsqueda",
+      "palabras clave negativas"
+    ],
     "description": "Audita la medición de Google Ads, Search, Shopping, Performance Max, Demand Gen, inventario vinculado a YouTube, palabras clave y términos de búsqueda, generación o revisión de palabras clave negativas, recursos creativos, pujas, presupuestos, configuración y políticas. Úsalo para Google Ads, AdWords, campañas de Search, informes de términos de búsqueda, negativas amplias, Shopping, Performance Max, PMax, Demand Gen, GAQL, tracking de conversiones de Google u optimización de campañas de Google.",
     "howToAsk": [
       "Audita mi cuenta de Google Ads, sobre todo las campañas de Search",
       "Revisa el informe de términos de búsqueda y sugiere negativas",
       "¿Cómo está rindiendo mi campaña de Performance Max?"
+    ],
+    "useWhen": [
+      "Quieres revisar la medición y la estructura de tu cuenta de Google Ads",
+      "Tienes un informe de términos de búsqueda y quieres detectar gasto perdido",
+      "Usas Performance Max, Shopping o Demand Gen y quieres un diagnóstico"
+    ],
+    "notFor": [
+      "Sugerir palabras clave negativas sin un informe de términos de búsqueda",
+      "Modificar la cuenta: los cambios quedan como borrador"
+    ],
+    "output": "Hallazgos de salud de la plataforma con cobertura de evidencia, diagnósticos, recomendaciones priorizadas, oportunidades sin puntuar y datos que faltan.",
+    "faq": [
+      {
+        "q": "¿Me dará una lista de palabras clave negativas?",
+        "a": "Solo si aportas un informe de términos de búsqueda y se revisa la relevancia para tu negocio. No ofrece listas genéricas ni de ejemplo."
+      },
+      {
+        "q": "¿Puede quitar o desactivar un ajuste de mi cuenta?",
+        "a": "Solo recomienda un cambio si verifica que la operación es posible con tus permisos y la interfaz actual. Si no, lo deja como desconocido y propone una alternativa reversible."
+      },
+      {
+        "q": "¿Puntúa las funciones en beta?",
+        "a": "No. Las funciones opcionales, beta o no elegibles quedan sin puntuar."
+      }
     ]
   },
   "en": {
+    "title": "Google Ads audit",
+    "summary": "Audits a Google Ads account (Search, Shopping, Performance Max, Demand Gen) and delivers prioritized findings on measurement, search terms and bidding.",
+    "keywords": [
+      "google ads",
+      "performance max",
+      "search terms report",
+      "negative keywords"
+    ],
     "howToAsk": [
       "Audit my Google Ads account, especially the Search campaigns",
       "Review the search terms report and suggest negative keywords",
       "How is my Performance Max campaign performing?"
+    ],
+    "useWhen": [
+      "You want to review measurement and structure in your Google Ads account",
+      "You have a search terms report and want to find wasted spend",
+      "You run Performance Max, Shopping or Demand Gen and want a diagnosis"
+    ],
+    "notFor": [
+      "Suggesting negative keywords without a search terms report",
+      "Editing the account: changes stay as drafts"
+    ],
+    "output": "Platform health findings with evidence coverage, diagnoses, prioritized recommendations, unscored opportunities and missing inputs.",
+    "faq": [
+      {
+        "q": "Will it give me a list of negative keywords?",
+        "a": "Only if you supply a search terms report and business relevance is reviewed. It never offers generic or sample negative lists."
+      },
+      {
+        "q": "Can it remove or disable a setting in my account?",
+        "a": "It recommends a change only after verifying the operation is possible with your permissions and the current interface. Otherwise it marks it unknown and offers a reversible alternative."
+      },
+      {
+        "q": "Does it score beta features?",
+        "a": "No. Optional, beta or ineligible features are left unscored."
+      }
     ]
-  }
+  },
+  "copyHash": "0cf60bf1e579fce3"
 }

@@ -6,6 +6,14 @@
       "/utils--json-tools valida si este archivo config.json tiene errores de sintaxis",
       "/utils--json-tools compara estos dos JSON y dime qué ha cambiado",
       "/utils--json-tools infiere el esquema de este JSON de respuesta de la API"
+    ],
+    "title": "Herramientas para JSON",
+    "summary": "Valida, compara, consulta con jq, aplana o infiere el esquema de un JSON, y entrega el resultado en pantalla o en un archivo.",
+    "keywords": [
+      "validar json",
+      "comparar json",
+      "consultas jq",
+      "esquema json"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/utils--json-tools validate whether this config.json has syntax errors",
       "/utils--json-tools diff these two JSON files and tell me what changed",
       "/utils--json-tools infer the schema from this API response JSON"
+    ],
+    "title": "JSON toolkit",
+    "summary": "Validates, diffs, queries with jq, flattens or infers a schema for JSON, and returns the result on screen or in a file.",
+    "keywords": [
+      "validate json",
+      "json diff",
+      "jq query",
+      "json schema"
     ]
-  }
+  },
+  "copyHash": "50c567092e9252ef"
 }

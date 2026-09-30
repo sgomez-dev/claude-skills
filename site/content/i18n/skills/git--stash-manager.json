@@ -1,7 +1,17 @@
 {
   "sourceHash": "8a5d3e8da2a014dd",
+  "copyHash": "de5a7ec0285d368c",
   "es": {
     "description": "Gestión interactiva de git stash: listar, aplicar, eliminar y organizar los stashes",
+    "title": "Gestor de stashes de git",
+    "summary": "Lista tus stashes de git, muestra qué contiene cada uno y te ayuda a aplicarlos, borrarlos, crear otro o sacar una rama de uno.",
+    "keywords": [
+      "git stash",
+      "aplicar stash",
+      "borrar stash",
+      "listar stashes",
+      "rama desde stash"
+    ],
     "howToAsk": [
       "/git--stash-manager muéstrame todos mis stashes guardados",
       "/git--stash-manager aplica el stash que hice ayer",
@@ -13,6 +23,15 @@
       "/git--stash-manager show me all my saved stashes",
       "/git--stash-manager apply the stash I made yesterday",
       "/git--stash-manager clean up the stashes I don't need anymore"
+    ],
+    "title": "Git stash manager",
+    "summary": "Lists your git stashes, previews what each holds and helps you apply, drop, save a new one or branch from a stash, warning about likely conflicts.",
+    "keywords": [
+      "git stash",
+      "apply stash",
+      "drop stash",
+      "list stashes",
+      "branch from stash"
     ]
   }
 }

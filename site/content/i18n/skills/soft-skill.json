@@ -6,6 +6,14 @@
       "Diseña esta landing para que parezca de una agencia premium",
       "Mi web se ve genérica, dale un aspecto de diseño caro",
       "Aplica tipografías y sombras de alta gama a este componente"
+    ],
+    "title": "Diseño web de agencia premium",
+    "summary": "Hace que Claude diseñe webs de aspecto caro: fija tipografías, espaciado, sombras, tarjetas y animaciones, y prohíbe los valores por defecto baratos.",
+    "keywords": [
+      "diseño web premium",
+      "web de aspecto caro",
+      "estilo agencia",
+      "evitar diseño genérico"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Design this landing page to feel like a high-end agency made it",
       "My site looks generic, make it feel expensive",
       "Apply premium fonts and shadows to this component"
+    ],
+    "title": "Premium agency-style web design",
+    "summary": "Has Claude design websites that feel expensive: it sets fonts, spacing, shadows, card structures and motion, and blocks defaults that look cheap.",
+    "keywords": [
+      "premium web design",
+      "agency style website",
+      "expensive looking ui",
+      "avoid generic design"
     ]
-  }
+  },
+  "copyHash": "e1e32f5e2d420872"
 }

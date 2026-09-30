@@ -6,6 +6,14 @@
       "Hazme una miniatura llamativa de YouTube para mi último vídeo",
       "Necesito una portada estilo MrBeast con mi cara y el logo de mi canal",
       "Crea la portada vertical para mi Short de hoy"
+    ],
+    "title": "Miniaturas de YouTube",
+    "summary": "Crea miniaturas de YouTube y portadas de vídeo vertical con un concepto veraz, identidades de referencia y variantes controladas.",
+    "keywords": [
+      "miniatura de youtube",
+      "portada de shorts",
+      "thumbnail para vídeo",
+      "cover de instagram"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Make me a clickable YouTube thumbnail for my latest video",
       "I need a MrBeast-style cover with my face and channel logo",
       "Create the vertical cover for today's Short"
+    ],
+    "title": "YouTube thumbnails",
+    "summary": "Creates YouTube thumbnails and vertical video covers with a truthful concept, referenced identities and controlled variants.",
+    "keywords": [
+      "youtube thumbnail",
+      "shorts cover",
+      "video thumbnail design",
+      "instagram video cover"
     ]
-  }
+  },
+  "copyHash": "07b6ca9bcdeec702"
 }

@@ -1,6 +1,15 @@
 {
   "sourceHash": "b06711444eeadff1",
+  "copyHash": "fd7b10364b04bab0",
   "es": {
+    "title": "Especificación de vídeo motion",
+    "summary": "Redacta la especificación de un vídeo de motion design con desglose de escenas, tiempos, estrategia de audio y principios de animación.",
+    "keywords": [
+      "guion técnico de vídeo",
+      "especificación motion design",
+      "desglose de escenas",
+      "storyboard de animación"
+    ],
     "description": "Especificaciones de vídeo de motion design: desglose de escenas, timing, estrategia de audio, principios de animación",
     "howToAsk": [
       "/docs--video-spec crea el spec del vídeo de lanzamiento del producto",
@@ -9,6 +18,14 @@
     ]
   },
   "en": {
+    "title": "Motion design video spec",
+    "summary": "Writes a motion design video spec with a scene breakdown, timing, audio strategy and animation principles for a production team.",
+    "keywords": [
+      "motion design spec",
+      "video scene breakdown",
+      "animation brief",
+      "video production spec"
+    ],
     "howToAsk": [
       "/docs--video-spec create the spec for our product launch video",
       "/docs--video-spec break down the scenes and timing for this explainer video",

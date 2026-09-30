@@ -6,6 +6,14 @@
       "/product--roadmap crea el roadmap now/next/later para el próximo semestre",
       "/product--roadmap organiza el backlog en ahora, próximo y más adelante",
       "/product--roadmap construye el roadmap teniendo en cuenta estas restricciones de equipo"
+    ],
+    "title": "Roadmap ahora, luego, después",
+    "summary": "Construye un roadmap now/next/later a partir de objetivos, backlog y restricciones, con lo descartado a la vista.",
+    "keywords": [
+      "roadmap de producto",
+      "now next later",
+      "hoja de ruta",
+      "planificación de producto"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/product--roadmap build the now/next/later roadmap for next half",
       "/product--roadmap organize the backlog into now, next, and later",
       "/product--roadmap build the roadmap given these team constraints"
+    ],
+    "title": "Now, next, later roadmap",
+    "summary": "Builds a now/next/later product roadmap from goals, backlog and constraints, with deferred items kept visible.",
+    "keywords": [
+      "product roadmap",
+      "now next later",
+      "roadmap template",
+      "product planning"
     ]
-  }
+  },
+  "copyHash": "c06f24f8fa1db3d8"
 }

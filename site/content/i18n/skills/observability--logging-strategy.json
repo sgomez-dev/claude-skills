@@ -6,6 +6,14 @@
       "/observability--logging-strategy diseña el esquema de logs para mi API",
       "/observability--logging-strategy añade IDs de correlación para seguir una petición entre servicios",
       "/observability--logging-strategy define cuánto guardamos los logs y cómo ocultar datos personales"
+    ],
+    "title": "Estrategia de logs estructurados",
+    "summary": "Audita el logging de tu proyecto y lo migra a logs JSON con niveles, IDs de correlación, ocultación de datos personales y política de retención.",
+    "keywords": [
+      "logs estructurados",
+      "correlation id",
+      "ocultar datos personales",
+      "niveles de log"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/observability--logging-strategy design the logging schema for my API",
       "/observability--logging-strategy add correlation IDs to trace a request across services",
       "/observability--logging-strategy define log retention and how to redact personal data"
+    ],
+    "title": "Structured logging strategy",
+    "summary": "Audits your project's logging and migrates it to JSON logs with levels, correlation IDs, PII redaction and a retention policy.",
+    "keywords": [
+      "structured logging",
+      "correlation id",
+      "pii redaction",
+      "log levels"
     ]
-  }
+  },
+  "copyHash": "b7cf0a0ba7127fab"
 }

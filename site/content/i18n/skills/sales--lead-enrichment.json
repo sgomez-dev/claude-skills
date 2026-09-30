@@ -6,6 +6,14 @@
       "/sales--lead-enrichment enriquece esta lista de leads con datos de empresa",
       "/sales--lead-enrichment añade el stack tecnológico y el tamaño de estas cuentas",
       "/sales--lead-enrichment completa esta hoja de leads con financiación y noticias recientes"
+    ],
+    "title": "Enriquecer lista de leads",
+    "summary": "Completa cada fila de tu lista de leads con datos públicos verificables: tamaño, sector, tecnología, financiación, contrataciones y noticias, con su fuente.",
+    "keywords": [
+      "enriquecer leads",
+      "datos de empresas",
+      "lista de prospectos",
+      "lead enrichment"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/sales--lead-enrichment enrich this lead list with company data",
       "/sales--lead-enrichment add tech stack and headcount for these accounts",
       "/sales--lead-enrichment fill in this lead sheet with funding and recent news"
+    ],
+    "title": "Lead list enrichment",
+    "summary": "Enriches each row of a lead list with public, verifiable data such as size, industry, tech signals, funding, hiring and news, each with its source.",
+    "keywords": [
+      "lead enrichment",
+      "company data",
+      "enrich csv",
+      "prospect research"
     ]
-  }
+  },
+  "copyHash": "8d3248ff6ebad519"
 }

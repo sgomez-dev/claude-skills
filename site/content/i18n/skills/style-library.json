@@ -6,6 +6,15 @@
       "Elige un estilo visual de la librería para este vídeo de HyperFrames",
       "Añade una nueva tarjeta de motion graphics a la biblioteca",
       "Reutiliza una plantilla de estilo existente en esta composición"
+    ],
+    "title": "Biblioteca de estilos para vídeo",
+    "summary": "Elige, personaliza o amplía la biblioteca de tarjetas de motion graphics y plantillas de estilo para reutilizarlas en un vídeo de HyperFrames.",
+    "keywords": [
+      "plantillas de motion graphics",
+      "tarjetas de estilo",
+      "estilo visual para vídeo",
+      "hyperframes",
+      "reutilizar plantilla"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "Pick a visual style from the library for this HyperFrames video",
       "Add a new motion-graphics card to the style library",
       "Reuse an existing style template in this composition"
+    ],
+    "title": "Video style template library",
+    "summary": "Picks, customizes or extends the library of motion-graphics cards and style templates to reuse in a HyperFrames video.",
+    "keywords": [
+      "motion graphics templates",
+      "style cards",
+      "visual style for video",
+      "hyperframes",
+      "reuse template"
     ]
-  }
+  },
+  "copyHash": "329fd9f082203c72"
 }

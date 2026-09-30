@@ -6,6 +6,39 @@
       "Actualiza la composición de May Shorts con el modo cara heredado",
       "Necesito tocar el scaffold antiguo de May Shorts, no uno nuevo",
       "Añade subtítulos estilo karaoke a esta composición legacy de May Shorts"
+    ],
+    "title": "Shorts heredados de May Shorts",
+    "summary": "Mantiene las composiciones de ejemplo de May Shorts con su estructura heredada de cara, escenas superpuestas y subtítulos karaoke.",
+    "keywords": [
+      "mantener shorts existentes",
+      "subtítulos karaoke",
+      "vídeo vertical hyperframes",
+      "may shorts",
+      "estructura heredada"
+    ],
+    "useWhen": [
+      "Trabajas sobre los ejemplos existentes de May Shorts",
+      "Pides expresamente el andamiaje heredado de cuatro capas",
+      "Necesitas reajustar los tiempos de un short ya construido"
+    ],
+    "notFor": [
+      "Reels, Shorts o anuncios nuevos, para los que se usa short-form-edit",
+      "Proyectos que no sean HyperFrames"
+    ],
+    "output": "Composiciones HyperFrames verticales de 1080x1920 con cara, escenas superpuestas y subtítulos karaoke sincronizados por palabra.",
+    "faq": [
+      {
+        "q": "¿Sirve para crear un reel nuevo?",
+        "a": "No. Está pensada para mantener los ejemplos de May Shorts; para grabaciones nuevas hay que usar short-form-edit."
+      },
+      {
+        "q": "¿Qué formato tienen los vídeos?",
+        "a": "Vertical 1080x1920, de 10 a 30 segundos, con cara hablando, escenas superpuestas y subtítulos karaoke."
+      },
+      {
+        "q": "¿Necesita HyperFrames?",
+        "a": "Sí. Se apoya en /hyperframes y no sustituye sus reglas de composición."
+      }
     ]
   },
   "en": {
@@ -13,6 +46,40 @@
       "Update the May Shorts composition using the legacy face-mode",
       "I need to touch the old May Shorts scaffold, not a new one",
       "Add karaoke-style captions to this legacy May Shorts composition"
+    ],
+    "title": "Legacy May Shorts maintenance",
+    "summary": "Maintains the May Shorts example compositions using their legacy face-mode, scene-overlay and karaoke-caption patterns.",
+    "keywords": [
+      "maintain existing shorts",
+      "karaoke captions",
+      "hyperframes vertical video",
+      "may shorts",
+      "legacy scaffold"
+    ],
+    "useWhen": [
+      "You are working on the existing May Shorts examples",
+      "You explicitly ask for the legacy four-layer scaffold",
+      "You need to retime a short that is already built"
+    ],
+    "notFor": [
+      "New reels, Shorts or ads, which use short-form-edit",
+      "Projects that are not built on HyperFrames"
+    ],
+    "output": "Vertical 1080x1920 HyperFrames compositions with a face layer, scene overlays and word-synced karaoke captions.",
+    "faq": [
+      {
+        "q": "Can I use it to make a new reel?",
+        "a": "No. It exists to maintain the May Shorts examples; for new recordings use short-form-edit."
+      },
+      {
+        "q": "What format are the videos?",
+        "a": "Vertical 1080x1920, 10 to 30 seconds, with a talking face, scene overlays and karaoke captions."
+      },
+      {
+        "q": "Does it need HyperFrames?",
+        "a": "Yes. It sits on top of /hyperframes and does not replace its composition rules."
+      }
     ]
-  }
+  },
+  "copyHash": "426f505398e9e851"
 }

@@ -1,7 +1,17 @@
 {
   "sourceHash": "2b973bc7d7452537",
+  "copyHash": "4368ca67abd51f51",
   "es": {
     "description": "Configura universal/app links: configuración, enrutado dentro de la app, enlaces diferidos, matriz de pruebas",
+    "title": "Deep links para apps móviles",
+    "summary": "Configura universal links y app links en tu app y deja listos los archivos del servidor, el enrutado interno y una matriz de pruebas.",
+    "keywords": [
+      "deep links",
+      "universal links",
+      "app links",
+      "enlaces profundos",
+      "assetlinks.json"
+    ],
     "howToAsk": [
       "/mobile--deep-linking configura universal links para mi app",
       "/mobile--deep-linking haz que un enlace abra directamente el producto",
@@ -13,6 +23,15 @@
       "/mobile--deep-linking set up universal links for my app",
       "/mobile--deep-linking make a link open directly to a product page",
       "/mobile--deep-linking add deferred links for users without the app"
+    ],
+    "title": "Deep links for mobile apps",
+    "summary": "Sets up universal links and app links, in-app routing and the server files your web team must host, plus a QA matrix to test every link.",
+    "keywords": [
+      "deep links",
+      "universal links",
+      "app links",
+      "deferred deep links",
+      "assetlinks.json"
     ]
   }
 }

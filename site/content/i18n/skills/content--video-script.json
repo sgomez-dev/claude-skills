@@ -1,6 +1,40 @@
 {
   "sourceHash": "38fa95b0e33b732f",
+  "copyHash": "fccad747797d299d",
   "es": {
+    "title": "Guion de vídeo con retención",
+    "summary": "Escribe un guion de vídeo corto o largo con gancho, estructura pensada para retener, notas de B-roll y una llamada a la acción bien colocada.",
+    "keywords": [
+      "guion de vídeo",
+      "guion youtube",
+      "guion reels",
+      "gancho para vídeo",
+      "notas b-roll"
+    ],
+    "useWhen": [
+      "Tienes una idea y necesitas un guion para Reels, Shorts, TikTok o YouTube",
+      "Quieres probar tres ganchos distintos para abrir el vídeo",
+      "Necesitas notas de imagen y B-roll concretas para el montaje"
+    ],
+    "notFor": [
+      "Grabar, editar o producir el vídeo: solo entrega el guion",
+      "Inventar resultados, cifras o testimonios: las afirmaciones sin prueba se marcan para verificar"
+    ],
+    "output": "Un archivo script_slug.md con el gancho elegido y dos alternativos, el mapa de momentos con tiempos, el guion a dos columnas (texto hablado y visual), tres títulos, un texto de miniatura y un borrador de descripción.",
+    "faq": [
+      {
+        "q": "¿Sirve tanto para vídeo corto como largo?",
+        "a": "Sí. Decide primero el formato: vídeo corto de hasta 90 segundos (Reels, Shorts, TikTok) o largo de 5 a 20 minutos en YouTube, y adapta la estructura a cada uno."
+      },
+      {
+        "q": "¿Cuánto durará el vídeo con el guion que escribe?",
+        "a": "Estima la duración con unas 150 palabras habladas por minuto, ajustando según el idioma, y avisa si el guion se pasa de la duración objetivo."
+      },
+      {
+        "q": "¿Inventa datos o resultados para el guion?",
+        "a": "No. No inventa resultados, cifras de visualizaciones ni testimonios, y marca para verificar cualquier afirmación que necesite una prueba."
+      }
+    ],
     "description": "Guion de vídeo: gancho, estructura de retención, notas de B-roll, CTA — formato corto o largo",
     "howToAsk": [
       "/content--video-script escribe el guion de un vídeo corto para redes sobre mi producto",
@@ -9,6 +43,39 @@
     ]
   },
   "en": {
+    "title": "Video script built for retention",
+    "summary": "Writes a short or long-form video script with a hook, a retention-minded structure, B-roll notes and a well-placed call to action.",
+    "keywords": [
+      "video script",
+      "youtube script",
+      "script for reels",
+      "video hook ideas",
+      "b-roll notes"
+    ],
+    "useWhen": [
+      "You have an idea and need a script for Reels, Shorts, TikTok or YouTube",
+      "You want three different hooks to open the video with",
+      "You need concrete visual and B-roll notes for the edit"
+    ],
+    "notFor": [
+      "Shooting, editing or producing the video: it only delivers the script",
+      "Making up results, numbers or testimonials: claims without proof are flagged for checking"
+    ],
+    "output": "A script_slug.md file with the chosen hook and two alternates, a timestamped beat map, a two-column script (spoken words and visuals), three title options, thumbnail text and a draft description.",
+    "faq": [
+      {
+        "q": "Does it work for both short and long videos?",
+        "a": "Yes. It settles the format first, either short form up to 90 seconds (Reels, Shorts, TikTok) or long form of 5 to 20 minutes on YouTube, and shapes the structure to match."
+      },
+      {
+        "q": "How long will the video run with the script it writes?",
+        "a": "It estimates runtime at about 150 spoken words per minute, adjusted for the language, and warns you if the script overshoots the target length."
+      },
+      {
+        "q": "Does it invent data or results for the script?",
+        "a": "No. It never makes up results, view counts or testimonials, and flags any claim that needs proof so you can verify it."
+      }
+    ],
     "howToAsk": [
       "/content--video-script write a short-form social video script for my product",
       "/content--video-script I need a long-form script with a strong hook and B-roll notes",

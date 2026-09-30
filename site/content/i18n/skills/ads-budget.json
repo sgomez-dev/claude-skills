@@ -1,6 +1,14 @@
 {
   "sourceHash": "ed00accd26cbc519",
   "es": {
+    "title": "Presupuesto y pujas publicitarias",
+    "summary": "Planifica o revisa el presupuesto y las pujas de tus campañas con CPA, ROAS y retorno marginal, y devuelve un plan con importes, plazos y reglas de parada.",
+    "keywords": [
+      "presupuesto publicitario",
+      "asignar presupuesto de anuncios",
+      "estrategia de pujas",
+      "objetivo de roas"
+    ],
     "description": "Planifica y revisa presupuestos de medios de pago, pujas, ritmo de gasto (pacing), retorno marginal, previsiones, CPA, ROAS, MER, LTV:CAC, restricciones y asignación entre plataformas compatibles. Úsalo para asignación de presupuesto publicitario, presupuesto de medios, estrategia de pujas, escalado, ritmo de gasto, previsión de presupuesto, objetivo de ROAS o decisiones de inversión.",
     "howToAsk": [
       "Ayúdame a repartir el presupuesto de publicidad entre plataformas este trimestre",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "Ad budget and bidding plan",
+    "summary": "Plans or reviews campaign budgets and bidding using CPA, ROAS and marginal return, and returns a plan with amounts, timing, guardrails and rollback triggers.",
+    "keywords": [
+      "ad budget allocation",
+      "media budget",
+      "bidding strategy",
+      "roas target"
+    ],
     "howToAsk": [
       "Help me allocate ad budget across platforms this quarter",
       "Can I scale spend on this campaign without CPA blowing up?",
       "Forecast a budget to hit a 4x ROAS target"
     ]
-  }
+  },
+  "copyHash": "4d5db971dee2dcf8"
 }

@@ -6,6 +6,14 @@
       "/debugging--variable-inspect rastrea por qué esta variable llega a null",
       "/debugging--variable-inspect encuentra dónde se corrompe este objeto",
       "/debugging--variable-inspect sigue el valor de esta variable por todo el flujo"
+    ],
+    "title": "Rastreo de una variable",
+    "summary": "Sigue una variable por todo el código, desde su declaración hasta cada lectura y cambio, para hallar dónde se corrompe.",
+    "keywords": [
+      "rastrear variable",
+      "valor incorrecto",
+      "variable null",
+      "mutación inesperada"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/debugging--variable-inspect trace why this variable ends up null",
       "/debugging--variable-inspect find where this object gets corrupted",
       "/debugging--variable-inspect follow this variable's value through the flow"
+    ],
+    "title": "Variable lifecycle tracing",
+    "summary": "Follows a variable through your codebase from declaration to every read and write to find where its value goes wrong.",
+    "keywords": [
+      "trace variable",
+      "wrong value",
+      "null variable",
+      "unexpected mutation"
     ]
-  }
+  },
+  "copyHash": "d12d6ad62f8c0373"
 }

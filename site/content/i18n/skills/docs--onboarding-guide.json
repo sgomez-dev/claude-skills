@@ -6,6 +6,14 @@
       "/docs--onboarding-guide crea la guía de onboarding para nuevos desarrolladores del equipo",
       "/docs--onboarding-guide genera los pasos para levantar el proyecto en local",
       "/docs--onboarding-guide documenta cómo configurar el entorno de desarrollo desde cero"
+    ],
+    "title": "Guía de onboarding para devs",
+    "summary": "Crea una guía de incorporación a partir del repositorio real: requisitos, variables de entorno, comandos y cómo abrir la primera PR.",
+    "keywords": [
+      "guía de onboarding",
+      "incorporar desarrolladores",
+      "onboarding.md",
+      "variables de entorno"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/docs--onboarding-guide create the onboarding guide for new developers on the team",
       "/docs--onboarding-guide generate the steps to run the project locally",
       "/docs--onboarding-guide document how to set up the dev environment from scratch"
+    ],
+    "title": "Developer onboarding guide",
+    "summary": "Builds an onboarding guide from your actual repo: prerequisites, environment variables, commands and how to get to a first pull request.",
+    "keywords": [
+      "developer onboarding",
+      "onboarding guide",
+      "onboarding.md",
+      "new developer setup"
     ]
-  }
+  },
+  "copyHash": "699408af66326f3a"
 }

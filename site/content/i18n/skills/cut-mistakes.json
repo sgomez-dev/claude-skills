@@ -1,6 +1,39 @@
 {
   "sourceHash": "cb194bd1b42f6b02",
+  "copyHash": "cdce240042f6c05e",
   "es": {
+    "title": "Cortar tartamudeos y tomas falsas",
+    "summary": "Localiza tartamudeos, palabras repetidas, falsos comienzos y repeticiones de toma en un vídeo hablado y corta solo los que apruebes.",
+    "keywords": [
+      "quitar tartamudeos",
+      "cortar errores de vídeo",
+      "eliminar muletillas",
+      "quedarse con la mejor toma"
+    ],
+    "useWhen": [
+      "Has grabado un vídeo hablando a cámara y quieres limpiar tropiezos al hablar",
+      "Grabaste una frase varias veces y quieres quedarte con la toma buena",
+      "Ya has quitado los silencios y toca la segunda pasada de edición"
+    ],
+    "notFor": [
+      "Quitar silencios y pausas: de eso se encarga cut-silences",
+      "Decidir solo: cada corte pasa por tu revisión porque una repetición enfática puede parecer un tartamudeo"
+    ],
+    "output": "Un listado de candidatos a corte con contexto y motivo, una lista de cortes aprobados, una transcripción reajustada y, al aplicarlos, el vídeo recortado con ffmpeg.",
+    "faq": [
+      {
+        "q": "¿Corta los errores automáticamente?",
+        "a": "No. Propone cada corte con su contexto y su motivo, y solo renderiza los que tú apruebas, porque decidir qué es un error requiere criterio."
+      },
+      {
+        "q": "¿Qué necesita para funcionar?",
+        "a": "Una transcripción con tiempos por palabra, normalmente la que deja cut-silences, y el vídeo si quieres que genere el resultado recortado con ffmpeg."
+      },
+      {
+        "q": "¿Y si mi vídeo está muy limpio?",
+        "a": "Puede que no encuentre cortes reales y eso es un resultado válido: no recorta habla natural solo por cumplir una cuota."
+      }
+    ],
     "description": "Agente 2 del pipeline de edición de vídeo. Encuentra y elimina errores hablados — tartamudeos, palabras repetidas, falsos inicios y retakes (frases regrabadas) — de una grabación de talking-head. Úsalo después de cut-silences, cuando te pidan cortar errores, quitar tartamudeos / repeticiones / reinicios de relleno, limpiar patinazos, o quedarte con la mejor toma. Funciona con revisión: propone cada corte con contexto y motivo para que lo apruebes, y solo renderiza los cortes aprobados vía ffmpeg. Requiere una transcripción a nivel de palabra.",
     "howToAsk": [
       "Quita los tartamudeos y las frases repetidas de mi último vídeo de talking-head",
@@ -9,6 +42,38 @@
     ]
   },
   "en": {
+    "title": "Cut video stutters and flubs",
+    "summary": "Finds stutters, repeated words, false starts and retakes in a talking-head video and cuts only the ones you approve.",
+    "keywords": [
+      "remove stutters from video",
+      "cut video mistakes",
+      "remove false starts",
+      "keep the best take"
+    ],
+    "useWhen": [
+      "You recorded a talking-head video and want to clean up verbal slips",
+      "You said a line several times and want to keep the good take",
+      "You have already trimmed the silences and need the second editing pass"
+    ],
+    "notFor": [
+      "Removing silences and pauses: that is what cut-silences does",
+      "Deciding on its own: every cut goes through your review because emphatic repetition can look like a stutter"
+    ],
+    "output": "A list of cut candidates with context and reason, a file of approved cuts, a re-timed transcript and, once applied, the trimmed video rendered with ffmpeg.",
+    "faq": [
+      {
+        "q": "Does it cut the mistakes automatically?",
+        "a": "No. It proposes each cut with its context and reason, and only renders the ones you approve, because deciding what counts as a mistake takes judgment."
+      },
+      {
+        "q": "What does it need to run?",
+        "a": "A word-level transcript, normally the one cut-silences produces, plus the video if you want the trimmed result rendered with ffmpeg."
+      },
+      {
+        "q": "What if my video is already clean?",
+        "a": "It may find no real cuts, and that is a valid outcome: it will not trim natural speech just to hit a quota."
+      }
+    ],
     "howToAsk": [
       "Remove the stutters and repeated words from my latest talking-head recording",
       "Review this recording and propose cuts for the false starts for me to approve",

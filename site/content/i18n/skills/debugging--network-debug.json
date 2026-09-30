@@ -6,6 +6,14 @@
       "/debugging--network-debug por qué falla esta conexión WebSocket",
       "/debugging--network-debug depura este error de conexión gRPC",
       "/debugging--network-debug investiga por qué esta petición HTTP da timeout"
+    ],
+    "title": "Depurar problemas de red",
+    "summary": "Diagnostica fallos de conexión, TLS, HTTP, WebSocket y gRPC leyendo el código de red y explicando la causa probable y cómo arreglarla.",
+    "keywords": [
+      "error de conexión",
+      "econnreset",
+      "certificado tls",
+      "websocket se desconecta"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/debugging--network-debug why does this WebSocket connection fail",
       "/debugging--network-debug debug this gRPC connection error",
       "/debugging--network-debug figure out why this HTTP request times out"
+    ],
+    "title": "Network issue debugging",
+    "summary": "Diagnoses connection, TLS, HTTP, WebSocket and gRPC failures by reading your network code and explaining the likely cause and fix.",
+    "keywords": [
+      "connection refused",
+      "econnreset",
+      "tls certificate error",
+      "websocket disconnects"
     ]
-  }
+  },
+  "copyHash": "7ea7f3d3cf054e0b"
 }

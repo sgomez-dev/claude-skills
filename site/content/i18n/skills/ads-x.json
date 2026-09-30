@@ -6,6 +6,15 @@
       "Audita mi cuenta de X Ads (antes Twitter Ads)",
       "Revisa la segmentación por conversación en mi campaña de X",
       "¿El X Pixel está bien configurado para medir conversiones?"
+    ],
+    "title": "Auditoría de X Ads",
+    "summary": "Audita tu cuenta de X Ads (antes Twitter Ads): X Pixel, Conversions API, segmentación, creatividad y presupuestos. Devuelve hallazgos y entradas que faltan.",
+    "keywords": [
+      "auditoría x ads",
+      "twitter ads",
+      "x pixel",
+      "conversions api",
+      "segmentación por conversación"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "Audit my X Ads (formerly Twitter Ads) account",
       "Review conversation targeting on my X campaign",
       "Is the X Pixel set up correctly to measure conversions?"
+    ],
+    "title": "X Ads account audit",
+    "summary": "Audits an X (formerly Twitter) Ads account, covering X Pixel, Conversions API, targeting, creative and budgets, and returns findings and missing inputs.",
+    "keywords": [
+      "x ads audit",
+      "twitter ads",
+      "x pixel",
+      "conversation targeting",
+      "promoted posts"
     ]
-  }
+  },
+  "copyHash": "d3df9f01d2c02fd4"
 }

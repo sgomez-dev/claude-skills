@@ -6,6 +6,14 @@
       "/security--sanitize revisa los formularios de mi web en busca de inputs sin validar",
       "/security--sanitize añade saneamiento a los parámetros de esta API",
       "/security--sanitize ¿este código es vulnerable a inyección SQL?"
+    ],
+    "title": "Validación de entradas de usuario",
+    "summary": "Rastrea por dónde entran los datos de usuario y dónde se usan, detecta inyección SQL, XSS y fallos similares, y propone la corrección.",
+    "keywords": [
+      "sanitizar entradas",
+      "inyección sql",
+      "xss",
+      "validar datos de usuario"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/security--sanitize check my forms for unsanitized inputs",
       "/security--sanitize add sanitization to this API's parameters",
       "/security--sanitize is this code vulnerable to SQL injection?"
+    ],
+    "title": "Input sanitization review",
+    "summary": "Traces where user input enters your code and where it ends up, flags SQL injection, XSS and similar flaws, and proposes the fix.",
+    "keywords": [
+      "sanitize user input",
+      "sql injection",
+      "xss prevention",
+      "input validation"
     ]
-  }
+  },
+  "copyHash": "6e7197bf6fe6dce8"
 }

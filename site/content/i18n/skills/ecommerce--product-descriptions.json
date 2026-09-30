@@ -6,6 +6,14 @@
       "/ecommerce--product-descriptions escribe las descripciones de estos 50 productos desde este CSV",
       "/ecommerce--product-descriptions genera una descripción persuasiva para esta camiseta",
       "/ecommerce--product-descriptions necesito descripciones de producto que conviertan más"
+    ],
+    "title": "Descripciones de producto en masa",
+    "summary": "Escribe descripciones de producto que venden a partir de fichas técnicas o un CSV, en el formato de importación que pide tu plataforma.",
+    "keywords": [
+      "descripciones de producto",
+      "fichas de producto csv",
+      "copy para tienda online",
+      "shopify importar"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ecommerce--product-descriptions write descriptions for these 50 products from this CSV",
       "/ecommerce--product-descriptions generate a persuasive description for this t-shirt",
       "/ecommerce--product-descriptions I need product descriptions that convert better"
+    ],
+    "title": "Product descriptions at scale",
+    "summary": "Writes conversion-focused product descriptions from specs or a CSV, delivered in the import format your store platform expects.",
+    "keywords": [
+      "product descriptions",
+      "bulk product copy",
+      "csv product import",
+      "ecommerce copywriting"
     ]
-  }
+  },
+  "copyHash": "67895237a78d666f"
 }

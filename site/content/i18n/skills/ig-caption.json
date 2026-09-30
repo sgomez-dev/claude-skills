@@ -6,6 +6,14 @@
       "Escríbeme el caption para este reel que acabo de grabar",
       "¿Qué pongo en la descripción de este carrusel?",
       "Dame tres hashtags buenos para este post"
+    ],
+    "title": "Pie de foto para Instagram",
+    "summary": "Escribe el pie de un reel o carrusel de Instagram con su gancho, el cuerpo, una sola petición, términos de búsqueda y hashtags, y lo revisa antes de publicar.",
+    "keywords": [
+      "caption instagram",
+      "descripción del reel",
+      "hashtags instagram",
+      "texto para publicación"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Write the caption for this reel I just recorded",
       "What should I put in the description for this carousel?",
       "Give me three good hashtags for this post"
+    ],
+    "title": "Instagram caption writer",
+    "summary": "Writes the caption for an Instagram reel or carousel, with the opening line, body, a single ask, search terms and hashtags, then lints it before you post.",
+    "keywords": [
+      "instagram caption",
+      "reel description",
+      "instagram hashtags",
+      "caption ideas"
     ]
-  }
+  },
+  "copyHash": "44bd93bfbceabebd"
 }

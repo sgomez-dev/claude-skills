@@ -6,6 +6,38 @@
       "/security--threat-model haz el modelado de amenazas de mi arquitectura",
       "/security--threat-model identifica los límites de confianza de este sistema",
       "/security--threat-model ¿cuál es la superficie de ataque de mi API?"
+    ],
+    "title": "Modelo de amenazas STRIDE",
+    "summary": "Analiza la arquitectura de tu repositorio y escribe threat-model.md con diagrama de flujo, amenazas STRIDE valoradas y cinco acciones prioritarias.",
+    "keywords": [
+      "modelo de amenazas",
+      "stride",
+      "diagrama de flujo de datos",
+      "riesgos de seguridad"
+    ],
+    "useWhen": [
+      "Vas a diseñar o revisar la arquitectura y quieres saber qué puede salir mal",
+      "Necesitas priorizar qué arreglar primero en seguridad",
+      "Preparas una evaluación externa y quieres partir de un modelo documentado"
+    ],
+    "notFor": [
+      "Encontrar vulnerabilidades concretas línea a línea: para eso está la auditoría de seguridad",
+      "Sustituir el criterio de un equipo de seguridad"
+    ],
+    "output": "Un archivo threat-model.md con diagrama Mermaid, tabla de amenazas (elemento, categoría STRIDE, amenaza, valoración, mitigación) y las cinco acciones prioritarias.",
+    "faq": [
+      {
+        "q": "¿Qué es STRIDE?",
+        "a": "Un método que repasa seis tipos de amenaza: suplantación, manipulación, repudio, revelación de información, denegación de servicio y elevación de privilegios."
+      },
+      {
+        "q": "¿Puedo modelar solo una parte del sistema?",
+        "a": "Sí. Si el alcance no está claro, pregunta si quieres modelar una funcionalidad, un servicio o todo el sistema."
+      },
+      {
+        "q": "¿Hay que repetirlo si cambia la arquitectura?",
+        "a": "Sí, conviene revisarlo: el propio skill lo trata como un documento vivo que se actualiza cuando cambia la arquitectura."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "/security--threat-model build a threat model for my architecture",
       "/security--threat-model identify the trust boundaries in this system",
       "/security--threat-model what's the attack surface of my API?"
+    ],
+    "title": "STRIDE threat model",
+    "summary": "Analyzes your repo's architecture and writes threat-model.md with a data-flow diagram, rated STRIDE threats and a top-5 action list.",
+    "keywords": [
+      "threat model",
+      "stride",
+      "trust boundaries",
+      "attack surface"
+    ],
+    "useWhen": [
+      "You are designing or reviewing an architecture and want to know what could go wrong",
+      "You need to prioritize which security issues to fix first",
+      "You are preparing an external assessment and want a documented model to start from"
+    ],
+    "notFor": [
+      "Finding specific vulnerabilities line by line: use the security audit for that",
+      "Replacing the judgment of a security team"
+    ],
+    "output": "A threat-model.md file with a Mermaid diagram, a threat table (element, STRIDE category, threat, rating, mitigation) and a top-5 action list.",
+    "faq": [
+      {
+        "q": "What is STRIDE?",
+        "a": "A method that walks through six threat types: spoofing, tampering, repudiation, information disclosure, denial of service and elevation of privilege."
+      },
+      {
+        "q": "Can I model just part of the system?",
+        "a": "Yes. If the scope is unclear it asks whether to model a feature, a service or the whole system."
+      },
+      {
+        "q": "Do I need to redo it when the architecture changes?",
+        "a": "Yes, you should revisit it: the skill treats a threat model as a living document to update when the architecture changes."
+      }
     ]
-  }
+  },
+  "copyHash": "cf66a7bea37d7146"
 }

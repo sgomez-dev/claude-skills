@@ -1,7 +1,17 @@
 {
   "sourceHash": "a6b2ae22ecbedbc9",
+  "copyHash": "fb2064d3070737a0",
   "es": {
     "description": "Configura reglas de WAF y políticas de firewall en Cloudflare",
+    "title": "Reglas WAF de Cloudflare",
+    "summary": "Diseña reglas WAF y de límite de uso en Cloudflare según la superficie de ataque de tu app, y una estrategia para probarlas sin bloquear a nadie.",
+    "keywords": [
+      "cloudflare waf",
+      "firewall web",
+      "reglas de seguridad",
+      "rate limiting",
+      "owasp"
+    ],
     "howToAsk": [
       "/networking--cloudflare-waf bloquea el tráfico sospechoso de mi web",
       "/networking--cloudflare-waf crea una regla para frenar bots en el formulario de contacto",
@@ -13,6 +23,15 @@
       "/networking--cloudflare-waf block suspicious traffic to my site",
       "/networking--cloudflare-waf add a rule to stop bots on the contact form",
       "/networking--cloudflare-waf review my current firewall policies"
+    ],
+    "title": "Cloudflare WAF rules",
+    "summary": "Designs Cloudflare WAF and rate-limiting rules based on your app's threat surface, plus a plan to test them without blocking legitimate traffic.",
+    "keywords": [
+      "cloudflare waf",
+      "web firewall",
+      "security rules",
+      "rate limiting",
+      "owasp"
     ]
   }
 }

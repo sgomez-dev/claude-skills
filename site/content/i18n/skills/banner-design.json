@@ -6,6 +6,14 @@
       "Diseña un banner para un anuncio de Instagram con estilo minimalista",
       "Crea la cabecera (hero) de mi sitio web con un degradado",
       "Genera un banner para LinkedIn a partir de esta foto de producto"
+    ],
+    "title": "Diseño de banners",
+    "summary": "Diseña banners para redes, anuncios, cabeceras web o impresión y ofrece varias opciones de dirección de arte, por defecto tres.",
+    "keywords": [
+      "diseñar banner",
+      "banner redes sociales",
+      "cabecera web",
+      "banner publicitario"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Design an Instagram ad banner with a minimalist style",
       "Create my website's hero banner with a gradient look",
       "Generate a LinkedIn banner from this product photo"
+    ],
+    "title": "Banner design",
+    "summary": "Designs banners for social media, ads, website heroes or print, and offers several art-direction options, three by default.",
+    "keywords": [
+      "design a banner",
+      "social media banner",
+      "website hero design",
+      "display ad banner"
     ]
-  }
+  },
+  "copyHash": "ccb89ddc848f60bf"
 }

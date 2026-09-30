@@ -6,6 +6,14 @@
       "/devops--k8s manifiestos de Kubernetes para mi API",
       "/devops--k8s genera un Deployment y un Service para esta app",
       "/devops--k8s crea los manifiestos de Kubernetes para producción"
+    ],
+    "title": "Manifiestos de Kubernetes",
+    "summary": "Genera los manifiestos de Kubernetes de tu aplicación: Deployment, Service, Ingress, autoescalado y configuración, en YAML o Kustomize.",
+    "keywords": [
+      "manifiestos kubernetes",
+      "desplegar en kubernetes",
+      "deployment yaml",
+      "kustomize"
     ]
   },
   "en": {
@@ -13,6 +21,16 @@
       "/devops--k8s Kubernetes manifests for my API",
       "/devops--k8s generate a Deployment and Service for this app",
       "/devops--k8s create Kubernetes manifests for production"
+    ],
+    "title": "Kubernetes manifests for your app",
+    "summary": "Generates Kubernetes manifests for your app: Deployment, Service, Ingress, autoscaling and config, as separate YAML files or a Kustomize layout.",
+    "keywords": [
+      "kubernetes manifests",
+      "deploy to kubernetes",
+      "deployment yaml",
+      "kustomize",
+      "hpa ingress"
     ]
-  }
+  },
+  "copyHash": "ab486a2adfd42bcf"
 }

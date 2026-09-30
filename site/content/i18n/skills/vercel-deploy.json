@@ -6,6 +6,14 @@
       "Despliega mi aplicación en Vercel y dame el enlace",
       "Publica esta web ya, necesito el link cuanto antes",
       "Crea un despliegue de vista previa de esta rama"
+    ],
+    "title": "Desplegar en Vercel",
+    "summary": "Despliega tu aplicación o web en Vercel como vista previa y te devuelve el enlace; solo despliega a producción si lo pides de forma explícita.",
+    "keywords": [
+      "desplegar en vercel",
+      "publicar web",
+      "despliegue de prueba",
+      "enlace de preview"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Deploy my app to Vercel and give me the link",
       "Push this site live right now",
       "Create a preview deployment for this branch"
+    ],
+    "title": "Deploy to Vercel",
+    "summary": "Deploys your app or website to Vercel as a preview and returns the link; it only deploys to production when you explicitly ask.",
+    "keywords": [
+      "deploy to vercel",
+      "publish website",
+      "preview deployment",
+      "push live"
     ]
-  }
+  },
+  "copyHash": "9d9119acfb2de4bb"
 }

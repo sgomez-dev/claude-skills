@@ -6,6 +6,14 @@
       "/observability--runbook-gen crea un runbook para cuando la cola de mensajes se atasca",
       "/observability--runbook-gen documenta cómo diagnosticar un pico de errores 500",
       "/observability--runbook-gen genera el runbook de restauración de la base de datos"
+    ],
+    "title": "Runbooks operativos",
+    "summary": "Genera runbooks leyendo tu código e infraestructura, con síntomas, comandos de diagnóstico, remediación ordenada por seguridad y escalado.",
+    "keywords": [
+      "runbook",
+      "guía de operaciones",
+      "respuesta a alertas",
+      "procedimiento de recuperación"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/observability--runbook-gen create a runbook for when the message queue backs up",
       "/observability--runbook-gen document how to diagnose a spike in 500 errors",
       "/observability--runbook-gen generate the runbook for restoring the database"
+    ],
+    "title": "Operational runbooks",
+    "summary": "Generates runbooks by reading your code and infrastructure, with symptoms, diagnosis commands, remediation ordered by safety, and escalation.",
+    "keywords": [
+      "runbook",
+      "ops playbook",
+      "alert response",
+      "recovery procedure"
     ]
-  }
+  },
+  "copyHash": "b10841a9a25586fc"
 }

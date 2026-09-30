@@ -6,6 +6,14 @@
       "/sales--case-study-generator escribe un caso de éxito con estas métricas del proyecto",
       "/sales--case-study-generator necesito un case study de este cliente para la web",
       "/sales--case-study-generator convierte estos resultados en una historia de problema-solución"
+    ],
+    "title": "Caso de éxito de cliente",
+    "summary": "Convierte notas de proyecto y métricas en un caso de éxito con problema, solución y resultados, más resumen de una página y pruebas para ventas.",
+    "keywords": [
+      "caso de éxito",
+      "caso de estudio cliente",
+      "testimonio con métricas",
+      "material de ventas"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/sales--case-study-generator write a case study using these project metrics",
       "/sales--case-study-generator I need a case study of this client for the website",
       "/sales--case-study-generator turn these results into a problem-solution story"
+    ],
+    "title": "Customer case study",
+    "summary": "Turns project notes and metrics into a problem, solution and results case study, plus a one-page summary and proof points for sales.",
+    "keywords": [
+      "case study",
+      "customer success story",
+      "results and metrics",
+      "sales collateral"
     ]
-  }
+  },
+  "copyHash": "ef27841e85c5ed37"
 }

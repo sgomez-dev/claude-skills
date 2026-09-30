@@ -6,6 +6,14 @@
       "/ai--multi-agent diseña un orquestador que reparta tareas entre varios agentes",
       "/ai--multi-agent ¿cómo hago el traspaso de una conversación entre dos agentes?",
       "/ai--multi-agent qué pasa si uno de mis agentes falla a mitad del flujo"
+    ],
+    "title": "Sistemas multiagente",
+    "summary": "Diseña un sistema de varios agentes de IA, con patrón de orquestación, contratos entre agentes y manejo de fallos, o recomienda un solo agente.",
+    "keywords": [
+      "multiagente",
+      "orquestar agentes",
+      "traspaso entre agentes",
+      "agentes en paralelo"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ai--multi-agent design an orchestrator that splits work across agents",
       "/ai--multi-agent how do I hand off a conversation between two agents?",
       "/ai--multi-agent what happens if one of my agents fails mid-flow"
+    ],
+    "title": "Multi-agent system design",
+    "summary": "Designs a system of several AI agents with an orchestration pattern, contracts between agents and failure handling, or advises a single agent instead.",
+    "keywords": [
+      "multi-agent system",
+      "agent orchestration",
+      "agent handoffs",
+      "parallel agents"
     ]
-  }
+  },
+  "copyHash": "94698ccc03fb6d70"
 }

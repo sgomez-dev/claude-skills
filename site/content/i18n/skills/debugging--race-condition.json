@@ -6,6 +6,14 @@
       "/debugging--race-condition encuentra la condición de carrera en este código concurrente",
       "/debugging--race-condition arregla este bug intermitente que parece un data race",
       "/debugging--race-condition revisa si hay un TOCTOU en esta validación"
+    ],
+    "title": "Condiciones de carrera",
+    "summary": "Detecta condiciones de carrera, data races y errores TOCTOU en tu código concurrente y propone cómo corregirlos.",
+    "keywords": [
+      "condición de carrera",
+      "data race",
+      "toctou",
+      "bug de concurrencia"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/debugging--race-condition find the race condition in this concurrent code",
       "/debugging--race-condition fix this flaky bug that looks like a data race",
       "/debugging--race-condition check for a TOCTOU bug in this validation"
+    ],
+    "title": "Race condition fixing",
+    "summary": "Detects race conditions, data races and TOCTOU bugs in your concurrent code and proposes how to fix them.",
+    "keywords": [
+      "race condition",
+      "data race",
+      "toctou",
+      "concurrency bug"
     ]
-  }
+  },
+  "copyHash": "e3e63529fee5985c"
 }

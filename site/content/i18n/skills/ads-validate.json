@@ -6,6 +6,14 @@
       "Valida que todo está listo antes de lanzar esta campaña",
       "Comprueba el estado actual de Claude Ads en este proyecto",
       "Verifica los checksums antes de la instalación"
+    ],
+    "title": "Validación de Claude Ads",
+    "summary": "Comprueba contratos, puntuaciones, ejecuciones e instalación de Claude Ads y devuelve un pasa/falla con el bloqueo principal y cómo recuperarlo.",
+    "keywords": [
+      "validar claude ads",
+      "desinstalar claude ads",
+      "preflight release",
+      "comprobar checksum"
     ]
   },
   "en": {
@@ -13,6 +21,16 @@
       "Validate everything is ready before we launch this campaign",
       "Check the current status of Claude Ads on this project",
       "Verify checksums before installation"
+    ],
+    "title": "Claude Ads validation",
+    "summary": "Checks Claude Ads contracts, scores, runs and installs, and returns a pass/fail result with the top blocker, the evidence and steps to recover.",
+    "keywords": [
+      "validate claude ads",
+      "ads validate",
+      "uninstall claude ads",
+      "release readiness",
+      "checksum verification"
     ]
-  }
+  },
+  "copyHash": "ce1dba27a7f99ff7"
 }

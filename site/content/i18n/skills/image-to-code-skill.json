@@ -6,6 +6,14 @@
       "Genera el diseño de esta landing page y luego impleméntala en código",
       "Necesito que el hero de mi web quede limpio y legible en pantallas pequeñas",
       "Crea imágenes de referencia por sección antes de programar este sitio"
+    ],
+    "title": "Web en código desde imagen",
+    "summary": "Para webs donde el aspecto importa, genera primero imágenes de diseño por sección, las analiza y programa la web para que coincida con ellas.",
+    "keywords": [
+      "imagen a código",
+      "maquetar diseño",
+      "landing desde imagen",
+      "diseño a html"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Generate the design for this landing page and then implement it in code",
       "I need my site's hero to look clean and readable on small screens",
       "Create reference images per section before coding this site"
+    ],
+    "title": "Design image to website code",
+    "summary": "For visually important sites, first generates section-by-section design images, analyzes them, then codes the website to match them closely.",
+    "keywords": [
+      "image to code",
+      "design to html",
+      "landing from mockup",
+      "website from image"
     ]
-  }
+  },
+  "copyHash": "4c060a8064a8b133"
 }

@@ -6,6 +6,38 @@
       "/finance--pricing-model diseña los planes de precios de mi SaaS",
       "/finance--pricing-model necesito definir la métrica de valor para cobrar por uso",
       "/finance--pricing-model ayúdame a adaptar los precios a distintos países"
+    ],
+    "title": "Diseño de precios y planes",
+    "summary": "Diseña tu modelo de precios: métrica de valor, planes, empaquetado y localización, con comparativa de competidores opcional.",
+    "keywords": [
+      "modelo de precios",
+      "planes y tarifas",
+      "métrica de valor",
+      "estrategia de precios"
+    ],
+    "useWhen": [
+      "Vas a fijar o rediseñar los precios de un producto",
+      "Necesitas decidir cómo dividir las funciones en planes",
+      "Quieres adaptar precios a varios mercados o monedas"
+    ],
+    "notFor": [
+      "Validar precios: los rangos son hipótesis que debes probar con compradores",
+      "Asesoramiento financiero o de inversión"
+    ],
+    "output": "Un informe en Markdown con métrica de valor, matriz de empaquetado, precios candidatos por mercado, notas de migración y plan de validación.",
+    "faq": [
+      {
+        "q": "¿Investiga los precios de la competencia?",
+        "a": "Solo si se lo pides, con búsqueda web. Cada precio lleva su URL y fecha, y lo que no es público se marca como «not public» sin estimarlo."
+      },
+      {
+        "q": "¿Me da el precio correcto?",
+        "a": "No. Da rangos candidatos basados en tu evidencia, que hay que validar con compradores reales, por ejemplo en las próximas 10 conversaciones de venta o con un test A/B."
+      },
+      {
+        "q": "¿Y si ya tengo clientes con precios antiguos?",
+        "a": "Incluye notas de migración, porque cambiar precios a clientes existentes suele ser lo más arriesgado."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "/finance--pricing-model design the pricing tiers for my SaaS",
       "/finance--pricing-model I need to define the value metric for usage-based pricing",
       "/finance--pricing-model help me localize pricing for different countries"
+    ],
+    "title": "Pricing model and tiers",
+    "summary": "Designs your pricing model: value metric, tiers, packaging and localization, with optional competitor pricing research.",
+    "keywords": [
+      "pricing model",
+      "pricing tiers",
+      "value metric",
+      "saas pricing strategy"
+    ],
+    "useWhen": [
+      "You are setting or redesigning the price of a product",
+      "You need to decide how to split features across tiers",
+      "You want to adapt prices to several markets or currencies"
+    ],
+    "notFor": [
+      "Validating prices: the ranges are hypotheses to test with real buyers",
+      "Financial or investment advice"
+    ],
+    "output": "A Markdown proposal with the value metric, a packaging matrix, candidate prices per market, migration notes and a validation plan.",
+    "faq": [
+      {
+        "q": "Does it research competitor pricing?",
+        "a": "Only if you ask, using web search. Each price carries a source URL and date, and anything not publicly listed is marked \"not public\" rather than estimated."
+      },
+      {
+        "q": "Will it give me the right price?",
+        "a": "No. It gives candidate ranges based on your evidence, to be validated with real buyers, for example in your next 10 sales conversations or an A/B test."
+      },
+      {
+        "q": "What about existing customers on old pricing?",
+        "a": "It includes migration notes, because moving current customers to new pricing is usually the riskiest part."
+      }
     ]
-  }
+  },
+  "copyHash": "2fa24eccfa1d589f"
 }

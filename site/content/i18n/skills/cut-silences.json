@@ -1,6 +1,39 @@
 {
   "sourceHash": "2e78abba25d9f301",
+  "copyHash": "32c3887170aadf50",
   "es": {
+    "title": "Quitar silencios de un vídeo",
+    "summary": "Elimina silencios y pausas muertas de una grabación hablada a partir de su transcripción, dejando un respiro natural entre frases.",
+    "keywords": [
+      "quitar silencios de vídeo",
+      "cortar pausas",
+      "eliminar tiempos muertos",
+      "acelerar ritmo de vídeo"
+    ],
+    "useWhen": [
+      "Tienes una grabación en bruto con pausas largas al principio, al final o entre frases",
+      "Quieres darle más ritmo a un vídeo hablado",
+      "Es el primer paso de una edición y ya tienes la transcripción con tiempos por palabra"
+    ],
+    "notFor": [
+      "Cortar tartamudeos, repeticiones o falsos comienzos: eso lo hace cut-mistakes",
+      "Trabajar sin transcripción: necesita una con tiempos por palabra"
+    ],
+    "output": "Una lista de edición con los tramos que se conservan y los que se eliminan, una transcripción reajustada a la nueva línea de tiempo, un resumen legible y, si lo pides, el vídeo cortado con ffmpeg.",
+    "faq": [
+      {
+        "q": "¿Toca lo que digo en el vídeo?",
+        "a": "No. Solo quita silencio: las palabras quedan intactas y los errores de habla se dejan para cut-mistakes."
+      },
+      {
+        "q": "¿Cuánto recorta?",
+        "a": "Con el ajuste por defecto, que trata como recortable toda pausa de más de 0,55 segundos, suele quitar entre un 15 y un 20 % de una toma típica. Puedes bajar o subir ese umbral."
+      },
+      {
+        "q": "¿Necesito ffmpeg y una transcripción?",
+        "a": "Necesitas una transcripción con tiempos por palabra. ffmpeg solo hace falta para generar el vídeo cortado, no para obtener la lista de edición."
+      }
+    ],
     "description": "Agente 1 del pipeline de edición de vídeo. Elimina silencios y aire muerto de una grabación de talking-head. Úsalo cuando te pidan cortar silencios, recortar pausas, eliminar huecos / aire muerto, o ajustar el ritmo de un vídeo en bruto, dada una transcripción a nivel de palabra. Produce una lista de edición (EDL), una transcripción re-sincronizada para los agentes siguientes y, opcionalmente, el vídeo ya cortado vía ffmpeg. NO corta errores, repeticiones ni falsos inicios — de eso se encarga el agente cut-mistakes.",
     "howToAsk": [
       "Quita los silencios y el aire muerto de esta grabación de talking-head",
@@ -9,6 +42,38 @@
     ]
   },
   "en": {
+    "title": "Remove silences from a video",
+    "summary": "Removes silences and dead air from a talking-head recording using its word-level transcript, keeping a natural breath between phrases.",
+    "keywords": [
+      "remove silences from video",
+      "cut pauses",
+      "remove dead air",
+      "tighten video pacing"
+    ],
+    "useWhen": [
+      "You have a raw recording with long pauses at the start, the end or between phrases",
+      "You want to give a talking video more pace",
+      "It is the first step of an edit and you already have a word-level transcript"
+    ],
+    "notFor": [
+      "Cutting stutters, repeats or false starts: cut-mistakes does that",
+      "Working without a transcript: it needs one with word-level timing"
+    ],
+    "output": "An edit list of the ranges kept and removed, a transcript re-timed to the new timeline, a readable summary and, if you ask for it, the cut video rendered with ffmpeg.",
+    "faq": [
+      {
+        "q": "Does it change what I say in the video?",
+        "a": "No. It only removes silence: your words stay untouched and speech mistakes are left to cut-mistakes."
+      },
+      {
+        "q": "How much does it trim?",
+        "a": "With the default setting, which treats any pause over 0.55 seconds as trimmable, it typically removes 15 to 20 percent of a raw take. You can lower or raise that threshold."
+      },
+      {
+        "q": "Do I need ffmpeg and a transcript?",
+        "a": "You need a word-level transcript. ffmpeg is only needed to render the cut video, not to get the edit list."
+      }
+    ],
     "howToAsk": [
       "Remove the silences and dead air from this talking-head recording",
       "Trim the long pauses in my raw video and give me the edit list",

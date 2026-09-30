@@ -6,6 +6,14 @@
       "/ml--recommender-system diseña un recomendador de productos para mi tienda",
       "/ml--recommender-system resuelve el problema de arranque en frío para usuarios nuevos",
       "/ml--recommender-system compara enfoque colaborativo vs. híbrido"
+    ],
+    "title": "Sistema de recomendación",
+    "summary": "Construye un recomendador que supere a un baseline de popularidad: elige enfoque, resuelve el arranque en frío y lo evalúa offline.",
+    "keywords": [
+      "sistema de recomendación",
+      "filtrado colaborativo",
+      "arranque en frío",
+      "recomendador híbrido"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ml--recommender-system design a product recommender for my store",
       "/ml--recommender-system handle cold start for new users",
       "/ml--recommender-system compare collaborative vs. hybrid approaches"
+    ],
+    "title": "Recommender system",
+    "summary": "Builds a recommender that beats a popularity baseline: picks the approach, handles cold start and evaluates it offline.",
+    "keywords": [
+      "recommender system",
+      "collaborative filtering",
+      "cold start",
+      "hybrid recommender"
     ]
-  }
+  },
+  "copyHash": "456b1dc7347b2d78"
 }

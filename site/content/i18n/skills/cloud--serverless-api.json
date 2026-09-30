@@ -6,6 +6,14 @@
       "/cloud--serverless-api monta una API serverless para mi app con funciones Lambda",
       "/cloud--serverless-api ayúdame a reducir el cold-start de mis funciones",
       "/cloud--serverless-api configúrame el entorno de desarrollo local para probar la API"
+    ],
+    "title": "API serverless",
+    "summary": "Crea una API HTTP serverless, o convierte una existente, con funciones, rutas, infraestructura como código y entorno local; no la despliega.",
+    "keywords": [
+      "api serverless",
+      "aws lambda api",
+      "cold start",
+      "funciones serverless"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/cloud--serverless-api build a serverless API for my app using Lambda functions",
       "/cloud--serverless-api help me reduce cold-start latency on my functions",
       "/cloud--serverless-api set up a local dev environment to test the API"
+    ],
+    "title": "Serverless API",
+    "summary": "Builds or converts an app into a serverless HTTP API, with functions, routing, infrastructure code and a local dev loop, without deploying it.",
+    "keywords": [
+      "serverless api",
+      "aws lambda api",
+      "cold start",
+      "serverless functions"
     ]
-  }
+  },
+  "copyHash": "51c1c10aa048c51e"
 }

@@ -1,18 +1,83 @@
 {
   "sourceHash": "a14668c4692a10cf",
   "es": {
+    "title": "Auditoría de Meta Ads",
+    "summary": "Audita tu cuenta de Meta Ads (Facebook e Instagram): Pixel, API de Conversiones, creatividades y estructura, con hallazgos y acciones priorizadas.",
+    "keywords": [
+      "meta ads",
+      "facebook ads",
+      "instagram ads",
+      "pixel y api de conversiones"
+    ],
     "description": "Audita la medición de Meta Ads, Pixel y Conversions API, atribución, creatividades de Facebook e Instagram, audiencias, ubicaciones, automatización, presupuestos, estructura de cuenta y políticas. Úsalo para Meta Ads, Facebook Ads, Instagram Ads, Advantage+, Pixel, CAPI, Events Manager, fatiga creativa u optimización de campañas de Meta.",
     "howToAsk": [
       "Audita mi cuenta de Meta Ads, sobre todo el Pixel y la CAPI",
       "¿Mis anuncios de Instagram tienen fatiga creativa?",
       "Revisa la estructura de mi cuenta de Facebook Ads"
+    ],
+    "useWhen": [
+      "Quieres revisar el Pixel y la API de Conversiones de tu cuenta de Meta",
+      "Tu cuenta, tu Pixel o tus conversiones son nuevos y no sabes qué esperar",
+      "Sospechas fatiga creativa o una estructura de cuenta mejorable"
+    ],
+    "notFor": [
+      "Aplicar referencias de cuentas maduras a una cuenta sin historial",
+      "Modificar la cuenta: los cambios quedan como borrador"
+    ],
+    "output": "Hallazgos de salud de la plataforma con cobertura de evidencia, diagnósticos, recomendaciones priorizadas, oportunidades sin puntuar y datos que faltan.",
+    "faq": [
+      {
+        "q": "¿Qué hace si mi cuenta o mi Pixel son nuevos?",
+        "a": "Evalúa por separado cuenta, Pixel y conversiones. Si alguno está en fase inicial confirmada, propone validar medición y hacer pruebas reversibles en lugar de usar referencias de cuentas maduras."
+      },
+      {
+        "q": "¿Un Pixel nuevo significa que mis creatividades son malas?",
+        "a": "No. No etiqueta una creatividad como mala solo porque el Pixel sea nuevo."
+      },
+      {
+        "q": "¿Y si faltan datos de historial?",
+        "a": "Marca la dimensión como desconocida en lugar de suponer que es nueva."
+      }
     ]
   },
   "en": {
+    "title": "Meta Ads audit",
+    "summary": "Audits a Meta Ads account (Facebook and Instagram) covering Pixel, Conversions API, creative and structure, with prioritized findings and actions.",
+    "keywords": [
+      "meta ads",
+      "facebook ads",
+      "instagram ads",
+      "pixel and capi"
+    ],
     "howToAsk": [
       "Audit my Meta Ads account, especially the Pixel and CAPI setup",
       "Are my Instagram ads suffering from creative fatigue?",
       "Review the structure of my Facebook Ads account"
+    ],
+    "useWhen": [
+      "You want to review the Pixel and Conversions API on your Meta account",
+      "Your account, Pixel or conversions are new and you are unsure what to expect",
+      "You suspect creative fatigue or a weak account structure"
+    ],
+    "notFor": [
+      "Applying mature-account benchmarks to an account with no history",
+      "Editing the account: changes stay as drafts"
+    ],
+    "output": "Platform health findings with evidence coverage, diagnoses, prioritized recommendations, unscored opportunities and missing inputs.",
+    "faq": [
+      {
+        "q": "What does it do if my account or Pixel is new?",
+        "a": "It assesses account, Pixel and conversions separately. If one is confirmed cold, it plans measurement validation and reversible tests instead of using mature-account benchmarks."
+      },
+      {
+        "q": "Does a new Pixel mean my creative is bad?",
+        "a": "No. It never labels creative bad merely because the Pixel is new."
+      },
+      {
+        "q": "What if history data is missing?",
+        "a": "It marks that dimension unknown rather than assuming it is new."
+      }
     ]
-  }
+  },
+  "copyHash": "f907448e602beba2"
 }

@@ -1,7 +1,17 @@
 {
   "sourceHash": "b7fdba3b7461577b",
+  "copyHash": "55e4910e3acdd897",
   "es": {
     "description": "Configura Cloudflare Pages para despliegues de sitios estáticos y JAMstack",
+    "title": "Despliegue en Cloudflare Pages",
+    "summary": "Configura Cloudflare Pages para tu web estática o JAMstack: ajustes de build, redirecciones, cabeceras, funciones y despliegues de vista previa.",
+    "keywords": [
+      "cloudflare pages",
+      "desplegar web estática",
+      "_redirects",
+      "jamstack",
+      "wrangler"
+    ],
     "howToAsk": [
       "/networking--cloudflare-pages despliega mi sitio estático en Cloudflare Pages",
       "/networking--cloudflare-pages configura un dominio personalizado para Pages",
@@ -13,6 +23,15 @@
       "/networking--cloudflare-pages deploy my static site on Cloudflare Pages",
       "/networking--cloudflare-pages set up a custom domain for Pages",
       "/networking--cloudflare-pages add automatic preview deploys per pull request"
+    ],
+    "title": "Cloudflare Pages deployment",
+    "summary": "Configures Cloudflare Pages for your static or JAMstack site: build settings, redirects, headers, optional functions and branch preview deployments.",
+    "keywords": [
+      "cloudflare pages",
+      "deploy static site",
+      "_redirects",
+      "jamstack",
+      "wrangler"
     ]
   }
 }

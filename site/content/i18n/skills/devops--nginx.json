@@ -6,6 +6,14 @@
       "/devops--nginx configura un reverse proxy para mi API en Node",
       "/devops--nginx necesito servir varios dominios con SSL en el mismo servidor",
       "/devops--nginx optimiza mi nginx.conf para más tráfico"
+    ],
+    "title": "Configuración de Nginx",
+    "summary": "Crea un nginx.conf optimizado para tu proyecto: proxy inverso, SPA, balanceo o gateway, con HTTPS, cabeceras de seguridad y versiones dev y producción.",
+    "keywords": [
+      "configurar nginx",
+      "nginx proxy inverso",
+      "nginx.conf",
+      "nginx https"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/devops--nginx set up a reverse proxy for my Node API",
       "/devops--nginx I need to serve multiple domains with SSL on one server",
       "/devops--nginx optimize my nginx.conf for more traffic"
+    ],
+    "title": "Nginx configuration",
+    "summary": "Builds an optimized nginx.conf for your project as reverse proxy, SPA host, load balancer or API gateway, with HTTPS, security headers and dev and prod configs.",
+    "keywords": [
+      "nginx config",
+      "nginx reverse proxy",
+      "nginx.conf",
+      "nginx https redirect"
     ]
-  }
+  },
+  "copyHash": "992cbe1479b46ca7"
 }

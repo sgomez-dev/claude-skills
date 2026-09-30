@@ -6,6 +6,14 @@
       "/automation--scheduled-tasks necesito una tarea que se ejecute cada noche sin fallar",
       "/automation--scheduled-tasks ¿uso cron o una cola de tareas para esto?",
       "/automation--scheduled-tasks mi tarea programada falla por problemas de zona horaria"
+    ],
+    "title": "Tareas programadas fiables",
+    "summary": "Diseña tareas programadas que se ejecutan a tiempo: elige entre cron o colas e incluye reintentos, bloqueos, monitorización y zonas horarias.",
+    "keywords": [
+      "tareas programadas",
+      "cron vs colas",
+      "reintentos de jobs",
+      "zona horaria cron"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/automation--scheduled-tasks I need a task that runs every night without failing",
       "/automation--scheduled-tasks should I use cron or a job queue for this?",
       "/automation--scheduled-tasks my scheduled job breaks due to timezone issues"
+    ],
+    "title": "Reliable scheduled tasks",
+    "summary": "Designs scheduled jobs that run on time: picks cron or a queue, and adds retries, locking, monitoring and timezone handling.",
+    "keywords": [
+      "scheduled tasks",
+      "cron vs queue",
+      "job retries",
+      "cron timezone"
     ]
-  }
+  },
+  "copyHash": "fd09014995075bf4"
 }

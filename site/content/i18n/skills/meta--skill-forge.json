@@ -6,6 +6,14 @@
       "/meta--skill-forge crea una skill que revise mis facturas en PDF",
       "/meta--skill-forge genera una skill para publicar posts en redes sociales",
       "/meta--skill-forge quiero una skill que valide mis migraciones de base de datos"
+    ],
+    "title": "Crear una skill nueva",
+    "summary": "Genera una skill nueva a partir de una descripción en lenguaje natural, con su manifiesto de permisos y un archivo de pruebas.",
+    "keywords": [
+      "crear skill",
+      "nueva skill",
+      "manifiesto de permisos",
+      "generar comando"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/meta--skill-forge create a skill that reviews my PDF invoices",
       "/meta--skill-forge generate a skill for posting to social media",
       "/meta--skill-forge I want a skill that validates my database migrations"
+    ],
+    "title": "Creating a new skill",
+    "summary": "Generates a new skill from a plain-language description, together with its permission manifest and a test file.",
+    "keywords": [
+      "create skill",
+      "new claude skill",
+      "permission manifest",
+      "generate command"
     ]
-  }
+  },
+  "copyHash": "fef2b24554fec0b7"
 }

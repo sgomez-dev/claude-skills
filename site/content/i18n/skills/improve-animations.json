@@ -6,6 +6,14 @@
       "Audita las animaciones de mi app y dame un plan priorizado de mejoras",
       "Quiero que esta app se sienta mejor, revisa el motion design completo",
       "Dame una hoja de ruta para mejorar el movimiento en todo el código, no solo un diff"
+    ],
+    "title": "Auditoría y plan de animaciones",
+    "summary": "Revisa el código de movimiento de un proyecto y entrega una auditoría priorizada con planes autocontenidos. Solo planifica, no modifica código.",
+    "keywords": [
+      "auditar animaciones",
+      "plan de mejoras",
+      "movimiento de la app",
+      "revisar transiciones"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Audit my app's animations and give me a prioritized improvement plan",
       "I want this app to feel better, review the motion design across the codebase",
       "Give me a roadmap to improve animations everywhere, not just one diff"
+    ],
+    "title": "Animation audit and improvement plan",
+    "summary": "Surveys a project's motion code and delivers a prioritized audit with self-contained plans for other agents to run. It plans only, never edits source.",
+    "keywords": [
+      "audit animations",
+      "animation roadmap",
+      "improve app motion",
+      "review transitions"
     ]
-  }
+  },
+  "copyHash": "7396244746443347"
 }

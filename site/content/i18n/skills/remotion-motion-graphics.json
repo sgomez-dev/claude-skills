@@ -6,6 +6,15 @@
       "Crea un vídeo de intro con nuestro logo animado usando Remotion",
       "Este vídeo se ve genérico, ayúdame a mejorarlo con motion graphics",
       "Añade animaciones de texto y subtítulos a este metraje en Remotion"
+    ],
+    "title": "Motion graphics con Remotion",
+    "summary": "Crea y edita vídeos de motion graphics con Remotion, con reglas de animación para evitar el aspecto genérico y verificar los fotogramas renderizados.",
+    "keywords": [
+      "motion graphics",
+      "animación de logo",
+      "vídeo con remotion",
+      "reel o short promocional",
+      "vídeo que parece genérico"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "Create an intro video with our animated logo using Remotion",
       "This video looks generic, help me improve it with motion graphics",
       "Add text animations and captions to this footage in Remotion"
+    ],
+    "title": "Motion graphics with Remotion",
+    "summary": "Creates and edits motion graphics videos in Remotion, with animation rules that avoid the generic look and a check of the rendered frames.",
+    "keywords": [
+      "motion graphics",
+      "logo animation",
+      "remotion video",
+      "promo reel",
+      "video looks generic"
     ]
-  }
+  },
+  "copyHash": "7bc57dcc03c9812f"
 }

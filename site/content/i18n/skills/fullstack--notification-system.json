@@ -6,6 +6,14 @@
       "/fullstack--notification-system añade notificaciones en la app y por email para mensajes nuevos",
       "/fullstack--notification-system quiero que los usuarios elijan qué notificaciones recibir",
       "/fullstack--notification-system necesito un resumen semanal por email de la actividad"
+    ],
+    "title": "Sistema de notificaciones",
+    "summary": "Crea notificaciones en la app, por email y push según las preferencias de cada usuario, con resúmenes para no saturar.",
+    "keywords": [
+      "notificaciones",
+      "notificaciones por email",
+      "notificaciones push",
+      "resumen de notificaciones"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/fullstack--notification-system add in-app and email notifications for new messages",
       "/fullstack--notification-system let users choose which notifications they get",
       "/fullstack--notification-system send a weekly email digest of activity"
+    ],
+    "title": "Notification system",
+    "summary": "Builds in-app, email and optional push notifications filtered by user preferences, with digests to avoid flooding people.",
+    "keywords": [
+      "notification system",
+      "email notifications",
+      "push notifications",
+      "notification digest"
     ]
-  }
+  },
+  "copyHash": "e787ca983c31868d"
 }

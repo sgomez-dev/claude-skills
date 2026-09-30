@@ -1,6 +1,15 @@
 {
   "sourceHash": "7802c7c335ed8065",
+  "copyHash": "6356d2f77036c19e",
   "es": {
+    "title": "Zooms y movimientos de cámara",
+    "summary": "Añade zooms, encuadres, efecto Ken Burns y otros fotogramas clave 2D y 3D a una composición de HyperFrames, compatibles con GSAP y CSS.",
+    "keywords": [
+      "zoom en vídeo",
+      "efecto ken burns",
+      "movimiento de cámara",
+      "fotogramas clave"
+    ],
     "description": "Úsalo cuando una composición de HyperFrames necesita un punch-in, punch-out, zoom, reencuadre, tratamiento Ken Burns, movimiento de cámara, un handoff visual de match/whip, u otros keyframes 2D/3D seek-safe; también para GSAP, CSS keyframes, Anime.js, WAAPI, FLIP, paths, máscaras, morph/draw de SVG, estelas de texto, profundidad 3D, o diagnósticos de `hyperframes keyframes`. No lo uses para estrategia de escena amplia, diseño de marca, búsqueda de medios, subtítulos o planificación general de vídeo.",
     "howToAsk": [
       "Añade un zoom tipo Ken Burns a esta imagen fija",
@@ -9,6 +18,14 @@
     ]
   },
   "en": {
+    "title": "Zooms and camera moves",
+    "summary": "Adds punch-ins, zooms, reframes, Ken Burns effects and other 2D and 3D keyframes to a HyperFrames composition, with GSAP or CSS.",
+    "keywords": [
+      "video zoom effect",
+      "ken burns effect",
+      "camera move",
+      "keyframes"
+    ],
     "howToAsk": [
       "Add a Ken Burns zoom to this still image",
       "I need a camera punch-in synced to the music beat",

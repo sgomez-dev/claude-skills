@@ -6,6 +6,14 @@
       "/utils--convert convierte este JSON a YAML",
       "/utils--convert pasa este CSV a un archivo JSON",
       "/utils--convert necesito convertir este .env a formato TOML"
+    ],
+    "title": "Conversión entre formatos de datos",
+    "summary": "Convierte datos entre JSON, YAML, TOML, XML, CSV y ENV, o a interfaces TypeScript, JSON Schema o Zod, validando el resultado.",
+    "keywords": [
+      "convertir json a yaml",
+      "json a csv",
+      "yaml a toml",
+      "json a zod"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/utils--convert convert this JSON to YAML",
       "/utils--convert turn this CSV into a JSON file",
       "/utils--convert I need to convert this .env to TOML format"
+    ],
+    "title": "Data format conversion",
+    "summary": "Converts data between JSON, YAML, TOML, XML, CSV and ENV, or into TypeScript interfaces, JSON Schema or Zod, and validates the output.",
+    "keywords": [
+      "convert json to yaml",
+      "json to csv",
+      "yaml to toml",
+      "json to zod"
     ]
-  }
+  },
+  "copyHash": "707ae974085d9278"
 }

@@ -6,6 +6,14 @@
       "/ecommerce--abandoned-cart monta la secuencia de emails para carritos abandonados",
       "/ecommerce--abandoned-cart necesito detectar carritos abandonados y ofrecer un descuento",
       "/ecommerce--abandoned-cart diseña la lógica de incentivos para recuperar ventas perdidas"
+    ],
+    "title": "Recuperación de carritos abandonados",
+    "summary": "Diseña cómo detectar carritos abandonados y una secuencia corta de emails con enlace de recuperación, aplicando descuentos solo cuando hacen falta.",
+    "keywords": [
+      "carritos abandonados",
+      "recuperar ventas",
+      "email de carrito",
+      "shopify"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ecommerce--abandoned-cart set up the email sequence for abandoned carts",
       "/ecommerce--abandoned-cart I need to detect abandoned carts and offer a discount",
       "/ecommerce--abandoned-cart design the incentive logic to recover lost sales"
+    ],
+    "title": "Abandoned cart recovery",
+    "summary": "Builds abandoned cart detection, a short recovery email sequence with a pre-filled checkout link, and rules for when to offer an incentive.",
+    "keywords": [
+      "abandoned cart",
+      "cart recovery email",
+      "recover lost sales",
+      "shopify"
     ]
-  }
+  },
+  "copyHash": "34e62321a24d545b"
 }

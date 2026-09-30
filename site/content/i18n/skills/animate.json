@@ -6,6 +6,38 @@
       "Añade una animación de entrada a esta tarjeta cuando aparece en pantalla",
       "Quiero que este menú se sienta más vivo al abrirse y cerrarse",
       "Crea una transición suave entre estas dos pantallas"
+    ],
+    "title": "Crear una animación desde cero",
+    "summary": "Decide si algo debe animarse y, si procede, escribe la animación con la curva, duración y propiedades adecuadas, con reduced motion incluido.",
+    "keywords": [
+      "animar componente",
+      "transición suave",
+      "microinteracción",
+      "animación css"
+    ],
+    "useWhen": [
+      "Quieres añadir movimiento a un componente, como una tarjeta, un menú o una transición",
+      "Dudas de si algo debe animarse y quieres una decisión razonada",
+      "Necesitas la animación con curva, duración y reduced motion ya resueltos"
+    ],
+    "notFor": [
+      "Criticar animaciones que ya existen, para eso está review-animations",
+      "Auditar todo un código base, para eso está improve-animations"
+    ],
+    "output": "El código de la animación, más unas pocas líneas con el resultado de la decisión (frecuencia y propósito), los ingredientes usados y qué comprobar a ojo.",
+    "faq": [
+      {
+        "q": "¿Siempre escribe una animación?",
+        "a": "No. Si la acción se repite cientos de veces al día, como un atajo de teclado, o no tiene un propósito claro, la habilidad lo dice y no escribe código. Ofrece una alternativa sin movimiento."
+      },
+      {
+        "q": "¿Incluye soporte para movimiento reducido?",
+        "a": "Sí. El soporte para prefers-reduced-motion y el filtrado del hover para pantallas táctiles forman parte de la animación, no se dejan para después."
+      },
+      {
+        "q": "¿Sirve para apps de React Native?",
+        "a": "No. Para apps Expo y React Native existe animate-expo; esta habilidad está pensada para la web."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "Add an entrance animation to this card when it appears",
       "Make this menu feel more alive when it opens and closes",
       "Create a smooth transition between these two screens"
+    ],
+    "title": "Building an animation from scratch",
+    "summary": "Decides whether something should animate at all and, if so, writes the animation with the right curve, duration and properties, reduced-motion support included.",
+    "keywords": [
+      "animate a component",
+      "add motion",
+      "css transition",
+      "entrance animation"
+    ],
+    "useWhen": [
+      "You want to add motion to a component, such as a card, a menu or a transition",
+      "You are unsure whether something should animate and want a reasoned call",
+      "You need the animation with curve, duration and reduced motion already settled"
+    ],
+    "notFor": [
+      "Critiquing animations that already exist, which is what review-animations is for",
+      "Auditing a whole codebase, which is what improve-animations is for"
+    ],
+    "output": "The animation code, plus a few lines stating the gate result (frequency and purpose), the ingredients used and what to check by eye.",
+    "faq": [
+      {
+        "q": "Does it always write an animation?",
+        "a": "No. If the action happens hundreds of times a day, like a keyboard shortcut, or has no clear purpose, the skill says so and writes no code. It offers a non-motion alternative instead."
+      },
+      {
+        "q": "Does it include reduced-motion support?",
+        "a": "Yes. prefers-reduced-motion support and hover gating for touch screens ship with the animation, not as a follow-up."
+      },
+      {
+        "q": "Does it work for React Native apps?",
+        "a": "No. For Expo and React Native apps there is animate-expo; this skill is aimed at the web."
+      }
     ]
-  }
+  },
+  "copyHash": "b8ede161270458e6"
 }

@@ -6,6 +6,14 @@
       "/code-quality--code-smells revisa mi carpeta src y detecta code smells",
       "/code-quality--code-smells encuentra anti-patrones en este archivo y propón soluciones",
       "/code-quality--code-smells analiza el módulo de pagos en busca de malas prácticas"
+    ],
+    "title": "Detección de code smells",
+    "summary": "Busca code smells y antipatrones en tu código y propone una refactorización concreta y la gravedad de cada uno.",
+    "keywords": [
+      "code smells",
+      "antipatrones",
+      "clase demasiado grande",
+      "deuda técnica"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/code-quality--code-smells scan my src folder for code smells",
       "/code-quality--code-smells find anti-patterns in this file and suggest fixes",
       "/code-quality--code-smells check the payments module for bad practices"
+    ],
+    "title": "Code smell detection",
+    "summary": "Scans code for smells and anti-patterns, reporting each one's location, severity and a concrete refactoring suggestion.",
+    "keywords": [
+      "code smells",
+      "anti-patterns",
+      "large class",
+      "technical debt"
     ]
-  }
+  },
+  "copyHash": "d285d8d13b26f15d"
 }

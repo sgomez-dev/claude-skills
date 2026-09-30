@@ -6,6 +6,14 @@
       "/ecommerce--payment-methods añade Apple Pay y Google Pay a mi tienda",
       "/ecommerce--payment-methods necesito ofrecer pago a plazos (BNPL) en el checkout",
       "/ecommerce--payment-methods qué métodos de pago locales necesito para vender en México"
+    ],
+    "title": "Métodos de pago por mercado",
+    "summary": "Añade a tu tienda tarjetas, wallets, pago a plazos y métodos locales según el país, integrados con un proveedor para no tocar datos de tarjeta.",
+    "keywords": [
+      "métodos de pago",
+      "apple pay",
+      "klarna",
+      "pagos locales"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ecommerce--payment-methods add Apple Pay and Google Pay to my store",
       "/ecommerce--payment-methods I need to offer buy-now-pay-later at checkout",
       "/ecommerce--payment-methods what local payment methods do I need to sell in Mexico"
+    ],
+    "title": "Payment methods per market",
+    "summary": "Adds cards, wallets, buy now pay later and local payment methods for each target market, integrated through a provider so card data never touches your servers.",
+    "keywords": [
+      "payment methods",
+      "apple pay google pay",
+      "buy now pay later",
+      "local payments"
     ]
-  }
+  },
+  "copyHash": "1b55dba7862bb391"
 }

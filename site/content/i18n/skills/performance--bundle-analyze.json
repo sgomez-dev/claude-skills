@@ -6,6 +6,14 @@
       "/performance--bundle-analyze por qué mi bundle pesa tanto",
       "/performance--bundle-analyze encuentra qué dependencias están inflando el build",
       "/performance--bundle-analyze sugiere cómo reducir el tamaño del bundle de producción"
+    ],
+    "title": "Análisis del tamaño del bundle",
+    "summary": "Analiza el tamaño del bundle JavaScript de tu proyecto y propone cambios concretos, con una estimación del ahorro de cada uno.",
+    "keywords": [
+      "tamaño del bundle",
+      "tree shaking",
+      "reducir javascript",
+      "code splitting"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/performance--bundle-analyze why is my bundle so heavy",
       "/performance--bundle-analyze find which dependencies are bloating the build",
       "/performance--bundle-analyze suggest ways to shrink the production bundle"
+    ],
+    "title": "JavaScript bundle analysis",
+    "summary": "Analyzes your project's JavaScript bundle size and proposes specific code changes to shrink it, with estimated savings for each.",
+    "keywords": [
+      "bundle size",
+      "tree shaking",
+      "reduce javascript",
+      "code splitting"
     ]
-  }
+  },
+  "copyHash": "5f8a4ce58738f947"
 }

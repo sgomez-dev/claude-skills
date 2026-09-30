@@ -6,6 +6,14 @@
       "/debugging--async-debug esta promesa nunca se resuelve, ayúdame",
       "/debugging--async-debug depura esta cadena de async/await que falla",
       "/debugging--async-debug encuentra el bug de concurrencia en este código"
+    ],
+    "title": "Depurar código asíncrono",
+    "summary": "Analiza código con async/await, promesas y concurrencia para encontrar errores perdidos, problemas de orden y deadlocks, y propone la corrección.",
+    "keywords": [
+      "depurar async await",
+      "promesas sin resolver",
+      "deadlock",
+      "error asíncrono"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/debugging--async-debug this promise never resolves, help me debug it",
       "/debugging--async-debug debug this failing async/await chain",
       "/debugging--async-debug find the concurrency bug in this code"
+    ],
+    "title": "Async bug debugging",
+    "summary": "Analyzes async/await, promise and concurrency code to find swallowed errors, ordering issues and deadlocks, and proposes the fix.",
+    "keywords": [
+      "debug async await",
+      "unhandled promise",
+      "deadlock",
+      "promise chain bug"
     ]
-  }
+  },
+  "copyHash": "b73bc3842401898c"
 }

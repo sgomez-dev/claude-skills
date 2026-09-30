@@ -1,6 +1,14 @@
 {
   "sourceHash": "fbcf2b1a4e318e2e",
   "es": {
+    "title": "Seguimiento de cuentas publicitarias",
+    "summary": "Compara instantáneas de tus cuentas de anuncios para vigilar ritmo de gasto, rendimiento y tracking, y distingue anomalías reales del ruido.",
+    "keywords": [
+      "monitorizar campañas",
+      "ritmo de gasto",
+      "anomalías en anuncios",
+      "revisión semanal de anuncios"
+    ],
     "description": "Monitoriza el ritmo de gasto, la entrega, el rendimiento, la fatiga creativa, el tracking, las políticas y la calidad de datos de las cuentas de anuncios de pago en las plataformas compatibles. Úsalo para revisiones diarias o semanales, revisión de anomalías, ritmo de presupuesto, verificación tras el lanzamiento o monitorización de campañas.",
     "howToAsk": [
       "Haz una revisión diaria de mis campañas activas",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "Ad account monitoring",
+    "summary": "Compares snapshots of your ad accounts to watch spend pacing, performance and tracking, and separates real anomalies from noise.",
+    "keywords": [
+      "campaign monitoring",
+      "budget pacing",
+      "ad anomalies",
+      "weekly ad check"
+    ],
     "howToAsk": [
       "Run a daily check on my active campaigns",
       "Any spend anomalies this week?",
       "Verify the campaign I launched yesterday is running fine"
     ]
-  }
+  },
+  "copyHash": "0f90d9d08718be0e"
 }

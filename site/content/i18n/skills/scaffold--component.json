@@ -6,6 +6,14 @@
       "/scaffold--component crea un componente Button de React con tipos y tests",
       "/scaffold--component necesito un componente de Vue para una tarjeta de producto",
       "/scaffold--component genera un componente Svelte con su story de Storybook"
+    ],
+    "title": "Componente de interfaz completo",
+    "summary": "Genera un componente React, Vue o Svelte según las convenciones de tu proyecto, con tipos, estilos, tests e historia de Storybook.",
+    "keywords": [
+      "crear componente",
+      "componente react",
+      "storybook",
+      "tests de componente"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/scaffold--component create a React Button component with types and tests",
       "/scaffold--component I need a Vue component for a product card",
       "/scaffold--component generate a Svelte component with its Storybook story"
+    ],
+    "title": "Complete UI component",
+    "summary": "Generates a React, Vue or Svelte component following your project's conventions, with types, styles, tests and a Storybook story.",
+    "keywords": [
+      "create component",
+      "react component",
+      "storybook",
+      "component tests"
     ]
-  }
+  },
+  "copyHash": "199732e76c5c226d"
 }

@@ -6,6 +6,39 @@
       "Saca clips virales cortos de este vídeo largo para TikTok",
       "Convierte esta entrevista en varios Reels con subtítulos animados",
       "Necesito clips verticales de este vídeo para YouTube Shorts"
+    ],
+    "title": "Clips cortos desde vídeos largos",
+    "summary": "Extrae de un vídeo largo los mejores clips verticales: transcribe, propone segmentos, añade subtítulos animados y exporta para YouTube Shorts, TikTok e Reels.",
+    "keywords": [
+      "clips de vídeo largo",
+      "shorts desde vídeo",
+      "tiktok desde vídeo",
+      "reels desde vídeo",
+      "subtítulos animados"
+    ],
+    "useWhen": [
+      "Tienes un vídeo largo o un pódcast y quieres sacar clips cortos",
+      "Quieres elegir tú los segmentos entre varios candidatos",
+      "Necesitas exportar clips verticales para YouTube Shorts, TikTok e Instagram Reels"
+    ],
+    "notFor": [
+      "Editar el vídeo largo en sí",
+      "Ejecutarse sin revisión: el proceso es interactivo y pide tu aprobación"
+    ],
+    "output": "Archivos MP4 verticales de 1080x1920 con subtítulos animados, exportados en variantes para YouTube, TikTok e Instagram Reels.",
+    "faq": [
+      {
+        "q": "¿Elijo yo los clips?",
+        "a": "Sí. Claude puntúa y presenta segmentos candidatos, y tú eliges y ajustas cuáles se renderizan."
+      },
+      {
+        "q": "¿Qué plataformas cubre?",
+        "a": "YouTube Shorts, TikTok e Instagram Reels, con exportación para una sola plataforma o para las tres."
+      },
+      {
+        "q": "¿Necesita GPU?",
+        "a": "Transcribe con faster-whisper acelerado por GPU y detecta tu GPU al empezar; si falla la codificación por GPU, el propio proceso sugiere probar con CPU."
+      }
     ]
   },
   "en": {
@@ -13,6 +46,40 @@
       "Pull viral short clips from this long video for TikTok",
       "Turn this interview into several Reels with animated captions",
       "I need vertical clips from this video for YouTube Shorts"
+    ],
+    "title": "Short clips from long videos",
+    "summary": "Pulls the best vertical clips out of a long video: transcribes, proposes segments, adds animated captions and exports for Shorts, TikTok and Reels.",
+    "keywords": [
+      "clips from long video",
+      "make shorts from video",
+      "tiktok from video",
+      "reels from video",
+      "animated captions"
+    ],
+    "useWhen": [
+      "You have a long video or podcast and want short clips from it",
+      "You want to pick segments yourself from scored candidates",
+      "You need vertical exports for YouTube Shorts, TikTok and Instagram Reels"
+    ],
+    "notFor": [
+      "Editing the long video itself",
+      "Running unattended: the process is interactive and asks for your approval"
+    ],
+    "output": "Vertical 1080x1920 MP4 files with animated captions, exported in variants for YouTube, TikTok and Instagram Reels.",
+    "faq": [
+      {
+        "q": "Do I choose the clips?",
+        "a": "Yes. Claude scores and presents candidate segments, and you pick and adjust which ones get rendered."
+      },
+      {
+        "q": "Which platforms does it cover?",
+        "a": "YouTube Shorts, TikTok and Instagram Reels, exported for a single platform or all three."
+      },
+      {
+        "q": "Does it need a GPU?",
+        "a": "It transcribes with GPU-accelerated faster-whisper and detects your GPU up front; if GPU encoding fails, the skill suggests falling back to CPU."
+      }
     ]
-  }
+  },
+  "copyHash": "d6691c3b88c57188"
 }

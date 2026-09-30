@@ -6,6 +6,14 @@
       "Anima la apertura de esta hoja modal en mi app de Expo",
       "Añade feedback háptico cuando el usuario pulsa este botón",
       "Esta transición entre pantallas va a tirones en el móvil, arréglala"
+    ],
+    "title": "Animaciones para apps Expo",
+    "summary": "Escribe animaciones para apps Expo y React Native con Reanimated y Gesture Handler: gestos, hojas inferiores, transiciones de pantalla y háptica.",
+    "keywords": [
+      "animación react native",
+      "reanimated",
+      "gestos expo",
+      "háptica"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Animate this bottom sheet opening in my Expo app",
       "Add haptic feedback when the user taps this button",
       "This screen transition stutters on device, fix it"
+    ],
+    "title": "Expo and React Native animations",
+    "summary": "Writes animations for Expo and React Native apps with Reanimated and Gesture Handler: gestures, sheets, screen transitions, press feedback and haptics.",
+    "keywords": [
+      "react native animation",
+      "expo reanimated",
+      "gesture handler",
+      "haptic feedback"
     ]
-  }
+  },
+  "copyHash": "9a01a91701e6563c"
 }

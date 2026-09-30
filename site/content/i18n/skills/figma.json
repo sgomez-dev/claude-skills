@@ -1,6 +1,15 @@
 {
   "sourceHash": "384c90ef30ec373b",
+  "copyHash": "4573c828057f2109",
   "es": {
+    "title": "Importar Figma a un vídeo",
+    "summary": "Trae diseños de Figma a una composición de HyperFrames: recursos exportados, colores de marca, componentes y animaciones a partir de un enlace.",
+    "keywords": [
+      "importar figma a vídeo",
+      "animar diseño de figma",
+      "logo de figma en vídeo",
+      "colores de marca figma"
+    ],
     "description": "Importa contenido de Figma a una composición de HyperFrames: assets renderizados, tokens de marca, componentes, secciones de storyboard → movimiento reconstruido (los frames se leen como estados, no como diapositivas) (REST/CLI), movimiento asistido por conector cuando está disponible, y shaders desde un conector o exportación nativa. Úsalo cuando el usuario pegue un enlace de figma.com o pida llevar un diseño, frame, logo, marca o animación de Figma a un vídeo/composición.",
     "howToAsk": [
       "Trae este diseño de Figma a mi composición de HyperFrames",
@@ -9,6 +18,14 @@
     ]
   },
   "en": {
+    "title": "Import Figma into a video",
+    "summary": "Brings Figma designs into a HyperFrames composition: exported assets, brand tokens, components and animation, starting from a link.",
+    "keywords": [
+      "figma to video",
+      "animate figma design",
+      "figma logo in video",
+      "figma brand colors"
+    ],
     "howToAsk": [
       "Bring this Figma design into my HyperFrames composition",
       "Import the logo and brand tokens from this Figma file",

@@ -1,7 +1,17 @@
 {
   "sourceHash": "0410a31856cdaaad",
+  "copyHash": "b6f0e917e61b4d7c",
   "es": {
     "description": "Genera y despliega Cloudflare Workers para computación en el edge",
+    "title": "Cloudflare Workers en el edge",
+    "summary": "Crea un proyecto de Cloudflare Worker para tu caso de uso, con wrangler.toml, código TypeScript, bindings y configuración de entornos.",
+    "keywords": [
+      "cloudflare workers",
+      "wrangler",
+      "computación edge",
+      "worker typescript",
+      "api proxy"
+    ],
     "howToAsk": [
       "/networking--cloudflare-workers crea un worker que redirija peticiones por país",
       "/networking--cloudflare-workers despliega una función edge para procesar imágenes",
@@ -13,6 +23,15 @@
       "/networking--cloudflare-workers create a worker that redirects requests by country",
       "/networking--cloudflare-workers deploy an edge function to process images",
       "/networking--cloudflare-workers scaffold a simple API worker"
+    ],
+    "title": "Cloudflare Workers project",
+    "summary": "Scaffolds a Cloudflare Worker for your use case, with wrangler.toml, a TypeScript entry point, bindings and staging and production environments.",
+    "keywords": [
+      "cloudflare workers",
+      "wrangler",
+      "edge computing",
+      "typescript worker",
+      "api proxy"
     ]
   }
 }

@@ -6,6 +6,14 @@
       "/docs--api-changelog compara la v1 y la v2 de mi API y detecta breaking changes",
       "/docs--api-changelog genera el changelog de esta release con notas de migración",
       "/docs--api-changelog qué endpoints han cambiado desde la última versión"
+    ],
+    "title": "Changelog de API",
+    "summary": "Compara dos versiones de tu API, clasifica los cambios como rotura, compatibles o deprecaciones y redacta notas de migración.",
+    "keywords": [
+      "changelog de api",
+      "breaking changes",
+      "notas de migración",
+      "comparar versiones api"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/docs--api-changelog compare v1 and v2 of my API and flag breaking changes",
       "/docs--api-changelog generate the changelog for this release with migration notes",
       "/docs--api-changelog which endpoints changed since the last version"
+    ],
+    "title": "API changelog",
+    "summary": "Compares two versions of your API, classifies changes as breaking, non-breaking or deprecations, and writes migration notes.",
+    "keywords": [
+      "api changelog",
+      "breaking changes",
+      "migration notes",
+      "compare api versions"
     ]
-  }
+  },
+  "copyHash": "04fc72e55ad5120b"
 }

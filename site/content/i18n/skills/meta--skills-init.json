@@ -6,6 +6,14 @@
       "/meta--skills-init activa las skills que necesito para este proyecto",
       "/meta--skills-init escanea mi repo y configura las skills relevantes",
       "/meta--skills-init es un proyecto Next.js, ¿qué skills me sirven?"
+    ],
+    "title": "Skills adaptadas a tu proyecto",
+    "summary": "Analiza tu proyecto, detecta el stack y activa solo las skills relevantes, guardando la configuración en un archivo del proyecto.",
+    "keywords": [
+      "configurar skills",
+      "detectar stack",
+      "skills por proyecto",
+      "skills.config"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/meta--skills-init activate the skills I need for this project",
       "/meta--skills-init scan my repo and set up the relevant skills",
       "/meta--skills-init this is a Next.js project, which skills apply?"
+    ],
+    "title": "Project-specific skills setup",
+    "summary": "Scans your project, detects its tech stack and activates only the relevant skills, saving the choice as a project configuration file.",
+    "keywords": [
+      "configure skills",
+      "detect tech stack",
+      "project skills",
+      "skills config"
     ]
-  }
+  },
+  "copyHash": "0a695cc0191bda7b"
 }

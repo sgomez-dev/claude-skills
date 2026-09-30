@@ -1,6 +1,15 @@
 {
   "sourceHash": "b9dc2c52bfbadce1",
+  "copyHash": "20a0c1e35a683a6b",
   "es": {
+    "title": "Conversión y compresión de vídeo",
+    "summary": "Convierte formatos, cambia el tamaño, comprime y extrae audio de vídeos con FFmpeg, y prepara archivos para proyectos de Remotion.",
+    "keywords": [
+      "convertir gif a mp4",
+      "comprimir vídeo",
+      "extraer audio de vídeo",
+      "redimensionar vídeo"
+    ],
     "description": "Procesamiento de vídeo y audio con FFmpeg. Úsalo para conversión de formato, redimensionado, compresión, extracción de audio y preparación de assets para Remotion. Se activa al convertir GIF a MP4, redimensionar vídeo, extraer audio, comprimir archivos o cualquier tarea de transformación de medios.",
     "howToAsk": [
       "Convierte este GIF a MP4",
@@ -9,6 +18,14 @@
     ]
   },
   "en": {
+    "title": "Video and audio conversion",
+    "summary": "Converts formats, resizes, compresses and extracts audio from video with FFmpeg, and prepares files for Remotion projects.",
+    "keywords": [
+      "convert gif to mp4",
+      "compress video",
+      "extract audio from video",
+      "resize video"
+    ],
     "howToAsk": [
       "Convert this GIF to MP4",
       "Resize this video to 1080p and compress it",

@@ -6,6 +6,14 @@
       "/performance--web-vitals mide los Core Web Vitals de mi web",
       "/performance--web-vitals por qué mi LCP es tan alto",
       "/performance--web-vitals arregla el CLS que me penaliza en Google"
+    ],
+    "title": "Mejora de Core Web Vitals",
+    "summary": "Mide LCP, INP y CLS de tu web, diagnostica sus causas en el código y aplica correcciones para cumplir los umbrales recomendados.",
+    "keywords": [
+      "core web vitals",
+      "lcp",
+      "cls",
+      "mejorar inp"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/performance--web-vitals measure Core Web Vitals for my site",
       "/performance--web-vitals why is my LCP so high",
       "/performance--web-vitals fix the CLS that's hurting my Google ranking"
+    ],
+    "title": "Core Web Vitals improvement",
+    "summary": "Measures your site's LCP, INP and CLS, diagnoses their causes in the code and applies fixes to reach the recommended thresholds.",
+    "keywords": [
+      "core web vitals",
+      "lcp",
+      "cls",
+      "improve inp"
     ]
-  }
+  },
+  "copyHash": "278ac41b8b09bfbe"
 }

@@ -6,6 +6,14 @@
       "/performance--memory-leak la app cada vez consume más memoria y no baja",
       "/performance--memory-leak encuentra la fuga de memoria en este componente",
       "/performance--memory-leak el servidor se queda sin memoria tras unas horas"
+    ],
+    "title": "Detectar fugas de memoria",
+    "summary": "Busca fugas de memoria en tu código de frontend y backend, explica por qué ocurren y propone el arreglo de cada una.",
+    "keywords": [
+      "fuga de memoria",
+      "memory leak",
+      "listeners sin limpiar",
+      "node memoria"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/performance--memory-leak the app keeps using more memory and it never drops",
       "/performance--memory-leak find the memory leak in this component",
       "/performance--memory-leak the server runs out of memory after a few hours"
+    ],
+    "title": "Finding memory leaks",
+    "summary": "Scans your frontend and backend code for memory leaks, explains why each one leaks and proposes the fix.",
+    "keywords": [
+      "memory leak",
+      "leaking listeners",
+      "node memory",
+      "heap snapshot"
     ]
-  }
+  },
+  "copyHash": "6036f5ab56528763"
 }

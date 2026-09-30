@@ -6,6 +6,15 @@
       "/finance--cap-table modela nuestra cap table después de la próxima ronda",
       "/finance--cap-table calcula la dilución del option pool para los empleados",
       "/finance--cap-table simula el reparto en una venta de la empresa"
+    ],
+    "title": "Cap table, dilución y salida",
+    "summary": "Modela tu cap table con nuevas rondas, SAFEs y bolsa de opciones, y calcula la dilución y el reparto en distintas ventas.",
+    "keywords": [
+      "cap table",
+      "dilución",
+      "ronda de inversión",
+      "waterfall de salida",
+      "safe"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "/finance--cap-table model our cap table after the next funding round",
       "/finance--cap-table calculate option pool dilution for employees",
       "/finance--cap-table simulate the payout waterfall in an acquisition"
+    ],
+    "title": "Cap table, dilution and exit",
+    "summary": "Models your cap table across new rounds, SAFEs and option pools, showing dilution and who gets what at different exit prices.",
+    "keywords": [
+      "cap table",
+      "dilution calculator",
+      "funding round model",
+      "exit waterfall",
+      "safe conversion"
     ]
-  }
+  },
+  "copyHash": "07ee9f11a1880d2a"
 }

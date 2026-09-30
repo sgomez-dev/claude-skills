@@ -6,6 +6,14 @@
       "/ai--fine-tuning ¿me conviene el fine-tuning o basta con mejorar el prompt?",
       "/ai--fine-tuning prepara mi dataset de conversaciones para entrenar el modelo",
       "/ai--fine-tuning compara el rendimiento antes y después del fine-tuning"
+    ],
+    "title": "Afinar un modelo de lenguaje",
+    "summary": "Decide con honestidad si hace falta afinar un LLM o basta con prompts, y si procede prepara datos, entrena y compara antes y después.",
+    "keywords": [
+      "fine-tuning",
+      "afinar llm",
+      "entrenar modelo propio",
+      "lora"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ai--fine-tuning should I fine-tune or just improve my prompt?",
       "/ai--fine-tuning prep my conversation dataset for training",
       "/ai--fine-tuning compare model performance before and after fine-tuning"
+    ],
+    "title": "Fine-tuning a language model",
+    "summary": "Decides honestly whether an LLM needs fine-tuning or better prompts, and if so prepares data, trains and compares before and after on held-out data.",
+    "keywords": [
+      "fine-tune llm",
+      "fine-tuning vs prompting",
+      "lora training",
+      "custom model"
     ]
-  }
+  },
+  "copyHash": "4e2c8bef34bc663f"
 }

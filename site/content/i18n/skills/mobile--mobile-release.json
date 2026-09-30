@@ -1,7 +1,17 @@
 {
   "sourceHash": "5997ce963aaae114",
+  "copyHash": "91f6859779ba1004",
   "es": {
     "description": "Configura los lanzamientos móviles: versionado, firma, canales beta, despliegue escalonado, envío a las tiendas",
+    "title": "Publicación de apps móviles",
+    "summary": "Monta el proceso de publicación de tu app: versionado, firma, betas en TestFlight y Play, despliegue escalonado y lista de envío a tiendas.",
+    "keywords": [
+      "publicar app",
+      "testflight",
+      "firma de apps",
+      "fastlane",
+      "despliegue escalonado"
+    ],
     "howToAsk": [
       "/mobile--mobile-release prepara el primer lanzamiento de mi app",
       "/mobile--mobile-release configura un canal beta antes del lanzamiento",
@@ -13,6 +23,15 @@
       "/mobile--mobile-release prepare my app's first release",
       "/mobile--mobile-release set up a beta track before launch",
       "/mobile--mobile-release do a staged rollout for the new version"
+    ],
+    "title": "Mobile app release pipeline",
+    "summary": "Sets up your app's release pipeline: versioning, signing, TestFlight and Play beta tracks, staged rollout and a store-submission checklist.",
+    "keywords": [
+      "publish app",
+      "testflight",
+      "app signing",
+      "fastlane",
+      "staged rollout"
     ]
   }
 }

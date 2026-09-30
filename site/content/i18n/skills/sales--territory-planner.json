@@ -6,6 +6,14 @@
       "/sales--territory-planner divide este mercado en territorios para mi equipo de ventas",
       "/sales--territory-planner reparte estas cuentas entre comerciales de forma equilibrada",
       "/sales--territory-planner necesito niveles de territorio para la región noreste"
+    ],
+    "title": "Planificación de territorios de ventas",
+    "summary": "Segmenta un mercado o lista de cuentas en territorios y niveles, con un plan de cobertura que equilibra la oportunidad por comercial.",
+    "keywords": [
+      "territorios de ventas",
+      "segmentar cuentas",
+      "cobertura comercial",
+      "asignar cuentas"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/sales--territory-planner split this market into territories for my sales team",
       "/sales--territory-planner divide these accounts among reps evenly",
       "/sales--territory-planner I need territory tiers for the northeast region"
+    ],
+    "title": "Sales territory planning",
+    "summary": "Segments a market or account list into territories and tiers with a coverage plan that balances opportunity per rep.",
+    "keywords": [
+      "sales territories",
+      "account segmentation",
+      "territory design",
+      "rep coverage"
     ]
-  }
+  },
+  "copyHash": "a27f01363567a241"
 }

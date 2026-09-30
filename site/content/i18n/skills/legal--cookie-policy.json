@@ -6,6 +6,38 @@
       "/legal--cookie-policy genera la política de cookies para mi sitio Next.js",
       "/legal--cookie-policy escanea el código y crea el aviso de cookies",
       "/legal--cookie-policy necesito la política de cookies basada en mis trackers reales"
+    ],
+    "title": "Política de cookies del código",
+    "summary": "Escanea tu código para inventariar las cookies y rastreadores reales y redacta la política de cookies a partir de ese inventario.",
+    "keywords": [
+      "política de cookies",
+      "inventario de cookies",
+      "rastreadores",
+      "consentimiento cookies"
+    ],
+    "useWhen": [
+      "Necesitas una política de cookies que refleje lo que tu web realmente instala",
+      "Quieres saber si hay cookies que se activan antes del consentimiento",
+      "Has añadido analítica, píxeles o embeds y hay que actualizarla"
+    ],
+    "notFor": [
+      "Sustituir el consejo de un abogado",
+      "Detectar cookies que solo aparecen en ejecución: hay que verificarlas en el navegador"
+    ],
+    "output": "Un archivo legal/COOKIE_POLICY.md con tablas de cookies por categoría, más un inventario y una lista de correcciones en la conversación.",
+    "faq": [
+      {
+        "q": "¿Detecta todas las cookies?",
+        "a": "No. El escaneo estático puede perder las que inyectan gestores de etiquetas o embeds en ejecución. Recomienda comprobarlo en el navegador (DevTools, Application, Cookies)."
+      },
+      {
+        "q": "¿Sirve para cumplir con el RGPD?",
+        "a": "Ayuda a redactar y a detectar problemas, como cookies no esenciales sin consentimiento, pero es un borrador y no asesoramiento legal."
+      },
+      {
+        "q": "¿Y si mi producto es una API sin frontend?",
+        "a": "Lo indica y genera una declaración mínima en lugar de inventar cookies."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "/legal--cookie-policy generate the cookie policy for my Next.js site",
       "/legal--cookie-policy scan the code and create the cookie notice",
       "/legal--cookie-policy I need a cookie policy based on my actual trackers"
+    ],
+    "title": "Cookie policy from your code",
+    "summary": "Scans your code to inventory the cookies and trackers it really sets, then drafts a cookie policy based on that inventory.",
+    "keywords": [
+      "cookie policy",
+      "cookie inventory",
+      "tracker audit",
+      "cookie consent"
+    ],
+    "useWhen": [
+      "You need a cookie policy that matches what your site actually sets",
+      "You want to know if cookies fire before consent",
+      "You added analytics, pixels or embeds and the policy needs updating"
+    ],
+    "notFor": [
+      "Replacing the advice of a lawyer",
+      "Finding cookies that only appear at runtime: those need a browser check"
+    ],
+    "output": "A legal/COOKIE_POLICY.md file with categorized cookie tables, plus an inventory and a fix list in the chat.",
+    "faq": [
+      {
+        "q": "Does it catch every cookie?",
+        "a": "No. Static scanning can miss cookies injected at runtime by tag managers or embeds. It recommends verifying in the browser (DevTools, Application, Cookies)."
+      },
+      {
+        "q": "Will this make me GDPR compliant?",
+        "a": "It helps draft the policy and flags problems such as non-essential cookies set without consent, but it is a starting draft, not legal advice."
+      },
+      {
+        "q": "What if my product is an API with no frontend?",
+        "a": "It says so and produces a minimal statement instead of inventing cookies."
+      }
     ]
-  }
+  },
+  "copyHash": "29bddcd2f8e4de79"
 }

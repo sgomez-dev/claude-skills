@@ -6,6 +6,14 @@
       "/ai--prompt-engineer mejora el prompt de sistema de mi asistente de soporte",
       "/ai--prompt-engineer las respuestas del modelo son inconsistentes, afina el prompt",
       "/ai--prompt-engineer revisa mis definiciones de herramientas para que el modelo las use mejor"
+    ],
+    "title": "Mejorar prompts de IA",
+    "summary": "Revisa y reescribe tus prompts de sistema, de usuario y definiciones de herramientas, y te da una comparación entre la versión original y la mejorada.",
+    "keywords": [
+      "mejorar prompt",
+      "prompt de sistema",
+      "ingeniería de prompts",
+      "comparar prompts"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ai--prompt-engineer improve the system prompt for my support assistant",
       "/ai--prompt-engineer the model's answers are inconsistent, help me tighten the prompt",
       "/ai--prompt-engineer review my tool definitions so the model uses them better"
+    ],
+    "title": "Better AI prompts",
+    "summary": "Reviews and rewrites your system prompts, user prompts and tool definitions, then gives an A/B comparison of the original and improved versions.",
+    "keywords": [
+      "improve prompt",
+      "system prompt",
+      "prompt engineering",
+      "prompt a/b test"
     ]
-  }
+  },
+  "copyHash": "3556fc81838cc6c9"
 }

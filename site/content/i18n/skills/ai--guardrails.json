@@ -6,6 +6,14 @@
       "/ai--guardrails protege mi chatbot contra inyección de prompts",
       "/ai--guardrails filtra datos personales (PII) antes de enviarlos al modelo",
       "/ai--guardrails haz pruebas de jailbreak sobre mi asistente"
+    ],
+    "title": "Barreras de seguridad para LLM",
+    "summary": "Añade filtros de entrada y salida, defensa contra inyección de prompts y manejo de datos personales a una función de IA, con pruebas adversarias.",
+    "keywords": [
+      "guardrails llm",
+      "inyección de prompt",
+      "filtrar datos personales",
+      "seguridad chatbot"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ai--guardrails protect my chatbot from prompt injection",
       "/ai--guardrails filter PII before it reaches the model",
       "/ai--guardrails run jailbreak tests against my assistant"
+    ],
+    "title": "LLM safety guardrails",
+    "summary": "Adds input and output filters, prompt-injection defense and personal-data handling around an AI feature, then proves them with adversarial tests.",
+    "keywords": [
+      "llm guardrails",
+      "prompt injection defense",
+      "pii redaction",
+      "jailbreak testing"
     ]
-  }
+  },
+  "copyHash": "e28285439bd734a5"
 }

@@ -6,6 +6,14 @@
       "/data--csv-wrangler limpia este CSV de clientes y quita los duplicados",
       "/data--csv-wrangler transforma este Excel al formato que necesito para importar",
       "/data--csv-wrangler dame un script repetible para procesar estos ficheros cada mes"
+    ],
+    "title": "Limpieza de CSV y Excel",
+    "summary": "Limpia, deduplica y reestructura un CSV o Excel con un script de Python reutilizable y guarda una copia limpia sin tocar el original.",
+    "keywords": [
+      "limpiar csv",
+      "deduplicar excel",
+      "script pandas",
+      "ordenar datos sucios"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/data--csv-wrangler clean up this customer CSV and remove duplicates",
       "/data--csv-wrangler transform this Excel file into the format I need to import",
       "/data--csv-wrangler give me a repeatable script to process these files monthly"
+    ],
+    "title": "CSV and Excel cleanup",
+    "summary": "Cleans, dedupes and reshapes a CSV or Excel file with a reusable Python script, saving a clean copy and leaving the original untouched.",
+    "keywords": [
+      "clean csv",
+      "dedupe excel",
+      "pandas script",
+      "fix messy spreadsheet"
     ]
-  }
+  },
+  "copyHash": "b7da590326b2c929"
 }

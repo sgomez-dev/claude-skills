@@ -6,6 +6,14 @@
       "/product--ab-test-design diseña un test A/B para el nuevo botón de compra",
       "/product--ab-test-design calcula el tamaño de muestra que necesito para este experimento",
       "/product--ab-test-design ayúdame a definir la hipótesis y las métricas de éxito"
+    ],
+    "title": "Diseño de test A/B",
+    "summary": "Diseña un test A/B con hipótesis, métricas, tamaño de muestra, guardarraíles y regla de decisión fijados antes de lanzar.",
+    "keywords": [
+      "test a/b",
+      "tamaño de muestra",
+      "hipótesis experimento",
+      "métrica primaria"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/product--ab-test-design design an A/B test for the new buy button",
       "/product--ab-test-design calculate the sample size I need for this experiment",
       "/product--ab-test-design help me define the hypothesis and success metrics"
+    ],
+    "title": "A/B test design",
+    "summary": "Designs an A/B test with hypothesis, metrics, sample size, guardrails and decision rule committed before launch.",
+    "keywords": [
+      "ab test design",
+      "sample size calculator",
+      "experiment hypothesis",
+      "guardrail metrics"
     ]
-  }
+  },
+  "copyHash": "6d92f19941a9d34c"
 }

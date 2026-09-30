@@ -6,6 +6,14 @@
       "/content--docs-site ayúdame a montar el sitio de documentación de mi producto",
       "/content--docs-site qué herramienta de docs me conviene y cómo organizo las secciones",
       "/content--docs-site genera plantillas para la documentación de mi API"
+    ],
+    "title": "Sitio de documentación",
+    "summary": "Monta un sitio de documentación: elige la herramienta, diseña la arquitectura de la información y crea plantillas y varias páginas reales.",
+    "keywords": [
+      "crear sitio de documentación",
+      "docs con starlight",
+      "arquitectura de documentación",
+      "montar docs"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/content--docs-site help me scaffold my product's documentation site",
       "/content--docs-site which docs tool should I use and how should I organize sections",
       "/content--docs-site generate templates for my API documentation"
+    ],
+    "title": "Documentation site",
+    "summary": "Scaffolds a documentation site: picks the generator, designs the information architecture and ships templates plus a few seeded pages.",
+    "keywords": [
+      "documentation site",
+      "set up docs",
+      "starlight docusaurus",
+      "docs structure"
     ]
-  }
+  },
+  "copyHash": "e95513cdf982ef8a"
 }

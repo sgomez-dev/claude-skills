@@ -6,6 +6,14 @@
       "Genera una imagen de un producto flotando sobre fondo blanco",
       "Anima esta foto y conviértela en un vídeo corto",
       "Crea un efecto de sonido para esta animación"
+    ],
+    "title": "Imágenes y vídeo con Higgsfield",
+    "summary": "Genera imágenes, vídeo, audio y modelos 3D con Higgsfield, y crea anuncios con Marketing Studio, desde la CLI de Higgsfield.",
+    "keywords": [
+      "generar vídeo con ia",
+      "imagen a vídeo",
+      "crear anuncio ugc",
+      "modelo 3d con ia"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Generate an image of a product floating on a white background",
       "Animate this photo into a short video",
       "Create a sound effect for this animation"
+    ],
+    "title": "Higgsfield images and video",
+    "summary": "Generates images, video, audio and 3D models with Higgsfield, plus ads through Marketing Studio, using the Higgsfield CLI.",
+    "keywords": [
+      "ai video generation",
+      "image to video",
+      "ugc ad video",
+      "text to audio"
     ]
-  }
+  },
+  "copyHash": "68bed3a080231a41"
 }

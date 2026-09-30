@@ -6,6 +6,14 @@
       "/cloud--aws-architect diseña la arquitectura AWS para mi app de e-commerce",
       "/cloud--aws-architect qué servicios de AWS necesito para una API con colas y base de datos",
       "/cloud--aws-architect genera el diagrama y el Terraform inicial para mi backend"
+    ],
+    "title": "Arquitectura en AWS",
+    "summary": "Diseña una arquitectura AWS para tu aplicación con los servicios justos, un diagrama Mermaid y un punto de partida en Terraform.",
+    "keywords": [
+      "arquitectura aws",
+      "diseñar infraestructura aws",
+      "terraform aws",
+      "diagrama de arquitectura"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/cloud--aws-architect design the AWS architecture for my e-commerce app",
       "/cloud--aws-architect what AWS services do I need for an API with queues and a database",
       "/cloud--aws-architect generate the diagram and starter Terraform for my backend"
+    ],
+    "title": "AWS architecture design",
+    "summary": "Designs an AWS architecture for your app with a minimal set of services, a Mermaid diagram and a Terraform starter.",
+    "keywords": [
+      "aws architecture",
+      "design aws infrastructure",
+      "terraform aws",
+      "architecture diagram"
     ]
-  }
+  },
+  "copyHash": "ff6712b850417b4a"
 }

@@ -1,6 +1,15 @@
 {
   "sourceHash": "1f0d0a7bb0ce0808",
+  "copyHash": "78200a2e1ac102c2",
   "es": {
+    "title": "Punto de entrada para vídeo",
+    "summary": "Es el punto de partida para crear, editar o renderizar cualquier vídeo o animación en HyperFrames, y dirige cada petición a la habilidad que corresponde.",
+    "keywords": [
+      "crear vídeo con ia",
+      "hyperframes",
+      "animación html a vídeo",
+      "vídeo promocional"
+    ],
     "description": "Punto de entrada obligatorio: léelo primero ante cualquier petición de hacer, crear, editar, animar o renderizar un vídeo, animación o motion graphic, incluido un promo, un explicativo, un clip con subtítulos, una tarjeta de título, un overlay, una presentación de diapositivas o mazo interactivo, una portación a Remotion o cualquier composición HTML de HyperFrames. Úsalo también para inspeccionar, diagnosticar, validar, previsualizar, publicar o renderizar en lote un proyecto HyperFrames existente. Las entradas pueden ser una URL de sitio web, un PR de GitHub, un diseño o URL de Figma, un texto o brief, metraje existente o música. Retoma el estado del proyecto, captura la intención cuando corresponda, selecciona e instala el workflow propietario, y enruta las capacidades de dominio. HyperFrames es el framework de salida por defecto salvo que el usuario elija explícitamente otro framework para el entregable o pida solo grabar una sesión de navegador.",
     "howToAsk": [
       "Quiero crear un vídeo promocional animado para mi producto",
@@ -9,6 +18,14 @@
     ]
   },
   "en": {
+    "title": "Entry point for video creation",
+    "summary": "The starting point for making, editing or rendering any video or animation in HyperFrames, routing each request to the right specialist skill.",
+    "keywords": [
+      "create video with ai",
+      "hyperframes",
+      "html to video animation",
+      "promo video"
+    ],
     "howToAsk": [
       "I want to create an animated promo video for my product",
       "Help me review and fix this existing HyperFrames project",

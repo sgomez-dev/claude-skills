@@ -6,6 +6,14 @@
       "/sales--social-selling audita mi perfil de LinkedIn y dime qué mejorar",
       "/sales--social-selling crea un plan de contenido para vender en LinkedIn a este nicho",
       "/sales--social-selling necesito una estrategia de social selling para el sector legal"
+    ],
+    "title": "Social selling en LinkedIn",
+    "summary": "Audita un perfil público de LinkedIn y crea un plan de contenido para tu nicho, con calendario de cuatro semanas, posts de ejemplo y rutina diaria.",
+    "keywords": [
+      "social selling",
+      "perfil de linkedin",
+      "plan de contenido",
+      "ventas en linkedin"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/sales--social-selling audit my LinkedIn profile and tell me what to fix",
       "/sales--social-selling build a LinkedIn content plan to sell into this niche",
       "/sales--social-selling I need a social selling strategy for the legal sector"
+    ],
+    "title": "LinkedIn social selling plan",
+    "summary": "Audits a public LinkedIn presence and builds a niche content plan with a 4-week calendar, example posts and a daily engagement routine.",
+    "keywords": [
+      "social selling",
+      "linkedin audit",
+      "linkedin content plan",
+      "sales on linkedin"
     ]
-  }
+  },
+  "copyHash": "d7e4e49ccbf6f475"
 }

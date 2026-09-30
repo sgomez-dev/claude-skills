@@ -6,6 +6,14 @@
       "/api--rest-client genera un cliente TypeScript para mi API REST",
       "/api--rest-client necesito un SDK tipado a partir de mi OpenAPI",
       "/api--rest-client crea el cliente de API para consumir estos endpoints"
+    ],
+    "title": "Cliente de API con tipos",
+    "summary": "Genera un cliente SDK tipado para tu API a partir de la especificación OpenAPI o las rutas, con errores, reintentos y timeouts.",
+    "keywords": [
+      "cliente api tipado",
+      "sdk desde openapi",
+      "cliente rest typescript",
+      "reintentos http"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/api--rest-client generate a TypeScript client for my REST API",
       "/api--rest-client I need a typed SDK generated from my OpenAPI spec",
       "/api--rest-client create an API client to call these endpoints"
+    ],
+    "title": "Type-safe API client",
+    "summary": "Generates a typed client SDK for your API from its OpenAPI spec or route files, with error handling, retries and timeouts.",
+    "keywords": [
+      "typed api client",
+      "sdk from openapi",
+      "rest client typescript",
+      "http retries"
     ]
-  }
+  },
+  "copyHash": "fad8a9917c5fdf01"
 }

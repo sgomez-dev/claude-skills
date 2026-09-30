@@ -6,6 +6,14 @@
       "/fullstack--onboarding-flow diseña el flujo desde el registro hasta la primera acción útil",
       "/fullstack--onboarding-flow añade una checklist de primeros pasos para usuarios nuevos",
       "/fullstack--onboarding-flow mide cuántos usuarios se activan tras registrarse"
+    ],
+    "title": "Onboarding de usuarios",
+    "summary": "Construye el camino del registro a la activación: asistente inicial, checklist, estados vacíos y métricas para ver dónde se abandona.",
+    "keywords": [
+      "onboarding de usuarios",
+      "activación de usuarios",
+      "checklist de bienvenida",
+      "embudo de registro"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/fullstack--onboarding-flow design the flow from signup to first useful action",
       "/fullstack--onboarding-flow add a getting-started checklist for new users",
       "/fullstack--onboarding-flow track how many users activate after signing up"
+    ],
+    "title": "User onboarding flow",
+    "summary": "Builds the path from signup to activation: a first-run wizard, checklist, empty states and metrics to see where users drop off.",
+    "keywords": [
+      "user onboarding",
+      "activation flow",
+      "onboarding checklist",
+      "signup funnel"
     ]
-  }
+  },
+  "copyHash": "20a827b86e3dca7d"
 }

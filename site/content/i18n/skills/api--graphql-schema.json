@@ -6,6 +6,14 @@
       "/api--graphql-schema crea el esquema GraphQL para mi tienda online",
       "/api--graphql-schema añade una mutation para actualizar el perfil de usuario",
       "/api--graphql-schema genera los resolvers para las queries de productos"
+    ],
+    "title": "Esquema GraphQL con resolvers",
+    "summary": "Genera un esquema GraphQL con tipos, queries, mutaciones, paginación y resolvers, a partir del dominio que describas.",
+    "keywords": [
+      "esquema graphql",
+      "resolvers graphql",
+      "mutaciones graphql",
+      "paginación por cursor"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/api--graphql-schema create the GraphQL schema for my online store",
       "/api--graphql-schema add a mutation to update the user profile",
       "/api--graphql-schema generate resolvers for the product queries"
+    ],
+    "title": "GraphQL schema with resolvers",
+    "summary": "Generates a GraphQL schema with types, queries, mutations, cursor pagination and resolvers for the domain you describe.",
+    "keywords": [
+      "graphql schema",
+      "graphql resolvers",
+      "graphql mutations",
+      "cursor pagination"
     ]
-  }
+  },
+  "copyHash": "aa2ac953408b9197"
 }

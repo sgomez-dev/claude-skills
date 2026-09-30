@@ -1,7 +1,17 @@
 {
   "sourceHash": "a2b1e6f635ea96df",
+  "copyHash": "63eb8e96f426e6de",
   "es": {
     "description": "Implementa notificaciones push: configuración de FCM/APNs, ciclo de vida del token, experiencia de permisos",
+    "title": "Notificaciones push en tu app",
+    "summary": "Implementa notificaciones push con FCM y APNs: configuración, ciclo de vida del token, enlaces a pantallas y un permiso bien planteado.",
+    "keywords": [
+      "notificaciones push",
+      "fcm",
+      "apns",
+      "permiso de notificaciones",
+      "firebase messaging"
+    ],
     "howToAsk": [
       "/mobile--push-notifications añade notificaciones push a mi app",
       "/mobile--push-notifications configura FCM y APNs para iOS y Android",
@@ -13,6 +23,15 @@
       "/mobile--push-notifications add push notifications to my app",
       "/mobile--push-notifications set up FCM and APNs for iOS and Android",
       "/mobile--push-notifications improve when we ask for notification permission"
+    ],
+    "title": "Push notifications for your app",
+    "summary": "Implements push notifications with FCM and APNs: platform setup, device token lifecycle, payloads that open the right screen and a better permission prompt.",
+    "keywords": [
+      "push notifications",
+      "fcm",
+      "apns",
+      "notification permission",
+      "firebase messaging"
     ]
   }
 }

@@ -6,6 +6,14 @@
       "/code-quality--dry busca código duplicado en mi carpeta de componentes",
       "/code-quality--dry encuentra patrones repetidos que debería convertir en función",
       "/code-quality--dry revisa este módulo en busca de violaciones de DRY"
+    ],
+    "title": "Detector de código duplicado",
+    "summary": "Busca código duplicado en tu proyecto, muestra dónde se repite y propone la abstracción y el código refactorizado, priorizando por riesgo.",
+    "keywords": [
+      "código duplicado",
+      "principio dry",
+      "copiar y pegar",
+      "refactorizar repeticiones"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/code-quality--dry find duplicated code across my components folder",
       "/code-quality--dry spot repeated patterns I should turn into a function",
       "/code-quality--dry check this module for DRY violations"
+    ],
+    "title": "Duplicate code finder",
+    "summary": "Scans your codebase for duplicated code, shows every location, and suggests a shared abstraction with refactored code, ranked by occurrences and risk.",
+    "keywords": [
+      "duplicate code",
+      "dry violations",
+      "copy paste code",
+      "refactor repetition"
     ]
-  }
+  },
+  "copyHash": "125222e714c123ad"
 }

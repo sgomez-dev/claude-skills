@@ -6,6 +6,14 @@
       "/ai--semantic-cache quiero cachear respuestas de preguntas parecidas, no solo idénticas",
       "/ai--semantic-cache ajusta el umbral de similitud para la caché semántica",
       "/ai--semantic-cache invalida la caché cuando cambien los documentos fuente"
+    ],
+    "title": "Caché semántica para LLM",
+    "summary": "Añade una caché delante de las llamadas a un LLM para servir respuestas guardadas a peticiones repetidas o casi iguales, y mide si de verdad ayuda.",
+    "keywords": [
+      "caché semántica",
+      "cachear respuestas llm",
+      "ahorrar llamadas ia",
+      "umbral de similitud"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ai--semantic-cache cache answers for similar questions, not just identical ones",
       "/ai--semantic-cache tune the similarity threshold for the semantic cache",
       "/ai--semantic-cache invalidate the cache when source documents change"
+    ],
+    "title": "Semantic cache for LLM calls",
+    "summary": "Adds a cache in front of LLM calls so repeated or near-duplicate requests get a stored answer, and measures whether it helps without serving wrong ones.",
+    "keywords": [
+      "semantic cache",
+      "cache llm responses",
+      "reduce llm calls",
+      "similarity threshold"
     ]
-  }
+  },
+  "copyHash": "41fc958c41eb6547"
 }

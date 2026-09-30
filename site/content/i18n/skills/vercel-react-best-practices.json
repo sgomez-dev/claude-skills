@@ -6,6 +6,14 @@
       "Revisa este componente de React para ver si sigue buenas prácticas de rendimiento",
       "¿Esta forma de hacer fetching de datos en Next.js es óptima?",
       "Refactoriza esta página de Next.js siguiendo las guías de Vercel"
+    ],
+    "title": "Rendimiento en React y Next.js",
+    "summary": "Aplica 62 reglas de rendimiento de Vercel Engineering al escribir, revisar o refactorizar React y Next.js: cascadas de datos, tamaño de bundle y re-renders.",
+    "keywords": [
+      "optimizar react",
+      "rendimiento next.js",
+      "reducir bundle",
+      "evitar re-renders"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Review this React component for performance best practices",
       "Is this Next.js data fetching pattern optimal?",
       "Refactor this Next.js page following Vercel's performance guidelines"
+    ],
+    "title": "React and Next.js performance",
+    "summary": "Applies 62 Vercel Engineering performance rules when writing, reviewing or refactoring React and Next.js: data waterfalls, bundle size and re-renders.",
+    "keywords": [
+      "optimize react",
+      "next.js performance",
+      "reduce bundle size",
+      "avoid re-renders"
     ]
-  }
+  },
+  "copyHash": "0ae7b4706da6b060"
 }

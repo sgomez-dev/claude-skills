@@ -1,6 +1,15 @@
 {
   "sourceHash": "f887960aec1196f1",
+  "copyHash": "5c0fa72f016897b7",
   "es": {
+    "title": "Bloques visuales listos para vídeo",
+    "summary": "Busca e instala bloques y componentes del registro de HyperFrames, como efectos CRT, grano de película, gráficos o confeti, y los integra en tu composición.",
+    "keywords": [
+      "efectos de vídeo listos",
+      "glitch y grano",
+      "bloques hyperframes",
+      "confeti animado"
+    ],
     "description": "Busca, instala y conecta bloques y componentes del registro en composiciones de HyperFrames. Úsalo ANTES de construir a mano cualquier visual con nombre — siempre que un brief, un usuario o un storyboard nombre un look, efecto, tratamiento o transición como scanlines CRT, glitch, aberración cromática, grano de película, un barrido shimmer, un gráfico, una ventana de código o terminal, un mapa o una explosión de confeti — porque cerca de 400 elementos alojados ya cubren muchos de ellos, y la búsqueda los clasifica a todos sin proyecto, sin cuenta y sin nada instalado. Úsalo también al ejecutar hyperframes add o hyperframes catalog, al instalar un elemento o todos los bloques que coincidan con una etiqueta, al conectar un elemento instalado en index.html, o al trabajar con hyperframes.json. Cubre el descubrimiento, las ubicaciones de instalación, el cableado de subcomposiciones de bloques, la fusión de fragmentos de componentes, y la creación de un bloque o componente nuevo para contribuirlo aguas arriba (idea → scaffold → validar → PR).",
     "howToAsk": [
       "Busca un efecto de scanlines CRT ya hecho antes de programarlo a mano",
@@ -9,6 +18,14 @@
     ]
   },
   "en": {
+    "title": "Ready-made video blocks",
+    "summary": "Searches for and installs HyperFrames registry blocks and components, such as CRT, film grain, charts or confetti, and wires them into your composition.",
+    "keywords": [
+      "video effects library",
+      "glitch and film grain",
+      "hyperframes blocks",
+      "confetti animation"
+    ],
     "howToAsk": [
       "Search for a ready-made CRT scanlines effect before hand-building one",
       "Install a confetti burst block from the registry into my composition",

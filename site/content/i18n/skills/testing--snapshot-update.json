@@ -6,6 +6,14 @@
       "/testing--snapshot-update actualiza los snapshots que han cambiado a propósito",
       "/testing--snapshot-update revisa por qué fallan estos snapshots de tests",
       "/testing--snapshot-update ¿qué snapshots debería regenerar tras este cambio?"
+    ],
+    "title": "Actualización de snapshots de tests",
+    "summary": "Revisa los snapshots de tests que fallan y decide si el cambio es intencionado, un fallo real o un test inestable antes de actualizarlos.",
+    "keywords": [
+      "actualizar snapshots",
+      "snapshot test falla",
+      "jest snapshot",
+      "tests inestables"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/testing--snapshot-update update snapshots that changed on purpose",
       "/testing--snapshot-update review why these test snapshots are failing",
       "/testing--snapshot-update which snapshots should I regenerate after this change?"
+    ],
+    "title": "Test snapshot updates",
+    "summary": "Reviews failing test snapshots and decides whether each is an intended change, a real bug or a flaky test before updating anything.",
+    "keywords": [
+      "update snapshots",
+      "snapshot test failing",
+      "jest snapshot",
+      "flaky tests"
     ]
-  }
+  },
+  "copyHash": "32c0b6ee8dc57dcd"
 }

@@ -6,6 +6,14 @@
       "Cómo limito un valor a un rango con clamp en GSAP",
       "Necesito convertir un rango de valores a otro con mapRange",
       "Ayúdame a redondear una posición al valor más cercano con snap"
+    ],
+    "title": "Utilidades gsap.utils",
+    "summary": "Guía de las funciones auxiliares de gsap.utils: clamp, mapRange, normalize, interpolate, random, snap, toArray, wrap y pipe.",
+    "keywords": [
+      "gsap.utils",
+      "maprange",
+      "clamp",
+      "random y snap"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "How do I clamp a value to a range in GSAP",
       "I need to convert one range of values to another with mapRange",
       "Help me round a position to the nearest value with snap"
+    ],
+    "title": "gsap.utils helper functions",
+    "summary": "A guide to the gsap.utils helpers: clamp, mapRange, normalize, interpolate, random, snap, toArray, wrap and pipe.",
+    "keywords": [
+      "gsap.utils",
+      "maprange",
+      "clamp value",
+      "gsap snap"
     ]
-  }
+  },
+  "copyHash": "1927bcc4ea95b382"
 }

@@ -6,6 +6,39 @@
       "/legal--privacy-policy genera la política de privacidad de mi app",
       "/legal--privacy-policy escanea el código y redacta el aviso de privacidad",
       "/legal--privacy-policy necesito una política de privacidad basada en mis datos reales"
+    ],
+    "title": "Política de privacidad a medida",
+    "summary": "Redacta una política de privacidad a partir de los datos, terceros y retención que realmente aparecen en tu código.",
+    "keywords": [
+      "política de privacidad",
+      "generar política privacidad",
+      "rgpd",
+      "datos personales",
+      "ccpa"
+    ],
+    "useWhen": [
+      "Necesitas una política de privacidad que describa lo que tu producto hace de verdad",
+      "Quieres mapear qué datos recoges y a qué terceros llegan",
+      "Quieres detectar contradicciones entre lo que promete la política y el código"
+    ],
+    "notFor": [
+      "Sustituir el consejo de un abogado",
+      "Inventar datos de empresa: lo no verificable queda como [PLACEHOLDER]"
+    ],
+    "output": "Un archivo legal/PRIVACY_POLICY.md en lenguaje claro; en la conversación, la tabla de mapeo de datos y la lista de discrepancias a corregir en el producto.",
+    "faq": [
+      {
+        "q": "¿Se basa en mi código o es una plantilla?",
+        "a": "Escanea formularios, modelos, logs, SDK y dependencias, y cada cláusula debe corresponder a evidencia encontrada."
+      },
+      {
+        "q": "¿Qué pasa con lo que no puede saber?",
+        "a": "Datos de empresa, direcciones o plazos de retención sin base en el código se marcan como [PLACEHOLDER] o [CONFIRM] y se mantienen visibles."
+      },
+      {
+        "q": "¿Cubre varias regulaciones?",
+        "a": "Sí. Si aplican, por ejemplo, RGPD y California, escribe una sola política con subsecciones por régimen."
+      }
     ]
   },
   "en": {
@@ -13,6 +46,39 @@
       "/legal--privacy-policy generate the privacy policy for my app",
       "/legal--privacy-policy scan the code and draft the privacy notice",
       "/legal--privacy-policy I need a privacy policy based on my actual data practices"
+    ],
+    "title": "Privacy policy from your code",
+    "summary": "Drafts a privacy policy from the data collection, third parties and retention actually found in your codebase.",
+    "keywords": [
+      "privacy policy generator",
+      "gdpr privacy policy",
+      "personal data mapping",
+      "ccpa privacy policy"
+    ],
+    "useWhen": [
+      "You need a privacy policy that describes what your product really does",
+      "You want to map what data you collect and which third parties receive it",
+      "You want to catch contradictions between the policy and the code"
+    ],
+    "notFor": [
+      "Replacing the advice of a lawyer",
+      "Inventing company details: anything unverified stays as [PLACEHOLDER]"
+    ],
+    "output": "A legal/PRIVACY_POLICY.md file in plain language; in the chat, the data-mapping table and a list of discrepancies to fix in the product.",
+    "faq": [
+      {
+        "q": "Is it based on my code or a template?",
+        "a": "It scans forms, models, logs, SDKs and dependencies, and each clause is meant to map to evidence found."
+      },
+      {
+        "q": "What about things it cannot know?",
+        "a": "Company details, addresses or retention periods with no basis in code are marked [PLACEHOLDER] or [CONFIRM] and kept visible."
+      },
+      {
+        "q": "Does it cover several regulations?",
+        "a": "Yes. If, say, GDPR and California both apply, it writes one policy with regime-specific subsections."
+      }
     ]
-  }
+  },
+  "copyHash": "c22546c212b6be56"
 }

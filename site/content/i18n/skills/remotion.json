@@ -6,6 +6,15 @@
       "Usa las transiciones personalizadas del toolkit para este vídeo en Remotion",
       "Sigue las convenciones del proyecto al añadir este componente compartido de Remotion",
       "Aplica los patrones internos de Remotion de nuestro toolkit a esta composición"
+    ],
+    "title": "Extras de Remotion del toolkit",
+    "summary": "Componentes compartidos, transiciones personalizadas (glitch, light leak, clock wipe) y convenciones de proyecto para vídeos en Remotion.",
+    "keywords": [
+      "transiciones remotion",
+      "componentes remotion",
+      "glitch transition",
+      "remotion react",
+      "convenciones de proyecto"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "Use the toolkit's custom transitions for this Remotion video",
       "Follow our project conventions when adding this shared Remotion component",
       "Apply our toolkit's internal Remotion patterns to this composition"
+    ],
+    "title": "Toolkit extras for Remotion",
+    "summary": "Shared components, custom scene transitions (glitch, light leak, clock wipe) and project conventions for building videos in Remotion.",
+    "keywords": [
+      "remotion transitions",
+      "remotion components",
+      "glitch transition",
+      "react video",
+      "remotion conventions"
     ]
-  }
+  },
+  "copyHash": "507fab86b77b2dcc"
 }

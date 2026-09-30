@@ -1,6 +1,14 @@
 {
   "sourceHash": "dcfef7b0c946ff0f",
   "es": {
+    "title": "Auditoría de Microsoft Advertising",
+    "summary": "Audita tu cuenta de Microsoft Advertising (Bing Ads): etiqueta UET, importación desde Google, sindicación y pujas, con hallazgos priorizados.",
+    "keywords": [
+      "microsoft advertising",
+      "bing ads",
+      "etiqueta uet",
+      "importar desde google ads"
+    ],
     "description": "Audita la medición de Microsoft Advertising, UET, campañas de búsqueda y de audiencias, importaciones desde Google, sindicación, palabras clave, creatividades, pujas, presupuestos, inventario de Copilot y políticas. Úsalo para Microsoft Ads, Bing Ads, UET, Microsoft Audience Network, importación desde Google Ads u optimización de campañas de Microsoft.",
     "howToAsk": [
       "Audita mi cuenta de Microsoft Advertising (Bing Ads)",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "Microsoft Advertising audit",
+    "summary": "Audits a Microsoft Advertising (Bing Ads) account covering UET, Google imports, syndication and bidding, with prioritized findings.",
+    "keywords": [
+      "microsoft advertising",
+      "bing ads",
+      "uet tag",
+      "google ads import"
+    ],
     "howToAsk": [
       "Audit my Microsoft Advertising (Bing Ads) account",
       "Import my Google Ads campaigns into Microsoft Ads",
       "Check whether UET is set up correctly"
     ]
-  }
+  },
+  "copyHash": "32dd374016aa75e5"
 }

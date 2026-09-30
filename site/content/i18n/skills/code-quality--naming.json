@@ -6,6 +6,14 @@
       "/code-quality--naming revisa los nombres de variables de este archivo",
       "/code-quality--naming sugiere mejores nombres para mis funciones y clases",
       "/code-quality--naming unifica la convención de nombres en todo el módulo"
+    ],
+    "title": "Mejora de nombres de código",
+    "summary": "Revisa los nombres de variables, funciones y clases de tu código y devuelve una tabla con el nombre actual, el sugerido y el motivo.",
+    "keywords": [
+      "renombrar variables",
+      "nombres de funciones",
+      "código limpio",
+      "convenciones de nombres"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/code-quality--naming review the variable names in this file",
       "/code-quality--naming suggest better names for my functions and classes",
       "/code-quality--naming make naming conventions consistent across this module"
+    ],
+    "title": "Code naming review",
+    "summary": "Reviews variable, function and class names in your code and returns a table of current name, suggested name and the reason for each change.",
+    "keywords": [
+      "rename variables",
+      "naming conventions",
+      "clean code",
+      "function names"
     ]
-  }
+  },
+  "copyHash": "e87b15151f0057ce"
 }

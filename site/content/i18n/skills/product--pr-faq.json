@@ -6,6 +6,14 @@
       "/product--pr-faq escribe el PR/FAQ para esta idea de producto nueva",
       "/product--pr-faq ayúdame a hacer el working-backwards de esta funcionalidad",
       "/product--pr-faq redacta el comunicado de prensa como si ya hubiéramos lanzado"
+    ],
+    "title": "PR/FAQ estilo Amazon",
+    "summary": "Escribe un PR/FAQ al estilo working backwards de Amazon: nota de prensa ficticia más preguntas frecuentes de clientes y directivos.",
+    "keywords": [
+      "pr/faq",
+      "working backwards",
+      "nota de prensa producto",
+      "validar idea de producto"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/product--pr-faq write the PR/FAQ for this new product idea",
       "/product--pr-faq help me work backwards from the customer for this feature",
       "/product--pr-faq draft the press release as if we'd already launched"
+    ],
+    "title": "Amazon-style PR/FAQ",
+    "summary": "Writes an Amazon working-backwards PR/FAQ: a fictional press release plus the customer and internal questions that test the idea.",
+    "keywords": [
+      "pr faq",
+      "working backwards",
+      "product press release",
+      "validate product idea"
     ]
-  }
+  },
+  "copyHash": "20a4d44c364edb64"
 }

@@ -1,7 +1,17 @@
 {
   "sourceHash": "dcaa6f9970cb3300",
+  "copyHash": "4f5323777d95bf32",
   "es": {
     "description": "Crea un pull request completo con título, descripción y etiquetas generados de forma inteligente",
+    "title": "Pull request completa",
+    "summary": "Crea una pull request a partir de tus commits y tu diff, con título, resumen, plan de pruebas y etiquetas, y te devuelve la URL.",
+    "keywords": [
+      "crear pull request",
+      "descripción de pr",
+      "etiquetas de pr",
+      "gh pr create",
+      "plantilla de pr"
+    ],
     "howToAsk": [
       "/git--pr-create crea el PR para esta rama con una buena descripción",
       "/git--pr-create abre un pull request y sugiere las etiquetas adecuadas",
@@ -13,6 +23,15 @@
       "/git--pr-create create the PR for this branch with a solid description",
       "/git--pr-create open a pull request and suggest the right labels",
       "/git--pr-create generate the PR title and description from my commits"
+    ],
+    "title": "Complete pull request",
+    "summary": "Builds a pull request from your commits and diff, with a title, summary, test plan and labels, pushes the branch and returns the PR URL.",
+    "keywords": [
+      "create pull request",
+      "pr description",
+      "pr labels",
+      "gh pr create",
+      "pr template"
     ]
   }
 }

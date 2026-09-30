@@ -1,7 +1,17 @@
 {
   "sourceHash": "26648ed1585a5d49",
+  "copyHash": "724c1c5567c21135",
   "es": {
     "description": "Configura y audita registros y ajustes DNS en Cloudflare",
+    "title": "DNS de Cloudflare",
+    "summary": "Configura o audita los registros DNS de un dominio en Cloudflare: A, CNAME, MX, SPF, DKIM y DMARC, con ajustes de proxy y verificación.",
+    "keywords": [
+      "dns cloudflare",
+      "registros dns",
+      "spf dkim dmarc",
+      "auditar dns",
+      "cname"
+    ],
     "howToAsk": [
       "/networking--cloudflare-dns configura los registros DNS para mi dominio",
       "/networking--cloudflare-dns audita mi configuración DNS actual en Cloudflare",
@@ -13,6 +23,15 @@
       "/networking--cloudflare-dns configure DNS records for my domain",
       "/networking--cloudflare-dns audit my current Cloudflare DNS setup",
       "/networking--cloudflare-dns add an MX record for email"
+    ],
+    "title": "Cloudflare DNS records",
+    "summary": "Configures or audits DNS records for a Cloudflare domain, including A, CNAME, MX, SPF, DKIM and DMARC, proxy settings and verification.",
+    "keywords": [
+      "cloudflare dns",
+      "dns records",
+      "spf dkim dmarc",
+      "audit dns",
+      "cname"
     ]
   }
 }

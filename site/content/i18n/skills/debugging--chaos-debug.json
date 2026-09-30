@@ -6,6 +6,14 @@
       "/debugging--chaos-debug prueba mi API con inyección de fallos",
       "/debugging--chaos-debug busca bugs ocultos con casos límite extremos",
       "/debugging--chaos-debug estresa el servicio de pagos con escenarios caóticos"
+    ],
+    "title": "Pruebas de caos de código",
+    "summary": "Somete el código a entradas extremas y fallos simulados, escribe pruebas para cada escenario y clasifica por gravedad los fallos encontrados.",
+    "keywords": [
+      "pruebas de caos",
+      "inyección de fallos",
+      "casos límite",
+      "encontrar bugs ocultos"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/debugging--chaos-debug stress-test my API with fault injection",
       "/debugging--chaos-debug find hidden bugs with extreme edge cases",
       "/debugging--chaos-debug run chaos scenarios on the payment service"
+    ],
+    "title": "Chaos testing for your code",
+    "summary": "Stress-tests code with extreme inputs and simulated failures, writes tests per scenario, and rates the bugs it finds by severity.",
+    "keywords": [
+      "chaos testing",
+      "fault injection",
+      "edge cases",
+      "hidden bugs"
     ]
-  }
+  },
+  "copyHash": "16bb5272728397b3"
 }

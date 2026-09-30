@@ -6,6 +6,14 @@
       "/code-quality--error-handling revisa cómo manejo los errores en mi API",
       "/code-quality--error-handling mejora el manejo de excepciones de este servicio",
       "/code-quality--error-handling encuentra bloques try/catch mal usados en el proyecto"
+    ],
+    "title": "Revisión del manejo de errores",
+    "summary": "Audita cómo gestiona errores tu código: captura errores tragados, catches genéricos y mensajes pobres, y propone mejoras concretas.",
+    "keywords": [
+      "manejo de errores",
+      "try catch",
+      "errores silenciados",
+      "clases de error"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/code-quality--error-handling review how my API handles errors",
       "/code-quality--error-handling improve exception handling in this service",
       "/code-quality--error-handling find misused try/catch blocks across the project"
+    ],
+    "title": "Error handling review",
+    "summary": "Audits how your code handles errors, finding swallowed errors, generic catches and poor messages, and suggests concrete improvements.",
+    "keywords": [
+      "error handling",
+      "try catch",
+      "swallowed errors",
+      "custom error classes"
     ]
-  }
+  },
+  "copyHash": "4ab57f01b8800ade"
 }

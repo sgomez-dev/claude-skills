@@ -6,6 +6,14 @@
       "Necesito encadenar tres animaciones una detrás de otra",
       "Cómo controlo el orden y el solape de varias animaciones con un timeline",
       "Quiero anidar timelines de GSAP dentro de otro timeline"
+    ],
+    "title": "Secuencias de animación con GSAP",
+    "summary": "Guía de timelines de GSAP: gsap.timeline(), parámetro de posición, anidado y control de reproducción para encadenar animaciones.",
+    "keywords": [
+      "gsap timeline",
+      "secuenciar animaciones",
+      "orden de animación",
+      "keyframes"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "I need to chain three animations one after another",
       "How do I control the order and overlap of several animations with a timeline",
       "I want to nest GSAP timelines inside another timeline"
+    ],
+    "title": "Sequencing animations with GSAP",
+    "summary": "A guide to GSAP timelines: gsap.timeline(), the position parameter, nesting and playback control for sequencing animations.",
+    "keywords": [
+      "gsap timeline",
+      "sequence animations",
+      "animation order",
+      "choreograph keyframes"
     ]
-  }
+  },
+  "copyHash": "1a8b0f39cc4be3ed"
 }

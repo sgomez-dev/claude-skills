@@ -6,6 +6,14 @@
       "/automation--email-automation procesa automáticamente los correos que llegan a soporte",
       "/automation--email-automation crea una secuencia de bienvenida por email para nuevos usuarios",
       "/automation--email-automation añade un enlace de baja de suscripción a mis correos"
+    ],
+    "title": "Automatización de correos",
+    "summary": "Monta automatizaciones de email: leer correos entrantes, enviar plantillas y crear secuencias con bajas y pautas de RGPD y CAN-SPAM.",
+    "keywords": [
+      "automatizar emails",
+      "secuencia de correos",
+      "parsear correos entrantes",
+      "baja de suscripción"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/automation--email-automation automatically parse incoming support emails",
       "/automation--email-automation build a welcome email sequence for new users",
       "/automation--email-automation add an unsubscribe link to my emails"
+    ],
+    "title": "Email automation",
+    "summary": "Builds email automations: parse inbound mail, send templated messages and run sequences with unsubscribe handling and GDPR/CAN-SPAM safeguards.",
+    "keywords": [
+      "email automation",
+      "email sequence",
+      "parse inbound email",
+      "unsubscribe handling"
     ]
-  }
+  },
+  "copyHash": "7948cc9883a08c02"
 }

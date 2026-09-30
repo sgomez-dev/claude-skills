@@ -1,7 +1,17 @@
 {
   "sourceHash": "689dddb4f674b685",
+  "copyHash": "cd6a058d5ed9c17d",
   "es": {
     "description": "Genera el andamiaje de una app Flutter de producción: enrutado, gestión de estado, theming, flavors",
+    "title": "Proyecto Flutter listo para producción",
+    "summary": "Crea una app Flutter con rutas, gestión de estado elegida y confirmada, tema con modo oscuro y flavors de dev, staging y producción.",
+    "keywords": [
+      "crear app flutter",
+      "plantilla flutter",
+      "riverpod",
+      "go_router",
+      "flavors flutter"
+    ],
     "howToAsk": [
       "/mobile--flutter-scaffold crea una app Flutter nueva para mi startup",
       "/mobile--flutter-scaffold añade gestión de estado y theming",
@@ -13,6 +23,15 @@
       "/mobile--flutter-scaffold scaffold a new Flutter app for my startup",
       "/mobile--flutter-scaffold add state management and theming",
       "/mobile--flutter-scaffold set up flavors for dev and production"
+    ],
+    "title": "Production-ready Flutter app",
+    "summary": "Scaffolds a Flutter app with routing, a confirmed state-management choice, a theme with dark mode and dev, staging and prod flavors.",
+    "keywords": [
+      "flutter app template",
+      "new flutter project",
+      "riverpod",
+      "go_router",
+      "flutter flavors"
     ]
   }
 }

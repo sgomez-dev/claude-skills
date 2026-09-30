@@ -6,6 +6,14 @@
       "Entrena un Soul con mi cara para usarlo en vídeos",
       "Quiero un avatar digital que se parezca a mí en las imágenes generadas",
       "Crea mi gemelo digital para futuras generaciones de vídeo"
+    ],
+    "title": "Personaje Soul con tu cara",
+    "summary": "Entrena un modelo Soul con 5 a 20 fotos de una cara para reutilizarlo en imágenes y vídeos que conserven esa identidad.",
+    "keywords": [
+      "entrenar mi cara",
+      "gemelo digital",
+      "avatar con mi cara",
+      "soul character"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Train a Soul on my face to use in videos",
       "I want a digital avatar that looks like me in generated images",
       "Create my digital twin for future video generations"
+    ],
+    "title": "Soul character of your face",
+    "summary": "Trains a Soul model from 5 to 20 face photos so generated images and videos keep that person's identity.",
+    "keywords": [
+      "train my face",
+      "digital twin",
+      "avatar of myself",
+      "soul character"
     ]
-  }
+  },
+  "copyHash": "c0a99f4f36f45846"
 }

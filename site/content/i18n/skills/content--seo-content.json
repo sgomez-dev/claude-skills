@@ -6,6 +6,14 @@
       "/content--seo-content escribe un artículo SEO sobre 'mejores CRM para pymes'",
       "/content--seo-content analiza la SERP de mi keyword y dame la estructura de encabezados",
       "/content--seo-content crea un brief SEO con enlaces internos para este tema"
+    ],
+    "title": "Artículo SEO con briefing",
+    "summary": "Elabora un briefing SEO a partir de lo que posiciona hoy (intención, SERP, encabezados, enlaces internos) y redacta el artículo.",
+    "keywords": [
+      "artículo seo",
+      "briefing seo",
+      "intención de búsqueda",
+      "análisis de serp"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/content--seo-content write an SEO article about 'best CRM for small businesses'",
       "/content--seo-content analyze the SERP for my keyword and give me a heading structure",
       "/content--seo-content create an SEO brief with internal links for this topic"
+    ],
+    "title": "SEO brief and article",
+    "summary": "Builds an SEO brief from what ranks today (intent, SERP, headings, internal links) and then writes the article to it.",
+    "keywords": [
+      "seo article",
+      "seo content brief",
+      "search intent",
+      "serp analysis"
     ]
-  }
+  },
+  "copyHash": "fed352e2ab43462e"
 }

@@ -1,6 +1,14 @@
 {
   "sourceHash": "2ed4a38db31d69a0",
   "es": {
+    "title": "Diseño de experimentos publicitarios",
+    "summary": "Diseña o analiza tests A/B de anuncios con hipótesis, tamaño de muestra y duración, y devuelve una decisión en lenguaje claro.",
+    "keywords": [
+      "test a/b de anuncios",
+      "tamaño de muestra",
+      "significancia estadística",
+      "diseño de experimento"
+    ],
     "description": "Diseña y evalúa experimentos de anuncios de pago con hipótesis, unidades de aleatorización, supuestos de tamaño de muestra y duración, salvaguardas, herramientas de experimentación de la plataforma, análisis y reglas de decisión. Úsalo para test A/B, split test, diseño de experimentos, hipótesis, significancia estadística, tamaño de muestra, duración del test o lectura de resultados de un experimento.",
     "howToAsk": [
       "Diseña un test A/B para probar dos creatividades distintas",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "Ad experiment design",
+    "summary": "Designs or reads out ad A/B tests with a hypothesis, sample size and duration, and returns a plain-language decision.",
+    "keywords": [
+      "ad a/b test",
+      "sample size",
+      "statistical significance",
+      "experiment design"
+    ],
     "howToAsk": [
       "Design an A/B test for two different creatives",
       "What sample size do I need for this test to be significant?",
       "Analyze this experiment's results and tell me what won"
     ]
-  }
+  },
+  "copyHash": "5f1a0c5580f59892"
 }

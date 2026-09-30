@@ -6,6 +6,14 @@
       "/finance--unit-economics calcula el margen de contribución por cliente",
       "/finance--unit-economics necesito saber en cuántos meses recuperamos el CAC",
       "/finance--unit-economics analiza la sensibilidad del ratio LTV:CAC"
+    ],
+    "title": "Unit economics: CAC y LTV",
+    "summary": "Calcula margen de contribución, CAC, payback y ratio LTV:CAC con tus números, con tablas de sensibilidad para ver qué palanca pesa más.",
+    "keywords": [
+      "unit economics",
+      "cac y ltv",
+      "payback de cac",
+      "margen de contribución"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/finance--unit-economics calculate contribution margin per customer",
       "/finance--unit-economics I need to know how many months to pay back CAC",
       "/finance--unit-economics run a sensitivity analysis on our LTV:CAC ratio"
+    ],
+    "title": "Unit economics: CAC, LTV, payback",
+    "summary": "Calculates contribution margin, CAC, payback and LTV:CAC from your numbers, with sensitivity tables showing which lever matters most.",
+    "keywords": [
+      "unit economics",
+      "cac and ltv",
+      "cac payback",
+      "contribution margin"
     ]
-  }
+  },
+  "copyHash": "2d1499ab903ed2ef"
 }

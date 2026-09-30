@@ -6,6 +6,14 @@
       "/performance--perf-audit haz una auditoría de rendimiento completa de la app",
       "/performance--perf-audit encuentra los cuellos de botella más importantes",
       "/performance--perf-audit revisa por qué la app va lenta en general"
+    ],
+    "title": "Auditoría de rendimiento",
+    "summary": "Audita el código de tu backend y frontend en busca de cuellos de botella, y lista cada hallazgo con ubicación, impacto estimado y arreglo.",
+    "keywords": [
+      "auditoría de rendimiento",
+      "cuellos de botella",
+      "optimizar app",
+      "consultas n+1"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/performance--perf-audit run a full performance audit on the app",
       "/performance--perf-audit find the biggest bottlenecks",
       "/performance--perf-audit figure out why the app feels slow overall"
+    ],
+    "title": "Performance audit",
+    "summary": "Audits your backend and frontend code for bottlenecks and lists each finding with its location, estimated impact and a specific fix.",
+    "keywords": [
+      "performance audit",
+      "bottlenecks",
+      "optimize app",
+      "n+1 queries"
     ]
-  }
+  },
+  "copyHash": "395b92872d34c9a4"
 }

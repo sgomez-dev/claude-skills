@@ -6,6 +6,14 @@
       "/automation--spreadsheet-automation automatiza el cálculo de comisiones en esta hoja de Sheets",
       "/automation--spreadsheet-automation importa estos datos a Excel y valida las filas",
       "/automation--spreadsheet-automation escribe un script de Apps Script para actualizar este informe"
+    ],
+    "title": "Automatizar hojas de cálculo",
+    "summary": "Automatiza una hoja de cálculo con fórmulas, Google Apps Script o Python (openpyxl/pandas) para importar, validar y calcular sin errores.",
+    "keywords": [
+      "automatizar excel",
+      "google apps script",
+      "fórmulas hoja de cálculo",
+      "openpyxl"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/automation--spreadsheet-automation automate commission calculations in this Google Sheet",
       "/automation--spreadsheet-automation import this data into Excel and validate each row",
       "/automation--spreadsheet-automation write an Apps Script to refresh this report"
+    ],
+    "title": "Spreadsheet automation",
+    "summary": "Automates a spreadsheet with formulas, Google Apps Script or Python (openpyxl/pandas) for reliable imports, validation and calculations.",
+    "keywords": [
+      "automate excel",
+      "google apps script",
+      "spreadsheet formulas",
+      "openpyxl"
     ]
-  }
+  },
+  "copyHash": "179933e5a3075aa8"
 }

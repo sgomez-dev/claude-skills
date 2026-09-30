@@ -1,7 +1,17 @@
 {
   "sourceHash": "16b4554acc7cb219",
+  "copyHash": "fd696b216bbb0f52",
   "es": {
     "description": "Añade autenticación biométrica: Face/Touch ID, almacenamiento seguro de tokens, alternativas seguras",
+    "title": "Autenticación biométrica en apps",
+    "summary": "Añade Face ID, Touch ID o biometría Android a tu app, con el token guardado en el llavero seguro del sistema y un acceso alternativo real.",
+    "keywords": [
+      "face id",
+      "touch id",
+      "autenticación biométrica",
+      "huella dactilar app",
+      "keychain"
+    ],
     "howToAsk": [
       "/mobile--biometric-auth añade Face ID a mi app de iOS",
       "/mobile--biometric-auth implementa Touch ID con alternativa de PIN",
@@ -13,6 +23,15 @@
       "/mobile--biometric-auth add Face ID to my iOS app",
       "/mobile--biometric-auth implement Touch ID with a PIN fallback",
       "/mobile--biometric-auth store the session token securely"
+    ],
+    "title": "Biometric login for mobile apps",
+    "summary": "Adds Face ID, Touch ID or Android biometrics to your app, with the token held in the platform keystore and a real non-biometric fallback.",
+    "keywords": [
+      "face id",
+      "touch id",
+      "biometric authentication",
+      "fingerprint login",
+      "keystore"
     ]
   }
 }

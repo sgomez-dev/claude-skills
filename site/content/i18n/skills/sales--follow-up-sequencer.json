@@ -6,6 +6,14 @@
       "/sales--follow-up-sequencer diseña una cadencia de seguimiento para leads que no responden",
       "/sales--follow-up-sequencer necesito los tiempos de seguimiento para deals en negociación",
       "/sales--follow-up-sequencer crea disparadores de salida para esta cadencia de emails"
+    ],
+    "title": "Cadencias de seguimiento de ventas",
+    "summary": "Diseña cadencias de seguimiento por fase del trato, con tiempos, un mensaje útil por toque y condiciones de salida para no insistir sin fin.",
+    "keywords": [
+      "seguimiento de ventas",
+      "cadencia tras propuesta",
+      "secuencia de follow-up",
+      "oportunidad enfriada"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/sales--follow-up-sequencer design a follow-up cadence for unresponsive leads",
       "/sales--follow-up-sequencer I need follow-up timing for deals in negotiation",
       "/sales--follow-up-sequencer create exit triggers for this email cadence"
+    ],
+    "title": "Sales follow-up cadences",
+    "summary": "Designs follow-up cadences per deal stage with timing, a value-adding message per touch and exit triggers so sequences end.",
+    "keywords": [
+      "follow-up cadence",
+      "after proposal follow-up",
+      "sales sequence",
+      "deal gone dark"
     ]
-  }
+  },
+  "copyHash": "c54350639d1e31c1"
 }

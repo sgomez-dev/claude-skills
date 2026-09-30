@@ -6,6 +6,14 @@
       "/docs--openapi-gen genera el archivo OpenAPI de mi API REST",
       "/docs--openapi-gen actualiza el swagger.json con los endpoints nuevos",
       "/docs--openapi-gen necesito la especificación OpenAPI de este servicio"
+    ],
+    "title": "Especificación OpenAPI",
+    "summary": "Escanea los endpoints de tu código y genera o actualiza una especificación OpenAPI 3.0 en YAML con esquemas y autenticación.",
+    "keywords": [
+      "openapi",
+      "swagger",
+      "generar especificación api",
+      "openapi yaml"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/docs--openapi-gen generate the OpenAPI file for my REST API",
       "/docs--openapi-gen update swagger.json with the new endpoints",
       "/docs--openapi-gen I need the OpenAPI spec for this service"
+    ],
+    "title": "OpenAPI specification",
+    "summary": "Scans your code endpoints and generates or updates an OpenAPI 3.0 YAML spec with schemas, security schemes and examples.",
+    "keywords": [
+      "openapi",
+      "swagger",
+      "generate api spec",
+      "openapi yaml"
     ]
-  }
+  },
+  "copyHash": "ebfa9a1aa1077509"
 }

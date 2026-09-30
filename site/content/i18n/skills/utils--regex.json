@@ -6,6 +6,14 @@
       "/utils--regex crea una expresión regular para validar emails",
       "/utils--regex explícame qué hace esta regex que encontré en el código",
       "/utils--regex prueba si esta regex detecta correctamente números de teléfono"
+    ],
+    "title": "Expresiones regulares",
+    "summary": "Crea, explica y prueba expresiones regulares en el lenguaje que uses, con casos de prueba y avisos de ReDoS y de diferencias entre motores.",
+    "keywords": [
+      "crear regex",
+      "explicar regex",
+      "probar expresión regular",
+      "regex redos"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/utils--regex write a regex to validate email addresses",
       "/utils--regex explain what this regex I found in the code does",
       "/utils--regex test whether this regex correctly matches phone numbers"
+    ],
+    "title": "Regular expressions",
+    "summary": "Writes, explains and tests regular expressions in your language, with test cases and warnings about ReDoS and flavor differences.",
+    "keywords": [
+      "write regex",
+      "explain regex",
+      "test regular expression",
+      "regex redos"
     ]
-  }
+  },
+  "copyHash": "33a1d819b53a7bd8"
 }

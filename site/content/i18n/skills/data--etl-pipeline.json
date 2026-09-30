@@ -6,6 +6,14 @@
       "/data--etl-pipeline pipeline ETL de Postgres a BigQuery",
       "/data--etl-pipeline pipeline ELT idempotente con reintentos en caso de fallo",
       "/data--etl-pipeline monta un ETL para sincronizar Stripe con mi warehouse"
+    ],
+    "title": "Pipeline ETL o ELT idempotente",
+    "summary": "Crea el esqueleto de un pipeline ETL o ELT que se puede relanzar sin duplicar datos, adaptado a las herramientas de tu repositorio.",
+    "keywords": [
+      "pipeline etl",
+      "carga incremental",
+      "pipeline de datos",
+      "airflow dagster"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/data--etl-pipeline ETL pipeline from Postgres to BigQuery",
       "/data--etl-pipeline idempotent ELT pipeline with retry on failure",
       "/data--etl-pipeline scaffold ETL to sync Stripe into my warehouse"
+    ],
+    "title": "Idempotent ETL or ELT pipeline",
+    "summary": "Scaffolds an ETL or ELT pipeline that is safe to re-run, fails loudly, and uses the data tools already in your repo.",
+    "keywords": [
+      "etl pipeline",
+      "incremental load",
+      "data pipeline scaffold",
+      "airflow dagster"
     ]
-  }
+  },
+  "copyHash": "bfef9f3162aff80e"
 }

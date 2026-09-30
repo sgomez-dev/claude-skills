@@ -6,6 +6,14 @@
       "/product--competitive-teardown analiza el onboarding de nuestro principal competidor",
       "/product--competitive-teardown compara los precios de estas dos apps rivales",
       "/product--competitive-teardown haz un análisis completo del producto de la competencia"
+    ],
+    "title": "Análisis profundo de competidor",
+    "summary": "Investiga un competidor con fuentes públicas y compara onboarding, funciones, precios y UX, con fuente y fecha en cada dato.",
+    "keywords": [
+      "análisis de competidor",
+      "teardown de producto",
+      "comparativa de precios",
+      "benchmark competencia"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/product--competitive-teardown analyze our main competitor's onboarding flow",
       "/product--competitive-teardown compare pricing between these two rival apps",
       "/product--competitive-teardown do a full teardown of the competitor's product"
+    ],
+    "title": "Competitor product teardown",
+    "summary": "Researches a competitor from public sources and compares onboarding, features, pricing and UX, dating and sourcing every claim.",
+    "keywords": [
+      "competitor analysis",
+      "product teardown",
+      "competitor pricing comparison",
+      "competitive research"
     ]
-  }
+  },
+  "copyHash": "47d7d4f95e2af92c"
 }

@@ -6,6 +6,14 @@
       "Abre mi cuenta de Gmail en Chrome y busca los correos sin leer de esta semana",
       "Entra en mi panel de administración y rellena el formulario de nuevo producto",
       "Haz capturas de pantalla de mi web tras iniciar sesión en mi cuenta real"
+    ],
+    "title": "Automatizar tu Chrome con capturas",
+    "summary": "Controla tu propio Chrome, con sus sesiones y cookies, mediante Midscene Bridge, que actúa a partir de capturas de pantalla sin usar el DOM.",
+    "keywords": [
+      "automatizar chrome",
+      "midscene",
+      "navegar con sesión iniciada",
+      "automatización visual"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Open my Gmail in Chrome and find this week's unread emails",
       "Log into my admin dashboard and fill out the new product form",
       "Take screenshots of my site after signing into my real account"
+    ],
+    "title": "Automate your Chrome by screenshots",
+    "summary": "Controls your own Chrome, with its logins and cookies, through Midscene Bridge, acting from screenshots rather than the DOM.",
+    "keywords": [
+      "automate chrome",
+      "midscene",
+      "browse logged in",
+      "visual browser automation"
     ]
-  }
+  },
+  "copyHash": "2c2934b2df8bfb80"
 }

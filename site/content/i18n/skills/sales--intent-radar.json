@@ -6,6 +6,14 @@
       "/sales--intent-radar busca señales de compra en estas 10 cuentas objetivo",
       "/sales--intent-radar avísame si alguna de mis cuentas clave está contratando o levantando ronda",
       "/sales--intent-radar detecta cambios tecnológicos recientes en esta lista de empresas"
+    ],
+    "title": "Radar de señales de compra",
+    "summary": "Rastrea fuentes públicas en busca de señales de compra en tus cuentas objetivo (contrataciones, financiación, cambios) y las ordena por fuerza y recencia.",
+    "keywords": [
+      "señales de compra",
+      "cuentas objetivo",
+      "intent data",
+      "detectar oportunidades"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/sales--intent-radar find buying signals across these 10 target accounts",
       "/sales--intent-radar tell me if any key account is hiring or raising funding",
       "/sales--intent-radar detect recent tech changes across this list of companies"
+    ],
+    "title": "Buying signal radar",
+    "summary": "Sweeps public sources for buying signals on target accounts, such as hiring, funding and leadership changes, and ranks them by strength and recency.",
+    "keywords": [
+      "buying signals",
+      "intent data",
+      "target accounts",
+      "sales triggers"
     ]
-  }
+  },
+  "copyHash": "1b341ed3f930d9e5"
 }

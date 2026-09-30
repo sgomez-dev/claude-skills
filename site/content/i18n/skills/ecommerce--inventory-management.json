@@ -6,6 +6,14 @@
       "/ecommerce--inventory-management necesito controlar el stock en varias tiendas",
       "/ecommerce--inventory-management añade alertas cuando un producto tenga poco stock",
       "/ecommerce--inventory-management implementa reservas de stock durante el checkout"
+    ],
+    "title": "Gestión de inventario",
+    "summary": "Implementa el control de stock por variante: reservas que evitan vender de más, alertas de stock bajo y soporte para varias ubicaciones.",
+    "keywords": [
+      "control de stock",
+      "inventario tienda online",
+      "evitar sobreventa",
+      "alertas de stock bajo"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ecommerce--inventory-management I need to track stock across multiple stores",
       "/ecommerce--inventory-management add alerts when a product is running low",
       "/ecommerce--inventory-management implement stock reservations during checkout"
+    ],
+    "title": "Inventory management",
+    "summary": "Implements per-SKU stock tracking with reservations that prevent overselling, low-stock alerts and optional multi-location support.",
+    "keywords": [
+      "inventory tracking",
+      "prevent overselling",
+      "low stock alerts",
+      "stock management"
     ]
-  }
+  },
+  "copyHash": "3c05e97bc142ad96"
 }

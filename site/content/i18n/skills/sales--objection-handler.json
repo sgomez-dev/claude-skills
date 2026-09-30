@@ -6,6 +6,14 @@
       "/sales--objection-handler crea un playbook para la objeción de precio",
       "/sales--objection-handler cómo respondo cuando dicen que ya usan a un competidor",
       "/sales--objection-handler dame reformulaciones para la objeción de \"lo pensaré\""
+    ],
+    "title": "Guía de manejo de objeciones",
+    "summary": "Crea un playbook con las objeciones reales que oyes: qué significan, qué preguntar, cómo reformularlas, qué prueba usar y el siguiente paso.",
+    "keywords": [
+      "objeciones de ventas",
+      "manejar objeciones",
+      "respuestas a precio caro",
+      "playbook comercial"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/sales--objection-handler build a playbook for the price objection",
       "/sales--objection-handler how do I respond when they say they already use a competitor",
       "/sales--objection-handler give me reframes for the \"I'll think about it\" objection"
+    ],
+    "title": "Sales objection playbook",
+    "summary": "Builds a playbook from the objections you actually hear: what each means, the question to ask, the reframe, the proof and the next step.",
+    "keywords": [
+      "sales objections",
+      "objection handling",
+      "price objection",
+      "sales playbook"
     ]
-  }
+  },
+  "copyHash": "279397e9ce46457e"
 }

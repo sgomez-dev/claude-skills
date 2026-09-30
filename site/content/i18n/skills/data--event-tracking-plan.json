@@ -6,6 +6,14 @@
       "/data--event-tracking-plan plan de tracking para el flujo de registro",
       "/data--event-tracking-plan define eventos y propiedades para el checkout",
       "/data--event-tracking-plan revisa la nomenclatura de mis eventos de analítica"
+    ],
+    "title": "Plan de medición de eventos",
+    "summary": "Diseña un plan de tracking de analítica de producto en YAML: eventos, propiedades y reglas de nombres, basado en el código de tu app.",
+    "keywords": [
+      "plan de tracking",
+      "eventos de analítica",
+      "nombres de eventos",
+      "mixpanel amplitude"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/data--event-tracking-plan tracking plan for the signup flow",
       "/data--event-tracking-plan define events and properties for checkout",
       "/data--event-tracking-plan review naming rules for my analytics events"
+    ],
+    "title": "Product analytics tracking plan",
+    "summary": "Designs a YAML product analytics tracking plan with events, properties and naming rules, grounded in your app's actual code.",
+    "keywords": [
+      "tracking plan",
+      "analytics events",
+      "event naming",
+      "mixpanel amplitude"
     ]
-  }
+  },
+  "copyHash": "a38098b956a59bbf"
 }

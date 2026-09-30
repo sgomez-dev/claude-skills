@@ -6,6 +6,14 @@
       "/ml--feature-engineering crea features a partir de estas columnas de fecha",
       "/ml--feature-engineering codifica estas variables categóricas sin fugas",
       "/ml--feature-engineering añade interacciones entre precio y categoría"
+    ],
+    "title": "Variables para modelos de ML",
+    "summary": "Diseña variables para un problema tabular dentro de un pipeline que evita la fuga de datos: codificaciones, escalado e interacciones.",
+    "keywords": [
+      "ingeniería de variables",
+      "feature engineering",
+      "codificar categóricas",
+      "pipeline sklearn"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ml--feature-engineering create features from these date columns",
       "/ml--feature-engineering encode these categorical variables without leakage",
       "/ml--feature-engineering add interaction features between price and category"
+    ],
+    "title": "Feature engineering for ML",
+    "summary": "Designs features for a tabular ML problem inside a leakage-safe pipeline: encodings, scaling, interactions and date-based features.",
+    "keywords": [
+      "feature engineering",
+      "encode categoricals",
+      "sklearn pipeline",
+      "tabular features"
     ]
-  }
+  },
+  "copyHash": "34386e2ae2754199"
 }

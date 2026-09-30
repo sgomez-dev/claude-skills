@@ -6,6 +6,38 @@
       "/sales--cold-outreach secuencia de 4 emails en frío para directores de RRHH",
       "/sales--cold-outreach necesito mensajes de LinkedIn personalizados para estos leads",
       "/sales--cold-outreach crea una secuencia de outreach para startups de fintech"
+    ],
+    "title": "Secuencias de email en frío",
+    "summary": "Escribe secuencias de email y LinkedIn en varios toques, personalizadas con los datos de cada lead, con cadencia, salidas y asuntos para pruebas A/B.",
+    "keywords": [
+      "email en frío",
+      "secuencia de prospección",
+      "mensajes linkedin",
+      "cold email"
+    ],
+    "useWhen": [
+      "Tienes una lista de leads con señales o contexto para personalizar",
+      "Quieres una secuencia de email y LinkedIn para reservar reuniones",
+      "Necesitas un enfoque distinto por segmento de leads"
+    ],
+    "notFor": [
+      "Enviar mensajes masivos genéricos sin datos de cada lead",
+      "Hacer de asesor legal sobre CAN-SPAM o RGPD"
+    ],
+    "output": "Un archivo Markdown con la cadencia y las plantillas por segmento, y opcionalmente un CSV con los mensajes de cada lead.",
+    "faq": [
+      {
+        "q": "¿Inventa datos para personalizar los mensajes?",
+        "a": "No. La personalización sale solo de los datos que aportes. Los leads sin señal utilizable van a una lista «needs research» en lugar de recibir texto genérico."
+      },
+      {
+        "q": "¿Cuántos toques incluye la secuencia?",
+        "a": "Por defecto propone cinco toques en 15 días, combinando email y LinkedIn, y acaba con un email de cierre. Puedes adaptar la cadencia y los canales a tu segmento."
+      },
+      {
+        "q": "¿Cumple la normativa de email comercial?",
+        "a": "Incluye una vía de baja y pide respetar CAN-SPAM, RGPD y la ley local, pero no es asesoramiento legal. Conviene que lo revise quien lleve el cumplimiento."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "/sales--cold-outreach 4-email cold sequence for HR directors",
       "/sales--cold-outreach I need personalized LinkedIn messages for these leads",
       "/sales--cold-outreach create an outreach sequence for fintech startups"
+    ],
+    "title": "Cold outreach sequences",
+    "summary": "Writes multi-touch cold email and LinkedIn sequences personalized from each lead's data, with cadence, exit triggers and subject lines to A/B test.",
+    "keywords": [
+      "cold email",
+      "outreach sequence",
+      "linkedin outreach",
+      "sales prospecting"
+    ],
+    "useWhen": [
+      "You have a lead list with signals or context to personalize from",
+      "You want an email and LinkedIn sequence that books meetings",
+      "You need a different angle for each lead segment"
+    ],
+    "notFor": [
+      "Sending generic mass blasts with no per-lead data",
+      "Acting as legal advice on CAN-SPAM or GDPR"
+    ],
+    "output": "A Markdown file with the cadence and templates per segment, and optionally a CSV with each lead's merged messages.",
+    "faq": [
+      {
+        "q": "Does it invent details to personalize messages?",
+        "a": "No. Personalization comes only from the data you provide. Leads with no usable signal go to a needs-research list instead of getting generic copy."
+      },
+      {
+        "q": "How many touches does a sequence have?",
+        "a": "By default it proposes five touches over 15 days mixing email and LinkedIn, ending with a breakup email. You can adapt the cadence and channels to your segment."
+      },
+      {
+        "q": "Does it make the emails compliant?",
+        "a": "It adds an opt-out path and tells you to respect CAN-SPAM, GDPR and local law, but it is not legal advice. Have whoever owns compliance review it."
+      }
     ]
-  }
+  },
+  "copyHash": "4769136410e0c4fa"
 }

@@ -6,6 +6,14 @@
       "/fullstack--search-feature añade un buscador de productos con filtros",
       "/fullstack--search-feature ayúdame a elegir entre Postgres FTS y Meilisearch",
       "/fullstack--search-feature necesito que los resultados más relevantes salgan primero"
+    ],
+    "title": "Buscador para tu app",
+    "summary": "Añade búsqueda a tu app: elige motor (Postgres, Meilisearch o Elastic), indexación, ranking y una interfaz con resultados al escribir.",
+    "keywords": [
+      "añadir buscador",
+      "búsqueda de texto completo",
+      "meilisearch",
+      "buscar mientras escribes"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/fullstack--search-feature add a product search bar with filters",
       "/fullstack--search-feature help me choose between Postgres FTS and Meilisearch",
       "/fullstack--search-feature make the most relevant results show up first"
+    ],
+    "title": "Search feature",
+    "summary": "Adds search to your app: picks an engine (Postgres, Meilisearch or Elastic), sets up indexing and ranking, and builds a search-as-you-type UI.",
+    "keywords": [
+      "add search",
+      "full text search",
+      "meilisearch",
+      "search as you type"
     ]
-  }
+  },
+  "copyHash": "128603e222777c1d"
 }

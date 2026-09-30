@@ -6,6 +6,14 @@
       "/networking--zero-trust protege el panel de administración solo para mi equipo",
       "/networking--zero-trust exige login corporativo para acceder a la app interna",
       "/networking--zero-trust configura Zero Trust para nuestra herramienta interna"
+    ],
+    "title": "Acceso Zero Trust con Cloudflare",
+    "summary": "Diseña las políticas de acceso Zero Trust de Cloudflare para proteger apps internas, y genera el código que valida la identidad en tu aplicación.",
+    "keywords": [
+      "cloudflare access",
+      "zero trust",
+      "proteger panel admin",
+      "sso"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/networking--zero-trust restrict the admin panel to just my team",
       "/networking--zero-trust require company login to access the internal app",
       "/networking--zero-trust set up Zero Trust for our internal tool"
+    ],
+    "title": "Cloudflare Zero Trust access",
+    "summary": "Designs Cloudflare Zero Trust access policies to protect internal apps, and generates the code that validates user identity in your application.",
+    "keywords": [
+      "cloudflare access",
+      "zero trust",
+      "protect admin panel",
+      "sso"
     ]
-  }
+  },
+  "copyHash": "3715df0b639ec255"
 }

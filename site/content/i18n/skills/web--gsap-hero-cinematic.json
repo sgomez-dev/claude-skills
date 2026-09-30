@@ -6,6 +6,14 @@
       "/web--gsap-hero-cinematic crea un hero cinematográfico con vídeo de fondo",
       "/web--gsap-hero-cinematic añade parallax 3D al hero de mi landing",
       "/web--gsap-hero-cinematic anima el título con un efecto de revelado por capas"
+    ],
+    "title": "Héroe cinematográfico con GSAP",
+    "summary": "Crea la cabecera de una web con GSAP: revelados por capas, parallax 3D, tipografía animada y vídeo de fondo, con alternativa para movimiento reducido.",
+    "keywords": [
+      "hero animado",
+      "parallax 3d",
+      "gsap splittext",
+      "cabecera cinematográfica"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/web--gsap-hero-cinematic create a cinematic hero with a video background",
       "/web--gsap-hero-cinematic add 3D parallax to my landing page hero",
       "/web--gsap-hero-cinematic animate the headline with a layered reveal effect"
+    ],
+    "title": "Cinematic hero section with GSAP",
+    "summary": "Builds a website hero section with GSAP: layered reveals, 3D parallax, animated typography and video backgrounds, with a reduced-motion fallback.",
+    "keywords": [
+      "animated hero section",
+      "3d parallax",
+      "gsap splittext",
+      "cinematic landing hero"
     ]
-  }
+  },
+  "copyHash": "c7e2931e6d99c5f9"
 }

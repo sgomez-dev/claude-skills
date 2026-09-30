@@ -1,6 +1,14 @@
 {
   "sourceHash": "a6f2e53194e43716",
   "es": {
+    "title": "Anuncios de la competencia",
+    "summary": "Investiga los anuncios de tus competidores en bibliotecas públicas y devuelve sus mensajes, formatos y huecos, con la fuente de cada observación.",
+    "keywords": [
+      "anuncios de la competencia",
+      "biblioteca de anuncios",
+      "meta ad library",
+      "análisis de competidores ppc"
+    ],
     "description": "Investiga la presencia publicitaria de la competencia, sus mensajes, creatividades, formatos, páginas de aterrizaje, señales de palabras clave y subastas, bibliotecas de anuncios transparentes y oportunidades estratégicas en las plataformas compatibles. Úsalo para anuncios de la competencia, bibliotecas de anuncios, espionaje de anuncios, análisis competitivo de PPC, creatividades de la competencia, Google Ads Transparency, Meta Ad Library o investigación de medios de pago de la competencia.",
     "howToAsk": [
       "Investiga qué anuncios está usando mi competencia en Meta e Instagram",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "Competitor ad research",
+    "summary": "Researches competitors' ads through public ad libraries and returns their messaging, formats and gaps, with a source for every observation.",
+    "keywords": [
+      "competitor ads",
+      "ad library",
+      "meta ad library",
+      "competitor ppc analysis"
+    ],
     "howToAsk": [
       "Research what ads my competitors are running on Meta and Instagram",
       "Check the Google Ads Transparency library for this competitor's messaging",
       "Compare my competitors' landing pages against mine"
     ]
-  }
+  },
+  "copyHash": "c91b9061ea7f24b9"
 }

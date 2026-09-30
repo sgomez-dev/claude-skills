@@ -6,6 +6,14 @@
       "/ai--llm-cost-optimizer la factura de la API de Claude se ha disparado, ayúdame a bajarla",
       "/ai--llm-cost-optimizer añade caché para no repetir llamadas idénticas al modelo",
       "/ai--llm-cost-optimizer enruta las consultas sencillas a un modelo más barato"
+    ],
+    "title": "Ahorro de costes en IA",
+    "summary": "Mide dónde se gastan los tokens de tu app y aplica enrutado de modelos, cachés y compresión de prompts, validando cada cambio con una evaluación.",
+    "keywords": [
+      "reducir coste llm",
+      "ahorrar tokens",
+      "caché de prompts",
+      "enrutar modelos"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ai--llm-cost-optimizer our Claude API bill spiked, help me bring it down",
       "/ai--llm-cost-optimizer add caching so we don't repeat identical model calls",
       "/ai--llm-cost-optimizer route simple queries to a cheaper model"
+    ],
+    "title": "Cutting LLM costs",
+    "summary": "Measures where your app spends tokens, then applies model routing, caching and prompt compression, keeping each change only if an eval shows quality holds.",
+    "keywords": [
+      "reduce llm cost",
+      "save tokens",
+      "prompt caching",
+      "model routing"
     ]
-  }
+  },
+  "copyHash": "bdcbf1141c5a1355"
 }

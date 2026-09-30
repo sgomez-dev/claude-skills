@@ -6,6 +6,14 @@
       "/code-quality--dependency-audit revisa las dependencias de mi package.json",
       "/code-quality--dependency-audit hay alguna librería insegura o sin mantenimiento en mi proyecto",
       "/code-quality--dependency-audit sugiere alternativas más ligeras a mis dependencias actuales"
+    ],
+    "title": "Auditoría de dependencias",
+    "summary": "Revisa las dependencias de tu proyecto (npm, pip, Go, Cargo) y lista vulnerabilidades, paquetes sin mantener, alternativas y acciones por prioridad.",
+    "keywords": [
+      "auditar dependencias",
+      "vulnerabilidades npm",
+      "paquetes obsoletos",
+      "alternativas a librerías"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/code-quality--dependency-audit review the dependencies in my package.json",
       "/code-quality--dependency-audit is any library in my project unsafe or unmaintained",
       "/code-quality--dependency-audit suggest lighter alternatives to my current dependencies"
+    ],
+    "title": "Dependency audit",
+    "summary": "Audits your project's dependencies (npm, pip, Go, Cargo) for known vulnerabilities, unmaintained packages and lighter alternatives, then ranks the actions.",
+    "keywords": [
+      "audit dependencies",
+      "npm audit",
+      "unmaintained packages",
+      "outdated libraries"
     ]
-  }
+  },
+  "copyHash": "3c894b2af1af6656"
 }

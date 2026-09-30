@@ -6,6 +6,14 @@
       "/devops--deploy-check revisa si todo está listo para desplegar a producción",
       "/devops--deploy-check dame un checklist antes de publicar esta versión",
       "/devops--deploy-check verifica que no se me olvide nada antes del deploy"
+    ],
+    "title": "Checklist previa al despliegue",
+    "summary": "Ejecuta una lista de comprobación antes de desplegar: código, seguridad, base de datos y configuración, para detectar problemas antes de publicar.",
+    "keywords": [
+      "checklist de despliegue",
+      "antes de desplegar",
+      "revisar antes de publicar",
+      "pre-deploy"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/devops--deploy-check check if everything's ready to deploy to production",
       "/devops--deploy-check give me a checklist before shipping this release",
       "/devops--deploy-check make sure I'm not forgetting anything before deploy"
+    ],
+    "title": "Pre-deployment checklist",
+    "summary": "Runs a checklist before you ship, covering code quality, security, database and configuration, to catch problems before release.",
+    "keywords": [
+      "deployment checklist",
+      "before deploying",
+      "pre-deploy check",
+      "release readiness"
     ]
-  }
+  },
+  "copyHash": "cd8f35f224873234"
 }

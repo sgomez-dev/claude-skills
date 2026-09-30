@@ -6,6 +6,39 @@
       "/legal--oss-license-check revisa las licencias de mis dependencias npm",
       "/legal--oss-license-check dime si tengo algún riesgo de copyleft en el proyecto",
       "/legal--oss-license-check comprueba la compatibilidad de licencias antes de publicar"
+    ],
+    "title": "Auditoría de licencias open source",
+    "summary": "Escanea el árbol de dependencias para detectar licencias incompatibles, riesgo de copyleft y obligaciones sin cumplir.",
+    "keywords": [
+      "licencias open source",
+      "riesgo copyleft",
+      "agpl y gpl",
+      "auditoría de dependencias",
+      "notice"
+    ],
+    "useWhen": [
+      "Vas a lanzar o distribuir un producto y quieres saber si alguna dependencia te obliga a abrir el código",
+      "Un cliente te pide garantías sobre licencias open source",
+      "Necesitas generar un archivo NOTICE de atribuciones"
+    ],
+    "notFor": [
+      "Sustituir el consejo de un abogado",
+      "Veredictos definitivos: los casos dudosos se marcan [COUNSEL]"
+    ],
+    "output": "Un informe en Markdown en legal/ con tabla de licencias, hallazgos por gravedad y opciones de solución, y un NOTICE si faltan atribuciones.",
+    "faq": [
+      {
+        "q": "¿Incluye dependencias transitivas?",
+        "a": "Sí. El copyleft suele llegar por ahí, y cada hallazgo indica si la dependencia es directa o transitiva."
+      },
+      {
+        "q": "¿Importa cómo distribuyo el producto?",
+        "a": "Mucho. SaaS, binario distribuido o proyecto open source cambian el riesgo, así que se lo pregunta primero. Un AGPL se trata como crítico incluso en SaaS."
+      },
+      {
+        "q": "¿Puede fiarse del resultado?",
+        "a": "Refleja lo que dicen los metadatos, que a veces fallan. Para hallazgos críticos, comprueba el archivo LICENSE del paquete."
+      }
     ]
   },
   "en": {
@@ -13,6 +46,40 @@
       "/legal--oss-license-check check the licenses of my npm dependencies",
       "/legal--oss-license-check tell me if I have any copyleft risk in this project",
       "/legal--oss-license-check check license compatibility before I ship"
+    ],
+    "title": "Open source license check",
+    "summary": "Scans your dependency tree for incompatible licenses, copyleft risk and unmet attribution obligations.",
+    "keywords": [
+      "open source license check",
+      "copyleft risk",
+      "agpl and gpl",
+      "license compliance",
+      "notice file"
+    ],
+    "useWhen": [
+      "You are shipping a product and want to know if a dependency forces you to open your code",
+      "A customer asks for assurances about open source licenses",
+      "You need a NOTICE file with the required attributions"
+    ],
+    "notFor": [
+      "Replacing the advice of a lawyer",
+      "Final verdicts: unclear cases are marked [COUNSEL]"
+    ],
+    "output": "A Markdown report in legal/ with a license summary table, findings by severity and fix options, plus a NOTICE file if attributions are missing.",
+    "faq": [
+      {
+        "q": "Does it include transitive dependencies?",
+        "a": "Yes. Copyleft usually arrives that way, and each finding says whether the dependency is direct or transitive."
+      },
+      {
+        "q": "Does it matter how I distribute the product?",
+        "a": "A lot. SaaS, a shipped binary and an open source project carry different risk, so it asks first. AGPL is treated as critical even for SaaS."
+      },
+      {
+        "q": "Can I trust the result?",
+        "a": "It reports what package metadata says, which is sometimes wrong. For critical findings, check the LICENSE file shipped in the package."
+      }
     ]
-  }
+  },
+  "copyHash": "c768f4ea9047bda0"
 }

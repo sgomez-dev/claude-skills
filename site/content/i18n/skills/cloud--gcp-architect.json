@@ -6,6 +6,14 @@
       "/cloud--gcp-architect diseña la arquitectura GCP para mi app de análisis de datos",
       "/cloud--gcp-architect qué servicios de Google Cloud necesito para mi backend con BigQuery",
       "/cloud--gcp-architect genera el diagrama y el Terraform inicial para mi proyecto en GCP"
+    ],
+    "title": "Arquitectura en Google Cloud",
+    "summary": "Diseña una arquitectura Google Cloud para tu aplicación con los servicios justos, un diagrama Mermaid y un punto de partida en Terraform.",
+    "keywords": [
+      "arquitectura gcp",
+      "diseñar infraestructura google cloud",
+      "cloud run",
+      "terraform gcp"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/cloud--gcp-architect design the GCP architecture for my data analytics app",
       "/cloud--gcp-architect what Google Cloud services do I need for a BigQuery backend",
       "/cloud--gcp-architect generate the diagram and starter Terraform for my GCP project"
+    ],
+    "title": "Google Cloud architecture design",
+    "summary": "Designs a Google Cloud architecture for your app with a minimal set of services, a Mermaid diagram and a Terraform starter.",
+    "keywords": [
+      "gcp architecture",
+      "design google cloud infrastructure",
+      "cloud run",
+      "terraform gcp"
     ]
-  }
+  },
+  "copyHash": "f6817608820660cb"
 }

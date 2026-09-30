@@ -6,6 +6,14 @@
       "/data--data-contracts define el contrato de datos entre mi API y el equipo de analítica",
       "/data--data-contracts necesito un esquema y SLA para el evento de compra que emitimos",
       "/data--data-contracts ayúdame a versionar este contrato de datos sin romper consumidores"
+    ],
+    "title": "Contratos de datos entre equipos",
+    "summary": "Define un contrato de datos en YAML entre quien produce y quien consume un dataset: esquema, SLAs de frescura y calidad, y reglas de versionado.",
+    "keywords": [
+      "contrato de datos",
+      "sla de datos",
+      "versionado de esquema",
+      "productor y consumidor"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/data--data-contracts define the data contract between my API and the analytics team",
       "/data--data-contracts I need a schema and SLA for the purchase event we emit",
       "/data--data-contracts help me version this data contract without breaking consumers"
+    ],
+    "title": "Data contracts between teams",
+    "summary": "Defines a YAML data contract between the producer and consumers of a dataset: schema, freshness and quality SLAs, and versioning rules.",
+    "keywords": [
+      "data contract",
+      "data sla",
+      "schema versioning",
+      "producer consumer data"
     ]
-  }
+  },
+  "copyHash": "785f8dd0c20aa83d"
 }

@@ -1,7 +1,17 @@
 {
   "sourceHash": "450e75e8cb24ad62",
+  "copyHash": "69bf3546c22a4748",
   "es": {
     "description": "Configura git hooks: pre-commit, husky, lint-staged, validación de commit-msg",
+    "title": "Hooks de git",
+    "summary": "Configura hooks de git que formatean los archivos en staging, validan los mensajes de commit y pueden lanzar tests rápidos antes del push.",
+    "keywords": [
+      "hooks de git",
+      "husky",
+      "lint-staged",
+      "pre-commit",
+      "validar commits"
+    ],
     "howToAsk": [
       "/git--git-hooks añade un hook que ejecute el linter antes de cada commit",
       "/git--git-hooks configura husky y lint-staged en mi proyecto",
@@ -13,6 +23,15 @@
       "/git--git-hooks add a hook that runs the linter before every commit",
       "/git--git-hooks set up husky and lint-staged in my project",
       "/git--git-hooks validate that commit messages follow our format"
+    ],
+    "title": "Git hooks for your repo",
+    "summary": "Sets up git hooks that lint staged files, validate commit messages and can run fast tests before push, using the hook manager that fits your stack.",
+    "keywords": [
+      "git hooks",
+      "husky",
+      "lint-staged",
+      "pre-commit hook",
+      "commit message validation"
     ]
   }
 }

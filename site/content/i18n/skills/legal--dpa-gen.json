@@ -6,6 +6,38 @@
       "/legal--dpa-gen redacta un DPA para mi SaaS con mis subencargados actuales",
       "/legal--dpa-gen necesito el acuerdo de tratamiento de datos con mi stack real",
       "/legal--dpa-gen genera la lista de subprocesadores y el DPA base"
+    ],
+    "title": "Borrador de DPA con subencargados",
+    "summary": "Redacta un borrador de acuerdo de encargado de tratamiento (DPA) con la lista de subencargados y anexos sacados de tu stack real.",
+    "keywords": [
+      "dpa",
+      "acuerdo de encargado de tratamiento",
+      "subencargados",
+      "art. 28 rgpd"
+    ],
+    "useWhen": [
+      "Vendes un SaaS y un cliente te pide firmar un DPA",
+      "Necesitas listar los subencargados que realmente usas",
+      "Quieres anexos de datos y seguridad basados en tu código"
+    ],
+    "notFor": [
+      "Sustituir el consejo de un abogado",
+      "Revisar el DPA de un proveedor: para eso sirve la revisión de contratos"
+    ],
+    "output": "Un archivo legal/DPA_DRAFT.md con la estructura del art. 28 del RGPD, anexos de tratamiento, seguridad y subencargados, y una lista de brechas en la conversación.",
+    "faq": [
+      {
+        "q": "¿Cómo sabe qué subencargados uso?",
+        "a": "Los deduce de dependencias, SDK, variables de entorno e infraestructura. Solo incluye los servicios que reciben datos personales; la región queda como [CONFIRM] si el código no la revela."
+      },
+      {
+        "q": "¿Sirve si soy el responsable y no el encargado?",
+        "a": "Te pregunta tu rol, porque las obligaciones cambian. Si revisas el DPA de un proveedor, sugiere usar la revisión de contratos."
+      },
+      {
+        "q": "¿Es un DPA listo para firmar?",
+        "a": "No. Es un esqueleto con marcadores [PLACEHOLDER] para lo no verificable y necesita revisión legal."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "/legal--dpa-gen draft a DPA for my SaaS with my current subprocessors",
       "/legal--dpa-gen I need the data processing agreement based on my real stack",
       "/legal--dpa-gen generate the subprocessor list and base DPA"
+    ],
+    "title": "DPA draft with subprocessors",
+    "summary": "Drafts a Data Processing Agreement with the subprocessor list and annexes built from the stack your code actually uses.",
+    "keywords": [
+      "dpa template",
+      "data processing agreement",
+      "subprocessor list",
+      "gdpr article 28"
+    ],
+    "useWhen": [
+      "You sell a SaaS and a customer asks you to sign a DPA",
+      "You need to list the subprocessors you really use",
+      "You want data and security annexes grounded in your code"
+    ],
+    "notFor": [
+      "Replacing the advice of a lawyer",
+      "Reviewing a vendor DPA: contract review is the better fit"
+    ],
+    "output": "A legal/DPA_DRAFT.md file following the GDPR Art. 28 structure, with processing, security and subprocessor annexes, plus a gap list in the chat.",
+    "faq": [
+      {
+        "q": "How does it know which subprocessors I use?",
+        "a": "It infers them from dependencies, SDKs, env vars and infrastructure files. It keeps only services that receive personal data, and marks region [CONFIRM] when the code does not reveal it."
+      },
+      {
+        "q": "Does it work if I am the controller, not the processor?",
+        "a": "It asks your role, since obligations flip. To review a vendor DPA it suggests the contract review skill instead."
+      },
+      {
+        "q": "Is the result ready to sign?",
+        "a": "No. It is a skeleton with [PLACEHOLDER] markers for anything unverifiable and needs legal review."
+      }
     ]
-  }
+  },
+  "copyHash": "392199124a5831b1"
 }

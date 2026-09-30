@@ -1,6 +1,39 @@
 {
   "sourceHash": "17e1f89b221c4dbf",
+  "copyHash": "d2139f2b6e56e94e",
   "es": {
+    "title": "Gráficos animados cortos",
+    "summary": "Crea un gráfico animado corto sin narración, como texto cinético, contadores, gráficas, logos o mapas, y lo renderiza en MP4 o como overlay transparente.",
+    "keywords": [
+      "gráfico animado",
+      "texto cinético",
+      "animación de logo",
+      "overlay transparente"
+    ],
+    "useWhen": [
+      "Necesitas un texto animado, un contador de cifras o una gráfica en movimiento",
+      "Quieres animar un logotipo, un rótulo o un mapa de unos segundos",
+      "Buscas un overlay transparente para colocar sobre otro vídeo"
+    ],
+    "notFor": [
+      "Vídeos largos, con narración o de varias escenas: para eso va general-video",
+      "Piezas con persona grabada en escena: está pensado para gráficos sin narración ni sujeto real"
+    ],
+    "output": "Un archivo de vídeo renderizado en MP4, o en webm o mov como overlay transparente, tras pasar comprobaciones y fotogramas de prueba.",
+    "faq": [
+      {
+        "q": "¿Cuánto puede durar la pieza?",
+        "a": "Suele ser de menos de 10 segundos y puede llegar a unos 30. Las piezas más largas van a general-video."
+      },
+      {
+        "q": "¿Incluye voz en off?",
+        "a": "No. Está pensado para gráficos sin narración ni sujeto grabado."
+      },
+      {
+        "q": "¿Renderiza sin preguntarme?",
+        "a": "No. Construye y verifica de forma autónoma, pero antes de renderizar te pregunta si quieres previsualizar primero o renderizar."
+      }
+    ],
     "description": "Una pieza gráfica animada corta y con dirección de diseño donde el movimiento es el mensaje: tipografía cinética, contador de estadísticas, impacto de gráfico/data-viz, sting de logo / lockup de marca, tercio inferior / callout / overlay social, mapa animado (resaltar regiones, conectar lugares, hacer zoom a una ubicación), tuit / artículo de noticias / titular animado, animación de página web / UI (scroll, cursor, callouts), o fusionar la geometría de una imagen real en un gráfico. Normalmente dura menos de 10s (hasta ~30s), sin narración ni sujeto de acción real; se renderiza a MP4 o como overlay transparente. Más largo / narrado / multi-escena → /general-video. Si no está claro → /hyperframes.",
     "howToAsk": [
       "Haz un sting de logo animado para el final de mi vídeo",
@@ -9,6 +42,38 @@
     ]
   },
   "en": {
+    "title": "Short motion graphics",
+    "summary": "Builds a short unnarrated motion graphic, such as kinetic type, stat count-ups, charts, logo stings or maps, rendered as MP4 or a transparent overlay.",
+    "keywords": [
+      "motion graphic",
+      "kinetic typography",
+      "logo animation",
+      "transparent video overlay"
+    ],
+    "useWhen": [
+      "You need animated text, a number count-up or a moving chart",
+      "You want to animate a logo, a lower third or a map in a few seconds",
+      "You need a transparent overlay to place over other footage"
+    ],
+    "notFor": [
+      "Long, narrated or multi-scene videos: general-video handles those",
+      "Pieces with a person filmed on screen: it is built for graphics with no narration or live subject"
+    ],
+    "output": "A rendered video file in MP4, or webm or mov as a transparent overlay, after checks and proof snapshots pass.",
+    "faq": [
+      {
+        "q": "How long can the piece be?",
+        "a": "Usually under 10 seconds, and up to about 30. Longer pieces go to general-video."
+      },
+      {
+        "q": "Does it include a voiceover?",
+        "a": "No. It is built for graphics with no narration and no filmed subject."
+      },
+      {
+        "q": "Does it render without asking me?",
+        "a": "No. It builds and verifies on its own, but before rendering it asks whether you want to preview first or render."
+      }
+    ],
     "howToAsk": [
       "Make an animated logo sting for the end of my video",
       "Create an animated stat count-up with our growth numbers",

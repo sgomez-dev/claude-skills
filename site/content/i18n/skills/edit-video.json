@@ -1,6 +1,39 @@
 {
   "sourceHash": "896868c5e05f3960",
+  "copyHash": "ec14d6c9dafc58a9",
   "es": {
+    "title": "Edición completa de vídeo hablado",
+    "summary": "Edita una grabación hablando a cámara de principio a fin: transcripción, cortes de silencios y errores, gráficos y render verificado en HyperFrames.",
+    "keywords": [
+      "editar vídeo hablado",
+      "edición automática de vídeo",
+      "montar vídeo youtube",
+      "gráficos de movimiento para vídeo"
+    ],
+    "useWhen": [
+      "Tienes una grabación en bruto hablando a cámara y quieres el vídeo final editado",
+      "Quieres encadenar transcripción, cortes y gráficos en un solo flujo",
+      "Necesitas un render revisado con un registro de lo que se comprobó"
+    ],
+    "notFor": [
+      "Una sola operación suelta, como solo quitar silencios: para eso va directo a la habilidad especializada",
+      "Sustituir el criterio editorial: un detector propone cortes y hace falta decidir"
+    ],
+    "output": "La ruta del MP4 final, las decisiones de edición, la transcripción reajustada, la composición de HyperFrames y un VERIFY.md con lo comprobado y las limitaciones que quedan.",
+    "faq": [
+      {
+        "q": "¿Qué pasos sigue?",
+        "a": "Inspecciona el vídeo, obtiene la transcripción, quita silencios, revisa errores de habla, planifica los gráficos de movimiento, los monta en HyperFrames y renderiza primero un borrador antes del final."
+      },
+      {
+        "q": "¿Sube mi vídeo a algún servicio?",
+        "a": "Puede usar un servicio de transcripción según el proveedor que elijas. Antes de llamar a un servicio sin autorización explica las subidas y los costes."
+      },
+      {
+        "q": "¿Hace falta revisar algo a mano?",
+        "a": "Sí. Las propuestas de corte son automáticas pero el criterio editorial sigue siendo necesario, y el borrador se revisa antes del render final."
+      }
+    ],
     "description": "Edita un vídeo en bruto de tipo talking-head con transcripción, recorte de silencios, revisión de errores, storytelling visual, motion graphics y renderizado verificado con HyperFrames. Úsalo para una edición completa; para una única operación concreta, ve directamente a la skill especializada.",
     "howToAsk": [
       "Edita este vídeo en bruto donde hablo a cámara y déjalo listo",
@@ -9,6 +42,38 @@
     ]
   },
   "en": {
+    "title": "Full talking-head video edit",
+    "summary": "Edits a raw talking-head recording end to end: transcription, silence and mistake cuts, motion graphics and a verified HyperFrames render.",
+    "keywords": [
+      "edit talking head video",
+      "automatic video editing",
+      "youtube video editing",
+      "motion graphics for video"
+    ],
+    "useWhen": [
+      "You have a raw talking-head recording and want the finished edited video",
+      "You want transcription, cuts and graphics chained into one workflow",
+      "You need a reviewed render with a record of what was checked"
+    ],
+    "notFor": [
+      "A single standalone operation, such as only removing silences: go straight to the specialist skill for that",
+      "Replacing editorial judgment: a detector proposes cuts and someone still has to decide"
+    ],
+    "output": "The path to the final MP4, the edit decisions, the re-timed transcript, the HyperFrames composition and a VERIFY.md listing what was checked and any remaining limitations.",
+    "faq": [
+      {
+        "q": "What steps does it go through?",
+        "a": "It inspects the video, gets a transcript, removes silences, reviews speech mistakes, plans the motion graphics, builds them in HyperFrames and renders a draft before the final."
+      },
+      {
+        "q": "Does it upload my video to a service?",
+        "a": "It may use a transcription service depending on the provider you pick. Before calling any service that is not yet authorized, it explains the uploads and costs."
+      },
+      {
+        "q": "Do I need to review anything by hand?",
+        "a": "Yes. Cut proposals are automated but editorial judgment is still needed, and the draft is reviewed before the final render."
+      }
+    ],
     "howToAsk": [
       "Edit this raw talking-head video and get it ready to publish",
       "Trim the silences and mistakes from this video and do the full edit",

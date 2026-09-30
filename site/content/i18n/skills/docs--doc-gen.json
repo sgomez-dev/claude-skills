@@ -6,6 +6,14 @@
       "/docs--doc-gen documenta todo el módulo de pagos",
       "/docs--doc-gen genera la documentación de estas funciones de utilidades",
       "/docs--doc-gen necesito docs completas de esta librería interna"
+    ],
+    "title": "Documentación de código",
+    "summary": "Documenta un archivo, módulo o API con resumen, ejemplos, referencia de funciones y configuración, en el formato de tu proyecto.",
+    "keywords": [
+      "documentar código",
+      "documentación de módulo",
+      "jsdoc docstrings",
+      "referencia de api"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/docs--doc-gen document the entire payments module",
       "/docs--doc-gen generate documentation for these utility functions",
       "/docs--doc-gen I need full docs for this internal library"
+    ],
+    "title": "Code documentation",
+    "summary": "Documents a file, module or API with overview, usage examples, function reference and configuration, in your project doc format.",
+    "keywords": [
+      "document code",
+      "module documentation",
+      "jsdoc docstrings",
+      "api reference"
     ]
-  }
+  },
+  "copyHash": "d296e7787d75589f"
 }

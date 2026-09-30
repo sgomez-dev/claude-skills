@@ -6,6 +6,14 @@
       "Cómo uso el hook useGSAP en mi componente de React",
       "Necesito animar un elemento en Next.js con GSAP y limpiarlo al desmontar",
       "Ayúdame a usar gsap.context() correctamente en mi app"
+    ],
+    "title": "GSAP en React y Next.js",
+    "summary": "Explica cómo usar GSAP en React y Next.js con el hook useGSAP, refs, gsap.context() y limpieza al desmontar componentes.",
+    "keywords": [
+      "gsap react",
+      "usegsap",
+      "animación next.js",
+      "gsap context"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "How do I use the useGSAP hook in my React component",
       "I need to animate an element in Next.js with GSAP and clean it up on unmount",
       "Help me use gsap.context() correctly in my app"
+    ],
+    "title": "GSAP with React and Next.js",
+    "summary": "Explains how to use GSAP in React and Next.js with the useGSAP hook, refs, gsap.context() and cleanup when components unmount.",
+    "keywords": [
+      "gsap react",
+      "usegsap hook",
+      "next.js animation",
+      "gsap context"
     ]
-  }
+  },
+  "copyHash": "88e2a5312b45e8cc"
 }

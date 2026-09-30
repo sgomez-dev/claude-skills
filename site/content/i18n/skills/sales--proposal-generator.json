@@ -6,6 +6,38 @@
       "/sales--proposal-generator genera una propuesta comercial a partir de estas notas de la llamada",
       "/sales--proposal-generator necesito un SOW para este proyecto de implementación",
       "/sales--proposal-generator crea una propuesta con 3 opciones de precio para este cliente"
+    ],
+    "title": "Propuesta comercial o SOW",
+    "summary": "Convierte notas de descubrimiento en una propuesta comercial o SOW con alcance, entregables, calendario, tres opciones de precio y condiciones.",
+    "keywords": [
+      "propuesta comercial",
+      "statement of work",
+      "presupuesto para cliente",
+      "sow"
+    ],
+    "useWhen": [
+      "Acabas de una llamada de descubrimiento y necesitas la propuesta",
+      "Hay un acuerdo verbal y toca redactar el SOW",
+      "Quieres presentar tres opciones de precio al cliente"
+    ],
+    "notFor": [
+      "Sustituir la revisión de un abogado sobre las condiciones",
+      "Fijar precios sin datos tuyos: pone marcadores [PRICE]"
+    ],
+    "output": "Un documento Markdown proposal_[cliente]_[fecha].md (o sow_...) con tablas de entregables, calendario y opciones de precio.",
+    "faq": [
+      {
+        "q": "¿Inventa precios o datos del cliente?",
+        "a": "No. Si no das precios, pone marcadores [PRICE] con el criterio que debería guiar cada cifra. Y cada afirmación debe salir de lo que tú aportaste."
+      },
+      {
+        "q": "¿Cuándo genera propuesta y cuándo SOW?",
+        "a": "Por defecto propuesta para tratos iniciales y SOW si mencionas un acuerdo verbal o una propuesta firmada. Te lo confirma antes de redactar."
+      },
+      {
+        "q": "¿Sirven las condiciones legales tal cual?",
+        "a": "No. Las condiciones van marcadas como sujetas a revisión legal y no son asesoramiento jurídico."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "/sales--proposal-generator generate a commercial proposal from these call notes",
       "/sales--proposal-generator I need a SOW for this implementation project",
       "/sales--proposal-generator create a proposal with 3 pricing options for this client"
+    ],
+    "title": "Commercial proposal or SOW",
+    "summary": "Turns discovery notes into a client-ready commercial proposal or SOW with scope, deliverables, timeline, three pricing options and terms.",
+    "keywords": [
+      "commercial proposal",
+      "statement of work",
+      "sow",
+      "client proposal"
+    ],
+    "useWhen": [
+      "You just finished a discovery call and need the proposal",
+      "There is a verbal agreement and it is time to write the SOW",
+      "You want to show the client three pricing options"
+    ],
+    "notFor": [
+      "Replacing a lawyer's review of the terms",
+      "Setting prices without your input: it inserts [PRICE] placeholders"
+    ],
+    "output": "A Markdown document, proposal_[client]_[date].md (or sow_...), with deliverables, timeline and pricing option tables.",
+    "faq": [
+      {
+        "q": "Does it invent prices or client facts?",
+        "a": "No. Without pricing input it inserts [PRICE] placeholders with the rationale for each figure, and every claim must trace back to what you provided."
+      },
+      {
+        "q": "When does it write a proposal versus a SOW?",
+        "a": "By default a proposal for early deals and a SOW when you mention a verbal agreement or a signed proposal. It confirms the choice before drafting."
+      },
+      {
+        "q": "Can I use the legal terms as they are?",
+        "a": "No. The terms are marked subject to legal review and are not legal advice."
+      }
     ]
-  }
+  },
+  "copyHash": "ed674aa7b9d36d6c"
 }

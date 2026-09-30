@@ -6,6 +6,14 @@
       "/sales--discovery-prep prepárame la llamada de descubrimiento con Acme para mañana",
       "/sales--discovery-prep necesito un briefing antes de reunirme con estos asistentes",
       "/sales--discovery-prep dame hipótesis y preguntas para esta primera llamada"
+    ],
+    "title": "Preparación de llamada de venta",
+    "summary": "Prepara un briefing para leer en cinco minutos antes de la reunión: investigación de la empresa, asistentes, hipótesis de dolor y preguntas para validarlas.",
+    "keywords": [
+      "preparar reunión comercial",
+      "briefing de llamada",
+      "investigar empresa",
+      "preguntas de discovery"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/sales--discovery-prep prep me for tomorrow's discovery call with Acme",
       "/sales--discovery-prep I need a briefing before meeting these attendees",
       "/sales--discovery-prep give me hypotheses and questions for this first call"
+    ],
+    "title": "Discovery call prep brief",
+    "summary": "Prepares a five-minute pre-call brief: company research, attendee context, pain hypotheses and the questions that test them.",
+    "keywords": [
+      "discovery call prep",
+      "pre-call research",
+      "meeting brief",
+      "discovery questions"
     ]
-  }
+  },
+  "copyHash": "360211611da82706"
 }

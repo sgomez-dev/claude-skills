@@ -6,6 +6,14 @@
       "/devops--gitops configura GitOps con ArgoCD para mi cluster",
       "/devops--gitops estructura mi repo para un flujo GitOps con Flux",
       "/devops--gitops define una política de rollback seguro con ArgoCD"
+    ],
+    "title": "GitOps con ArgoCD o Flux",
+    "summary": "Monta GitOps en Kubernetes: elige entre ArgoCD y Flux, organiza el repositorio y define políticas de sincronización y rollback con git revert.",
+    "keywords": [
+      "gitops",
+      "argocd",
+      "flux kubernetes",
+      "rollback kubernetes"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/devops--gitops set up GitOps with ArgoCD for my cluster",
       "/devops--gitops structure my repo for a GitOps workflow with Flux",
       "/devops--gitops define a safe rollback policy with ArgoCD"
+    ],
+    "title": "GitOps with ArgoCD or Flux",
+    "summary": "Sets up GitOps for Kubernetes: picks between ArgoCD and Flux, lays out the config repo and defines sync policies and git revert rollbacks.",
+    "keywords": [
+      "gitops",
+      "argocd",
+      "flux kubernetes",
+      "kubernetes rollback"
     ]
-  }
+  },
+  "copyHash": "1c018221c933cd1a"
 }

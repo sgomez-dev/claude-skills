@@ -6,6 +6,15 @@
       "/security--auth-review revisa el login de nuestra app",
       "/security--auth-review comprueba los permisos del panel de administración",
       "/security--auth-review ¿hay fallos en cómo verificamos los tokens JWT?"
+    ],
+    "title": "Revisión de login y permisos",
+    "summary": "Revisa el login, las sesiones, los tokens y los permisos de tu app y devuelve los fallos por gravedad, cada uno con su arreglo.",
+    "keywords": [
+      "revisar login",
+      "seguridad de autenticación",
+      "jwt",
+      "idor",
+      "control de acceso"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "/security--auth-review check our app's login flow for issues",
       "/security--auth-review review admin panel permission checks",
       "/security--auth-review are there flaws in how we verify JWT tokens?"
+    ],
+    "title": "Login and permissions review",
+    "summary": "Reviews your app's login, sessions, tokens and access rules and returns severity-rated findings, each with a specific fix.",
+    "keywords": [
+      "review login security",
+      "authentication audit",
+      "jwt security",
+      "idor",
+      "access control review"
     ]
-  }
+  },
+  "copyHash": "8579d6ee8ee27783"
 }

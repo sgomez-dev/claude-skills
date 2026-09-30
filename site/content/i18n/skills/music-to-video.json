@@ -6,6 +6,39 @@
       "Convierte esta canción en un vídeo de letra sincronizado al ritmo",
       "Haz un vídeo con estas fotos al ritmo de esta pista de audio",
       "Genera una pista según este ambiente y móntala en un vídeo promocional"
+    ],
+    "title": "Vídeo sincronizado con la música",
+    "summary": "Convierte una pista de música en un vídeo al ritmo del compás: lyric video, pase de imágenes o promo cinética, con tus imágenes o sin ninguna.",
+    "keywords": [
+      "lyric video",
+      "vídeo con música",
+      "vídeo al ritmo",
+      "promo musical",
+      "pase de diapositivas con música"
+    ],
+    "useWhen": [
+      "Tienes una canción y quieres un lyric video",
+      "Quieres un pase de imágenes o vídeos cortado al ritmo de la pista",
+      "Solo tienes una idea de ambiente y necesitas una pista y un vídeo a partir de ella"
+    ],
+    "notFor": [
+      "Vídeos con locución o narración, que tienen otro flujo de trabajo",
+      "Capturar una web para convertirla en vídeo"
+    ],
+    "output": "Un vídeo MP4 con el audio incluido, cuya duración coincide con la de la pista, con un contact sheet para revisarlo.",
+    "faq": [
+      {
+        "q": "¿Necesito aportar imágenes o vídeos?",
+        "a": "No. Un vídeo completo sale sin ningún recurso, solo con tipografía y plantillas. Si aportas imágenes o vídeos, se cortan sobre el mismo compás de la música."
+      },
+      {
+        "q": "¿Qué puedo usar como música?",
+        "a": "Un archivo de audio, un vídeo del que extraer el audio o una pista generada a partir de una descripción de ambiente."
+      },
+      {
+        "q": "¿Sirve con música tranquila sin ritmo marcado?",
+        "a": "Sí, pero con matices: el análisis del compás solo es fiable con música rítmica. En música calmada el ritmo se marca por frases y energía, sin cortes duros al compás."
+      }
     ]
   },
   "en": {
@@ -13,6 +46,40 @@
       "Turn this song into a beat-synced lyric video",
       "Make a slideshow video from these photos cut to this track",
       "Generate a track from this mood and turn it into a promo video"
+    ],
+    "title": "Beat-synced video from music",
+    "summary": "Turns a music track into a beat-synced video, such as a lyric video, slideshow or kinetic promo, with or without your own images and clips.",
+    "keywords": [
+      "lyric video",
+      "music video maker",
+      "beat sync video",
+      "kinetic promo",
+      "slideshow with music"
+    ],
+    "useWhen": [
+      "You have a song and want a lyric video",
+      "You want images or clips cut to the beat of a track",
+      "You only have a mood in mind and need a track and a video built from it"
+    ],
+    "notFor": [
+      "Narrated videos, which use a different workflow",
+      "Capturing a website and turning it into a video"
+    ],
+    "output": "An MP4 video with audio, matching the track's duration, delivered with a contact sheet for review.",
+    "faq": [
+      {
+        "q": "Do I need to supply images or footage?",
+        "a": "No. A complete video needs zero assets, just typography and templates. Any images or clips you add are cut onto the same beat grid as the music."
+      },
+      {
+        "q": "What can I use as the music?",
+        "a": "An audio file, a video to pull the audio from, or a track generated from a mood brief."
+      },
+      {
+        "q": "Does it work with calm music that has no clear beat?",
+        "a": "Yes, with a caveat: beat analysis is only reliable on genuinely rhythmic music. On calm tracks the pacing follows phrases and energy instead, with no hard cuts to the beat."
+      }
     ]
-  }
+  },
+  "copyHash": "4a5ac7feeb6e0298"
 }

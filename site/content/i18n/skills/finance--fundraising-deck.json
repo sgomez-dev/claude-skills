@@ -6,6 +6,14 @@
       "/finance--fundraising-deck ayúdame a estructurar el deck para nuestra ronda seed",
       "/finance--fundraising-deck necesito el contenido diapositiva a diapositiva del pitch deck",
       "/finance--fundraising-deck organiza el data room para los inversores"
+    ],
+    "title": "Estructura de deck para inversores",
+    "summary": "Define la narrativa y redacta el contenido slide a slide de tu deck de ronda, con checklist del data room.",
+    "keywords": [
+      "pitch deck",
+      "deck de inversores",
+      "levantar ronda",
+      "data room"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/finance--fundraising-deck help me structure the deck for our seed round",
       "/finance--fundraising-deck I need slide-by-slide content for the pitch deck",
       "/finance--fundraising-deck organize the data room for investors"
+    ],
+    "title": "Fundraising deck structure",
+    "summary": "Sets the narrative and writes slide-by-slide content for your fundraising deck, with a data room checklist.",
+    "keywords": [
+      "pitch deck",
+      "investor deck",
+      "fundraising deck",
+      "data room checklist"
     ]
-  }
+  },
+  "copyHash": "2f3b6d46347dcf63"
 }

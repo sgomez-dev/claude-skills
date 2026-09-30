@@ -6,6 +6,15 @@
       "/testing--load-testing monta pruebas de carga para mi API con k6",
       "/testing--load-testing ¿qué umbrales debería usar para el checkout?",
       "/testing--load-testing añade una puerta de carga en el pipeline de CI"
+    ],
+    "title": "Pruebas de carga con CI",
+    "summary": "Monta pruebas de carga con k6, Locust o Artillery: escenarios realistas, umbrales que hacen fallar la ejecución y una prueba de humo en CI.",
+    "keywords": [
+      "pruebas de carga",
+      "k6",
+      "locust",
+      "test de rendimiento",
+      "artillery"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "/testing--load-testing set up load tests for my API with k6",
       "/testing--load-testing what thresholds should I use for checkout?",
       "/testing--load-testing add a load-test gate to the CI pipeline"
+    ],
+    "title": "Load testing setup",
+    "summary": "Sets up load tests with k6, Locust or Artillery: realistic scenarios, pass/fail thresholds and a lightweight smoke gate in CI.",
+    "keywords": [
+      "load testing",
+      "k6",
+      "locust",
+      "stress test api",
+      "performance testing"
     ]
-  }
+  },
+  "copyHash": "5139c53f5c28951d"
 }

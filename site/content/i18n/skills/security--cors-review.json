@@ -6,6 +6,14 @@
       "/security--cors-review revisa la configuración CORS de mi API",
       "/security--cors-review ¿por qué el navegador bloquea las peticiones desde el frontend?",
       "/security--cors-review arregla los headers CORS de este servidor Express"
+    ],
+    "title": "Revisión de configuración CORS",
+    "summary": "Revisa la configuración CORS de tu backend, corrige orígenes y cabeceras demasiado permisivos y comprueba el resultado con curl.",
+    "keywords": [
+      "configurar cors",
+      "error cors",
+      "access-control-allow-origin",
+      "cors seguro"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/security--cors-review check my API's CORS configuration",
       "/security--cors-review why is the browser blocking requests from the frontend?",
       "/security--cors-review fix the CORS headers on this Express server"
+    ],
+    "title": "CORS configuration review",
+    "summary": "Reviews your CORS setup in Express, FastAPI, Django or Nginx, tightens overly permissive origins and headers, and verifies them with curl.",
+    "keywords": [
+      "cors error",
+      "fix cors",
+      "access-control-allow-origin",
+      "secure cors config"
     ]
-  }
+  },
+  "copyHash": "0f42632889960373"
 }

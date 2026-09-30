@@ -6,6 +6,14 @@
       "/scaffold--component-3d crea un visor 3D de producto con React Three Fiber",
       "/scaffold--component-3d necesito una escena de Three.js con controles de cámara",
       "/scaffold--component-3d genera un componente 3D animado en Babylon.js"
+    ],
+    "title": "Componente 3D para la web",
+    "summary": "Genera un componente 3D con React Three Fiber, Three.js o Babylon.js, con tipos, animaciones y controles, adaptado a tu proyecto.",
+    "keywords": [
+      "componente 3d",
+      "react three fiber",
+      "three.js",
+      "babylon.js"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/scaffold--component-3d create a 3D product viewer with React Three Fiber",
       "/scaffold--component-3d I need a Three.js scene with camera controls",
       "/scaffold--component-3d generate an animated 3D component in Babylon.js"
+    ],
+    "title": "3D component for the web",
+    "summary": "Generates a 3D component with React Three Fiber, Three.js or Babylon.js, including types, animations and controls, matched to your project.",
+    "keywords": [
+      "3d component",
+      "react three fiber",
+      "three.js",
+      "babylon.js"
     ]
-  }
+  },
+  "copyHash": "14a196aa87879128"
 }

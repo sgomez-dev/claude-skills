@@ -6,6 +6,38 @@
       "/legal--terms-of-service redacta los términos de servicio de mi SaaS",
       "/legal--terms-of-service necesito los términos para mi marketplace con pagos",
       "/legal--terms-of-service genera los TOS adaptados a mi modelo de suscripción"
+    ],
+    "title": "Términos de servicio a medida",
+    "summary": "Redacta unos términos de servicio adaptados a tu modelo de negocio real, inspeccionando el repositorio y confirmando contigo los datos comerciales.",
+    "keywords": [
+      "términos de servicio",
+      "términos y condiciones",
+      "condiciones de uso",
+      "tos saas"
+    ],
+    "useWhen": [
+      "Vas a lanzar un producto y necesitas términos que reflejen cómo funciona de verdad",
+      "Tu producto tiene suscripción, API, contenido de usuarios o salida generada por IA",
+      "Quieres detectar contradicciones entre los términos y tu facturación o funciones"
+    ],
+    "notFor": [
+      "Sustituir el consejo de un abogado",
+      "Copiar cláusulas de otras empresas: cada producto tiene su propia exposición legal"
+    ],
+    "output": "Un archivo legal/TERMS_OF_SERVICE.md con secciones según el producto, más una tabla de cláusulas con su origen y una lista de desajustes entre código y términos.",
+    "faq": [
+      {
+        "q": "¿Qué me pregunta antes de redactar?",
+        "a": "Jurisdicción, si tus usuarios son consumidores o empresas, datos de la empresa, modelo de precios, plazo de reembolso, uso aceptable, terminación y límite de responsabilidad."
+      },
+      {
+        "q": "¿Incluye cláusulas de funciones que no tengo?",
+        "a": "No. Anota lo que el producto no tiene y no redacta cláusulas para ello."
+      },
+      {
+        "q": "¿Sirve igual para consumidores y empresas?",
+        "a": "No sin distinguirlo. Cambia casi todo, como reembolsos y responsabilidad, y marca las diferencias."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "/legal--terms-of-service draft the terms of service for my SaaS",
       "/legal--terms-of-service I need terms for my marketplace with payments",
       "/legal--terms-of-service generate ToS tailored to my subscription model"
+    ],
+    "title": "Terms of service draft",
+    "summary": "Drafts Terms of Service tailored to your actual business model, by inspecting the repo and confirming the business facts with you.",
+    "keywords": [
+      "terms of service",
+      "terms and conditions",
+      "saas terms",
+      "tos generator"
+    ],
+    "useWhen": [
+      "You are launching a product and need terms that reflect how it really works",
+      "Your product has subscriptions, an API, user content or AI-generated output",
+      "You want to catch mismatches between the terms and your billing or features"
+    ],
+    "notFor": [
+      "Replacing the advice of a lawyer",
+      "Copying clauses from other companies: each product has its own legal exposure"
+    ],
+    "output": "A legal/TERMS_OF_SERVICE.md file with sections matched to your product, plus a clause table with sources and a list of code-versus-terms mismatches.",
+    "faq": [
+      {
+        "q": "What does it ask before drafting?",
+        "a": "Jurisdiction, whether users are consumers or businesses, company details, pricing model, refund window, acceptable use, termination rights and liability cap."
+      },
+      {
+        "q": "Will it add clauses for features I lack?",
+        "a": "No. It notes what the product does not have and does not draft clauses for it."
+      },
+      {
+        "q": "Is one draft fine for consumers and businesses?",
+        "a": "Not without marking the differences. Refunds, liability and more change between them, so it flags where they diverge."
+      }
     ]
-  }
+  },
+  "copyHash": "01caa247a242b63b"
 }

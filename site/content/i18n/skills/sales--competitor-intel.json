@@ -6,6 +6,14 @@
       "/sales--competitor-intel analiza a nuestro competidor principal en este mercado",
       "/sales--competitor-intel compara nuestros precios y funciones con los de X",
       "/sales--competitor-intel dame un informe de dónde tenemos ventaja frente a la competencia"
+    ],
+    "title": "Análisis de la competencia",
+    "summary": "Produce un informe con fuentes públicas citadas sobre cómo se posicionan tus competidores, cuánto cobran, cómo comparan sus funciones y qué huecos explotar.",
+    "keywords": [
+      "análisis de competidores",
+      "informe competitivo",
+      "comparativa de precios",
+      "matriz de funciones"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/sales--competitor-intel analyze our main competitor in this market",
       "/sales--competitor-intel compare our pricing and features against X",
       "/sales--competitor-intel give me a report on where we beat the competition"
+    ],
+    "title": "Competitive intelligence report",
+    "summary": "Produces a cited report from public sources on competitor positioning, pricing, feature comparison and exploitable gaps.",
+    "keywords": [
+      "competitor analysis",
+      "competitive intel",
+      "pricing comparison",
+      "feature matrix"
     ]
-  }
+  },
+  "copyHash": "f77c18d9fe73d7d7"
 }

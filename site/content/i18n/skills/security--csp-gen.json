@@ -6,6 +6,14 @@
       "/security--csp-gen genera una política CSP para mi sitio web",
       "/security--csp-gen valida la CSP que ya tengo configurada",
       "/security--csp-gen necesito bloquear scripts externos no autorizados"
+    ],
+    "title": "Política CSP para tu web",
+    "summary": "Analiza los scripts, estilos, imágenes y conexiones de tu app y genera una Content Security Policy, como cabecera y como meta tag.",
+    "keywords": [
+      "content security policy",
+      "generar csp",
+      "cabecera csp",
+      "bloquear xss"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/security--csp-gen generate a CSP policy for my website",
       "/security--csp-gen validate the CSP I already have configured",
       "/security--csp-gen I need to block unauthorized external scripts"
+    ],
+    "title": "Content Security Policy generator",
+    "summary": "Analyzes the scripts, styles, images and connections your app uses and generates a Content Security Policy as a header and a meta tag.",
+    "keywords": [
+      "content security policy",
+      "generate csp",
+      "csp header",
+      "prevent xss"
     ]
-  }
+  },
+  "copyHash": "87ca9ffe8796696c"
 }

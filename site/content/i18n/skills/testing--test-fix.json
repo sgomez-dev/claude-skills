@@ -6,6 +6,14 @@
       "/testing--test-fix arregla los tests que fallan en CI",
       "/testing--test-fix ¿por qué falla este test desde el último commit?",
       "/testing--test-fix diagnostica este test que fallaba de forma intermitente"
+    ],
+    "title": "Arreglo de tests que fallan",
+    "summary": "Ejecuta tu suite, averigua si cada fallo está en el test, en el código o en el entorno, lo corrige y vuelve a ejecutar para confirmarlo.",
+    "keywords": [
+      "arreglar tests",
+      "tests fallando",
+      "test roto",
+      "depurar tests"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/testing--test-fix fix the tests failing in CI",
       "/testing--test-fix why is this test failing since the last commit?",
       "/testing--test-fix diagnose this flaky test"
+    ],
+    "title": "Fixing failing tests",
+    "summary": "Runs your test suite, works out whether each failure is in the test, the code or the environment, fixes it and re-runs to confirm.",
+    "keywords": [
+      "fix failing tests",
+      "broken tests",
+      "test failures",
+      "debug tests"
     ]
-  }
+  },
+  "copyHash": "f90501dd88fa696e"
 }

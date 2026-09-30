@@ -1,6 +1,14 @@
 {
   "sourceHash": "b65af5b3515f18d6",
   "es": {
+    "title": "Auditoría de Pinterest Ads",
+    "summary": "Audita tu cuenta de Pinterest Ads (Tag, API de Conversiones, catálogo, creatividades) y devuelve hallazgos priorizados y recomendaciones.",
+    "keywords": [
+      "pinterest ads",
+      "pines promocionados",
+      "catálogo de pinterest",
+      "pinterest tag"
+    ],
     "description": "Audita la medición de Pinterest Ads, el Pinterest Tag y la Conversions API, la preparación del catálogo y las compras, las creatividades visuales, las audiencias, la intención de Performance+, los presupuestos, la seguridad de marca y los informes. Úsalo para Pinterest Ads, Pines promocionados, anuncios de compra, ventas de catálogo, Pinterest Tag, Pinterest Conversions API o Pinterest Performance+.",
     "howToAsk": [
       "Audita mi cuenta de Pinterest Ads y el Pinterest Tag",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "Pinterest Ads audit",
+    "summary": "Audits a Pinterest Ads account (Tag, Conversions API, catalog, visual creative) and returns prioritized findings and recommendations.",
+    "keywords": [
+      "pinterest ads",
+      "promoted pins",
+      "pinterest catalog",
+      "pinterest tag"
+    ],
     "howToAsk": [
       "Audit my Pinterest Ads account and Pinterest Tag",
       "Is my catalog ready for Pinterest shopping ads?",
       "Review the performance of my promoted Pins"
     ]
-  }
+  },
+  "copyHash": "bc9f711acea287e2"
 }

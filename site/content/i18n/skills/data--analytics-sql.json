@@ -6,6 +6,14 @@
       "/data--analytics-sql cuántos usuarios nuevos tuvimos cada mes este año",
       "/data--analytics-sql dame el SQL para calcular el ingreso medio por cliente",
       "/data--analytics-sql qué productos se venden más en cada región, en SQL"
+    ],
+    "title": "SQL analítico desde una pregunta",
+    "summary": "Convierte una pregunta de negocio en una consulta SQL analítica que usa las tablas y columnas reales de tu proyecto, con explicación.",
+    "keywords": [
+      "sql analítico",
+      "pregunta a sql",
+      "consulta bigquery",
+      "métricas con sql"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/data--analytics-sql how many new users did we get each month this year",
       "/data--analytics-sql give me the SQL to calculate average revenue per customer",
       "/data--analytics-sql which products sell best in each region, as SQL"
+    ],
+    "title": "Analytics SQL from a question",
+    "summary": "Turns a plain-language business question into a runnable analytical SQL query built on your project's real schema, with an explanation.",
+    "keywords": [
+      "text to sql",
+      "analytics query",
+      "sql for bigquery",
+      "business question sql"
     ]
-  }
+  },
+  "copyHash": "9027558c31185b8b"
 }

@@ -6,6 +6,14 @@
       "/ai--structured-output haz que el modelo devuelva siempre JSON válido",
       "/ai--structured-output define un esquema para extraer datos de facturas",
       "/ai--structured-output añade un bucle que repare la salida si falla el esquema"
+    ],
+    "title": "Salida estructurada de un LLM",
+    "summary": "Hace que un modelo devuelva JSON u objetos tipados fiables: diseño del esquema, modos nativos, validación y reparación acotada de errores.",
+    "keywords": [
+      "json de llm",
+      "salida estructurada",
+      "validar respuesta ia",
+      "esquema json"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ai--structured-output make the model always return valid JSON",
       "/ai--structured-output define a schema to extract data from invoices",
       "/ai--structured-output add a repair loop for output that fails schema validation"
+    ],
+    "title": "Reliable LLM structured output",
+    "summary": "Makes a model return dependable JSON or typed objects: schema design, native structured modes, validation and bounded repair loops.",
+    "keywords": [
+      "llm json output",
+      "structured outputs",
+      "validate llm response",
+      "json schema"
     ]
-  }
+  },
+  "copyHash": "b6e800c819b549fc"
 }

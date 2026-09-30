@@ -6,6 +6,14 @@
       "/marketing--ads-campaign lanza campaña de Black Friday para mi tienda online",
       "/marketing--ads-campaign presupuesto de 5000€, público joven, app de fitness",
       "/marketing--ads-campaign genera el plan y el PowerPoint para el cliente"
+    ],
+    "title": "Campaña publicitaria completa",
+    "summary": "Lanza 8 agentes en paralelo que investigan mercado, competencia y audiencias, y entrega la estrategia de campaña en un PowerPoint.",
+    "keywords": [
+      "campaña publicitaria",
+      "estrategia de anuncios",
+      "plan de ads",
+      "presentación powerpoint"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/marketing--ads-campaign launch a Black Friday campaign for my online store",
       "/marketing--ads-campaign €5000 budget, young audience, fitness app",
       "/marketing--ads-campaign build the plan and PowerPoint for the client"
+    ],
+    "title": "Full ad campaign plan",
+    "summary": "Runs 8 parallel agents covering market, competitors, audiences, copy and metrics for a product or brand, and delivers the campaign plan as a PowerPoint.",
+    "keywords": [
+      "ad campaign plan",
+      "advertising strategy",
+      "ads powerpoint",
+      "campaign structure"
     ]
-  }
+  },
+  "copyHash": "9b67291c6f4288b0"
 }

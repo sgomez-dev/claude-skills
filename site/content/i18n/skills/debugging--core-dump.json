@@ -6,6 +6,14 @@
       "/debugging--core-dump analiza este core dump de mi servidor en C",
       "/debugging--core-dump por qué crashea este proceso con un segfault",
       "/debugging--core-dump investiga este panic de Rust en producción"
+    ],
+    "title": "Análisis de volcados de fallo",
+    "summary": "Analiza volcados de memoria, segfaults y panics (Go, Rust, JVM, Python) para identificar la causa raíz de un cierre inesperado del proceso.",
+    "keywords": [
+      "core dump",
+      "segfault",
+      "panic de go",
+      "crash del proceso"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/debugging--core-dump analyze this core dump from my C server",
       "/debugging--core-dump why does this process crash with a segfault",
       "/debugging--core-dump investigate this Rust panic in production"
+    ],
+    "title": "Crash dump analysis",
+    "summary": "Analyzes core dumps, segfaults and panics (Go, Rust, JVM, Python) to identify the root cause of a fatal process crash.",
+    "keywords": [
+      "core dump",
+      "segfault",
+      "go panic",
+      "process crash"
     ]
-  }
+  },
+  "copyHash": "0ab1113300927509"
 }

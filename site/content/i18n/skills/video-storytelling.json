@@ -6,6 +6,15 @@
       "Diseña los visuales de este guion de vídeo de cabeza parlante",
       "Este montaje queda muy plano y con mucho texto, ayúdame a arreglarlo",
       "Planifica el motion graphics para este vídeo explicativo largo"
+    ],
+    "title": "Narrativa visual para vídeo largo",
+    "summary": "Diseña la capa visual de un vídeo largo con persona a cámara como un único mundo por el que se mueve la cámara, en vez de gráficos sueltos.",
+    "keywords": [
+      "editar vídeo largo",
+      "motion graphics para vídeo",
+      "vídeo confuso",
+      "guion visual",
+      "cámara y gráficos"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "Design the visuals for this talking-head video script",
       "This edit feels flat and text-heavy, help me fix it",
       "Plan the motion graphics for this long explainer video"
+    ],
+    "title": "Visual storytelling for long videos",
+    "summary": "Designs the visual layer of a long talking-head video as one persistent world the camera moves through, rather than a string of separate graphics.",
+    "keywords": [
+      "edit long video",
+      "motion graphics for video",
+      "confusing video edit",
+      "visual script",
+      "camera and graphics"
     ]
-  }
+  },
+  "copyHash": "83c3f54825fcad42"
 }

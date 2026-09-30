@@ -6,6 +6,14 @@
       "/debugging--memory-leak mi app de Node consume más memoria cada hora",
       "/debugging--memory-leak encuentra la fuga de memoria en este servicio",
       "/debugging--memory-leak analiza por qué no se libera esta memoria"
+    ],
+    "title": "Caza de fugas de memoria",
+    "summary": "Analiza tu código para encontrar fugas de memoria según el lenguaje (JavaScript, Python, Go y más) y propone cómo corregirlas.",
+    "keywords": [
+      "fuga de memoria",
+      "memory leak",
+      "oom",
+      "memoria creciente"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/debugging--memory-leak my Node app keeps using more memory every hour",
       "/debugging--memory-leak find the memory leak in this service",
       "/debugging--memory-leak figure out why this memory never gets released"
+    ],
+    "title": "Memory leak hunting",
+    "summary": "Analyzes your code for memory leak patterns by language (JavaScript, Python, Go and more) and suggests how to fix them.",
+    "keywords": [
+      "memory leak",
+      "growing heap",
+      "out of memory",
+      "node memory leak"
     ]
-  }
+  },
+  "copyHash": "5204e183e2c813e6"
 }

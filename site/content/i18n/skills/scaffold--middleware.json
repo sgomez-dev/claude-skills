@@ -6,6 +6,14 @@
       "/scaffold--middleware crea un middleware de autenticación con JWT",
       "/scaffold--middleware necesito un middleware de validación de peticiones",
       "/scaffold--middleware genera un middleware de logging para mi API"
+    ],
+    "title": "Middleware para tu backend",
+    "summary": "Genera middleware para autenticación, autorización, validación, logs, límite de peticiones o errores, en el framework web de tu proyecto.",
+    "keywords": [
+      "middleware",
+      "autenticación jwt",
+      "validación de peticiones",
+      "express middleware"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/scaffold--middleware create a JWT authentication middleware",
       "/scaffold--middleware I need a request validation middleware",
       "/scaffold--middleware generate a logging middleware for my API"
+    ],
+    "title": "Backend middleware",
+    "summary": "Generates middleware for authentication, authorization, validation, logging, rate limiting or error handling in your project's web framework.",
+    "keywords": [
+      "middleware",
+      "jwt authentication",
+      "request validation",
+      "express middleware"
     ]
-  }
+  },
+  "copyHash": "02e5b194b0563100"
 }

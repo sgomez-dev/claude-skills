@@ -6,6 +6,14 @@
       "/networking--webhook-endpoint crea un endpoint para recibir webhooks de Stripe",
       "/networking--webhook-endpoint añade verificación de firma a mi webhook actual",
       "/networking--webhook-endpoint gestiona los reintentos cuando falla el webhook"
+    ],
+    "title": "Receptor de webhooks seguro",
+    "summary": "Crea un endpoint que recibe webhooks con verificación de firma, control de duplicados y reintentos, en el framework que use tu proyecto.",
+    "keywords": [
+      "recibir webhooks",
+      "verificar firma hmac",
+      "webhook stripe",
+      "idempotencia"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/networking--webhook-endpoint build an endpoint to receive Stripe webhooks",
       "/networking--webhook-endpoint add signature verification to my existing webhook",
       "/networking--webhook-endpoint handle retries when a webhook delivery fails"
+    ],
+    "title": "Secure webhook receiver",
+    "summary": "Builds an endpoint that receives webhooks with signature verification, duplicate handling and retries, in whichever framework your project uses.",
+    "keywords": [
+      "webhook receiver",
+      "hmac signature",
+      "stripe webhook",
+      "idempotency"
     ]
-  }
+  },
+  "copyHash": "105a7fc1e992fff7"
 }

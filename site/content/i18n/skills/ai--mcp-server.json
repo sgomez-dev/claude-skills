@@ -6,6 +6,14 @@
       "/ai--mcp-server crea un servidor MCP que exponga mis herramientas internas",
       "/ai--mcp-server añade autenticación a mi servidor MCP",
       "/ai--mcp-server necesito tests para las herramientas de mi servidor MCP"
+    ],
+    "title": "Crear un servidor MCP",
+    "summary": "Construye un servidor MCP que expone las funciones, APIs o datos de tu proyecto a clientes como Claude Code, con transporte, autenticación y pruebas.",
+    "keywords": [
+      "crear servidor mcp",
+      "model context protocol",
+      "herramientas para claude",
+      "mcp con autenticación"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ai--mcp-server create an MCP server that exposes our internal tools",
       "/ai--mcp-server add authentication to my MCP server",
       "/ai--mcp-server I need tests for my MCP server's tools"
+    ],
+    "title": "Building an MCP server",
+    "summary": "Builds a Model Context Protocol server that exposes your project's functions, APIs or data to clients like Claude Code, with transport, auth and tests.",
+    "keywords": [
+      "build mcp server",
+      "model context protocol",
+      "mcp tools",
+      "mcp authentication"
     ]
-  }
+  },
+  "copyHash": "53c2cc7746d6d70a"
 }

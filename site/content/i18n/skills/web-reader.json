@@ -6,6 +6,14 @@
       "Extrae el contenido de este artículo web con su título y fecha de publicación",
       "Construye una función que haga scraping de estas páginas de noticias",
       "Saca los metadatos de esta URL para mi aplicación"
+    ],
+    "title": "Lectura de webs con z-ai",
+    "summary": "Explica cómo usar z-ai-web-dev-sdk para leer una URL y obtener título, contenido HTML y fecha de publicación, desde código backend o la CLI.",
+    "keywords": [
+      "extraer texto de una web",
+      "scraping de artículos",
+      "leer url",
+      "z-ai-web-dev-sdk"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Extract this article's content along with its title and publication date",
       "Build a function that scrapes these news pages",
       "Pull the metadata from this URL for my app"
+    ],
+    "title": "Web reading with z-ai",
+    "summary": "Shows how to use z-ai-web-dev-sdk to read a URL and get its title, main HTML and publication time, from backend code or the CLI.",
+    "keywords": [
+      "extract web page content",
+      "scrape article",
+      "read url",
+      "z-ai-web-dev-sdk"
     ]
-  }
+  },
+  "copyHash": "3b4f2543a5d1f1a4"
 }

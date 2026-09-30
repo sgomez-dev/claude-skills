@@ -1,7 +1,17 @@
 {
   "sourceHash": "a632c0fdd5763f1a",
+  "copyHash": "7136447ce85c3216",
   "es": {
     "description": "Crea una release con versionado semántico, incluyendo tag, changelog y release de GitHub",
+    "title": "Versión semántica y release",
+    "summary": "Calcula la siguiente versión semántica desde tus commits, actualiza el CHANGELOG, crea la etiqueta git y, si quieres, la release de GitHub.",
+    "keywords": [
+      "versión semántica",
+      "crear release",
+      "changelog",
+      "etiqueta git",
+      "release de github"
+    ],
     "howToAsk": [
       "/git--release crea la siguiente versión con su changelog",
       "/git--release necesito publicar una release en GitHub con el tag correspondiente",
@@ -13,6 +23,15 @@
       "/git--release cut the next version with its changelog",
       "/git--release publish a GitHub release with the matching tag",
       "/git--release generate version 2.1.0 with release notes"
+    ],
+    "title": "Semantic version release",
+    "summary": "Works out the next semantic version from your commits, updates CHANGELOG.md, creates the git tag and, if asked, a GitHub release.",
+    "keywords": [
+      "semantic versioning",
+      "create release",
+      "changelog",
+      "git tag",
+      "github release"
     ]
   }
 }

@@ -6,6 +6,15 @@
       "Mi tráfico orgánico ha caído mucho, ¿puedes auditar el SEO de mi web?",
       "No aparezco en Google para mis palabras clave principales, ¿qué está pasando?",
       "Haz una revisión técnica de SEO de mi sitio, incluyendo Core Web Vitals"
+    ],
+    "title": "Auditoría SEO de tu web",
+    "summary": "Audita el SEO técnico, on-page y de contenido de tu sitio y entrega un informe con problemas, impacto, arreglos y plan de acción priorizado.",
+    "keywords": [
+      "auditoría seo",
+      "por qué no posiciono",
+      "caída de tráfico",
+      "core web vitals",
+      "errores de indexación"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "My organic traffic dropped, can you audit my site's SEO?",
       "I'm not showing up in Google for my main keywords, what's wrong?",
       "Run a technical SEO review of my site, including Core Web Vitals"
+    ],
+    "title": "Website SEO audit",
+    "summary": "Audits your site's technical, on-page and content SEO and delivers a report with issues, impact, fixes and a prioritized action plan.",
+    "keywords": [
+      "seo audit",
+      "why am i not ranking",
+      "traffic drop",
+      "core web vitals",
+      "indexing issues"
     ]
-  }
+  },
+  "copyHash": "94b91d7f70d6941e"
 }

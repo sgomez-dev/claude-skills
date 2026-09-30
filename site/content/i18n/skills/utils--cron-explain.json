@@ -6,6 +6,14 @@
       "/utils--cron-explain ¿qué significa esta expresión cron?",
       "/utils--cron-explain genera un cron que se ejecute cada lunes a las 9am",
       "/utils--cron-explain dime cuándo se ejecutará esta tarea programada"
+    ],
+    "title": "Expresiones cron explicadas",
+    "summary": "Convierte una descripción en una expresión cron o explica una existente en lenguaje claro, con las próximas 5 ejecuciones y errores típicos.",
+    "keywords": [
+      "expresión cron",
+      "explicar cron",
+      "programar tarea",
+      "próximas ejecuciones cron"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/utils--cron-explain what does this cron expression mean?",
       "/utils--cron-explain generate a cron that runs every Monday at 9am",
       "/utils--cron-explain tell me when this scheduled job will next run"
+    ],
+    "title": "Cron expressions explained",
+    "summary": "Turns a schedule description into a cron expression, or explains an existing one in plain English, with the next 5 run times and common pitfalls.",
+    "keywords": [
+      "cron expression",
+      "explain cron",
+      "cron generator",
+      "next run times"
     ]
-  }
+  },
+  "copyHash": "5826962b1e703fbd"
 }

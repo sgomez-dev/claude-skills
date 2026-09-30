@@ -6,6 +6,14 @@
       "/scaffold--startup-generator una app de gestión de inventario para tiendas pequeñas",
       "/scaffold--startup-generator quiero lanzar un SaaS de facturación electrónica",
       "/scaffold--startup-generator genera el plan de negocio para mi idea de app de fitness"
+    ],
+    "title": "Plan de negocio para startups",
+    "summary": "Lanza 10 agentes en paralelo para analizar tu idea de SaaS y consolida mercado, producto, finanzas y pricing en un PowerPoint para inversores.",
+    "keywords": [
+      "plan de negocio startup",
+      "validar idea saas",
+      "presentación para inversores",
+      "powerpoint plan de negocio"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/scaffold--startup-generator an inventory app for small retail stores",
       "/scaffold--startup-generator I want to launch an invoicing SaaS",
       "/scaffold--startup-generator build the business plan for my fitness app idea"
+    ],
+    "title": "Startup business plan deck",
+    "summary": "Runs 10 parallel agents on your SaaS idea and consolidates market, product, finance and pricing analysis into an investor-ready PowerPoint.",
+    "keywords": [
+      "startup business plan",
+      "validate saas idea",
+      "investor deck",
+      "business plan powerpoint"
     ]
-  }
+  },
+  "copyHash": "27ebf5ad9906b650"
 }

@@ -6,6 +6,14 @@
       "Diseña una landing page con una estructura AIDA muy cuidada",
       "Quiero un bento grid sin huecos con animaciones GSAP al hacer scroll",
       "Ayúdame a que la tipografía de esta página se vea editorial y no genérica"
+    ],
+    "title": "Webs premium con GSAP",
+    "summary": "Reglas de dirección de diseño para páginas con estructura AIDA, tipografía editorial, cuadrículas bento y animaciones de scroll con GSAP.",
+    "keywords": [
+      "landing premium",
+      "animación gsap",
+      "cuadrícula bento",
+      "diseño editorial"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Design a landing page with a tight AIDA structure",
       "I want a gapless bento grid with GSAP scroll animations",
       "Make this page's typography feel editorial instead of generic"
+    ],
+    "title": "Premium landing pages with GSAP",
+    "summary": "Design rules for pages with AIDA structure, wide editorial typography, bento grids and scroll-driven GSAP animations.",
+    "keywords": [
+      "premium landing page",
+      "gsap scrolltrigger",
+      "bento grid",
+      "editorial web design"
     ]
-  }
+  },
+  "copyHash": "2e64c269953f2656"
 }

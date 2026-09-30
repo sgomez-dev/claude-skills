@@ -6,6 +6,14 @@
       "/docs--readme-gen escribe el README de este repo",
       "/docs--readme-gen necesito un README profesional con instrucciones de instalación",
       "/docs--readme-gen genera el README con badges y ejemplos de uso"
+    ],
+    "title": "README profesional",
+    "summary": "Analiza tu proyecto y escribe un README.md completo: descripción, inicio rápido, instalación, uso, configuración y desarrollo.",
+    "keywords": [
+      "generar readme",
+      "readme.md",
+      "documentar proyecto",
+      "readme profesional"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/docs--readme-gen write the README for this repo",
       "/docs--readme-gen I need a professional README with installation instructions",
       "/docs--readme-gen generate the README with badges and usage examples"
+    ],
+    "title": "Professional README",
+    "summary": "Analyzes your project and writes a complete README.md: description, quick start, installation, usage, configuration and development.",
+    "keywords": [
+      "generate readme",
+      "readme.md",
+      "project documentation",
+      "readme template"
     ]
-  }
+  },
+  "copyHash": "c1ccbf9cd6f853e8"
 }

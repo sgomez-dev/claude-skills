@@ -6,6 +6,14 @@
       "Abre esta web, rellena el formulario de contacto y haz una captura",
       "Prueba nuestra app web e informa de cualquier error que encuentres",
       "Comprueba mis mensajes sin leer de Slack y respóndeme al más urgente"
+    ],
+    "title": "Automatización del navegador",
+    "summary": "Abre páginas, rellena formularios, pulsa botones, hace capturas y extrae datos con la CLI agent-browser sobre Chrome o Chromium.",
+    "keywords": [
+      "automatizar navegador",
+      "rellenar formularios web",
+      "captura de pantalla web",
+      "extraer datos de una página"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Open this website, fill out the contact form, and take a screenshot",
       "Test our web app and report any bugs you find",
       "Check my unread Slack messages and reply to the most urgent one"
+    ],
+    "title": "Browser automation with agent-browser",
+    "summary": "Drives Chrome or Chromium through the agent-browser CLI to open pages, fill forms, click buttons, take screenshots and extract data.",
+    "keywords": [
+      "browser automation",
+      "fill web forms",
+      "take website screenshot",
+      "scrape page data"
     ]
-  }
+  },
+  "copyHash": "3a7520e64de2dfaa"
 }

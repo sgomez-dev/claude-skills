@@ -6,6 +6,14 @@
       "/sales--rfp-responder responde a este RFP usando la matriz de requisitos adjunta",
       "/sales--rfp-responder necesito una respuesta a esta RFI con seguimiento de cumplimiento",
       "/sales--rfp-responder redacta las respuestas técnicas de este pliego de licitación"
+    ],
+    "title": "Respuesta a RFP y RFI",
+    "summary": "Convierte un RFP o RFI en un borrador de respuesta con matriz de cumplimiento por requisito, respuestas donde tus datos lo permiten y lista de huecos.",
+    "keywords": [
+      "responder un rfp",
+      "licitación",
+      "matriz de cumplimiento",
+      "propuesta rfi"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/sales--rfp-responder respond to this RFP using the attached requirements matrix",
       "/sales--rfp-responder I need a response to this RFI with compliance tracking",
       "/sales--rfp-responder draft the technical answers for this tender document"
+    ],
+    "title": "RFP and RFI response",
+    "summary": "Turns an RFP or RFI into a response draft with a requirement-by-requirement compliance matrix, answers where your material supports them and a gap list.",
+    "keywords": [
+      "rfp response",
+      "rfi",
+      "compliance matrix",
+      "bid response"
     ]
-  }
+  },
+  "copyHash": "67af63d34feb81af"
 }

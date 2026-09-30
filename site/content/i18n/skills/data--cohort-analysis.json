@@ -6,6 +6,14 @@
       "/data--cohort-analysis haz un análisis de retención por cohortes de mis usuarios",
       "/data--cohort-analysis dame el SQL para ver la retención mensual desde el registro",
       "/data--cohort-analysis explica cómo interpretar la tabla de cohortes que generes"
+    ],
+    "title": "Análisis de retención por cohortes",
+    "summary": "Genera el SQL de una tabla de retención por cohortes sobre tu esquema real y una guía para interpretarla sin caer en artefactos.",
+    "keywords": [
+      "retención por cohortes",
+      "triángulo de retención",
+      "sql de cohortes",
+      "churn de usuarios"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/data--cohort-analysis build a cohort retention analysis of my users",
       "/data--cohort-analysis give me SQL to see monthly retention since signup",
       "/data--cohort-analysis explain how to interpret the cohort table you generate"
+    ],
+    "title": "Cohort retention analysis",
+    "summary": "Builds runnable cohort retention SQL on your real schema, plus a guide to reading the retention triangle and spotting misleading patterns.",
+    "keywords": [
+      "cohort retention",
+      "retention triangle",
+      "cohort sql",
+      "user churn analysis"
     ]
-  }
+  },
+  "copyHash": "bb91b0c9dcd2af0a"
 }

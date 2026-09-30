@@ -6,6 +6,14 @@
       "/product--rice-prioritization puntúa estas diez funcionalidades con RICE",
       "/product--rice-prioritization ordena el backlog por prioridad usando RICE",
       "/product--rice-prioritization ayúdame a decidir qué hacer primero este trimestre"
+    ],
+    "title": "Priorización de backlog con RICE",
+    "summary": "Puntúa un backlog con RICE (alcance, impacto, confianza, esfuerzo) y devuelve una lista ordenada por niveles con cada puntuación justificada.",
+    "keywords": [
+      "priorización rice",
+      "ordenar backlog",
+      "puntuación rice",
+      "priorizar funcionalidades"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/product--rice-prioritization score these ten features with RICE",
       "/product--rice-prioritization rank the backlog by priority using RICE",
       "/product--rice-prioritization help me decide what to build first this quarter"
+    ],
+    "title": "Backlog prioritization with RICE",
+    "summary": "Scores a backlog with RICE (reach, impact, confidence, effort) and returns a ranked, tiered list with every score justified.",
+    "keywords": [
+      "rice prioritization",
+      "backlog ranking",
+      "rice score",
+      "feature prioritization"
     ]
-  }
+  },
+  "copyHash": "0397440e160bcfcd"
 }

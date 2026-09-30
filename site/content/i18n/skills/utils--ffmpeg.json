@@ -6,6 +6,15 @@
       "/utils--ffmpeg convierte este vídeo.mov a mp4 comprimido para WhatsApp",
       "/utils--ffmpeg recorta los primeros 10 segundos de este audio",
       "/utils--ffmpeg une estos tres clips en un solo vídeo para Instagram"
+    ],
+    "title": "Vídeo y audio con FFmpeg",
+    "summary": "Genera comandos de ffmpeg precisos para convertir, redimensionar, comprimir, recortar y unir vídeo y audio, y exportar para cada plataforma.",
+    "keywords": [
+      "comandos ffmpeg",
+      "convertir vídeo",
+      "comprimir vídeo",
+      "recortar vídeo",
+      "unir clips"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "/utils--ffmpeg convert this video.mov to a compressed mp4 for WhatsApp",
       "/utils--ffmpeg trim the first 10 seconds off this audio file",
       "/utils--ffmpeg merge these three clips into one video for Instagram"
+    ],
+    "title": "Video and audio with FFmpeg",
+    "summary": "Writes precise ffmpeg commands to convert, resize, compress, trim and join video and audio files, and to export for each platform.",
+    "keywords": [
+      "ffmpeg commands",
+      "convert video",
+      "compress video",
+      "trim video",
+      "merge clips"
     ]
-  }
+  },
+  "copyHash": "8f64af4e2b0b26df"
 }

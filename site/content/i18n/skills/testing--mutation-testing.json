@@ -6,6 +6,14 @@
       "/testing--mutation-testing configura mutation testing en mi proyecto",
       "/testing--mutation-testing ¿por qué sobreviven tantos mutantes en este módulo?",
       "/testing--mutation-testing refuerza los tests que no detectan estos cambios"
+    ],
+    "title": "Mutation testing para tus tests",
+    "summary": "Configura mutation testing para medir si tus tests detectarían errores reales y convierte los mutantes supervivientes en tests más sólidos.",
+    "keywords": [
+      "mutation testing",
+      "calidad de los tests",
+      "mutantes supervivientes",
+      "stryker"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/testing--mutation-testing set up mutation testing on my project",
       "/testing--mutation-testing why are so many mutants surviving in this module?",
       "/testing--mutation-testing harden tests that miss these mutations"
+    ],
+    "title": "Mutation testing setup",
+    "summary": "Sets up mutation testing to measure whether your tests would catch real bugs, then turns surviving mutants into stronger tests.",
+    "keywords": [
+      "mutation testing",
+      "test quality",
+      "surviving mutants",
+      "stryker"
     ]
-  }
+  },
+  "copyHash": "1bc6b4e934fc8ea4"
 }

@@ -6,6 +6,14 @@
       "/product--feature-spec escribe la spec de la función para invitar miembros al equipo",
       "/product--feature-spec define los casos límite del flujo de pago",
       "/product--feature-spec redacta los criterios de aceptación para esta funcionalidad"
+    ],
+    "title": "Especificación funcional detallada",
+    "summary": "Convierte una idea o PRD en una especificación con flujos de usuario, casos límite, criterios de aceptación y preguntas abiertas.",
+    "keywords": [
+      "especificación funcional",
+      "casos límite",
+      "criterios de aceptación",
+      "flujos de usuario"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/product--feature-spec write the spec for the new invite-teammates feature",
       "/product--feature-spec define the edge cases for the payment flow",
       "/product--feature-spec draft acceptance criteria for this feature"
+    ],
+    "title": "Detailed feature specification",
+    "summary": "Turns a feature idea or PRD into a spec with user flows, edge cases, acceptance criteria and open questions.",
+    "keywords": [
+      "feature spec",
+      "edge cases",
+      "acceptance criteria",
+      "user flows"
     ]
-  }
+  },
+  "copyHash": "7e7a66cde901f825"
 }

@@ -1,7 +1,17 @@
 {
   "sourceHash": "5a319d4135034e70",
+  "copyHash": "fd52bcc90fba7793",
   "es": {
     "description": "Implementa Cloudflare Durable Objects para computación con estado en el edge",
+    "title": "Cloudflare Durable Objects",
+    "summary": "Implementa Durable Objects de Cloudflare para casos con estado, como chats con WebSocket, contadores precisos o bloqueos, con bindings.",
+    "keywords": [
+      "durable objects",
+      "websocket",
+      "estado en el edge",
+      "cloudflare workers",
+      "chat en tiempo real"
+    ],
     "howToAsk": [
       "/networking--durable-objects crea un contador global con estado persistente",
       "/networking--durable-objects implementa una sala de chat en tiempo real",
@@ -13,6 +23,15 @@
       "/networking--durable-objects build a globally consistent counter with persistent state",
       "/networking--durable-objects implement a real-time chat room",
       "/networking--durable-objects manage user sessions at the edge"
+    ],
+    "title": "Cloudflare Durable Objects",
+    "summary": "Implements Cloudflare Durable Objects for stateful use cases such as WebSocket chat rooms, precise counters or locks, with bindings and migrations.",
+    "keywords": [
+      "durable objects",
+      "websocket",
+      "edge state",
+      "cloudflare workers",
+      "realtime chat"
     ]
   }
 }

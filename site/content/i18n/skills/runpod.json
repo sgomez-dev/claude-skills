@@ -6,6 +6,15 @@
       "Configura un endpoint de RunPod para desplegar mi imagen Docker con GPU",
       "El endpoint de RunPod está fallando, ayúdame a diagnosticarlo",
       "Explícame cuánto me va a costar usar realesrgan en RunPod serverless"
+    ],
+    "title": "GPU en la nube: RunPod",
+    "summary": "Configura endpoints serverless de RunPod, despliega las cinco imágenes Docker del toolkit, gestiona los recursos GPU y resuelve problemas de endpoints.",
+    "keywords": [
+      "runpod",
+      "gpu en la nube",
+      "endpoint serverless",
+      "desplegar imagen docker",
+      "coste de gpu"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "Set up a RunPod endpoint to deploy my Docker image on GPU",
       "My RunPod endpoint is failing, help me troubleshoot it",
       "Explain how much running realesrgan on RunPod serverless will cost"
+    ],
+    "title": "Cloud GPU with RunPod",
+    "summary": "Sets up RunPod serverless endpoints, deploys the toolkit's five Docker images, manages GPU resources and troubleshoots endpoint issues.",
+    "keywords": [
+      "runpod",
+      "cloud gpu",
+      "serverless endpoint",
+      "deploy docker image",
+      "gpu costs"
     ]
-  }
+  },
+  "copyHash": "a61ea498acd0f2c8"
 }

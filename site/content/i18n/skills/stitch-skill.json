@@ -6,6 +6,14 @@
       "Genera un DESIGN.md para mi proyecto en Google Stitch",
       "Necesito un sistema de diseño semántico que evite una UI genérica",
       "Define la tipografía y el color de mi app en Stitch"
+    ],
+    "title": "DESIGN.md para Google Stitch",
+    "summary": "Genera un archivo DESIGN.md con reglas de tipografía, color, layout y movimiento para que Google Stitch cree pantallas premium y no genéricas.",
+    "keywords": [
+      "google stitch",
+      "design.md",
+      "sistema de diseño para ia",
+      "pantallas ui con ia"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Generate a DESIGN.md for my Google Stitch project",
       "I need a semantic design system that avoids a generic UI",
       "Define the typography and color for my app in Stitch"
+    ],
+    "title": "DESIGN.md for Google Stitch",
+    "summary": "Generates a DESIGN.md file of typography, color, layout and motion rules so Google Stitch produces premium, non-generic screens.",
+    "keywords": [
+      "google stitch",
+      "design.md",
+      "ai design system",
+      "generate ui screens"
     ]
-  }
+  },
+  "copyHash": "46bdb08fee2dded3"
 }

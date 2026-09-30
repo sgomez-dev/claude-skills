@@ -6,6 +6,14 @@
       "/cloud--iam-least-privilege audita los permisos IAM de mi cuenta de AWS",
       "/cloud--iam-least-privilege revisa mis roles de servicio y propón permisos mínimos",
       "/cloud--iam-least-privilege encuentra permisos excesivos en mi proyecto de GCP"
+    ],
+    "title": "Permisos IAM de mínimo privilegio",
+    "summary": "Audita políticas IAM y genera reemplazos de mínimo privilegio como cambios de código que revisas tú; nunca los aplica por su cuenta.",
+    "keywords": [
+      "auditar iam",
+      "mínimo privilegio",
+      "permisos excesivos",
+      "políticas iam"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/cloud--iam-least-privilege audit the IAM policies on my AWS account",
       "/cloud--iam-least-privilege review my service roles and suggest minimal permissions",
       "/cloud--iam-least-privilege find over-privileged access in my GCP project"
+    ],
+    "title": "Least-privilege IAM review",
+    "summary": "Audits IAM policies and writes least-privilege replacements as reviewable code changes, without applying anything itself.",
+    "keywords": [
+      "iam audit",
+      "least privilege",
+      "over-permissive roles",
+      "iam policies"
     ]
-  }
+  },
+  "copyHash": "23dd0a7da9f36d07"
 }

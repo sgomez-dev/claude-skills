@@ -6,6 +6,38 @@
       "/security--security-audit haz una auditoría de seguridad completa de mi app",
       "/security--security-audit revisa mi API contra el OWASP Top 10",
       "/security--security-audit ¿qué vulnerabilidades comunes tiene este proyecto?"
+    ],
+    "title": "Auditoría de seguridad OWASP",
+    "summary": "Audita el código de tu proyecto contra el OWASP Top 10 y devuelve cada hallazgo con gravedad, archivo y línea, descripción y arreglo.",
+    "keywords": [
+      "auditoría de seguridad",
+      "owasp top 10",
+      "vulnerabilidades web",
+      "revisar seguridad"
+    ],
+    "useWhen": [
+      "Quieres una revisión de seguridad general de un proyecto antes de lanzarlo",
+      "Necesitas saber si hay fallos de control de acceso, inyección o configuración",
+      "Quieres localizar dependencias con CVE conocidos junto al resto de riesgos"
+    ],
+    "notFor": [
+      "Sustituir una auditoría profesional o un pentest externo",
+      "Probar la aplicación desplegada: revisa el código del repositorio"
+    ],
+    "output": "Una lista de hallazgos, cada uno con gravedad (crítica, alta, media o baja), archivo y línea, descripción y arreglo.",
+    "faq": [
+      {
+        "q": "¿Qué categorías del OWASP Top 10 cubre?",
+        "a": "Las diez, de A01 (control de acceso roto) a A10 (SSRF), incluidas inyección, fallos criptográficos, configuración insegura y registros insuficientes."
+      },
+      {
+        "q": "¿Indica qué hay que arreglar primero?",
+        "a": "Sí: cada hallazgo lleva una gravedad (crítica, alta, media o baja), su archivo y línea, una descripción y el arreglo propuesto."
+      },
+      {
+        "q": "¿Sustituye a un pentest?",
+        "a": "No. Es una revisión del código contra una lista de riesgos conocidos. Para preparar un pentest externo existe /security--pentest-prep."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "/security--security-audit run a full security audit on my app",
       "/security--security-audit check my API against the OWASP Top 10",
       "/security--security-audit what common vulnerabilities does this project have?"
+    ],
+    "title": "OWASP security audit",
+    "summary": "Audits your codebase against the OWASP Top 10 and returns each finding with severity, file and line, a description and a fix.",
+    "keywords": [
+      "security audit",
+      "owasp top 10",
+      "web vulnerabilities",
+      "code security review"
+    ],
+    "useWhen": [
+      "You want a general security review of a project before launch",
+      "You need to know whether there are access control, injection or misconfiguration flaws",
+      "You want to spot dependencies with known CVEs alongside other risks"
+    ],
+    "notFor": [
+      "Replacing a professional audit or an external pentest",
+      "Testing the deployed app: it reviews the repository's code"
+    ],
+    "output": "A list of findings, each with severity (critical, high, medium or low), file and line, a description and a fix.",
+    "faq": [
+      {
+        "q": "Which OWASP Top 10 categories does it cover?",
+        "a": "All ten, from A01 (broken access control) to A10 (SSRF), including injection, cryptographic failures, misconfiguration and logging gaps."
+      },
+      {
+        "q": "Does it tell me what to fix first?",
+        "a": "Yes: every finding carries a severity (critical, high, medium or low), its file and line, a description and a proposed fix."
+      },
+      {
+        "q": "Does it replace a pentest?",
+        "a": "No. It is a code review against a list of known risks. To prepare for an external pentest, use /security--pentest-prep."
+      }
     ]
-  }
+  },
+  "copyHash": "7321bf67c77af5e4"
 }

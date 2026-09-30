@@ -6,6 +6,14 @@
       "/debugging--console-debug añade logs para rastrear este bug de checkout",
       "/debugging--console-debug ayúdame a poner console.log en los sitios correctos",
       "/debugging--console-debug traza este error paso a paso con logging"
+    ],
+    "title": "Logs de depuración estratégicos",
+    "summary": "Añade logs de depuración en los puntos clave del código para rastrear un bug, marcados para borrarlos fácilmente al terminar.",
+    "keywords": [
+      "añadir console log",
+      "depurar con logs",
+      "rastrear un bug",
+      "logs de depuración"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/debugging--console-debug add logging to trace this checkout bug",
       "/debugging--console-debug help me place console.log in the right spots",
       "/debugging--console-debug trace this error step by step with logging"
+    ],
+    "title": "Strategic debug logging",
+    "summary": "Adds debug logs at key points of your code to trace a bug, each tagged so it can be removed in one pass once the bug is found.",
+    "keywords": [
+      "add console log",
+      "debug with logs",
+      "trace a bug",
+      "debug logging"
     ]
-  }
+  },
+  "copyHash": "a4ca755b8368a15e"
 }

@@ -6,6 +6,15 @@
       "/scaffold--create-video crea un proyecto de vídeo nuevo para un anuncio de producto",
       "/scaffold--create-video necesito arrancar un vídeo de Remotion desde cero para redes sociales",
       "/scaffold--create-video monta la plantilla adecuada para un vídeo de lanzamiento"
+    ],
+    "title": "Nuevo proyecto de vídeo Remotion",
+    "summary": "Crea un proyecto de vídeo desde cero con npx create-video: elige la plantilla de Remotion adecuada, instala y lo personaliza listo para previsualizar.",
+    "keywords": [
+      "crear proyecto remotion",
+      "npx create-video",
+      "plantilla de vídeo",
+      "empezar un vídeo en react",
+      "proyecto de vídeo nuevo"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "/scaffold--create-video bootstrap a new video project for a product ad",
       "/scaffold--create-video I need to start a Remotion video from scratch for social media",
       "/scaffold--create-video set up the right template for a launch video"
+    ],
+    "title": "New Remotion video project",
+    "summary": "Bootstraps a new video project from scratch with npx create-video: picks the right Remotion template, installs it and customizes it for preview.",
+    "keywords": [
+      "create remotion project",
+      "npx create-video",
+      "video template",
+      "start react video",
+      "new video project"
     ]
-  }
+  },
+  "copyHash": "0b6fc19a0b16cd85"
 }

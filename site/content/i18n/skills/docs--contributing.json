@@ -6,6 +6,14 @@
       "/docs--contributing crea la guía CONTRIBUTING.md para mi proyecto open source",
       "/docs--contributing necesito instrucciones claras para que la gente contribuya al repo",
       "/docs--contributing genera las normas de contribución y el proceso de pull requests"
+    ],
+    "title": "Guía CONTRIBUTING.md",
+    "summary": "Genera un CONTRIBUTING.md adaptado a tu proyecto: configuración del entorno, estándares de código y proceso de pull requests.",
+    "keywords": [
+      "contributing.md",
+      "guía de contribución",
+      "open source",
+      "proceso de pull request"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/docs--contributing create a CONTRIBUTING.md guide for my open source project",
       "/docs--contributing I need clear instructions for people contributing to the repo",
       "/docs--contributing generate contribution guidelines and the pull request process"
+    ],
+    "title": "CONTRIBUTING.md guide",
+    "summary": "Generates a CONTRIBUTING.md tailored to your project: dev setup, code standards detected from your tooling, and the pull request process.",
+    "keywords": [
+      "contributing.md",
+      "contribution guide",
+      "open source project",
+      "pull request process"
     ]
-  }
+  },
+  "copyHash": "5dc47ea11da3e217"
 }

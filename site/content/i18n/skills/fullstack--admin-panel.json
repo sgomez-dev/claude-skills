@@ -6,6 +6,14 @@
       "/fullstack--admin-panel crea un panel de admin con CRUD para usuarios y pedidos",
       "/fullstack--admin-panel necesito poder entrar como un usuario para depurar un problema",
       "/fullstack--admin-panel añade un registro de auditoría y roles de acceso al panel"
+    ],
+    "title": "Panel de administración",
+    "summary": "Construye un panel interno con CRUD de tus modelos, suplantación de usuarios para soporte, registro de auditoría y roles en el servidor.",
+    "keywords": [
+      "panel de administración",
+      "panel admin",
+      "suplantar usuario",
+      "log de auditoría"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/fullstack--admin-panel build an admin panel with CRUD for users and orders",
       "/fullstack--admin-panel I need to impersonate a user to debug an issue",
       "/fullstack--admin-panel add an audit log and role-based access to the panel"
+    ],
+    "title": "Admin panel",
+    "summary": "Builds an internal admin panel with CRUD for your models, user impersonation for support, an audit log and server-side role gates.",
+    "keywords": [
+      "admin panel",
+      "user impersonation",
+      "audit log",
+      "role based admin"
     ]
-  }
+  },
+  "copyHash": "65fc581d7d63e4fb"
 }

@@ -6,6 +6,14 @@
       "/ecommerce--product-catalog diseña el modelo de datos para productos con tallas y colores",
       "/ecommerce--product-catalog necesito categorías y atributos para filtrar productos",
       "/ecommerce--product-catalog añade soporte de variantes con imágenes distintas por color"
+    ],
+    "title": "Modelo de catálogo de productos",
+    "summary": "Diseña el modelo de datos de un catálogo: productos, variantes, opciones, categorías, atributos filtrables y gestión de imágenes.",
+    "keywords": [
+      "catálogo de productos",
+      "variantes de producto",
+      "categorías tienda",
+      "atributos filtrables"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ecommerce--product-catalog design the data model for products with sizes and colors",
       "/ecommerce--product-catalog I need categories and attributes to filter products",
       "/ecommerce--product-catalog add variant support with different images per color"
+    ],
+    "title": "Product catalog data model",
+    "summary": "Designs a store catalog data model: products, variants, options, category tree, filterable attributes and media handling.",
+    "keywords": [
+      "product catalog",
+      "product variants",
+      "category structure",
+      "product attributes"
     ]
-  }
+  },
+  "copyHash": "b2be1e748d17aefc"
 }

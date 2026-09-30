@@ -6,6 +6,14 @@
       "/networking--load-balancer reparte el tráfico entre dos servidores backend",
       "/networking--load-balancer añade un health check con failover automático",
       "/networking--load-balancer configura balanceo de carga para mi API"
+    ],
+    "title": "Balanceo de carga con failover",
+    "summary": "Diseña la configuración de balanceo de carga de tu app, con pools de servidores, comprobaciones de salud y failover, en Cloudflare, Nginx o Kubernetes.",
+    "keywords": [
+      "balanceador de carga",
+      "health checks",
+      "failover",
+      "cloudflare load balancer"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/networking--load-balancer split traffic between two backend servers",
       "/networking--load-balancer add a health check with automatic failover",
       "/networking--load-balancer set up load balancing for my API"
+    ],
+    "title": "Load balancing with failover",
+    "summary": "Designs your app's load balancing setup, with origin pools, health checks and failover, as Cloudflare, Nginx or Kubernetes configuration.",
+    "keywords": [
+      "load balancer",
+      "health checks",
+      "failover",
+      "cloudflare load balancing"
     ]
-  }
+  },
+  "copyHash": "adec44c6890ab568"
 }

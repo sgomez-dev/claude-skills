@@ -6,6 +6,14 @@
       "/utils--tsconfig crea un tsconfig.json para un proyecto React con Vite",
       "/utils--tsconfig activa el modo estricto y arregla los errores que salgan",
       "/utils--tsconfig optimiza las rutas de importación (paths) de mi proyecto"
+    ],
+    "title": "Configuración de tsconfig.json",
+    "summary": "Genera u optimiza el tsconfig.json según sea backend, frontend, librería o monorepo, con modo estricto y explicación de los ajustes.",
+    "keywords": [
+      "configurar tsconfig",
+      "typescript strict",
+      "module resolution",
+      "project references"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/utils--tsconfig create a tsconfig.json for a React project with Vite",
       "/utils--tsconfig turn on strict mode and fix whatever errors show up",
       "/utils--tsconfig optimize the import path aliases in my project"
+    ],
+    "title": "tsconfig.json setup",
+    "summary": "Generates or tunes tsconfig.json for a backend, frontend, library or monorepo, with strict mode and an explanation of the settings.",
+    "keywords": [
+      "tsconfig setup",
+      "typescript strict",
+      "module resolution",
+      "project references"
     ]
-  }
+  },
+  "copyHash": "a462048ae446cc21"
 }

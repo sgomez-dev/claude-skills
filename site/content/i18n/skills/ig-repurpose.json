@@ -6,6 +6,14 @@
       "Convierte este podcast en una semana de reels para Instagram",
       "Tengo la transcripción de mi última charla, trocéala en carruseles",
       "Reutiliza este artículo de blog como contenido de Instagram"
+    ],
+    "title": "Reciclar contenido largo en Instagram",
+    "summary": "Convierte un vídeo, pódcast, newsletter o artículo en una semana de reels y carruseles, extrayendo afirmaciones, cifras e historias.",
+    "keywords": [
+      "reutilizar contenido",
+      "de podcast a reels",
+      "repurpose instagram",
+      "cortar un vídeo largo"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Turn this podcast into a week of Instagram reels",
       "I have the transcript of my last talk, chop it into carousels",
       "Repurpose this blog post as Instagram content"
+    ],
+    "title": "Repurpose long content for Instagram",
+    "summary": "Turns a video, podcast, newsletter or article into a week of reels and carousels by extracting claims, numbers, stories and quotable lines.",
+    "keywords": [
+      "repurpose content",
+      "podcast to reels",
+      "video to carousel",
+      "cut up a long video"
     ]
-  }
+  },
+  "copyHash": "545f240a5f13657d"
 }

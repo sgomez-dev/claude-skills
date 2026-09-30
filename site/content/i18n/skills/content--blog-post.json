@@ -6,6 +6,38 @@
       "/content--blog-post escribe un artículo sobre cómo migramos nuestra base de datos",
       "/content--blog-post necesito un post de negocio sobre nuestra nueva estrategia de precios",
       "/content--blog-post redacta un artículo técnico con un ángulo original sobre IA"
+    ],
+    "title": "Artículo de blog",
+    "summary": "Escribe un artículo de blog técnico o de negocio: propone ángulos, esquema y borrador completo, con lo básico de SEO y sin voz de IA genérica.",
+    "keywords": [
+      "escribir artículo de blog",
+      "post de blog",
+      "redactar blog",
+      "ángulo de contenido"
+    ],
+    "useWhen": [
+      "Necesitas un artículo de blog con un ángulo propio y no un tema genérico",
+      "Quieres partir de una audiencia y una voz concretas",
+      "Buscas un borrador completo con lo básico de SEO"
+    ],
+    "notFor": [
+      "Un plan de SEO completo, para eso existe /content--seo-content",
+      "Inventar cifras, clientes o citas que no aportes tú"
+    ],
+    "output": "Un archivo blog_[slug].md con frontmatter y borrador completo, más tres variantes de título y la meta descripción en la conversación.",
+    "faq": [
+      {
+        "q": "¿Escribe en español o en inglés?",
+        "a": "En el idioma de tu audiencia y mercado, no en inglés por defecto. Te lo confirma al empezar."
+      },
+      {
+        "q": "¿Inventa estadísticas o citas?",
+        "a": "No. Nunca inventa estadísticas, clientes ni citas, y marca con [verify] lo que necesite comprobación."
+      },
+      {
+        "q": "¿Cuánto mide el artículo?",
+        "a": "Depende del ángulo, no de un objetivo de palabras. La mayoría de buenos artículos rondan las 800 a 1.500 palabras."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "/content--blog-post write a blog post about how we migrated our database",
       "/content--blog-post I need a business post about our new pricing strategy",
       "/content--blog-post draft a technical article with a fresh angle on AI"
+    ],
+    "title": "Blog post writing",
+    "summary": "Writes a technical or business blog post: proposes angles, an outline and a full draft, with SEO basics and without generic AI prose.",
+    "keywords": [
+      "write a blog post",
+      "blog article",
+      "blog outline",
+      "content angle"
+    ],
+    "useWhen": [
+      "You need a blog post with a real angle, not just a topic",
+      "You want it written for a specific audience and voice",
+      "You want a full draft with SEO basics included"
+    ],
+    "notFor": [
+      "A full SEO strategy, which /content--seo-content covers",
+      "Making up statistics, customers or quotes you have not supplied"
+    ],
+    "output": "A blog_[slug].md file with frontmatter and a full draft, plus three title options and the meta description shown in the conversation.",
+    "faq": [
+      {
+        "q": "Does it write in English or another language?",
+        "a": "In the language of your audience and market, not English by default. It confirms this with you first."
+      },
+      {
+        "q": "Will it invent statistics or quotes?",
+        "a": "No. It never invents statistics, customer names or quotes, and it marks anything needing verification with [verify]."
+      },
+      {
+        "q": "How long is the post?",
+        "a": "It follows the angle rather than a word target. Most good posts run 800 to 1,500 words."
+      }
     ]
-  }
+  },
+  "copyHash": "d6cc1f61e6f96ff7"
 }

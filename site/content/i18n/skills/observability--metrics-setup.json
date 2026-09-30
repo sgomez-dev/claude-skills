@@ -6,6 +6,14 @@
       "/observability--metrics-setup añade métricas RED a mi API con Prometheus",
       "/observability--metrics-setup instrumenta mi servicio con OpenTelemetry",
       "/observability--metrics-setup quiero ver tasa de errores y latencia por endpoint"
+    ],
+    "title": "Métricas de aplicación",
+    "summary": "Añade a tu app un conjunto reducido de métricas con los métodos RED y USE, exportadas a Prometheus u OpenTelemetry, controlando la cardinalidad.",
+    "keywords": [
+      "métricas prometheus",
+      "opentelemetry",
+      "método red",
+      "instrumentar métricas"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/observability--metrics-setup add RED metrics to my API with Prometheus",
       "/observability--metrics-setup instrument my service with OpenTelemetry",
       "/observability--metrics-setup I want error rate and latency per endpoint"
+    ],
+    "title": "Application metrics setup",
+    "summary": "Adds a small set of application metrics to your app using the RED and USE methods, exported via Prometheus or OpenTelemetry, with cardinality kept in check.",
+    "keywords": [
+      "prometheus metrics",
+      "opentelemetry metrics",
+      "red method",
+      "instrument app"
     ]
-  }
+  },
+  "copyHash": "41694b97c4340be1"
 }

@@ -6,6 +6,14 @@
       "/testing--playwright-mcp navega a mi web y rellena el formulario de registro",
       "/testing--playwright-mcp haz clic en el botón de compra y toma una captura",
       "/testing--playwright-mcp depura por qué falla este flujo en el navegador"
+    ],
+    "title": "Automatización del navegador",
+    "summary": "Controla un navegador real con Playwright MCP para navegar, hacer clic, rellenar formularios, depurar páginas y sacar capturas.",
+    "keywords": [
+      "automatizar navegador",
+      "playwright mcp",
+      "rellenar formularios",
+      "captura de pantalla web"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/testing--playwright-mcp navigate my site and fill out the signup form",
       "/testing--playwright-mcp click the checkout button and take a screenshot",
       "/testing--playwright-mcp debug why this flow fails in the browser"
+    ],
+    "title": "Browser automation with Playwright",
+    "summary": "Drives a real browser through Playwright MCP to navigate, click, fill forms, debug pages and take screenshots.",
+    "keywords": [
+      "browser automation",
+      "playwright mcp",
+      "fill web forms",
+      "web page screenshot"
     ]
-  }
+  },
+  "copyHash": "888898a924924aad"
 }

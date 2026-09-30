@@ -6,6 +6,38 @@
       "/data--funnel-analysis embudo de conversión del onboarding",
       "/data--funnel-analysis SQL para ver dónde abandonan los usuarios el checkout",
       "/data--funnel-analysis analiza el embudo de la prueba gratuita a pago"
+    ],
+    "title": "Análisis de embudo de conversión",
+    "summary": "Genera el SQL de un embudo de conversión sobre tus eventos reales, con abandono por paso y por segmento, y una plantilla para sacar conclusiones.",
+    "keywords": [
+      "embudo de conversión",
+      "abandono por paso",
+      "sql de funnel",
+      "tasa de conversión"
+    ],
+    "useWhen": [
+      "Quieres saber en qué paso del onboarding o del checkout pierdes usuarios",
+      "Necesitas comparar la conversión por canal, dispositivo o plan",
+      "Tienes eventos registrados y quieres priorizar qué arreglar primero"
+    ],
+    "notFor": [
+      "Medir el comportamiento de retorno a lo largo del tiempo, para eso existe el análisis de cohortes",
+      "Conectarse a tu almacén de datos y ejecutar las consultas por ti"
+    ],
+    "output": "Un archivo funnel_nombre.sql con la definición del embudo y un funnel_nombre.md con la plantilla de conclusiones.",
+    "faq": [
+      {
+        "q": "¿Ejecuta las consultas contra mi base de datos?",
+        "a": "No. Solo escribe el SQL y los documentos; las consultas las ejecutas tú en tu almacén de datos."
+      },
+      {
+        "q": "¿Qué hace si falta el evento de un paso?",
+        "a": "Lo señala como hueco en lugar de sustituirlo en silencio por otro evento parecido. Para definirlo, remite al plan de tracking de eventos."
+      },
+      {
+        "q": "¿Por qué prioriza por usuarios perdidos y no por porcentaje?",
+        "a": "Porque un porcentaje pequeño sobre mucho volumen puede perder más gente que uno grande sobre poco volumen."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "/data--funnel-analysis conversion funnel for onboarding",
       "/data--funnel-analysis SQL to find where users drop off at checkout",
       "/data--funnel-analysis analyze the funnel from free trial to paid"
+    ],
+    "title": "Conversion funnel analysis",
+    "summary": "Builds conversion funnel SQL on your real event data, with drop-off per step and per segment, plus an insights template for next steps.",
+    "keywords": [
+      "conversion funnel",
+      "drop-off analysis",
+      "funnel sql",
+      "checkout abandonment"
+    ],
+    "useWhen": [
+      "You want to know which onboarding or checkout step loses users",
+      "You need to compare conversion by channel, device or plan",
+      "You have tracked events and want to prioritize what to fix first"
+    ],
+    "notFor": [
+      "Measuring return behavior over time, which is what cohort analysis is for",
+      "Connecting to your warehouse and running the queries for you"
+    ],
+    "output": "A funnel_name.sql file with the funnel definition and a funnel_name.md with a pre-structured insights template.",
+    "faq": [
+      {
+        "q": "Does it run the queries against my database?",
+        "a": "No. It only writes the SQL and the documents; you run the queries yourself against your warehouse."
+      },
+      {
+        "q": "What if an event for one step is not tracked?",
+        "a": "It flags the gap instead of quietly substituting a similar event. For defining it, it points you to the event tracking plan skill."
+      },
+      {
+        "q": "Why rank by users lost instead of percentage?",
+        "a": "A small percentage leak on high volume can lose more people than a large one on low volume."
+      }
     ]
-  }
+  },
+  "copyHash": "8dd090d81e8d4b54"
 }

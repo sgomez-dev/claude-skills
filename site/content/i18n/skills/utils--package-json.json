@@ -6,6 +6,14 @@
       "/utils--package-json limpia las dependencias que ya no uso en package.json",
       "/utils--package-json ordena y mejora mis scripts de npm",
       "/utils--package-json añade los metadatos que faltan antes de publicar en npm"
+    ],
+    "title": "Limpieza de package.json",
+    "summary": "Revisa y ordena tu package.json: scripts, dependencias, metadatos y configuración, y avisa de riesgos como scripts postinstall.",
+    "keywords": [
+      "optimizar package.json",
+      "limpiar dependencias",
+      "scripts npm",
+      "dependencias sin usar"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/utils--package-json clean up unused dependencies in package.json",
       "/utils--package-json organize and improve my npm scripts",
       "/utils--package-json add missing metadata before publishing to npm"
+    ],
+    "title": "package.json cleanup",
+    "summary": "Reviews and tidies your package.json: scripts, dependencies, metadata and config, and flags risks such as postinstall scripts.",
+    "keywords": [
+      "optimize package.json",
+      "clean dependencies",
+      "npm scripts",
+      "unused dependencies"
     ]
-  }
+  },
+  "copyHash": "e2777eda1b5b5f5f"
 }

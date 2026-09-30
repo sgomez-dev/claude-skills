@@ -6,6 +6,14 @@
       "Crea la imagen principal de este producto para Amazon",
       "Necesito imágenes secundarias y contenido A+ para mi listado",
       "Haz una infografía de producto para el marketplace"
+    ],
+    "title": "Imágenes para marketplaces",
+    "summary": "Crea la imagen principal, las secundarias y los módulos A+ de una ficha de producto para marketplaces, con la CLI de Higgsfield.",
+    "keywords": [
+      "imágenes para amazon",
+      "ficha de producto",
+      "contenido a+",
+      "fotos de listing"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Create the main listing image for this product on Amazon",
       "I need secondary images and A+ style content for my listing",
       "Make a product infographic for the marketplace"
+    ],
+    "title": "Marketplace listing images",
+    "summary": "Creates the main image, secondary images and A+ content modules for a marketplace product listing using the Higgsfield CLI.",
+    "keywords": [
+      "amazon listing images",
+      "product detail cards",
+      "a+ content",
+      "marketplace images"
     ]
-  }
+  },
+  "copyHash": "48438ff34990e8a7"
 }

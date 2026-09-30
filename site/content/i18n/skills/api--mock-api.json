@@ -6,6 +6,14 @@
       "/api--mock-api monta una API simulada mientras el backend no está listo",
       "/api--mock-api necesito datos de prueba para desarrollar el frontend",
       "/api--mock-api crea un mock de la API de pagos para los tests"
+    ],
+    "title": "Servidor de API simulada",
+    "summary": "Crea un servidor de API falsa con datos realistas, errores y latencia para desarrollar el frontend o hacer pruebas sin el backend real.",
+    "keywords": [
+      "api simulada",
+      "mock api",
+      "msw",
+      "json-server"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/api--mock-api spin up a mock API while the backend isn't ready yet",
       "/api--mock-api I need fake data to build out the frontend",
       "/api--mock-api mock the payments API for testing"
+    ],
+    "title": "Mock API server",
+    "summary": "Creates a mock API server with realistic data, error responses and latency, so you can build or test a frontend without the real backend.",
+    "keywords": [
+      "mock api",
+      "fake api server",
+      "msw",
+      "json-server"
     ]
-  }
+  },
+  "copyHash": "0ad621d051e3e177"
 }

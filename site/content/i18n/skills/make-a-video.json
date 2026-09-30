@@ -1,6 +1,15 @@
 {
   "sourceHash": "7614e25a67a6210a",
+  "copyHash": "ea1cf3faabea38f1",
   "es": {
+    "title": "Creador de vídeo para principiantes",
+    "summary": "Guía a quien empieza a crear un vídeo completo en HyperFrames: una entrevista inicial, un guion aprobado y el montaje con vistas previas y verificación.",
+    "keywords": [
+      "crear un vídeo desde cero",
+      "hacer un vídeo con ia",
+      "vídeo para principiantes",
+      "de idea a mp4"
+    ],
     "description": "Creador de vídeo de principio a fin para HyperFrames, pensado para principiantes. Úsalo cuando el usuario diga \"haz un vídeo\", \"crea un vídeo\", \"vídeo nuevo\", \"quiero hacer un vídeo\", \"ayúdame a crear un vídeo\", o cuando alguien que nunca ha usado HyperFrames llegue con un concepto, un guion o una idea aproximada y quiera un MP4 terminado. Entrevista al usuario en una sola pasada y luego construye el vídeo completo con vistas previas obligatorias y comprobaciones de verificación visual.",
     "howToAsk": [
       "Quiero hacer un vídeo pero no sé por dónde empezar",
@@ -9,6 +18,14 @@
     ]
   },
   "en": {
+    "title": "Beginner video creator",
+    "summary": "Guides beginners to a finished HyperFrames video: one interview pass, an approved brief, then the build with previews and visual verification.",
+    "keywords": [
+      "make a video from scratch",
+      "create video with ai",
+      "beginner video maker",
+      "idea to mp4"
+    ],
     "howToAsk": [
       "I want to make a video but have no idea where to start",
       "Help me create a video to introduce my product",

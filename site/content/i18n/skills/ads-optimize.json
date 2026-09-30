@@ -1,6 +1,14 @@
 {
   "sourceHash": "60f76d325b8f954e",
   "es": {
+    "title": "Optimización de campañas de pago",
+    "summary": "Propone optimizaciones de tus campañas como borrador con pruebas y confianza, y solo las aplica con tu aprobación. No borra campañas de forma permanente.",
+    "keywords": [
+      "optimizar campañas",
+      "reasignar presupuesto",
+      "mejorar cpa y roas",
+      "pausar anuncios"
+    ],
     "description": "Diagnostica y redacta o aplica explícitamente optimizaciones de anuncios de pago usando evidencias, restricciones financieras, experimentos y adaptadores controlados por capacidades. Úsalo para optimización de campañas, reasignación de presupuesto, cambios de puja, pausar o archivar anuncios, solicitudes para eliminar campañas, acciones sobre términos de búsqueda o negativas, rotación de creatividades o mejora del CPA y el ROAS.",
     "howToAsk": [
       "Optimiza esta campaña, el CPA está muy alto",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "Paid campaign optimization",
+    "summary": "Drafts campaign optimizations backed by evidence and confidence levels, applying them only with your approval. Never permanently deletes campaigns.",
+    "keywords": [
+      "optimize campaigns",
+      "budget reallocation",
+      "improve cpa and roas",
+      "pause ads"
+    ],
     "howToAsk": [
       "Optimize this campaign, CPA is too high",
       "Reallocate budget from the worst-performing campaign to the best one",
       "Pause the lowest-ROAS ads and rotate in new creative"
     ]
-  }
+  },
+  "copyHash": "0f8548e97be96082"
 }

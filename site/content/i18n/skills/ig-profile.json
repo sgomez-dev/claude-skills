@@ -6,6 +6,14 @@
       "Puntúa mi perfil de Instagram y dime qué mejorar",
       "Arréglame la bio, no consigo que la gente me siga",
       "Aquí está mi perfil, dime por qué no convierte"
+    ],
+    "title": "Optimizar tu perfil de Instagram",
+    "summary": "Puntúa tu perfil de Instagram sobre 100 con una rúbrica de 12 partes y reescribe nombre, bio, enlace, destacadas, fijados y cuadrícula.",
+    "keywords": [
+      "optimizar perfil instagram",
+      "mejorar mi bio",
+      "puntuar perfil",
+      "destacadas instagram"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Score my Instagram profile and tell me what to improve",
       "Fix my bio, I can't get people to follow me",
       "Here's my profile, tell me why it's not converting"
+    ],
+    "title": "Instagram profile optimiser",
+    "summary": "Scores an Instagram profile out of 100 on a 12-part rubric and rewrites the weak parts: name, bio, link, highlights, pinned posts and grid.",
+    "keywords": [
+      "optimize instagram profile",
+      "fix my bio",
+      "instagram bio",
+      "profile score"
     ]
-  }
+  },
+  "copyHash": "a2bda7e39066b71f"
 }

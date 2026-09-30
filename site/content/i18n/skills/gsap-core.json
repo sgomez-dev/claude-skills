@@ -6,6 +6,14 @@
       "Quiero animar un elemento del DOM con GSAP en mi proyecto React",
       "Necesito una animación con reduced-motion para usuarios sensibles al movimiento",
       "Ayúdame a elegir el easing correcto para esta transición"
+    ],
+    "title": "GSAP: animaciones básicas",
+    "summary": "Guía de la API base de GSAP: to, from, fromTo, easing, duración, stagger y matchMedia para animación responsive y con movimiento reducido.",
+    "keywords": [
+      "gsap",
+      "animación javascript",
+      "gsap.to",
+      "easing"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "I want to animate a DOM element with GSAP in my React project",
       "I need a reduced-motion-aware animation for sensitive users",
       "Help me pick the right easing for this transition"
+    ],
+    "title": "GSAP core animations",
+    "summary": "A guide to the core GSAP API: to, from, fromTo, easing, duration, stagger and matchMedia for responsive and reduced-motion animation.",
+    "keywords": [
+      "gsap tutorial",
+      "javascript animation library",
+      "gsap.to",
+      "gsap easing"
     ]
-  }
+  },
+  "copyHash": "3887b47e050ab5af"
 }

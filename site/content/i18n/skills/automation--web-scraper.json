@@ -6,6 +6,14 @@
       "/automation--web-scraper crea un scraper que respete el robots.txt de esta web",
       "/automation--web-scraper extrae los precios de este sitio con paginación",
       "/automation--web-scraper guarda los datos scrapeados en una base de datos"
+    ],
+    "title": "Web scraper respetuoso",
+    "summary": "Construye un scraper que comprueba robots.txt y condiciones de uso, limita peticiones, gestiona paginación y guarda los datos de forma reanudable.",
+    "keywords": [
+      "web scraper",
+      "scraping robots.txt",
+      "paginación scraping",
+      "extraer datos de una web"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/automation--web-scraper build a scraper that respects this site's robots.txt",
       "/automation--web-scraper extract prices from this site across paginated results",
       "/automation--web-scraper store the scraped data in a database"
+    ],
+    "title": "Polite web scraper",
+    "summary": "Builds a scraper that checks robots.txt and terms of service, throttles requests, handles pagination and saves results so runs can resume.",
+    "keywords": [
+      "web scraper",
+      "robots.txt scraping",
+      "scraping pagination",
+      "extract data from website"
     ]
-  }
+  },
+  "copyHash": "ca0b1fd5c8b45bd6"
 }

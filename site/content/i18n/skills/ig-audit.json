@@ -6,6 +6,14 @@
       "Aquí tienes mis estadísticas de Instagram, dime qué reels funcionaron y por qué",
       "Audita mi contenido del último mes y dime qué dejar de publicar",
       "¿Por qué este reel no funcionó? Te paso los datos"
+    ],
+    "title": "Análisis de posts de Instagram",
+    "summary": "Analiza tus últimas publicaciones a partir de tus métricas y dice qué reels funcionaron, por qué y qué dejar de hacer.",
+    "keywords": [
+      "analizar mis reels",
+      "métricas instagram",
+      "por qué flopó mi reel",
+      "auditar contenido"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Here are my Instagram insights, tell me which reels worked and why",
       "Audit last month's content and tell me what to stop posting",
       "Why did this reel flop? Here's the data"
+    ],
+    "title": "Instagram post-mortem",
+    "summary": "Reads your Instagram insights or past posts and shows which reels worked, why they worked and what to stop making, ranked by outlier multiple.",
+    "keywords": [
+      "instagram analytics",
+      "why did my reel flop",
+      "audit my content",
+      "reel insights"
     ]
-  }
+  },
+  "copyHash": "ece765baf4a08ef7"
 }

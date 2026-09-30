@@ -6,6 +6,14 @@
       "Investiga en internet qué se dice sobre esta marca en redes sociales",
       "Aquí tienes un enlace de Reddit, resume la discusión",
       "Busca en GitHub proyectos similares a este"
+    ],
+    "title": "Investigación en internet y redes",
+    "summary": "Busca y lee contenido de internet y de 16 plataformas (Reddit, YouTube, X, LinkedIn, GitHub, RSS…) para investigar un tema sin publicar nada.",
+    "keywords": [
+      "investigar en internet",
+      "buscar en reddit",
+      "leer youtube",
+      "opiniones en redes"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Research what people are saying about this brand across the internet",
       "Here's a Reddit link, summarize the discussion",
       "Search GitHub for projects similar to this one"
+    ],
+    "title": "Web and social media research",
+    "summary": "Searches and reads content from the web and 16 platforms (Reddit, YouTube, X, LinkedIn, GitHub, RSS…) to research a topic. Read-only: it never posts.",
+    "keywords": [
+      "research the web",
+      "search reddit",
+      "read youtube videos",
+      "social media opinions"
     ]
-  }
+  },
+  "copyHash": "eff66a9ddd717aa9"
 }

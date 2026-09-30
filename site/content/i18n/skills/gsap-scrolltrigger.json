@@ -6,6 +6,14 @@
       "Quiero que esta sección se quede fija mientras el usuario hace scroll",
       "Necesito un efecto parallax al hacer scroll por la página",
       "Cómo configuro un ScrollTrigger con scrub para esta animación"
+    ],
+    "title": "Animaciones con scroll en GSAP",
+    "summary": "Guía de ScrollTrigger para GSAP: animaciones ligadas al scroll, secciones fijadas, scrub, paralaje y disparadores.",
+    "keywords": [
+      "scrolltrigger",
+      "animación al hacer scroll",
+      "paralaje",
+      "sección fijada"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "I want this section to pin in place while the user scrolls",
       "I need a parallax effect as the user scrolls down the page",
       "How do I set up a ScrollTrigger with scrub for this animation"
+    ],
+    "title": "Scroll animations with GSAP",
+    "summary": "A guide to GSAP ScrollTrigger: scroll-linked animations, pinned sections, scrub, parallax and triggers.",
+    "keywords": [
+      "scrolltrigger",
+      "scroll animation",
+      "parallax effect",
+      "pinned section"
     ]
-  }
+  },
+  "copyHash": "9351b6666a4749c0"
 }

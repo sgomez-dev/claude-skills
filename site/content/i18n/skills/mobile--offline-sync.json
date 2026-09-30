@@ -1,7 +1,17 @@
 {
   "sourceHash": "d46270077e1cc9cc",
+  "copyHash": "39f494a5986a3433",
   "es": {
     "description": "Convierte la app en offline-first: almacenamiento local, estrategia de sincronización, conflictos, cola de mutaciones",
+    "title": "App móvil sin conexión",
+    "summary": "Convierte tu app en offline-first: elige el almacenamiento local, define la sincronización, resuelve conflictos y encola las escrituras.",
+    "keywords": [
+      "app offline",
+      "sincronización offline",
+      "offline first",
+      "resolver conflictos",
+      "cola de mutaciones"
+    ],
     "howToAsk": [
       "/mobile--offline-sync haz que mi app funcione sin conexión",
       "/mobile--offline-sync resuelve conflictos cuando dos dispositivos editan el mismo dato",
@@ -13,6 +23,15 @@
       "/mobile--offline-sync make my app work without an internet connection",
       "/mobile--offline-sync resolve conflicts when two devices edit the same record",
       "/mobile--offline-sync add a queue for changes waiting to sync"
+    ],
+    "title": "Offline-first mobile app",
+    "summary": "Makes your app offline-first: picks the local store, defines the sync strategy, resolves conflicts and queues writes so nothing is lost offline.",
+    "keywords": [
+      "offline app",
+      "offline sync",
+      "offline first",
+      "sync conflicts",
+      "mutation queue"
     ]
   }
 }

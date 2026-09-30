@@ -6,6 +6,14 @@
       "/sales--call-notes-to-crm aquí van mis notas de la llamada con el cliente, pásalas al CRM",
       "/sales--call-notes-to-crm organiza estas notas de la demo de ayer en tareas de seguimiento",
       "/sales--call-notes-to-crm estructura esta llamada desordenada en campos de Salesforce"
+    ],
+    "title": "Notas de llamada a CRM",
+    "summary": "Convierte notas desordenadas de una llamada de ventas en campos de CRM, tabla MEDDIC o BANT, tareas con responsable y un borrador de seguimiento.",
+    "keywords": [
+      "notas de llamada",
+      "actualizar crm",
+      "meddic",
+      "seguimiento comercial"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/sales--call-notes-to-crm here are my notes from the client call, turn them into CRM fields",
       "/sales--call-notes-to-crm organize yesterday's demo notes into follow-up tasks",
       "/sales--call-notes-to-crm structure this messy call into Salesforce fields"
+    ],
+    "title": "Call notes to CRM",
+    "summary": "Turns messy sales call notes into CRM-ready fields, a MEDDIC or BANT table, action items with owners and a drafted follow-up.",
+    "keywords": [
+      "call notes",
+      "update crm",
+      "meddic bant",
+      "sales follow-up"
     ]
-  }
+  },
+  "copyHash": "6c42124e8d873948"
 }

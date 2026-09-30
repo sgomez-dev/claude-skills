@@ -6,6 +6,14 @@
       "Genera tres versiones distintas de la cabecera de mi landing page para comparar",
       "Quiero probar varios diseños de la tarjeta de producto antes de decidir",
       "Crea alternativas visuales del formulario de registro y déjame elegir una"
+    ],
+    "title": "Variantes de un componente UI",
+    "summary": "Crea varias versiones realmente distintas de una pieza de interfaz que describes y las muestra en un selector visual para que elijas la ganadora.",
+    "keywords": [
+      "prototipar componente",
+      "variantes de diseño",
+      "probar versiones ui",
+      "selector visual"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Generate three different versions of my landing page hero to compare",
       "I want to try several designs for the product card before deciding",
       "Create visual alternatives for the sign-up form and let me pick one"
+    ],
+    "title": "UI variants side by side",
+    "summary": "Builds several genuinely different versions of a UI piece you describe and shows them behind a visual picker, so you can flip through and promote a winner.",
+    "keywords": [
+      "prototype ui component",
+      "design variants",
+      "compare ui versions",
+      "visual picker"
     ]
-  }
+  },
+  "copyHash": "bba39c955eb1871c"
 }

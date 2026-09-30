@@ -6,6 +6,14 @@
       "/content--content-calendar crea un calendario de contenidos para el próximo trimestre",
       "/content--content-calendar defíneme los pilares de contenido para mi marca",
       "/content--content-calendar planifica la cadencia de publicación por etapa del embudo"
+    ],
+    "title": "Calendario de contenidos",
+    "summary": "Crea un calendario de contenidos con pilares, cadencia realista y formatos asignados a cada fase del embudo, con títulos de trabajo.",
+    "keywords": [
+      "calendario de contenidos",
+      "calendario editorial",
+      "pilares de contenido",
+      "plan de contenidos"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/content--content-calendar build a content calendar for next quarter",
       "/content--content-calendar define the content pillars for my brand",
       "/content--content-calendar plan a posting cadence mapped to funnel stages"
+    ],
+    "title": "Content calendar",
+    "summary": "Builds a content calendar with pillars, a realistic cadence and formats mapped to funnel stages, including working titles.",
+    "keywords": [
+      "content calendar",
+      "editorial calendar",
+      "content pillars",
+      "content plan"
     ]
-  }
+  },
+  "copyHash": "e30c14a6fd2794a3"
 }

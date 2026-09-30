@@ -6,6 +6,14 @@
       "/database--schema diseña el esquema para una app de tareas",
       "/database--schema revisa si mi esquema está bien normalizado",
       "/database--schema sugiere índices para mis tablas más consultadas"
+    ],
+    "title": "Esquema de base de datos",
+    "summary": "Diseña o revisa un esquema de base de datos con normalización, claves, restricciones e índices, y entrega SQL y un diagrama ER.",
+    "keywords": [
+      "diseñar base de datos",
+      "normalización",
+      "claves foráneas",
+      "crear tablas sql"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/database--schema design the schema for a to-do app",
       "/database--schema review whether my schema is properly normalized",
       "/database--schema suggest indexes for my most-queried tables"
+    ],
+    "title": "Database schema design",
+    "summary": "Designs or reviews a database schema covering normalization, keys, constraints and indexes, and delivers SQL plus an ER diagram.",
+    "keywords": [
+      "database design",
+      "normalization",
+      "foreign keys",
+      "create table sql"
     ]
-  }
+  },
+  "copyHash": "a02be207f1591873"
 }

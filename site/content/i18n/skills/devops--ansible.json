@@ -6,6 +6,14 @@
       "/devops--ansible playbook para instalar Nginx en varios servidores",
       "/devops--ansible añade secretos cifrados con vault a mi playbook",
       "/devops--ansible organiza mi inventario de Ansible por entornos"
+    ],
+    "title": "Playbooks de Ansible",
+    "summary": "Crea o reorganiza automatización con Ansible: roles, inventarios por entorno e idempotencia, con secretos cifrados con Ansible Vault.",
+    "keywords": [
+      "playbook ansible",
+      "roles ansible",
+      "ansible vault",
+      "inventarios ansible"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/devops--ansible playbook to install Nginx across several servers",
       "/devops--ansible add vault-encrypted secrets to my playbook",
       "/devops--ansible organize my Ansible inventory by environment"
+    ],
+    "title": "Ansible playbooks",
+    "summary": "Creates or refactors Ansible automation with roles, per-environment inventories, idempotent tasks and secrets encrypted with Ansible Vault.",
+    "keywords": [
+      "ansible playbook",
+      "ansible roles",
+      "ansible vault",
+      "ansible inventory"
     ]
-  }
+  },
+  "copyHash": "1a28aded9be50e2a"
 }

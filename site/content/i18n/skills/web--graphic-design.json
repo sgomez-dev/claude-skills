@@ -6,6 +6,14 @@
       "/web--graphic-design crea un mockup de mi app para presentarlo a inversores",
       "/web--graphic-design genera gráficos para Instagram sobre mi lanzamiento",
       "/web--graphic-design diseña un pitch deck para mi startup"
+    ],
+    "title": "Diseño gráfico con IA",
+    "summary": "Convierte un briefing en diseños HTML, CSS y SVG autocontenidos: maquetas, gráficos sociales, kits de marca, presentaciones e infografías, con tres variantes.",
+    "keywords": [
+      "diseño gráfico con ia",
+      "gráficos para redes",
+      "kit de marca",
+      "infografía"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/web--graphic-design create a mockup of my app to show investors",
       "/web--graphic-design generate Instagram graphics for my launch",
       "/web--graphic-design design a pitch deck for my startup"
+    ],
+    "title": "AI graphic design studio",
+    "summary": "Turns a brief into self-contained HTML, CSS and SVG designs: mockups, social graphics, brand kits, pitch decks and infographics, with three variations.",
+    "keywords": [
+      "ai graphic design",
+      "social media graphics",
+      "brand kit",
+      "infographic"
     ]
-  }
+  },
+  "copyHash": "a574a426e80e9b01"
 }

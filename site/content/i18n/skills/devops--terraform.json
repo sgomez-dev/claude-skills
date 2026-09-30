@@ -6,6 +6,14 @@
       "/devops--terraform escribe el Terraform para una VPC con subredes públicas y privadas",
       "/devops--terraform necesito el módulo de Terraform para un cluster de base de datos",
       "/devops--terraform genera el estado inicial para desplegar en AWS"
+    ],
+    "title": "Infraestructura con Terraform",
+    "summary": "Genera configuraciones de Terraform para AWS, GCP o Azure: recursos, variables, salidas, backend remoto y ejemplo de tfvars.",
+    "keywords": [
+      "terraform",
+      "infraestructura como código",
+      "configuración terraform aws",
+      "main.tf"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/devops--terraform write the Terraform for a VPC with public and private subnets",
       "/devops--terraform I need a Terraform module for a database cluster",
       "/devops--terraform generate the starter setup to deploy to AWS"
+    ],
+    "title": "Infrastructure with Terraform",
+    "summary": "Generates Terraform configurations for AWS, GCP or Azure: resources, variables, outputs, remote state backend and an example tfvars file.",
+    "keywords": [
+      "terraform",
+      "infrastructure as code",
+      "terraform aws setup",
+      "main.tf"
     ]
-  }
+  },
+  "copyHash": "1472adcb7127055b"
 }

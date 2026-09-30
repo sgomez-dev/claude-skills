@@ -6,6 +6,14 @@
       "/code-quality--refactor refactoriza este componente sin cambiar su comportamiento",
       "/code-quality--refactor simplifica esta función manteniendo los mismos resultados",
       "/code-quality--refactor mejora la estructura de este módulo sin romper nada"
+    ],
+    "title": "Refactorización segura de código",
+    "summary": "Refactoriza el código que indiques para mejorar su calidad sin cambiar su comportamiento, explicando cada cambio con antes y después.",
+    "keywords": [
+      "refactorizar código",
+      "limpiar código",
+      "simplificar funciones",
+      "mantener comportamiento"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/code-quality--refactor refactor this component without changing its behavior",
       "/code-quality--refactor simplify this function while keeping the same output",
       "/code-quality--refactor improve this module's structure without breaking anything"
+    ],
+    "title": "Safe code refactoring",
+    "summary": "Refactors the code you point to for quality without changing its behavior, explaining each change with a before and after.",
+    "keywords": [
+      "refactor code",
+      "clean up code",
+      "simplify functions",
+      "preserve behavior"
     ]
-  }
+  },
+  "copyHash": "79e9569dc7073237"
 }

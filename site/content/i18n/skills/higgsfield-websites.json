@@ -6,6 +6,14 @@
       "Quiero construir una landing page para mi startup, ¿me ayudas a desplegarla?",
       "Necesito crear una app web con inicio de sesión y publicarla ya",
       "Hazme un juego multijugador sencillo y súbelo a producción"
+    ],
+    "title": "Webs y apps con Higgsfield",
+    "summary": "Crea, edita y publica webs, apps y juegos desde la CLI de Higgsfield, como app React y TanStack Start en un Cloudflare Worker.",
+    "keywords": [
+      "crear web con higgsfield",
+      "publicar sitio",
+      "landing page",
+      "juego multijugador"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Build me a landing page for my startup and deploy it",
       "Create a web app with sign-in and publish it live",
       "Make a simple multiplayer game and ship it"
+    ],
+    "title": "Websites and apps with Higgsfield",
+    "summary": "Builds, edits and deploys websites, apps and games through the Higgsfield CLI, as a React and TanStack Start app on a Cloudflare Worker.",
+    "keywords": [
+      "build website higgsfield",
+      "deploy site",
+      "landing page",
+      "multiplayer game"
     ]
-  }
+  },
+  "copyHash": "87dba01806deaab2"
 }

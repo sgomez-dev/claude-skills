@@ -1,6 +1,14 @@
 {
   "sourceHash": "c758690a34c8bffa",
   "es": {
+    "title": "Operar publicidad de pago",
+    "summary": "Audita, planifica y prepara campañas de publicidad de pago en 12 plataformas, y no cambia nada en tus cuentas sin tu aprobación.",
+    "keywords": [
+      "publicidad de pago",
+      "ppc",
+      "google ads y meta ads",
+      "auditoría de campañas"
+    ],
     "description": "Gestiona publicidad de pago profesional en Google, Meta, YouTube, LinkedIn, TikTok, Microsoft, Apple, Amazon, Reddit, Pinterest, Snapchat y X. Úsalo para dar de alta cuentas, auditorías basadas en fuentes verificadas, estrategia, planificación de presupuesto y medición, producción creativa, experimentos, informes, monitorización y cambios de campaña explícitamente aprobados. Se activa también con PPC, social de pago, medios minoristas (retail media), atribución, tracking, páginas de aterrizaje, totales de conversión entre plataformas, palabras clave negativas o términos de búsqueda, puntuación de funciones beta, afirmaciones desactualizadas sobre plataformas, configuración de tokens de API o credenciales, eliminación de campañas, e instalación o desinstalación segura de Claude Ads.",
     "howToAsk": [
       "Quiero montar una estrategia de publicidad de pago para varias plataformas a la vez",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "Run paid advertising",
+    "summary": "Audits, plans and drafts paid ad campaigns across 12 platforms, and changes nothing in your accounts without explicit approval.",
+    "keywords": [
+      "paid advertising",
+      "ppc",
+      "google ads and meta ads",
+      "ad account audit"
+    ],
     "howToAsk": [
       "Help me build a paid advertising strategy across several platforms at once",
       "Audit my Google Ads and Meta Ads accounts and tell me what's broken",
       "Help me plan the budget and measurement setup for my next campaign"
     ]
-  }
+  },
+  "copyHash": "ab62ecc33f6fb479"
 }

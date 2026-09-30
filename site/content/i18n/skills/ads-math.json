@@ -1,6 +1,14 @@
 {
   "sourceHash": "c02207dbf465d1c7",
   "es": {
+    "title": "Cálculos de rentabilidad publicitaria",
+    "summary": "Calcula CPA, ROAS, MER, LTV:CAC y puntos de equilibrio de tus anuncios mostrando fórmulas, supuestos y escenarios base, bajo y alto.",
+    "keywords": [
+      "calculadora de roas",
+      "calculadora de cpa",
+      "punto de equilibrio",
+      "ltv cac"
+    ],
     "description": "Calcula y modela CPA, CPL, CPC, CPM, ROAS, MER, objetivos de punto de equilibrio, margen de contribución, LTV:CAC, oportunidad de cuota de impresiones, presupuestos, previsiones y economía de experimentos en medios de pago. Úsalo para matemáticas de PPC, calculadora de anuncios, análisis de punto de equilibrio, calculadora de ROAS, calculadora de CPA, previsión de presupuesto, LTV CAC o MER.",
     "howToAsk": [
       "Calcúlame el punto de equilibrio de esta campaña",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "Ad profitability calculations",
+    "summary": "Calculates CPA, ROAS, MER, LTV:CAC and break-even points for your ads, showing formulas, assumptions and base, downside and upside cases.",
+    "keywords": [
+      "roas calculator",
+      "cpa calculator",
+      "break-even analysis",
+      "ltv cac"
+    ],
     "howToAsk": [
       "Calculate the break-even point for this campaign",
       "What ROAS do I need for this to be profitable?",
       "Help me calculate my business's LTV:CAC"
     ]
-  }
+  },
+  "copyHash": "b129b371f983c8f4"
 }

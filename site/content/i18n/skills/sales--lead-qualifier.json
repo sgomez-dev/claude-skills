@@ -6,6 +6,14 @@
       "/sales--lead-qualifier cualifica estos leads con BANT y dime en qué nivel están",
       "/sales--lead-qualifier puntúa esta lista con MEDDIC y dime las siguientes acciones",
       "/sales--lead-qualifier clasifica estos leads entrantes por prioridad"
+    ],
+    "title": "Cualificación de leads",
+    "summary": "Puntúa y clasifica leads u oportunidades con BANT, MEDDIC o CHAMP a partir de tus datos y propone una siguiente acción concreta para cada uno.",
+    "keywords": [
+      "cualificar leads",
+      "bant meddic champ",
+      "puntuar prospectos",
+      "priorizar oportunidades"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/sales--lead-qualifier qualify these leads with BANT and tell me their tier",
       "/sales--lead-qualifier score this list with MEDDIC and suggest next actions",
       "/sales--lead-qualifier tier these inbound leads by priority"
+    ],
+    "title": "Lead qualification scoring",
+    "summary": "Scores and tiers leads or open deals with BANT, MEDDIC or CHAMP from the evidence you provide, with one concrete next action per lead.",
+    "keywords": [
+      "qualify leads",
+      "bant meddic champ",
+      "lead scoring",
+      "prioritize deals"
     ]
-  }
+  },
+  "copyHash": "b262415a588a2a7b"
 }

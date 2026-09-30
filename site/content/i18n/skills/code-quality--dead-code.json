@@ -6,6 +6,14 @@
       "/code-quality--dead-code encuentra funciones y variables sin usar en mi proyecto",
       "/code-quality--dead-code limpia los imports muertos de este archivo",
       "/code-quality--dead-code detecta ficheros que ya no se usan en el repositorio"
+    ],
+    "title": "Limpieza de código muerto",
+    "summary": "Encuentra imports, variables, funciones, archivos y dependencias sin usar, comprueba cada hallazgo y solo borra tras tu confirmación.",
+    "keywords": [
+      "código muerto",
+      "imports sin usar",
+      "dependencias sin usar",
+      "limpiar código"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/code-quality--dead-code find unused functions and variables in my project",
       "/code-quality--dead-code clean up dead imports in this file",
       "/code-quality--dead-code detect files in the repo that are no longer used"
+    ],
+    "title": "Dead code cleanup",
+    "summary": "Finds unused imports, variables, functions, files and dependencies, verifies each finding and only removes code after you confirm.",
+    "keywords": [
+      "dead code",
+      "unused imports",
+      "unused dependencies",
+      "code cleanup"
     ]
-  }
+  },
+  "copyHash": "ca863199831a7372"
 }

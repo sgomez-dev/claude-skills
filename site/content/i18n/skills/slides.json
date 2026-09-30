@@ -6,6 +6,14 @@
       "Crea una presentación HTML para mi pitch de inversores",
       "Necesito unas slides con gráficos de Chart.js para la reunión de ventas",
       "Genérame un deck responsive para explicar nuestro producto"
+    ],
+    "title": "Presentaciones HTML",
+    "summary": "Crea presentaciones HTML estratégicas con gráficos Chart.js, tokens de diseño, maquetaciones adaptables y textos persuasivos.",
+    "keywords": [
+      "presentación html",
+      "pitch deck",
+      "diapositivas con gráficos",
+      "chart.js"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Create an HTML presentation for my investor pitch",
       "I need slides with Chart.js graphs for the sales meeting",
       "Build a responsive deck to explain our product"
+    ],
+    "title": "HTML presentations",
+    "summary": "Creates strategic HTML presentations with Chart.js charts, design tokens, responsive layouts and copywriting formulas.",
+    "keywords": [
+      "html presentation",
+      "pitch deck",
+      "slides with charts",
+      "chart.js"
     ]
-  }
+  },
+  "copyHash": "86c07f19ec09f794"
 }

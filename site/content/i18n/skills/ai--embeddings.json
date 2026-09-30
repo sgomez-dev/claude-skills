@@ -6,6 +6,14 @@
       "/ai--embeddings añade búsqueda semántica a mi catálogo de productos",
       "/ai--embeddings necesito embeddings para encontrar documentos parecidos",
       "/ai--embeddings monta el sistema de similitud para recomendar artículos"
+    ],
+    "title": "Embeddings y búsqueda semántica",
+    "summary": "Implementa embeddings vectoriales en tu aplicación para búsqueda semántica, RAG o similitud: ingesta, troceado, consulta y optimización.",
+    "keywords": [
+      "embeddings",
+      "búsqueda semántica",
+      "base de datos vectorial",
+      "rag"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ai--embeddings add semantic search to my product catalog",
       "/ai--embeddings I need embeddings to find similar documents",
       "/ai--embeddings set up similarity matching to recommend articles"
+    ],
+    "title": "Embeddings and semantic search",
+    "summary": "Implements vector embeddings in your app for semantic search, RAG or similarity matching: ingestion, chunking, querying and relevance tuning.",
+    "keywords": [
+      "vector embeddings",
+      "semantic search",
+      "vector database",
+      "build rag"
     ]
-  }
+  },
+  "copyHash": "4fb21a4ca43ce14f"
 }

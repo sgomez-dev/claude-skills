@@ -6,6 +6,14 @@
       "/utils--env-setup crea un .env.example para mi proyecto Next.js",
       "/utils--env-setup añade validación de variables de entorno obligatorias",
       "/utils--env-setup ayúdame a separar variables de desarrollo y producción"
+    ],
+    "title": "Variables de entorno del proyecto",
+    "summary": "Detecta las variables de entorno que usa tu código y genera .env.example, un esquema de validación y un módulo de configuración que falla rápido.",
+    "keywords": [
+      "variables de entorno",
+      "env example",
+      "validar configuración",
+      "archivo .env"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/utils--env-setup create a .env.example file for my Next.js project",
       "/utils--env-setup add validation for required environment variables",
       "/utils--env-setup help me separate dev and production env vars"
+    ],
+    "title": "Environment variables setup",
+    "summary": "Finds every environment variable your code uses and generates a .env.example, a validation schema and a config module that fails fast.",
+    "keywords": [
+      "environment variables",
+      "env example",
+      "validate config",
+      "dotenv setup"
     ]
-  }
+  },
+  "copyHash": "cc08b2574b638f18"
 }

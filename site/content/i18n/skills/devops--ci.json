@@ -6,6 +6,14 @@
       "/devops--ci pipeline de GitHub Actions para tests y despliegue",
       "/devops--ci configura CI en GitLab para mi proyecto Node",
       "/devops--ci genera un pipeline que corra tests en cada pull request"
+    ],
+    "title": "Pipeline de CI/CD",
+    "summary": "Genera la configuración de integración y despliegue continuo de tu proyecto para GitHub Actions, GitLab CI, CircleCI o Jenkins.",
+    "keywords": [
+      "configurar ci cd",
+      "pipeline",
+      "gitlab ci",
+      "integración continua"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/devops--ci GitHub Actions pipeline for tests and deploy",
       "/devops--ci set up GitLab CI for my Node project",
       "/devops--ci generate a pipeline that runs tests on every pull request"
+    ],
+    "title": "CI/CD pipeline setup",
+    "summary": "Generates the continuous integration and deployment config for your project on GitHub Actions, GitLab CI, CircleCI or Jenkins.",
+    "keywords": [
+      "set up ci cd",
+      "pipeline config",
+      "gitlab ci",
+      "continuous integration"
     ]
-  }
+  },
+  "copyHash": "3858265d6970f1f8"
 }

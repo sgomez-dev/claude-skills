@@ -6,6 +6,14 @@
       "/scaffold--fullstack genera la funcionalidad completa de comentarios, de frontend a base de datos",
       "/scaffold--fullstack necesito el scaffold full-stack de un sistema de favoritos",
       "/scaffold--fullstack crea backend, frontend y esquema de datos para el carrito de compra"
+    ],
+    "title": "Funcionalidad full-stack completa",
+    "summary": "Crea una funcionalidad de punta a punta: migración, modelo, API, cliente tipado, pantallas de interfaz y tests, siguiendo tu proyecto.",
+    "keywords": [
+      "feature full-stack",
+      "crud completo",
+      "api y frontend",
+      "migración y modelo"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/scaffold--fullstack scaffold a full comments feature, frontend to database",
       "/scaffold--fullstack I need the full-stack scaffold for a favorites system",
       "/scaffold--fullstack create backend, frontend, and schema for the shopping cart"
+    ],
+    "title": "Full-stack feature scaffold",
+    "summary": "Builds a feature end to end: migration, model, API, typed client, UI screens and tests, following your project's conventions.",
+    "keywords": [
+      "full-stack feature",
+      "crud scaffold",
+      "api and frontend",
+      "migration and model"
     ]
-  }
+  },
+  "copyHash": "6d25ed74206876a3"
 }

@@ -1,6 +1,39 @@
 {
   "sourceHash": "b4dcd7233d0095ee",
+  "copyHash": "761d9cd5e03fc10c",
   "es": {
+    "title": "Subtítulos cinematográficos para vídeo",
+    "summary": "Añade subtítulos a un vídeo hablando a cámara sin tocar la imagen, desde texto literal discreto hasta palabras integradas detrás de la persona.",
+    "keywords": [
+      "subtítulos para vídeo",
+      "subtítulos cinematográficos",
+      "subtítulos animados",
+      "texto detrás de la persona"
+    ],
+    "useWhen": [
+      "Tienes un vídeo de una sola persona hablando y quieres subtitularlo sin editar la imagen",
+      "Quieres un subtitulado discreto, literal y legible",
+      "Buscas un efecto visual fuerte, con palabras detrás de la persona, para un momento clave"
+    ],
+    "notFor": [
+      "Vídeos con varios planos: hay que dividir el metraje antes de aplicarlo",
+      "Editar o recortar el vídeo: solo añade subtítulos y deja la imagen intacta"
+    ],
+    "output": "Un vídeo final en MP4 con los subtítulos compuestos sobre el original, que se muestra sin modificar, tras previsualizar fotogramas y pasar comprobaciones de tiempos y solapes.",
+    "faq": [
+      {
+        "q": "¿Modifica mi vídeo original?",
+        "a": "No. El metraje se entrega sin tocar y lo único que se añade son los subtítulos."
+      },
+      {
+        "q": "¿Qué estilos ofrece?",
+        "a": "Un catálogo de 35 identidades. Por defecto usa un subtítulo literal discreto sobre la parte baja y reserva las palabras detrás de la persona para el momento más importante."
+      },
+      {
+        "q": "¿Necesito servicios externos?",
+        "a": "El flujo, incluida la transcripción y el recorte de la persona, se ejecuta en local. Necesita Node, FFmpeg y algunas dependencias que se instalan en el proyecto."
+      }
+    ],
     "description": "Añade subtítulos o captions a un vídeo existente de una sola persona hablando a cámara, sin editar el metraje. Úsalo para subtítulos literales sencillos, captions cinematográficos incrustados detrás del sujeto, captions con efectos (VFX), \"炸/特效/酷炫字幕\", o una identidad concreta del catálogo de 35 estilos. Elige según la identidad visual, no según el motor técnico. El estilo discreto `anchor` es el predeterminado; incrusta cada palabra solo cuando el usuario pida explícitamente un tratamiento totalmente cinematográfico. El flujo se ejecuta en local de principio a fin, incluida la transcripción y el recorte del sujeto (matting); separa el metraje con varios planos antes de aplicarlo.",
     "howToAsk": [
       "Añade subtítulos a este vídeo donde hablo a cámara",
@@ -9,6 +42,38 @@
     ]
   },
   "en": {
+    "title": "Cinematic captions for video",
+    "summary": "Adds captions to a talking-head video without touching the footage, from quiet verbatim text to words placed behind the speaker.",
+    "keywords": [
+      "video captions",
+      "cinematic subtitles",
+      "animated captions",
+      "text behind subject"
+    ],
+    "useWhen": [
+      "You have a single-speaker video and want captions without editing the footage",
+      "You want quiet, verbatim, readable subtitles",
+      "You want a bold visual effect, with words behind the speaker, for a key moment"
+    ],
+    "notFor": [
+      "Multi-shot footage: split it into single shots before applying it",
+      "Editing or trimming the video: it only adds captions and leaves the picture intact"
+    ],
+    "output": "A final MP4 with the captions composited over your original footage, which is delivered unmodified, after frame previews and timing and overlap checks.",
+    "faq": [
+      {
+        "q": "Does it change my original video?",
+        "a": "No. The footage is delivered untouched and the captions are the only thing added."
+      },
+      {
+        "q": "What styles does it offer?",
+        "a": "A catalogue of 35 identities. By default it uses a quiet verbatim caption along the lower part of the frame and saves words placed behind the speaker for the peak moment."
+      },
+      {
+        "q": "Do I need external services?",
+        "a": "The workflow, including transcription and subject matting, runs locally. It needs Node, FFmpeg and a few dependencies installed in the project."
+      }
+    ],
     "howToAsk": [
       "Add captions to this talking-head video",
       "Put cinematic captions behind me in this video",

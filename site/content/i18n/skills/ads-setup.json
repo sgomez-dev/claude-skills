@@ -1,6 +1,14 @@
 {
   "sourceHash": "b8a45d91eb2df95b",
   "es": {
+    "title": "Configuración inicial de publicidad",
+    "summary": "Prepara el perfil de tu cliente, marca, cuentas y límites de seguridad para trabajar con anuncios, sin guardar nunca claves ni tokens.",
+    "keywords": [
+      "configurar cuentas publicitarias",
+      "onboarding de cliente",
+      "kpis de campaña",
+      "credenciales seguras"
+    ],
     "description": "Configura el perfil de cliente, marca, cuenta, fuentes de datos, privacidad y salvaguardas de mutación para Claude Ads en medios de pago. Úsalo para incorporación (onboarding), configuración inicial, ADN de marca, tokens de API o perfiles de credenciales, configuración de variables de entorno o keychain, conexión de exportaciones o adaptadores de solo lectura, instalación nativa o local verificada segura, solicitudes de instalación por curl-pipe-bash, declaración de KPIs o preparación de un nuevo proyecto publicitario.",
     "howToAsk": [
       "Ayúdame a configurar Claude Ads por primera vez para mi cuenta",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "Paid media setup",
+    "summary": "Sets up a client, brand, account and safety-guardrail profile for ad work, and never stores API keys or tokens.",
+    "keywords": [
+      "ad account setup",
+      "client onboarding",
+      "campaign kpis",
+      "secure credentials"
+    ],
     "howToAsk": [
       "Help me set up Claude Ads for the first time on my account",
       "Configure the Google Ads API credentials securely",
       "I want to declare the KPIs for this new advertising project"
     ]
-  }
+  },
+  "copyHash": "a3d2763cc2034e6f"
 }

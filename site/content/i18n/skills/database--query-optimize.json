@@ -6,6 +6,14 @@
       "/database--query-optimize esta consulta SQL tarda 10 segundos, ¿por qué?",
       "/database--query-optimize optimiza esta query de Prisma que va lenta",
       "/database--query-optimize revisa los índices para esta consulta de reportes"
+    ],
+    "title": "Optimizar consultas SQL lentas",
+    "summary": "Analiza una consulta SQL o de ORM lenta, detecta índices que faltan y problemas N+1, y propone cómo reescribirla.",
+    "keywords": [
+      "consulta lenta",
+      "optimizar sql",
+      "índices de base de datos",
+      "problema n+1"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/database--query-optimize this SQL query takes 10 seconds, why?",
       "/database--query-optimize optimize this slow Prisma query",
       "/database--query-optimize review indexes for this reporting query"
+    ],
+    "title": "Speed up slow SQL queries",
+    "summary": "Analyzes a slow SQL or ORM query, spots missing indexes and N+1 problems, and suggests index and rewrite fixes.",
+    "keywords": [
+      "slow query",
+      "optimize sql",
+      "database indexes",
+      "n+1 queries"
     ]
-  }
+  },
+  "copyHash": "643a8c0f3271781d"
 }

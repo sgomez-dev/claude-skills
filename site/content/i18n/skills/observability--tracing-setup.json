@@ -6,6 +6,14 @@
       "/observability--tracing-setup añade tracing distribuido a mis microservicios",
       "/observability--tracing-setup quiero seguir una petición desde el frontend hasta la base de datos",
       "/observability--tracing-setup configura la propagación de contexto entre servicios"
+    ],
+    "title": "Trazado distribuido con OpenTelemetry",
+    "summary": "Instrumenta tu servicio con OpenTelemetry para seguir una petición entre servicios, con spans automáticos, manuales y propagación de contexto.",
+    "keywords": [
+      "trazado distribuido",
+      "opentelemetry",
+      "spans",
+      "propagación de contexto"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/observability--tracing-setup add distributed tracing to my microservices",
       "/observability--tracing-setup trace a request from the frontend down to the database",
       "/observability--tracing-setup set up context propagation across services"
+    ],
+    "title": "Distributed tracing setup",
+    "summary": "Instruments your service with OpenTelemetry so one request can be followed across services, with auto and manual spans and context propagation.",
+    "keywords": [
+      "distributed tracing",
+      "opentelemetry",
+      "spans",
+      "trace context"
     ]
-  }
+  },
+  "copyHash": "75c148cfd7b9c07e"
 }

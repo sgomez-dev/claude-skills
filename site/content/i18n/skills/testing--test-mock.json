@@ -6,6 +6,15 @@
       "/testing--test-mock crea un mock de este servicio externo para los tests",
       "/testing--test-mock genera fixtures de usuarios de prueba",
       "/testing--test-mock necesito un stub para esta llamada a la API de pagos"
+    ],
+    "title": "Mocks y datos de prueba",
+    "summary": "Crea mocks, stubs, spies, fakes y datos de prueba para las dependencias de tu código, con las convenciones de Jest, Vitest, pytest o Go.",
+    "keywords": [
+      "crear mocks",
+      "stubs",
+      "datos de prueba",
+      "fixtures",
+      "jest mock"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "/testing--test-mock create a mock of this external service for tests",
       "/testing--test-mock generate fixtures for test users",
       "/testing--test-mock I need a stub for this payments API call"
+    ],
+    "title": "Mocks and test fixtures",
+    "summary": "Creates mocks, stubs, spies, fakes and realistic fixture data for your code's dependencies, following Jest, Vitest, pytest or Go conventions.",
+    "keywords": [
+      "create mocks",
+      "test stubs",
+      "test fixtures",
+      "jest mock",
+      "test data"
     ]
-  }
+  },
+  "copyHash": "f4bac295e68b18b6"
 }

@@ -6,6 +6,14 @@
       "/web--conversion-optimizer audita mi landing page, la conversión es muy baja",
       "/web--conversion-optimizer revisa el copy de mi página de precios",
       "/web--conversion-optimizer dime qué elementos de confianza le faltan a mi checkout"
+    ],
+    "title": "Auditoría de conversión web",
+    "summary": "Audita una landing o app web y propone cambios concretos en copy, diseño, UX y confianza para que más visitantes se registren, compren o te contacten.",
+    "keywords": [
+      "optimizar conversión",
+      "auditoría de landing",
+      "cro",
+      "mejorar tasa de conversión"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/web--conversion-optimizer audit my landing page, conversion rate is very low",
       "/web--conversion-optimizer review the copy on my pricing page",
       "/web--conversion-optimizer tell me what trust elements my checkout is missing"
+    ],
+    "title": "Web conversion audit",
+    "summary": "Audits a landing page or web app and proposes specific changes to copy, layout, UX and trust so more visitors sign up, buy or get in touch.",
+    "keywords": [
+      "conversion optimization",
+      "landing page audit",
+      "cro",
+      "improve conversion rate"
     ]
-  }
+  },
+  "copyHash": "3f779d950f5e2383"
 }

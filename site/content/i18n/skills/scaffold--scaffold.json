@@ -6,6 +6,14 @@
       "/scaffold--scaffold crea la estructura de un proyecto nuevo de Next.js",
       "/scaffold--scaffold necesito el andamiaje completo para una API en Node",
       "/scaffold--scaffold genera la estructura de carpetas de un monorepo desde cero"
+    ],
+    "title": "Estructura de proyecto desde cero",
+    "summary": "Genera la estructura completa de un proyecto nuevo, con configuración, Docker, CI y plantilla de variables de entorno.",
+    "keywords": [
+      "crear proyecto",
+      "estructura de carpetas",
+      "boilerplate",
+      "proyecto desde cero"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/scaffold--scaffold create the structure for a new Next.js project",
       "/scaffold--scaffold I need the full scaffold for a Node API",
       "/scaffold--scaffold generate a monorepo folder structure from scratch"
+    ],
+    "title": "Project scaffold from scratch",
+    "summary": "Generates the full structure of a new project, with config files, Docker, CI and an environment variable template.",
+    "keywords": [
+      "new project",
+      "folder structure",
+      "boilerplate",
+      "project from scratch"
     ]
-  }
+  },
+  "copyHash": "27e19e76c256396c"
 }

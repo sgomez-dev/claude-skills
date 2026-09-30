@@ -6,6 +6,14 @@
       "/fullstack--multi-tenancy quiero que cada cliente tenga sus datos aislados en mi SaaS",
       "/fullstack--multi-tenancy ayúdame a elegir entre aislamiento por fila o por esquema",
       "/fullstack--multi-tenancy necesito migrar mi app single-tenant a multi-tenant"
+    ],
+    "title": "Multi-tenencia (multitenant)",
+    "summary": "Convierte tu app en multi-tenant: elige el modelo de aislamiento, fuerza el filtrado por tenant y prepara migraciones y relleno de datos.",
+    "keywords": [
+      "multi-tenant",
+      "multitenancy",
+      "aislamiento por tenant",
+      "tenant_id"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/fullstack--multi-tenancy isolate each customer's data in my SaaS",
       "/fullstack--multi-tenancy help me choose between row-level and schema-level isolation",
       "/fullstack--multi-tenancy migrate my single-tenant app to multi-tenant"
+    ],
+    "title": "SaaS multi-tenancy setup",
+    "summary": "Converts your app to multi-tenant: picks the isolation model, enforces tenant scoping and produces migrations and a backfill plan.",
+    "keywords": [
+      "multi-tenant",
+      "multitenancy",
+      "tenant isolation",
+      "tenant_id"
     ]
-  }
+  },
+  "copyHash": "fb9158adeb5dcf4a"
 }

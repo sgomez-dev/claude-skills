@@ -1,6 +1,14 @@
 {
   "sourceHash": "887a47bb3af52b39",
   "es": {
+    "title": "Auditoría de creatividades de anuncios",
+    "summary": "Revisa textos, imágenes y vídeos de tus anuncios (formatos, fatiga, accesibilidad, política) y devuelve briefs de renovación priorizados.",
+    "keywords": [
+      "creatividades publicitarias",
+      "fatiga creativa",
+      "revisar anuncios",
+      "diversidad de creatividades"
+    ],
     "description": "Audita copys, imágenes, vídeo, ganchos (hooks), conceptos, cobertura de formatos, adecuación nativa a la plataforma, coherencia del mensaje, fatiga creativa, accesibilidad y políticas de anuncios de pago en las plataformas compatibles. Úsalo para auditoría creativa, creatividades de anuncios, fatiga creativa, diversidad creativa, revisión de copy, revisión de vídeo, revisión de imagen o prioridades de producción.",
     "howToAsk": [
       "Audita mis creatividades de Meta Ads, creo que están fatigadas",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "Ad creative audit",
+    "summary": "Reviews your ad copy, images and video for format fit, fatigue, accessibility and policy, and returns prioritized refresh briefs.",
+    "keywords": [
+      "ad creative audit",
+      "creative fatigue",
+      "ad copy review",
+      "creative diversity"
+    ],
     "howToAsk": [
       "Audit my Meta Ads creatives, I think they're fatigued",
       "Check if this ad copy matches the landing page message",
       "Give me creative production priorities for next month"
     ]
-  }
+  },
+  "copyHash": "4cf8855506124650"
 }

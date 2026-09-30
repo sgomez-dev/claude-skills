@@ -6,6 +6,14 @@
       "/observability--incident-response define un proceso de respuesta a incidentes para el equipo",
       "/observability--incident-response crea la matriz de severidad y los roles de guardia",
       "/observability--incident-response cómo comunicamos una caída a los clientes"
+    ],
+    "title": "Proceso de respuesta a incidentes",
+    "summary": "Crea un proceso de respuesta a incidentes con matriz de severidad, roles y plantillas de comunicación, dimensionado al tamaño real de tu equipo.",
+    "keywords": [
+      "gestión de incidentes",
+      "matriz de severidad",
+      "guardias on-call",
+      "plantillas de comunicación"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/observability--incident-response set up an incident response process for the team",
       "/observability--incident-response define the severity matrix and on-call roles",
       "/observability--incident-response how should we communicate an outage to customers"
+    ],
+    "title": "Incident response process",
+    "summary": "Creates an incident response process with a severity matrix, roles and communication templates, sized to your team's real scale.",
+    "keywords": [
+      "incident management",
+      "severity matrix",
+      "on-call process",
+      "incident roles"
     ]
-  }
+  },
+  "copyHash": "6fd3c711309a89f7"
 }

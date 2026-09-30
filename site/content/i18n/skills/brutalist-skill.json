@@ -6,6 +6,14 @@
       "Diséñame un dashboard brutalista con grid rígido y estética de terminal militar",
       "Quiero un portfolio con tipografía suiza cruda y efectos de degradación analógica",
       "Hazme un sitio editorial con contraste tipográfico extremo, estilo planos desclasificados"
+    ],
+    "title": "Interfaces web brutalistas",
+    "summary": "Guía para diseñar webs brutalistas industriales: cuadrículas rígidas, tipografía de gran contraste y efectos analógicos, para dashboards o portfolios.",
+    "keywords": [
+      "diseño brutalista",
+      "web brutalista",
+      "estética terminal",
+      "cuadrícula suiza"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Design a brutalist dashboard with a rigid grid and military terminal look",
       "I want a portfolio with raw Swiss typography and analog degradation effects",
       "Build an editorial site with extreme type contrast, declassified-blueprint style"
+    ],
+    "title": "Brutalist web interface design",
+    "summary": "Design direction for industrial brutalist websites: rigid grids, extreme type contrast and analog effects, for data-heavy dashboards or portfolios.",
+    "keywords": [
+      "brutalist web design",
+      "terminal aesthetic",
+      "swiss grid design",
+      "brutalist dashboard"
     ]
-  }
+  },
+  "copyHash": "fffbaac8597f0767"
 }

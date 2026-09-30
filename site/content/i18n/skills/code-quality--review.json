@@ -6,6 +6,14 @@
       "/code-quality--review revisa los cambios de mi último commit",
       "/code-quality--review haz una revisión de código completa de este archivo",
       "/code-quality--review revisa el pull request antes de que lo apruebe mi equipo"
+    ],
+    "title": "Revisión de código completa",
+    "summary": "Revisa los archivos cambiados o los que indiques y clasifica los problemas de corrección, seguridad, rendimiento y mantenibilidad por gravedad.",
+    "keywords": [
+      "revisión de código",
+      "code review",
+      "revisar cambios",
+      "problemas de seguridad"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/code-quality--review review the changes from my latest commit",
       "/code-quality--review do a full code review of this file",
       "/code-quality--review review this pull request before my team approves it"
+    ],
+    "title": "Full code review",
+    "summary": "Reviews your changed files or the ones you name, rating issues in correctness, security, performance and maintainability by severity with fix suggestions.",
+    "keywords": [
+      "code review",
+      "review my changes",
+      "find bugs",
+      "security issues"
     ]
-  }
+  },
+  "copyHash": "a1e2d2889168451c"
 }

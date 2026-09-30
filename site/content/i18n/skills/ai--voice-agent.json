@@ -6,6 +6,14 @@
       "/ai--voice-agent monta un agente de voz para atender llamadas de soporte",
       "/ai--voice-agent qué combinación de STT y TTS me da menos latencia",
       "/ai--voice-agent gestiona cuando el usuario interrumpe al agente mientras habla"
+    ],
+    "title": "Agente de voz en vivo",
+    "summary": "Diseña un agente de voz con baja latencia que admite interrupciones: elección de STT y TTS, presupuesto de latencia y diseño de la conversación.",
+    "keywords": [
+      "agente de voz",
+      "voz en tiempo real",
+      "latencia stt tts",
+      "interrupciones"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ai--voice-agent build a voice agent to handle support calls",
       "/ai--voice-agent which STT/TTS combo gives me the lowest latency",
       "/ai--voice-agent handle it when the user interrupts the agent mid-sentence"
+    ],
+    "title": "Real-time voice agent",
+    "summary": "Designs a low-latency voice agent that handles interruptions: speech-to-text and text-to-speech choice, latency budget and conversation design.",
+    "keywords": [
+      "voice agent",
+      "real-time voice ai",
+      "stt tts latency",
+      "barge-in"
     ]
-  }
+  },
+  "copyHash": "d9cbc34ad3f340ac"
 }

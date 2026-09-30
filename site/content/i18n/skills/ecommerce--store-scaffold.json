@@ -6,6 +6,14 @@
       "/ecommerce--store-scaffold monta la base de mi tienda online desde cero",
       "/ecommerce--store-scaffold qué plataforma me conviene para vender ropa online",
       "/ecommerce--store-scaffold crea el esqueleto de catálogo, carrito y checkout"
+    ],
+    "title": "Esqueleto de tienda online",
+    "summary": "Te ayuda a elegir plataforma (Shopify, Medusa, WooCommerce o a medida) y genera la base de la tienda: catálogo, carrito y entrada al checkout.",
+    "keywords": [
+      "crear tienda online",
+      "elegir plataforma ecommerce",
+      "shopify o woocommerce",
+      "medusa"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ecommerce--store-scaffold scaffold my online store from scratch",
       "/ecommerce--store-scaffold which platform should I use to sell clothes online",
       "/ecommerce--store-scaffold create the catalog, cart, and checkout shell"
+    ],
+    "title": "E-commerce store starter",
+    "summary": "Helps you pick a platform (Shopify, Medusa, WooCommerce or custom) and generates the store foundation: catalog pages, cart and checkout entry point.",
+    "keywords": [
+      "create online store",
+      "ecommerce platform choice",
+      "shopify vs woocommerce",
+      "medusa store"
     ]
-  }
+  },
+  "copyHash": "a715e211d1b12ee3"
 }

@@ -1,7 +1,17 @@
 {
   "sourceHash": "b03bf48c1834c9c3",
+  "copyHash": "61a47b889b35c3cd",
   "es": {
     "description": "Deshace de forma segura la última operación de git, explicando qué hace",
+    "title": "Marcha atrás en git",
+    "summary": "Revisa tu historial reciente y propone la forma más segura de deshacer el último commit, merge, rebase o cambio, explicándola antes de ejecutarla.",
+    "keywords": [
+      "deshacer commit",
+      "git reset",
+      "revertir merge",
+      "git reflog",
+      "recuperar cambios"
+    ],
     "howToAsk": [
       "/git--undo he hecho un commit por error, deshazlo",
       "/git--undo necesito deshacer el último merge sin perder cambios",
@@ -13,6 +23,15 @@
       "/git--undo I committed by mistake, undo it",
       "/git--undo undo the last merge without losing my changes",
       "/git--undo explain how to safely revert my last git action"
+    ],
+    "title": "Safe git undo",
+    "summary": "Checks your recent history and proposes the safest way to undo the last commit, merge, rebase or change, explaining it before running anything.",
+    "keywords": [
+      "undo commit",
+      "git reset",
+      "undo merge",
+      "git reflog",
+      "recover changes"
     ]
   }
 }

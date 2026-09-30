@@ -6,6 +6,14 @@
       "/database--seed genera 50 usuarios de prueba con pedidos",
       "/database--seed crea datos semilla realistas para mi entorno de desarrollo",
       "/database--seed necesito datos de prueba para la tabla de productos"
+    ],
+    "title": "Datos de prueba para desarrollo",
+    "summary": "Genera datos semilla realistas para tu base de datos, con relaciones válidas y casos límite, en el formato de tu ORM y repetibles sin duplicar.",
+    "keywords": [
+      "datos semilla",
+      "datos de prueba",
+      "seed prisma",
+      "fixtures de base de datos"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/database--seed generate 50 test users with orders",
       "/database--seed create realistic seed data for my dev environment",
       "/database--seed I need test data for the products table"
+    ],
+    "title": "Seed data for development",
+    "summary": "Generates realistic seed data for your database, with valid relationships and edge cases, in your ORM's format and safe to re-run.",
+    "keywords": [
+      "seed data",
+      "test data",
+      "database fixtures",
+      "prisma seed"
     ]
-  }
+  },
+  "copyHash": "4b314a8e3e34bf3e"
 }

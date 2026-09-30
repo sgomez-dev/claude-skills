@@ -6,6 +6,14 @@
       "/sales--account-plan plan de cuenta para Acme Corp, quiero entrar en su departamento de IT",
       "/sales--account-plan mapea la organización de este cliente clave y sus iniciativas",
       "/sales--account-plan necesito una estrategia de cuenta para renovar este contrato grande"
+    ],
+    "title": "Plan estratégico de cuenta",
+    "summary": "Investiga una cuenta con fuentes públicas y arma su plan: mapa de la organización, dolores, iniciativas y jugadas de entrada para cerrar o ampliar.",
+    "keywords": [
+      "plan de cuenta",
+      "mapa de stakeholders",
+      "account plan",
+      "ventas b2b"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/sales--account-plan account plan for Acme Corp, I want to break into their IT department",
       "/sales--account-plan map this key customer's org chart and initiatives",
       "/sales--account-plan I need an account strategy to renew this big contract"
+    ],
+    "title": "Strategic account plan",
+    "summary": "Researches one account from public sources and builds its plan: org map, pains, initiatives and entry plays to land or expand.",
+    "keywords": [
+      "account plan",
+      "stakeholder map",
+      "b2b account strategy",
+      "land and expand"
     ]
-  }
+  },
+  "copyHash": "62d5f9f31de03abf"
 }

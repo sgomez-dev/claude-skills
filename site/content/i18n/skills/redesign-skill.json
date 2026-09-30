@@ -6,6 +6,14 @@
       "Mi web parece hecha con IA, ayúdame a que se vea más premium",
       "Audita el diseño de mi app y dime qué patrones genéricos debería cambiar",
       "Sube el nivel visual de esta landing sin romper nada del código"
+    ],
+    "title": "Rediseño de una web existente",
+    "summary": "Audita una web o app ya hecha, detecta patrones genéricos de IA y aplica mejoras de diseño premium sin romper la funcionalidad ni reescribir todo.",
+    "keywords": [
+      "rediseñar web",
+      "mejorar diseño",
+      "auditoría de diseño",
+      "que no parezca hecho con ia"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "My site looks AI-generated, help make it feel more premium",
       "Audit my app's design and tell me which generic patterns to fix",
       "Level up this landing page's visuals without breaking the code"
+    ],
+    "title": "Redesign an existing site",
+    "summary": "Audits an existing website or app, flags generic AI-looking patterns and applies premium design upgrades without breaking functionality or starting over.",
+    "keywords": [
+      "redesign website",
+      "improve ui design",
+      "design audit",
+      "fix ai-looking design"
     ]
-  }
+  },
+  "copyHash": "98ad3e5b051bfb71"
 }

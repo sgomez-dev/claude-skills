@@ -6,6 +6,14 @@
       "Instala Sonner y configura el Toaster en mi app de React",
       "Mis toasts de Sonner no siguen el modo oscuro, ayúdame a arreglarlo",
       "Muestra un toast de carga mientras se resuelve esta promesa"
+    ],
+    "title": "Guía de Sonner, notificaciones toast",
+    "summary": "Ayuda a instalar, usar, estilizar y depurar Sonner, la librería de toasts para React: Toaster, toasts de promesa, temas y posición.",
+    "keywords": [
+      "sonner toast",
+      "notificaciones react",
+      "toast no aparece",
+      "toaster"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Install Sonner and set up the Toaster in my React app",
       "My Sonner toasts aren't following dark mode, help me fix it",
       "Show a loading toast while this promise resolves"
+    ],
+    "title": "Sonner toast library guide",
+    "summary": "Helps you set up, style and troubleshoot Sonner, the React toast library: the Toaster, promise toasts, theming, positioning and common bugs.",
+    "keywords": [
+      "sonner toast",
+      "react toast notifications",
+      "toast not showing",
+      "sonner tailwind"
     ]
-  }
+  },
+  "copyHash": "39f3ee185b3aa2cf"
 }

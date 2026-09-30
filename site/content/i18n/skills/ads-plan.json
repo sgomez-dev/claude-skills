@@ -1,6 +1,14 @@
 {
   "sourceHash": "bcdf1cf1d84f639b",
   "es": {
+    "title": "Plan de estrategia publicitaria",
+    "summary": "Crea una estrategia de publicidad de pago con objetivos, canales, presupuesto, creatividad y medición, y asigna dueño y plazo a cada acción.",
+    "keywords": [
+      "plan de medios",
+      "estrategia ppc",
+      "arquitectura de campañas",
+      "hoja de ruta publicitaria"
+    ],
     "description": "Crea una estrategia profesional de publicidad de pago que cubra objetivos, economía, selección de plataformas, arquitectura de campañas, audiencias, presupuesto, creatividad, medición, experimentos, gobernanza, puesta en marcha e informes. Úsalo para plan de anuncios, plan de medios, estrategia de PPC, estrategia de social de pago, arquitectura de campañas, hoja de ruta publicitaria o planificación de canales.",
     "howToAsk": [
       "Ayúdame a crear un plan de medios de pago completo para el próximo trimestre",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "Paid advertising strategy plan",
+    "summary": "Builds a paid advertising strategy covering objectives, channels, budget, creative and measurement, with an owner and timing for every action.",
+    "keywords": [
+      "media plan",
+      "ppc strategy",
+      "campaign architecture",
+      "advertising roadmap"
+    ],
     "howToAsk": [
       "Help me build a full paid media plan for next quarter",
       "Which platforms should I use for this campaign and why?",
       "Design the campaign architecture for our launch"
     ]
-  }
+  },
+  "copyHash": "ac2617f0d4761e5c"
 }

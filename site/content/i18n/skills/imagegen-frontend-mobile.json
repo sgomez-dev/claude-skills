@@ -6,6 +6,14 @@
       "Genérame conceptos de pantallas para mi app móvil de iOS",
       "Necesito el flujo visual de onboarding de mi app dentro de un mockup de iPhone",
       "Diséñame la pantalla principal de mi app con iconografía personalizada"
+    ],
+    "title": "Imágenes de pantallas de apps",
+    "summary": "Genera solo imágenes de pantallas y flujos de apps iOS o Android en marcos de móvil, con jerarquía clara y coherencia. No escribe código.",
+    "keywords": [
+      "mockup app móvil",
+      "diseño de pantallas",
+      "concepto de app",
+      "imagen de interfaz móvil"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Generate screen concepts for my iOS mobile app",
       "I need the onboarding flow visuals for my app inside an iPhone mockup",
       "Design the main screen of my app with custom iconography"
+    ],
+    "title": "Mobile app screen concept images",
+    "summary": "Generates images only of iOS or Android app screens and flows inside phone mockups, with clear hierarchy and consistency. It writes no code.",
+    "keywords": [
+      "mobile app mockup",
+      "app screen design",
+      "app concept images",
+      "phone mockup"
     ]
-  }
+  },
+  "copyHash": "8a33389979f3074f"
 }

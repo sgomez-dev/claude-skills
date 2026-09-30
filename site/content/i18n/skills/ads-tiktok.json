@@ -6,6 +6,15 @@
       "Audita mi cuenta de TikTok Ads y el Pixel",
       "¿Cómo funciona Smart+ en mis campañas de TikTok Shop?",
       "Revisa mis Spark Ads y su rendimiento"
+    ],
+    "title": "Auditoría de TikTok Ads",
+    "summary": "Audita tu cuenta de TikTok Ads: Pixel, Events API, creatividades, Smart+, pujas y atribución. Devuelve hallazgos priorizados y datos que faltan.",
+    "keywords": [
+      "auditoría tiktok ads",
+      "tiktok pixel",
+      "events api",
+      "smart+",
+      "spark ads"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "Audit my TikTok Ads account and Pixel setup",
       "How is Smart+ performing on my TikTok Shop campaigns?",
       "Review my Spark Ads performance"
+    ],
+    "title": "TikTok Ads account audit",
+    "summary": "Audits a TikTok Ads account, from Pixel and Events API to creative, Smart+, bidding and attribution, and returns prioritised findings and missing inputs.",
+    "keywords": [
+      "tiktok ads audit",
+      "tiktok pixel",
+      "events api",
+      "smart+ campaigns",
+      "spark ads"
     ]
-  }
+  },
+  "copyHash": "793841c65be017a2"
 }

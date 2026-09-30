@@ -6,6 +6,14 @@
       "/ml--model-deployment despliega mi modelo como una API online",
       "/ml--model-deployment monta inferencia por lotes para este modelo",
       "/ml--model-deployment añade detección de drift a mi modelo en producción"
+    ],
+    "title": "Desplegar un modelo de ML",
+    "summary": "Lleva un modelo entrenado a producción: patrón de servicio por lotes u online, API, empaquetado, monitorización y detección de deriva.",
+    "keywords": [
+      "desplegar modelo",
+      "api de predicción",
+      "deriva de datos",
+      "servir modelo"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ml--model-deployment deploy my model as an online API",
       "/ml--model-deployment set up batch inference for this model",
       "/ml--model-deployment add drift detection to my production model"
+    ],
+    "title": "Deploying an ML model",
+    "summary": "Takes a trained model to production: batch or online serving pattern, prediction API, packaging, monitoring, drift detection and rollback plan.",
+    "keywords": [
+      "deploy ml model",
+      "model serving api",
+      "data drift",
+      "batch vs online"
     ]
-  }
+  },
+  "copyHash": "8f17ffece91817d3"
 }

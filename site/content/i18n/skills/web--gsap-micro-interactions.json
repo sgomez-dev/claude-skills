@@ -6,6 +6,14 @@
       "/web--gsap-micro-interactions añade un cursor personalizado a mi web",
       "/web--gsap-micro-interactions crea tarjetas con efecto tilt al pasar el ratón",
       "/web--gsap-micro-interactions haz un botón magnético para el call to action"
+    ],
+    "title": "Microinteracciones con GSAP",
+    "summary": "Implementa en React microinteracciones con GSAP: cursor personalizado, botones magnéticos, tarjetas con inclinación, focos de luz e indicadores de scroll.",
+    "keywords": [
+      "microinteracciones",
+      "cursor personalizado",
+      "botón magnético",
+      "tarjeta tilt"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/web--gsap-micro-interactions add a custom cursor to my site",
       "/web--gsap-micro-interactions create tilt-effect cards on hover",
       "/web--gsap-micro-interactions make a magnetic button for the call to action"
+    ],
+    "title": "Micro-interactions with GSAP",
+    "summary": "Implements micro-interactions in React with GSAP: custom cursors, magnetic buttons, tilt cards, spotlight effects and scroll indicators.",
+    "keywords": [
+      "micro-interactions",
+      "custom cursor",
+      "magnetic button",
+      "tilt card"
     ]
-  }
+  },
+  "copyHash": "1414174c50f67535"
 }

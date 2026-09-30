@@ -6,6 +6,14 @@
       "/automation--report-automation envía un informe semanal de ventas por email automáticamente",
       "/automation--report-automation genera un informe mensual a partir de mi base de datos",
       "/automation--report-automation programa el envío de este informe cada lunes a Slack"
+    ],
+    "title": "Informes recurrentes automáticos",
+    "summary": "Convierte un informe hecho a mano en un proceso programado que extrae los datos, rellena una plantilla y lo envía por email o Slack.",
+    "keywords": [
+      "automatizar informes",
+      "informe semanal automático",
+      "informe programado",
+      "enviar informe por slack"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/automation--report-automation email a weekly sales report automatically",
       "/automation--report-automation generate a monthly report from my database",
       "/automation--report-automation schedule this report to Slack every Monday"
+    ],
+    "title": "Automated recurring reports",
+    "summary": "Turns a hand-made report into a scheduled pipeline that pulls the data, fills a template and delivers it by email or Slack.",
+    "keywords": [
+      "automate reports",
+      "weekly report automation",
+      "scheduled report",
+      "send report to slack"
     ]
-  }
+  },
+  "copyHash": "a885d0089bde5437"
 }

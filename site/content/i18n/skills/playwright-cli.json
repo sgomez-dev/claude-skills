@@ -6,6 +6,14 @@
       "Rellena este formulario web y envíalo automáticamente",
       "Haz una captura de pantalla de esta página después de iniciar sesión",
       "Extrae los precios de esta página de productos"
+    ],
+    "title": "Automatizar el navegador",
+    "summary": "Controla un navegador desde la terminal para abrir páginas, rellenar formularios, hacer capturas y extraer datos con playwright-cli.",
+    "keywords": [
+      "automatizar navegador",
+      "playwright",
+      "rellenar formularios",
+      "capturas de pantalla"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Fill out this web form and submit it automatically",
       "Take a screenshot of this page after logging in",
       "Extract the prices from this product page"
+    ],
+    "title": "Browser automation",
+    "summary": "Drives a browser from the terminal with playwright-cli to open pages, fill forms, take screenshots and extract data.",
+    "keywords": [
+      "browser automation",
+      "playwright",
+      "fill forms",
+      "screenshots"
     ]
-  }
+  },
+  "copyHash": "716a80315821d669"
 }

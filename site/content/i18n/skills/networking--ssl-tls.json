@@ -6,6 +6,14 @@
       "/networking--ssl-tls revisa si mi certificado está a punto de caducar",
       "/networking--ssl-tls configura HTTPS estricto en mi dominio",
       "/networking--ssl-tls audita la configuración TLS de mi servidor"
+    ],
+    "title": "Auditoría y ajuste de SSL/TLS",
+    "summary": "Revisa certificados, versiones de TLS y HTTPS de tu web, detecta problemas habituales y genera una configuración segura para Cloudflare y el servidor.",
+    "keywords": [
+      "certificado ssl",
+      "configurar https",
+      "tls 1.2",
+      "hsts"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/networking--ssl-tls check if my certificate is about to expire",
       "/networking--ssl-tls enforce strict HTTPS on my domain",
       "/networking--ssl-tls audit my server's TLS configuration"
+    ],
+    "title": "SSL/TLS audit and setup",
+    "summary": "Audits your site's certificates, TLS versions and HTTPS settings, flags common problems and generates a secure Cloudflare and origin configuration.",
+    "keywords": [
+      "ssl certificate",
+      "https setup",
+      "tls version",
+      "hsts"
     ]
-  }
+  },
+  "copyHash": "a886fb3676985d92"
 }

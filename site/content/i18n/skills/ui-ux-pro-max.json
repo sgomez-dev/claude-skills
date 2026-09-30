@@ -6,6 +6,14 @@
       "Revisa la UX de esta pantalla de checkout",
       "Elige una paleta de colores y tipografía para mi producto",
       "Ayúdame a implementar este componente siguiendo buenas prácticas de UX"
+    ],
+    "title": "Guía de diseño UI/UX",
+    "summary": "Consulta una base local de estilos, paletas, tipografías, guías de UX e iconos para diseñar, revisar o corregir interfaces web, móviles y de escritorio.",
+    "keywords": [
+      "guía ux ui",
+      "paletas de color",
+      "combinar tipografías",
+      "revisar accesibilidad"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Review the UX of this checkout screen",
       "Pick a color palette and font pairing for my product",
       "Help me implement this component following good UX practices"
+    ],
+    "title": "UI/UX design guidance",
+    "summary": "Searches a local library of styles, palettes, font pairings, UX guidelines and icons to design, review or fix web, mobile and desktop interfaces.",
+    "keywords": [
+      "ux ui guidelines",
+      "color palettes",
+      "font pairings",
+      "accessibility review"
     ]
-  }
+  },
+  "copyHash": "ea087c341bfb5b23"
 }

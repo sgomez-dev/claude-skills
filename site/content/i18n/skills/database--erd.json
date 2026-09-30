@@ -6,6 +6,14 @@
       "/database--erd genera el ERD de mi base de datos Postgres",
       "/database--erd diagrama entidad-relación a partir de mis modelos Prisma",
       "/database--erd crea un ERD para explicar el esquema al equipo"
+    ],
+    "title": "Diagrama entidad-relación",
+    "summary": "Genera un diagrama ER en Mermaid a partir de tu esquema de base de datos o modelos ORM, con columnas, claves y cardinalidades.",
+    "keywords": [
+      "diagrama er",
+      "diagrama de base de datos",
+      "mermaid erd",
+      "relaciones entre tablas"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/database--erd generate the ERD for my Postgres database",
       "/database--erd entity-relationship diagram from my Prisma models",
       "/database--erd create an ERD to explain the schema to the team"
+    ],
+    "title": "Entity relationship diagram",
+    "summary": "Generates a Mermaid ER diagram from your database schema or ORM models, with columns, keys and relationship cardinality.",
+    "keywords": [
+      "er diagram",
+      "database diagram",
+      "mermaid erd",
+      "table relationships"
     ]
-  }
+  },
+  "copyHash": "eab7e23619a0fa75"
 }

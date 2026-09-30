@@ -6,6 +6,14 @@
       "/debugging--production-debug este bug solo pasa en producción, ayúdame con los logs",
       "/debugging--production-debug analiza estas métricas para encontrar el fallo",
       "/debugging--production-debug investiga este incidente solo con logs y trazas"
+    ],
+    "title": "Depurar errores solo en producción",
+    "summary": "Investiga fallos que solo ocurren en producción con logs, métricas y diferencias de entorno, sin tocar el sistema real.",
+    "keywords": [
+      "error solo en producción",
+      "funciona en local",
+      "diferencias de entorno",
+      "depurar producción"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/debugging--production-debug this bug only happens in production, help with the logs",
       "/debugging--production-debug analyze these metrics to find the failure",
       "/debugging--production-debug investigate this incident using only logs and traces"
+    ],
+    "title": "Production-only bug debugging",
+    "summary": "Investigates bugs that only appear in production using logs, metrics and environment differences, without touching the live system.",
+    "keywords": [
+      "works locally fails production",
+      "production bug",
+      "environment differences",
+      "debug production"
     ]
-  }
+  },
+  "copyHash": "00f0bf769b86f463"
 }

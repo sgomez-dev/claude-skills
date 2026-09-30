@@ -6,6 +6,14 @@
       "/web--spa-scaffold crea la estructura de una SPA en React para mi proyecto",
       "/web--spa-scaffold monta un scaffold con buena arquitectura para mi app",
       "/web--spa-scaffold genera una SPA de producción con una UI cuidada"
+    ],
+    "title": "Arranque de una SPA profesional",
+    "summary": "Monta la estructura de una SPA lista para producción: elige el stack según tus requisitos y añade carga diferida, estados de error y accesibilidad.",
+    "keywords": [
+      "crear spa",
+      "estructura de proyecto react",
+      "next.js o vite",
+      "scaffold de aplicación"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/web--spa-scaffold scaffold a React SPA for my project",
       "/web--spa-scaffold set up a well-architected app skeleton",
       "/web--spa-scaffold generate a production-ready SPA with a polished UI"
+    ],
+    "title": "Production-ready SPA scaffold",
+    "summary": "Scaffolds a production-grade single-page app: it picks the stack from your requirements and adds code splitting, error states and accessibility.",
+    "keywords": [
+      "create spa",
+      "react project structure",
+      "next.js or vite",
+      "app scaffold"
     ]
-  }
+  },
+  "copyHash": "c06e7f4e1783f5b3"
 }

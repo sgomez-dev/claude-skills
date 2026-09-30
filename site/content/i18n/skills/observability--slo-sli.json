@@ -6,6 +6,14 @@
       "/observability--slo-sli define el SLO de disponibilidad para el checkout",
       "/observability--slo-sli calcula el presupuesto de error de nuestra API",
       "/observability--slo-sli avísame cuando el presupuesto de error se consuma demasiado rápido"
+    ],
+    "title": "Definir SLO y SLI",
+    "summary": "Define SLIs y SLOs a partir de los recorridos clave de tus usuarios, con presupuestos de error y alertas de burn rate.",
+    "keywords": [
+      "slo sli",
+      "presupuesto de error",
+      "burn rate",
+      "objetivos de fiabilidad"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/observability--slo-sli define the availability SLO for checkout",
       "/observability--slo-sli calculate the error budget for our API",
       "/observability--slo-sli alert us when the error budget burns too fast"
+    ],
+    "title": "SLO and SLI definition",
+    "summary": "Defines SLIs and SLOs from your users' key journeys, with error budgets and multi-window burn-rate alerts.",
+    "keywords": [
+      "slo sli",
+      "error budget",
+      "burn rate",
+      "reliability targets"
     ]
-  }
+  },
+  "copyHash": "46656c889cd85865"
 }

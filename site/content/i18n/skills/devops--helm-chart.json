@@ -6,6 +6,14 @@
       "/devops--helm-chart crea un Helm chart para mi aplicación",
       "/devops--helm-chart añade dependencias y values a mi chart de Helm",
       "/devops--helm-chart define la estrategia de release de mi Helm chart"
+    ],
+    "title": "Chart de Helm para Kubernetes",
+    "summary": "Crea o mejora un chart de Helm con plantillas limpias, valores, dependencias y estrategia de versiones, verificado con helm lint.",
+    "keywords": [
+      "helm chart",
+      "values.yaml",
+      "empaquetar kubernetes",
+      "helm lint"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/devops--helm-chart create a Helm chart for my application",
       "/devops--helm-chart add dependencies and values to my Helm chart",
       "/devops--helm-chart define the release strategy for my Helm chart"
+    ],
+    "title": "Helm chart for Kubernetes",
+    "summary": "Creates or improves a Helm chart with clean templates, a values contract, dependencies and a versioning strategy, checked with helm lint.",
+    "keywords": [
+      "helm chart",
+      "values.yaml",
+      "package for kubernetes",
+      "helm lint"
     ]
-  }
+  },
+  "copyHash": "e5cef812c8588618"
 }

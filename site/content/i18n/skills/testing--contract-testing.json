@@ -6,6 +6,14 @@
       "/testing--contract-testing añade tests de contrato entre mi frontend y la API",
       "/testing--contract-testing configura Pact entre estos dos microservicios",
       "/testing--contract-testing ¿cómo verifico que el consumidor y el proveedor son compatibles?"
+    ],
+    "title": "Tests de contrato entre servicios",
+    "summary": "Configura tests de contrato dirigidos por el consumidor (Pact) para detectar roturas entre servicios al compilar, sin levantarlos juntos.",
+    "keywords": [
+      "contract testing",
+      "pact",
+      "tests de contrato",
+      "microservicios"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/testing--contract-testing add contract tests between my frontend and API",
       "/testing--contract-testing set up Pact between these two microservices",
       "/testing--contract-testing how do I verify consumer and provider compatibility?"
+    ],
+    "title": "Contract tests between services",
+    "summary": "Sets up consumer-driven contract tests (Pact by default) so breakages between services are caught at build time without running both together.",
+    "keywords": [
+      "contract testing",
+      "pact",
+      "consumer driven contracts",
+      "microservices testing"
     ]
-  }
+  },
+  "copyHash": "3fc250acda2f0c06"
 }

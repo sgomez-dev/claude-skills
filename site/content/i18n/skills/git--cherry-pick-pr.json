@@ -6,6 +6,14 @@
       "/git--cherry-pick-pr trae solo el commit del fix de seguridad de ese PR",
       "/git--cherry-pick-pr aplica dos commits de la rama release a mi rama",
       "/git--cherry-pick-pr necesito llevar un cambio concreto sin fusionar todo el PR"
+    ],
+    "title": "Cherry-pick de una PR",
+    "summary": "Trae commits concretos de una PR o de otra rama a tu rama actual, eligiéndolos tú y ayudándote a resolver conflictos.",
+    "keywords": [
+      "cherry-pick",
+      "traer commits de una pr",
+      "git cherry-pick",
+      "copiar commits entre ramas"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/git--cherry-pick-pr bring just the security fix commit from that PR",
       "/git--cherry-pick-pr apply two commits from the release branch to mine",
       "/git--cherry-pick-pr grab one specific change without merging the whole PR"
+    ],
+    "title": "Cherry-pick from a PR",
+    "summary": "Brings selected commits from a pull request or another branch into your current branch, and helps resolve any conflicts.",
+    "keywords": [
+      "cherry-pick",
+      "pick commits from pr",
+      "git cherry-pick",
+      "copy commits between branches"
     ]
-  }
+  },
+  "copyHash": "c37d9f5e8b97cf68"
 }

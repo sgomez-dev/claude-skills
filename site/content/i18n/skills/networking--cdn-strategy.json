@@ -1,7 +1,17 @@
 {
   "sourceHash": "23a991e775e90e21",
+  "copyHash": "00cd363de3b0c65a",
   "es": {
     "description": "Diseña una estrategia de caché con CDN y reglas de caché para aplicaciones web",
+    "title": "Estrategia de caché con CDN",
+    "summary": "Diseña las reglas de caché de tu web en un CDN: activos estáticos, HTML y API, claves de caché, purgado y cabeceras compatibles.",
+    "keywords": [
+      "caché cdn",
+      "cache-control",
+      "purgar caché",
+      "reglas de caché",
+      "cloudflare cache"
+    ],
     "howToAsk": [
       "/networking--cdn-strategy diseña la estrategia de CDN para mi web",
       "/networking--cdn-strategy define qué assets deben cachearse y por cuánto tiempo",
@@ -13,6 +23,15 @@
       "/networking--cdn-strategy design a CDN caching strategy for my site",
       "/networking--cdn-strategy define which assets to cache and for how long",
       "/networking--cdn-strategy my site is slow overseas, how do I fix it with a CDN?"
+    ],
+    "title": "CDN caching strategy",
+    "summary": "Designs CDN cache rules for your web app across static assets, HTML and API responses, including cache keys, purging and ready-to-use headers.",
+    "keywords": [
+      "cdn cache",
+      "cache-control",
+      "purge cache",
+      "cache rules",
+      "cloudflare cache"
     ]
   }
 }

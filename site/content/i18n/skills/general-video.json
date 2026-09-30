@@ -1,6 +1,15 @@
 {
   "sourceHash": "878660fe9ed4bf83",
+  "copyHash": "4d7c52972a800c14",
   "es": {
+    "title": "Vídeo a medida con HyperFrames",
+    "summary": "Crea o edita una composición de HyperFrames cuando ningún flujo especializado encaja: piezas largas, reels de marca, montajes o títulos estáticos.",
+    "keywords": [
+      "vídeo a medida",
+      "reel de marca",
+      "montaje de vídeo",
+      "composición hyperframes"
+    ],
     "description": "Crea o edita una composición de HyperFrames personalizada cuando ningún flujo de trabajo especializado encaja, o cuando BRIEF.md establece flow: companion. Úsalo para piezas más largas o de varias escenas, vídeos de marca y sizzle reels, montajes, loops estáticos, tarjetas de título estáticas, remixes de metraje y construcciones libres. Usa motion-graphics en su lugar para una unidad corta sin narración centrada en el movimiento, incluido un título animado. Dirige la creación desde cero a través de hyperframes antes de usar esta skill.",
     "howToAsk": [
       "Necesito montar un vídeo de marca de varias escenas a partir de este metraje",
@@ -9,6 +18,14 @@
     ]
   },
   "en": {
+    "title": "Custom video with HyperFrames",
+    "summary": "Builds or edits a HyperFrames composition when no specialised workflow fits: longer pieces, brand reels, montages or static title cards.",
+    "keywords": [
+      "custom video",
+      "brand reel",
+      "video montage",
+      "hyperframes composition"
+    ],
     "howToAsk": [
       "I need to put together a multi-scene brand video from this footage",
       "I want to create a static loop for the website with HyperFrames",

@@ -6,6 +6,14 @@
       "Quiero una landing con scroll que vuele por un mundo 3D de mi marca",
       "Crea una página tipo diorama donde al hacer scroll recorremos el sector",
       "Necesito un hero cinemático de scroll para la web de mi startup"
+    ],
+    "title": "Landing con vuelo por scroll",
+    "summary": "Crea una landing en la que el scroll mueve una cámara que vuela de escena en escena sin cortes, con vídeos de Higgsfield y un motor de scroll propio.",
+    "keywords": [
+      "landing con scroll",
+      "mundo 3d al hacer scroll",
+      "scroll cinematográfico",
+      "diorama web"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "I want a scroll landing page that flies through a 3D world for my brand",
       "Build a diorama-style page where scrolling flies through our industry",
       "I need a cinematic scroll hero section for my startup's website"
+    ],
+    "title": "Fly-through scroll landing page",
+    "summary": "Builds a landing page where scrolling drives a camera that flies from scene to scene without cuts, using Higgsfield clips and a portable scroll engine.",
+    "keywords": [
+      "scroll landing page",
+      "scroll scrubbed video",
+      "3d world website",
+      "diorama landing"
     ]
-  }
+  },
+  "copyHash": "e56fe396c1fa2582"
 }

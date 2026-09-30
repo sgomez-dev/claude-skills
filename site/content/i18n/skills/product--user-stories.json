@@ -6,6 +6,14 @@
       "/product--user-stories divide este epic de checkout en historias de usuario",
       "/product--user-stories necesito historias de usuario para la función de notificaciones push",
       "/product--user-stories genera criterios de aceptación para el login con Google"
+    ],
+    "title": "Historias de usuario INVEST",
+    "summary": "Divide una épica o funcionalidad en historias de usuario INVEST con criterios de aceptación, orden de construcción y corte de MVP.",
+    "keywords": [
+      "historias de usuario",
+      "criterios de aceptación",
+      "dividir épica",
+      "invest"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/product--user-stories break this checkout epic into user stories",
       "/product--user-stories I need user stories for the push notifications feature",
       "/product--user-stories generate acceptance criteria for Google login"
+    ],
+    "title": "INVEST user stories",
+    "summary": "Breaks an epic or feature into INVEST user stories with acceptance criteria, build order and an MVP cut line.",
+    "keywords": [
+      "user stories",
+      "acceptance criteria",
+      "split an epic",
+      "invest stories"
     ]
-  }
+  },
+  "copyHash": "3f9dbef5767bd5ee"
 }

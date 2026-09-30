@@ -6,6 +6,14 @@
       "/debugging--perf-flamegraph genera un flamegraph de mi endpoint más lento",
       "/debugging--perf-flamegraph encuentra el cuello de botella de CPU en este servicio",
       "/debugging--perf-flamegraph perfila el uso de IO de este proceso"
+    ],
+    "title": "Perfilado con flamegraphs",
+    "summary": "Caracteriza un cuello de botella, analiza el código y genera los comandos de profiling de tu lenguaje para crear y leer flamegraphs.",
+    "keywords": [
+      "flamegraph",
+      "código lento",
+      "perfilar rendimiento",
+      "cuello de botella"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/debugging--perf-flamegraph generate a flamegraph for my slowest endpoint",
       "/debugging--perf-flamegraph find the CPU bottleneck in this service",
       "/debugging--perf-flamegraph profile the IO usage of this process"
+    ],
+    "title": "Flamegraph profiling",
+    "summary": "Characterizes a performance bottleneck, inspects the code and generates the profiling commands for your language to build and read flamegraphs.",
+    "keywords": [
+      "flamegraph",
+      "slow code",
+      "profile performance",
+      "cpu bottleneck"
     ]
-  }
+  },
+  "copyHash": "51572b7770f35701"
 }

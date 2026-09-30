@@ -1,6 +1,14 @@
 {
   "sourceHash": "f431aed57a779df3",
   "es": {
+    "title": "Fotos de producto para anuncios",
+    "summary": "Genera variantes de fotografía de producto (estudio, estilo de vida) desde una imagen tuya autorizada, cuidando que el producto no cambie.",
+    "keywords": [
+      "fotografía de producto",
+      "sesión de fotos virtual",
+      "foto de estudio",
+      "imagen lifestyle"
+    ],
     "description": "Genera variantes de fotografía de producto con derechos garantizados para anuncios de pago a partir de una imagen de origen autorizada y un perfil de marca validado. Se activa con: foto de producto, fotografía de producto, sesión de fotos virtual, sesión de fotos, mejorar imagen de producto, foto de estudio, foto de estilo de vida, imagen de producto de estilo de vida, imagen de producto flotante, foto de ingrediente.",
     "howToAsk": [
       "Hazme una sesión de fotos virtual de este producto en estudio",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "Product photos for ads",
+    "summary": "Generates product photo variants (studio, lifestyle) from a source image you have rights to, keeping the product itself unchanged.",
+    "keywords": [
+      "product photography",
+      "virtual photoshoot",
+      "studio shot",
+      "lifestyle product image"
+    ],
     "howToAsk": [
       "Do a virtual studio photoshoot for this product",
       "Generate a lifestyle photo featuring this product",
       "Enhance this product image for use in ads"
     ]
-  }
+  },
+  "copyHash": "ac42a9c63510e3ba"
 }

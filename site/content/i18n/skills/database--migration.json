@@ -6,6 +6,14 @@
       "/database--migration migración para añadir la columna email a users",
       "/database--migration genera la migración para renombrar una tabla",
       "/database--migration crea el archivo de migración para el nuevo índice"
+    ],
+    "title": "Migraciones de base de datos",
+    "summary": "Genera archivos de migración para un cambio de esquema, con versión de subida y de reversa, y avisa de los riesgos al alterar tablas.",
+    "keywords": [
+      "migración de base de datos",
+      "alter table",
+      "añadir columna",
+      "migración reversible"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/database--migration migration to add an email column to users",
       "/database--migration generate the migration to rename a table",
       "/database--migration create the migration file for a new index"
+    ],
+    "title": "Database migrations",
+    "summary": "Generates migration files for a schema change, with both up and down versions and safety checks for risky table alterations.",
+    "keywords": [
+      "database migration",
+      "alter table",
+      "add column",
+      "reversible migration"
     ]
-  }
+  },
+  "copyHash": "c4950861ea681117"
 }

@@ -6,6 +6,14 @@
       "Añade una animación de entrada con propósito a esta tarjeta",
       "Audita las animaciones de mi web y dime si parecen genéricas de IA",
       "Crea microinteracciones de hover para estos botones en Framer Motion"
+    ],
+    "title": "Creación y auditoría de movimiento",
+    "summary": "Construye componentes con movimiento útil o audita animaciones existentes con criterios de Emil Kowalski, Jakub Krehel y Jhey Tompkins.",
+    "keywords": [
+      "auditar animaciones",
+      "movimiento de interfaz",
+      "microinteracciones",
+      "framer motion"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Add a purposeful entrance animation to this card",
       "Audit my site's animations and tell me if they look like AI-slop",
       "Create hover micro-interactions for these buttons in Framer Motion"
+    ],
+    "title": "Building or auditing UI motion",
+    "summary": "Builds components with purposeful motion, or audits existing animations, using the approaches of Emil Kowalski, Jakub Krehel and Jhey Tompkins.",
+    "keywords": [
+      "audit animations",
+      "ui motion design",
+      "micro-interactions",
+      "framer motion"
     ]
-  }
+  },
+  "copyHash": "599f42dbf011df38"
 }

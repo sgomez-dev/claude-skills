@@ -6,6 +6,14 @@
       "/product--user-interview-guide entrevistas para validar una app de gestión de gastos",
       "/product--user-interview-guide quiero entender por qué los usuarios abandonan el onboarding",
       "/product--user-interview-guide guion para hablar con 5 clientes de nuestro SaaS de facturación"
+    ],
+    "title": "Guion de entrevistas de descubrimiento",
+    "summary": "Crea un guion de entrevista con cuestionario de filtro, preguntas no dirigidas y sondeos, revisado contra preguntas sesgadas.",
+    "keywords": [
+      "guion de entrevista",
+      "entrevistas de usuario",
+      "cuestionario de filtro",
+      "descubrimiento de producto"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/product--user-interview-guide interviews to validate an expense-tracking app",
       "/product--user-interview-guide help me understand why users drop off onboarding",
       "/product--user-interview-guide script to talk to 5 customers of our invoicing SaaS"
+    ],
+    "title": "Discovery interview guide",
+    "summary": "Creates an interview script with a screener, non-leading questions and probes, audited against leading questions.",
+    "keywords": [
+      "user interview script",
+      "discovery interviews",
+      "screener questions",
+      "customer research guide"
     ]
-  }
+  },
+  "copyHash": "21827c578d91febb"
 }

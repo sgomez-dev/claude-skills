@@ -6,6 +6,14 @@
       "/git--commit escribe el mensaje de commit para estos cambios",
       "/git--commit genera un commit siguiendo conventional commits",
       "/git--commit necesito un mensaje de commit claro para este fix"
+    ],
+    "title": "Mensaje de commit inteligente",
+    "summary": "Analiza tus cambios en staging y redacta un mensaje de commit con Conventional Commits; lo crea tras tu aprobación.",
+    "keywords": [
+      "mensaje de commit",
+      "conventional commits",
+      "git commit",
+      "commit automático"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/git--commit write the commit message for these changes",
       "/git--commit generate a conventional commit for what I staged",
       "/git--commit I need a clear commit message for this fix"
+    ],
+    "title": "Smart commit message",
+    "summary": "Analyzes your staged changes and writes a Conventional Commits message, then creates the commit once you approve it.",
+    "keywords": [
+      "commit message",
+      "conventional commits",
+      "git commit",
+      "generate commit message"
     ]
-  }
+  },
+  "copyHash": "b3001c613148c253"
 }

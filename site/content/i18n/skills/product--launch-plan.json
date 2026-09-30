@@ -6,6 +6,14 @@
       "/product--launch-plan crea el plan de lanzamiento para nuestra nueva app",
       "/product--launch-plan qué canales usamos y quién se encarga de cada cosa",
       "/product--launch-plan dame el checklist completo para el día del lanzamiento"
+    ],
+    "title": "Plan de lanzamiento de producto",
+    "summary": "Crea un plan de lanzamiento por fases con canales, activos con responsable y fecha, y checklist de go/no-go según el tamaño del lanzamiento.",
+    "keywords": [
+      "plan de lanzamiento",
+      "go-to-market",
+      "checklist de lanzamiento",
+      "lanzar producto"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/product--launch-plan build the launch plan for our new app",
       "/product--launch-plan which channels should we use and who owns what",
       "/product--launch-plan give me the full checklist for launch day"
+    ],
+    "title": "Product launch plan",
+    "summary": "Builds a phased launch plan with channels, assets with owners and dates, and a go/no-go checklist sized to the launch.",
+    "keywords": [
+      "launch plan",
+      "product launch checklist",
+      "go-to-market plan",
+      "go/no-go checklist"
     ]
-  }
+  },
+  "copyHash": "de78ed2e9330530b"
 }

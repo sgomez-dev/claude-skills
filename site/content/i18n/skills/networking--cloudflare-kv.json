@@ -1,7 +1,17 @@
 {
   "sourceHash": "818d5fb3d4e3ab3e",
+  "copyHash": "4f46ed96c5539e4d",
   "es": {
     "description": "Implementa Cloudflare Workers KV para almacenamiento clave-valor en el edge",
+    "title": "Almacenamiento Cloudflare KV",
+    "summary": "Implementa Cloudflare Workers KV para guardar pares clave-valor en el edge, con bindings, diseño de claves, TTL y funciones de acceso.",
+    "keywords": [
+      "cloudflare kv",
+      "workers kv",
+      "clave valor",
+      "feature flags",
+      "sesiones edge"
+    ],
     "howToAsk": [
       "/networking--cloudflare-kv guarda la configuración de usuario en KV",
       "/networking--cloudflare-kv usa KV para cachear respuestas de mi API",
@@ -13,6 +23,15 @@
       "/networking--cloudflare-kv store user settings in KV",
       "/networking--cloudflare-kv use KV to cache my API responses",
       "/networking--cloudflare-kv implement a visit counter with Workers KV"
+    ],
+    "title": "Cloudflare KV storage",
+    "summary": "Implements Cloudflare Workers KV for edge key-value storage, with bindings, key design, TTLs and typed helpers, noting KV is eventually consistent.",
+    "keywords": [
+      "cloudflare kv",
+      "workers kv",
+      "key-value store",
+      "feature flags",
+      "edge sessions"
     ]
   }
 }

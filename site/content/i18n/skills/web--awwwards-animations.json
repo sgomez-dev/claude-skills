@@ -6,6 +6,38 @@
       "/web--awwwards-animations añade scroll suave estilo Awwwards a mi web con Lenis",
       "/web--awwwards-animations crea un botón con efecto magnético",
       "/web--awwwards-animations anima las secciones al hacer scroll con GSAP ScrollTrigger"
+    ],
+    "title": "Animaciones React nivel Awwwards",
+    "summary": "Elige la herramienta adecuada (GSAP, Motion, Anime.js o Lenis) y crea animaciones React fluidas y accesibles: scroll, efectos magnéticos y revelados.",
+    "keywords": [
+      "animaciones awwwards",
+      "gsap scrolltrigger",
+      "smooth scroll lenis",
+      "efecto magnético"
+    ],
+    "useWhen": [
+      "Quieres animaciones de scroll o secuencias complejas en React",
+      "Necesitas decidir entre GSAP, Motion, Anime.js y Lenis",
+      "Buscas efectos como cursor magnético, revelado de texto o imágenes"
+    ],
+    "notFor": [
+      "Proyectos que no usan React",
+      "Sustituir una revisión de accesibilidad completa de tu web"
+    ],
+    "output": "Código React con las animaciones implementadas, siguiendo las reglas de rendimiento y movimiento reducido de la skill.",
+    "faq": [
+      {
+        "q": "¿Qué librería usa para cada cosa?",
+        "a": "GSAP con ScrollTrigger para scroll y líneas de tiempo, Motion para montaje y desmontaje de componentes, Lenis para el scroll suave y Anime.js para animaciones ligeras del DOM."
+      },
+      {
+        "q": "¿Respeta a quien desactiva las animaciones?",
+        "a": "Sí. Incluye patrones para respetar prefers-reduced-motion y pide no esconder contenido esencial tras revelados que dependan solo de la animación."
+      },
+      {
+        "q": "¿Sirve si no uso React?",
+        "a": "Está escrita para React, con ejemplos como useGSAP y ReactLenis. Fuera de React tendrías que adaptar los patrones por tu cuenta."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "/web--awwwards-animations add Awwwards-style smooth scroll with Lenis",
       "/web--awwwards-animations create a button with a magnetic hover effect",
       "/web--awwwards-animations animate sections on scroll with GSAP ScrollTrigger"
+    ],
+    "title": "Awwwards-level React animations",
+    "summary": "Picks the right tool (GSAP, Motion, Anime.js or Lenis) and builds smooth, accessible React animations: scroll effects, magnetic hovers and reveals.",
+    "keywords": [
+      "awwwards animations",
+      "gsap scrolltrigger",
+      "lenis smooth scroll",
+      "magnetic effect"
+    ],
+    "useWhen": [
+      "You want scroll-driven animations or complex sequences in React",
+      "You need to choose between GSAP, Motion, Anime.js and Lenis",
+      "You are after effects like magnetic cursors or text and image reveals"
+    ],
+    "notFor": [
+      "Projects that do not use React",
+      "Replacing a full accessibility review of your site"
+    ],
+    "output": "React code with the animations implemented, following the skill's performance and reduced-motion rules.",
+    "faq": [
+      {
+        "q": "Which library does it use for what?",
+        "a": "GSAP with ScrollTrigger for scroll and timelines, Motion for component mount and unmount, Lenis for smooth scrolling and Anime.js for lightweight DOM animation."
+      },
+      {
+        "q": "Does it respect users who disable motion?",
+        "a": "Yes. It includes patterns for honoring prefers-reduced-motion and says not to hide essential content behind reveals that depend only on animation."
+      },
+      {
+        "q": "Does it work without React?",
+        "a": "It is written for React, with examples such as useGSAP and ReactLenis. Outside React you would have to adapt the patterns yourself."
+      }
     ]
-  }
+  },
+  "copyHash": "f711c79366570cfe"
 }

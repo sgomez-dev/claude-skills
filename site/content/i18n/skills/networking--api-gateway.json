@@ -1,7 +1,17 @@
 {
   "sourceHash": "74e303ad93159ee3",
+  "copyHash": "a37604c76b5ccb46",
   "es": {
     "description": "Diseña la configuración de un API gateway con limitación de tasa, autenticación y enrutado",
+    "title": "Configuración de un API gateway",
+    "summary": "Diseña la configuración de un API gateway para tu API: rutas, autenticación, límites de uso, validación y observabilidad, con su OpenAPI.",
+    "keywords": [
+      "api gateway",
+      "rate limiting",
+      "autenticación jwt",
+      "enrutado de api",
+      "kong"
+    ],
     "howToAsk": [
       "/networking--api-gateway configura un API gateway para mis microservicios",
       "/networking--api-gateway añade límites de peticiones por cliente",
@@ -13,6 +23,15 @@
       "/networking--api-gateway set up an API gateway for my microservices",
       "/networking--api-gateway add per-client rate limits",
       "/networking--api-gateway define routing rules by API version"
+    ],
+    "title": "API gateway configuration",
+    "summary": "Designs an API gateway configuration for your API: routing, authentication, rate limits, request validation and observability, plus a matching OpenAPI spec.",
+    "keywords": [
+      "api gateway",
+      "rate limiting",
+      "jwt authentication",
+      "api routing",
+      "kong"
     ]
   }
 }

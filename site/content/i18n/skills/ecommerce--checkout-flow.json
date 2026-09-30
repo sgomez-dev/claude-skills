@@ -6,6 +6,14 @@
       "/ecommerce--checkout-flow audita mi checkout y dime dónde perdemos ventas",
       "/ecommerce--checkout-flow añade la opción de comprar como invitado",
       "/ecommerce--checkout-flow mejora la gestión de errores de pago en el checkout"
+    ],
+    "title": "Checkout optimizado para tu tienda",
+    "summary": "Diseña, construye o audita el checkout de una tienda online: pasos, compra como invitado, pagos y recuperación de errores para reducir abandonos.",
+    "keywords": [
+      "checkout tienda online",
+      "compra como invitado",
+      "reducir abandono",
+      "auditar checkout"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ecommerce--checkout-flow audit my checkout and tell me where we're losing sales",
       "/ecommerce--checkout-flow add a guest checkout option",
       "/ecommerce--checkout-flow improve payment error handling at checkout"
+    ],
+    "title": "Optimized store checkout",
+    "summary": "Designs, builds or audits an online store checkout: steps, guest purchase, payment experience and error recovery, aimed at fewer abandoned orders.",
+    "keywords": [
+      "checkout optimization",
+      "guest checkout",
+      "reduce cart abandonment",
+      "audit checkout"
     ]
-  }
+  },
+  "copyHash": "b5e917303a0a4ef9"
 }

@@ -6,6 +6,14 @@
       "Genera una imagen de producto para mi tienda con Gemini",
       "Edita esta imagen manteniendo la cara del personaje consistente",
       "Crea varias variantes de este gráfico con texto para redes sociales"
+    ],
+    "title": "Imágenes con Gemini",
+    "summary": "Genera, edita y revisa imágenes con los modelos Gemini de Google, con plan y aprobación previos antes de cada intento de pago.",
+    "keywords": [
+      "generar imágenes gemini",
+      "editar imagen con ia",
+      "nano banana",
+      "imagen de producto con ia"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Generate a product shot for my store with Gemini",
       "Edit this image while keeping the character's face consistent",
       "Create a few text-bearing graphic variants for social media"
+    ],
+    "title": "Images with Gemini",
+    "summary": "Generates, edits and reviews images with Google Gemini models, showing a plan and asking your approval before every paid attempt.",
+    "keywords": [
+      "gemini image generation",
+      "ai image editing",
+      "nano banana",
+      "ai product images"
     ]
-  }
+  },
+  "copyHash": "7e30403f52862f3f"
 }

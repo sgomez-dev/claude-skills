@@ -6,6 +6,14 @@
       "/ml--mlops-pipeline monta un registro de modelos para mi equipo",
       "/ml--mlops-pipeline añade seguimiento de experimentos a mi proyecto",
       "/ml--mlops-pipeline configura CI para validar modelos antes de desplegar"
+    ],
+    "title": "MLOps para tu proyecto",
+    "summary": "Da a un proyecto de ML reproducibilidad, seguimiento de experimentos, registro de modelos e integración continua, ajustado al tamaño del equipo.",
+    "keywords": [
+      "mlops",
+      "seguimiento de experimentos",
+      "registro de modelos",
+      "reproducibilidad"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ml--mlops-pipeline set up a model registry for my team",
       "/ml--mlops-pipeline add experiment tracking to my project",
       "/ml--mlops-pipeline configure CI to validate models before deploy"
+    ],
+    "title": "MLOps setup",
+    "summary": "Gives an ML project reproducible training, experiment tracking, a model registry and CI, sized to the team instead of a full platform.",
+    "keywords": [
+      "mlops",
+      "experiment tracking",
+      "model registry",
+      "reproducible training"
     ]
-  }
+  },
+  "copyHash": "789d4037dd4b2a95"
 }

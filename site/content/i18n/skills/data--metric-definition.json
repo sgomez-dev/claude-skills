@@ -6,6 +6,14 @@
       "/data--metric-definition define la métrica de ingresos recurrentes mensuales",
       "/data--metric-definition aclara la fórmula y granularidad de churn rate",
       "/data--metric-definition documenta casos límite y responsable de active users"
+    ],
+    "title": "Definición precisa de una métrica",
+    "summary": "Convierte una métrica vaga como «usuarios activos» o «churn» en un documento con fórmula, granularidad, filtros, casos límite y responsable.",
+    "keywords": [
+      "definir métrica",
+      "fórmula de churn",
+      "usuarios activos",
+      "diccionario de métricas"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/data--metric-definition define monthly recurring revenue precisely",
       "/data--metric-definition clarify the formula and grain for churn rate",
       "/data--metric-definition document edge cases and owner for active users"
+    ],
+    "title": "Precise business metric definition",
+    "summary": "Turns a vague metric like \"active users\" or \"churn\" into a document with formula, grain, filters, edge-case rulings and a named owner.",
+    "keywords": [
+      "define metric",
+      "churn formula",
+      "active users definition",
+      "metrics dictionary"
     ]
-  }
+  },
+  "copyHash": "69801a661769da55"
 }

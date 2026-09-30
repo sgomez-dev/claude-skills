@@ -6,6 +6,14 @@
       "Crea un sistema de tokens de diseño en tres capas para mi producto",
       "Define las escalas de espaciado y tipografía de mi design system",
       "Genera diapositivas de marca a partir de mis design tokens"
+    ],
+    "title": "Tokens y especificaciones de diseño",
+    "summary": "Define tokens de diseño en tres capas (primitivo, semántico, componente), variables CSS, escalas y especificaciones de componentes; también genera diapositivas.",
+    "keywords": [
+      "design tokens",
+      "variables css",
+      "sistema de diseño",
+      "escala tipográfica"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Build a three-layer design token system for my product",
       "Define the spacing and typography scales for my design system",
       "Generate brand-compliant slides from my design tokens"
+    ],
+    "title": "Design tokens and component specs",
+    "summary": "Defines three-layer design tokens (primitive, semantic, component), CSS variables, spacing and type scales, and component specs; also generates slides.",
+    "keywords": [
+      "design tokens",
+      "css variables",
+      "design system",
+      "type scale"
     ]
-  }
+  },
+  "copyHash": "8aa5ff93320559a6"
 }

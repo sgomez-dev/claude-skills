@@ -6,6 +6,14 @@
       "/networking--network-debug mi servidor tarda mucho en responder desde Europa",
       "/networking--network-debug no puedo conectar con la base de datos remota",
       "/networking--network-debug investiga por qué hay picos de latencia intermitentes"
+    ],
+    "title": "Diagnóstico de problemas de red",
+    "summary": "Diagnostica timeouts, latencia, conexiones rechazadas o fallos TLS con pruebas por capas y propone pasos para corregirlos.",
+    "keywords": [
+      "timeout de conexión",
+      "latencia alta",
+      "diagnosticar red",
+      "traceroute"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/networking--network-debug my server is slow to respond from Europe",
       "/networking--network-debug I can't connect to the remote database",
       "/networking--network-debug investigate intermittent latency spikes"
+    ],
+    "title": "Network problem diagnosis",
+    "summary": "Diagnoses timeouts, high latency, refused connections or TLS failures with layered tests, then suggests remediation steps and monitoring.",
+    "keywords": [
+      "connection timeout",
+      "high latency",
+      "debug network",
+      "traceroute"
     ]
-  }
+  },
+  "copyHash": "80af4027dfaafc1a"
 }

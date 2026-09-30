@@ -1,6 +1,14 @@
 {
   "sourceHash": "ba53fef68524e1ee",
   "es": {
+    "title": "Informes de publicidad de pago",
+    "summary": "Convierte los resultados de una auditoría o plan previos en un informe en Markdown, HTML o PDF, sin ocultar datos parciales o insuficientes.",
+    "keywords": [
+      "informe de publicidad",
+      "informe para cliente",
+      "auditoría en pdf",
+      "informe ejecutivo"
+    ],
     "description": "Genera informes de publicidad de pago en Markdown, HTML o PDF a partir de un paquete de resultados (run bundle) JSON validado de Claude Ads. Úsalo para informes de anuncios, informes de cliente, PDF de auditoría, informes ejecutivos para audiencia o exportación de resultados previos de auditoría y planificación.",
     "howToAsk": [
       "Genera un informe en PDF con los resultados de la última auditoría",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "Paid media reports",
+    "summary": "Turns the results of a prior audit or plan into a Markdown, HTML or PDF report, without hiding partial or insufficient data.",
+    "keywords": [
+      "ads report",
+      "client report",
+      "audit pdf",
+      "executive report"
+    ],
     "howToAsk": [
       "Generate a PDF report from the latest audit results",
       "Build a client-facing report from this run bundle",
       "Export the campaign plan to a Markdown document"
     ]
-  }
+  },
+  "copyHash": "3174b83b076cd549"
 }

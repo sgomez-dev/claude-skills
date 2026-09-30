@@ -6,6 +6,14 @@
       "/web--gsap-text-fx anima este titular con un efecto glitch",
       "/web--gsap-text-fx haz que el texto se desordene y recomponga (scramble)",
       "/web--gsap-text-fx crea un texto que sigue un trazado curvo"
+    ],
+    "title": "Efectos de texto con GSAP",
+    "summary": "Crea tipografía cinética con GSAP en React: texto dividido por letras o palabras, scramble, glitch, rotación 3D, degradado animado y texto sobre curva.",
+    "keywords": [
+      "efectos de texto",
+      "tipografía cinética",
+      "texto glitch",
+      "animar letras"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/web--gsap-text-fx animate this headline with a glitch effect",
       "/web--gsap-text-fx make the text scramble and reassemble",
       "/web--gsap-text-fx create text that follows a curved path"
+    ],
+    "title": "Kinetic text effects with GSAP",
+    "summary": "Builds kinetic typography with GSAP in React: split text by character or word, scramble, glitch, 3D rotation, gradient sweep and text on a curved path.",
+    "keywords": [
+      "text effects",
+      "kinetic typography",
+      "glitch text",
+      "split text animation"
     ]
-  }
+  },
+  "copyHash": "ec051fdc0ab941ba"
 }

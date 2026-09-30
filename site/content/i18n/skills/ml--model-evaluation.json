@@ -6,6 +6,14 @@
       "/ml--model-evaluation evalúa este modelo de clasificación de fraude",
       "/ml--model-evaluation comprueba si el modelo está bien calibrado",
       "/ml--model-evaluation haz un análisis de errores por segmento de usuarios"
+    ],
+    "title": "Evaluar un modelo de ML",
+    "summary": "Evalúa un modelo más allá de un solo número: métricas según el coste de cada error, calibración, rendimiento por segmentos y análisis de fallos.",
+    "keywords": [
+      "evaluar modelo",
+      "métricas de clasificación",
+      "calibración",
+      "análisis de errores"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ml--model-evaluation evaluate this fraud classification model",
       "/ml--model-evaluation check whether the model is well calibrated",
       "/ml--model-evaluation break down errors by user segment"
+    ],
+    "title": "ML model evaluation",
+    "summary": "Evaluates a model beyond one headline number: metrics matched to error costs, calibration, per-slice performance and error-by-error analysis.",
+    "keywords": [
+      "evaluate ml model",
+      "classification metrics",
+      "model calibration",
+      "error analysis"
     ]
-  }
+  },
+  "copyHash": "67740fe14dbdfc23"
 }

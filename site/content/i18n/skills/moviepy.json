@@ -6,6 +6,15 @@
       "Añade un tercio inferior con el nombre del entrevistado a este clip",
       "Superpón texto a este vídeo generado con LTX-2",
       "Monta un spot de 20 segundos en Python usando moviepy"
+    ],
+    "title": "Texto sobre vídeo con Python",
+    "summary": "Superpone texto exacto (etiquetas, tercios inferiores) sobre clips de vídeo y monta spots cortos en un solo archivo build.py con moviepy.",
+    "keywords": [
+      "superponer texto en vídeo",
+      "tercio inferior",
+      "moviepy",
+      "vídeo con python",
+      "subtitular clip ia"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "Add a lower-third with the interviewee's name to this clip",
       "Overlay text on this LTX-2-generated video",
       "Build a 20-second ad spot in Python using moviepy"
+    ],
+    "title": "Text overlays on video",
+    "summary": "Puts exact text, such as labels and lower thirds, over video clips and builds short spots in a single build.py file using moviepy.",
+    "keywords": [
+      "text overlay on video",
+      "lower third",
+      "moviepy",
+      "python video editing",
+      "caption ai video"
     ]
-  }
+  },
+  "copyHash": "2960d7994fd72635"
 }

@@ -6,6 +6,14 @@
       "/performance--db-performance por qué esta consulta tarda tanto",
       "/performance--db-performance revisa si nos faltan índices en esta tabla",
       "/performance--db-performance analiza el pool de conexiones, se está agotando"
+    ],
+    "title": "Rendimiento de base de datos",
+    "summary": "Localiza las consultas lentas de tu base de datos a partir de datos reales y aplica arreglos: índices, consultas reescritas y pool de conexiones.",
+    "keywords": [
+      "consultas lentas",
+      "índices sql",
+      "n+1",
+      "pool de conexiones"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/performance--db-performance why is this query so slow",
       "/performance--db-performance check if we're missing indexes on this table",
       "/performance--db-performance analyze our connection pool, it keeps running out"
+    ],
+    "title": "Database performance tuning",
+    "summary": "Finds your slowest database queries from real data and applies fixes such as indexes, rewritten queries and connection pool changes.",
+    "keywords": [
+      "slow queries",
+      "sql indexes",
+      "n+1 queries",
+      "connection pooling"
     ]
-  }
+  },
+  "copyHash": "393a6a4991857f34"
 }

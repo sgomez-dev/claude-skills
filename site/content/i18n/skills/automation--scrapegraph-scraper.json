@@ -6,6 +6,14 @@
       "/automation--scrapegraph-scraper extrae datos estructurados de estas páginas con scrapegraph-ai",
       "/automation--scrapegraph-scraper define un esquema Pydantic para la salida del scraper",
       "/automation--scrapegraph-scraper ¿cuántos tokens me va a costar rastrear este sitio?"
+    ],
+    "title": "Scraper con IA (scrapegraph-ai)",
+    "summary": "Crea un scraper con scrapegraph-ai donde un LLM extrae datos con esquemas Pydantic, y decide antes si compensa su coste en tokens.",
+    "keywords": [
+      "scraper con llm",
+      "scrapegraph-ai",
+      "extracción con pydantic",
+      "coste de tokens scraping"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/automation--scrapegraph-scraper extract structured data from these pages with scrapegraph-ai",
       "/automation--scrapegraph-scraper define a Pydantic schema for the scraper's output",
       "/automation--scrapegraph-scraper how many tokens will crawling this site cost?"
+    ],
+    "title": "LLM-powered scraper (scrapegraph-ai)",
+    "summary": "Builds a scraper on scrapegraph-ai where an LLM extracts data into Pydantic schemas, after checking whether the token cost is worth it.",
+    "keywords": [
+      "llm web scraper",
+      "scrapegraph-ai",
+      "pydantic extraction",
+      "scraping token cost"
     ]
-  }
+  },
+  "copyHash": "0939d33e4240f6cc"
 }

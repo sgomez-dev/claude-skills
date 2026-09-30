@@ -1,6 +1,14 @@
 {
   "sourceHash": "5f1715506c195ba6",
   "es": {
+    "title": "Lanzamiento de campañas publicitarias",
+    "summary": "Prepara el borrador de un lanzamiento de campaña con sus cambios exactos, y solo lo aplica si lo apruebas de forma expresa.",
+    "keywords": [
+      "lanzar campaña",
+      "publicar anuncios",
+      "plan de lanzamiento",
+      "borrador de campaña"
+    ],
     "description": "Redacta o aplica explícitamente el lanzamiento de una campaña de publicidad de pago mediante los adaptadores de Claude Ads controlados por capacidades. Úsalo para creación de campañas, planes de lanzamiento, publicación de anuncios, activación de campañas, subida de creatividades o solicitudes para poner en marcha una campaña.",
     "howToAsk": [
       "Prepárame el plan de lanzamiento para esta campaña",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "Ad campaign launch",
+    "summary": "Drafts a campaign launch with its exact proposed changes, and applies it only after you explicitly approve that plan.",
+    "keywords": [
+      "launch campaign",
+      "publish ads",
+      "launch plan",
+      "campaign draft"
+    ],
     "howToAsk": [
       "Prepare a launch plan for this campaign",
       "Upload these creatives and activate the campaign on Meta Ads",
       "I want to push this campaign live right now"
     ]
-  }
+  },
+  "copyHash": "b1614308347ac705"
 }

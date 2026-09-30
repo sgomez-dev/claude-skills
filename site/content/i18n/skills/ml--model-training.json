@@ -6,6 +6,14 @@
       "/ml--model-training entrena un modelo para predecir cancelaciones",
       "/ml--model-training empieza con un baseline simple antes de complicarlo",
       "/ml--model-training ajusta los hiperparámetros con validación cruzada"
+    ],
+    "title": "Entrenar un modelo de ML",
+    "summary": "Entrena un modelo con método: primero una línea base simple, luego el modelo más sencillo que sirva, con validación cruzada y ajuste de parámetros.",
+    "keywords": [
+      "entrenar modelo",
+      "línea base",
+      "validación cruzada",
+      "ajuste de hiperparámetros"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/ml--model-training train a model to predict customer churn",
       "/ml--model-training start with a simple baseline before anything fancy",
       "/ml--model-training tune hyperparameters with cross-validation"
+    ],
+    "title": "Training an ML model",
+    "summary": "Trains a model methodically: a trivial baseline first, then the simplest model that could work, with cross-validation and tuning.",
+    "keywords": [
+      "train ml model",
+      "baseline model",
+      "cross validation",
+      "hyperparameter tuning"
     ]
-  }
+  },
+  "copyHash": "2aadf94d0da3d197"
 }

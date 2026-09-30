@@ -6,6 +6,14 @@
       "/utils--benchmark mide el rendimiento de esta función correctamente",
       "/utils--benchmark monta un harness de benchmark con warmup",
       "/utils--benchmark añade una puerta de regresión de rendimiento en CI"
+    ],
+    "title": "Benchmarks fiables de código",
+    "summary": "Monta un benchmark con calentamiento, repeticiones y estadísticas para medir o comparar rendimiento, y opcionalmente un control de regresiones en CI.",
+    "keywords": [
+      "benchmark de código",
+      "medir rendimiento",
+      "comparar implementaciones",
+      "regresión de rendimiento"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/utils--benchmark properly benchmark this function's performance",
       "/utils--benchmark set up a benchmark harness with warmup",
       "/utils--benchmark add a performance regression gate to CI"
+    ],
+    "title": "Reliable code benchmarks",
+    "summary": "Builds a benchmark with warmup, repetition and statistics to measure or compare performance, optionally with a CI regression gate.",
+    "keywords": [
+      "benchmark code",
+      "measure performance",
+      "compare implementations",
+      "performance regression"
     ]
-  }
+  },
+  "copyHash": "6dd40dd054ca6502"
 }

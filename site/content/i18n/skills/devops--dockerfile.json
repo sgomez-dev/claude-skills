@@ -6,6 +6,14 @@
       "/devops--dockerfile genera un Dockerfile para mi app de Next.js",
       "/devops--dockerfile optimiza este Dockerfile para que la imagen pese menos",
       "/devops--dockerfile crea un Dockerfile multi-stage para producción"
+    ],
+    "title": "Dockerfile listo para producción",
+    "summary": "Genera u optimiza un Dockerfile multi-etapa para tu proyecto, con imagen mínima, caché de capas y usuario sin privilegios.",
+    "keywords": [
+      "crear dockerfile",
+      "optimizar dockerfile",
+      "imagen docker pequeña",
+      "multi-stage build"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/devops--dockerfile generate a Dockerfile for my Next.js app",
       "/devops--dockerfile optimize this Dockerfile to shrink the image size",
       "/devops--dockerfile create a multi-stage Dockerfile for production"
+    ],
+    "title": "Production-ready Dockerfile",
+    "summary": "Generates or optimizes a multi-stage Dockerfile for your project, with a minimal image, layer caching and a non-root user.",
+    "keywords": [
+      "write dockerfile",
+      "optimize dockerfile",
+      "small docker image",
+      "multi-stage build"
     ]
-  }
+  },
+  "copyHash": "67bf048957ec1095"
 }

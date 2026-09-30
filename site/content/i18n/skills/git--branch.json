@@ -6,6 +6,14 @@
       "/git--branch crea una rama para la funcionalidad de login social",
       "/git--branch necesito una rama para arreglar el bug del checkout",
       "/git--branch crea una rama siguiendo nuestra convención de nombres"
+    ],
+    "title": "Crear rama de git",
+    "summary": "Crea una rama con un nombre claro siguiendo las convenciones de tu equipo, como tipo/descripción o tipo/TICKET-descripción.",
+    "keywords": [
+      "crear rama git",
+      "nombre de rama",
+      "convención de ramas",
+      "git branch"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/git--branch create a branch for the social login feature",
       "/git--branch I need a branch to fix the checkout bug",
       "/git--branch create a branch following our naming convention"
+    ],
+    "title": "Create a git branch",
+    "summary": "Creates a well-named branch that follows your team conventions, like type/description or type/TICKET-description.",
+    "keywords": [
+      "create git branch",
+      "branch naming",
+      "branch naming convention",
+      "git checkout -b"
     ]
-  }
+  },
+  "copyHash": "97317c4a46cb47a0"
 }

@@ -6,6 +6,14 @@
       "/api--endpoint crea un endpoint para crear pedidos con validación de datos",
       "/api--endpoint añade autenticación a este endpoint de usuarios",
       "/api--endpoint necesito manejo de errores consistente en mis rutas de API"
+    ],
+    "title": "Endpoint de API completo",
+    "summary": "Crea un endpoint de API con validación, autenticación, tipos y tests, siguiendo el framework y las convenciones de tu proyecto.",
+    "keywords": [
+      "crear endpoint api",
+      "validación de peticiones",
+      "autenticación api",
+      "rutas rest"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/api--endpoint create an endpoint to place orders with input validation",
       "/api--endpoint add authentication to this users endpoint",
       "/api--endpoint I need consistent error handling across my API routes"
+    ],
+    "title": "Complete API endpoint",
+    "summary": "Generates an API endpoint with validation, authentication, types and tests, following your project's framework and conventions.",
+    "keywords": [
+      "create api endpoint",
+      "request validation",
+      "api authentication",
+      "rest route"
     ]
-  }
+  },
+  "copyHash": "60e62fe2d8bf00f4"
 }

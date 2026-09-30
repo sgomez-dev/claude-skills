@@ -6,6 +6,14 @@
       "Cómo animo un componente en Vue con GSAP y lo limpio al desmontar",
       "Necesito una animación en Svelte usando onMount",
       "Ayúdame a hacer scope de los selectores de GSAP en mi componente Nuxt"
+    ],
+    "title": "GSAP en Vue y Svelte",
+    "summary": "Explica cómo usar GSAP en Vue, Nuxt, Svelte y SvelteKit: ciclo de vida, selectores acotados y limpieza de animaciones al desmontar.",
+    "keywords": [
+      "gsap vue",
+      "gsap svelte",
+      "animación nuxt",
+      "limpiar animaciones"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "How do I animate a Vue component with GSAP and clean it up on unmount",
       "I need a Svelte animation using onMount",
       "Help me scope my GSAP selectors inside this Nuxt component"
+    ],
+    "title": "GSAP in Vue and Svelte",
+    "summary": "Explains how to use GSAP in Vue, Nuxt, Svelte and SvelteKit: lifecycle hooks, scoped selectors and cleanup when components unmount.",
+    "keywords": [
+      "gsap vue",
+      "gsap svelte",
+      "nuxt animation",
+      "gsap cleanup"
     ]
-  }
+  },
+  "copyHash": "842d9d3659ec3ddc"
 }

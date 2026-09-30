@@ -6,6 +6,14 @@
       "/scaffold--model crea el modelo de datos de Usuario con validación",
       "/scaffold--model necesito un modelo con serialización para la entidad Pedido",
       "/scaffold--model genera el modelo de Producto integrado con la base de datos"
+    ],
+    "title": "Modelo de datos con validación",
+    "summary": "Genera un modelo de datos con validaciones, relaciones, serialización, migración y datos de prueba, según el ORM que use tu proyecto.",
+    "keywords": [
+      "modelo de datos",
+      "orm",
+      "relaciones",
+      "migración"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/scaffold--model create the User data model with validation",
       "/scaffold--model I need a model with serialization for the Order entity",
       "/scaffold--model generate the Product model wired to the database"
+    ],
+    "title": "Data model with validation",
+    "summary": "Generates a data model with validation, relationships, serialization, a migration and test fixtures, using whichever ORM your project has.",
+    "keywords": [
+      "data model",
+      "orm",
+      "relationships",
+      "migration"
     ]
-  }
+  },
+  "copyHash": "6b4ea611a3b79116"
 }

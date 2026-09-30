@@ -1,7 +1,17 @@
 {
   "sourceHash": "a6263985769e92d0",
+  "copyHash": "a36a04bf51a45778",
   "es": {
     "description": "Diagnostica y soluciona problemas de resolución y propagación de DNS",
+    "title": "Diagnóstico de problemas de DNS",
+    "summary": "Diagnostica por qué un dominio no resuelve o no se propaga, comparando resolvedores y delegación, y propone los cambios de registro concretos.",
+    "keywords": [
+      "dns no resuelve",
+      "propagación dns",
+      "nxdomain",
+      "dig",
+      "depurar dns"
+    ],
     "howToAsk": [
       "/networking--dns-debug mi dominio no resuelve desde ayer",
       "/networking--dns-debug revisa por qué el correo no llega, sospecho de los MX",
@@ -13,6 +23,15 @@
       "/networking--dns-debug my domain hasn't resolved since yesterday",
       "/networking--dns-debug check why email isn't arriving, I suspect the MX records",
       "/networking--dns-debug has my DNS change propagated yet?"
+    ],
+    "title": "DNS troubleshooting",
+    "summary": "Diagnoses why a domain fails to resolve or propagate by comparing resolvers and delegation, then proposes specific record changes to fix it.",
+    "keywords": [
+      "dns not resolving",
+      "dns propagation",
+      "nxdomain",
+      "dig",
+      "debug dns"
     ]
   }
 }

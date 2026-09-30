@@ -6,6 +6,14 @@
       "/utils--translate esta función de Python a TypeScript",
       "/utils--translate este script de Bash a PowerShell",
       "/utils--translate esta clase de Java a Kotlin manteniendo el mismo comportamiento"
+    ],
+    "title": "Traducir código entre lenguajes",
+    "summary": "Traduce código de un lenguaje de programación a otro conservando la lógica, con las convenciones del destino y avisos de lo que no encaja.",
+    "keywords": [
+      "traducir código",
+      "convertir python a go",
+      "migrar de lenguaje",
+      "portar código"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/utils--translate this Python function to TypeScript",
       "/utils--translate this Bash script to PowerShell",
       "/utils--translate this Java class to Kotlin, keeping the same behavior"
+    ],
+    "title": "Code translation between languages",
+    "summary": "Translates code from one programming language to another, keeping the logic, using target idioms and noting what has no direct equivalent.",
+    "keywords": [
+      "translate code",
+      "convert python to go",
+      "port code",
+      "migrate language"
     ]
-  }
+  },
+  "copyHash": "df8281691dfa2c96"
 }

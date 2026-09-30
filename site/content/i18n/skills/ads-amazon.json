@@ -1,6 +1,14 @@
 {
   "sourceHash": "77b5dd4e9176d13f",
   "es": {
+    "title": "Auditoría de Amazon Ads",
+    "summary": "Revisa tu cuenta de Amazon Ads (Sponsored, DSP, ACOS, TACOS) y devuelve hallazgos priorizados con las recomendaciones y los datos que faltan.",
+    "keywords": [
+      "amazon ads",
+      "acos",
+      "tacos",
+      "amazon ppc"
+    ],
     "description": "Audita perfiles de Amazon Ads, regiones, Sponsored Products, Sponsored Brands, Sponsored Display, DSP, portfolios, segmentación, términos de búsqueda, preparación para venta minorista, creatividades, presupuestos, ACOS, TACOS, informes y políticas. Úsalo para Amazon Ads, anuncios patrocinados, PPC de Amazon, ACOS, TACOS, publicidad por ASIN, Amazon DSP u optimización de retail media.",
     "howToAsk": [
       "Audita mi cuenta de Amazon Ads y revisa el ACOS de las últimas campañas",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "Amazon Ads audit",
+    "summary": "Reviews an Amazon Ads account (Sponsored ads, DSP, ACOS, TACOS) and returns prioritized findings, recommendations and the inputs still missing.",
+    "keywords": [
+      "amazon ads",
+      "acos",
+      "tacos",
+      "amazon ppc"
+    ],
     "howToAsk": [
       "Audit my Amazon Ads account and check the ACOS on recent campaigns",
       "Review my Sponsored Products campaigns for wasted search terms",
       "How does my TACOS this month compare to last month?"
     ]
-  }
+  },
+  "copyHash": "3e45ddc8e71df5d5"
 }

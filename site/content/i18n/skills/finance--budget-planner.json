@@ -6,6 +6,14 @@
       "/finance--budget-planner crea el presupuesto del departamento de marketing para este año",
       "/finance--budget-planner necesito seguir las desviaciones de gasto de este proyecto",
       "/finance--budget-planner define las categorías de presupuesto para el próximo trimestre"
+    ],
+    "title": "Presupuesto de departamento o proyecto",
+    "summary": "Crea un presupuesto mensual por categorías con supuestos explícitos y una hoja de seguimiento de desviaciones frente al real.",
+    "keywords": [
+      "presupuesto departamento",
+      "presupuesto de proyecto",
+      "control de desviaciones",
+      "plan presupuestario"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/finance--budget-planner create the marketing department budget for this year",
       "/finance--budget-planner I need to track spending variance for this project",
       "/finance--budget-planner define the budget categories for next quarter"
+    ],
+    "title": "Department or project budget",
+    "summary": "Builds a monthly budget by category with explicit assumptions, plus a variance sheet that compares actual spend against plan.",
+    "keywords": [
+      "department budget",
+      "project budget",
+      "budget variance",
+      "budget template"
     ]
-  }
+  },
+  "copyHash": "eb001fee34392b53"
 }

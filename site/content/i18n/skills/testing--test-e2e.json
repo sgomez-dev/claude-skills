@@ -6,6 +6,15 @@
       "/testing--test-e2e genera un test e2e para el flujo de compra",
       "/testing--test-e2e crea tests end-to-end del registro de usuarios",
       "/testing--test-e2e necesito cubrir el flujo completo de checkout"
+    ],
+    "title": "Tests end-to-end de flujos",
+    "summary": "Genera tests end-to-end de un flujo de usuario con Playwright, Cypress u otro framework, con camino feliz, errores y limpieza de datos.",
+    "keywords": [
+      "tests end-to-end",
+      "e2e",
+      "playwright",
+      "cypress",
+      "probar flujo de usuario"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "/testing--test-e2e generate an e2e test for the checkout flow",
       "/testing--test-e2e create end-to-end tests for user signup",
       "/testing--test-e2e I need to cover the full checkout flow"
+    ],
+    "title": "End-to-end workflow tests",
+    "summary": "Generates end-to-end tests for a user workflow in Playwright, Cypress or similar, covering happy path, error paths and data cleanup.",
+    "keywords": [
+      "end-to-end tests",
+      "e2e testing",
+      "playwright tests",
+      "cypress tests",
+      "test user flow"
     ]
-  }
+  },
+  "copyHash": "4f87f3ac25c838d5"
 }

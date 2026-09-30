@@ -6,6 +6,14 @@
       "/sales--deal-risk-analyzer revisa esta operación y dime si está en riesgo",
       "/sales--deal-risk-analyzer analiza mi pipeline con MEDDIC y encuentra huecos",
       "/sales--deal-risk-analyzer estas notas del deal, ¿qué señales de alarma ves?"
+    ],
+    "title": "Análisis de riesgo de oportunidades",
+    "summary": "Revisa una oportunidad o todo el pipeline a partir de tus notas y señala riesgos con un análisis MEDDIC, más una acción para reducir cada hueco.",
+    "keywords": [
+      "riesgo de oportunidad",
+      "análisis meddic",
+      "revisar pipeline",
+      "oportunidades estancadas"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/sales--deal-risk-analyzer review this deal and tell me if it's at risk",
       "/sales--deal-risk-analyzer run MEDDIC on my pipeline and find gaps",
       "/sales--deal-risk-analyzer look at these deal notes, what red flags do you see?"
+    ],
+    "title": "Deal risk analysis",
+    "summary": "Audits one deal or a whole pipeline from your notes, scoring MEDDIC gaps and flagging stalls, with one de-risking action per gap.",
+    "keywords": [
+      "deal risk",
+      "meddic analysis",
+      "pipeline review",
+      "stalled deals"
     ]
-  }
+  },
+  "copyHash": "94d97330249aea73"
 }

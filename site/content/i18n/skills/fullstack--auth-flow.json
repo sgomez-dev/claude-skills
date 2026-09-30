@@ -6,6 +6,14 @@
       "/fullstack--auth-flow añade login con Google y email/contraseña a mi app Next.js",
       "/fullstack--auth-flow necesito roles de admin y usuario con permisos distintos",
       "/fullstack--auth-flow implementa recuperación de contraseña por email"
+    ],
+    "title": "Autenticación completa",
+    "summary": "Implementa login con email y OAuth, sesiones o JWT, roles y recuperación de contraseña, ampliando la autenticación que ya tengas.",
+    "keywords": [
+      "autenticación",
+      "login oauth",
+      "jwt o sesiones",
+      "recuperar contraseña"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/fullstack--auth-flow add Google login and email/password to my Next.js app",
       "/fullstack--auth-flow set up admin vs user roles with different permissions",
       "/fullstack--auth-flow add a forgot-password email flow"
+    ],
+    "title": "Full authentication flow",
+    "summary": "Implements email and OAuth login, sessions or JWT, role-based access and password reset, extending any auth your app already has.",
+    "keywords": [
+      "authentication",
+      "oauth login",
+      "jwt vs sessions",
+      "password reset"
     ]
-  }
+  },
+  "copyHash": "9ec35434d95a6bb0"
 }

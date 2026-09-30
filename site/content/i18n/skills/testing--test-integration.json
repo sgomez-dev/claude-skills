@@ -6,6 +6,14 @@
       "/testing--test-integration genera tests de integración entre la API y la base de datos",
       "/testing--test-integration verifica que estos dos módulos funcionan bien juntos",
       "/testing--test-integration añade tests de integración para el flujo de pago"
+    ],
+    "title": "Tests de integración",
+    "summary": "Genera tests de integración que prueban la interacción real entre componentes, API y base de datos, incluidos fallos parciales y reintentos.",
+    "keywords": [
+      "tests de integración",
+      "probar api con base de datos",
+      "fallos parciales",
+      "aislamiento de tests"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/testing--test-integration generate integration tests between the API and database",
       "/testing--test-integration verify these two modules work correctly together",
       "/testing--test-integration add integration tests for the payment flow"
+    ],
+    "title": "Integration tests",
+    "summary": "Generates integration tests that exercise real interactions between components, APIs and databases, including partial failures and retries.",
+    "keywords": [
+      "integration tests",
+      "api database testing",
+      "partial failures",
+      "test isolation"
     ]
-  }
+  },
+  "copyHash": "c3fb2f59618f116e"
 }

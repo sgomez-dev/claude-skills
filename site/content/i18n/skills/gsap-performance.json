@@ -6,6 +6,14 @@
       "Mi animación GSAP va a tirones, ayúdame a optimizarla",
       "Cómo evito el layout thrashing en esta animación",
       "Necesito que esta animación vaya a 60fps estables"
+    ],
+    "title": "Rendimiento de animaciones GSAP",
+    "summary": "Guía para que las animaciones GSAP vayan fluidas: preferir transforms, evitar el layout thrashing, usar will-change y agrupar cambios.",
+    "keywords": [
+      "animaciones lentas",
+      "gsap rendimiento",
+      "60 fps",
+      "will-change"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "My GSAP animation is janky, help me optimize it",
       "How do I avoid layout thrashing in this animation",
       "I need this animation to hold a smooth 60fps"
+    ],
+    "title": "GSAP animation performance",
+    "summary": "A guide to keeping GSAP animations smooth: prefer transforms, avoid layout thrashing, use will-change and batch updates.",
+    "keywords": [
+      "gsap performance",
+      "animation jank",
+      "smooth 60fps",
+      "will-change"
     ]
-  }
+  },
+  "copyHash": "cb5408d6fba707aa"
 }

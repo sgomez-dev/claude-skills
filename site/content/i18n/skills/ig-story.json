@@ -6,6 +6,14 @@
       "Escríbeme la secuencia de stories de hoy",
       "No tengo nada que contar en mi story, dame ideas",
       "Necesito una story que mueva a la gente a escribirme por DM"
+    ],
+    "title": "Stories diarias de Instagram",
+    "summary": "Escribe las stories del día, frame a frame, con qué stickers usar y dónde, y la que lleva a la gente a tus mensajes directos.",
+    "keywords": [
+      "ideas para stories",
+      "secuencia de stories",
+      "stickers instagram",
+      "encuesta en stories"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Write today's story sequence for me",
       "I have nothing to post on my story, give me ideas",
       "I need a story that moves people into my DMs"
+    ],
+    "title": "Daily Instagram Stories",
+    "summary": "Writes the day's Instagram Stories frame by frame, with which stickers to use where and the one frame that moves people into your DMs.",
+    "keywords": [
+      "instagram stories",
+      "story sequence",
+      "story stickers",
+      "poll idea"
     ]
-  }
+  },
+  "copyHash": "91ab3d60fa7ca870"
 }

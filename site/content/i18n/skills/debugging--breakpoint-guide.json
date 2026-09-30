@@ -6,6 +6,14 @@
       "/debugging--breakpoint-guide dónde poner breakpoints para este bug de login",
       "/debugging--breakpoint-guide plan de breakpoints para depurar el checkout",
       "/debugging--breakpoint-guide ayúdame a depurar este error paso a paso"
+    ],
+    "title": "Plan de breakpoints",
+    "summary": "Genera un plan de breakpoints en tres niveles, con archivo, línea, condición y qué comprobar, para localizar un error concreto.",
+    "keywords": [
+      "dónde poner breakpoints",
+      "depurador",
+      "breakpoint condicional",
+      "launch.json"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/debugging--breakpoint-guide where to set breakpoints for this login bug",
       "/debugging--breakpoint-guide breakpoint plan to debug the checkout flow",
       "/debugging--breakpoint-guide help me step through this error"
+    ],
+    "title": "Breakpoint plan",
+    "summary": "Builds a three-tier breakpoint plan with file, line, condition and what to check, so you can locate a specific bug quickly.",
+    "keywords": [
+      "where to set breakpoints",
+      "debugger setup",
+      "conditional breakpoint",
+      "launch.json"
     ]
-  }
+  },
+  "copyHash": "32c7aa79f6f03da7"
 }

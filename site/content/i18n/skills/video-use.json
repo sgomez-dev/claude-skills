@@ -6,6 +6,15 @@
       "Edita este vídeo, corta las partes muertas y añade subtítulos",
       "Transcribe esta entrevista y hazme un montaje con lo mejor",
       "Aplica corrección de color a este vídeo de viaje y añade una animación al título"
+    ],
+    "title": "Edición de vídeo por conversación",
+    "summary": "Edita cualquier vídeo conversando: transcribe, corta, corrige el color, genera animaciones superpuestas y graba los subtítulos en el vídeo.",
+    "keywords": [
+      "editar vídeo con ia",
+      "cortar vídeo",
+      "corrección de color",
+      "subtítulos incrustados",
+      "editar entrevista"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "Edit this video, cut the dead air and add subtitles",
       "Transcribe this interview and cut a highlight reel",
       "Color grade this travel video and add a title animation"
+    ],
+    "title": "Video editing by conversation",
+    "summary": "Edits any video through conversation: transcribes, cuts, color grades, generates overlay animations and burns subtitles into the picture.",
+    "keywords": [
+      "edit video with ai",
+      "cut video",
+      "color grading",
+      "burn in subtitles",
+      "edit interview"
     ]
-  }
+  },
+  "copyHash": "d3bbeb19bc0e81e1"
 }

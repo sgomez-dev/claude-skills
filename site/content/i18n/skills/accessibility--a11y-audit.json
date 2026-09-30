@@ -6,6 +6,14 @@
       "/accessibility--a11y-audit revisa el formulario de registro",
       "/accessibility--a11y-audit el componente de navegación del sitio",
       "/accessibility--a11y-audit comprueba si cumplimos WCAG 2.1 AA"
+    ],
+    "title": "Auditoría de accesibilidad WCAG",
+    "summary": "Revisa el código de un componente o página y lista los fallos de accesibilidad WCAG 2.1, con su gravedad, el criterio incumplido y la corrección en código.",
+    "keywords": [
+      "auditoría accesibilidad",
+      "wcag 2.1",
+      "contraste de color",
+      "navegación por teclado"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/accessibility--a11y-audit check our signup form for accessibility",
       "/accessibility--a11y-audit review the navigation component",
       "/accessibility--a11y-audit does this meet WCAG 2.1 AA?"
+    ],
+    "title": "Accessibility audit (WCAG 2.1)",
+    "summary": "Reads a component or page and lists WCAG 2.1 accessibility issues, each with severity, the criterion it breaks, its code location and a code fix.",
+    "keywords": [
+      "accessibility audit",
+      "wcag 2.1 check",
+      "color contrast",
+      "keyboard accessibility"
     ]
-  }
+  },
+  "copyHash": "68175f94df31fc8a"
 }

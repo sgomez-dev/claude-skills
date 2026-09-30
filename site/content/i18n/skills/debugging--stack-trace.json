@@ -6,6 +6,14 @@
       "/debugging--stack-trace analiza este stack trace y dime qué falla",
       "/debugging--stack-trace encuentra la causa raíz de este error",
       "/debugging--stack-trace explica este mensaje de error de mi app"
+    ],
+    "title": "Análisis de stack trace",
+    "summary": "Analiza un stack trace o mensaje de error, localiza la causa raíz y explica qué pasó, por qué y cómo corregirlo con un fragmento de código.",
+    "keywords": [
+      "stack trace",
+      "causa raíz del error",
+      "typeerror",
+      "error undefined"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/debugging--stack-trace analyze this stack trace and tell me what's wrong",
       "/debugging--stack-trace find the root cause of this error",
       "/debugging--stack-trace explain this error message from my app"
+    ],
+    "title": "Stack trace analysis",
+    "summary": "Analyzes a stack trace or error message, pinpoints the root cause, and explains what happened, why and how to fix it with a code snippet.",
+    "keywords": [
+      "stack trace",
+      "root cause",
+      "typeerror",
+      "undefined error"
     ]
-  }
+  },
+  "copyHash": "86246a23ac0e4600"
 }

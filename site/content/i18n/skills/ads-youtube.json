@@ -6,6 +6,15 @@
       "Audita mis campañas de anuncios de vídeo en YouTube",
       "¿Cómo están rindiendo mis anuncios in-stream que se pueden saltar?",
       "Revisa mis anuncios en Shorts y en CTV"
+    ],
+    "title": "Auditoría de YouTube Ads",
+    "summary": "Audita tu cuenta de YouTube Ads: tipo de campaña, formatos, Shorts, Demand Gen, audiencias, pujas y medición. Devuelve hallazgos priorizados.",
+    "keywords": [
+      "auditoría youtube ads",
+      "anuncios en shorts",
+      "demand gen",
+      "bumper ads",
+      "anuncios de vídeo"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "Audit my YouTube video ad campaigns",
       "How are my skippable in-stream ads performing?",
       "Review my Shorts and CTV ads"
+    ],
+    "title": "YouTube Ads account audit",
+    "summary": "Audits a YouTube Ads account, from campaign type and formats to Shorts, Demand Gen, audiences, bidding and measurement, and returns prioritised findings.",
+    "keywords": [
+      "youtube ads audit",
+      "video ads",
+      "shorts ads",
+      "demand gen",
+      "skippable in-stream"
     ]
-  }
+  },
+  "copyHash": "097147e4ae0efe06"
 }

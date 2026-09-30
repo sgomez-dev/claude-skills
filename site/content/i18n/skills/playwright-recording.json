@@ -6,6 +6,15 @@
       "Graba un vídeo de demo mostrando cómo funciona el registro",
       "Captura en vídeo el flujo de checkout de mi web",
       "Necesito un recorrido en vídeo de la app para el vídeo de Remotion"
+    ],
+    "title": "Grabar el navegador en vídeo",
+    "summary": "Graba con Playwright demos, recorridos de una aplicación y flujos de interfaz como vídeo, listos para usar como metraje en tus vídeos de Remotion.",
+    "keywords": [
+      "grabar pantalla web",
+      "vídeo demo de app",
+      "playwright",
+      "grabar navegador",
+      "recorrido de una web"
     ]
   },
   "en": {
@@ -13,6 +22,16 @@
       "Record a demo video showing how signup works",
       "Capture the checkout flow on my site as a video",
       "I need a video walkthrough of the app for the Remotion video"
+    ],
+    "title": "Record browser sessions as video",
+    "summary": "Records demos, app walkthroughs and UI flows in the browser as video with Playwright, ready to use as footage in Remotion videos.",
+    "keywords": [
+      "screen record website",
+      "app demo video",
+      "playwright video",
+      "record browser",
+      "walkthrough footage"
     ]
-  }
+  },
+  "copyHash": "291ab7cda312bd3a"
 }

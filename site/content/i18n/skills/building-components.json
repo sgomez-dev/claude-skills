@@ -6,6 +6,14 @@
       "Ayúdame a construir un componente de UI accesible y reutilizable en React",
       "Quiero configurar design tokens y publicar mis componentes en npm",
       "Necesito escribir documentación clara para mi librería de componentes"
+    ],
+    "title": "Componentes de interfaz accesibles",
+    "summary": "Guía para construir componentes de interfaz accesibles y componibles: API, estado, design tokens, estilos, publicación en npm o registro y documentación.",
+    "keywords": [
+      "crear componentes ui",
+      "componentes accesibles",
+      "design tokens",
+      "publicar en npm"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "Help me build an accessible, reusable UI component in React",
       "I want to set up design tokens and publish my components to npm",
       "Write clear documentation for my component library"
+    ],
+    "title": "Building accessible UI components",
+    "summary": "A guide to building accessible, composable UI components: APIs, state, design tokens, styling, publishing to npm or a registry, and documentation.",
+    "keywords": [
+      "build ui components",
+      "accessible components",
+      "design tokens",
+      "publish component library"
     ]
-  }
+  },
+  "copyHash": "c26a17c53e59d119"
 }

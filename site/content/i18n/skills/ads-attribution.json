@@ -1,6 +1,14 @@
 {
   "sourceHash": "fdafd0774f091a7c",
   "es": {
+    "title": "Auditoría de atribución publicitaria",
+    "summary": "Compara cómo miden conversiones tus plataformas, GA4 y MMP, explica las diferencias y propone mejoras. No suma cifras con ventanas distintas.",
+    "keywords": [
+      "atribución",
+      "ventanas de conversión",
+      "ga4",
+      "discrepancias entre plataformas"
+    ],
     "description": "Audita la atribución entre plataformas, definiciones de conversión, ventanas de informes, GA4, AdServices y AdAttributionKit, MMPs, eventos de navegador y servidor, conversiones offline y reconciliación entre plataformas. Úsalo para auditorías de atribución, modelos de atribución, ventanas de conversión, solicitudes de sumar o totalizar conversiones de Meta y Google, agregación incompatible de ventanas de informes, atribución en GA4, revisión de MMP, AppsFlyer, Adjust, Branch, Singular o discrepancias entre plataformas.",
     "howToAsk": [
       "¿Por qué Meta y Google Ads no cuadran en el número de conversiones?",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "Ad attribution audit",
+    "summary": "Compares how your ad platforms, GA4 and MMPs count conversions, explains the gaps and plans fixes. It will not add figures that use different windows.",
+    "keywords": [
+      "attribution audit",
+      "conversion windows",
+      "ga4 attribution",
+      "platform discrepancies"
+    ],
     "howToAsk": [
       "Why don't Meta and Google Ads agree on conversion counts?",
       "Review our attribution setup in GA4",
       "Help me reconcile AppsFlyer data against the ad platforms"
     ]
-  }
+  },
+  "copyHash": "e121015d4c2e0927"
 }

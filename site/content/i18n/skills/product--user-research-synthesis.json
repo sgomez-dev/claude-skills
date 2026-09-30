@@ -6,6 +6,14 @@
       "/product--user-research-synthesis tengo 8 entrevistas de usuarios, ayúdame a sacar patrones",
       "/product--user-research-synthesis resume este feedback de la encuesta de NPS",
       "/product--user-research-synthesis convierte estas notas de research en oportunidades de producto"
+    ],
+    "title": "Síntesis de investigación con usuarios",
+    "summary": "Convierte notas de entrevistas, encuestas o reseñas en temas, insights y oportunidades, cada uno enlazado a citas reales.",
+    "keywords": [
+      "síntesis de investigación",
+      "análisis de entrevistas",
+      "temas e insights",
+      "feedback de usuarios"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/product--user-research-synthesis I have 8 user interviews, help me find patterns",
       "/product--user-research-synthesis summarize this NPS survey feedback",
       "/product--user-research-synthesis turn these research notes into product opportunities"
+    ],
+    "title": "User research synthesis",
+    "summary": "Turns interview notes, surveys or reviews into themes, insights and opportunities, each traced back to real quotes.",
+    "keywords": [
+      "research synthesis",
+      "interview analysis",
+      "themes and insights",
+      "user feedback analysis"
     ]
-  }
+  },
+  "copyHash": "8f9889710d9db9e7"
 }

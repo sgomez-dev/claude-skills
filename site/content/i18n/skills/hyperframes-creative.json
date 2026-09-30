@@ -1,6 +1,15 @@
 {
   "sourceHash": "f9433ea4e87a657d",
+  "copyHash": "3ea9a6108ad547ba",
   "es": {
+    "title": "Dirección creativa para vídeo",
+    "summary": "Orienta las decisiones creativas de un vídeo en HyperFrames que no son de animación: paletas, tipografía, narración, ritmo y estilo de marca.",
+    "keywords": [
+      "paleta de colores vídeo",
+      "tipografía para vídeo",
+      "estilo de marca",
+      "narración de vídeo"
+    ],
     "description": "Dirección creativa no relacionada con animación para vídeos de HyperFrames. Úsalo para el manejo de la especificación de diseño (frame.md / design.md), paletas, tipografía, narración, planificación de beats, visuales reactivos al audio, patrones de composición y decisiones de marca/estilo. Para patrones de movimiento atómicos y blueprints de escena, usa `hyperframes-animation`.",
     "howToAsk": [
       "Ayúdame a definir la paleta de colores y tipografía de este vídeo",
@@ -9,6 +18,14 @@
     ]
   },
   "en": {
+    "title": "Creative direction for video",
+    "summary": "Guides the non-animation creative choices of a HyperFrames video: palettes, typography, narration, beat planning and brand style.",
+    "keywords": [
+      "video color palette",
+      "video typography",
+      "brand style",
+      "video narration"
+    ],
     "howToAsk": [
       "Help me define the color palette and typography for this video",
       "I need to plan the narrative beats for my explainer",

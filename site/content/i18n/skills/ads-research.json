@@ -1,6 +1,14 @@
 {
   "sourceHash": "a5db010c734f6fef",
   "es": {
+    "title": "Actualización de datos de plataformas",
+    "summary": "Reverifica datos de plataformas, APIs y políticas publicitarias con fuentes oficiales, y rebaja las afirmaciones caducadas que no puede confirmar.",
+    "keywords": [
+      "actualizar conocimiento publicitario",
+      "afirmaciones caducadas",
+      "cambios en plataformas",
+      "verificar fuentes"
+    ],
     "description": "Actualiza las evidencias de Claude Ads sobre plataformas, APIs, políticas, normativa, referencias (benchmarks), incidencias, pull requests, forks y repositorios. Úsalo para actualizar la investigación de anuncios, fechas refresh_due vencidas, afirmaciones desactualizadas sobre APIs o plataformas, decisiones de reverificar o degradar, validación de afirmaciones sobre la versión actual, revisión del ecosistema, cambios actuales de plataforma o actualización del conocimiento sobre medios de pago. Cuando las herramientas o fuentes no estén disponibles, igualmente degrada la afirmación desactualizada para la ejecución actual y bloquea las afirmaciones dependientes sobre la versión vigente antes de pedir acceso.",
     "howToAsk": [
       "Actualiza el conocimiento sobre las políticas de Google Ads, puede estar desactualizado",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "Ad platform knowledge refresh",
+    "summary": "Reverifies ad platform, API and policy claims against official sources, and demotes any expired claim it cannot confirm.",
+    "keywords": [
+      "ads research refresh",
+      "stale platform claims",
+      "platform changes",
+      "verify sources"
+    ],
     "howToAsk": [
       "Refresh our knowledge of Google Ads policies, it might be stale",
       "Has anything important changed in the Meta Ads API recently?",
       "Check whether our claims about TikTok Ads are still valid"
     ]
-  }
+  },
+  "copyHash": "3438ddc3e7c45e23"
 }

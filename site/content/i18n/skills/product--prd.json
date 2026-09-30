@@ -6,6 +6,38 @@
       "/product--prd escribe el PRD para la nueva función de notificaciones",
       "/product--prd define el problema, el alcance y las métricas de éxito de esta idea",
       "/product--prd necesito un PRD completo para presentar a dirección"
+    ],
+    "title": "Documento de requisitos (PRD)",
+    "summary": "Convierte una idea de funcionalidad en un PRD completo: problema, objetivos, alcance, requisitos, riesgos y métricas de éxito.",
+    "keywords": [
+      "prd",
+      "documento de requisitos",
+      "requisitos de producto",
+      "métricas de éxito"
+    ],
+    "useWhen": [
+      "Tienes una idea de funcionalidad y necesitas un documento listo para revisión",
+      "Quieres separar el problema validado de las suposiciones",
+      "Necesitas requisitos que un diseñador y un ingeniero puedan empezar a usar"
+    ],
+    "notFor": [
+      "Sustituir la investigación con usuarios: un PRD sobre un problema sin validar sale flojo",
+      "Especificar flujos y casos límite en detalle: eso es la especificación funcional"
+    ],
+    "output": "Un archivo prd_[funcionalidad].md con resumen, problema, evidencia, objetivos, métricas, requisitos Must/Should/Won't, flujo, riesgos e hitos.",
+    "faq": [
+      {
+        "q": "¿Qué necesita de mí antes de escribir?",
+        "a": "Usuario objetivo, evidencia de que el problema existe, objetivo de negocio y restricciones. Si faltan, te lo pide antes de redactar."
+      },
+      {
+        "q": "¿Inventa las métricas base?",
+        "a": "No. Si no hay línea base, la marca como «TBD — measure before build» en lugar de estimarla."
+      },
+      {
+        "q": "¿Y si le doy una solución en vez de un problema?",
+        "a": "Reconstruye primero el problema de fondo y lo confirma contigo."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "/product--prd write the PRD for the new notifications feature",
       "/product--prd define the problem, scope, and success metrics for this idea",
       "/product--prd I need a full PRD to present to leadership"
+    ],
+    "title": "Product requirements document",
+    "summary": "Turns a feature idea into a full PRD: problem, goals, scope, requirements, risks and success metrics.",
+    "keywords": [
+      "prd template",
+      "product requirements document",
+      "write a prd",
+      "success metrics"
+    ],
+    "useWhen": [
+      "You have a feature idea and need a review-ready document",
+      "You want to separate the validated problem from assumptions",
+      "You need requirements a designer and an engineer can start from"
+    ],
+    "notFor": [
+      "Replacing user research: a PRD on an unvalidated problem will be weak",
+      "Detailed flows and edge cases: that is the feature spec"
+    ],
+    "output": "A prd_[feature].md file with TL;DR, problem, evidence, goals, metrics, Must/Should/Won't requirements, user flow, risks and milestones.",
+    "faq": [
+      {
+        "q": "What does it need from me before writing?",
+        "a": "The target user, evidence the problem exists, the business goal and any constraints. If they are missing, it asks before drafting."
+      },
+      {
+        "q": "Does it invent baseline metrics?",
+        "a": "No. If there is no baseline it marks it \"TBD — measure before build\" rather than guessing."
+      },
+      {
+        "q": "What if I give it a solution instead of a problem?",
+        "a": "It first reconstructs the underlying problem and confirms it with you."
+      }
     ]
-  }
+  },
+  "copyHash": "61361fac55cc9a91"
 }

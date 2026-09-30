@@ -6,6 +6,39 @@
       "/finance--saas-metrics calcula el MRR y el churn de este mes",
       "/finance--saas-metrics necesito el LTV y el CAC de nuestros clientes",
       "/finance--saas-metrics saca las métricas SaaS a partir de este CSV de ingresos"
+    ],
+    "title": "Métricas SaaS: MRR y churn",
+    "summary": "Calcula MRR, ARR, churn, NRR, LTV y CAC desde tus datos de suscripciones, mostrando cada fórmula y su interpretación.",
+    "keywords": [
+      "métricas saas",
+      "mrr y arr",
+      "churn",
+      "nrr",
+      "ltv y cac"
+    ],
+    "useWhen": [
+      "Tienes exportaciones de suscripciones o facturas y quieres tus métricas",
+      "Necesitas MRR, churn y NRR mes a mes",
+      "Quieres LTV, CAC y payback si conoces margen y gasto comercial"
+    ],
+    "notFor": [
+      "Asesoramiento financiero o de inversión",
+      "Comparar con benchmarks exactos: solo da rangos orientativos"
+    ],
+    "output": "Una tabla mensual en la conversación, un CSV con la serie completa y un informe en Markdown con fórmulas, supuestos e interpretación.",
+    "faq": [
+      {
+        "q": "¿Qué formato de datos necesita?",
+        "a": "Lo ideal es una fila por cliente y mes con customer_id, month y mrr. También acepta listas de facturas o cifras ya agregadas."
+      },
+      {
+        "q": "¿Y si no tengo el margen bruto ni el gasto comercial?",
+        "a": "Esas métricas (LTV, CAC, payback) se marcan como «data needed» en lugar de estimarse. El resto sí se calcula."
+      },
+      {
+        "q": "¿Me dice si mis números son buenos?",
+        "a": "Da una lectura orientativa y marca cualquier rango como aproximado, porque varía por segmento y etapa. Con menos de 10 clientes, el churn en porcentaje es poco fiable."
+      }
     ]
   },
   "en": {
@@ -13,6 +46,40 @@
       "/finance--saas-metrics calculate this month's MRR and churn",
       "/finance--saas-metrics I need the LTV and CAC for our customers",
       "/finance--saas-metrics compute SaaS metrics from this revenue CSV"
+    ],
+    "title": "SaaS metrics: MRR, churn, LTV",
+    "summary": "Computes MRR, ARR, churn, NRR, LTV and CAC from your subscription data, showing each formula and a plain-language reading.",
+    "keywords": [
+      "saas metrics",
+      "mrr and arr",
+      "churn rate",
+      "nrr",
+      "ltv and cac"
+    ],
+    "useWhen": [
+      "You have subscription or invoice exports and want your metrics",
+      "You need MRR, churn and NRR month by month",
+      "You want LTV, CAC and payback and know your margin and sales spend"
+    ],
+    "notFor": [
+      "Financial or investment advice",
+      "Exact benchmarking: it only gives approximate rules of thumb"
+    ],
+    "output": "A monthly table in the chat, a CSV with the full series and a Markdown report with formulas, assumptions and interpretation.",
+    "faq": [
+      {
+        "q": "What data format does it need?",
+        "a": "Ideally one row per customer per month with customer_id, month and mrr. It also accepts invoice lists or already-aggregated figures."
+      },
+      {
+        "q": "What if I lack gross margin or sales spend?",
+        "a": "The affected metrics (LTV, CAC, payback) are marked \"data needed\" instead of being guessed. Everything else is still computed."
+      },
+      {
+        "q": "Will it tell me if my numbers are good?",
+        "a": "It gives directional guidance and labels any range as approximate, since it varies by segment and stage. Under 10 customers, churn percentages are noisy."
+      }
     ]
-  }
+  },
+  "copyHash": "8d84c1ad16914705"
 }

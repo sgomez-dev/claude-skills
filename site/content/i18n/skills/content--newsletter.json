@@ -6,6 +6,14 @@
       "/content--newsletter escribe el número de esta semana de mi newsletter",
       "/content--newsletter dame varias líneas de asunto para probar en A/B",
       "/content--newsletter estructura el contenido para que se lea bien en texto plano"
+    ],
+    "title": "Edición de newsletter",
+    "summary": "Convierte enlaces y notas en una edición de newsletter: selecciona el material, la estructura, y propone asuntos para hacer pruebas A/B.",
+    "keywords": [
+      "escribir newsletter",
+      "asuntos de email",
+      "boletín por email",
+      "newsletter semanal"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/content--newsletter write this week's newsletter issue",
       "/content--newsletter give me a few subject lines to A/B test",
       "/content--newsletter structure the content so it reads well as plain text"
+    ],
+    "title": "Newsletter issue",
+    "summary": "Turns your links and notes into a newsletter issue: curated items, a structure that works in plain text, and subject lines for A/B tests.",
+    "keywords": [
+      "write a newsletter",
+      "email subject lines",
+      "newsletter curation",
+      "weekly newsletter"
     ]
-  }
+  },
+  "copyHash": "5a516cade4d2baae"
 }

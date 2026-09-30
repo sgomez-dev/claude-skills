@@ -6,6 +6,14 @@
       "/security--dependency-vuln revisa las dependencias de mi proyecto Node",
       "/security--dependency-vuln ¿alguna de mis librerías tiene un CVE conocido?",
       "/security--dependency-vuln audita el package.json antes de desplegar"
+    ],
+    "title": "Vulnerabilidades en dependencias",
+    "summary": "Ejecuta la auditoría de tu gestor de paquetes y lista cada dependencia vulnerable con CVE, gravedad, versión corregida y plan de arreglo.",
+    "keywords": [
+      "vulnerabilidades dependencias",
+      "npm audit",
+      "cve",
+      "paquetes inseguros"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/security--dependency-vuln check my Node project's dependencies",
       "/security--dependency-vuln does any of my libraries have a known CVE?",
       "/security--dependency-vuln audit package.json before we deploy"
+    ],
+    "title": "Dependency vulnerability check",
+    "summary": "Runs your package manager's audit and lists each vulnerable dependency with its CVE, severity, fixed version and a remediation plan.",
+    "keywords": [
+      "vulnerable dependencies",
+      "npm audit",
+      "cve check",
+      "outdated packages security"
     ]
-  }
+  },
+  "copyHash": "257524d2cb0122a5"
 }

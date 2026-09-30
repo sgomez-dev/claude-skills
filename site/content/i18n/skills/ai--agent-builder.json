@@ -6,6 +6,38 @@
       "/ai--agent-builder diseña un agente para responder tickets de soporte",
       "/ai--agent-builder ayúdame a definir las condiciones de parada de mi agente",
       "/ai--agent-builder qué herramientas debería exponerle a este agente"
+    ],
+    "title": "Diseño de agentes de IA",
+    "summary": "Diseña e implementa un agente de IA en tu código: bucle, herramientas, memoria, límites de parada y un conjunto de pruebas de tareas.",
+    "keywords": [
+      "crear agente ia",
+      "agente llm",
+      "bucle de agente",
+      "evaluar agente"
+    ],
+    "useWhen": [
+      "Tienes una tarea de varios pasos difícil de especificar de antemano",
+      "Quieres que un modelo llame a herramientas y repita hasta terminar",
+      "Necesitas límites de coste e iteraciones y pruebas antes de publicar"
+    ],
+    "notFor": [
+      "Tareas de pasos fijos, donde basta un flujo orquestado por código",
+      "Coordinar varios agentes a la vez (para eso existe ai--multi-agent)"
+    ],
+    "output": "Código del agente en tu repositorio (bucle, herramientas, límites de parada, registros) más un conjunto de 10-20 tareas de prueba con comprobación automática.",
+    "faq": [
+      {
+        "q": "¿Siempre crea un agente?",
+        "a": "No. Si la tarea es una secuencia fija de pasos, construye un flujo orquestado por código en lugar de un agente. El bucle de agente se reserva para tareas de varios pasos, difíciles de especificar y con errores recuperables."
+      },
+      {
+        "q": "¿Qué límites de seguridad incluye?",
+        "a": "Máximo de iteraciones, de tokens o coste por ejecución y tiempo límite, todos configurables y registrados al alcanzarse. Además pide confirmación explícita para acciones difíciles de revertir, como envíos, borrados o pagos."
+      },
+      {
+        "q": "¿Cómo comprueba que el agente funciona?",
+        "a": "Con un conjunto de 10-20 tareas representativas, cada una con una comprobación programática del resultado. Se ejecuta tras cada cambio de prompt o herramientas y mide éxito, iteraciones y coste por tarea."
+      }
     ]
   },
   "en": {
@@ -13,6 +45,39 @@
       "/ai--agent-builder design an agent that handles support tickets",
       "/ai--agent-builder help me define stop conditions for my agent",
       "/ai--agent-builder what tools should I expose to this agent?"
+    ],
+    "title": "Building an AI agent",
+    "summary": "Designs and implements an LLM agent in your codebase: the loop, tools, memory, stop limits and a task-level eval suite to run before shipping.",
+    "keywords": [
+      "build ai agent",
+      "llm agent loop",
+      "agent tools",
+      "agent evals"
+    ],
+    "useWhen": [
+      "You have a multi-step task that is hard to fully specify up front",
+      "You want a model to call tools and keep iterating until it is done",
+      "You need cost and iteration limits plus tests before shipping"
+    ],
+    "notFor": [
+      "Fixed-sequence tasks, where code-orchestrated calls are enough",
+      "Coordinating several agents at once (that is what ai--multi-agent is for)"
+    ],
+    "output": "Agent code in your repository (loop, tools, stop limits, logging) plus a suite of 10-20 test tasks, each with an automatic pass/fail check.",
+    "faq": [
+      {
+        "q": "Does it always build an agent?",
+        "a": "No. If the task is a fixed sequence of steps, it builds a code-orchestrated workflow instead. The agent loop is reserved for multi-step tasks that are hard to specify in advance and where errors are recoverable."
+      },
+      {
+        "q": "What safety limits does it add?",
+        "a": "Maximum iterations, tokens or cost per run, and a wall-clock timeout, all configurable and logged when hit. Hard-to-reverse actions such as sends, deletes and payments are gated behind explicit confirmation."
+      },
+      {
+        "q": "How does it check the agent works?",
+        "a": "With 10-20 representative tasks, each with a programmatic check on the outcome. The suite runs on every prompt or tool change and tracks success rate, iterations and cost per task."
+      }
     ]
-  }
+  },
+  "copyHash": "764e46212e94d61d"
 }

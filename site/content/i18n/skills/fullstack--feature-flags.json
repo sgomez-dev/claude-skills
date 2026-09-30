@@ -6,6 +6,14 @@
       "/fullstack--feature-flags quiero lanzar una función solo al 10% de usuarios",
       "/fullstack--feature-flags necesito un interruptor para desactivar una función rota en producción",
       "/fullstack--feature-flags ayúdame a elegir entre LaunchDarkly y una solución propia"
+    ],
+    "title": "Sistema de feature flags",
+    "summary": "Añade feature flags a tu app: elige entre proveedor o solución propia, segmentación, interruptores de emergencia y limpieza de flags.",
+    "keywords": [
+      "feature flags",
+      "interruptor de emergencia",
+      "activar funciones por porcentaje",
+      "launchdarkly"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/fullstack--feature-flags roll out a new feature to only 10% of users",
       "/fullstack--feature-flags add a kill switch to disable a broken feature in production",
       "/fullstack--feature-flags help me choose between LaunchDarkly and a homegrown solution"
+    ],
+    "title": "Feature flags setup",
+    "summary": "Adds feature flags to your app: hosted provider or homegrown choice, targeting, kill switches and a cleanup process for old flags.",
+    "keywords": [
+      "feature flags",
+      "kill switch",
+      "percentage rollout",
+      "launchdarkly alternative"
     ]
-  }
+  },
+  "copyHash": "fb966e912d5d317a"
 }

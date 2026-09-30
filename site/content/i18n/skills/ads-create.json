@@ -1,6 +1,14 @@
 {
   "sourceHash": "b321c716b25ecbac",
   "es": {
+    "title": "Conceptos y textos de campaña",
+    "summary": "Crea conceptos de campaña, textos y un brief creativo a partir de tu perfil de marca y tu objetivo, sin inventar testimonios, precios ni resultados.",
+    "keywords": [
+      "brief creativo",
+      "textos de anuncios",
+      "conceptos de campaña",
+      "titulares de anuncios"
+    ],
     "description": "Crea conceptos de campañas publicitarias de pago, mensajes, copys, briefs creativos y planes de producción basados en un perfil de marca validado, un objetivo de campaña, requisitos de la plataforma y, opcionalmente, evidencias de auditoría. Se activa con: brief de campaña, conceptos de campaña, crear una campaña, conceptos de anuncio, copy de anuncio, mensajes publicitarios, brief creativo, titulares, descripciones.",
     "howToAsk": [
       "Crea un brief creativo para una campaña de lanzamiento de producto",
@@ -9,10 +17,19 @@
     ]
   },
   "en": {
+    "title": "Campaign concepts and ad copy",
+    "summary": "Creates campaign concepts, ad copy and a creative brief from your brand profile and objective, without inventing testimonials, prices or results.",
+    "keywords": [
+      "creative brief",
+      "ad copy",
+      "campaign concepts",
+      "ad headlines"
+    ],
     "howToAsk": [
       "Create a creative brief for a product launch campaign",
       "Write headlines and descriptions for Google Ads",
       "Generate campaign concepts from our brand profile"
     ]
-  }
+  },
+  "copyHash": "c0d440623877bc52"
 }

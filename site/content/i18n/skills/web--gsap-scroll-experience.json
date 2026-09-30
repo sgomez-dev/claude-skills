@@ -6,6 +6,14 @@
       "/web--gsap-scroll-experience añade parallax a las imágenes de mi página",
       "/web--gsap-scroll-experience fija (pin) una sección mientras el usuario hace scroll",
       "/web--gsap-scroll-experience crea una sección con scroll horizontal"
+    ],
+    "title": "Animaciones de scroll con GSAP",
+    "summary": "Crea experiencias guiadas por el scroll con GSAP ScrollTrigger: parallax, elementos fijados, scroll horizontal y animaciones ligadas al desplazamiento.",
+    "keywords": [
+      "scrolltrigger",
+      "parallax",
+      "scroll horizontal",
+      "animación al hacer scroll"
     ]
   },
   "en": {
@@ -13,6 +21,15 @@
       "/web--gsap-scroll-experience add parallax to the images on my page",
       "/web--gsap-scroll-experience pin a section while the user scrolls",
       "/web--gsap-scroll-experience create a horizontal scroll section"
+    ],
+    "title": "Scroll animations with GSAP",
+    "summary": "Builds scroll-driven experiences with GSAP ScrollTrigger: parallax layers, pinned sections, horizontal scroll and timelines scrubbed by scroll position.",
+    "keywords": [
+      "scrolltrigger",
+      "parallax scrolling",
+      "horizontal scroll",
+      "scroll animation"
     ]
-  }
+  },
+  "copyHash": "e0e1d3a122bbeddd"
 }
