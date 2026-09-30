@@ -125,7 +125,7 @@ export const en = {
   },
   md: { web: 'Web version', install: 'Install', howToAsk: 'How to ask for it', permissions: 'Permissions', source: 'Source', section: 'Section', skills: 'Skills', license: 'License', author: 'Author' },
   date: (d: Date) => fmtDay('en-GB', d),
-  // DRAFT (Task 19): written from the repository's real scripts and rules, pending Santiago's review.
+  // Written from the repository's real scripts and rules; reviewed and approved by Santiago on 2026-09-30.
   methodology: {
     title: 'How we choose and review skills',
     seoTitle: 'How we choose and review Claude Code skills: methodology',

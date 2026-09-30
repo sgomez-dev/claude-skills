@@ -126,7 +126,7 @@ export const es: Dictionary = {
   },
   md: { web: 'Versión web', install: 'Instalar', howToAsk: 'Cómo pedírselo', permissions: 'Permisos', source: 'Código', section: 'Sección', skills: 'Skills', license: 'Licencia', author: 'Autor' },
   date: (d) => fmtDay('es-ES', d),
-  // BORRADOR (Task 19): escrito a partir de los scripts y reglas reales del repositorio, pendiente de revisión de Santiago.
+  // Escrito a partir de los scripts y reglas reales del repositorio; revisado y aprobado por Santiago el 2026-09-30.
   methodology: {
     title: 'Cómo elegimos y revisamos las skills',
     seoTitle: 'Cómo elegimos y revisamos las skills de Claude Code: metodología',
