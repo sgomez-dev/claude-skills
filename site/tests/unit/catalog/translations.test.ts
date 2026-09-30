@@ -3,7 +3,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { hashDescription, type TranslationEntry } from '@/lib/catalog/text';
-import { SECTIONS } from '@/content/sections';
+import { SECTIONS, type SectionDef } from '@/content/sections';
 import { maxTitleLength, sectionProblems } from '@/lib/catalog/copy-rules';
 import { checkTranslations, copyProblems, extraProblems, planCopy, planTranslations } from '@/lib/catalog/translations';
 import { skillPageTitle } from '@/lib/seo/titles';
@@ -77,7 +77,7 @@ describe('copyProblems (title and summary rules)', () => {
   });
   it('is reported by checkTranslations as an error, never as a failure for missing fields', () => {
     const dir = dirWith({ 'fresh.json': withCopy({ title: 'Uno dos tres cuatro cinco seis' }), 'plain.json': entry('B') });
-    const r = checkTranslations([skill('fresh', 'A'), skill('plain', 'B')], dir);
+    const r = checkTranslations([skill('fresh', 'A'), skill('plain', 'B')], dir, { sections: [] });
     expect(r.errors).toEqual(['fresh.json: es.title must be 2-5 words (is 6)']);
     expect(r.warnings).toEqual([]);
   });
@@ -110,25 +110,22 @@ describe('A14 blocks, keywords and section copy (warnings now, errors under stri
   });
   it('checks present section copy: seoTitle, description length and at least 5 valid intro links', () => {
     const slugs = new Set(['a', 'b', 'c', 'd', 'e']);
-    expect(sectionProblems(slugs)).toEqual([]);
-    const s = SECTIONS[0]!;
-    const saved = { seoTitle: s.seoTitle, description: s.description, intro: s.intro };
-    try {
-      s.seoTitle = { es: 'x'.repeat(61), en: 'ok title' };
-      s.description = { es: 'too short', en: 'y'.repeat(130) };
-      s.intro = { es: ['[a](a) [b](b) [c](c) [d](d)'], en: ['[a](a) [b](b) [c](c) [d](d) [e](e) [z](zz)'] };
-      const p = sectionProblems(slugs);
-      expect(p).toEqual([
-        'section video/es: seoTitle is 61 characters (max 60)',
-        'section video/es: description must be 120-160 characters (is 9)',
-        'section video/es: intro needs at least 5 valid skill links (has 4)',
-        'section video/en: intro links to unknown skills: zz',
-      ]);
-      expect(checkTranslations([], dirWith({})).warnings).toContain('section video/es: seoTitle is 61 characters (max 60)');
-      expect(checkTranslations([], dirWith({}), { strictCopy: true }).errors).toContain('section video/es: seoTitle is 61 characters (max 60)');
-    } finally {
-      Object.assign(s, saved);
-    }
+    const plain: SectionDef = { ...SECTIONS[0]!, seoTitle: undefined, description: undefined, intro: undefined };
+    expect(sectionProblems(slugs, [plain])).toEqual([]);
+    const s: SectionDef = {
+      ...plain,
+      seoTitle: { es: 'x'.repeat(61), en: 'ok title' },
+      description: { es: 'too short', en: 'y'.repeat(130) },
+      intro: { es: ['[a](a) [b](b) [c](c) [d](d)'], en: ['[a](a) [b](b) [c](c) [d](d) [e](e) [z](zz)'] },
+    };
+    expect(sectionProblems(slugs, [s])).toEqual([
+      'section video/es: seoTitle is 61 characters (max 60)',
+      'section video/es: description must be 120-160 characters (is 9)',
+      'section video/es: intro needs at least 5 valid skill links (has 4)',
+      'section video/en: intro links to unknown skills: zz',
+    ]);
+    expect(checkTranslations([], dirWith({}), { sections: [s] }).warnings).toContain('section video/es: seoTitle is 61 characters (max 60)');
+    expect(checkTranslations([], dirWith({}), { sections: [s], strictCopy: true }).errors).toContain('section video/es: seoTitle is 61 characters (max 60)');
   });
 });
 
@@ -153,8 +150,8 @@ describe('copy freshness (copyHash)', () => {
   it('strictCopy turns missing and stale copy into errors; the default stays quiet', () => {
     const dir = dirWith({ 'old.json': full('d'.repeat(16)), 'bare.json': entry('A') });
     const skills = [skill('old', 'A'), skill('bare', 'A')].map((s) => ({ ...s, copyHash: 'c'.repeat(16) }));
-    expect(checkTranslations(skills, dir).errors).toEqual([]);
-    expect(checkTranslations(skills, dir, { strictCopy: true }).errors).toEqual([
+    expect(checkTranslations(skills, dir, { sections: [] }).errors).toEqual([]);
+    expect(checkTranslations(skills, dir, { sections: [], strictCopy: true }).errors).toEqual([
       'old: authored copy is stale (copyHash differs from the skill file)',
       'bare: authored copy missing (es.title, es.summary, en.title, en.summary)',
     ]);
@@ -164,7 +161,7 @@ describe('copy freshness (copyHash)', () => {
 describe('checkTranslations', () => {
   it('errors on invalid files and on orphans; warns on missing or stale', () => {
     const dir = dirWith({ 'fresh.json': entry('A'), 'stale.json': entry('old'), 'broken.json': '{', 'orphan.json': entry('Z') });
-    const r = checkTranslations([skill('fresh', 'A'), skill('stale', 'B'), skill('broken', 'C'), skill('missing', 'D')], dir);
+    const r = checkTranslations([skill('fresh', 'A'), skill('stale', 'B'), skill('broken', 'C'), skill('missing', 'D')], dir, { sections: [] });
     expect(r.errors.sort()).toEqual(['broken.json: invalid', 'orphan.json: no such skill']);
     expect(r.warnings.sort()).toEqual(['missing: no translation', 'stale: stale (description changed)']);
   });

@@ -13,12 +13,18 @@ import { METHODOLOGY_UPDATED } from '@/lib/site';
 import { AI_CRAWLERS, CONTENT_SIGNAL, robotsTxt } from '@/lib/seo/robots';
 import { buildSitemap } from '@/lib/seo/sitemap';
 
-const cmd = catalog.skills.find((s) => s.slug === 'legal--contract-review')!;
+const AUTHORED = ['title', 'summary', 'keywords', 'useWhen', 'notFor', 'output', 'faq'] as const;
+/** The skill with its authored copy removed, so fallback behaviour is tested independently of the content. */
+function bare(s: Skill): Skill {
+  const strip = (t: Skill['text']['en']) => Object.fromEntries(Object.entries(t).filter(([k]) => !(AUTHORED as readonly string[]).includes(k)));
+  return { ...s, text: { es: strip(s.text.es), en: strip(s.text.en) } } as Skill;
+}
+const cmd = bare(catalog.skills.find((s) => s.slug === 'legal--contract-review')!);
 const ext = catalog.skills.find((s) => s.kind === 'external')!;
 
-/** A copy of the catalog in which one skill has authored copy (the real one has none yet). */
+/** A copy of the catalog in which one skill has the given authored copy, on top of none. */
 function withCopy(slug: string, es: Record<string, unknown>, en: Record<string, unknown>): { catalog: Catalog; skill: Skill } {
-  const skills = catalog.skills.map((s) => (s.slug === slug ? { ...s, text: { es: { ...s.text.es, ...es }, en: { ...s.text.en, ...en } } } : s)) as Skill[];
+  const skills = catalog.skills.map((s) => (s.slug === slug ? { ...bare(s), text: { es: { ...bare(s).text.es, ...es }, en: { ...bare(s).text.en, ...en } } } : s)) as Skill[];
   return { catalog: { ...catalog, skills }, skill: skills.find((s) => s.slug === slug)! };
 }
 

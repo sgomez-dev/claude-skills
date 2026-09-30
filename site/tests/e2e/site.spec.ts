@@ -93,7 +93,7 @@ test('reduced motion: ticker is not animated', async ({ browser }) => {
 test('markdown twin and llms.txt are served', async ({ request }) => {
   const md = await request.get('/es/s/legal--contract-review.md');
   expect(md.status()).toBe(200);
-  expect(await md.text()).toMatch(/^# \/legal--contract-review/);
+  expect(await md.text()).toMatch(/^# Revisión de contratos \(\/legal--contract-review\)\n/);
   expect((await request.get('/llms.txt')).status()).toBe(200);
 });
 

@@ -12,7 +12,13 @@ import { LANGS } from '@/lib/i18n/languages';
 import { introPlain, introSlugs, parseIntro } from '@/lib/intro';
 
 const withText = (s: Skill, lang: 'es' | 'en', patch: Record<string, unknown>): Skill => ({ ...s, text: { ...s.text, [lang]: { ...s.text[lang], ...patch } } }) as Skill;
-const sample = catalog.skills.find((s) => s.slug === 'legal--contract-review')!;
+const AUTHORED = ['title', 'summary', 'keywords', 'useWhen', 'notFor', 'output', 'faq'] as const;
+/** The skill with its authored copy removed, so fallback behaviour is tested independently of the content. */
+function bare(s: Skill): Skill {
+  const strip = (t: Skill['text']['en']) => Object.fromEntries(Object.entries(t).filter(([k]) => !(AUTHORED as readonly string[]).includes(k)));
+  return { ...s, text: { es: strip(s.text.es), en: strip(s.text.en) } } as Skill;
+}
+const sample = bare(catalog.skills.find((s) => s.slug === 'legal--contract-review')!);
 
 describe('figures: every stated number comes from the catalog', () => {
   const f = catalogFigures(catalog);

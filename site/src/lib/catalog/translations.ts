@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { SECTIONS, type SectionDef } from '@/content/sections';
 import { LANGS } from '@/lib/i18n/languages';
 import { blockProblems, sectionProblems, summaryProblems, titleProblems } from './copy-rules';
 import { hashDescription, TranslationEntrySchema, type TranslationEntry } from './text';
@@ -94,7 +95,11 @@ export function extraProblems(entry: TranslationEntry): string[] {
  * then missing or stale copy, and every A7/A14 rule, are errors too (Task 20 turns it on in CI once the content exists).
  * Outside strict mode the A7/A14 rules are warnings.
  */
-export function checkTranslations(skills: Skill[], dir: string, { strictCopy = false }: { strictCopy?: boolean } = {}): { errors: string[]; warnings: string[] } {
+export function checkTranslations(
+  skills: Skill[],
+  dir: string,
+  { strictCopy = false, sections = SECTIONS }: { strictCopy?: boolean; sections?: readonly SectionDef[] } = {},
+): { errors: string[]; warnings: string[] } {
   const errors: string[] = [];
   const warnings: string[] = [];
   const soft = strictCopy ? errors : warnings;
@@ -117,7 +122,7 @@ export function checkTranslations(skills: Skill[], dir: string, { strictCopy = f
     if (e.state === 'missing') warnings.push(`${s.slug}: no translation`);
     else if (e.state === 'ok' && e.sourceHash !== hashDescription(s.description)) warnings.push(`${s.slug}: stale (description changed)`);
   }
-  for (const p of sectionProblems(slugs)) soft.push(p);
+  for (const p of sectionProblems(slugs, sections)) soft.push(p);
   if (strictCopy) {
     for (const i of planCopy(skills, dir)) errors.push(i.reason === 'missing' ? `${i.slug}: authored copy missing (${i.missing.join(', ')})` : `${i.slug}: authored copy is stale (copyHash differs from the skill file)`);
   }

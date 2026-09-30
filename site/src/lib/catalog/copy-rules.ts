@@ -1,4 +1,4 @@
-import { SECTIONS } from '@/content/sections';
+import { SECTIONS, type SectionDef } from '@/content/sections';
 import { getDictionary } from '@/lib/i18n';
 import { LANGS, type Lang } from '@/lib/i18n/languages';
 import { introSlugs } from '@/lib/intro';
@@ -55,9 +55,9 @@ export function blockProblems(lang: Lang, t: Blocks): string[] {
 }
 
 /** Section copy (A7): checked only for the fields that exist. */
-export function sectionProblems(skillSlugs: ReadonlySet<string>): string[] {
+export function sectionProblems(skillSlugs: ReadonlySet<string>, sections: readonly SectionDef[] = SECTIONS): string[] {
   const p: string[] = [];
-  for (const s of SECTIONS) {
+  for (const s of sections) {
     for (const lang of LANGS) {
       const at = `section ${s.id}/${lang}`;
       const seo = s.seoTitle?.[lang];

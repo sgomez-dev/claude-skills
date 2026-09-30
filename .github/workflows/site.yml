@@ -37,7 +37,7 @@ jobs:
       - name: Unit tests
         run: npm test
       - name: Translations check
-        run: npm run translations:check
+        run: npm run translations:check -- --strict-copy
       - name: Install Playwright Chromium
         run: npx playwright install --with-deps chromium
       - name: E2E (builds with OpenNext via the preview web server)
