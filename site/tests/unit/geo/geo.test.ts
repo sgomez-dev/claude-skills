@@ -9,6 +9,7 @@ import { humansTxt } from '@/lib/geo/humans';
 import { LLMS_MAX_BYTES, llmsFullTxt, llmsTxt } from '@/lib/geo/llms';
 import { homeMarkdown, methodologyMarkdown, sectionMarkdown, skillMarkdown } from '@/lib/geo/markdown';
 import { writeGeoFiles } from '@/lib/geo/write';
+import { METHODOLOGY_UPDATED } from '@/lib/site';
 import { AI_CRAWLERS, CONTENT_SIGNAL, robotsTxt } from '@/lib/seo/robots';
 import { buildSitemap } from '@/lib/seo/sitemap';
 
@@ -170,6 +171,13 @@ describe('sitemap', () => {
     expect(entries).toHaveLength(2 * (1 + 9 + 1 + 1 + catalog.skills.length));
     for (const e of entries) expect(Object.keys(e.alternates!.languages!).sort()).toEqual(['en', 'es', 'x-default']);
     expect(entries.map((e) => e.url)).toContain('https://skills.sgomez.dev/en/methodology');
+  });
+  it('the methodology page carries its own hand-maintained date in the sitemap, the twin and the page data', () => {
+    const m = entries.filter((e) => e.url.endsWith('/methodology'));
+    expect(m).toHaveLength(2);
+    for (const e of m) expect(e.lastModified).toBe(METHODOLOGY_UPDATED);
+    expect(METHODOLOGY_UPDATED).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+    expect(methodologyMarkdown(catalog, 'en')).toContain(`Updated ${new Date(METHODOLOGY_UPDATED).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })}`);
   });
   it('lastmod is a real content date, never the build time', () => {
     const generatedAt = Date.parse(catalog.generatedAt);

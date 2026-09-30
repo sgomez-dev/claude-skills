@@ -1,6 +1,7 @@
+import { isOrgOwner } from '@/lib/catalog/owners';
 import type { SectionId, Skill } from '@/lib/catalog/types';
 import type { Lang } from '@/lib/i18n/languages';
-import { AUTHOR, REPO_URL, SITE_URL } from '@/lib/site';
+import { AUTHOR, RAW_URL, REPO_URL, SITE_URL } from '@/lib/site';
 import { absolute, paths, sourceUrl } from '@/lib/urls';
 
 /** One JSON-LD node. The types live in schema.org, not here: this file only builds and links them. */
@@ -98,6 +99,9 @@ export function skillLd(skill: Skill, lang: Lang, { name, description }: { name:
     applicationCategory: CATEGORY[skill.section],
     operatingSystem: 'macOS, Linux, Windows',
     softwareRequirements: 'Claude Code',
+    // Commands install with the repo's script; a community skill installs from its upstream repository.
+    installUrl: external ? skill.upstream.url : `${RAW_URL}/install.sh`,
+    ...(skill.text?.[lang]?.keywords?.length ? { keywords: skill.text[lang].keywords } : {}),
     isAccessibleForFree: true,
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
     ...(skill.updatedAt ? { dateModified: skill.updatedAt } : {}),
@@ -105,7 +109,7 @@ export function skillLd(skill: Skill, lang: Lang, { name, description }: { name:
     isBasedOn: { '@type': 'SoftwareSourceCode', codeRepository: external ? skill.upstream.url : REPO_URL, url: sourceUrl(skill) },
     // Externals are credited to their upstream owner; this site neither authored nor publishes them.
     ...(external
-      ? { author: { '@type': 'Person', name: skill.upstream.owner, url: `https://github.com/${skill.upstream.owner}` } }
+      ? { author: { '@type': isOrgOwner(skill.upstream.owner) ? 'Organization' : 'Person', name: skill.upstream.owner, url: `https://github.com/${skill.upstream.owner}` } }
       : { author: ref(AUTHOR_ID), publisher: ref(AUTHOR_ID) }),
   };
 }

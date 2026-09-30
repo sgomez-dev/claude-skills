@@ -1,6 +1,6 @@
 import { getSection, SECTIONS } from '@/content/sections';
 import { skillLabel, skillSummary } from '@/lib/catalog/copy';
-import { catalogUpdatedAt, sectionUpdatedAt } from '@/lib/catalog/dates';
+import { sectionUpdatedAt } from '@/lib/catalog/dates';
 import { catalogFigures } from '@/lib/catalog/figures';
 import { pairedSkills, pipelinesOf } from '@/lib/catalog/related';
 import type { Catalog, ExternalSkill, SectionId, Skill } from '@/lib/catalog/types';
@@ -8,7 +8,7 @@ import { getDictionary } from '@/lib/i18n';
 import type { Lang } from '@/lib/i18n/languages';
 import { installOptions } from '@/lib/install';
 import { parseIntro } from '@/lib/intro';
-import { AUTHOR, REPO_URL } from '@/lib/site';
+import { AUTHOR, METHODOLOGY_UPDATED, REPO_URL } from '@/lib/site';
 import { absolute, mdPath, paths, pipelineUrl, sourceUrl } from '@/lib/urls';
 
 const list = (items: string[]) => (items.length ? items.map((i) => `\`${i}\``).join(', ') : '—');
@@ -49,7 +49,7 @@ export function skillMarkdown(skill: Skill, lang: Lang, catalog?: Catalog): stri
     out.push(`- ${d.skill.perm.network}: ${p.network ? d.skill.perm.yes : d.skill.perm.no}`);
     out.push(`- ${d.skill.perm.destructive}: ${p.destructive ? d.skill.perm.yes : d.skill.perm.no}`);
   }
-  if (summary.text !== text.description) out.push('', `## ${d.skill.authorDescription}`, '', text.description);
+  if (summary.authored) out.push('', `## ${lang === 'es' && text.translated ? d.skill.authorDescriptionTranslated : d.skill.authorDescription}`, '', text.description);
   if (catalog) {
     const paired = pairedSkills(catalog, skill);
     const recipes = pipelinesOf(catalog, skill.slug);
@@ -113,11 +113,11 @@ export function creditsMarkdown(catalog: Catalog, lang: Lang): string {
 export function methodologyMarkdown(catalog: Catalog, lang: Lang): string {
   const d = getDictionary(lang);
   const f = catalogFigures(catalog);
-  const updated = catalogUpdatedAt(catalog);
+  const updated = METHODOLOGY_UPDATED;
   return [
     `# ${d.methodology.title}`, '', d.methodology.dek, '',
     `${d.md.web}: ${absolute(paths.methodology(lang))}`,
-    ...(updated ? [`${d.methodology.updated} ${d.date(new Date(updated))}`] : []),
+    `${d.methodology.updated} ${d.date(new Date(updated))}`,
     '',
     ...d.methodology.sections(f).flatMap((s) => [`## ${s.h}`, '', ...(s.p ?? []).flatMap((p) => [p, '']), ...(s.bullets ? [...s.bullets.map((b) => `- ${b}`), ''] : [])]),
     `- ${d.methodology.reportLabel}: ${REPO_URL}/issues`, '',

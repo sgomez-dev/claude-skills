@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { assertNoPrivate, readPrivateNames } from './guard';
@@ -28,6 +29,12 @@ function readBundles(repoRoot: string): Map<string, string> {
   return bundles;
 }
 
+/** Hash of the skill's whole source file; CRLF and LF checkouts hash alike. */
+export function hashSkillSource(repoRoot: string, skill: { kind: string; sourcePath: string }): string {
+  const file = path.join(repoRoot, skill.kind === 'external' ? path.join(skill.sourcePath, 'SKILL.md') : skill.sourcePath);
+  return createHash('sha256').update(fs.readFileSync(file, 'utf8').replace(/\r\n/g, '\n')).digest('hex').slice(0, 16);
+}
+
 function assertUniqueSlugs(skills: Skill[]): void {
   const seen = new Set<string>();
   for (const s of skills) {
@@ -44,6 +51,7 @@ export function buildCatalog({ repoRoot, translationsDir, gitDates = new Map(), 
     .map((raw) => ({
       ...raw,
       bundle: bundles.get(raw.category) ?? null,
+      copyHash: hashSkillSource(repoRoot, raw),
       section: sectionFor(raw),
       updatedAt: gitDates.get(raw.sourcePath) ?? null,
       text: resolveText(raw.description, loadTranslation(translationsDir, raw.slug)),
@@ -54,6 +62,7 @@ export function buildCatalog({ repoRoot, translationsDir, gitDates = new Map(), 
     .map(({ commitDate, ...raw }) => ({
       ...raw,
       section: sectionFor(raw),
+      copyHash: hashSkillSource(repoRoot, raw),
       updatedAt: commitDate,
       text: resolveText(raw.description, loadTranslation(translationsDir, raw.slug)),
     }));

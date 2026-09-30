@@ -119,6 +119,18 @@ describe('JSON-LD graph', () => {
     expect(n.license).toBe('https://spdx.org/licenses/MIT.html');
     expect(n.dateModified).toBeUndefined();
   });
+  it('names organisation owners as Organization and people as Person', () => {
+    const org = { ...external, upstream: { ...external.upstream, owner: 'vercel-labs' } } as ExternalSkill;
+    expect(ld(skillLd(org, 'en', { name: 'n', description: 'd' })).author).toEqual({ '@type': 'Organization', name: 'vercel-labs', url: 'https://github.com/vercel-labs' });
+    expect(ld(skillLd(external, 'en', { name: 'n', description: 'd' })).author).toMatchObject({ '@type': 'Person' });
+  });
+  it('gives installUrl (the install script for commands, the upstream repo for externals) and keywords only when authored', () => {
+    expect(ld(skillLd(command, 'en', { name: 'n', description: 'd' })).installUrl).toBe('https://raw.githubusercontent.com/sgomez-dev/claude-skills/main/install.sh');
+    expect(ld(skillLd(external, 'en', { name: 'n', description: 'd' })).installUrl).toBe('https://github.com/o/r');
+    expect(ld(skillLd(command, 'en', { name: 'n', description: 'd' }))).not.toHaveProperty('keywords');
+    const kw = { ...command, text: { en: { keywords: ['contract review', 'clauses', 'legal'] } } } as unknown as CommandSkill;
+    expect(ld(skillLd(kw, 'en', { name: 'n', description: 'd' })).keywords).toEqual(['contract review', 'clauses', 'legal']);
+  });
   it('never points sameAs at the source file and never invents ratings', () => {
     for (const s of [command, external]) {
       const json = JSON.stringify(skillLd(s, 'en', { name: 'n', description: 'd' }));

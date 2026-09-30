@@ -85,10 +85,18 @@ describe('translations', () => {
     expect(Object.keys(t.en)).not.toContain('summary');
   });
 
-  it('drops authored copy together with a stale entry (sourceHash invalidation)', () => {
-    const t = resolveText('A changed description', { ...entry, es: { ...entry.es, title: 'X' }, en: { ...entry.en, title: 'Y' } });
-    expect(t.es.title).toBeUndefined();
-    expect(t.en.title).toBeUndefined();
+  it('a changed description stales only the translated description: the authored copy stays', () => {
+    const t = resolveText('A changed description', { ...entry, es: { ...entry.es, title: 'Dos palabras', keywords: ['a', 'b', 'c'] }, en: { ...entry.en, title: 'Two words' } });
+    expect(t.es).toEqual({ description: 'A changed description', howToAsk: [], translated: false, title: 'Dos palabras', keywords: ['a', 'b', 'c'] });
+    expect(t.en).toEqual({ description: 'A changed description', howToAsk: [], translated: true, title: 'Two words' });
+  });
+
+  it('hashes the whole skill source file, the same for LF and CRLF checkouts', () => {
+    const c = buildCatalog({ repoRoot: FIX, translationsDir: emptyDir() });
+    for (const s of c.skills) expect(s.copyHash, s.slug).toMatch(/^[0-9a-f]{16}$/);
+    expect(new Set(c.skills.map((s) => s.copyHash)).size).toBe(c.skills.length);
+    const again = buildCatalog({ repoRoot: FIX, translationsDir: emptyDir() });
+    expect(again.skills.map((s) => s.copyHash)).toEqual(c.skills.map((s) => s.copyHash));
   });
 
   it('still accepts entries written before the new fields existed', () => {

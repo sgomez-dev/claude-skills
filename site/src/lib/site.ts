@@ -1,6 +1,8 @@
 export const SITE_URL = 'https://skills.sgomez.dev';
 export const REPO_URL = 'https://github.com/sgomez-dev/claude-skills';
 export const RAW_URL = 'https://raw.githubusercontent.com/sgomez-dev/claude-skills/main';
+/** Hand-maintained: bump it when the methodology text changes, not when a skill does (ISO date). */
+export const METHODOLOGY_UPDATED = '2026-09-30';
 export const AUTHOR = {
   name: 'Santiago Gómez de la Torre',
   url: 'https://sgomez.dev',

@@ -4,6 +4,7 @@ import { catalog } from '@/lib/catalog';
 import { displayName, humanTitle, skillLabel, skillSummary, SUMMARY_LIMIT } from '@/lib/catalog/copy';
 import { catalogUpdatedAt, isoDay, latestDate, sectionUpdatedAt } from '@/lib/catalog/dates';
 import { catalogFigures } from '@/lib/catalog/figures';
+import { ORG_OWNERS } from '@/lib/catalog/owners';
 import { pairedSkills, pipelinesOf, relatedSkills } from '@/lib/catalog/related';
 import type { Skill } from '@/lib/catalog/types';
 import { getDictionary } from '@/lib/i18n';
@@ -167,5 +168,26 @@ describe('section intro links', () => {
         if (desc) expect(desc.length, `${s.id}/${lang} description`).toBeLessThanOrEqual(160);
       }
     }
+  });
+});
+
+describe('methodology claims are derived, not hard-coded', () => {
+  const f = catalogFigures(catalog);
+  for (const lang of LANGS) {
+    const text = JSON.stringify(getDictionary(lang).methodology.sections(f));
+    it(`${lang}: section count and licenses come from the data`, () => {
+      expect(text).toContain(`${SECTIONS.length} ${lang === 'es' ? 'secciones' : 'sections'}`);
+      expect(text).not.toMatch(/nine|nueve/i);
+      for (const l of f.licenses) expect(text).toContain(l.id);
+      expect(text).not.toMatch(/only skills published under MIT or Apache|solo skills publicadas con licencia MIT/i);
+      expect(text).toMatch(lang === 'es' ? /la rama o la etiqueta/ : /branch or tag/);
+    });
+  }
+});
+
+describe('organisation owners', () => {
+  it('every listed org owner is an upstream owner that really exists in the catalog', () => {
+    const owners = new Set(catalog.skills.flatMap((s) => (s.kind === 'external' ? [s.upstream.owner.toLowerCase()] : [])));
+    for (const o of ORG_OWNERS) expect(owners.has(o), o).toBe(true);
   });
 });

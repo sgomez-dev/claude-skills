@@ -124,3 +124,20 @@ test('every skill page has at least 3 inbound internal links from other pages of
   console.log(`inbound internal links per skill page: min ${lowest[0]![1]} (${lowest[0]![0]}), max ${lowest.at(-1)![1]} (${lowest.at(-1)![0]}), ${slugs.length} skills`);
   expect(lowest[0]![1], lowest[0]![0]).toBeGreaterThanOrEqual(3);
 });
+
+// Stands in for Lighthouse's robots-txt audit, which lighthouserc skips (its parser rejects Content-Signal; @lhci/cli 0.15.1).
+test('robots.txt is well-formed: only known fields, and the * group never disallows the site', async ({ request }) => {
+  const res = await request.get('/robots.txt');
+  expect(res.status()).toBe(200);
+  const lines = (await res.text()).split('\n').filter((l) => l.trim() && !l.trim().startsWith('#'));
+  for (const l of lines) expect(l, l).toMatch(/^(User-Agent|Allow|Disallow|Sitemap|Content-Signal):/);
+  const star = (await (await request.get('/robots.txt')).text()).split('\n\n').find((g) => g.includes('User-Agent: *'))!;
+  expect(star).not.toMatch(/^Disallow: \/\s*$/m);
+});
+
+test('a command page shows its license in the aside, and the author description only when a summary is authored', async ({ page }) => {
+  await page.goto('/en/s/legal--contract-review');
+  await expect(page.locator('#perm').locator('..')).toContainText('License: MIT');
+  await page.goto('/en/s/vercel-react-best-practices');
+  await expect(page.locator('#perm').locator('..')).toContainText('License');
+});

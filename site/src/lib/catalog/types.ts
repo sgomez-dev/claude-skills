@@ -27,6 +27,7 @@ export interface SkillText {
   title?: string;
   summary?: string;
   useWhen?: string[];
+  keywords?: string[];
   notFor?: string[];
   output?: string;
   faq?: SkillFaq[];
@@ -38,6 +39,8 @@ interface SkillBase {
   description: string;
   section: SectionId;
   sourcePath: string;
+  /** Hash of the whole skill source file (SKILL.md or the command .md): what the authored copy was written against. */
+  copyHash: string;
   updatedAt: string | null;
   text: Record<Lang, SkillText>;
 }
@@ -86,5 +89,5 @@ export interface Catalog {
   pipelines: Pipeline[];
 }
 
-export type RawCommand = Omit<CommandSkill, 'section' | 'text' | 'updatedAt' | 'bundle'>;
-export type RawExternal = Omit<ExternalSkill, 'section' | 'text' | 'updatedAt'> & { commitDate: string | null };
+export type RawCommand = Omit<CommandSkill, 'section' | 'text' | 'updatedAt' | 'bundle' | 'copyHash'>;
+export type RawExternal = Omit<ExternalSkill, 'section' | 'text' | 'updatedAt' | 'copyHash'> & { commitDate: string | null };

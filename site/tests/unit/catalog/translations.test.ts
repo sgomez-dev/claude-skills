@@ -3,12 +3,15 @@ import os from 'node:os';
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { hashDescription, type TranslationEntry } from '@/lib/catalog/text';
-import { checkTranslations, copyProblems, planTranslations } from '@/lib/catalog/translations';
+import { SECTIONS } from '@/content/sections';
+import { maxTitleLength, sectionProblems } from '@/lib/catalog/copy-rules';
+import { checkTranslations, copyProblems, extraProblems, planCopy, planTranslations } from '@/lib/catalog/translations';
+import { skillPageTitle } from '@/lib/seo/titles';
 import type { Skill } from '@/lib/catalog/types';
 
 const skill = (slug: string, description: string): Skill => ({
   kind: 'command', slug, name: slug, category: 'legal', bundle: null, description, section: 'business',
-  sourcePath: `skills/legal/${slug}.md`, updatedAt: null,
+  sourcePath: `skills/legal/${slug}.md`, copyHash: '0123456789abcdef', updatedAt: null,
   permissions: { reads: [], writes: [], commands: [], network: false, destructive: false },
   text: { en: { description, howToAsk: [], translated: true }, es: { description, howToAsk: [], translated: false } },
 });
@@ -46,24 +49,115 @@ describe('copyProblems (title and summary rules)', () => {
     expect(copyProblems(withCopy({}))).toEqual([]);
     expect(copyProblems(withCopy({ title: 'Revisión de contratos', summary: ok }, { title: 'Contract review', summary: ok }))).toEqual([]);
   });
-  it('bounds the title to 60 characters', () => {
-    expect(copyProblems(withCopy({ title: 'x'.repeat(61) }))).toEqual(['es.title must be 1-60 characters (is 61)']);
-    expect(copyProblems(withCopy({ title: 'x'.repeat(60) }))).toEqual([]);
+  it('bounds the bare title by the RENDERED page title: 38 characters in Spanish, 41 in English', () => {
+    expect(maxTitleLength('es')).toBe(38);
+    expect(maxTitleLength('en')).toBe(41);
+    expect(copyProblems(withCopy({ title: 'Revisión legal de contratos comerciales' }))).toEqual([expect.stringContaining('es.title is 39 characters')]);
+    expect(copyProblems(withCopy({ title: 'Revisión de contratos de negocio' }))).toEqual([]);
+    expect(copyProblems(withCopy({}, { title: 'Comprehensive contract review for businesses' }))).toEqual([expect.stringContaining('en.title is 44 characters')]);
+    // The rendered title really fits the budget at the limit.
+    expect(skillPageTitle('skill de Claude Code', 'Revisión de contratos de negocio', 'x').length).toBeLessThanOrEqual(60);
+  });
+  it('wants 2-5 words, and no brackets or line breaks in a title or summary', () => {
+    expect(copyProblems(withCopy({ title: 'Contratos' }))).toEqual(['es.title must be 2-5 words (is 1)']);
+    expect(copyProblems(withCopy({ title: 'Uno dos tres cuatro cinco seis' })).some((p) => p.includes('2-5 words'))).toBe(true);
+    expect(copyProblems(withCopy({ title: 'Contratos [rápido]' })).some((p) => p.includes('[ ]'))).toBe(true);
+    expect(copyProblems(withCopy({}, { summary: `${ok}\nsegunda línea` })).some((p) => p.includes('[ ]'))).toBe(true);
+    expect(copyProblems(withCopy({}, { summary: `${ok} [x](y)` })).some((p) => p.includes('[ ]'))).toBe(true);
+  });
+  it('rejects router phrasing in a title and in a summary', () => {
+    expect(copyProblems(withCopy({ title: 'Use when contracts' })).some((p) => p.includes('router text'))).toBe(true);
+    for (const bad of ['Use when you need to review a contract draft and flag risky clauses before you sign it.', 'Triggers include contract review, redlines and clause checks for any agreement you have.', 'Úsala cuando el usuario quiera revisar un contrato y detectar las cláusulas de riesgo antes de firmar.']) {
+      expect(copyProblems(withCopy({ summary: bad })).some((p) => p.includes('router text')), bad).toBe(true);
+    }
   });
   it('bounds the summary to 60-160 characters', () => {
     expect(copyProblems(withCopy({}, { summary: 'too short' }))).toEqual(['en.summary must be 60-160 characters (is 9)']);
     expect(copyProblems(withCopy({}, { summary: 'y'.repeat(161) }))).toEqual(['en.summary must be 60-160 characters (is 161)']);
   });
-  it('rejects router phrasing in a summary', () => {
-    for (const bad of ['Use when you need to review a contract draft and flag risky clauses before you sign it.', 'Triggers include contract review, redlines and clause checks for any agreement you have.', 'Úsala cuando el usuario quiera revisar un contrato y detectar las cláusulas de riesgo antes de firmar.']) {
-      expect(copyProblems(withCopy({ summary: bad })).some((p) => p.includes('router text')), bad).toBe(true);
+  it('is reported by checkTranslations as an error, never as a failure for missing fields', () => {
+    const dir = dirWith({ 'fresh.json': withCopy({ title: 'Uno dos tres cuatro cinco seis' }), 'plain.json': entry('B') });
+    const r = checkTranslations([skill('fresh', 'A'), skill('plain', 'B')], dir);
+    expect(r.errors).toEqual(['fresh.json: es.title must be 2-5 words (is 6)']);
+    expect(r.warnings).toEqual([]);
+  });
+});
+
+describe('A14 blocks, keywords and section copy (warnings now, errors under strictCopy)', () => {
+  const blocks = (es: Record<string, unknown>) => ({ ...entry('A'), es: { ...entry('A').es, ...es }, en: entry('A').en }) as TranslationEntry;
+
+  it('checks the blocks only when present', () => {
+    expect(extraProblems(blocks({}))).toEqual([]);
+    expect(extraProblems(blocks({ useWhen: ['a', 'b', 'c'], notFor: ['a'], keywords: ['a', 'b', 'c'], faq: [{ q: 'q', a: 'a' }, { q: 'q2', a: 'a2' }] }))).toEqual([]);
+    const bad = extraProblems(blocks({ useWhen: ['a'], notFor: ['a', 'b', 'c'], keywords: ['a'], faq: [{ q: 'x'.repeat(121), a: 'y'.repeat(401) }] }));
+    expect(bad).toEqual([
+      'es.useWhen must have 3 items (has 1)',
+      'es.notFor must have 1-2 items (has 3)',
+      'es.keywords must have 3-5 items (has 1)',
+      'es.faq must have 2-3 items (has 1)',
+      'es.faq[0].q is 121 characters (max 120)',
+      'es.faq[0].a is 401 characters (max 400)',
+    ]);
+  });
+  it('are warnings by default and errors with strictCopy', () => {
+    const dir = dirWith({ 'a.json': { ...blocks({ useWhen: ['only one'] }), copyHash: 'a'.repeat(16) } });
+    const s = skill('a', 'A');
+    const soft = checkTranslations([s], dir);
+    expect(soft.errors).toEqual([]);
+    expect(soft.warnings).toContain('a.json: es.useWhen must have 3 items (has 1)');
+    const strict = checkTranslations([s], dir, { strictCopy: true });
+    expect(strict.errors).toContain('a.json: es.useWhen must have 3 items (has 1)');
+  });
+  it('checks present section copy: seoTitle, description length and at least 5 valid intro links', () => {
+    const slugs = new Set(['a', 'b', 'c', 'd', 'e']);
+    expect(sectionProblems(slugs)).toEqual([]);
+    const s = SECTIONS[0]!;
+    const saved = { seoTitle: s.seoTitle, description: s.description, intro: s.intro };
+    try {
+      s.seoTitle = { es: 'x'.repeat(61), en: 'ok title' };
+      s.description = { es: 'too short', en: 'y'.repeat(130) };
+      s.intro = { es: ['[a](a) [b](b) [c](c) [d](d)'], en: ['[a](a) [b](b) [c](c) [d](d) [e](e) [z](zz)'] };
+      const p = sectionProblems(slugs);
+      expect(p).toEqual([
+        'section video/es: seoTitle is 61 characters (max 60)',
+        'section video/es: description must be 120-160 characters (is 9)',
+        'section video/es: intro needs at least 5 valid skill links (has 4)',
+        'section video/en: intro links to unknown skills: zz',
+      ]);
+      expect(checkTranslations([], dirWith({})).warnings).toContain('section video/es: seoTitle is 61 characters (max 60)');
+      expect(checkTranslations([], dirWith({}), { strictCopy: true }).errors).toContain('section video/es: seoTitle is 61 characters (max 60)');
+    } finally {
+      Object.assign(s, saved);
     }
   });
-  it('is reported by checkTranslations as an error, never as a failure for missing fields', () => {
-    const dir = dirWith({ 'fresh.json': withCopy({ title: 'x'.repeat(70) }), 'plain.json': entry('B') });
-    const r = checkTranslations([skill('fresh', 'A'), skill('plain', 'B')], dir);
-    expect(r.errors).toEqual(['fresh.json: es.title must be 1-60 characters (is 70)']);
-    expect(r.warnings).toEqual([]);
+});
+
+describe('copy freshness (copyHash)', () => {
+  const ok = 'Revisa un borrador de contrato y devuelve las cláusulas de riesgo, los términos que faltan y las obligaciones desequilibradas.';
+  const full = (copyHash?: string) => ({
+    ...entry('A'),
+    ...(copyHash ? { copyHash } : {}),
+    es: { ...entry('A').es, title: 'Revisión de contratos', summary: ok },
+    en: { ...entry('A').en, title: 'Contract review', summary: ok.replace('Revisa', 'Reviews') },
+  });
+
+  it('a skill with no entry, or an entry without title or summary, is missing; a different copyHash is stale', () => {
+    const dir = dirWith({ 'done.json': full('c'.repeat(16)), 'old.json': full('d'.repeat(16)), 'nohash.json': full(), 'bare.json': entry('A') });
+    const skills = [skill('done', 'A'), skill('old', 'A'), skill('nohash', 'A'), skill('bare', 'A'), skill('none', 'A')];
+    const hashes: Record<string, string> = { done: 'c', old: 'c', nohash: 'c', bare: 'c', none: 'c' };
+    const items = planCopy(skills.map((s) => ({ ...s, copyHash: hashes[s.slug]!.repeat(16) })), dir);
+    expect(items.map((i) => [i.slug, i.reason])).toEqual([['old', 'stale'], ['nohash', 'stale'], ['bare', 'missing'], ['none', 'missing']]);
+    expect(items.find((i) => i.slug === 'bare')!.missing).toEqual(['es.title', 'es.summary', 'en.title', 'en.summary']);
+    expect(items[0]).toMatchObject({ kind: 'command', section: 'business', sourcePath: 'skills/legal/old.md', description: 'A', sourceHash: hashDescription('A'), copyHash: 'c'.repeat(16) });
+  });
+  it('strictCopy turns missing and stale copy into errors; the default stays quiet', () => {
+    const dir = dirWith({ 'old.json': full('d'.repeat(16)), 'bare.json': entry('A') });
+    const skills = [skill('old', 'A'), skill('bare', 'A')].map((s) => ({ ...s, copyHash: 'c'.repeat(16) }));
+    expect(checkTranslations(skills, dir).errors).toEqual([]);
+    expect(checkTranslations(skills, dir, { strictCopy: true }).errors).toEqual([
+      'old: authored copy is stale (copyHash differs from the skill file)',
+      'bare: authored copy missing (es.title, es.summary, en.title, en.summary)',
+    ]);
   });
 });
 

@@ -6,6 +6,7 @@ const skillText = z.object({
   description: z.string().min(1),
   howToAsk: z.array(z.string()),
   translated: z.boolean(),
+  keywords: z.array(z.string().min(1)).optional(),
   title: z.string().min(1).optional(),
   summary: z.string().min(1).optional(),
   useWhen: z.array(z.string().min(1)).optional(),
@@ -19,6 +20,7 @@ const base = {
   description: z.string().min(1),
   section: z.enum(SECTION_IDS),
   sourcePath: z.string().min(1),
+  copyHash: z.string().regex(/^[0-9a-f]{16}$/),
   updatedAt: z.string().nullable(),
   text: z.object({ es: skillText, en: skillText }),
 };

@@ -1,14 +1,13 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/ui/JsonLd';
-import { catalog, catalogUpdatedAt } from '@/lib/catalog';
-import { isoDay } from '@/lib/catalog/dates';
+import { catalog } from '@/lib/catalog';
 import { catalogFigures } from '@/lib/catalog/figures';
 import { getDictionary } from '@/lib/i18n';
 import { isLang, LANGS, type Lang } from '@/lib/i18n/languages';
 import { authorLd, breadcrumbLd, graph, webPageLd, websiteLd } from '@/lib/seo/jsonld';
 import { pageMetadata } from '@/lib/seo/metadata';
-import { AUTHOR, REPO_URL } from '@/lib/site';
+import { AUTHOR, METHODOLOGY_UPDATED, REPO_URL } from '@/lib/site';
 import { absolute, paths } from '@/lib/urls';
 
 type Params = Promise<{ lang: string }>;
@@ -34,7 +33,7 @@ export default async function Methodology({ params }: { params: Params }) {
   const d = getDictionary(lang);
   const m = d.methodology;
   const sections = m.sections(catalogFigures(catalog));
-  const updated = catalogUpdatedAt();
+  const updated = METHODOLOGY_UPDATED;
   const url = paths.methodology(lang);
 
   return (
@@ -48,9 +47,7 @@ export default async function Methodology({ params }: { params: Params }) {
       <header className="border-b-2 border-ink pb-10">
         <h1 className="font-display text-[clamp(2.5rem,7vw,5.5rem)] font-extrabold leading-[0.95] tracking-[-0.035em]">{m.title}</h1>
         <p className="mt-6 max-w-2xl text-[19px] leading-relaxed text-ink-muted">{m.dek}</p>
-        {updated ? (
-          <p className="mt-3 font-mono text-[11px] uppercase text-ink-muted">{m.updated} <time dateTime={isoDay(updated)}>{d.date(new Date(updated))}</time></p>
-        ) : null}
+        <p className="mt-3 font-mono text-[11px] uppercase text-ink-muted">{m.updated} <time dateTime={updated}>{d.date(new Date(updated))}</time></p>
       </header>
       <div className="mt-10 max-w-3xl space-y-10">
         {sections.map((s, i) => (

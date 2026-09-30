@@ -1,7 +1,9 @@
+import { SECTIONS } from '@/content/sections';
 import type { Figures } from '@/lib/catalog/figures';
 import { fmtDay, fmtMonth } from '../format';
 
 const licenseList = (f: Figures) => f.licenses.map((l) => `${l.count} ${l.id}`).join(', ');
+const licenseNames = (f: Figures) => f.licenses.map((l) => l.id).join(', ');
 
 export const en = {
   locale: 'en-GB',
@@ -64,6 +66,7 @@ export const en = {
   skill: {
     titleSuffix: 'Claude Code skill',
     authorDescription: "Author's description",
+    authorDescriptionTranslated: "Author's description (translated)",
     methodology: 'How we review this',
     pairsWith: 'Pairs well with',
     recipe: 'Recipe',
@@ -132,12 +135,12 @@ export const en = {
     reportLabel: 'Open an issue on GitHub',
     sections: (f: Figures): { h: string; p?: string[]; bullets?: string[] }[] => [
       { h: 'Who curates it', p: [`The catalog is curated by Santiago Gómez de la Torre, who also wrote the ${f.commands} skills built here. It is an independent project: it is not made by, or affiliated with, Anthropic.`] },
-      { h: 'What is in it', p: [`${f.total} skills in nine sections: ${f.commands} written in this repository and ${f.external} vendored from ${f.repos} community repositories. Every number on this site is computed from the catalog when the site is built.`] },
+      { h: 'What is in it', p: [`${f.total} skills in ${SECTIONS.length} sections: ${f.commands} written in this repository and ${f.external} vendored from ${f.repos} community repositories. Every figure about the catalog is computed from the catalog when the site is built.`] },
       {
         h: 'What gets in',
         bullets: [
           "Built here: one task per skill, clear steps, and it detects the project's language and framework instead of assuming one.",
-          'Community: only skills published under MIT or Apache-2.0, because those licenses let us redistribute them with the original notices.',
+          `Community: only skills whose license lets us redistribute them with the original notices; currently ${licenseNames(f)}.`,
           'A skill whose upstream has no license, or an (A)GPL one, is used privately and never published on this site.',
         ],
       },
@@ -152,7 +155,7 @@ export const en = {
       {
         h: 'How community skills are synced',
         p: [
-          'Community skills live in the repository under external/. A manifest (external/sources.txt) names each upstream repository, branch and path, and a sync script (scripts/sync-external.sh) copies them in and pins the exact upstream commit. Each copy records that commit, its date and the upstream license in its own UPSTREAM.md and LICENSE files. A vendored copy is never edited by hand: the next sync would overwrite it. A weekly CI job reports which copies have fallen behind upstream.',
+          'Community skills live in the repository under external/. A manifest (external/sources.txt) names each upstream repository, branch or tag and path, and a sync script (scripts/sync-external.sh) copies them in and pins the exact upstream commit. Each copy records that commit, its date and the upstream license in its own UPSTREAM.md and LICENSE files. A vendored copy is never edited by hand: the next sync would overwrite it. A weekly CI job reports which copies have fallen behind upstream.',
         ],
       },
       { h: 'Licenses', p: [`The ${f.commands} skills built here are MIT. The ${f.external} community skills keep their upstream license: ${licenseList(f)}. Every skill page shows its license and its original author.`] },

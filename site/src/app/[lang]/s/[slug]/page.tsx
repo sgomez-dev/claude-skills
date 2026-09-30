@@ -120,9 +120,9 @@ export default async function SkillPage({ params }: { params: Params }) {
           <span lang={summary.lang}>{summary.text}</span>
         </p>
         {!text.translated ? <p className="mt-2 font-mono text-[11px] text-ink-muted">{d.skill.notTranslated}</p> : null}
-        {summary.text !== text.description ? (
+        {summary.authored ? (
           <section aria-labelledby="author-desc" className="mt-6 max-w-3xl border-l-2 border-line pl-4">
-            <h2 id="author-desc" className="font-mono text-[11px] font-bold uppercase tracking-[0.1em] text-ink-muted">{d.skill.authorDescription}</h2>
+            <h2 id="author-desc" className="font-mono text-[11px] font-bold uppercase tracking-[0.1em] text-ink-muted">{lang === 'es' && text.translated ? d.skill.authorDescriptionTranslated : d.skill.authorDescription}</h2>
             <p lang={descLang} className="mt-1 text-[15px] leading-relaxed text-ink-muted">{text.description}</p>
           </section>
         ) : null}
@@ -185,6 +185,7 @@ export default async function SkillPage({ params }: { params: Params }) {
         <aside className="min-w-0 space-y-8">
           <section aria-labelledby="perm" className="rounded-2xl border border-line p-5">
             <h2 id="perm" className="mb-2 font-display text-xl font-extrabold">{skill.kind === 'command' ? d.skill.permissions : d.skill.provenance}</h2>
+            {skill.kind === 'command' ? <p className="mb-3 font-mono text-[12px] font-bold uppercase text-ink-muted">{d.skill.license}: MIT</p> : null}
             {skill.kind === 'command' ? (
               <PermissionManifest permissions={skill.permissions} dict={d} />
             ) : (

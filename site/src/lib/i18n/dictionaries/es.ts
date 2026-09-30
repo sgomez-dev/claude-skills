@@ -1,8 +1,10 @@
+import { SECTIONS } from '@/content/sections';
 import type { Figures } from '@/lib/catalog/figures';
 import { fmtDay, fmtMonth } from '../format';
 import type { Dictionary } from './en';
 
 const licenseList = (f: Figures) => f.licenses.map((l) => `${l.count} ${l.id}`).join(', ');
+const licenseNames = (f: Figures) => f.licenses.map((l) => l.id).join(', ');
 
 export const es: Dictionary = {
   locale: 'es-ES',
@@ -65,6 +67,7 @@ export const es: Dictionary = {
   skill: {
     titleSuffix: 'skill de Claude Code',
     authorDescription: 'Descripción del autor',
+    authorDescriptionTranslated: 'Descripción del autor (traducida)',
     methodology: 'Cómo revisamos esto',
     pairsWith: 'Encaja con',
     recipe: 'Receta',
@@ -133,12 +136,12 @@ export const es: Dictionary = {
     reportLabel: 'Abre una incidencia en GitHub',
     sections: (f) => [
       { h: 'Quién lo cura', p: [`El catálogo lo cura Santiago Gómez de la Torre, que también escribió las ${f.commands} skills hechas aquí. Es un proyecto independiente: no lo hace Anthropic ni tiene relación con ella.`] },
-      { h: 'Qué contiene', p: [`${f.total} skills en nueve secciones: ${f.commands} escritas en este repositorio y ${f.external} incluidas de ${f.repos} repositorios de la comunidad. Todas las cifras de este sitio se calculan a partir del catálogo cuando se construye el sitio.`] },
+      { h: 'Qué contiene', p: [`${f.total} skills en ${SECTIONS.length} secciones: ${f.commands} escritas en este repositorio y ${f.external} incluidas de ${f.repos} repositorios de la comunidad. Todas las cifras sobre el catálogo se calculan a partir del catálogo cuando se construye el sitio.`] },
       {
         h: 'Qué entra',
         bullets: [
           'Hechas aquí: una tarea por skill, pasos claros, y detectan el lenguaje y el framework del proyecto en lugar de suponer uno.',
-          'De la comunidad: solo skills publicadas con licencia MIT o Apache-2.0, porque esas licencias nos permiten redistribuirlas con los avisos originales.',
+          `De la comunidad: solo skills cuya licencia nos permite redistribuirlas con los avisos originales; ahora mismo, ${licenseNames(f)}.`,
           'Una skill cuyo repositorio original no tiene licencia, o tiene una (A)GPL, se usa en privado y nunca se publica en este sitio.',
         ],
       },
@@ -153,7 +156,7 @@ export const es: Dictionary = {
       {
         h: 'Cómo se sincronizan las skills de la comunidad',
         p: [
-          'Las skills de la comunidad viven en el repositorio, en external/. Un manifiesto (external/sources.txt) indica el repositorio original, la rama y la ruta de cada una, y un script de sincronización (scripts/sync-external.sh) las copia y fija el commit exacto. Cada copia guarda ese commit, su fecha y la licencia original en sus ficheros UPSTREAM.md y LICENSE. Una copia nunca se edita a mano: la siguiente sincronización la sobrescribiría. Una tarea semanal de CI avisa de qué copias se han quedado por detrás del original.',
+          'Las skills de la comunidad viven en el repositorio, en external/. Un manifiesto (external/sources.txt) indica el repositorio original, la rama o la etiqueta y la ruta de cada una, y un script de sincronización (scripts/sync-external.sh) las copia y fija el commit exacto. Cada copia guarda ese commit, su fecha y la licencia original en sus ficheros UPSTREAM.md y LICENSE. Una copia nunca se edita a mano: la siguiente sincronización la sobrescribiría. Una tarea semanal de CI avisa de qué copias se han quedado por detrás del original.',
         ],
       },
       { h: 'Licencias', p: [`Las ${f.commands} skills hechas aquí son MIT. Las ${f.external} de la comunidad conservan la licencia de su repositorio original: ${licenseList(f)}. La ficha de cada skill muestra su licencia y su autor original.`] },
